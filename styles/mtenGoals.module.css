@@ -1,0 +1,39 @@
+.mtenGoalsSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--grey);
+    padding: 3rem 0;
+    row-gap: 1rem;
+}
+
+.mtenGoalsImage {
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+}
+
+.mtenGoalsCaption {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+@media (min-width: 600px) {
+    .mtenGoalsImage {
+        width: 40%;
+    }
+
+    .mtenGoalsCaption {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mtenGoalsImage {
+        width: 23%;
+    }
+}

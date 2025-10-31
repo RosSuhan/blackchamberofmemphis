@@ -1,0 +1,167 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.headerLogoLink {
+    width: fit-content;
+}
+
+.headerLogo {
+    object-fit: contain;
+}
+
+.menuBtn {
+    display: initial;
+    background: transparent;
+    border: none;
+}
+
+.close,
+.navClose {
+    display: none;
+}
+
+.nav {
+    position: absolute;
+    display: initial;
+    width: 100dvw;
+    top: 50px;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navItem {
+    width: 90%;
+    padding: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subNavList {
+    width: 100%;
+    padding: .5rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subNavItem {
+    width: 80%;
+    padding: .5rem 0;
+}
+
+.navLink,
+.navCTALink {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+    .headerLogoLink {
+        width: 20%;
+    }
+
+    .headerLogo {
+        width: 100%;
+        height: auto;
+    }
+    
+    .menuBtn {
+        display: none;
+    }
+    
+    
+    .navClose,
+    .nav {
+        position: relative;
+        width: 80dvw;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        top: 0;
+    }
+    
+    .navList {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        column-gap: 0.5%;
+    }
+    
+    .navItem {
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .navIcon {
+        margin: 0 .5rem;
+    }
+    
+    .subNavList {
+        position: absolute;
+        top: 30px;
+        padding: 0;
+        left: 0;
+        width: 80px;
+    }
+    
+    .navLink,
+    .navCTALink {
+        font-size: 0.7rem;
+        text-align: center;
+        /* letter-spacing: 1; */
+    }
+
+    .navCTALink {
+        background: var(--gold);
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 900px) {
+    .headerLogoLink {
+        width: 15%;
+    }
+    
+    .navClose,
+    .nav {
+        width: 85dvw;
+    }
+
+    .subNavList {
+        width: 150px;
+    }
+    
+    .subNavItem {
+        width: 100%;
+    }
+    
+    .navLink,
+    .navCTALink {
+        font-size: .8rem;
+    }
+}

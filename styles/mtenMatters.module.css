@@ -1,0 +1,85 @@
+.mTenMattersSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    row-gap: 2rem;
+}
+
+.mtenTwoColumnWordBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mtenTwoColumnHeading {
+    width: 100%;
+    color: var(--gold);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.mtenTwoColumnParagraph {
+    text-align: center;
+}
+
+.mtenTwoColumnImage {
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.mainCtaBtn {
+    width: 250px;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 10px;
+    background: var(--gold);
+    color: #000000;
+    font-weight: 700;
+}
+
+@media (min-width: 600px) {
+    .mtenTwoColumnWordBlock {
+        width: 45%;
+        height: 300px;
+    }
+    .mtenTwoColumnHeading {
+        margin-bottom: 0;
+    }
+    
+    .mtenTwoColumnParagraph {
+        margin-bottom: 3rem;
+    }
+    
+    .mtenTwoColumnImage {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mtenTwoColumnWordBlock {
+        align-items: flex-start;
+    }
+    .mtenTwoColumnHeading {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .mtenTwoColumnParagraph {
+        font-size: 1.4rem;
+        line-height: 1.3;
+        text-align: left;
+    }
+    
+    .mtenTwoColumnImage {
+        width: 45%;
+    }
+    
+    .mainCtaBtn {
+        font-size: 1.5rem;
+    }
+}

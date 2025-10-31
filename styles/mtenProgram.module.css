@@ -1,0 +1,138 @@
+.mtenProgramSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mtenProgramHeading {
+    width: 100%;
+    color: var(--gold);
+    text-align: center;
+}
+
+.mtenProgramOuterBox {
+    aspect-ratio: 1 / 1;
+    width: 90%;
+    background: var(--grey);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mtenProgramGoldBackBox {
+    position: absolute;
+    top: -155px;
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(to right, rgba(199,172,56,1) 0%,rgba(198,190,159,1) 19%,rgba(198,183,121,1) 45%,rgba(199,172,56,1) 99%);
+    clip-path: polygon(0 70%, 0 100%, 100% 100%, 100% 70%);
+}
+
+.mtenProgramWhiteBox {
+    aspect-ratio: 1 / 1;
+    width: 75%;
+    background: #ffffff;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+
+.mtenProgramBackImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.mtenProgramTitleBlock {
+    width: 80%;
+    min-height: 120px;
+    background: #000000c8;
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 66.83%, 6.67% 67.93%, 13.33% 69.55%, 20.00% 71.28%, 26.67% 72.69%, 33.33% 73.44%, 40.00% 73.33%, 46.67% 72.40%, 53.33% 70.88%, 60.00% 69.14%, 66.67% 67.61%, 73.33% 66.68%, 80.00% 66.56%, 86.67% 67.30%, 93.33% 68.70%, 100.00% 70.43%);
+}
+
+.mtenProgramGoldTitle {
+    color: var(--gold);
+    text-transform: uppercase;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 1.3;
+}
+
+.mtenProgramWhiteTitle {
+    width: 90%;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1.2;
+}
+
+@media (min-width: 400px) {
+    .mtenProgramGoldBackBox {
+        top: -245px;
+        height:350px;
+    }
+    
+    .mtenProgramTitleBlock {
+        min-height: 100px;
+        bottom: 10;
+    }
+}
+
+@media (min-width: 500px) {
+    .mtenProgramOuterBox {
+        width: 45%;
+    }
+    
+    .mtenProgramGoldBackBox {
+        top: -140px;
+        height:200px;
+    }
+}
+
+@media (min-width: 700px) {
+    .mtenProgramOuterBox {
+        width: 40%;
+    }
+    
+    .mtenProgramGoldBackBox {
+        top: -140px;
+        height:200px;
+    }
+}
+
+@media (min-width: 800px) {
+    .mtenProgramGoldBackBox {
+        top: -245px;
+        height:350px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mtenProgramOuterBox {
+        width: 23%;
+    }
+    
+    .mtenProgramGoldBackBox {
+        top: -175px;
+        height: 250px;
+    }
+    
+    .mtenProgramTitleBlock {
+        bottom: 0;
+    }
+}
