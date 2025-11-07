@@ -1,0 +1,45 @@
+.pageTitleSection {
+    width: 100%;
+    background-image: url(/assets/event/BCOM_Symposium_2025_Day1-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageName {
+    width: 80%;
+    font-size: 2rem;
+    color: #ffffff;
+    -webkit-text-stroke: .5px #000000;
+    text-shadow: #000000 3px 3px 5px;
+}
+
+@media (min-width: 400px) {
+    .pageName {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .pageTitleSection {
+        height: 150px;
+    }
+
+    .pageName {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .pageTitleSection {
+        height: 200px;
+    }
+
+    .pageName {
+        font-size: 3rem;
+    }
+}

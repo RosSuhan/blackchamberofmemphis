@@ -1,0 +1,104 @@
+.wordImageBlockSection,
+.imageWordBlockSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.imageWordBlockSection {
+    flex-direction: column-reverse;
+}
+
+.wordInformation {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wordHeader {
+    width: 100%;
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.wordParagraph {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.wordBlockImage {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 400px) {
+    .wordHeader {
+        font-size: 1.5rem;
+    }
+
+    .wordParagraph {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .wordHeader {
+        font-size: 1.75rem;
+    }
+
+    .wordParagraph {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .wordImageBlockSection,
+    .imageWordBlockSection {
+        justify-content: space-between;
+    }
+
+    .imageWordBlockSection {
+        flex-direction: row;
+    }
+
+    .wordInformation {
+        width: 55%;
+    }
+
+    .wordHeader {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .wordParagraph {
+        width: 80%;
+        font-size: 1.0625rem;
+    }
+
+    .wordBlockImage {
+        object-fit: cover;
+        width: 45%;
+        height: 880px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wordHeader {
+        font-size: 2.5rem;
+    }
+
+    .wordParagraph {
+        font-size: 1.125rem;
+    }
+
+    .wordBlockImage {
+        height: 850px;
+    }
+}

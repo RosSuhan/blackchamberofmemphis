@@ -1,0 +1,17 @@
+.businessDirectoryPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busDirectorySection {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    row-gap: 2rem;
+    column-gap: 2%;
+}

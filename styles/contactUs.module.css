@@ -1,0 +1,237 @@
+.contactUsMain {
+    background-image: url(/assets/event/DSC01939.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactUsOverlay {
+    background: var(--overlay);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.contactUsHeading {
+    color: var(--gold);
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.contactUsSubHeading {
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin: .5rem0;
+}
+
+.contactUsLinkRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.contactUsLink {
+    width: 40%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.contactUsIcon {
+    width: 1.5em;
+    height: 1.5em;
+    background: var(--gold);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.contactUsWhiteText {
+    color: #ffffff;
+    font-size: 1.125rem;
+}
+
+.contactUsGoldText {
+    display: none;
+}
+
+.contactUsForm {
+    width: 60%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    row-gap: 1rem;
+}
+
+.contactUsFormShortInput,
+.contactUsFormLongInput {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 .5rem;
+    border-radius: 5px;
+    background: #eeeeee;
+}
+
+.contactUsFormSubmit {
+    width: 100%;
+    background: var(--gold);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+@media (min-width: 400px) {
+    .contactUsHeading {
+        font-size: 1.75rem;
+    }
+    
+    .contactUsSubHeading {
+        font-size: 1.25rem;
+    }
+    
+    .contactUsGoldText {
+        display: initial;
+        color: var(--gold);
+    }
+    
+    .contactUsForm {
+        width: 70%;
+    }
+    
+    .contactUsFormShortInput,
+    .contactUsFormLongInput {
+        font-size: 1.0625rem;
+    }
+    
+    .contactUsFormSubmit {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .contactUsHeading {
+        font-size: 2rem;
+    }
+    
+    .contactUsSubHeading {
+        font-size: 1.5rem;
+    }
+    
+    .contactUsWhiteText {
+        font-size: 1.5rem;
+    }
+    
+    .contactUsGoldText {
+        font-size: 1.125rem;
+    }
+    
+    .contactUsForm {
+        width: 70%;
+    }
+    
+    .contactUsFormShortInput,
+    .contactUsFormLongInput {
+        font-size: 1.125rem;
+    }
+    
+    .contactUsFormSubmit {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .contactUsHeading {
+        font-size: 3rem;
+    }
+    
+    .contactUsSubHeading {
+        font-size: 1.75rem;
+    }
+    
+    .contactUsLinkRow {
+        width: 70%;
+    }
+    
+    .contactUsIcon {
+        width: 2em;
+        height: 2em;
+    }
+    
+    .contactUsWhiteText {
+        font-size: 1.75rem;
+    }
+    
+    .contactUsGoldText {
+        font-size: 1.25rem;
+    }
+    
+    .contactUsForm {
+        width: 50%;
+        align-items: flex-start;
+        padding: 3rem;
+    }
+    
+    .contactUsFormShortInput,
+    .contactUsFormLongInput {
+        width: 95%;
+        font-size: 1.25rem;
+    }
+    
+    .contactUsFormSubmit {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contactUsOverlay {
+        padding: 4rem 0;
+    }
+    
+    .contactUsHeading {
+        font-size: 4rem;
+    }
+    
+    .contactUsSubHeading {
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    .contactUsLinkRow {
+        padding: 4rem 0;
+    }
+    
+    .contactUsIcon {
+        width: 2.1em;
+        height: 2.1em;
+    }
+    
+    .contactUsWhiteText {
+        font-size: 2rem;
+    }
+    
+    .contactUsGoldText {
+        font-size: 1.5rem;
+    }
+    
+    .contactUsForm {
+        width: 60%;
+    }
+    
+    .contactUsFormSubmit {
+        width: 35%;
+    }
+}

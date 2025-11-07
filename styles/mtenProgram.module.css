@@ -9,6 +9,7 @@
     width: 100%;
     color: var(--gold);
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .mtenProgramOuterBox {
@@ -68,7 +69,7 @@
     color: var(--gold);
     text-transform: uppercase;
     margin: 0;
-    font-size: .8rem;
+    font-size: .875rem;
     font-weight: 900;
     letter-spacing: 1.3;
 }
@@ -78,61 +79,51 @@
     color: #ffffff;
     margin: 0;
     text-align: center;
+    font-size: 1.25rem;
     letter-spacing: 1.2;
 }
 
 @media (min-width: 400px) {
-    .mtenProgramGoldBackBox {
-        top: -245px;
-        height:350px;
+    .mtenProgramHeading {
+        font-size: 1.5rem;
     }
     
-    .mtenProgramTitleBlock {
-        min-height: 100px;
-        bottom: 10;
+    .mtenProgramGoldTitle {
+        font-size: .9375rem;
+    }
+    
+    .mtenProgramWhiteTitle {
+        font-size: 1.5rem;
+        width: 95%;
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {    
+    .mtenProgramHeading {
+        font-size: 1.75rem;
+    }
+    
     .mtenProgramOuterBox {
         width: 45%;
-    }
-    
-    .mtenProgramGoldBackBox {
-        top: -140px;
-        height:200px;
-    }
-}
-
-@media (min-width: 700px) {
-    .mtenProgramOuterBox {
-        width: 40%;
-    }
-    
-    .mtenProgramGoldBackBox {
-        top: -140px;
-        height:200px;
     }
 }
 
 @media (min-width: 800px) {
-    .mtenProgramGoldBackBox {
-        top: -245px;
-        height:350px;
+    .mtenProgramHeading {
+        font-size: 2rem;
+    }
+    
+    .mtenProgramOuterBox {
+        width: 40%;
     }
 }
 
 @media (min-width: 1000px) {
+    .mtenProgramHeading {
+        font-size: 2.5rem;
+    }
+    
     .mtenProgramOuterBox {
-        width: 23%;
-    }
-    
-    .mtenProgramGoldBackBox {
-        top: -175px;
-        height: 250px;
-    }
-    
-    .mtenProgramTitleBlock {
-        bottom: 0;
+        width: 40%;
     }
 }

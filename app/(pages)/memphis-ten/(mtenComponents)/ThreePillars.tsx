@@ -24,7 +24,7 @@ export default function ThreePillars(){
             <h2
                 className={style.threePillarHeading}
             >
-                MemphisTen Approach
+                MemphisTEN Approach
             </h2>
             
             {pillars.map(({title, caption}, index) => (

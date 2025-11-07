@@ -15,7 +15,7 @@ export default function MtenMatters(){
                 <h2
                     className={style.mtenTwoColumnHeading}
                 >
-                    Why MemphisTen Matters
+                    Why MemphisTEN Matters
                 </h2>
 
                 <p
@@ -33,14 +33,26 @@ export default function MtenMatters(){
                 </Link>
 
             </div>
+
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/amLB5iVc5l8?si=uXaJpBQtfjyF-wZR" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+                className={style.mtenVideo}
+                ></iframe>
             
-            <Image
+            {/* <Image
                 src={mtenTwoColumnImage1}
                 alt={''}
                 width={300}
                 height={200}
                 className={style.mtenTwoColumnImage}
-            />
+            /> */}
         </section>
     )
 }

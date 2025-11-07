@@ -1,7 +1,7 @@
 .mainHeroSection {
     position: relative;
     width: 100%;
-    height: 80svh;
+    height: 60svh;
 }
 
 .backgroundImage {
@@ -26,11 +26,13 @@
 .heroMainHeading {
     width: 90%;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .heroSubHeading {
     width: 80%;
     text-align: center;
+    font-size: 1.125rem;
 }
 
 .heroCtaRow {
@@ -52,6 +54,7 @@
     padding: .5rem 0;
     border-radius: 10px;
     font-weight: 700;
+    font-size: 1.125rem;
 }
 
 .mainCtaBtn {
@@ -64,29 +67,84 @@
     color: var(--gold);
 }
 
-@media (min-width: 600px) {
-    .heroSubHeading {
-        margin: 0;
-    }
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 400px) {
     .heroMainHeading {
-        width: 80%;
-        font-size: 2.5rem;
+        font-size: 1.75rem;
     }
 
     .heroSubHeading {
-        width: 75%;
-        font-size: 1.8rem;
-    }
-
-    .heroCtaRow {
-        width: 70%;
+        font-size: 1.25rem;
     }
 
     .mainCtaBtn,
     .secondCtaBtn {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .heroMainHeading {
+        font-size: 2rem;
+    }
+
+    .heroSubHeading {
         font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .mainCtaBtn,
+    .secondCtaBtn {
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .mainHeroSection {
+        height: 70svh;
+    }
+
+    .heroMainHeading {
+        width: 80%;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .heroSubHeading {
+        width: 80%;
+        font-size: 1.75rem;
+        margin: 0;
+        text-align: left;
+    }
+
+    .heroCtaRow {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .mainCtaBtn,
+    .secondCtaBtn {
+        width: 250px;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mainHeroSection {
+        height: 80svh;
+    }
+
+    .heroMainHeading {
+        font-size: 3rem;
+    }
+
+    .heroSubHeading {
+        font-size: 2rem;
+    }
+
+    .mainCtaBtn,
+    .secondCtaBtn {
+        width: 350px;
+        font-size: 1.75rem;
     }
 }

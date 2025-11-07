@@ -1,34 +1,7 @@
 import style from '@/styles/mtenProgram.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-
-
-const mTenPrograms = [
-    {
-        title: 'Back Office Support',
-        desc: 'Access accounting, HR, and compliance tools to free your time for growth.',
-        ctaPath: '/',
-        backImage: '/assets/event/BCOM_Symposium_2025_Day1-4.jpg'
-    },
-    {
-        title: 'Procurement Support',
-        desc: 'Connect with corporate and government contracts.',
-        ctaPath: '/',
-        backImage: '/assets/event/BCOM_Symposium_2025_Day1-30.jpg'
-    },
-    {
-        title: 'Acquisition Program',
-        desc: 'Learn how to buy existing businesses and grow faster.',
-        ctaPath: '/',
-        backImage: '/assets/event/BCOMFinale2024NetworkingEvent-82.jpg'
-    },
-    {
-        title: 'Membership support',
-        desc: 'Mentorship, resources, and growth through Chamber programs.',
-        ctaPath: '/',
-        backImage: '/assets/event/IMG_0294.JPG'
-    }
-]
+import { mtenPrograms } from '@/lib/mtenPrograms'
 
 export default function MtenProgram(){
     return(
@@ -38,10 +11,10 @@ export default function MtenProgram(){
             <h2
                 className={style.mtenProgramHeading}
             >
-                MemphisTen Programs
+                MemphisTEN Programs
             </h2>
 
-            {mTenPrograms.map(({title, ctaPath, backImage}, index) =>(
+            {mtenPrograms.map(({title, slug, backImage}, index) =>(
                 // This is the outer box - gold banner top and grey bottom
                 <div
                     key={index}
@@ -52,7 +25,7 @@ export default function MtenProgram(){
                     ></div>
                     {/* White border block with round corners and image that is backdrop of block */}
                     <Link
-                        href={ctaPath}
+                        href={`memphis-ten/${slug}`}
                         className={style.mtenProgramWhiteBox}
                     >
                         {/* image that is set as backdrop */}

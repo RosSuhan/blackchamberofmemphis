@@ -1,0 +1,206 @@
+.teamRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    column-gap: 5%;
+    /* position: relative; */
+}
+
+.ourTeamHeading {
+    color: var(--gold);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.teamMember {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.teamMemberImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.teamMemberTitle {
+    font-size: 0.875rem;
+    padding: .3rem 0;
+    line-height: 1.5;
+}
+
+.teamMemberName {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.close {
+    display: none;
+}
+
+.memberBioBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    width: 100%;
+    padding: 2rem 0;
+
+}
+
+.closeButtonRow {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.bioMemberTitle {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.bioMemberName {
+    width: 80%;
+    font-size: 1.5rem;
+    margin: .2rem 0;
+    text-align: center;
+}
+
+.bioMemberImage {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.bioMemberText {
+    width: 80%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.closeButton {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 900;
+    background: transparent;
+    border: var(--gold) 1px solid;
+    border-radius: 20px;
+    padding: .2rem .5rem;
+}
+
+@media (min-width: 400px) {
+    .teamMemberTitle {
+        font-size: 0.9375rem;
+    }
+
+    .bioMemberText {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .ourTeamHeading {
+        font-size: 1.75rem;
+    }
+    
+    .teamMemberTitle {
+        font-size: 1rem;
+        padding: .2rem 0 .1rem 0;
+    }
+    
+    .teamMemberName {
+        font-size: 1.375rem;
+    }
+    
+    .bioMemberTitle {
+        font-size: 1.375rem;
+    }
+    
+    .bioMemberName {
+        font-size: 1.75rem;
+    }
+    
+    .bioMemberImage {
+        width: 250px;
+    }
+    
+    .bioMemberText {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .ourTeamHeading {
+        font-size: 2rem;
+    }
+    
+    .teamMember {
+        width: 220px;
+        height: 320px;
+    }
+    
+    .teamMemberTitle {
+        font-size: 1rem;
+        padding: .2rem 0 .1rem 0;
+    }
+    
+    .teamMemberName {
+        font-size: 1.5rem;
+    }
+
+    .bioMemberTitle {
+        font-size: 1.5rem;
+    }
+    
+    .bioMemberName {
+        font-size: 2rem;
+    }
+    
+    .bioMemberText {
+        font-size: 1.0625rem;
+    }
+    
+    .closeButton {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ourTeamHeading {
+        font-size: 2.5rem;
+    }
+    
+    .teamMember {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .teamMemberTitle {
+        font-size: 1.125rem;
+    }
+    
+    .teamMemberName {
+        font-size: 1.75rem;
+    }
+
+    .bioMemberTitle {
+        font-size: 1.75rem;
+    }
+    
+    .bioMemberName {
+        font-size: 2.5rem;
+    }
+    
+    .bioMemberText {
+        font-size: 1.125rem;
+    }
+}

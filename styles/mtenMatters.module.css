@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2rem 0;
+    padding: 1rem 0;
     row-gap: 2rem;
 }
 
@@ -14,20 +14,24 @@
     flex-direction: column;
     align-items: center;
 }
+
 .mtenTwoColumnHeading {
     width: 100%;
     color: var(--gold);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .mtenTwoColumnParagraph {
     text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.2;
 }
 
 .mtenTwoColumnImage {
     width: 90%;
-    height: 300px;
+    height: 200px;
     border-radius: 20px;
 }
 
@@ -40,46 +44,107 @@
     background: var(--gold);
     color: #000000;
     font-weight: 700;
+    font-size: 1.125rem;
 }
 
-@media (min-width: 600px) {
-    .mtenTwoColumnWordBlock {
-        width: 45%;
-        height: 300px;
-    }
+.mtenVideo {
+    width: 90%;
+    height: 200px;
+}
+
+@media (min-width: 400px) {
     .mtenTwoColumnHeading {
-        margin-bottom: 0;
+        font-size: 1.5rem;
     }
     
     .mtenTwoColumnParagraph {
-        margin-bottom: 3rem;
+        font-size: 0.9375rem;
     }
+
+    .mtenVideo {
+        height: 300px;
+    }
+    /* .mtenTwoColumnImage {
+        height: 250px;
+    } */
     
-    .mtenTwoColumnImage {
-        width: 45%;
+    .mainCtaBtn {
+        font-size: 1.25rem;
     }
 }
 
-@media (min-width: 1000px) {
-    .mtenTwoColumnWordBlock {
-        align-items: flex-start;
+@media (min-width: 600px) {    
+    .mtenTwoColumnHeading {
+        font-size: 1.75rem;
     }
+    
+    .mtenTwoColumnParagraph {
+        font-size: 1rem;
+    }
+    
+    .mtenVideo {
+        height: 410px;
+    }
+    /* .mtenTwoColumnImage {
+        height: 250px;
+    } */
+    
+    .mainCtaBtn {
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .mTenMattersSection {
+        justify-content: space-between;
+    }
+    
+    .mtenTwoColumnWordBlock {
+        width: 45%;
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+    
     .mtenTwoColumnHeading {
         font-size: 2rem;
         text-align: left;
     }
     
     .mtenTwoColumnParagraph {
-        font-size: 1.4rem;
-        line-height: 1.3;
         text-align: left;
+        font-size: 1.0625rem;
+    }
+
+    .mtenVideo {
+        width: 45%;
+        height: 260px;
+    }
+    /* .mtenTwoColumnImage {
+        width: 30%;
+        border-radius: 20px 0 0 20px;
+    } */
+    
+    .mainCtaBtn {
+        font-size: 1.375rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mTenMattersSection {
+        padding: 2rem 0;
     }
     
-    .mtenTwoColumnImage {
-        width: 45%;
+    .mtenTwoColumnHeading {
+        font-size: 2.5rem;
+    }
+    
+    .mtenTwoColumnParagraph {
+        font-size: 1.125rem;
+        line-height: 1.5;
     }
     
     .mainCtaBtn {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 }

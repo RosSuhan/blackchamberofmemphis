@@ -154,10 +154,12 @@
 
     .subNavList {
         width: 150px;
+        background: #ffffff;
     }
     
     .subNavItem {
         width: 100%;
+        padding-left: 1rem;
     }
     
     .navLink,

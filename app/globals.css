@@ -4,6 +4,7 @@
   --gold: #c7ac38;
   --black: #1c1c1c;
   --grey: #cacaca;
+  --overlay: #000000d6;
 }
 
 html {
@@ -20,4 +21,5 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-size: 62.5%; */
 }

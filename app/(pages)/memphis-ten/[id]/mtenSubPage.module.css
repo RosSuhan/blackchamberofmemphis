@@ -1,0 +1,352 @@
+.mtenSubPageMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mtenSubPageHeroSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mtenSubPageHeadingBlock{
+    /* position: absolute; */
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    background: #000000bb;
+    padding: 4rem 0;
+}
+
+.mtenSubPageMainHeading {
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--gold);
+    margin: 0;
+}
+
+.mtenSubPageCaptionHeading {
+    width: 80%;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.mtenSubPageHeroCTA {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.subPageHeroBackImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+
+/* section block */
+.mtenProgramSection {
+    width: 90%;
+    padding: 1rem 0;
+}
+
+.mtenEligilitySection {
+    width: 100%;
+    background: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.mtenProcessSection {
+    background: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.mtenTestimonialSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 5%;
+    overflow-x: scroll;
+    padding: 2rem 0;
+}
+
+/* section inner blocks */
+.mtenEligibilityContextBlock {
+    width: 90%;
+}
+
+.mtenTestimonialBlock {
+    min-width: 200px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #eeeeee;
+}
+
+.mtenTestimonialBlock:first-child {
+    margin-left: 1rem;
+}
+
+.mtenTestimonialBlock:last-child {
+    margin-right: 1rem;
+}
+
+/* section headings */
+.mtenProgramHeading,
+.mtenEligibilityContextHeading {
+    font-size: 1.25rem;
+    margin: 0;
+    color: var(--gold);
+    -webkit-text-stroke: #000000 .1px;
+    text-shadow: #000000 .2px .5px 2px;
+}
+
+/* section text */
+.mtenProgramTextBlock,
+.mtenEligibilityTextBlock {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-top: .5rem;
+}
+
+.mtenEligibilityTextBlock ul {
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    /* width: 70%; */
+}
+
+.mtenProcessText {
+    color: var(--gold);
+}
+
+.mtenTestimonialText,
+.mtenTestimonialNameText {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.mtenTestimonialText {
+    font-style: italic;
+}
+
+
+/* call to action buttons */
+.mtenEligibilityCtaRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.mtenEligibilityCTA {
+    background: #000000;
+    border: solid 1px var(--gold);
+    color: var(--gold);
+    padding: .5rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 800;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mtenEligibilityImage {
+    display: none;
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+}
+
+@media (min-width: 400px) {
+    .mtenSubPageMainHeading {
+        font-size: 1.75rem;
+    }
+
+    /* section headings */
+    .mtenSubPageCaptionHeading,
+    .mtenProgramHeading,
+    .mtenEligibilityContextHeading {
+        font-size: 1.5rem;
+    }
+    
+    /* section text */
+    .mtenProgramTextBlock,
+    .mtenEligibilityTextBlock {
+        font-size: 0.9375rem;
+    }
+    
+    .mtenProcessText {
+        font-size: 1.25rem;
+        letter-spacing: 1.2;
+    }
+    
+    .mtenTestimonialText,
+    .mtenTestimonialNameText {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .mtenSubPageMainHeading {
+        font-size: 2rem;
+    }
+    
+    /* section inner blocks */
+    .mtenEligibilityContextBlock {
+        width: 50%;
+        padding: 0 1rem;
+    }
+    
+    /* section headings */
+    .mtenSubPageCaptionHeading,
+    .mtenProgramHeading,
+    .mtenEligibilityContextHeading {
+        font-size: 1.75rem;
+    }
+    
+    /* section text */
+    .mtenProcessText {
+        font-size: 1.5rem;
+    }
+
+    .mtenProgramTextBlock,
+    .mtenEligibilityTextBlock,
+    .mtenTestimonialText,
+    .mtenTestimonialNameText {
+        font-size: 1rem;
+    }
+    
+    /* call to action buttons */
+    .mtenSubPageHeroCTA {
+        font-size: 1.375rem;
+    }
+    
+    .mtenEligibilityImage {
+        display: initial;
+        width: 40%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+    .mtenSubPageMainHeading {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    
+    .mtenSubPageCaptionHeading {
+        text-align: left;
+    }
+
+    /* section block */
+    .mtenProgramSection {
+        padding: 2rem 0;
+    }
+    
+    .mtenTestimonialBlock {
+        min-width: 250px;
+        max-width: 300px;
+    }
+    
+    /* section headings */
+    .mtenProgramHeading,
+    .mtenEligibilityContextHeading {
+        font-size: 2rem;
+    }
+    
+    /* section text */
+    .mtenProgramTextBlock,
+    .mtenEligibilityTextBlock {
+        font-size: 1.0625rem;
+    }
+
+    
+    .mtenTestimonialText,
+    .mtenTestimonialNameText {
+        font-size: 1.0625rem;
+    }
+    
+    .mtenEligibilityCtaRow {
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+    
+    .mtenProcessText,
+    .mtenSubPageHeroCTA,
+    .mtenEligibilityCTA {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mtenSubPageMainHeading {
+        font-size: 3rem;
+    }
+    
+    .mtenSubPageCaptionHeading {
+        text-align: left;
+    }
+
+    /* section block */
+    .mtenProgramSection {
+        padding: 3rem 0;
+    }
+    
+    /* section headings */
+    .mtenProgramHeading,
+    .mtenEligibilityContextHeading {
+        font-size: 2.5rem;
+    }
+    
+    .mtenProcessText {
+        font-size: 2rem;
+    }
+
+    .mtenProgramTextBlock,
+    .mtenEligibilityTextBlock,
+    .mtenTestimonialText,
+    .mtenTestimonialNameText {
+        font-size: 1.125rem;
+    }
+
+    /* call to action buttons */
+    .mtenSubPageHeroCTA,
+    .mtenEligibilityCTA {
+        font-size: 1.75rem;
+    }
+}

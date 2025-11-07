@@ -13,11 +13,11 @@
     width: 90%;
     text-align: center;
     color: var(--gold);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .pillarBlock {
-    width: 250px;
+    width: 90%;
     background: var(--gold);
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 }
 
 .pillarBlockTitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0;
 }
 
@@ -36,23 +36,67 @@
     width: 80%;
     margin: 0;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.875rem;
     line-height: 1.3;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 400px) {
     .threePillarHeading {
-        text-align: left;
+        font-size: 1.5rem;
+    }
+    
+    .pillarBlockTitle {
+        font-size: 1.5rem;
+    }
+    
+    .pillarBlockCaption {
+        font-size: 0.9375rem;
+    }    
+}
+
+@media (min-width: 600px) {
+    .threePillarHeading {
+        font-size: 1.75rem;
+    }
+    
+    .pillarBlockTitle {
+        font-size: 1.75rem;
+    }
+    
+    .pillarBlockCaption {
+        font-size: 1rem;
+    }    
+}
+
+@media (min-width: 800px) {
+    .threePillarHeading {
         font-size: 2rem;
     }
     
     .pillarBlock {
-        width: 320px;
-        justify-content: flex-start;
-        padding: 1.5rem 0;
+        width: 30%;
+        height: 100px;
+    }
+    
+    .pillarBlockTitle {
+        font-size: 2rem;
     }
     
     .pillarBlockCaption {
-        width: 90%;
+        font-size: 1.0625rem;
+    }    
+}
+
+@media (min-width: 1000px) {
+    .threePillarHeading {
+        font-size: 2.5rem;
     }
+    
+    .pillarBlockTitle {
+        font-size: 2.5rem;
+    }
+    
+    .pillarBlockCaption {
+        font-size: 1.125rem;
+    }    
 }

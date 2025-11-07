@@ -37,6 +37,7 @@ export default function Header(){
                     width={100}
                     height={50}
                     className={style.headerLogo}
+                    loading={'eager'}
                 />
             </Link>
 
@@ -79,6 +80,10 @@ export default function Header(){
                                                 <Link
                                                     href={sub.path}
                                                     className={style.navLink}
+                                                    onClick={() => {
+                                                        handleSubMenuToggle(menuItem.name)
+                                                        setMenuOpen(false)
+                                                    }}
                                                 >
                                                     {sub.name}
                                                 </Link>
@@ -93,7 +98,7 @@ export default function Header(){
 
                     <li>
                         <a 
-                            href="/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
+                            href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
                             className={style.navCTALink}
                         >
                             JOIN BCOM
