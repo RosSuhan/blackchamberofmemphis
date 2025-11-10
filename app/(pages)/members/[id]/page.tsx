@@ -62,6 +62,11 @@ export default function MembersPage(){
                                 height={25}
                                 className={style.memberContactIcon}
                             />
+                            <span
+                                className={style.memberContactLinkText}
+                            >
+                                {selectedMember.telNumber}
+                            </span>
                         </a>
                     : null}
 
@@ -75,6 +80,11 @@ export default function MembersPage(){
                                 height={25}
                                 className={style.memberContactIcon}
                             />
+                            <span
+                                className={style.memberContactLinkText}
+                            >
+                                {selectedMember.email}
+                            </span>
                         </a>
                     : null}
 
@@ -88,12 +98,17 @@ export default function MembersPage(){
                                 height={25}
                                 className={style.memberContactIcon}
                             />
+                            <span
+                                className={style.memberContactLinkText}
+                            >
+                                {selectedMember.address}
+                            </span>
                         </a>
                     : null}
 
                     {selectedMember.website?
                         <a 
-                            href=""
+                            href={selectedMember.website}
                             className={style.memberContactLink}
                         >
                             <GlobeOutline
@@ -101,6 +116,11 @@ export default function MembersPage(){
                                 height={25}
                                 className={style.memberContactIcon}
                             />
+                            <span
+                                className={style.memberContactLinkText}
+                            >
+                                {selectedMember.website}
+                            </span>
                         </a>
                     : null}
                 </div>

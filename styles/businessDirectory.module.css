@@ -5,6 +5,7 @@
     align-items: center;
 }
 
+.busSubCategorySection,
 .busDirectorySection {
     width: 95%;
     display: flex;
@@ -12,6 +13,34 @@
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 2rem 0;
-    row-gap: 2rem;
+    row-gap: 1rem;
     column-gap: 2%;
+}
+
+.categorieLink {
+    width: 90%;
+    background: #000000;
+    color: var(--gold);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: solid 3px var(--gold);
+    border-radius: 8px;
+}
+
+@media (min-width: 1000px) {
+    .busSubCategorySection {
+        justify-content: space-between;
+    }
+
+    .categorieLink {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .categorieLink {
+        width: 28%;
+    }
 }

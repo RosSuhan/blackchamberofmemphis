@@ -1,21 +1,16 @@
-// import { allMembers } from '@/lib/members/index'
-import { businessList } from '@/lib/members'
-
-
-import BusinessBlock from "@/components/directoryComponents/BusinessBlock"
 import PageTitleSection from "@/components/pageTitleSection/page"
 import style from '@/styles/businessDirectory.module.css'
-
+import Link from "next/link"
+import { categories } from '@/lib/categories'
 
 export default function BusinessDirectory(){
 
-    console.log(businessList)
     return(
         <main
             className={style.businessDirectoryPage}
         >
             <PageTitleSection
-                pageTitle="Directory:"
+                pageTitle="All Categories:"
             />
 
             {/* searchBar */}
@@ -23,15 +18,16 @@ export default function BusinessDirectory(){
             <section
                 className={style.busDirectorySection}
             >
-                {businessList.map((business) => (
-                    <BusinessBlock
-                        key = {business.id}
-                        blockPath = {business.id}
-                        blockImage = {business.profileLogo}
-                        businessTitle = {business.businessName}
-                        businessDescription = {business.profileDescription}
-                    />
+                {categories.map(({name, id}, index) => (
+                    <Link
+                        key={index}
+                        href={"/business-directory/" + id}
+                        className={style.categorieLink}
+                    >
+                        {name}
+                    </Link>
                 ))}
+                    
             </section>
         </main>
     )

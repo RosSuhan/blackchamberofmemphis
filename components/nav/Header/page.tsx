@@ -55,6 +55,7 @@ export default function Header(){
                             <Link
                                 href={menuItem.path}
                                 className={style.navLink}
+                                onClick={() => setMenuOpen(false)}
                             >
                                 {menuItem.name}
                             </Link>

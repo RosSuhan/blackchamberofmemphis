@@ -4,7 +4,8 @@
 //     bannerImage : "",
 //     profileLogo : "",
 //     profileDescription : "",
-//     profileCategory : "",
+//    profileCategory : "",
+    // profileSubCategory : [],
 //     profileBusinessDescription : ``,
 //     gallery : [
 //         {

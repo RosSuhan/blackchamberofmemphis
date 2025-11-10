@@ -1,102 +1,127 @@
 .businessBlockLink {
     background: #eeeeee;
-    width: 60%;
+    width: 95%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    text-decoration: none;
-    border-radius: 20px 20px 0 0;
-    box-shadow: #000000 5px 5px 30px;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 2px var(--gold);
+    box-shadow: var(--gold) 1px 1px 5px;
+    padding: 2rem 0;
+    row-gap: 1rem;
+}
+
+.businessLogoBlock {
+    border-radius: 30px;
+    width: 60%;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--gold) solid 1px;
 }
 
 .businessBlockImage {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+.businessDescBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.businessNameLink {
     width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    text-decoration: none;
 }
 
 .businessBlockName {
-    width: 90%;
+    width: 100%;
     color: var(--gold);
-    font-size: 1.125rem;
-    margin: .8rem 0 .4rem 0;
-    text-wrap: wrap;
+    font-size: 1.25rem;
 }
 
 .businessBlockDesc {
-    width: 90%;
     font-size: 1rem;
     line-height: 1.5;
-    text-align: center;
-    margin: 0;
+    border-top: solid var(--gold) 1px;
+    padding-top: .8rem;
+}
+
+.businessContactBlock{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.businessContactBlockLink {
+    border: solid var(--gold) .2px;
+    width: 90%;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
     color: #000000;
-    padding-bottom: .7rem;
+    text-decoration: none;
+    font-size: .875rem;
 }
 
-.businessBlockBanner {
-    width: 100%;
-    background: #000000;
+.contactIcon {
     color: var(--gold);
-    text-align: center;
-    padding: .8rem 0;
-    font-size: 1rem;
-    font-weight: 800;
-    border-bottom: var(--gold) 5px solid;
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: .2rem;
 }
 
-@media (min-width: 400px) {
-    .businessBlockLink {
-        width: 45%;
-    }
-    
-    .businessBlockName {
-        font-size: 1.25rem;
-    }
-    
-    .businessBlockBanner {
-        font-size: 1.125rem;
-    }    
+.viewProfile {
+    width: 90%;
+    background-color: #000000;
+    color: var(--gold);
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 5px;
 }
 
 @media (min-width: 600px) {
-    .businessBlockLink {
-        width: 31%;
+    .businessContactBlock{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     
-    .businessBlockName {
-        font-size: 1.375rem;
+    .businessContactBlockLink {
+        width: 45%;
     }
-    
-    .businessBlockBanner {
-        font-size: 1.25rem;
-    }    
 }
 
 @media (min-width: 800px) {
     .businessBlockLink {
-        width: 30%;
-    }
-
-    .businessBlockImage {
-        height: 130px;
+        justify-content: space-evenly;
     }
     
-    .businessBlockName {
-        font-size: 1.5rem;
+    .businessLogoBlock {
+        width: 15%;
     }
     
-    .businessBlockDesc {
-        font-size: 1.0625rem;
+    .businessDescBlock {
+        width: 50%;
     }
-}
-
-@media (min-width: 1000px) {
-    .businessBlockLink {
-        width: 23%;
+    
+    .businessContactBlock{
+        width: 20%;
     }
-
-    .businessBlockImage {
-        height: 150px;
+    
+    .businessContactBlockLink {
+        width: 90%;
     }
 }
