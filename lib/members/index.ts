@@ -26,8 +26,17 @@
 //     email : "",
 //     website : "",
 //     telNumber : "",
-//     facebook : ""
+    // facebook : "",
+    // instagram : "",
+    // youtube : "",
+    // linkedIn : "",
+    // linktree : "",
+    // twitter: "",
+    // tiktok : ""
 // }
+
+import { blackMenOfMemphis } from './100blackMenOfMemphis'
+import { DreamLife } from './1800DreamLife'
 
 import { abundantLifeWellnessSolutions } from './abundantLifeWellnessSolutions'
 import { beaconOfHope } from './beaconOfHope'
@@ -38,10 +47,17 @@ import { bluffCityParties } from './bluffCityParties'
 import { boatrightConsulting } from './boatrightConsulting'
 import { carisCloset } from './carisCloset'
 import { christieTaylorConsulting } from './christieTaylorConsulting'
+import { cherrylPigues } from './cherrylPigues'
+import { certifiedDefendersOfAmerica } from './certifiedDefendersOfAmerica'
+import { dbkStudios } from './dbkStudios'
+import { dbosElvisPresley } from './dbosElvisPresley'
 
 
 
 export const businessList = [
+    blackMenOfMemphis,
+    DreamLife,
+
     abundantLifeWellnessSolutions,
     beaconOfHope,
     adrVacations,
@@ -50,5 +66,10 @@ export const businessList = [
     bluffCityParties,
     boatrightConsulting,
     carisCloset,
-    christieTaylorConsulting
+    christieTaylorConsulting,
+    cherrylPigues,
+    certifiedDefendersOfAmerica,
+    dbkStudios,
+    dbosElvisPresley,
+
 ]

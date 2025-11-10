@@ -15,12 +15,12 @@ export default function BusinessBlock({key, blockPath, blockImage, businessTitle
     
     return (
         <Link
-            href={'/business-directory/' + blockPath}
+            href={'/members/' + blockPath}
             className={style.businessBlockLink}
             key={key}
         >
             <Image
-                src={'/members/' + blockImage}
+                src={'/members/' + blockImage + '.webp'}
                 alt=""
                 width={325}
                 height={200}
