@@ -46,6 +46,11 @@
     .wordParagraph {
         font-size: 0.9375rem;
     }
+
+    .wordBlockImage {
+        object-fit: cover;
+        height: 350px;
+    }
 }
 
 @media (min-width: 600px) {
@@ -69,29 +74,31 @@
     }
 
     .wordInformation {
-        width: 55%;
+        width: 65%;
+        margin-left: 2rem;
     }
 
     .wordHeader {
-        width: 80%;
+        width: 95%;
         font-size: 2rem;
+        margin: 0;
     }
 
     .wordParagraph {
-        width: 80%;
+        width: 95%;
         font-size: 1.0625rem;
     }
 
     .wordBlockImage {
-        object-fit: cover;
-        width: 45%;
-        height: 880px;
+        width: 30%;
+        height: 630px;
     }
 }
 
 @media (min-width: 1000px) {
     .wordHeader {
         font-size: 2.5rem;
+        margin-top: 1rem;
     }
 
     .wordParagraph {
@@ -99,6 +106,6 @@
     }
 
     .wordBlockImage {
-        height: 850px;
+        height: 580px;
     }
 }
