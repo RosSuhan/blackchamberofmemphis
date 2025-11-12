@@ -1,0 +1,92 @@
+.homepageDirectorySection {
+    background-image: url(/assets/backgroundImage1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homepageOverlay {
+    width: 100%;
+    background: var(--overlay);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 3rem 0;
+}
+
+.homepageDirectoryHeadingBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.homepageDirectoryHeading {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+}
+
+.horizontalLine {
+    width: 50%;
+}
+
+.homepageDirectoryButtonBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepageDirectoryButtonBlockHeading {
+    color: #ffffff;
+}
+
+.homepageDirectoryButtonLink {
+    text-decoration: none;
+    color: #ffffff;
+    border: solid #ffffff 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+@media (min-width: 400px) {
+    .homepageDirectoryHeading {
+        width: 70%;
+    }
+
+    .horizontalLine {
+        width: 40%;
+    }
+
+    .homepageDirectoryButtonBlock {
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .horizontalLine {
+        width: 30%;
+    }
+}
+
+@media (min-width: 800px) {
+    .horizontalLine {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .homepageOverlay {
+        row-gap: 2rem;
+        padding: 5rem 0;
+    }
+
+    .horizontalLine {
+        width: 15%;
+    }
+}

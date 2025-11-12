@@ -1,0 +1,102 @@
+.homeHeroSection {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url(/assets/linkButton1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homeHeroOverlay {
+    background: var(--overlay);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+}
+
+.homeHeroLogo {
+    width: 70dvw;
+    height: auto;
+    object-fit: contain;
+    margin-top: -4rem;
+}
+
+.homeHeroHeading {
+    color: #ffffff;
+    text-align: center;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.homeheroWhiteCurve {
+    background: #ffffff;
+    clip-path: polygon(100% 100%, 0% 100% , 0.00% 42.22%, 4.00% 44.73%, 8.00% 47.20%, 12.00% 49.58%, 16.00% 51.86%, 20.00% 53.98%, 24.00% 55.91%, 28.00% 57.63%, 32.00% 59.11%, 36.00% 60.32%, 40.00% 61.24%, 44.00% 61.87%, 48.00% 62.18%, 52.00% 62.18%, 56.00% 61.87%, 60.00% 61.24%, 64.00% 60.32%, 68.00% 59.11%, 72.00% 57.63%, 76.00% 55.91%, 80.00% 53.98%, 84.00% 51.86%, 88.00% 49.58%, 92.00% 47.20%, 96.00% 44.73%, 100.00% 42.22%);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -1;
+}
+
+@media (min-width: 400px) {
+    .homeHeroSection {
+        height: 550px;
+    }
+    
+    .homeHeroLogo {
+        width: 50dvw;
+    }
+    
+    .homeHeroHeading {
+        text-wrap: balance;
+        font-size: 1.75rem;
+    }
+    
+    .homeheroWhiteCurve {
+        bottom: -2;
+    }
+}
+
+@media (min-width: 600px) {
+    .homeHeroHeading {
+        width: 70%;
+        font-size: 2rem;
+    }
+    
+    .homeheroWhiteCurve {
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 24.75%, 4.00% 29.41%, 8.00% 33.99%, 12.00% 38.42%, 16.00% 42.64%, 20.00% 46.58%, 24.00% 50.17%, 28.00% 53.36%, 32.00% 56.10%, 36.00% 58.35%, 40.00% 60.06%, 44.00% 61.22%, 48.00% 61.81%, 52.00% 61.81%, 56.00% 61.22%, 60.00% 60.06%, 64.00% 58.35%, 68.00% 56.10%, 72.00% 53.36%, 76.00% 50.17%, 80.00% 46.58%, 84.00% 42.64%, 88.00% 38.42%, 92.00% 33.99%, 96.00% 29.41%, 100.00% 24.75%);
+    }
+}
+
+@media (min-width: 800px) {
+    .homeHeroSection {
+        height: 600px;
+    }
+    
+    .homeHeroLogo {
+        width: 40dvw;
+    }
+    
+    .homeHeroHeading {
+        width: 60%;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .homeHeroSection {
+        height: 650px;
+    }
+    
+    .homeHeroHeading {
+        font-size: 3rem;
+    }
+    
+    .homeheroWhiteCurve {
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 16.67%, 4.00% 24.60%, 8.00% 32.42%, 12.00% 39.98%, 16.00% 47.18%, 20.00% 53.89%, 24.00% 60.02%, 28.00% 65.47%, 32.00% 70.14%, 36.00% 73.97%, 40.00% 76.90%, 44.00% 78.88%, 48.00% 79.88%, 52.00% 79.88%, 56.00% 78.88%, 60.00% 76.90%, 64.00% 73.97%, 68.00% 70.14%, 72.00% 65.47%, 76.00% 60.02%, 80.00% 53.89%, 84.00% 47.18%, 88.00% 39.98%, 92.00% 32.42%, 96.00% 24.60%, 100.00% 16.67%);
+    }
+}

@@ -1,20 +1,24 @@
 // import Image from "next/image";
 
+import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/HomepageMemberDirectoryCTArow";
 import StayInformedSection from "@/components/forms/stayInformed";
+import HomeHero from "@/components/heroSections/HomeHero";
 import Partners from "@/components/partners/page";
+import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
+import WhoWeAre from "@/components/whoWeAre/page";
 
 export default function Home() {
   return (
     <section>
-      {/* heroblock with video playing in background, overlayed with dark transparent overlay, logo and "INVESTING WHERE IT'S NEEDED MOST" */}
+      <HomeHero/>
 
-      {/* WHO WE ARE - 2 column block with words left and video right; learn more button leading to About Us Page */}
+      <WhoWeAre/>
 
-      {/* section with 3 link blocks (What we do; How we help; join BCOM) */}
+      <ThreeLinkBlock/>
 
       {/* block with buttons for news, events */}
 
-      {/* Section for member directory with buttons - join the directory and search the directory */}
+      <HomepageMemberDirectoryCTArow/>
 
       <Partners/>
 
