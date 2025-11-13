@@ -1,12 +1,12 @@
 .contactUsMain {
-    background-image: url(/assets/event/DSC01939.jpg);
+    background-image: url(/assets/BCM-Logo_Black-Pattern.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .contactUsOverlay {
-    background: var(--overlay);
+    background: #00000072;
     display: flex;
     flex-direction: column;
     align-items: center;

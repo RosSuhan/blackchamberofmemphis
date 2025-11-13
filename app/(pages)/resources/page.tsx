@@ -1,0 +1,118 @@
+'use client'
+import PageTitleSection from "@/components/pageTitleSection/page";
+import { resources } from "@/lib/resources"
+import Link from "next/link";
+import style from '@/styles/resourcesMain.module.css'
+import Image from "next/image";
+import { useState } from "react";
+import { ChevronDown } from "@/components/icons/ChevronDown";
+import { ChevronUp12 } from "@/components/icons/ChevronUp";
+import { clsx } from "clsx";
+
+const details = [
+    {
+        tab: "Small Business Administration",
+        content: `<p>The SBA helps entrepreneurs and existing owners to start, build, or grow their businesses. For details on all SBA programs and services, which include information on financing, loan applications, government regulations and licensing, please visit the website at <a href="http://www.sba.gov">http://www.sba.gov</a>, or call the Tennessee District Office at <a href="tel+16157365881">(615) 736-5881</a>.</p>`
+    },{
+        tab: "Tennessee Small Business Development Center",
+        content: `<p>Provides counseling, business planning and marketing assistance, training and cash flow analysis to start-up entrepreneurs and existing business owners. TSBDC is a network of professional business consultants that prides itself on providing expert business advice to all types of businesses. For more information visit <a href="https://tsbdc.org">www.tsbdc.org</a>.</p>`
+    },{
+        tab: "Memphis Area Minority Contractors Association",
+        content: `<p>Established in 1974 to assist minority and women contractors in the greater Memphis area. MAMCA's goal is to bring contractors together for a brighter future. Technical assistance, training, access to plans and support are offered in all phases of construction. For more detailed information visit <a href="www.memphisminoritycontractors.com">www.memphisminoritycontractors.com</a></p>`
+    },{
+        tab: "City of Memphis Office of Business Diversity and Compliance",
+        content: `<p>The mission of the Office of Business Diversity and Compliance is to increase participation of minority and women-owned business enterprises in the full array of contracting opportunities available in the City of Memphis. For more detailed information visit <a href="https://www.memphisobdc.org/">https://www.memphisobdc.org/</a>.</p>`
+    }
+]
+
+
+export default function Resources(){
+    const [detailsOpen, setDetailsOpen] = useState<string | null>(null)
+
+    return(
+        <main>
+            <PageTitleSection
+                pageTitle="Resources"
+            />
+
+            <section
+                className={style.detailsSection}
+            >
+                <div
+                    className={style.detailsBlock}
+                >
+                    {details.map(({tab, content},z) => (
+                        <div
+                            key={z}
+                            className={style.details}
+                        >
+                            <h2
+                                className={style.detailsHeading}
+                                onClick={() => setDetailsOpen(detailsOpen === tab ? null : tab)}
+                            >
+                                {tab}
+
+                                <div
+                                    className={style.chevBlock}
+                                >
+                                    <ChevronDown
+                                        className={clsx(style.chev, detailsOpen === tab && style.close)}
+                                        
+                                    />
+
+                                    <ChevronUp12
+                                        className={clsx(style.chev, detailsOpen !== tab && style.close)}
+                                    />
+                                </div>
+                                
+                            </h2>
+
+                            <div 
+                                dangerouslySetInnerHTML={{__html: content}} 
+                                className={clsx(style.detailsContent, detailsOpen !== tab && style.close)}
+                            />
+                        </div>
+                    ))}
+                </div>
+
+                <Image
+                    src={'/resources/resourcesImage.webp'}
+                    alt="Resources Decorative Image"
+                    width={1250}
+                    height={1700}
+                    className={style.detailsImage}
+                />
+            </section>
+
+            <section
+                className={style.linksSection}
+            >
+                <h2
+                    className={style.linksHeading}
+                >
+                    Insurance Resources Links
+                </h2>
+
+                <div
+                    className={style.linksButtonRow}
+                >
+                    {resources.map(({id, image}, index)=> (
+                        <Link
+                            key={index}
+                            href={'/resources/' + id}
+                            className={style.linksButton}
+                        >
+                            <Image
+                                src={image}
+                                alt=""
+                                width={1200}
+                                height={960}
+                                className={style.linksButtonImage}
+                            />
+                        </Link>
+                    ))}
+                </div>
+            </section>
+        </main>
+    )
+}
