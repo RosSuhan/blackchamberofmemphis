@@ -109,21 +109,22 @@
 }
 
 @media (min-width: 800px) {
+    .mtenProgramSection {
+        padding-bottom: 3rem;
+    }
+
     .mtenProgramHeading {
         font-size: 2rem;
     }
     
     .mtenProgramOuterBox {
-        width: 40%;
+        width: 30%;
+        margin: 1rem 2rem;
     }
 }
 
 @media (min-width: 1000px) {
     .mtenProgramHeading {
         font-size: 2.5rem;
-    }
-    
-    .mtenProgramOuterBox {
-        width: 40%;
     }
 }

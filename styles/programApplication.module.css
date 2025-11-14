@@ -1,0 +1,14 @@
+.applicationPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applicationPageTitleSection {
+    width: 100;
+    background-color: purple;
+}
+
+.applicationTitle {
+    background-color: green;
+}

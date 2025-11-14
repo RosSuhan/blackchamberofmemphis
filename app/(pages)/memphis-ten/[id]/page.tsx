@@ -14,7 +14,7 @@ export default function SubPage(){
 
     const progDescText = selectedProgram?.progDesc;
     const eligibilityText = selectedProgram?.eligibility;
-    const progOverviewText = selectedProgram?.progOverview
+    // const progOverviewText = selectedProgram?.progOverview
     const testimonials = selectedProgram?.success
 
 
@@ -43,7 +43,7 @@ export default function SubPage(){
                     </h2>
                     
                     <Link
-                        href={selectedProgram.formLink || ''}
+                        href={`/memphis-ten/${id}/application`}
                         className={style.mtenSubPageHeroCTA}
                     >
                         Apply Today
@@ -73,6 +73,18 @@ export default function SubPage(){
                 />
             </section>
 
+
+            {/* process overview */}
+            <section
+                className={style.mtenProcessSection}
+            >
+                <span
+                    className={style.mtenProcessText}
+                >
+                    Apply &#8594; Assessment &#8594; Support &#8594; Scale
+                </span>
+            </section>
+
             {/* eligibility */}
             <section
                 className={style.mtenEligilitySection}
@@ -94,7 +106,7 @@ export default function SubPage(){
                         className={style.mtenEligibilityCtaRow}
                     >
                         <Link
-                            href={selectedProgram.formLink || ''}
+                            href={`/memphis-ten/${id}/application`}
                             className={style.mtenEligibilityCTA}
                         >
                             Apply Today
@@ -110,42 +122,26 @@ export default function SubPage(){
                 />
             </section>
 
-            {/* process overview */}
-            <section
-                className={style.mtenProcessSection}
-            >
-                <span
-                    className={style.mtenProcessText}
-                >
-                    Apply &#8594; Assessment &#8594; Support &#8594; Scale
-                </span>
-            </section>
 
             {/* success story */}
-            {testimonials? 
-            <section
-                className={style.mtenTestimonialSection}
-            >
-                {testimonials.map(({participant, testimony}) => (
-                    <div
-                        className={style.mtenTestimonialBlock}
-                        key={participant}
-                    >
-                        <p
-                            className={style.mtenTestimonialText}
-                        >
-                            {`"${testimony}"`}
-                        </p>
-                        <span
-                            className={style.mtenTestimonialNameText}
-                        >
-                            {participant}
-                        </span>
-                    </div>
-                ))}
-            </section> : null}
 
-
+            {Array.isArray(testimonials) && testimonials.length > 0 && (
+                <section className={style.mtenTestimonialSection}>
+                    {testimonials.map(({participant, testimony}) => (
+                        <div
+                            className={style.mtenTestimonialBlock}
+                            key={participant}
+                        >
+                            <p className={style.mtenTestimonialText}>
+                                {`"${testimony}"`}
+                            </p>
+                            <span className={style.mtenTestimonialNameText}>
+                                {participant}
+                            </span>
+                        </div>
+                    ))}
+                </section>
+            )}
             {/* cta */}
         </main>
     )

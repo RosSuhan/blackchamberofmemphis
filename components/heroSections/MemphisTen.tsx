@@ -2,7 +2,7 @@
 import style from '@/styles/mainHero.module.css'
 import Image from 'next/image';
 import Link from "next/link";
-import MemphisTenHeroBackgroundImage from '@/public/assets/event/BCOMFinale2024NetworkingEvent-19.jpg'
+import MemphisTenHeroBackgroundImage from '@/public/assets/bcom-website-backgrounds.webp'
 
 
 export default function MemphisTenHero(){

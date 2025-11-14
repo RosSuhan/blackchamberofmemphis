@@ -36,12 +36,14 @@ export default function OurTeam(){
                 </h2>
 
                 {team.map(({first_name, last_name, title, image, bio}) => (
-                    <>
+                    <div
+                        key={first_name}
+                    >
                         <div
                             onClick={() => handleMemberBioToggle(first_name)}
                             className={style.teamMember}
                             // className={clsx(style.teamMember, memberBio === first_name && style.close)}
-                            key={first_name}
+                            
                         >
                             {/* image */}
                             <Image
@@ -104,7 +106,7 @@ export default function OurTeam(){
                                 dangerouslySetInnerHTML={{__html: bio}}
                             />
                         </div>
-                    </>
+                    </div>
                 ))}
             </section>
 

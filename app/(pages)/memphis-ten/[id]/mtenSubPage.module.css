@@ -77,7 +77,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
 }
 
 .mtenProcessSection {
@@ -259,6 +259,7 @@
     .mtenEligibilityImage {
         display: initial;
         width: 40%;
+        height: 200px;
         border-radius: 10px;
     }
 }
@@ -310,6 +311,11 @@
     .mtenSubPageHeroCTA,
     .mtenEligibilityCTA {
         font-size: 1.5rem;
+    }
+
+    .mtenEligibilityImage {
+        width: 40%;
+        height: 300px;
     }
 }
 
