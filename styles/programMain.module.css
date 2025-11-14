@@ -1,0 +1,220 @@
+.programRow,
+.reverse {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.programWordBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programImageBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programGoldText {
+    width: 90%;
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.programHeading {
+    width: 90%;
+    margin: .2rem 0;
+    font-size: 1.25rem;
+}
+
+.programText {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.detailRow {
+    width: 90%;
+}
+
+.detailHeading,
+.active {
+    width: 100%;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active {
+    color: var(--gold);
+}
+
+.chevBlock {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.chev {
+    display: initial;
+    width: 20px;
+    height: 20px;
+}
+
+.detailParagraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.close {
+    display: none;
+}
+
+.programImage {
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.programCTA,
+.detailParagraph a  {
+    background: var(--gold);
+    margin: 2rem 0 0 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+}
+
+.programCTA {
+    font-size: 1.25rem;
+    padding: .8rem 1.5rem;
+    text-wrap: balance;
+}
+
+.detailParagraph a {
+    padding: .5rem; 
+}
+
+.programButtonCaption {
+    text-align: center;
+}
+
+@media (min-width: 400px) {
+    .programGoldText {
+        font-size: 1.2rem;
+    }
+
+    .programHeading {
+        font-size: 1.5rem;
+    }
+
+    .detailHeading,
+    .active {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .programGoldText {
+        font-size: 1.25rem;
+    }
+
+    .programHeading {
+        font-size: 1.75rem;
+    }
+
+    .detailHeading,
+    .active {
+        font-size: 1.375rem;
+    }
+
+    .programCTA {
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .programWordBlock {
+        width: 50%;
+    }
+
+    .programImageBlock {
+        width: 50%;
+    }
+
+    .programImage {
+        object-fit: cover;
+        width: 80%;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .programCTA,
+    .detailParagraph a  {
+        width: 60%;
+    }
+
+    .programCTA {
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .programGoldText {
+        font-size: 1.5rem;
+    }
+
+    .programHeading {
+        font-size: 2rem;
+    }
+
+    .detailHeading,
+    .active {
+        font-size: 1.5rem;
+    }
+
+    .programImage {
+        height: 300px;
+    }
+
+    .programCTA {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .programGoldText {
+        font-size: 1.5rem;
+    }
+
+    .programHeading {
+        font-size: 2rem;
+    }
+
+    .detailHeading,
+    .active {
+        font-size: 1.5rem;
+    }
+
+    .programCTA {
+        font-size: 1.5rem;
+    }
+}
