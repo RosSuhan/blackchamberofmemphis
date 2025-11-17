@@ -1,7 +1,7 @@
 .mainHeroSection {
     position: relative;
     width: 100%;
-    height: 60svh;
+    height: 450px;
 }
 
 .backgroundImage {
@@ -48,7 +48,7 @@
 
 .mainCtaBtn,
 .secondCtaBtn {
-    width: 250px;
+    width: 300px;
     text-decoration: none;
     text-align: center;
     padding: .5rem 0;
@@ -79,6 +79,7 @@
     .mainCtaBtn,
     .secondCtaBtn {
         font-size: 1.25rem;
+        /* width: 300px; */
     }
 }
 
@@ -95,6 +96,7 @@
     .mainCtaBtn,
     .secondCtaBtn {
         font-size: 1.375rem;
+        width: 320px;
     }
 }
 
@@ -104,26 +106,27 @@
     }
 
     .heroMainHeading {
-        width: 80%;
+        width: 90%;
         font-size: 2.5rem;
         text-align: left;
     }
 
     .heroSubHeading {
-        width: 80%;
+        width: 90%;
         font-size: 1.75rem;
         margin: 0;
         text-align: left;
     }
 
     .heroCtaRow {
-        width: 80%;
+        width: 90%;
         justify-content: flex-start;
+        /* background-color: purple; */
     }
 
     .mainCtaBtn,
     .secondCtaBtn {
-        width: 250px;
+        /* width: 250px; */
         margin-right: 2rem;
         font-size: 1.5rem;
     }
@@ -144,7 +147,7 @@
 
     .mainCtaBtn,
     .secondCtaBtn {
-        width: 350px;
+        width: 400px;
         font-size: 1.75rem;
     }
 }

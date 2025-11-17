@@ -1,0 +1,148 @@
+.supportMatterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--grey);
+    padding: 2rem 0;
+}
+
+.supportMatterHeading {
+    font-size: 1.25rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.supportMatterParagraph {
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.supportMatterBlockRow {
+    width: 90dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supportMatterFlipBlock {
+    width: 70%;
+    height: 230px;
+}
+
+.supportMatterBlock {
+    width: 82%;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+    transform: translateX(-15px);
+}
+
+.supportMatterBlockHeading,
+.supportMatterBlockWords {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+.supportMatterBlockHeading {
+    background: var(--gold);
+    font-weight: 900;
+    transform: rotateY(0deg);
+    font-size: 1.5rem;
+}
+
+.supportMatterBlockWords {
+    background: #000000;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.supportMatterBlock:hover .supportMatterBlockHeading {
+    transform: rotateY(-180deg);
+}
+
+.supportMatterBlock:hover .supportMatterBlockWords {
+    transform: rotateY(0deg);
+}
+
+@media (min-width: 400px) {
+    .supportMatterHeading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .supportMatterHeading {
+        font-size: 1.75rem;
+    }
+    
+    .supportMatterBlockHeading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .supportMatterSection {
+        padding: 2rem 0 4rem 0;
+    }
+
+    .supportMatterHeading {
+        font-size: 2rem;
+    }
+    
+    .supportMatterBlockRow {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .supportMatterFlipBlock {
+        width: 30%;
+        height: 200px;
+    }
+    
+    .supportMatterBlock {
+        width: 90%;
+        height: 140px;
+    }
+    
+    .supportMatterBlockHeading,
+    .supportMatterBlockWords {
+        padding: 2rem 1rem;
+    }
+    
+    .supportMatterBlockHeading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .supportMatterHeading {
+        font-size: 2.5rem;
+    }
+    
+    .supportMatterParagraph {
+        font-size: 1.125rem;
+    }
+    
+    .supportMatterBlockHeading {
+        font-size: 2rem;
+    }
+}

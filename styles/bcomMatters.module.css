@@ -1,0 +1,95 @@
+.bcomMatterSection {
+    background: var(--grey);
+    padding: 2.5rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}   
+
+.bcomMatterWordBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bcomMattersGoldHeading {
+    color: var(--gold);
+    font-weight: 800;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.bcomMatterHeading {
+    font: 1.25rem;
+    width: 100%;
+    margin: 0;
+}
+
+.bcomMatterParagraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.bcomMattersImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (min-width: 400px) {
+    .bcomMatterSection {
+        padding: 2.5rem 0 1.5rem 0;
+    }
+
+    .bcomMatterHeading {
+        font: 1.5rem;
+    }
+
+    .bcomMattersImage {
+        width: 70%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .bcomMatterHeading {
+        font: 1.75rem;
+    }
+
+    .bcomMattersImage {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .bcomMatterWordBlock {
+        width: 45%;
+    }
+
+    .bcomMatterHeading {
+        font: 2rem;
+    }
+    
+    .bcomMatterParagraph {
+        font-size: 1.2rem;
+    }
+
+    .bcomMattersImage {
+        width: 40%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1000px) {
+    .bcomMatterHeading {
+        font: 2.5rem;
+    }
+
+    .bcomMattersImage {
+        height: 350px;
+    }
+}

@@ -1,14 +1,64 @@
 .applicationPage {
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .applicationPageTitleSection {
-    width: 100;
-    background-color: purple;
+    width: 90%;
 }
 
 .applicationTitle {
-    background-color: green;
+    font-size: 1.5rem;
+}
+
+.applicationFormSection {
+    width: 90%;
+    padding: 1rem 0 1.5rem 0;
+}
+
+.applicationForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.applicationFormFieldset {
+    width: 90%;
+    border: none;
+}
+
+.applicationFormLegend {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.applicationFormInput,
+.applicationFormTextArea {
+    width: 95%;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.applicationFormCheckrow {
+    padding: .2rem 0;
+}
+
+.applicationFormCheckBox {
+    margin-right: .5rem;
+}
+
+.applicationFormSpan {
+    font-size: .75rem;
+}
+
+.applicationFormSubmit {
+    background: var(--gold);
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: .5rem;
 }
