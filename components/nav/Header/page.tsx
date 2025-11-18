@@ -99,6 +99,15 @@ export default function Header(){
 
                     <li>
                         <a 
+                            href="/case-support"
+                            className={style.navCTALink}
+                        >
+                            Become a Partner
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
                             href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
                             className={style.navCTALink}
                         >

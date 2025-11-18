@@ -54,7 +54,7 @@ export default function MembersPage(){
                 >
                     {selectedMember.telNumber?
                         <a 
-                            href={"tel:" + selectedMember.telNumber}
+                            href={"tel:+1" + selectedMember.telNumber}
                             className={style.memberContactLink}
                         >
                             <Phone

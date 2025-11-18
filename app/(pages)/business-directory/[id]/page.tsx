@@ -8,6 +8,7 @@ import PageTitleSection from "@/components/pageTitleSection/page"
 import style from '@/styles/businessDirectory.module.css'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
+import { unstable_isUnrecognizedActionError } from 'next/dist/client/components/navigation.react-server'
 
 export default function BusinessCategoryDirectory() {
     const params = useParams();
@@ -33,11 +34,14 @@ export default function BusinessCategoryDirectory() {
         }
     }
 
-    console.log(businessList)
+    const normalize = (value: string | string[]): string[] => {
+        return Array.isArray(value) ? value : [value]
+    }
 
     // --- Filter Businesses ---
     const filteredBusinesses = businessList.filter((business) => {
-        const categoryMatch = business.profileCategory === id;
+        // const categoryMatch = normalize(business.profileCategory)
+        const categoryMatch = Array.isArray(business.profileCategory) ? business.profileCategory.includes(id) : business.profileCategory === id;
 
         const subCategoryMatch = Array.isArray(business.profileSubCategory) ? business.profileSubCategory.includes(id) : business.profileSubCategory === id;
 
@@ -81,6 +85,12 @@ export default function BusinessCategoryDirectory() {
             {/* --- Subcategory Links (only for main categories) --- */}
             {selectedCategory && selectedCategory.subCategories && selectedCategory.subCategories.length > 0 && (
                 <section className={style.busSubCategorySection}>
+                        <Link
+                            href={`/business-directory`}
+                            className={style.categorieLink}
+                        >
+                            All Categories
+                        </Link>
                     {selectedCategory.subCategories.map((sub, index) => (
                         <Link
                             key={index}

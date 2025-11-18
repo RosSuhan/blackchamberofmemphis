@@ -5,6 +5,29 @@
     align-items: center;
 }
 
+.breadcrumbSection {
+    width: 90%;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.breadcrumbLink {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.breadcrumbDivider {
+    font-size: 1rem;
+    padding: 0 .5rem;
+}
+
+.breadcrumbActive {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold);
+}
+
 .busSubCategorySection,
 .busDirectorySection {
     width: 95%;
