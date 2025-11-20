@@ -4,6 +4,7 @@ import ThreePillars from "./(mtenComponents)/ThreePillars";
 import MtenProgram from "./(mtenComponents)/MtenProgramSection";
 import MTenGoals from "./(mtenComponents)/MtenGoals";
 import type { Metadata } from 'next';
+import MtenByNumbers from "./(mtenComponents)/MtenByNumbers";
 
 export const metadata: Metadata = {
     title: 'MemphisTen | Celebrating Black Entrepreneurs in Memphis',
@@ -37,6 +38,8 @@ export default function MemphisTen(){
             <MtenMatters/>
 
             <ThreePillars/>
+
+            <MtenByNumbers/>
 
             <MtenProgram/>
 

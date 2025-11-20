@@ -40,6 +40,13 @@
     line-height: 1.3;
 }
 
+.pillarList {
+    width: 70%;
+    margin: .5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 @media (min-width: 400px) {
     .threePillarHeading {
         font-size: 1.5rem;
@@ -51,7 +58,11 @@
     
     .pillarBlockCaption {
         font-size: 0.9375rem;
-    }    
+    }   
+    
+    .pillarList {
+        width: 45%;
+    }
 }
 
 @media (min-width: 600px) {
@@ -75,7 +86,7 @@
     
     .pillarBlock {
         width: 30%;
-        height: 100px;
+        height: 250px;
     }
     
     .pillarBlockTitle {
@@ -85,6 +96,11 @@
     .pillarBlockCaption {
         font-size: 1.0625rem;
     }    
+
+
+    .pillarList {
+        width: 70%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -99,4 +115,9 @@
     .pillarBlockCaption {
         font-size: 1.125rem;
     }    
+
+    .pillarBlock {
+        width: 30%;
+        height: 210px;
+    }
 }

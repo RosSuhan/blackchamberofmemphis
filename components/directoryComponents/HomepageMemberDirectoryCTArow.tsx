@@ -33,7 +33,9 @@ export default function HomepageMemberDirectoryCTArow(){
                     </h3>
 
                     <Link
-                        href={"/"}
+                        href={"https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"}
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className={style.homepageDirectoryButtonLink}
                     >
                         Click Here
@@ -50,7 +52,7 @@ export default function HomepageMemberDirectoryCTArow(){
                     </h3>
 
                     <Link
-                        href={"/"}
+                        href={"/business-directory"}
                         className={style.homepageDirectoryButtonLink}
                     >
                         Click Here

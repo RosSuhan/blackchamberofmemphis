@@ -1,7 +1,7 @@
 'use client'
 import style from '@/styles/mtenMatters.module.css'
-import Image from "next/image";
-import mtenTwoColumnImage1 from '@/public/assets/event/voting card .jpg'
+// import Image from "next/image";
+// import mtenTwoColumnImage1 from '@/public/assets/event/voting card .jpg'
 import Link from "next/link";
 
 export default function MtenMatters(){
@@ -21,12 +21,16 @@ export default function MtenMatters(){
                 <p
                     className={style.mtenTwoColumnParagraph}
                 >
-                    Memphis has one of the highest rates of entrepreneurship, but too few of those businesses grow into employers.
-                {/* MemphisTEN bridges that gap with access, advocacy, and acceleration — turning solopreneurs into thriving small businesses. */}
+                    The Black Chamber of Memphis advances the MemphisTEN plan, an economic empowerment initiative focused on creating through targeted strategies that strengthen nonemployer firms, expand procurement opportunities, and deliver member services that build business capacity.
+                </p>
+                <p
+                    className={style.mtenTwoColumnParagraph}
+                >
+                    Our approach rests on the conviction that small businesses — particularly those owned by Black entrepreneurs — hold the greatest potential for sustainable job growth and wealth creation in our community. Through an integrated three-pillar framework — Advocacy, Access, and Acceleration — MemphisTEN addresses systemic barriers that limit minority-owned businesses from scaling.
                 </p>
 
                 <Link
-                    href={''}
+                    href={'#memphisTenPrograms'}
                     className={style.mainCtaBtn}
                 >
                     Learn More
@@ -37,7 +41,7 @@ export default function MtenMatters(){
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/amLB5iVc5l8?si=uXaJpBQtfjyF-wZR" 
+                src="https://www.youtube.com/embed/ksAFPj8OKfw?si=gH8Uj4FqA7ZTt7hh" 
                 title="YouTube video player" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -56,3 +60,5 @@ export default function MtenMatters(){
         </section>
     )
 }
+
+{/* <iframe width="560" height="315" src="https://www.youtube.com/embed/ksAFPj8OKfw?si=gH8Uj4FqA7ZTt7hh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}

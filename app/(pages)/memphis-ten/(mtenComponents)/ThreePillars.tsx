@@ -6,15 +6,18 @@ export default function ThreePillars(){
     const pillars = [
         {
             title: 'Advocacy',
-            caption: 'Championing equitable opportunities and policy reform.'
+            caption: 'Championing equitable opportunities and policy reform.',
+            bullets: ["Policy Advocacy", "Market Advocacy", "Platform Advocacy", "Resource Advocacy"]
         },
         {
             title: 'Access',
-            caption: 'Opening doors to funding, procurement, and training.'
+            caption: 'Opening doors to funding, procurement, and training.',
+            bullets: ["Procurement Access", "Capital Access", "Operational Access", "Network Access"]
         },
         {
             title: 'Acceleration',
-            caption: 'Equipping entrepreneurs with mentorship and resources to scale.'
+            caption: 'Equipping entrepreneurs with mentorship and resources to scale.',
+            bullets: ["Solopreneur Development", "Business Growth", "Leadership Development", "Strategic Scaling"]
         }
     ]
     return(
@@ -27,7 +30,7 @@ export default function ThreePillars(){
                 MemphisTEN Approach
             </h2>
             
-            {pillars.map(({title, caption}, index) => (
+            {pillars.map(({title, caption, bullets}, index) => (
                 <div
                     className={style.pillarBlock}
                     key={index}
@@ -42,6 +45,20 @@ export default function ThreePillars(){
                     >
                         {caption}
                     </p>
+
+                    {bullets && (
+                        <ul
+                            className={style.pillarList}
+                        >
+                            {bullets.map((item, b) => (
+                                <li
+                                    key={b}
+                                >
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             ))}
         </section>

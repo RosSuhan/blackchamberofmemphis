@@ -1,0 +1,161 @@
+.mtenByNumbersSection {
+    width: 100%;
+    background: var(--darkGrey);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.mtenByNumbersWhiteRow {
+    width: 90%;
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mtenByNumbersMainHeading {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.mtenByNumbersInfoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+    padding: 1rem 0;
+}
+
+.mtenByNumberBigText {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.mtenByNumbersTextOne {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mtenByNumberTextTwo {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+}
+
+.mtenByNumbersBlockImage {
+    display: none;
+}
+
+.mtenByNumbersParagraphBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mtenByNumbersParagraph {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .mtenByNumbersMainHeading {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .mtenByNumbersInfoBlock {
+        width: 45%;
+    }
+    
+    .mtenByNumbersBlockImage {
+        display: initial;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .mtenByNumbersMainHeading {
+        font-size: 1.75rem;
+    }
+    
+    .mtenByNumberBigText {
+        font-size: 2.2rem;
+    }
+    
+    .mtenByNumbersTextOne {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .mtenByNumbersSection {
+        padding: 3rem 0;
+    }
+    
+    .mtenByNumbersMainHeading {
+        font-size: 2rem;
+    }
+    
+    .mtenByNumberBigText {
+        font-size: 2.4rem;
+    }
+    
+    .mtenByNumbersTextOne {
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mtenByNumbersSection {
+        padding: 6rem 0;
+    }
+    
+    .mtenByNumbersWhiteRow {
+        justify-content: space-evenly;
+        padding: 1rem 0 2rem 0;
+    }
+    
+    .mtenByNumbersMainHeading {
+        width: 85%;
+        font-size: 2.3rem;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    
+    .mtenByNumbersInfoBlock {
+        width: 20%;
+    }
+    
+    .mtenByNumberBigText {
+        font-size: 2.4rem;
+    }
+    
+    .mtenByNumberTextTwo {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+    
+    .mtenByNumbersBlockImage {
+        width: 35%;
+        height: 320px;
+        object-fit: cover;
+    }
+    
+    .mtenByNumbersParagraphBlock {
+        width: 50%;
+    }
+    
+    .mtenByNumbersParagraph {
+        font-size: 1.125rem;
+    }
+}

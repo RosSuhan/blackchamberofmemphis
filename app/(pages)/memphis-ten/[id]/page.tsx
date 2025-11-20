@@ -13,8 +13,6 @@ export default function SubPage(){
     const selectedProgram = mtenPrograms.find(c => c.id === id);
 
     const progDescText = selectedProgram?.progDesc;
-    const eligibilityText = selectedProgram?.eligibility;
-    // const progOverviewText = selectedProgram?.progOverview
     const testimonials = selectedProgram?.success
 
 
@@ -43,10 +41,10 @@ export default function SubPage(){
                     </h2>
                     
                     <Link
-                        href={`/memphis-ten/${id}/application`}
+                        href={selectedProgram.formLink}
                         className={style.mtenSubPageHeroCTA}
                     >
-                        Apply Today
+                        {selectedProgram.ctaButtonName}
                     </Link>
                 </div>
                 <Image
@@ -95,13 +93,8 @@ export default function SubPage(){
                     <h2
                         className={style.mtenEligibilityContextHeading}
                     >
-                        Who can enroll?
+                        Let&apos;s Get Started
                     </h2>
-                    <div 
-                        dangerouslySetInnerHTML={{__html: eligibilityText || ''}}
-                        className={style.mtenEligibilityTextBlock}
-                    />
-
                     <div
                         className={style.mtenEligibilityCtaRow}
                     >
@@ -109,7 +102,7 @@ export default function SubPage(){
                             href={`/memphis-ten/${id}/application`}
                             className={style.mtenEligibilityCTA}
                         >
-                            Apply Today
+                            {selectedProgram.ctaButtonName}
                         </Link>
                     </div>
                 </div>

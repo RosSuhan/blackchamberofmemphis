@@ -64,9 +64,6 @@
     .mtenVideo {
         height: 300px;
     }
-    /* .mtenTwoColumnImage {
-        height: 250px;
-    } */
     
     .mainCtaBtn {
         font-size: 1.25rem;
@@ -85,9 +82,6 @@
     .mtenVideo {
         height: 410px;
     }
-    /* .mtenTwoColumnImage {
-        height: 250px;
-    } */
     
     .mainCtaBtn {
         font-size: 1.375rem;
@@ -119,11 +113,7 @@
         width: 45%;
         height: 260px;
     }
-    /* .mtenTwoColumnImage {
-        width: 30%;
-        border-radius: 20px 0 0 20px;
-    } */
-    
+
     .mainCtaBtn {
         font-size: 1.375rem;
         margin-top: 2rem;
@@ -144,7 +134,18 @@
         line-height: 1.5;
     }
     
+    .mtenVideo {
+        height: 300px;
+    }
+
     .mainCtaBtn {
         font-size: 1.75rem;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .mtenVideo {
+        height: 360px;
     }
 }

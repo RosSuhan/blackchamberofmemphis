@@ -27,12 +27,14 @@ export default function CaseSupportHero(){
                 <div
                     className={style.heroCtaRow}
                 >
-                    <Link
-                        href={''}
+                    <a
+                        href={'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/contribute/ep01ddP2'}
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className={style.mainCtaBtn}
                     >
-                        Become a Partner
-                    </Link>
+                        Donate To Support
+                    </a>
                     <Link
                         href={"/memphis-ten"}
                         className={style.secondCtaBtn}

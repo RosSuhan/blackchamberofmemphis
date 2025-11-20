@@ -19,10 +19,6 @@ export default function Header(){
         setSubMenuOpen((prev) => (prev === menuName ? null : menuName ))
     }
 
-    // const handleCloseSubMenuToggle = () => {
-    //     setSubMenuOpen()
-    // }
-
     return(
         <header
             className={style.header}
@@ -109,6 +105,8 @@ export default function Header(){
                     <li>
                         <a 
                             href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
+                            target="_blank" 
+                            rel="noopener noreferrer"
                             className={style.navCTALink}
                         >
                             JOIN BCOM

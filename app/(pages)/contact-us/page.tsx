@@ -2,10 +2,73 @@
 import style from '@/styles/contactUs.module.css'
 import { BaselineMail } from "@/components/icons/MailIcon";
 import { Phone } from "@/components/icons/Phone";
+import { useState } from 'react';
 
 
 
 export default function ContactUs(){
+    const [ loading, setLoading ] = useState(false)
+    const [ submitMessage , setSubmitMessage ] = useState("")
+    const [ frontMessage, setFrontMessage ] = useState("")
+    const [ firstName, setFirstName ] = useState("")
+    const [ lastName, setLastName ] = useState("")
+    const [ email, setEmail ] = useState("")
+    const [ subject, setSubject ] = useState("")
+    const [ clientMessage, setClientMessage ] = useState("")
+
+    const CONTACT_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbx5nyjYChmAZxZc6201Z1l8tHnyjric2mKFpjAvHG3jdP0-PgKClmWsMfnAH-gC5nBFSg/exec"
+
+
+    async function handleSubmit(e: React.FormEvent) {
+        e.preventDefault();
+        setLoading(true)
+        setSubmitMessage("")
+
+        if(firstName.trim().length < 2 || lastName.trim().length < 2) {
+            setFrontMessage("Please enter a valid name.");
+            setLoading(false);
+            return;
+        }
+
+        const contactFormData = {
+            firstName,
+            lastName,
+            email,
+            subject,
+            clientMessage,
+        }
+
+        try {
+            await fetch(CONTACT_GOOGLE_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(contactFormData)
+            })
+
+            setSubmitMessage("Thank you for submitting your message.")
+            setLoading(false)
+
+            setTimeout(() => {
+                resetForm();
+                setSubmitMessage("");
+            }, 5000);
+
+        } catch (err) {
+            console.error(err);
+            setSubmitMessage("Something went wrong.");
+            setLoading(false);
+        }
+    }
+
+    function resetForm() {
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setSubject("");
+        setClientMessage("");
+    }
+
     return(
         <main
             className={style.contactUsMain}
@@ -67,45 +130,68 @@ export default function ContactUs(){
                 </div>
 
                 <form 
-                    action=""
+                    onSubmit={handleSubmit}
                     className={style.contactUsForm}
                 >
+                    {frontMessage && (
+                        <p>{frontMessage}</p>
+                    )}
                     <input 
-                        type="text"
                         placeholder="First Name" 
+                        type="text"
                         className={style.contactUsFormShortInput}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        minLength={2}
+                        pattern="[A-Za-z\s]+"
+                        value={firstName}
                     />
 
                     <input 
-                        type="text"
                         placeholder="Last Name" 
-                        className={style.contactUsFormShortInput}
-                    />
-
-                    <input 
-                        type="email"
-                        placeholder="Email" 
-                        className={style.contactUsFormLongInput}
-                    />
-
-                    <input 
                         type="text"
-                        placeholder="Subject" 
+                        className={style.contactUsFormShortInput}
+                        onChange={(e) => setLastName(e.target.value)}
+                        minLength={2}
+                        pattern='[A-Za-z\s]+'
+                        value={lastName}
+                    />
+
+                    <input 
+                        placeholder="Email" 
+                        type="email"
                         className={style.contactUsFormLongInput}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        value={email}
+                    />
+
+                    <input 
+                        placeholder="Subject" 
+                        type="text"
+                        className={style.contactUsFormLongInput}
+                        onChange={(e) => setSubject(e.target.value)}
+                        required
+                        value={subject}
                     />
 
                     <textarea 
                         placeholder="Message"
                         rows={6}
                         className={style.contactUsFormLongInput}
+                        onChange={(e) => setClientMessage(e.target.value)}
+                        value={clientMessage}
                     />
 
                     <button 
                         type="submit"
                         className={style.contactUsFormSubmit}
                     >
-                        Submit
+                        {loading ? "Sending Message..." : "Submit"}
                     </button>
+
+                    {submitMessage && (
+                        <p>{submitMessage}</p>
+                    )}
                 </form>
             </div>
         </main>

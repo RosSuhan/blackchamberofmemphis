@@ -53,6 +53,7 @@
 }
 
 .subNavList {
+    z-index: 800;
     width: 100%;
     padding: .5rem 0;
     list-style: none;
@@ -73,7 +74,7 @@
     font-size: 0.9rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .headerLogoLink {
         width: 20%;
     }
@@ -120,17 +121,21 @@
     
     .subNavList {
         position: absolute;
-        top: 30px;
+        top: 35px;
         padding: 0;
         left: 0;
         width: 80px;
+        background: #ffffff;
+    }
+
+    .navLink {
+        padding: .5rem 0;
     }
     
     .navLink,
     .navCTALink {
         font-size: 0.7rem;
         text-align: center;
-        /* letter-spacing: 1; */
     }
 
     .navCTALink {

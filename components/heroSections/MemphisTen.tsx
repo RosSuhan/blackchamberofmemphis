@@ -35,7 +35,7 @@ export default function MemphisTenHero(){
                         Get Started
                     </Link>
                     <Link
-                        href={''}
+                        href={'#memphisTenPrograms'}
                         className={style.secondCtaBtn}
                     >
                         Learn More

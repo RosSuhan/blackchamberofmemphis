@@ -20,7 +20,7 @@ export default function BecomeAPartner(){
                 </p>
             </div>
 
-            <a href=""
+            <a href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/contribute/ep01ddP2"
                 className={style.callToActionCTAButton}
             >
                 Become a Partner

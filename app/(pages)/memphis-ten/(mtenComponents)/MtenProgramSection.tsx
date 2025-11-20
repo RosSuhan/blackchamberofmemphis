@@ -7,6 +7,7 @@ export default function MtenProgram(){
     return(
         <section
             className={style.mtenProgramSection}
+            id='memphisTenPrograms'
         >
             <h2
                 className={style.mtenProgramHeading}
