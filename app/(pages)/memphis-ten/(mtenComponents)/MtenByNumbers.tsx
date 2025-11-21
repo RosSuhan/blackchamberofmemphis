@@ -60,7 +60,7 @@ export default function MtenByNumbers(){
             </div>
 
             <h2
-                className={style.mtenByNumbersMainHeading}
+                className={style.mtenByNumbersSecondMainHeading}
             >
                 Business Growth
             </h2>
@@ -92,7 +92,6 @@ export default function MtenByNumbers(){
                     Established small firms already have infrastructure in place; adding the next employee is like accelerating a moving object. By meeting firms where they are, we ensure both the &quot;first hire&quot; and &quot;next hire&quot; contribute to our 8,000-job goal.
                 </p>
             </div>
-            
         </section>
     )
 }

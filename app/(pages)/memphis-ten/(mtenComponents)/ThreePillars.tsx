@@ -29,6 +29,12 @@ export default function ThreePillars(){
             >
                 MemphisTEN Approach
             </h2>
+
+            <p
+                className={style.threePillarIntroParagraph}
+            >
+                MemphisTEN is more than a business development program—it is an economic empowerment initiative that transforms individual success into community prosperity through local business expansion.
+            </p>
             
             {pillars.map(({title, caption, bullets}, index) => (
                 <div

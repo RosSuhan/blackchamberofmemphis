@@ -1,0 +1,141 @@
+.mtenCallToActionSection {
+    width: 100%;
+    background: var(--darkGrey);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mtenCallToActionMainHeading {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.mtenCallToActionMainText {
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mtenCallToActionReasonRow {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.mtenCTAReason {
+    width: 100%;
+}
+
+.mtenCTAReasonHeading {
+    width: 100%;
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.125rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.mtenCTAReasonText {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.mtenCallToActionButton {
+    background: var(--gold);
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 2rem;
+    font-weight: 900;
+    font-size: 1.125rem;
+}
+
+@media (min-width: 400px) {
+    .mtenCallToActionMainHeading {
+        font-size: 1.5rem;
+    }
+    
+    .mtenCTAReasonHeading {
+        font-size: 1.25rem;
+    }
+    
+    .mtenCallToActionButton {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .mtenCallToActionMainHeading {
+        font-size: 1.75rem;
+    }
+    
+    .mtenCallToActionReasonRow {
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    
+    .mtenCTAReason {
+        width: 45%;
+    }
+    
+    .mtenCTAReasonHeading {
+        font-size: 1.5rem;
+    }
+    
+    .mtenCallToActionButton {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .mtenCallToActionSection {
+        padding: 3rem 0 4rem 0;
+    }
+    
+    .mtenCallToActionMainHeading {
+        font-size: 2rem;
+    }
+    
+    .mtenCTAReasonHeading {
+        width: 90%;
+    }
+    
+    .mtenCTAReasonText {
+        width: 90%;
+    }
+    
+    .mtenCallToActionButton {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mtenCallToActionMainHeading {
+        font-size: 2.5rem;
+    }
+    
+    .mtenCallToActionMainText {
+        font-size: 1.2rem;
+    }
+    
+    .mtenCTAReasonText {
+        font-size: 1.2rem;
+    }
+    
+    .mtenCallToActionButton {
+        font-size: 1.75rem;
+    }
+}

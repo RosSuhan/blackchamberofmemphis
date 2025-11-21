@@ -18,9 +18,15 @@
     margin-bottom: 2rem;
 }
 
-.mtenByNumbersMainHeading {
+.mtenByNumbersMainHeading,
+.mtenByNumbersSecondMainHeading {
     font-size: 1.5rem;
     text-align: center;
+}
+
+.mtenByNumbersSecondMainHeading,
+.mtenByNumbersParagraph {
+    color: #ffffff;
 }
 
 .mtenByNumbersInfoBlock {
@@ -66,7 +72,8 @@
 }
 
 @media (min-width: 500px) {
-    .mtenByNumbersMainHeading {
+    .mtenByNumbersMainHeading,
+    .mtenByNumbersSecondMainHeading {
         width: 100%;
         font-size: 1.5rem;
     }
@@ -84,7 +91,8 @@
 }
 
 @media (min-width: 600px) {
-    .mtenByNumbersMainHeading {
+    .mtenByNumbersMainHeading,
+    .mtenByNumbersSecondMainHeading {
         font-size: 1.75rem;
     }
     
@@ -102,7 +110,8 @@
         padding: 3rem 0;
     }
     
-    .mtenByNumbersMainHeading {
+    .mtenByNumbersMainHeading,
+    .mtenByNumbersSecondMainHeading {
         font-size: 2rem;
     }
     
@@ -125,7 +134,8 @@
         padding: 1rem 0 2rem 0;
     }
     
-    .mtenByNumbersMainHeading {
+    .mtenByNumbersMainHeading,
+    .mtenByNumbersSecondMainHeading {
         width: 85%;
         font-size: 2.3rem;
         text-align: left;

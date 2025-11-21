@@ -1,10 +1,10 @@
 import MemphisTenHero from "@/components/heroSections/MemphisTen";
 import MtenMatters from "./(mtenComponents)/MtenMatters";
 import ThreePillars from "./(mtenComponents)/ThreePillars";
-import MtenProgram from "./(mtenComponents)/MtenProgramSection";
-import MTenGoals from "./(mtenComponents)/MtenGoals";
 import type { Metadata } from 'next';
 import MtenByNumbers from "./(mtenComponents)/MtenByNumbers";
+import MtenCallToAction from "./(mtenComponents)/MtenCallToAction";
+import MTenOverview from "@/components/mTenOverview/page";
 
 export const metadata: Metadata = {
     title: 'MemphisTen | Celebrating Black Entrepreneurs in Memphis',
@@ -41,17 +41,10 @@ export default function MemphisTen(){
 
             <MtenByNumbers/>
 
-            <MtenProgram/>
+            <MTenOverview/>
 
-            <MTenGoals/>
+            <MtenCallToAction/>
 
-            {/* testimonials */}
-
-            {/* get involved */}
-
-            {/* faq */}
-
-            {/* application cta */}
         </main>
     )
 }
