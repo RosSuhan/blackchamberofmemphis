@@ -83,7 +83,7 @@ export default function MtenCallToAction() {
             </div>
 
             <Link
-                href={'https://blackchamberofmemphis.vercel.app/memphis-ten#memphisTenPrograms'}
+                href={'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/contribute/ep01ddP2'}
                 className={style.mtenCallToActionButton}
             >
                 Donate Today
