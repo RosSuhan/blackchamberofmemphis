@@ -24,6 +24,12 @@ export default function ThreeLinkBlock(){
                 image = {"/assets/linkButton3.png"}
                 buttonText = {"Join BCOM"}
             />
+
+            <LinksButton
+                path = {'/memphis-ten'}
+                image = {"/assets/back-office-support.webp"}
+                buttonText = {"MemphisTEN"}
+            />
         </section>
     )
 }

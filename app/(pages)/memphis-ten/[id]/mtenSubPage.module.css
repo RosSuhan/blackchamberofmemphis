@@ -141,6 +141,30 @@
     margin-top: .5rem;
 }
 
+.mtenProgramTextBlock div {
+    margin: 2rem 0;
+    padding: .5rem 1rem;
+    background: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mtenProgramTextBlock div div {
+    width: 100%;
+}
+
+.mtenProgramTextBlock div div h3 {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.mtenProgramTextBlock div div p {
+    font-size: 1rem;
+    text-align: center;
+}
+
 .mtenEligibilityTextBlock ul {
     margin: 0;
     padding: 0 1rem;
@@ -219,6 +243,10 @@
     .mtenTestimonialNameText {
         font-size: 0.9375rem;
     }
+    
+    .mtenProgramTextBlock div div h3 {
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 600px) {
@@ -261,6 +289,10 @@
         width: 40%;
         height: 200px;
         border-radius: 10px;
+    }
+
+    .mtenProgramTextBlock div div h3 {
+        font-size: 1.375rem;
     }
 }
 
@@ -317,6 +349,24 @@
         width: 40%;
         height: 300px;
     }
+
+    .mtenProgramTextBlock div {
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 1rem 1rem .5rem 1rem;
+    }
+    
+    .mtenProgramTextBlock div div {
+        width: 45%;
+    }
+    
+    .mtenProgramTextBlock div div h3 {
+        font-size: 1.5rem;
+    }
+    
+    .mtenProgramTextBlock div div p {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -354,5 +404,21 @@
     .mtenSubPageHeroCTA,
     .mtenEligibilityCTA {
         font-size: 1.75rem;
+    }
+
+    .mtenProgramTextBlock div {
+        padding: 1rem 1rem .5rem 1rem;
+    }
+    
+    .mtenProgramTextBlock div div {
+        width: 40%;
+    }
+    
+    .mtenProgramTextBlock div div h3 {
+        font-size: 1.75rem;
+    }
+    
+    .mtenProgramTextBlock div div p {
+        font-size: 1.125rem;
     }
 }

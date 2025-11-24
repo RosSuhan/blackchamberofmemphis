@@ -60,11 +60,11 @@ export default function SubPage(){
             <section
                 className={style.mtenProgramSection}
             >
-                <h2
+                {/* <h2
                     className={style.mtenProgramHeading}
                 >
                     Program Description:
-                </h2>
+                </h2> */}
                 <div 
                     dangerouslySetInnerHTML={{__html: progDescText || ''}}
                     className={style.mtenProgramTextBlock}
@@ -82,6 +82,19 @@ export default function SubPage(){
                     Apply &#8594; Assessment &#8594; Support &#8594; Scale
                 </span>
             </section>
+
+            <section
+                className={style.mtenProgramSection}
+            >
+                {selectedProgram.bottomParagraph ? 
+                    <p
+                    className={style.mtenProgramTextBlock}
+                    >
+                        {selectedProgram.bottomParagraph}
+                    </p> 
+                : null}
+            </section>
+            
 
             {/* eligibility */}
             <section

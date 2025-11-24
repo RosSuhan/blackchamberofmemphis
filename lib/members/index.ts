@@ -65,6 +65,13 @@ import { kqCommunications } from './(k)/kqCommunications'
 // L
 import { leadingInLifeEnterprise } from './(l)/leadingInLifeEnterprise'
 import { lemdaddyzKitchen } from './(l)/lemdaddyzKitchen'
+import { lilacImpactServices } from './(l)/lilacImpactServices'
+
+// M
+import { magnoliaBusSol } from './(m)/magnoliaBusSol'
+import { mickeyPopcorn } from './(m)/mickeyPopcorn'
+import { midSouthLatinoChamber } from './(m)/midSouthLatinoChamber'
+import { mitchellConsulting } from './(m)/mitchellConsulting'
 
 export const businessList = [
     CupCoffee,
@@ -136,4 +143,11 @@ export const businessList = [
 // L
     leadingInLifeEnterprise,
     lemdaddyzKitchen,
+    lilacImpactServices,
+
+// M
+    magnoliaBusSol,
+    mickeyPopcorn,
+    midSouthLatinoChamber,
+    mitchellConsulting,
 ]
