@@ -94,6 +94,15 @@ export default function Header(){
                     ))}
 
                     <li>
+                        <Link 
+                            href="/memphis-ten"
+                            className={style.navCTALink}
+                        >
+                            MemphisTEN
+                        </Link>
+                    </li>           
+
+                    <li>
                         <a 
                             href="/case-support"
                             className={style.navCTALink}
@@ -102,7 +111,7 @@ export default function Header(){
                         </a>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <a 
                             href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
                             target="_blank" 
@@ -111,7 +120,7 @@ export default function Header(){
                         >
                             JOIN BCOM
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
 
