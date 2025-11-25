@@ -55,6 +55,10 @@
     .partnersActiveButton {
         width: 30%;
     }
+
+    .partnersLogo {
+        width: 150px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -69,5 +73,9 @@
 
     .partnersLogoBlock {
         width: 80%;
+    }
+
+    .partnersLogo {
+        width: 200px;
     }
 }

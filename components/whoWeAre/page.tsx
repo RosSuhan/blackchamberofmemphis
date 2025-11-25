@@ -1,4 +1,5 @@
 import style from '@/styles/whoWeAre.module.css'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function WhoWeAre(){
@@ -7,7 +8,7 @@ export default function WhoWeAre(){
             className={style.whoWeAreSection}
         >
             <div
-                className={style.WhoWeAreTextBlock}
+                className={style.WhoWeAreTextBlockOne}
             >
                 <h2
                     className={style.WhoWeAreHeading}
@@ -40,6 +41,36 @@ export default function WhoWeAre(){
                 allowFullScreen
                 className={style.whoWeAreVideo}
             />
+
+            <Image
+                src={"/assets/aboutusimage2.webp"}
+                alt=''
+                width={2500}
+                height={1700}
+                className={style.whoWeAreImage}
+            />
+
+            <div
+                className={style.WhoWeAreTextBlockTwo}
+            >
+                <h2
+                    className={style.WhoWeAreHeading}
+                >
+                    HOW WE HELP
+                </h2>
+                <p
+                    className={style.whoWeAreText}
+                >
+                    Back Office Support Services (BOSS) helps small businesses grow by providing affordable, skilled back-office talent for administrative, marketing, and operational support. By connecting companies with professionals from cost-effective economies, BOSS makes it easier to scale, increase revenue, and reinvest in local talent. Organizations like the Black Chamber of Memphis are already expanding their capacity and impact through this smart hiring solution.
+                </p>
+
+                <Link
+                    href={'/memphis-ten/back-office-support'}
+                    className={style.WhoWeAreLinkButton}
+                >
+                    Learn More
+                </Link>
+            </div>
         </section>
     )
 }

@@ -102,16 +102,16 @@ export default function Header(){
                         </Link>
                     </li>           
 
-                    <li>
+                    {/* <li>
                         <a 
                             href="/case-support"
                             className={style.navCTALink}
                         >
                             Become a Partner
                         </a>
-                    </li>
+                    </li> */}
 
-                    {/* <li>
+                    <li>
                         <a 
                             href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
                             target="_blank" 
@@ -120,7 +120,7 @@ export default function Header(){
                         >
                             JOIN BCOM
                         </a>
-                    </li> */}
+                    </li>
                 </ul>
             </nav>
 

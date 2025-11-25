@@ -66,7 +66,7 @@ export default function MtenByNumbers(){
             </h2>
 
             <Image
-                src={'/assets/event/DSC01939.jpg'}
+                src={'/assets/build-wealth.webp'}
                 alt={"Black Chamber of Memphis Symposium Event"}
                 width={3600}
                 height={2400}

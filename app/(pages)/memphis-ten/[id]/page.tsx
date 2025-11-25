@@ -83,18 +83,18 @@ export default function SubPage(){
                 </span>
             </section>
 
-            <section
-                className={style.mtenProgramSection}
-            >
-                {selectedProgram.bottomParagraph ? 
-                    <p
-                    className={style.mtenProgramTextBlock}
-                    >
-                        {selectedProgram.bottomParagraph}
-                    </p> 
-                : null}
-            </section>
-            
+            {selectedProgram.bottomParagraph ? 
+                <section
+                    className={style.mtenProgramSection}
+                >
+                    
+                        <div
+                            className={style.mtenProgramTextBlock}
+                            dangerouslySetInnerHTML={{__html:selectedProgram.bottomParagraph}}
+                        /> 
+                    
+                </section>
+            : null}
 
             {/* eligibility */}
             <section

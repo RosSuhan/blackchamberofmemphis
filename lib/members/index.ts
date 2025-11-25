@@ -72,6 +72,46 @@ import { magnoliaBusSol } from './(m)/magnoliaBusSol'
 import { mickeyPopcorn } from './(m)/mickeyPopcorn'
 import { midSouthLatinoChamber } from './(m)/midSouthLatinoChamber'
 import { mitchellConsulting } from './(m)/mitchellConsulting'
+import { mleRealtyProperty } from './(m)/mleRealtyProperty'
+import { mobileDrugTest } from './(m)/mobileDrugTest'
+import { mayweatherFoods } from './(m)/mayweatherFoods'
+
+// N
+import { nailsByNicole } from './(n)/nailsByNicole'
+import { newVisionsTechSol } from './(n)/newVisionsTechSol'
+
+// O
+import { otekaTechnologies } from './(o)/otekaTechnologies'
+
+// P
+import { pcss } from './(p)/pcss'
+import { poppz } from './(p)/poppz'
+
+// S
+import { sheGotGameLeague } from './(s)/sheGotGameLeague'
+import { sweetAroma } from './(s)/sweetAroma'
+
+// T
+import { tabicanTechSol } from './(t)/tabicanTechSol'
+import { techfit } from './(t)/techfit'
+import { theCultureCollab } from './(t)/theCultureCollab'
+import { thePodcastCenter } from './(t)/thePodcastCenter'
+import { theSpruillAgency } from './(t)/theSpruillAgency'
+import { travelWellConcierge } from './(t)/travelWellConcierge'
+
+// V
+import { visionCapitalFunding } from './(v)/visionCapitalFunding'
+import { versatileActionFitness } from './(v)/versatileActionFitness'
+
+// W
+import { weedenFinancial } from './(w)/weedenFinancial'
+import { wrightNow } from './(w)/wrightNow'
+import { walkerWarrenCommunications } from './(w)/walkerWarrenCommunications'
+import { wakilProImage } from './(w)/wakilProImage'
+import { wtContractingCorp } from './(w)/wtContractingCorp'
+// Y
+import { yourShirtInkCustomPrint } from './(y)/yourShirtInkCustomPrint'
+import { yourPersonalChef } from './(y)/yourPersonalChef'
 
 export const businessList = [
     CupCoffee,
@@ -107,7 +147,6 @@ export const businessList = [
     bluffCityParties,
     boatrightConsulting,
     butterifficBakeryCafe,
-
 // C
     carisCloset,
     certifiedDefendersOfAmerica,
@@ -118,36 +157,60 @@ export const businessList = [
     dbosElvisPresley,
     dbosRiverdale,
     dottedIAlliance,
-
 // E
-
 // F
     functionallyBalancedHealth,
-
 // G
-
 // H
     hqDirect,
     hotworxEdgeDistrict,
-
 // I
     inclusiveExcellenceConsulting,
-
 // J
     jasperFloatSpaWellness,
-
 // K
     kbSmoothNutrition,
     kqCommunications,
-
 // L
     leadingInLifeEnterprise,
     lemdaddyzKitchen,
     lilacImpactServices,
-
 // M
     magnoliaBusSol,
     mickeyPopcorn,
     midSouthLatinoChamber,
     mitchellConsulting,
+    mleRealtyProperty,
+    mobileDrugTest,
+    mayweatherFoods,
+// N
+    nailsByNicole,
+    newVisionsTechSol,
+// O
+    otekaTechnologies,
+// P
+    pcss,
+    poppz,
+// S
+    sheGotGameLeague,
+    sweetAroma,
+// T
+    tabicanTechSol,
+    techfit,
+    theCultureCollab,
+    thePodcastCenter,
+    theSpruillAgency,
+    travelWellConcierge,
+// V
+    visionCapitalFunding,
+    versatileActionFitness,
+// W
+    weedenFinancial,
+    wrightNow,
+    walkerWarrenCommunications,
+    wakilProImage,
+    wtContractingCorp,
+// Y
+    yourShirtInkCustomPrint,
+    yourPersonalChef,
 ]

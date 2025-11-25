@@ -6,6 +6,9 @@ import Image from "next/image"
 
 const publicPartners = [
     {
+        logo: "remotingwork",
+        alt: "remoting.work"
+    },{
         logo: "public-partner-100blackmen",
         alt: "100 Black Men of Memphis, Inc"
     },{
@@ -61,6 +64,9 @@ const publicPartners = [
 
 const strategicPartners = [
     {
+        logo: "remotingwork",
+        alt: "remoting.work"
+    },{
         logo: "stratigic-partner-small-business-association",
         alt: "Small Business Association"
     },{
@@ -71,6 +77,9 @@ const strategicPartners = [
 
 const corporatePartners = [
     {
+        logo: "remotingwork",
+        alt: "remoting.work"
+    },{
         logo: "corporate-partner-tva",
         alt: "Tennessee Valey Authority"
     },{

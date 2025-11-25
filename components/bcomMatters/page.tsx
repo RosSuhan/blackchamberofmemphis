@@ -28,7 +28,7 @@ export default function BCOMmatters(){
                 </article>
             </div>
             <Image
-                src={'/assets/event/BCOM_Symposium_2025_Day1-6.jpg'}
+                src={'/assets/bcom-join.webp'}
                 alt=''
                 width={2048}
                 height={1363}

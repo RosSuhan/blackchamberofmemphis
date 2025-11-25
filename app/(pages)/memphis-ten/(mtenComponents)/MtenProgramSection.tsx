@@ -26,7 +26,7 @@ export default function MtenProgram(){
                     ></div>
                     {/* White border block with round corners and image that is backdrop of block */}
                     <Link
-                        href={`memphis-ten/${slug}`}
+                        href={slug}
                         className={style.mtenProgramWhiteBox}
                     >
                         {/* image that is set as backdrop */}
