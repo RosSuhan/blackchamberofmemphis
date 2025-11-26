@@ -9,6 +9,36 @@ import { ChevronDown } from "@/components/icons/ChevronDown";
 import { ChevronUp12 } from "@/components/icons/ChevronUp";
 import { clsx } from "clsx";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Business Resources | Support for Black Entrepreneurs in Memphis',
+    description:
+        'Access tools, funding opportunities, and expert guidance for Black entrepreneurs. The Black Chamber of Memphis connects members to business resources that drive sustainable growth.',
+    keywords: [
+        'Memphis business resources',
+        'Black business funding',
+        'entrepreneur support Memphis',
+        'small business help Memphis',
+    ],
+    alternates: { canonical: 'https://blackchamberofmemphis.org/resources' },
+    openGraph: {
+        title: 'Resources for Black Entrepreneurs | Black Chamber of Memphis',
+        description:
+            'Your go-to hub for tools, funding, and guidance to help your business thrive in Memphis.',
+        url: 'https://blackchamberofmemphis.org/resources',
+        images: [{ url: '/images/og-resources.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Business Resources | Black Chamber of Memphis',
+        description:
+        'Access funding, tools, and expert resources to grow your business in Memphis.',
+        images: ['/images/og-resources.jpg'],
+    },
+};
+
+
 const details = [
     {
         tab: "Small Business Administration",

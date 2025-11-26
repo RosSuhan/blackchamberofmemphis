@@ -3,12 +3,85 @@ import style from '@/styles/programApplication.module.css'
 import { useParams } from 'next/navigation'
 import { mtenPrograms } from '@/lib/mtenPrograms'
 import PageTitleSection from '@/components/pageTitleSection/page'
+import { useState } from 'react'
 
 
 export default function ApplicationForm(){
     const { id } = useParams()
-
     const selectedProgram = mtenPrograms.find(c => c.id === id)
+    const programName = selectedProgram?.title
+
+    const [ applicantName, setApplicantName ] = useState("")
+    const [ applicantEmail, setApplicantEmail ] = useState("")
+    const [ whoAreYou, setWhoAreYou ] = useState("")
+    const [ emailConcent, setEmailConcent ] = useState("")
+    const [ memberConfirm, setMemberConfirm ] = useState("")
+    const [ businessName, setBusinessName ] = useState("")
+    const [ goals, setGoals ] = useState("")
+    const [ businessDescription, setBusinessDescription ] = useState("")
+    const [ addInfoQ, setAddInfoQ ] = useState("")
+    const [ loading, setLoading ] = useState(false)
+    const [ submitMessage, setSubmitMessage ] = useState("")
+
+    const APPLICATION_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzSoT9_UYdhhQgflCWSMzSHC1ld6J5YLr4UD3aJBCDEL2rN12xc13_odrJBKyhlZ-_xLg/exec"
+
+    function resetApplicationForm() {
+        setApplicantName("");
+        setApplicantEmail("");
+        setWhoAreYou("");
+        setEmailConcent("");
+        setMemberConfirm("");
+        setBusinessName("");
+        setGoals("");
+        setBusinessDescription("");
+        setAddInfoQ("");
+    }
+
+    async function handleApplicationForm(e: React.FormEvent){
+        e.preventDefault();
+        setLoading(true)
+        setSubmitMessage("")
+
+        if(applicantName.trim().length < 2){
+            setSubmitMessage("Please enter a valid name.");
+            setLoading(false);
+            return;
+        }
+
+        const applicationFormData = {
+            programName,
+            applicantName,
+            applicantEmail,
+            whoAreYou,
+            emailConcent,
+            memberConfirm,
+            businessName,
+            goals,
+            businessDescription,
+            addInfoQ,
+        }
+
+        try {
+            await fetch(APPLICATION_GOOGLE_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(applicationFormData)
+            })
+
+            setSubmitMessage("Thank you for submitting your application. We will contact you as soon as possible.")
+            setLoading(false)
+
+            setTimeout(() => {
+                resetApplicationForm();
+                setSubmitMessage("");
+            }, 5000);
+        } catch (err) {
+            console.error(err);
+            setSubmitMessage("Something went wrong. Please try again later.")
+            setLoading(false)
+        }
+    }
 
     return (
         <main
@@ -32,7 +105,9 @@ export default function ApplicationForm(){
             >
                 <form
                     className={style.applicationForm}
+                    onSubmit={handleApplicationForm}
                 >
+                    {/* Applicant Name */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -44,10 +119,12 @@ export default function ApplicationForm(){
                         <input 
                             type="text" 
                             className={style.applicationFormInput}
-                            // value={applicantName}
+                            onChange={(e) => setApplicantName(e.target.value)}
+                            value={applicantName}
                         />
                     </fieldset>
 
+                    {/* applicant email */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -59,23 +136,29 @@ export default function ApplicationForm(){
                         <input 
                             type="email" 
                             className={style.applicationFormInput}
-                            // value={applicantEmail}
+                            onChange={(e) => setApplicantEmail(e.target.value)}
+                            value={applicantEmail}
                         />
                     </fieldset>
 
+                    {/* which one are you */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
                         <legend
                             className={style.applicationFormLegend}
                         >
-                            Whick One Are You?
+                            Which One Are You?
                         </legend>
                         <div
                             className={style.applicationFormCheckrow}
                         >
                             <input 
-                                type="checkbox" 
+                                type="radio" 
+                                name='whoAreYou'
+                                value={"entrepreneur"}
+                                checked={whoAreYou === "entrepreneur"}
+                                onChange={(e) => setWhoAreYou(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             ENTREPRENEUR
@@ -84,7 +167,11 @@ export default function ApplicationForm(){
                             className={style.applicationFormCheckrow}
                         >
                             <input 
-                                type="checkbox" 
+                                type="radio"
+                                name='whoAreYou'
+                                value={"business-owner"}
+                                checked={whoAreYou === "business-owner"}
+                                onChange={(e) => setWhoAreYou(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             BUSINESS OWNER
@@ -93,13 +180,18 @@ export default function ApplicationForm(){
                             className={style.applicationFormCheckrow}
                         >
                             <input 
-                                type="checkbox" 
+                                type="radio"
+                                name='whoAreYou'
+                                value={"other"} 
+                                checked={whoAreYou === "other"}
+                                onChange={(e) => setWhoAreYou(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             Other
                         </div>
                     </fieldset>
 
+                    {/* concent to email contact */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -113,6 +205,10 @@ export default function ApplicationForm(){
                         >
                             <input 
                                 type="radio" 
+                                name="emailConcent"
+                                value={"yes"}
+                                checked={emailConcent === "yes"}
+                                onChange={(e) => setEmailConcent(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             Yes
@@ -122,6 +218,10 @@ export default function ApplicationForm(){
                         >
                             <input 
                                 type="radio" 
+                                name="emailConcent"
+                                value={"no"}
+                                checked={emailConcent === "no"}
+                                onChange={(e) => setEmailConcent(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             No
@@ -133,6 +233,7 @@ export default function ApplicationForm(){
                         </span>
                     </fieldset>
                     
+                    {/* Are you a member? */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -146,6 +247,10 @@ export default function ApplicationForm(){
                         >
                             <input 
                                 type="radio" 
+                                name="memberConfirm"
+                                value={"yes"}
+                                checked={memberConfirm === "yes"}
+                                onChange={(e) => setMemberConfirm(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             Yes
@@ -155,12 +260,17 @@ export default function ApplicationForm(){
                         >
                             <input 
                                 type="radio" 
+                                name="memberConfirm"
+                                value={"no"}
+                                checked={memberConfirm === "no"}
+                                onChange={(e) => setMemberConfirm(e.target.value)}
                                 className={style.applicationFormCheckBox}
                             />
                             No
                         </div>
                     </fieldset>
                     
+                    {/* Business Name */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -171,10 +281,13 @@ export default function ApplicationForm(){
                         </legend>
                         <input 
                             type="text" 
+                            onChange={(e) => setBusinessName(e.target.value)}
+                            value={businessName}
                             className={style.applicationFormInput}
                         />
                     </fieldset>
-
+                    
+                    {/* goals */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -185,10 +298,13 @@ export default function ApplicationForm(){
                         </legend>
                         <textarea 
                             rows={5}
+                            onChange={(e) => setGoals(e.target.value)}
+                            value={goals}
                             className={style.applicationFormTextArea}
                         ></textarea>
                     </fieldset>
 
+                    {/* business description */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -199,10 +315,13 @@ export default function ApplicationForm(){
                         </legend>
                         <textarea 
                             className={style.applicationFormTextArea}
+                            value={businessDescription}
+                            onChange={(e) => setBusinessDescription(e.target.value)}
                             rows={5}
                         ></textarea>
                     </fieldset>
 
+                    {/* additional info or questions */}
                     <fieldset
                         className={style.applicationFormFieldset}
                     >
@@ -213,15 +332,22 @@ export default function ApplicationForm(){
                         </legend>
                         <textarea 
                             className={style.applicationFormTextArea} 
+                            onChange={(e) => setAddInfoQ(e.target.value)}
+                            value={addInfoQ}
                             rows={5}
                         ></textarea>
                     </fieldset>
 
                     <button
+                        type='submit'
                         className={style.applicationFormSubmit}
                     >
-                        Submit
+                        {loading ? "Submitting Form..." : "Submit"}
                     </button>
+
+                    {submitMessage && (
+                        <p>{submitMessage}</p>
+                    )}
                 </form>
             </section>
         </main>
