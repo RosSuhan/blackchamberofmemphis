@@ -6,44 +6,44 @@ import { boardmembers } from '@/lib/boardmembers'
 import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
-import type { Metadata } from 'next';
+// import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-    title: 'Our Team | Leadership & Staff | Black Chamber of Memphis',
-    description:
-        'Meet the leadership and staff of the Black Chamber of Memphis—dedicated professionals committed to empowering Black-owned businesses, advancing economic equity, and supporting entrepreneurs across Greater Memphis.',
-    keywords: [
-        'Black Chamber of Memphis team',
-        'Memphis chamber leadership',
-        'Black business leaders Memphis',
-        'chamber staff',
-        'economic empowerment Memphis',
-    ],
-    alternates: {
-        canonical: 'https://blackchamberofmemphis.org/our-team',
-    },
-    openGraph: {
-        title: 'Our Team | Black Chamber of Memphis',
-        description:
-        'Learn more about the leaders and staff driving economic empowerment and supporting Black-owned businesses in Memphis.',
-        url: 'https://blackchamberofmemphis.org/our-team',
-        images: [
-        {
-            url: '/images/og-our-team.jpg',
-            width: 1200,
-            height: 630,
-            alt: 'Black Chamber of Memphis Team',
-        },
-        ],
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Our Team | Black Chamber of Memphis',
-        description:
-        'Meet the dedicated professionals empowering Black-owned businesses in Memphis.',
-        images: ['/images/og-our-team.jpg'],
-    },
-};
+// export const metadata: Metadata = {
+//     title: 'Our Team | Leadership & Staff | Black Chamber of Memphis',
+//     description:
+//         'Meet the leadership and staff of the Black Chamber of Memphis—dedicated professionals committed to empowering Black-owned businesses, advancing economic equity, and supporting entrepreneurs across Greater Memphis.',
+//     keywords: [
+//         'Black Chamber of Memphis team',
+//         'Memphis chamber leadership',
+//         'Black business leaders Memphis',
+//         'chamber staff',
+//         'economic empowerment Memphis',
+//     ],
+//     alternates: {
+//         canonical: 'https://blackchamberofmemphis.org/our-team',
+//     },
+//     openGraph: {
+//         title: 'Our Team | Black Chamber of Memphis',
+//         description:
+//         'Learn more about the leaders and staff driving economic empowerment and supporting Black-owned businesses in Memphis.',
+//         url: 'https://blackchamberofmemphis.org/our-team',
+//         images: [
+//         {
+//             url: '/images/og-our-team.jpg',
+//             width: 1200,
+//             height: 630,
+//             alt: 'Black Chamber of Memphis Team',
+//         },
+//         ],
+//     },
+//     twitter: {
+//         card: 'summary_large_image',
+//         title: 'Our Team | Black Chamber of Memphis',
+//         description:
+//         'Meet the dedicated professionals empowering Black-owned businesses in Memphis.',
+//         images: ['/images/og-our-team.jpg'],
+//     },
+// };
 
 
 export default function OurTeam(){
