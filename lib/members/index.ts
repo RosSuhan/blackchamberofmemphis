@@ -109,9 +109,20 @@ import { wrightNow } from './(w)/wrightNow'
 import { walkerWarrenCommunications } from './(w)/walkerWarrenCommunications'
 import { wakilProImage } from './(w)/wakilProImage'
 import { wtContractingCorp } from './(w)/wtContractingCorp'
+import { wrapzodyGourmetWrapz } from './(w)/wrapzodyGourmetWrapz'
+import { wingsOnTheFly } from './(w)/wingsOnTheFly'
+import { wilsonConsulting } from './(w)/wilsonConsulting'
+import { williamLaurencePortraitArt } from './(w)/williamLaurencePortraitArt'
+import { willevasCatertainment } from './(w)/willevasCatertainment'
+import { whatTheDoula } from './(w)/whatTheDoula'
+import { whartonFirm } from './(w)/whartonFirm'
 // Y
 import { yourShirtInkCustomPrint } from './(y)/yourShirtInkCustomPrint'
 import { yourPersonalChef } from './(y)/yourPersonalChef'
+import { youngTech } from './(y)/youngTech'
+import { youdle } from './(y)/youdle'
+import { youFirstComFoundation } from './(y)/youFirstComFoundation'
+import { yesLinkStore } from './(y)/yesLinkStore'
 
 export const businessList = [
     CupCoffee,
@@ -210,7 +221,18 @@ export const businessList = [
     walkerWarrenCommunications,
     wakilProImage,
     wtContractingCorp,
+    wrapzodyGourmetWrapz,
+    wingsOnTheFly,
+    wilsonConsulting,
+    williamLaurencePortraitArt,
+    willevasCatertainment,
+    whatTheDoula,
+    whartonFirm,
 // Y
     yourShirtInkCustomPrint,
     yourPersonalChef,
+    youngTech,
+    youdle,
+    youFirstComFoundation,
+    yesLinkStore,
 ]
