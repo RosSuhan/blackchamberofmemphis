@@ -56,14 +56,14 @@ export default function BusinessBlock({id, blockPath, blockImage, businessTitle,
                     </h2>
                 </Link>
 
-                <p
+                <article
                     className={style.businessBlockDesc}
                 >
                     <ReadMore
                         text = {businessDescription}
                         limit={15}
                     />
-                </p>
+                </article>
             </div>
 
             <div

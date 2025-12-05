@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import style from '@/styles/eventsPage.module.css'
+import PageTitleSection from "@/components/pageTitleSection/page";
 
 export const metadata: Metadata = {
     title: 'Events & Workshops | Black Chamber of Memphis Networking',
@@ -29,8 +31,18 @@ export const metadata: Metadata = {
 
 export default function Events(){
     return(
-        <main>
-            <h2>Page for all events</h2>
+        <main
+            className={style.eventsPage}
+        >
+            <PageTitleSection
+                pageTitle="Events"
+            />
+
+            <section
+                className={style.eventsDisplaySection}
+            >
+
+            </section>
         </main>
     )
 }

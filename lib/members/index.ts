@@ -90,6 +90,8 @@ import { poppz } from './(p)/poppz'
 // S
 import { sheGotGameLeague } from './(s)/sheGotGameLeague'
 import { sweetAroma } from './(s)/sweetAroma'
+import { systematicEquitySol } from './(s)/systematicEquitySol'
+import { stretchlabMidtownM } from './(s)/stretchlabMidtownM'
 
 // T
 import { tabicanTechSol } from './(t)/tabicanTechSol'
@@ -205,6 +207,8 @@ export const businessList = [
 // S
     sheGotGameLeague,
     sweetAroma,
+    systematicEquitySol,
+    stretchlabMidtownM,
 // T
     tabicanTechSol,
     techfit,
