@@ -69,6 +69,10 @@
 
 }
 
+.profileDescriptionBlock {
+    padding-bottom: 2rem;
+}
+
 .longBusinessDescription {
     font-size: 1.2rem;
     line-height: 1.2;
@@ -119,12 +123,18 @@
     .memberContactLinkText {
         display: initial;
     }
+    .profileDescriptionBlock {
+        padding-bottom: 3rem;
+    }
 }
 
 @media (min-width: 1000px) {
     .membersLogo {
         width: 30%;
     }    
+    .profileDescriptionBlock {
+        padding-bottom: 4rem;
+    }
 }
 
 

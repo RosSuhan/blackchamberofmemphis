@@ -230,11 +230,16 @@ export default function MembersPage(){
                         </a>
                     : null} 
                 </div>
-                {selectedMember?.profileBusinessDescription  ?
+                <article
+                    className={style.profileDescriptionBlock}
+                >
+                    {selectedMember?.profileBusinessDescription  ?
                     <div 
                         dangerouslySetInnerHTML={{__html: longDescription || ""}}
                         className={style.longBusinessDescription}
                     /> : selectedMember.profileDescription}
+                </article>
+                
             </section>
         </main>
     )
