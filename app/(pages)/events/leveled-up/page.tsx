@@ -7,6 +7,8 @@ import { BaselineCalendarMonth } from "@/components/icons/Calendar";
 import { Clock } from "@/components/icons/Clock";
 import LeveledUpBioPage from "./BioPage";
 import { Tax } from "@/components/icons/tax";
+import FAQpage from "./FAQpage";
+
 
 
 export const metadata: Metadata = {
@@ -43,6 +45,7 @@ export const metadata: Metadata = {
 };
 
 
+
 export default function Events(){
 
     return(
@@ -74,7 +77,7 @@ export default function Events(){
                     className={style.ctaButtonRow}
                 >
                     <Link
-                        href={"#register"}
+                        href={"/events/leveled-up/registration"}
                         className={style.ctaButton}
                     >
                         Register Now
@@ -430,57 +433,118 @@ export default function Events(){
                 </ul>
             </section>
 
-            {/* 
-                optional one-on-one coaching
-                highlight:
-                * personalized tax planning
-                * quarterly tax help
-                * entity selection guidance
-                * bookkeeping cleanup
-                * business audit
-                CTA - Add-on coaching available after the series. Registration done after completion of workshop
-            */}
+            <section
+                className={style.nextStepSection}
+            >
+                <Image
+                    src={"/events/leveledUp/consultingImage.webp"}
+                    alt=""
+                    width={2400}
+                    height={1600}
+                    className={style.nextStepImage}
+                />
 
-            {/* 
-                Workshop schedule
-                * Jan 7 — 10am–12pm OR 2pm–4pm
-                * Jan 21 — 10am–12pm OR 2pm–4pm
-                * Feb 4 — 10am–12pm OR 2pm–4pm
-                * Feb 18 — 10am–12pm OR 2pm–4pm
-                
-                Small note: Participants must attend the time slot selected due to limited seating.
-            */}
+                <div
+                    className={style.nextStepTextBlock}
+                >
+                    <h2
+                        className={style.nextStepHeading}
+                    >
+                        Take Your Learning Even Further
+                    </h2>
+                    <p
+                        className={style.nextStepText}
+                    >
+                        Participants may add individualized coaching sessions to get tailored support on:
+                    </p>
 
-            {/* 
-                Registration Form
-                Form fields:
-                * Name
-                * Email
-                * Business Name
-                * Phone Number
-                * Time Slot Selection (Dropdown)
-                * Optional: “Interested in one-on-one coaching?”
-                
-                
-                After Submission Confirmation Message
-                Something like:
-                Thank you for registering!
-                Your seat is now reserved. You’ll receive a confirmation email shortly with event details and reminders.
-            */}
+                    <ul
+                        className={style.nextStepListText}
+                    >
+                        <li>
+                            Tax planning for solopreneurs
+                        </li>
+                        <li>
+                            Quarterly estimated taxes
+                        </li>
+                        <li>
+                            S-Corp readiness review
+                        </li>
+                        <li>
+                            Bookkeeping cleanup
+                        </li>
+                        <li>
+                            Deduction optimization
+                        </li>
+                        <li>
+                            Tennessee tax compliance
+                        </li>
+                        <li>
+                            Profit strategy & owner compensation planning
+                        </li>
+                        <li>
+                            A full “friendly audit” customized to your business
+                        </li>
+                    </ul>
+                    <p
+                        className={style.nextStepText}
+                    >
+                        These can be delivered onsite or virtually, with flexible scheduling and post-workshop availability.
+                    </p>
+                </div>
+            </section>
 
-            {/* 
-                FAQ Section (optional but helpful)
-                * Is this free/paid? (We can write both versions.) might be monatised
-                * Do I have to attend all four? yes, all four
-                * How do the time slots work? if the sign-up for morning then they have to set with morning
-                * What if I want coaching?
-            */}
+            <section
+                className={style.ctaBig}
+            >
+                <div
+                    className={style.ctaTextBlock}
+                >
+                    <h2
+                        className={style.ctaHeading}
+                    >
+                        Ready to Level Up Your Business?
+                    </h2>
 
-            {/* 
-                Final CTA
-                Centered button:
-                Save Your Seat — Register Now
-            */}
+                    <p
+                        className={style.ctaText}
+                    >
+                        Seats are limited due to small group learning and time-block capacity.
+                    </p>
+                </div>
+
+                <Link
+                    href={"/events/leveled-up/registration"}
+                    className={style.ctaRowButton}
+                >
+                    Register Now
+                </Link>
+            </section>
+
+            <section
+                className={style.FAQsection}
+            >
+                <FAQpage/>
+            </section>
+
+            <section
+                className={style.ctaBig}
+            >
+                <div
+                    className={style.ctaTextBlockTwo}
+                >
+                    <p
+                        className={style.ctaText}
+                    >
+                        The LeveledUp Money Workshop Series is more than a training — it&apos;s an investment in stronger, profitable, tax-ready Black businesses in Memphis.
+                    </p>
+                    <p
+                        className={style.ctaText}
+                    >
+                        Join us as we build smarter systems, stronger foundations, and long-term financial success, one level at a time.
+                    </p>
+                </div>
+            </section>
         </main>
     )
 }

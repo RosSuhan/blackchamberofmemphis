@@ -1,0 +1,406 @@
+.luRegHeroSection {
+    background-image: url(/events/leveledUp/leveledup-mobile-image.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.luRegHeading {
+    width: 60%;
+    margin: 2rem 0 .5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.luRegTitle {
+    width: 50%;
+    margin: .5rem 0 .5rem 1rem;
+    font-size: 1.25rem;
+}
+
+.luRegFormSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.luRegForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+    /* background: pink; */
+}
+
+.luRegFormFieldset {
+    width: 90%;
+    /* padding: 0; */
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.luRegFormRadioFieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}
+
+/* .luRegFormLegend {
+    font-size: 1rem;
+} */
+
+.faqFormInput {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .2rem;
+}
+
+.faqFormRadioInput {
+    width: 10%;
+}
+
+.faqFormRadioText {
+    width: 85%;
+}
+
+.faqFormSubmitRow {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.faqFormSubmitButton {
+    background: var(--gold);
+    padding: .5rem 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
+}
+
+.submitMessage {
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+@media (min-width: 400px) {
+    .luRegHeroSection {
+        /* background-image: url(/events/leveledUp/leveledup-mobile-image.webp); */
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        /* width: 100%; */
+        /* min-height: 250px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* align-items: flex-start; */
+    }
+    
+    .luRegHeading {
+        /* width: 60%; */
+        /* margin: 2rem 0 .5rem 1rem; */
+        /* font-size: 1.5rem; */
+        /* font-weight: 800; */
+    }
+    
+    .luRegTitle {
+        /* width: 50%; */
+        /* margin: .5rem 0 .5rem 1rem; */
+        /* font-size: 1.25rem; */
+    }
+    
+    .luRegFormSection {
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* padding: 2rem 0; */
+    }
+    
+    .luRegForm {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* row-gap: .5rem; */
+        /* background: pink; */
+    }
+    
+    .luRegFormFieldset {
+        /* width: 90%; */
+        /* padding: 0; */
+        /* background: red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border: none; */
+    }
+    
+    .luRegFormRadioFieldset {
+        width: 85%;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 1rem; */
+    }
+    
+    /* .luRegFormLegend {
+        font-size: 1rem;
+    } */
+    
+    .faqFormInput {
+        /* width: 100%; */
+        /* font-size: 1.2rem; */
+        /* padding: .2rem; */
+    }
+    
+    .faqFormRadioInput {
+        /* width: 10%; */
+    }
+    
+    .faqFormRadioText {
+        /* width: 85%; */
+    }
+    
+    .faqFormSubmitRow {
+        /* width: 100%; */
+        /* padding: 1rem 0; */
+    }
+    
+    .faqFormSubmitButton {
+        /* background: var(--gold); */
+        /* padding: .5rem 0; */
+        /* width: 100%; */
+        /* border: none; */
+        /* border-radius: 5px; */
+        /* font-size: 1.125rem; */
+    }
+    
+    .submitMessage {
+        /* font-size: 1.25rem; */
+        /* width: 100%; */
+    }
+}
+
+@media (min-width: 600px) {
+    .luRegHeroSection {
+        background-image: url(/events/leveledUp/leveledup-600-500px.webp);
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        /* width: 100%; */
+        /* min-height: 250px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* align-items: flex-start; */
+    }
+    
+    .luRegHeading {
+        /* width: 60%; */
+        /* margin: 2rem 0 .5rem 1rem; */
+        /* font-size: 1.5rem; */
+        /* font-weight: 800; */
+    }
+    
+    .luRegTitle {
+        /* width: 50%; */
+        /* margin: .5rem 0 .5rem 1rem; */
+        /* font-size: 1.25rem; */
+    }
+    
+    .luRegFormSection {
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* padding: 2rem 0; */
+    }
+    
+    .luRegForm {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* row-gap: .5rem; */
+        /* background: pink; */
+    }
+    
+    .luRegFormFieldset {
+        /* width: 90%; */
+        /* padding: 0; */
+        /* background: red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border: none; */
+    }
+    
+    .luRegFormRadioFieldset {
+        /* width: 85%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 1rem; */
+    }
+    
+    /* .luRegFormLegend {
+        font-size: 1rem;
+    } */
+    
+    .faqFormInput {
+        /* width: 100%; */
+        /* font-size: 1.2rem; */
+        /* padding: .2rem; */
+    }
+    
+    .faqFormRadioInput {
+        /* width: 10%; */
+    }
+    
+    .faqFormRadioText {
+        /* width: 85%; */
+    }
+    
+    .faqFormSubmitRow {
+        /* width: 100%; */
+        /* padding: 1rem 0; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .faqFormSubmitButton {
+        /* background: var(--gold); */
+        /* padding: .5rem 0; */
+        width: 50%;
+        /* border: none; */
+        /* border-radius: 5px; */
+        /* font-size: 1.125rem; */
+    }
+    
+    .submitMessage {
+        /* font-size: 1.5rem; */
+        /* width: 50%; */
+    }
+}
+
+@media (min-width: 800px) {
+    .luRegHeroSection {
+        /* background-image: url(/events/leveledUp/leveledup-600-500px.webp); */
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        /* width: 100%; */
+        min-height: 300px;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* align-items: flex-start; */
+    }
+    
+    .luRegHeading {
+        /* width: 60%; */
+        /* margin: 2rem 0 .5rem 1rem; */
+        /* font-size: 1.5rem; */
+        /* font-weight: 800; */
+    }
+    
+    .luRegTitle {
+        /* width: 50%; */
+        /* margin: .5rem 0 .5rem 1rem; */
+        /* font-size: 1.25rem; */
+    }
+    
+    .luRegFormSection {
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* padding: 2rem 0; */
+    }
+    
+    .luRegForm {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* row-gap: .5rem; */
+        /* background: pink; */
+    }
+    
+    .luRegFormFieldset {
+        /* width: 90%; */
+        /* padding: 0; */
+        /* background: red; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* border: none; */
+    }
+    
+    .luRegFormRadioFieldset {
+        /* width: 85%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 1rem; */
+    }
+    
+    /* .luRegFormLegend {
+        font-size: 1rem;
+    } */
+    
+    .faqFormInput {
+        /* width: 100%; */
+        /* font-size: 1.2rem; */
+        /* padding: .2rem; */
+    }
+    
+    .faqFormRadioInput {
+        /* width: 10%; */
+    }
+    
+    .faqFormRadioText {
+        /* width: 85%; */
+    }
+    
+    .faqFormSubmitRow {
+        /* width: 100%; */
+        /* padding: 1rem 0; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    
+    .faqFormSubmitButton {
+        /* background: var(--gold); */
+        /* padding: .5rem 0; */
+        /* width: 50%; */
+        /* border: none; */
+        /* border-radius: 5px; */
+        /* font-size: 1.125rem; */
+    }
+    
+    .submitMessage {
+        /* font-size: 1.5rem; */
+        /* width: 50%; */
+    }
+}

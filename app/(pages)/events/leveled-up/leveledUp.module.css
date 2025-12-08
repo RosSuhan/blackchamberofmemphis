@@ -18,17 +18,12 @@
     margin: 2rem 0 .5rem 1rem;
     font-size: 1.5rem;
     font-weight: 800;
-    /* color: var(--gold); */
-    /* -webkit-text-stroke: #7a4b04 .5px; */
-    /* text-shadow: #7a4b04 1px 1px 5px; */
-    /* color: #ffffff; */
 }
 
 .programTagline {
     width: 50%;
     margin: .5rem 0 .5rem 1rem;
     font-size: 1.125rem;
-    /* color: #ffffff; */
 }
 
 .ctaButtonRow {
@@ -39,7 +34,8 @@
     padding: 2rem 0;
 }
 
-.ctaButton {
+.ctaButton,
+.ctaRowButton {
     width: 70%;
     /* margin-top: 2rem; */
     background: var(--gold);
@@ -68,7 +64,8 @@
         margin-top: 1.5rem;
     }
     
-    .ctaButton {
+    .ctaButton,
+    .ctaRowButton {
         font-size: 1.25rem;
     }
 }
@@ -98,7 +95,8 @@
         font-size: 1.375rem;
     }
     
-    .ctaButton {
+    .ctaButton,
+    .ctaRowButton {
         font-size: 1.375rem;
     }
 }
@@ -405,7 +403,7 @@
 .presenterSection {
     width: 100%;
     background: var(--grey);
-    padding: 1rem 0;
+    padding: 2rem 0 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -472,7 +470,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .projectScopeHeading{
@@ -552,3 +550,221 @@
         min-height: 30px;
     }
 }
+
+.nextStepSection {
+    background: var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.nextStepImage {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.nextStepTextBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nextStepHeading {
+    font-size: 1.25rem;
+}
+
+.nextStepText,
+.nextStepListText {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.nextStepListText {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+@media (min-width: 400px) {
+    .nextStepImage {
+        width: 70%;
+    }
+    
+    .nextStepHeading {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .nextStepImage {
+        width: 60%;
+    }
+    .nextStepHeading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .nextStepImage {
+        width: 40%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .nextStepTextBlock {
+        width: 45%;
+    }
+    
+    .nextStepHeading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nextStepHeading {
+        font-size: 2rem;
+    }
+    
+    .nextStepText,
+    .nextStepListText {
+        font-size: 1.2rem;
+    }
+}
+
+/* cta Big Section */
+.ctaBig{
+    width: 100%;
+    background: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.ctaTextBlock,
+.ctaTextBlockTwo {
+    width: 90%;
+}
+
+.ctaHeading {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.ctaText {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 400px) {
+    .ctaHeading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .ctaHeading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .ctaBig{
+        padding: 2rem 0;
+        row-gap: 2rem;
+    }
+    
+    .ctaTextBlock {
+        width: 60%;
+        margin: 0;
+    }
+    .ctaTextBlockTwo {
+        margin: 0;
+    }
+    
+    .ctaHeading {
+        font-size: 1.75rem;
+    }
+
+    .ctaRowButton {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ctaHeading {
+        font-size: 2rem;
+    }
+    
+    .ctaText {
+        font-size: 1.2rem;
+    }
+}
+
+/* faq section */
+.FAQsection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.faqBlock {
+    width: 90%;
+    border-bottom: solid #bebebe 1px;
+    padding: 1rem 0;
+}
+
+.faqBlock:last-child {
+    border: none;
+}
+
+.faqQuestionBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.faqQuestion,
+.faqActive {
+    width: 80%;
+    font-size: 1.125rem;
+}
+
+.faqActive {
+    color: var(--gold);
+}
+
+.chev {
+    width: 20%;
+    display: initial;
+}
+
+.faqAnswer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .2rem 1rem;
+    width: 89%;
+    background: #ededed;
+    margin: 0;
+}
+
+.close {
+    display: none;
+}
+
