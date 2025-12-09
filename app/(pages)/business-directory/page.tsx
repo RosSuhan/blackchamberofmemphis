@@ -1,8 +1,6 @@
 import PageTitleSection from "@/components/pageTitleSection/page"
-import style from '@/styles/businessDirectory.module.css'
-import Link from "next/link"
-import { categories } from '@/lib/categories'
 import type { Metadata } from "next"
+import Directory from "./Directory";
 
 export const metadata: Metadata = {
     title: 'Black-Owned Business Directory | Memphis Entrepreneurs & Services',
@@ -35,28 +33,13 @@ export default function BusinessDirectory(){
 
     return(
         <main
-            className={style.businessDirectoryPage}
+            style={{width:"100%", display:"flex", flexDirection:"column", alignItems:"center"}}
         >
             <PageTitleSection
                 pageTitle="All Categories:"
             />
 
-            {/* searchBar */}
-
-            <section
-                className={style.busDirectorySection}
-            >
-                {categories.map(({name, id}, index) => (
-                    <Link
-                        key={index}
-                        href={"/business-directory/" + id}
-                        className={style.categorieLink}
-                    >
-                        {name}
-                    </Link>
-                ))}
-                    
-            </section>
+            <Directory/>
         </main>
     )
 }

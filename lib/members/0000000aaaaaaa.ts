@@ -1,4 +1,6 @@
-export const template = {
+import { MembersListType } from './membersListType'
+
+export const template : MembersListType = {
     id : "",
     businessName : "",
     bannerImage : "",

@@ -8,7 +8,6 @@ import PageTitleSection from "@/components/pageTitleSection/page"
 import style from '@/styles/businessDirectory.module.css'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { unstable_isUnrecognizedActionError } from 'next/dist/client/components/navigation.react-server'
 
 export default function BusinessCategoryDirectory() {
     const params = useParams();

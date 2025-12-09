@@ -79,6 +79,7 @@ import { mayweatherFoods } from './(m)/mayweatherFoods'
 // N
 import { nailsByNicole } from './(n)/nailsByNicole'
 import { newVisionsTechSol } from './(n)/newVisionsTechSol'
+import { npsProtectiveService } from './(n)/npsProtectiveServ'
 
 // O
 import { otekaTechnologies } from './(o)/otekaTechnologies'
@@ -92,6 +93,7 @@ import { sheGotGameLeague } from './(s)/sheGotGameLeague'
 import { sweetAroma } from './(s)/sweetAroma'
 import { systematicEquitySol } from './(s)/systematicEquitySol'
 import { stretchlabMidtownM } from './(s)/stretchlabMidtownM'
+import { symbolicManna } from './(s)/symbolicManna'
 
 // T
 import { tabicanTechSol } from './(t)/tabicanTechSol'
@@ -199,6 +201,7 @@ export const businessList = [
 // N
     nailsByNicole,
     newVisionsTechSol,
+    npsProtectiveService,
 // O
     otekaTechnologies,
 // P
@@ -209,6 +212,7 @@ export const businessList = [
     sweetAroma,
     systematicEquitySol,
     stretchlabMidtownM,
+    symbolicManna,
 // T
     tabicanTechSol,
     techfit,
