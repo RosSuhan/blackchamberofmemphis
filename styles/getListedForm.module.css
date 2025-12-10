@@ -1,0 +1,104 @@
+.getListedForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.getListedHeading {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.getListedFieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+    border-radius: 5px;
+}
+
+.getListedLegend {
+    font-size: 1rem;
+}
+
+.getListedInputField,
+.getListedShortInputField {
+    width: 95%;
+    font-size: 1.125rem;
+    padding: .3rem;
+    border-radius: 5px;
+    border: solid 1px #000000;
+}
+
+.getListedInstruction {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 1rem 0 -0.5rem 0;
+}
+
+.getListedButtonRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getListedSubmit {
+    font-size: 1.125rem;
+    padding: .5rem 0;
+    width: 80%;
+    background: var(--gold);
+    border: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 400px) {
+    .getListedForm {
+        padding: 1rem 0;
+    }
+    
+    .getListedHeading {
+        font-size: 1.25rem;
+    }
+    
+    .getListedSubmit {
+        width: 70%;
+    }
+}
+
+@media (min-width: 600px) {
+    .getListedForm {
+        padding: 1rem 0;
+    }
+    
+    .getListedHeading {
+        font-size: 1.25rem;
+    }
+    
+    .getListedFieldset {
+        width: 90%;
+    }
+    
+    .getListedSubmit {
+        width: 60%;
+    }
+}
+
+@media (min-width: 800px) {
+    .getListedShortInputField{
+        width: 46%;
+    }
+    
+    .getListedInputField,
+    .getListedShortInputField {
+        font-size: 1.25rem;
+    }
+    
+    .getListedSubmit {
+        font-size: 1.25rem;
+    }
+}

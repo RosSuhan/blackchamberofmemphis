@@ -29,13 +29,11 @@ export default function HomepageMemberDirectoryCTArow(){
                     <h3
                         className={style.homepageDirectoryButtonBlockHeading}
                     >
-                        Join The Directory
+                        Get Your Business Listed
                     </h3>
 
                     <Link
-                        href={"https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"}
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                        href={"/business-directory/get-listed"}
                         className={style.homepageDirectoryButtonLink}
                     >
                         Click Here

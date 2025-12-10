@@ -1,10 +1,11 @@
 'use client'
 import style from '@/styles/searchBar.module.css'
+import React from 'react'
 
 
 interface SearchBarProps {
     searchValue: string,
-    setSearchValue: React.Dispatch<any>
+    setSearchValue: React.Dispatch<React.SetStateAction<string>>
 }
 
 export default function SearchBar({searchValue, setSearchValue}: SearchBarProps){
