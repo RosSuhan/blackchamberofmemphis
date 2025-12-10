@@ -1,10 +1,189 @@
-.eventsPage {
+.eventsDisplaySection {
     width: 100%;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 2rem;
 }
 
-.eventsDisplaySection {
-    background-color: pink;
+.eventsSearchBarRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000000;
+    padding: 2rem 0;
+}
+
+.searchInput {
+    border: solid var(--gold) 1px;
+    font-size: 1rem;
+    padding: .2rem .5rem;
+}
+
+.monthSelect {
+    border: solid var(--gold) 1px;
+    font-size: 1rem;
+    padding: .2rem .5rem;
+}
+
+.eventsBlock {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5rem;
+    border-radius: 10px;
+    border: var(--gold) solid 1px;
+}
+
+.eventsImage {
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.eventsDetailsBlock {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.eventsDateTimeLocation {
+    display: flex;
+    align-items: center;
+    padding: .3rem 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.8rem;
+}
+
+.eventsDateTimeLocationIcon {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 0.5rem;
+    color: var(--gold);
+}
+
+.eventsName {
+    font-size: 1.3rem;
+    margin: .2rem 0;
+    color: var(--gold);
+    font-weight: 800;
+}
+
+.eventsInfo {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: .2rem 0;
+}
+
+.eventsCTArow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid #c0c0c0 0.5px;
+    padding-top: 1rem;
+    margin-top: .5rem;
+}
+
+.eventsCTA {
+    background: var(--gold);
+    padding: .5rem 0;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.125rem;
+}
+
+.sorryMessage {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 400px) {
+    .searchInput,
+    .monthSelect {
+        width: 40%;
+    }
+
+    .eventsName {
+        font-size: 1.5rem;
+    }
+    
+    .eventsInfo {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .eventsBlock {
+        width: 70%;
+    }
+    
+    .eventsName {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .eventsBlock {
+        width: 90%;
+    }
+    
+    .eventsImage {
+        object-fit: cover;
+        width: 30%;
+        height: 150px; 
+    }
+    
+    .eventsDetailsBlock {
+        width: 65%;
+        justify-content: space-between;
+    }
+    
+    .eventsDateTimeLocation {
+        width: 49%;
+    }
+    
+    .eventsName {
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .eventsInfo {
+        width: 100%;
+    }
+    
+    .eventsCTArow {
+        justify-content: flex-end;
+    }
+    
+    .eventsCTA {
+        padding: .5rem 2rem;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1000px) {
+    .eventsImage {
+        height: 180px; 
+    }
+    
+    .eventsInfo {
+        font-size: 1.2rem;
+    }
+    
+    .sorryMessage {
+        font-size: 1.2rem;
+    }
 }

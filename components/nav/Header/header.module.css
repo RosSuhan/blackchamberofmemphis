@@ -74,6 +74,14 @@
     font-size: 0.9rem;
 }
 
+.navCTALink {
+    background: var(--gold);
+    width: 50%;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 5px;
+}
+
 @media (min-width: 800px) {
     .headerLogoLink {
         width: 20%;
@@ -134,6 +142,7 @@
     
     .navLink,
     .navCTALink {
+        width: fit-content;
         font-size: 0.7rem;
         text-align: center;
     }
