@@ -30,6 +30,18 @@ export default function Directory(){
         return nameMatch || categoryMatch || subCategoryMatch;
     })
 
+    const normalize = <T,>(value: T | T[]): T[] => {
+        return Array.isArray(value) ? value : [value]
+    }
+
+    const countBusinessesInCategory = (categoryId: string) => {
+        return businessList.filter((business) => {
+            const categories = normalize(business.profileCategory);
+
+            return categories.includes(categoryId);
+        }).length;
+    }
+
     return(
         <>            
             <section
@@ -41,7 +53,10 @@ export default function Directory(){
                         href={"/business-directory/" + id}
                         className={style.categorieLink}
                     >
-                        {name}
+                        <span>
+                            {name} 
+                        </span>
+                        ({countBusinessesInCategory(id)})
                     </Link>
                 ))}
             </section>

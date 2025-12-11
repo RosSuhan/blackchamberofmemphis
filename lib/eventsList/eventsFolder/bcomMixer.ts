@@ -2,7 +2,7 @@ import { EventListType } from "../eventListTypes";
 
 export const bcomMixer : EventListType = {
     id : "BCoM Holiday Mixer",
-    eventImage : "/members/Black-chamber-of-Memphis.webp",
+    eventImage : "/events/holiday-party.webp",
     eventImageAlt : "BCom Holiday Mixer",
     eventDate : "December 19, 2025",
     sortDate : "2025-12-19",

@@ -33,8 +33,17 @@ export default function BusinessCategoryDirectory() {
         }
     }
 
-    const normalize = (value: string | string[]): string[] => {
+    const normalize = <T,>(value: T | T[]): T[] => {
         return Array.isArray(value) ? value : [value]
+    }
+
+    const countBusinessesInCategory = (categoryId: string) => {
+        return businessList.filter((business) => {
+            const categories = normalize(business.profileCategory);
+            const subCategories = normalize(business.profileSubCategory);
+
+            return categories.includes(categoryId) || subCategories.includes(categoryId);
+        }).length;
     }
 
     // --- Filter Businesses ---
@@ -54,53 +63,60 @@ export default function BusinessCategoryDirectory() {
 
     // --- Page Title ---
     const pageTitle = selectedCategory
-        ? selectedCategory.name
+        ? `${selectedCategory.name}`
         : selectedSubCategory
-            ? selectedSubCategory.name
+            ? `${selectedSubCategory.name}`
             : '';
 
     return (
         <main className={style.businessDirectoryPage}>
             <PageTitleSection pageTitle={pageTitle} />
 
-            {/* --- Breadcrumb --- */}
-            {selectedSubCategory && parentCategory && (
-                <section className={style.breadcrumbSection}>
-                    <Link href="/business-directory" className={style.breadcrumbLink}>
-                        All Categories
-                    </Link>
-                    <span className={style.breadcrumbDivider}>›</span>
-                    <Link
-                        href={`/business-directory/${parentCategory.id}`}
-                        className={style.breadcrumbLink}
-                    >
-                        {parentCategory.name}
-                    </Link>
-                    <span className={style.breadcrumbDivider}>›</span>
-                    <span className={style.breadcrumbActive}>{selectedSubCategory.name}</span>
-                </section>
-            )}
-
-            {/* --- Subcategory Links (only for main categories) --- */}
-            {selectedCategory && selectedCategory.subCategories && selectedCategory.subCategories.length > 0 && (
-                <section className={style.busSubCategorySection}>
-                        <Link
-                            href={`/business-directory`}
-                            className={style.categorieLink}
-                        >
+                {/* --- Breadcrumb --- */}
+                {selectedSubCategory && parentCategory && (
+                    <section className={style.breadcrumbSection}>
+                        <Link href="/business-directory" className={style.breadcrumbLink}>
                             All Categories
                         </Link>
-                    {selectedCategory.subCategories.map((sub, index) => (
+                        <span className={style.breadcrumbDivider}>›</span>
                         <Link
-                            key={index}
-                            href={`/business-directory/${sub.id}`}
-                            className={style.categorieLink}
+                            href={`/business-directory/${parentCategory.id}`}
+                            className={style.breadcrumbLink}
                         >
-                            {sub.name}
+                            {parentCategory.name}
                         </Link>
-                    ))}
-                </section>
-            )}
+                        <span className={style.breadcrumbDivider}>›</span>
+                        <span className={style.breadcrumbActive}>{selectedSubCategory.name}</span>
+                    </section>
+                )}
+
+            <section
+                className={style.busDirectorySection}
+            >
+                {/* --- Subcategory Links (only for main categories) --- */}
+                {selectedCategory && selectedCategory.subCategories && selectedCategory.subCategories.length > 0 && (
+                    <section className={style.busSubCategorySection}>
+                            <Link
+                                href={`/business-directory`}
+                                className={style.categorieLink}
+                            >
+                                All Categories
+                            </Link>
+                        {selectedCategory.subCategories.filter((sub) => countBusinessesInCategory(sub.id) > 0).map((sub, index) => (
+                            <Link
+                                key={index}
+                                href={`/business-directory/${sub.id}`}
+                                className={style.categorieLink}
+                            >
+                                <span>
+                                    {sub.name}
+                                </span> 
+                                ({countBusinessesInCategory(sub.id)})
+                            </Link>
+                        ))}
+                    </section>
+                )}
+            </section>
 
             {/* --- Businesses --- */}
             <section className={style.busDirectorySection}>
