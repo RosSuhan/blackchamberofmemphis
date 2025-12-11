@@ -102,7 +102,11 @@ import { theCultureCollab } from './(t)/theCultureCollab'
 import { thePodcastCenter } from './(t)/thePodcastCenter'
 import { theSpruillAgency } from './(t)/theSpruillAgency'
 import { travelWellConcierge } from './(t)/travelWellConcierge'
-
+// U
+import { urbanSecSol } from './(u)/urbanSecSol'
+import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
+import { unifiedStrategicResources } from './(u)/unifiedStrategicResources'
+import { unamiFoodConsulting } from './(u)/unamiFoodConsulting'
 // V
 import { visionCapitalFunding } from './(v)/visionCapitalFunding'
 import { versatileActionFitness } from './(v)/versatileActionFitness'
@@ -220,6 +224,11 @@ export const businessList = [
     thePodcastCenter,
     theSpruillAgency,
     travelWellConcierge,
+// U
+    urbanSecSol,
+    upskilEdtechConsulting,
+    unifiedStrategicResources,
+    unamiFoodConsulting,
 // V
     visionCapitalFunding,
     versatileActionFitness,
