@@ -102,6 +102,19 @@ import { theCultureCollab } from './(t)/theCultureCollab'
 import { thePodcastCenter } from './(t)/thePodcastCenter'
 import { theSpruillAgency } from './(t)/theSpruillAgency'
 import { travelWellConcierge } from './(t)/travelWellConcierge'
+import { turnerFeild } from './(t)/turnerFeild'
+import { trulyticsFinancialCorp } from './(t)/trulyticsFinancialCorp'
+import { trustMarketingComs } from './(t)/trustMarketingComs'
+import { trueConcierge } from './(t)/trueConcierge'
+import { trinityComprehensiveHealthcareCenter } from './(t)/trinityComprehensiveHealthcareCenter'
+import { trentonEvansPhotophraphy } from './(t)/trentonEvansPhotophraphy'
+import { transitionalReentryAdultProgram } from './(t)/transitionalReentryAdultProgram'
+import { transformationConsultingGroup } from './(t)/transformationConsultingGroup'
+import { touchOfPlushBeauty } from './(t)/touchOfPlushBeauty'
+import { totsPlayWorld } from './(t)/totsPlayWorld'
+import { totalVibeRide } from './(t)/totalVibeRide'
+import { torryLowVoltageCommunication } from './(t)/torryLowVoltageCommunication'
+import { topNotchSecurity } from './(t)/topNotchSecurity'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -224,6 +237,19 @@ export const businessList = [
     thePodcastCenter,
     theSpruillAgency,
     travelWellConcierge,
+    turnerFeild,
+    trulyticsFinancialCorp,
+    trustMarketingComs,
+    trueConcierge,
+    trinityComprehensiveHealthcareCenter,
+    trentonEvansPhotophraphy,
+    transitionalReentryAdultProgram,
+    transformationConsultingGroup,
+    touchOfPlushBeauty,
+    totsPlayWorld,
+    totalVibeRide,
+    torryLowVoltageCommunication,
+    topNotchSecurity,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
