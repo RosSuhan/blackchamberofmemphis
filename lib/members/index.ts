@@ -94,7 +94,7 @@ import { sweetAroma } from './(s)/sweetAroma'
 import { systematicEquitySol } from './(s)/systematicEquitySol'
 import { stretchlabMidtownM } from './(s)/stretchlabMidtownM'
 import { symbolicManna } from './(s)/symbolicManna'
-
+import { smartCremation } from './(s)/smartCremation'
 // T
 import { tabicanTechSol } from './(t)/tabicanTechSol'
 import { techfit } from './(t)/techfit'
@@ -115,6 +115,7 @@ import { totsPlayWorld } from './(t)/totsPlayWorld'
 import { totalVibeRide } from './(t)/totalVibeRide'
 import { torryLowVoltageCommunication } from './(t)/torryLowVoltageCommunication'
 import { topNotchSecurity } from './(t)/topNotchSecurity'
+import { thomasConsultants } from './(t)/thomasConsultants'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -230,6 +231,7 @@ export const businessList = [
     systematicEquitySol,
     stretchlabMidtownM,
     symbolicManna,
+    smartCremation,
 // T
     tabicanTechSol,
     techfit,
@@ -250,6 +252,7 @@ export const businessList = [
     totalVibeRide,
     torryLowVoltageCommunication,
     topNotchSecurity,
+    thomasConsultants,
 // U
     urbanSecSol,
     upskilEdtechConsulting,

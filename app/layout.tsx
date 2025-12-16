@@ -29,10 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* ⭐ Google Tag Manager – HEAD Script */}
-        {/* <Script
+        <Script
           id="gtm-head"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -44,7 +44,7 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-NMSBD5BR');
             `,
           }}
-        /> */}
+        />
 
         {/* --- JSON-LD Organization Schema --- */}
         <Script
@@ -107,14 +107,14 @@ export default function RootLayout({
       </head>
       <body>
         {/* ⭐ Google Tag Manager – BODY noscript */}
-        {/* <noscript>
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NMSBD5BR"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript> */}
+        </noscript>
 
         <Header/>
         {children}

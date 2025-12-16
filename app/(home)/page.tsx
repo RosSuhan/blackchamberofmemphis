@@ -2,6 +2,7 @@ import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/Home
 import StayInformedSection from "@/components/forms/stayInformed";
 import HomeHero from "@/components/heroSections/HomeHero";
 import Partners from "@/components/partners/page";
+import Popup from "@/components/Popup/page";
 import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
 import WhoWeAre from "@/components/whoWeAre/page";
 import type { Metadata } from "next";
@@ -44,6 +45,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <section>
+      <Popup
+        imageSrc={'/events/bcom-holiday-party.webp'}
+        imageAlt={"BCoM Holiday Party"}
+        imageWidth={1500}
+        imageHeight={2100}
+        title=""
+        description={""}
+        ctaText={"Register Today"}
+        ctaLink={"https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/xRF8qV6uMCYC7"}
+        storageKey={"Holiday_Mixer"}
+      />
+
       <HomeHero/>
 
       <WhoWeAre/>
