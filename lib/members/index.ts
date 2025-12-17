@@ -88,7 +88,8 @@ import { otekaTechnologies } from './(o)/otekaTechnologies'
 // P
 import { pcss } from './(p)/pcss'
 import { poppz } from './(p)/poppz'
-
+// R
+import { ritzeeFlorist } from './(r)/ritzeeFlorist'
 // S
 import { sheGotGameLeague } from './(s)/sheGotGameLeague'
 import { sweetAroma } from './(s)/sweetAroma'
@@ -227,6 +228,8 @@ export const businessList = [
 // P
     pcss,
     poppz,
+// R
+    ritzeeFlorist,
 // S
     sheGotGameLeague,
     sweetAroma,
