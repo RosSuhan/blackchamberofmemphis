@@ -38,7 +38,7 @@ import { butterifficBakeryCafe } from './(b)/butterifficBakeryCafe'
 import { carisCloset } from './(c)/carisCloset'
 import { certifiedDefendersOfAmerica } from './(c)/certifiedDefendersOfAmerica'
 import { christieTaylorConsulting } from './(c)/christieTaylorConsulting'
-
+import { capturingMemories } from './(c)/capturingMemories'
 // D
 import { dbkStudios } from './(d)/dbkStudios'
 import { dbosElvisPresley } from './(d)/dbosElvisPresley'
@@ -118,6 +118,11 @@ import { totalVibeRide } from './(t)/totalVibeRide'
 import { torryLowVoltageCommunication } from './(t)/torryLowVoltageCommunication'
 import { topNotchSecurity } from './(t)/topNotchSecurity'
 import { thomasConsultants } from './(t)/thomasConsultants'
+import { thinkInspired } from './(t)/thinkInspired'
+import { theSolutionFactory } from './(t)/theSolutionFactory'
+import { theSimsFinancialGroup } from './(t)/theSimsFinancialGroup'
+import { theResumeReviveCareerServ } from './(t)/theResumeReviveCareerServ'
+import { theRedwingGroup } from './(t)/theRedwingGroup'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -186,7 +191,7 @@ export const businessList = [
     carisCloset,
     certifiedDefendersOfAmerica,
     christieTaylorConsulting,
-
+    capturingMemories,
 // D
     dbkStudios,
     dbosElvisPresley,
@@ -258,6 +263,11 @@ export const businessList = [
     torryLowVoltageCommunication,
     topNotchSecurity,
     thomasConsultants,
+    thinkInspired,
+    theSolutionFactory,
+    theSimsFinancialGroup,
+    theResumeReviveCareerServ,
+    theRedwingGroup,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
