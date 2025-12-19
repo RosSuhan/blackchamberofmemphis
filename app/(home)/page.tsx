@@ -46,15 +46,17 @@ export default function Home() {
   return (
     <section>
       <Popup
-        imageSrc={'/events/bcom-holiday-party.webp'}
-        imageAlt={"BCoM Holiday Party"}
-        imageWidth={1500}
-        imageHeight={2100}
+        imageSrc={'/pop-up/discount-pop-up.webp'}
+        imageAlt={"25% Discount on renewal fees and new memberships"}
+        imageWidth={200}
+        imageHeight={300}
         title=""
         description={""}
-        ctaText={"Register Today"}
-        ctaLink={"https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/xRF8qV6uMCYC7"}
-        storageKey={"Holiday_Mixer"}
+        // ctaText={"Email: memberservices@bbamemphis.com"}
+        ctaText=""
+        ctaLink={""}
+        // ctaLink={"mailto:memberservices@bbamemphis.com"}
+        storageKey={"Discount"}
       />
 
       <HomeHero/>

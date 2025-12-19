@@ -85,13 +85,15 @@ export default function Popup({
                 : null}
                 
 
-                <Link
-                    href={ctaLink}
-                    className={style.popupCtaLink}
-                    // onClick={closeModal}
-                >
-                    {ctaText}
-                </Link>
+                {ctaLink ?
+                    <Link
+                        href={ctaLink}
+                        className={style.popupCtaLink}
+                        onClick={closeModal}
+                    >
+                        {ctaText}
+                    </Link>
+                : null}
             </div>
         </div>
     )
