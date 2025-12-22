@@ -70,7 +70,7 @@ export default function Events(){
                 <span
                     className={style.programTagline}
                 >
-                    January – February 2026 • Hosted by the Black Chamber of Memphis
+                    January – March 2026 • Hosted by the Black Chamber of Memphis
                 </span>
 
                 <div
@@ -197,7 +197,7 @@ export default function Events(){
                         className={style.workshopTimeDate}
                     >
                         <BaselineCalendarMonth/>
-                        January 7, 2026
+                        January 21, 2026
                     </span>
                     <span
                         className={style.workshopTimeSlot1}
@@ -234,7 +234,7 @@ export default function Events(){
                         className={style.workshopTimeDate}
                     >
                         <BaselineCalendarMonth/>
-                        January 21, 2026
+                        February 14, 2026
                     </span>
                     <span
                         className={style.workshopTimeSlot1}
@@ -271,7 +271,7 @@ export default function Events(){
                         className={style.workshopTimeDate}
                     >
                         <BaselineCalendarMonth/>
-                        February 4, 2026
+                        February 18, 2026
                     </span>
                     <span
                         className={style.workshopTimeSlot1}
@@ -308,7 +308,7 @@ export default function Events(){
                         className={style.workshopTimeDate}
                     >
                         <BaselineCalendarMonth/>
-                        February 18, 2026
+                        March 4, 2026
                     </span>
                     <span
                         className={style.workshopTimeSlot1}

@@ -11,14 +11,20 @@ export default function EventsBlock(){
     const [ searchTerm, setSearchTerm ] = useState('');
     const [ selectedMonth, setSelectedMonth ] = useState('all')
 
+    const today = new Date();
+    today.setHours(0,0,0,0);
+
     const filteredEvents = eventIndex.filter(event => {
         const matchesSearch = event.eventName.toLowerCase().includes(searchTerm.toLowerCase()) || event.eventDescription.toLowerCase().includes(searchTerm.toLowerCase());
 
         const eventDateObj = new Date(event.sortDate);
+        eventDateObj.setHours(0,0,0,0);
 
         const matchesMonth = selectedMonth === "all" || eventDateObj.getMonth() + 1 === Number(selectedMonth);
 
-        return matchesSearch && matchesMonth
+        const isUpcomingEvent = eventDateObj >= today;
+
+        return matchesSearch && matchesMonth && isUpcomingEvent
     })
     return(
         <section
