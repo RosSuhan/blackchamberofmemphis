@@ -1,7 +1,7 @@
 import { EventListType } from "../eventListTypes";
 
 export const bcomMixer : EventListType = {
-    id : "BCoM Holiday Mixer",
+    id : "bcom-holiday-mixer",
     eventImage : "/events/holiday-party.webp",
     eventImageAlt : "BCom Holiday Mixer",
     eventDate : "December 19, 2025",
@@ -11,6 +11,10 @@ export const bcomMixer : EventListType = {
     eventAddress : "Bishop at Central Station Hotel",
     eventName : "Black Chamber of Memphis Holiday Mixer",
     eventDescription : "Join the Black Chamber of Memphis, along with its members and partners, for an evening of celebration as we recap our achievements from the year 2025. Enjoy holiday treats while mingling and celebrating with entertainment, delicious food, and special messages and highlights. This holiday event promises to be a delightful experience for everyone!",
+    eventLongDescription: ``,
+    eventPastDescription: "The Black Chamber of Memphis, along with its members and partners, came together for an evening of celebration as we reflected on our achievements from 2025. Guests enjoyed holiday treats while mingling and celebrating with entertainment, delicious food, and special messages and highlights. The holiday event was a truly delightful experience for everyone in attendance.",
+    eventPastBlog: `
+        <p>The Black Chamber of Memphis, along with its members and partners, came together for an evening of celebration as we reflected on our achievements from 2025. Guests enjoyed holiday treats while mingling and celebrating with entertainment, delicious food, and special messages and highlights. The holiday event was a truly delightful experience for everyone in attendance.</p>`,
     eventCTAbuttonLink : "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/xRF8qV6uMCYC7",
     eventCTAbuttonText : "Register today"
 }

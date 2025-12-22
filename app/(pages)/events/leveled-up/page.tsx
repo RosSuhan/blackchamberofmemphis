@@ -156,7 +156,7 @@ export default function Events(){
                 <h2
                     className={style.presenterSectionHeading}
                 >
-                    Brooke Benjamin, Esq., LL.M.
+                    Brooke Benjamin Kelley, Esq., LL.M.
                 </h2>
                 <span
                     className={style.presenterSectionTitle}
@@ -491,6 +491,20 @@ export default function Events(){
                     >
                         These can be delivered onsite or virtually, with flexible scheduling and post-workshop availability.
                     </p>
+                </div>
+                <div>
+                    <h3
+                        // className={style.nextStepHeading}
+                    >
+                        Disclaimer
+                    </h3>
+                    <ul
+                        className={style.nextStepListText}
+                    >
+                        <li>Participation does not create an attorney-client, accountant-client, or financial advisory relationship</li>
+                        <li>No individualized legal, tax, or financial advice is provided</li>
+                        <li>Participants seeking personalized advice should engage a licensed professional separately</li>
+                    </ul>
                 </div>
             </section>
 

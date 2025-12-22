@@ -9,6 +9,9 @@ export interface EventListType {
     eventAddress : string,
     eventName : string,
     eventDescription : string,
+    eventLongDescription: string,
+    eventPastDescription: string,
+    eventPastBlog: string,
     eventCTAbuttonLink : string,
     eventCTAbuttonText : string
 }
@@ -23,5 +26,7 @@ export interface EventListType {
 // eventAddress : "",
 // eventName : "",
 // eventDescription : "",
+// eventPastDescription: "",
+// eventPastBlog: ``,
 // eventCTAbuttonLink : "",
 // eventCTAbuttonText : ""

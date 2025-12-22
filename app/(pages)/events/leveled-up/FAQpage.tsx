@@ -43,15 +43,16 @@ const faqList = [
             <p>No prior financial or tax experience is required; however, attendees must be decision-makers in their business.</p>`
     },{
         faqIndex: 'q8',
-        qes: `What should participants bring?`,
+        qes: `Will there be printed materials?`,
         ans: `
-            <p>We are finalizing the preparation guidelines.</p>
-            <p>A confirmation email will be sent with details on what to bring (e.g., laptop, documents, or nothing required).`
+            <p>A printed workbook will be provided at Workshop 1</p>
+            <p>Participants will receive access to a digital portal with worksheets, templates, and toolkits used throughout the four-part series</p>`
     },{
         faqIndex: 'q9',
         qes: `Is one-on-one coacing included?`,
-        ans: `<p>Yes! All participants who complete the full four-part series will receive access to free 45-minute one-on-one coaching sessions with Brooke Benjamin.</p>
-            <p>These sessions are available after the workshop series concludes.</p>`
+        ans: `<p>One complimentary 45-minute one-on-one coaching session provided by Leveled Up Money<p>
+                <p>Sessions may be facilitated by Brooke Benjamin Kelley, Esq., LL.M., or a qualified Leveled Up Money coach</p>
+                <p>Sessions are intended to help participants apply workshop concepts to their business</p>`
     },{
         faqIndex: 'q10',
         qes: `Can participants reschedule their time slot?`,
@@ -62,11 +63,6 @@ const faqList = [
         ans: `<p>Parking is <strong>not free</strong>, and attendees will receive confirmed parking instructions once finalized.</p>
             <p>The venue is <strong>fully accessible</strong>.</p>
             <p>Light refreshments and water will be provided.</p>`
-    },{
-        faqIndex: 'q12',
-        qes: `Will participants receive any materials after the workshop?`,
-        ans: `<p>Decisions regarding workbooks, templates, certificates, and additional resources are still being finalized.</p>
-                <p>Updates will be shared before the first session.</p>`
     }
 ]
 
