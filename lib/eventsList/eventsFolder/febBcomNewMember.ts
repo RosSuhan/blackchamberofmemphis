@@ -6,7 +6,7 @@ export const febBcomNewMember : EventListType = {
     eventImageAlt : "February 2026 New Member Orientation",
     eventDate : "Friday, February 6, 2026",
     sortDate : "2026-02-06",
-    eventTime : "9am - 10am",
+    eventTime : "10am - 11am",
     eventAddressLink : "",
     eventAddress : "Virtual Meeting",
     eventName : "Black Chamber of Memphis New Member Orientation",

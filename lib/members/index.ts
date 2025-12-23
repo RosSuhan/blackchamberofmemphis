@@ -123,6 +123,9 @@ import { theSolutionFactory } from './(t)/theSolutionFactory'
 import { theSimsFinancialGroup } from './(t)/theSimsFinancialGroup'
 import { theResumeReviveCareerServ } from './(t)/theResumeReviveCareerServ'
 import { theRedwingGroup } from './(t)/theRedwingGroup'
+import { theRansomedGroup } from './(t)/theRansomedGroup'
+import { thePrettyUniversity } from './(t)/thePrettyUniversity'
+import { thePerfectTemperature } from './(t)/thePerfectTemperature'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -268,6 +271,9 @@ export const businessList = [
     theSimsFinancialGroup,
     theResumeReviveCareerServ,
     theRedwingGroup,
+    theRansomedGroup,
+    thePrettyUniversity,
+    thePerfectTemperature,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
