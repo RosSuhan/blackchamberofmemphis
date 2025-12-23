@@ -10,6 +10,24 @@
     height: auto;
 }
 
+.toggleBtnRow {
+    width: 90%;
+    padding-top: 1rem;
+}
+
+.toggleButton,
+.toggleButtonActive {
+    background: transparent;
+    border: none;
+    margin-right: 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+}
+
+.toggleButtonActive {
+    border-bottom: var(--gold) solid 2px;
+}
+
 .eventSchedule {
     width: 80%;
     padding: 1rem;
@@ -36,6 +54,7 @@
 }
 
 .singleEventBio {
+    display: initial;
     width: 90%;
     margin-bottom: 1rem;
 }
@@ -54,6 +73,37 @@
     font-size: 1.125rem;
 }
 
+.galleryBlock {
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.galleryHeading {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.masonryGrid {
+    column-count: 2;
+    column-gap: 1.25rem;
+}
+
+.masonryItem {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+.galleryImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
 @media (min-width:600px) {
     .singleEventImage {
         height: 300px;
@@ -69,6 +119,10 @@
     
     .singleEventBio {
         margin-bottom: 2rem;
+    }
+
+    .masonryGrid {
+        column-count: 3;
     }
 }
 

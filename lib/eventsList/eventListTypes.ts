@@ -13,7 +13,8 @@ export interface EventListType {
     eventPastDescription: string,
     eventPastBlog: string,
     eventCTAbuttonLink : string,
-    eventCTAbuttonText : string
+    eventCTAbuttonText : string,
+    eventGallery: {src: string, alt: string,}[],
 }
 
 // id : "",
@@ -29,4 +30,5 @@ export interface EventListType {
 // eventPastDescription: "",
 // eventPastBlog: ``,
 // eventCTAbuttonLink : "",
-// eventCTAbuttonText : ""
+// eventCTAbuttonText : "",
+// eventGallery: [{src: "", alt: ""}]
