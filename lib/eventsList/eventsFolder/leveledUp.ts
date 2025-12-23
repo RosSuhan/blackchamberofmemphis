@@ -15,5 +15,6 @@ export const leveledUp : EventListType = {
     eventPastDescription: "",
     eventPastBlog: ``,
     eventCTAbuttonLink : "/events/leveled-up",
-    eventCTAbuttonText : "Get More Information"
+    eventCTAbuttonText : "Get More Information",
+    eventGallery: [{src: "", alt: ""}]
 }

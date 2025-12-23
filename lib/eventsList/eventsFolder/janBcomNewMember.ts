@@ -46,5 +46,6 @@ export const janBcomNewMember : EventListType = {
     eventPastDescription: "",
     eventPastBlog: ``,
     eventCTAbuttonLink : "/events/january-new-member-orientation",
-    eventCTAbuttonText : "Read more"
+    eventCTAbuttonText : "Read more",
+    eventGallery: [{src: "", alt: ""}]
 }

@@ -15,5 +15,6 @@ export const ecoBrunch : EventListType = {
     eventPastBlog: ``,
     eventDescription : 'Join us for an end-of-year ecosystem gathering as we come together to connect, align, and strengthen support for Memphis entrepreneurs. MORTAR will help guide the conversation - your voice matters.',
     eventCTAbuttonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/NaF6QWECYCaCm',
-    eventCTAbuttonText : 'Register Today!'
+    eventCTAbuttonText : 'Register Today!',
+    eventGallery: [{src: "", alt: ""}]
 }
