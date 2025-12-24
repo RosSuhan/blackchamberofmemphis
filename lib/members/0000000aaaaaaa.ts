@@ -33,4 +33,3 @@ export const template : MembersListType = {
     tiktok : "",
     pinterest : ""
 }
-

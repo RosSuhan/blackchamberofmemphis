@@ -126,6 +126,13 @@ import { theRedwingGroup } from './(t)/theRedwingGroup'
 import { theRansomedGroup } from './(t)/theRansomedGroup'
 import { thePrettyUniversity } from './(t)/thePrettyUniversity'
 import { thePerfectTemperature } from './(t)/thePerfectTemperature'
+import { thePaperSack } from './(t)/thePaperSack'
+import { theM9Eats } from './(t)/theM9Eats'
+import { theLegacyConsultingStaffingAgency } from './(t)/theLegacyConsultingStaffingAgency'
+import { theFlourishingAgency } from './(t)/theFlourishingAgency'
+import { theCulinaryExperience } from './(t)/theCulinaryExperience'
+import { theCarterMaloneGroup } from './(t)/theCarterMaloneGroup'
+import { theBlackPearlNailAcademy } from './(t)/theBlackPearlNailAcademy'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -274,6 +281,13 @@ export const businessList = [
     theRansomedGroup,
     thePrettyUniversity,
     thePerfectTemperature,
+    thePaperSack,
+    theM9Eats,
+    theLegacyConsultingStaffingAgency,
+    theFlourishingAgency,
+    theCulinaryExperience,
+    theCarterMaloneGroup,
+    theBlackPearlNailAcademy,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
