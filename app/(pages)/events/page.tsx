@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageTitleSection from "@/components/pageTitleSection/page";
 import EventsBlock from "@/components/EventsBlock/page";
+import EventsCalendar from "@/components/eventsCalendar/page";
 
 export const metadata: Metadata = {
     title: 'Events & Workshops | Black Chamber of Memphis Networking',

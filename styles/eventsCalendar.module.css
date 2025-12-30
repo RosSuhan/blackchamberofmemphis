@@ -1,0 +1,136 @@
+.agenda {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monthAgenda {
+    width: 95%;
+}
+
+.monthTitle {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.agendaItem {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eeeeee;
+    text-decoration: none;
+    color: inherit;
+}
+
+.agendaDate {
+    min-width: 44px;
+    text-align: center;
+}
+
+.day {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: .2rem;
+}
+
+.weekday,
+.time {
+    font-size: 0.75rem;
+    color: #666666;
+}
+
+.agendaDetailsName {
+    display: block;
+}
+
+/* Start of the desktop View Calendar */
+
+.eventsCalendarSection {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventsCalendarHeader {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+.eventsCalendarIcon {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.eventsCalendarMonthDate {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.eventsCalendarGrid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.75rem;
+}
+
+.dayName {
+    font-weight: 600;
+    text-align: center;
+    color: #555555;
+}
+
+.dayCell {
+    background: #e1e0e0;
+    border-radius: 12px;
+    padding: 0.3rem;
+    min-height: 100px;
+    /* width: calc(100%\7); */
+    position: relative;
+}
+
+.date {
+    color: #000000;
+}
+
+.event {
+    width: 80px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.75rem;
+    margin-top: 1.2rem;
+    /* background: #000000; */
+    /* color: #ffffff; */
+    color: #000000;
+    text-decoration: none;
+    padding: 0.25rem 0.4rem;
+}
+
+.more {
+    font-size: 0.7rem;
+    color: #555555;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+@media (min-width: 1000px) {
+    .event {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .event {
+        width: 120px;
+    }
+}
