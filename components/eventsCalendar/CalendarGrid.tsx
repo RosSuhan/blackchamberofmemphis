@@ -26,13 +26,6 @@ export default function CalendarGrid(){
         );
     });
 
-    // const getEventsForDay = (day: number): EventListType[] => {
-    //     const dateStr = `${year}-${String(month + 1).padStart(2,"0")}-${String(day).padStart(2, "0")}`;
-    //     return monthEvents.filter(
-    //         (event) => event.sortDate === dateStr
-    //     );
-    // };
-
     return(
         <section
             className={style.eventsCalendarSection}
@@ -70,6 +63,14 @@ export default function CalendarGrid(){
                     >
                         {day}
                     </div>
+                ))}
+
+                {/* Empty cells before first day */}
+                {Array.from({ length: firstDay }).map((_, i) => (
+                <div
+                    key={`empty-${i}`}
+                    className={`${style.dayCell} ${style.empty}`}
+                />
                 ))}
 
                 {Array.from({ length: daysInMonth }).map((_, i) => {
