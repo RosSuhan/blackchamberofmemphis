@@ -1,5 +1,4 @@
 import PageTitleSection from "@/components/pageTitleSection/page";
-import EventsBlock from "@/components/EventsBlock/page";
 import EventsCalendar from "@/components/eventsCalendar/page";
 
 export default function EventsDemo(){
