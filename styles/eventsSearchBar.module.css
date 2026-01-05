@@ -1,0 +1,40 @@
+.eventsSearchButton {
+    width: 80dvw;
+    margin-top: 2rem; 
+    padding: 1rem; 
+    border: solid var(--gold) 2px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--gold); 
+    font-size: 1.25rem;
+    background: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: .5rem;
+    text-align: center;
+}
+
+.longtext {
+    text-wrap: balance;
+}
+
+.eventsSearchCTA {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .eventsSearchButton{
+        width: 70dvw;
+    }
+}
+
+@media (min-width: 800px) {
+    .eventsSearchCTA {
+        width: 30%;
+        text-align: center;
+        margin-left: 2rem;
+    }
+}

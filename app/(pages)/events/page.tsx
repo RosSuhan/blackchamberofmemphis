@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageTitleSection from "@/components/pageTitleSection/page";
 import EventsCalendar from "@/components/eventsCalendar/page";
-import Link from "next/link";
+import EventsSearchBar from "@/components/eventsCalendar/eventsSearchComponent";
 
 export const metadata: Metadata = {
     title: 'Events & Workshops | Black Chamber of Memphis Networking',
@@ -39,18 +39,7 @@ export default function Events(){
                 pageTitle="Events"
             />
 
-            <Link
-                href={'/events/events-search'}
-                style={{margin:"2rem 0 1rem 0", padding:"1rem 2rem", border:"solid var(--gold) 2px", borderRadius:"8px", textDecoration:"none", color:"var(--gold)", fontSize:"1.25rem", background:"#3e3e3e"}}
-            >
-                Do you know the event you are looking for?
-
-                <span
-                    style={{marginLeft:"2rem"}}
-                >
-                    Search Your Event
-                </span>
-            </Link>
+            <EventsSearchBar/>
 
             <EventsCalendar/>
         </main>
