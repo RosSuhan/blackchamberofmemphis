@@ -33,6 +33,20 @@ export default function MembersPage(){
             <section
                 className={style.membersBanner}
             >
+                <div
+                    className={style.memberBadgeRow}
+                    style={{display:"none"}}
+                >
+                    <Image
+                        src={"/assets/membersBadge.webp"}
+                        alt=''
+                        width={900}
+                        height={400}
+                        className={style.memberBadge}
+                    />
+                </div>
+                
+
                 {selectedMember.profileLogo? 
                     <Image
                         src={'/members/' + selectedMember.profileLogo + '.webp'}

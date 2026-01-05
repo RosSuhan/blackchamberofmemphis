@@ -5,7 +5,6 @@
     width: 100dvw;
     height: 100svh;
     background: rgba(0, 0, 0, 0.6);
-    /* display: none; IMPORTANT */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +21,6 @@
     justify-content: space-evenly;
     border-radius: 8px;
     padding: 1rem 0;
-    /* text-align: center; */
 }
 
 .closeButtonRow {
@@ -32,7 +30,6 @@
 }
 
 .popupCloseBtn {
-    /* background-color: green; */
     border-radius: 30px;
     padding: .5rem 1rem;
 }
@@ -41,7 +38,6 @@
     width: 80%;
     height: auto;
     object-fit: contain;
-    /* background: blue; */
 }
 
 .popupTitle {
@@ -49,7 +45,6 @@
 }
 
 .popupDescription {
-    /* background: purple; */
     font-size: 1rem;
     line-height: 1.1rem;
 }
@@ -63,4 +58,21 @@
     text-decoration: none;
     color: #000000;
     border-radius: 10px;
+}
+
+@media (min-width:400px) {
+    .popup {
+        width: 360px;
+    }
+}
+
+@media (min-width:600px) {
+    .popup {
+        width: 500px;
+        height: 90%;
+    }
+    
+    .popupImage {
+        width: 60%;
+    }
 }

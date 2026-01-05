@@ -99,6 +99,10 @@ export default function Header(){
                         <Link 
                             href="/memphis-ten"
                             className={style.navCTALink}
+                            onClick={() => {
+                                setSubMenuOpen(null)
+                                setMenuOpen(false)
+                            }}
                         >
                             MemphisTEN
                         </Link>

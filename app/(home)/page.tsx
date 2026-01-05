@@ -46,17 +46,17 @@ export default function Home() {
   return (
     <section>
       <Popup
-        imageSrc={'/pop-up/discount-pop-up.webp'}
+        imageSrc={'/events/leveledUp/leveledupmoney.webp'}
         imageAlt={"25% Discount on renewal fees and new memberships"}
-        imageWidth={200}
-        imageHeight={300}
+        imageWidth={1587}
+        imageHeight={2245}
         title=""
         description={""}
-        // ctaText={"Email: memberservices@bbamemphis.com"}
-        ctaText=""
-        ctaLink={""}
-        // ctaLink={"mailto:memberservices@bbamemphis.com"}
-        storageKey={"Discount"}
+        ctaText={"Read More"}
+        // ctaText=""
+        // ctaLink={""}
+        ctaLink={"/events/leveled-up"}
+        storageKey={"leveledUp"}
       />
 
       <HomeHero/>

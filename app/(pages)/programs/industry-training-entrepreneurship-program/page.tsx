@@ -57,6 +57,21 @@ export default function ITEP(){
                 singleCtaButtonLink={""}
                 singleCtaButtonText={"Register Today"}
             />
+
+            <WordImageBlocks
+                wordHeaderText={"Talent Connect – Career Pathways & Job Matching"}
+                wordParagraphTexts={`
+                    <p>Talent Connect provides job seekers with access to full-time employment opportunities across a range of industries. The program features an AI-powered job matching tool that connects participants to available positions based on skills, interests, and career goals.</p>
+                    <h3>Program Highlights:</h3>
+                    <ul>
+                        <li>Access to 200+ full-time job opportunities in Memphis</li>
+                        <li>Starting salaries of $40,000+</li>
+                        <li>AI-supported job matching</li>
+                        <li>Online and in-person career readiness training</li>
+                    </ul>
+                    <p>Talent Connect supports individuals looking to launch new careers or improve their long-term career trajectory.</p>`}
+                blockImage={'/assets/networking-scaled-1.webp'}
+            />
         </main>
     )
 }

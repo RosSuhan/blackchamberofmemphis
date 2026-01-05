@@ -234,7 +234,7 @@ export default function Events(){
                         className={style.workshopTimeDate}
                     >
                         <BaselineCalendarMonth/>
-                        February 14, 2026
+                        February 4, 2026
                     </span>
                     <span
                         className={style.workshopTimeSlot1}
