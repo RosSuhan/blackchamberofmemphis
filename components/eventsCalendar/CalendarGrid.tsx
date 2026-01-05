@@ -30,6 +30,7 @@ export default function CalendarGrid(){
         <section
             className={style.eventsCalendarSection}
         >
+            
             <div
                 className={style.eventsCalendarHeader}
             >
