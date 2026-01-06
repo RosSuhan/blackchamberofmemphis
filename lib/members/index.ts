@@ -44,6 +44,7 @@ import { dbkStudios } from './(d)/dbkStudios'
 import { dbosElvisPresley } from './(d)/dbosElvisPresley'
 import { dbosRiverdale } from './(d)/dbosRiverdale'
 import { dottedIAlliance } from './(d)/dottedIAlliance'
+import { diamondSafetyTraining } from './(d)/diamondSafetyTraining'
 // E
 import { epicenter } from './(e)/epicenter'
 // F
@@ -207,6 +208,7 @@ export const businessList = [
     dbosElvisPresley,
     dbosRiverdale,
     dottedIAlliance,
+    diamondSafetyTraining,
 // E
     epicenter,
 // F
