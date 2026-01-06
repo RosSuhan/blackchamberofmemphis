@@ -1,4 +1,5 @@
 export interface EventListType {
+    holidayStatus: boolean,
     id : string,
     eventImage : string,
     eventImageAlt : string,

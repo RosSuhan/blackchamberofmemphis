@@ -1,4 +1,5 @@
 export interface MembersListType {
+    memberStatus: boolean,
     id: string;
     businessName: string;
     bannerImage: string;

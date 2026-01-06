@@ -1,6 +1,7 @@
 import { EventListType } from "../eventListTypes";
 
 export const ecoBrunch : EventListType = {
+    holidayStatus: false,
     id : 'ecosystem-brunch',
     eventImage : '/events/ecosystem-brunch.webp',
     eventImageAlt : 'Ecosystem Brunch invitation',

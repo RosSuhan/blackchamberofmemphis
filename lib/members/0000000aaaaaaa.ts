@@ -1,6 +1,7 @@
 import { MembersListType } from './membersListType'
 
 export const template : MembersListType = {
+    memberStatus: false,
     id : "",
     businessName : "",
     bannerImage : "",

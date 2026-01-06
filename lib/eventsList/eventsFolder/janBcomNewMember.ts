@@ -1,6 +1,7 @@
 import { EventListType } from "../eventListTypes";
 
 export const janBcomNewMember : EventListType = {
+    holidayStatus: false,
     id : "january-new-member-orientation",
     eventImage : "/events/new-member/janbcom-newmemberorientation.webp",
     eventImageAlt : "January 2026 New Member Orientation",
