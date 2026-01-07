@@ -3,6 +3,7 @@ import { EventListType } from "../eventListTypes";
 export const ecoBrunch : EventListType = {
     holidayStatus: false,
     id : 'ecosystem-brunch',
+    type: 'event',
     eventImage : '/events/ecosystem-brunch.webp',
     eventImageAlt : 'Ecosystem Brunch invitation',
     eventDate : "December 17, 2025",

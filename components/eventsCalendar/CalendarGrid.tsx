@@ -1,7 +1,10 @@
 'use client'
 import style from '@/styles/eventsCalendar.module.css'
 import { useState } from 'react';
+import { isPastEvent } from '@/lib/utils/isPastEvent';
 import { eventIndex } from '@/lib/eventsList/eventIndex'
+import { getUSFederalHolidays } from '@/lib/utils/usFederalHolidays';
+import { getLocalHolidayIndex } from '@/lib/eventsList/localHolidayIndex';
 import { BaselineArrowBack } from '../icons/BaselineArrowBack';
 import { BaselineArrowForward } from '../icons/BaselineArrowForward';
 
@@ -16,7 +19,14 @@ export default function CalendarGrid(){
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-    const monthEvents = eventIndex.filter((event) => {
+    const holidays = [
+        ...getUSFederalHolidays(year),
+        ...getLocalHolidayIndex(year)
+    ]
+
+    const allHolidays = [...eventIndex, ...holidays];
+
+    const monthEvents = allHolidays.filter((event) => {
         if (!event.sortDate) return false;
 
         const date = new Date(event.sortDate);
@@ -90,16 +100,19 @@ export default function CalendarGrid(){
                                 {day}
                             </span>
 
-                            {events.slice(0, 2).map((event) => (
+                            {events.slice(0, 2).map((event) => {
+                                const past = isPastEvent(event.sortDate);
+                                const eventHref = past ? `/past-events/${event.id}` : `/events/${event.id}`
+                                return(
                                 <a 
                                     key={event.id}
-                                    href={`/events/${event.id}`}
-                                    className={style.event}
+                                    href={event.type === 'holiday' ? undefined : eventHref}
+                                    className={`${style.event} ${event.type === 'holiday' ? style.holiday : ''}`}
                                     title={event.eventName}
                                 >
                                     {event.eventName}
                                 </a>
-                            ))}
+                            )})}
 
                             {events.length > 2 && (
                                 <span

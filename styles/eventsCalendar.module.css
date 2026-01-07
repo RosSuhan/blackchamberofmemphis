@@ -110,11 +110,19 @@
     text-overflow: ellipsis;
     font-size: 0.75rem;
     margin-top: 1.2rem;
-    /* background: #000000; */
+    background: var(--gold);
     /* color: #ffffff; */
     color: #000000;
     text-decoration: none;
     padding: 0.25rem 0.4rem;
+    border-radius: 3px;
+}
+
+.holiday {
+    background-color: #fef3c7;
+    color: #92400e;
+    font-size: 0.75rem;
+    border-radius: 3px;
 }
 
 .more {
@@ -133,5 +141,11 @@
 @media (min-width: 1200px) {
     .event {
         width: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .event {
+        width: 140px;
     }
 }
