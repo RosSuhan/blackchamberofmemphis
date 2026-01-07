@@ -48,9 +48,6 @@ const details = [
     },{
         tab: "Memphis Area Minority Contractors Association",
         content: `<p>Established in 1974 to assist minority and women contractors in the greater Memphis area. MAMCA's goal is to bring contractors together for a brighter future. Technical assistance, training, access to plans and support are offered in all phases of construction. For more detailed information visit <a href="www.memphisminoritycontractors.com">www.memphisminoritycontractors.com</a></p>`
-    },{
-        tab: "City of Memphis Office of Business Diversity and Compliance",
-        content: `<p>The mission of the Office of Business Diversity and Compliance is to increase participation of minority and women-owned business enterprises in the full array of contracting opportunities available in the City of Memphis. For more detailed information visit <a href="https://www.memphisobdc.org/">https://www.memphisobdc.org/</a>.</p>`
     }
 ]
 
