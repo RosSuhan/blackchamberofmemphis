@@ -33,12 +33,15 @@ import { betterDaysFinSer } from './(b)/betterDaysFinSer'
 import { bluffCityParties } from './(b)/bluffCityParties'
 import { boatrightConsulting } from './(b)/boatrightConsulting'
 import { butterifficBakeryCafe } from './(b)/butterifficBakeryCafe'
+import { brighterDaysNites } from './(b)/brighterDaysNites'
 
 // C
 import { carisCloset } from './(c)/carisCloset'
 import { certifiedDefendersOfAmerica } from './(c)/certifiedDefendersOfAmerica'
 import { christieTaylorConsulting } from './(c)/christieTaylorConsulting'
 import { capturingMemories } from './(c)/capturingMemories'
+import { convergenceMemphis } from './(c)/convergenceMemphis'
+import { caviarBeautyInstitute } from './(c)/caviarBeautyInstitute' 
 // D
 import { dbkStudios } from './(d)/dbkStudios'
 import { dbosElvisPresley } from './(d)/dbosElvisPresley'
@@ -47,8 +50,10 @@ import { dottedIAlliance } from './(d)/dottedIAlliance'
 import { diamondSafetyTraining } from './(d)/diamondSafetyTraining'
 // E
 import { epicenter } from './(e)/epicenter'
+import { expressWages } from './(e)/expressWages'
 // F
 import { functionallyBalancedHealth } from './(f)/functionallyBalancedHealth'
+import { fairHousing } from './(f)/fairHousing'
 
 // H
 import { hqDirect } from './(h)/hqDirect'
@@ -56,6 +61,7 @@ import { hotworxEdgeDistrict } from './(h)/hotworxEdgeDistrict'
 
 // I
 import { inclusiveExcellenceConsulting } from './(i)/inclusiveExcellenceConsulting'
+import { intellibyteSoftwareSolutions } from './(i)/intellibyteSoftwareSolutions'
 
 // J
 import { jasperFloatSpaWellness } from './(j)/jasperFloatSpa'
@@ -63,6 +69,7 @@ import { jasperFloatSpaWellness } from './(j)/jasperFloatSpa'
 // K
 import { kbSmoothNutrition } from './(k)/kbSmoothNutrition'
 import { kqCommunications } from './(k)/kqCommunications'
+import { kudzukian } from './(k)/kudzukian'
 
 // L
 import { leadingInLifeEnterprise } from './(l)/leadingInLifeEnterprise'
@@ -77,6 +84,7 @@ import { mitchellConsulting } from './(m)/mitchellConsulting'
 import { mleRealtyProperty } from './(m)/mleRealtyProperty'
 import { mobileDrugTest } from './(m)/mobileDrugTest'
 import { mayweatherFoods } from './(m)/mayweatherFoods'
+import { mission360strategies } from './(m)/mission360strategies'
 
 // N
 import { nailsByNicole } from './(n)/nailsByNicole'
@@ -134,6 +142,7 @@ import { theFlourishingAgency } from './(t)/theFlourishingAgency'
 import { theCulinaryExperience } from './(t)/theCulinaryExperience'
 import { theCarterMaloneGroup } from './(t)/theCarterMaloneGroup'
 import { theBlackPearlNailAcademy } from './(t)/theBlackPearlNailAcademy'
+import { tailoredCommunications } from './(t)/tailoredCommunications'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -198,11 +207,14 @@ export const businessList = [
     bluffCityParties,
     boatrightConsulting,
     butterifficBakeryCafe,
+    brighterDaysNites,
 // C
     carisCloset,
     certifiedDefendersOfAmerica,
     christieTaylorConsulting,
     capturingMemories,
+    convergenceMemphis,
+    caviarBeautyInstitute,
 // D
     dbkStudios,
     dbosElvisPresley,
@@ -211,19 +223,23 @@ export const businessList = [
     diamondSafetyTraining,
 // E
     epicenter,
+    expressWages,
 // F
     functionallyBalancedHealth,
+    fairHousing,
 // G
 // H
     hqDirect,
     hotworxEdgeDistrict,
 // I
     inclusiveExcellenceConsulting,
+    intellibyteSoftwareSolutions,
 // J
     jasperFloatSpaWellness,
 // K
     kbSmoothNutrition,
     kqCommunications,
+    kudzukian,
 // L
     leadingInLifeEnterprise,
     lemdaddyzKitchen,
@@ -236,6 +252,7 @@ export const businessList = [
     mleRealtyProperty,
     mobileDrugTest,
     mayweatherFoods,
+    mission360strategies,
 // N
     nailsByNicole,
     newVisionsTechSol,
@@ -290,6 +307,7 @@ export const businessList = [
     theCulinaryExperience,
     theCarterMaloneGroup,
     theBlackPearlNailAcademy,
+    tailoredCommunications,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
