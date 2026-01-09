@@ -75,6 +75,7 @@ import { kudzukian } from './(k)/kudzukian'
 import { leadingInLifeEnterprise } from './(l)/leadingInLifeEnterprise'
 import { lemdaddyzKitchen } from './(l)/lemdaddyzKitchen'
 import { lilacImpactServices } from './(l)/lilacImpactServices'
+import { legalShieldServices } from './(l)/legalShieldServices'
 
 // M
 import { magnoliaBusSol } from './(m)/magnoliaBusSol'
@@ -244,6 +245,7 @@ export const businessList = [
     leadingInLifeEnterprise,
     lemdaddyzKitchen,
     lilacImpactServices,
+    legalShieldServices,
 // M
     magnoliaBusSol,
     mickeyPopcorn,
