@@ -10,7 +10,7 @@ export default function StayInformedSection(){
     const [ lastName, setLastName ] = useState("")
     const [ email, setEmail ] = useState("")
 
-    const STAYINFORMED_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyS6cmZovzANNOMgMlKY75eOMLszIXC9ou5f_BW2jWzVVyYQqrZBPvY683KbZJ4nuX1/exec"
+    const STAYINFORMED_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwM5ZU63wc4uvezCAonPdS3NAf0ZWIhjvlU9P58d1PfpLvP3OhGXSIpgn_zUd_bXThX/exec"
 
 
     async function handleStayInformed(e: React.FormEvent) {

@@ -27,6 +27,11 @@ import { abundantRest } from './(a)/abundantRest'
 import { acotAssociates } from './(a)/acotAssociates'
 import { adrVacations } from './(a)/adrVacations'
 import { advantasComputer } from './(a)/advantasComputer'
+import { actionChem } from './(a)/actionChem'
+import { africaInAprilFestival } from './(a)/africaInAprilFestival'
+import { agapeChildFamilyServices } from './(a)/agapeChildFamilyServices'
+import { ahmadZaffarese } from './(a)/ahmadZaffarese'
+import { ajThomasAssociates } from './(a)/ajThomasAssociates'
 
 // B
 import { betterDaysFinSer } from './(b)/betterDaysFinSer'
@@ -107,6 +112,7 @@ import { systematicEquitySol } from './(s)/systematicEquitySol'
 import { stretchlabMidtownM } from './(s)/stretchlabMidtownM'
 import { symbolicManna } from './(s)/symbolicManna'
 import { smartCremation } from './(s)/smartCremation'
+import { staffRite } from './(s)/staffRite'
 // T
 import { tabicanTechSol } from './(t)/tabicanTechSol'
 import { techfit } from './(t)/techfit'
@@ -176,6 +182,8 @@ import { yesLinkStore } from './(y)/yesLinkStore'
 
 export const businessList = [
     CupCoffee,
+    thirdEyeView,
+    
     fourDMarketingBusinessSolutionsFirm,
     fourWayGrill,
     ninetyThreeOctane,
@@ -185,7 +193,7 @@ export const businessList = [
     nineOoneParties,
     DreamLife,
     ajElectric,
-    thirdEyeView,
+
     nineOoneMemphisEventRentals,
 // A
     beaconOfHope,
@@ -203,6 +211,11 @@ export const businessList = [
     acotAssociates,
     adrVacations,
     advantasComputer,
+    actionChem,
+    africaInAprilFestival,
+    agapeChildFamilyServices,
+    ahmadZaffarese,
+    ajThomasAssociates,
 // B
     betterDaysFinSer,
     bluffCityParties,
@@ -273,6 +286,7 @@ export const businessList = [
     stretchlabMidtownM,
     symbolicManna,
     smartCremation,
+    staffRite,
 // T
     tabicanTechSol,
     techfit,
