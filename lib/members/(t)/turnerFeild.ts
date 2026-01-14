@@ -15,6 +15,7 @@ export const turnerFeild : MembersListType = {
         "lawyers",
         "notary"
     ],
+    categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
     businessHours : {
