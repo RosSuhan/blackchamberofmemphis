@@ -9,7 +9,7 @@ import { nineOoneParties } from './(0-9)/901Parties'
 import { DreamLife } from './(0-9)/1800DreamLife'
 import { thirdEyeView } from './(0-9)/3rdEyeView'
 import { nineOoneMemphisEventRentals } from './(0-9)/901MemphisEventRentals'
-
+import { nineOoneSugarDaddysCigars } from './(0-9)/901SugarDaddysCigars'
 // A
 import { ajElectric } from './(a)/ajElectric'
 import { beaconOfHope } from './(a)/aBeaconOfHope'
@@ -47,6 +47,7 @@ import { christieTaylorConsulting } from './(c)/christieTaylorConsulting'
 import { capturingMemories } from './(c)/capturingMemories'
 import { convergenceMemphis } from './(c)/convergenceMemphis'
 import { caviarBeautyInstitute } from './(c)/caviarBeautyInstitute' 
+import { cherrylPigues } from './(c)/cherrylPigues'
 // D
 import { dbkStudios } from './(d)/dbkStudios'
 import { dbosElvisPresley } from './(d)/dbosElvisPresley'
@@ -154,7 +155,7 @@ import { tailoredCommunications } from './(t)/tailoredCommunications'
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
 import { unifiedStrategicResources } from './(u)/unifiedStrategicResources'
-import { unamiFoodConsulting } from './(u)/unamiFoodConsulting'
+import { umamiFoodConsulting } from './(u)/umamiFoodConsulting'
 // V
 import { visionCapitalFunding } from './(v)/visionCapitalFunding'
 import { versatileActionFitness } from './(v)/versatileActionFitness'
@@ -183,52 +184,53 @@ import { yesLinkStore } from './(y)/yesLinkStore'
 export const businessList = [
     CupCoffee,
     thirdEyeView,
-    
     fourDMarketingBusinessSolutionsFirm,
     fourWayGrill,
-    ninetyThreeOctane,
+    ninetyThreeOctane,  
     blackMenOfMemphis,
     nineOoneLogistics,
-    nineOoneWings,
     nineOoneParties,
+    nineOoneWings,
     DreamLife,
-    ajElectric,
-
+    nineOoneSugarDaddysCigars, 
     nineOoneMemphisEventRentals,
 // A
-    beaconOfHope,
-    tourOfPossibilities,
     aOneStaffing,
-    aWayTranzport,
-    arBBQ,
     aaronPatrickArch,
     abesEngineering,
-    abrFirm,
     abramResidentialCleaning,
+    abrFirm,
     absbResources,
     abundantLifeWellness,
     abundantRest,
     acotAssociates,
+    actionChem,
     adrVacations,
     advantasComputer,
-    actionChem,
     africaInAprilFestival,
     agapeChildFamilyServices,
     ahmadZaffarese,
+    ajElectric,
+    beaconOfHope,    
     ajThomasAssociates,
+    arBBQ,
+    aWayTranzport,
+    tourOfPossibilities,
 // B
     betterDaysFinSer,
-    bluffCityParties,
+    bluffCityParties,    
     boatrightConsulting,
     butterifficBakeryCafe,
     brighterDaysNites,
 // C
-    carisCloset,
-    certifiedDefendersOfAmerica,
-    christieTaylorConsulting,
     capturingMemories,
-    convergenceMemphis,
+    carisCloset,
     caviarBeautyInstitute,
+    certifiedDefendersOfAmerica,
+    cherrylPigues,
+    christieTaylorConsulting,
+    convergenceMemphis,
+
 // D
     dbkStudios,
     dbosElvisPresley,
@@ -289,46 +291,50 @@ export const businessList = [
     staffRite,
 // T
     tabicanTechSol,
+    tailoredCommunications,
     techfit,
+    theBlackPearlNailAcademy,
+    theCarterMaloneGroup,
+    theCulinaryExperience,
     theCultureCollab,
+    theFlourishingAgency,
+    theLegacyConsultingStaffingAgency,
+    theM9Eats,
+    thePaperSack,
     thePodcastCenter,
-    theSpruillAgency,
+    thePrettyUniversity,
+    theRansomedGroup,
+    theRedwingGroup,
+    theResumeReviveCareerServ,
+    theSimsFinancialGroup,
+    theSolutionFactory,
+    theSpruillAgency,    
+    thinkInspired,
+    thomasConsultants,
+    torryLowVoltageCommunication,
+    totalVibeRide,
+    totsPlayWorld,
+    touchOfPlushBeauty,
+    transformationConsultingGroup,
+    transitionalReentryAdultProgram,
     travelWellConcierge,
+    trentonEvansPhotophraphy,
+    trinityComprehensiveHealthcareCenter,
+    trueConcierge,
+
+
+
     turnerFeild,
     trulyticsFinancialCorp,
     trustMarketingComs,
-    trueConcierge,
-    trinityComprehensiveHealthcareCenter,
-    trentonEvansPhotophraphy,
-    transitionalReentryAdultProgram,
-    transformationConsultingGroup,
-    touchOfPlushBeauty,
-    totsPlayWorld,
-    totalVibeRide,
-    torryLowVoltageCommunication,
+
     topNotchSecurity,
-    thomasConsultants,
-    thinkInspired,
-    theSolutionFactory,
-    theSimsFinancialGroup,
-    theResumeReviveCareerServ,
-    theRedwingGroup,
-    theRansomedGroup,
-    thePrettyUniversity,
     thePerfectTemperature,
-    thePaperSack,
-    theM9Eats,
-    theLegacyConsultingStaffingAgency,
-    theFlourishingAgency,
-    theCulinaryExperience,
-    theCarterMaloneGroup,
-    theBlackPearlNailAcademy,
-    tailoredCommunications,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
     unifiedStrategicResources,
-    unamiFoodConsulting,
+    umamiFoodConsulting,
 // V
     visionCapitalFunding,
     versatileActionFitness,

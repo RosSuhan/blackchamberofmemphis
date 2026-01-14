@@ -1,12 +1,13 @@
 export interface MembersListType {
     memberStatus: boolean,
     id: string;
-    businessName: string;
-    bannerImage: string;
-    profileLogo: string;
-    profileDescription: string;
-    profileCategory: string[];
-    profileSubCategory: string[];
+    businessName?: string;
+    bannerImage?: string;
+    profileLogo?: string;
+    profileDescription?: string;
+    profileCategory?: string[];
+    profileSubCategory?: string[];
+    categoryTag?: string[],
     profileBusinessDescription: string;
     gallery: { image: string; alt: string }[];
     businessHours: {

@@ -12,22 +12,30 @@ export default function Directory(){
 
     const filtered = businessList.filter((biz) => {
         const q = searchValue.toLowerCase();
+        const words = q.split(" ")
+        if(!q) return true;
         
         const nameMatch = biz.businessName?.toLowerCase().includes(q);
 
         const categoryMatch = Array.isArray(biz.profileCategory)
-            ? biz.profileCategory.some((cat) =>
+            ? biz.profileCategory.some((cat: string) =>
                 cat.toLowerCase().includes(q)
                 )
             : false;
 
         const subCategoryMatch = Array.isArray(biz.profileSubCategory)
-            ? biz.profileSubCategory.some((sub) =>
+            ? biz.profileSubCategory.some((sub: string) =>
                 sub.toLowerCase().includes(q)
                 )
             : false;
 
-        return nameMatch || categoryMatch || subCategoryMatch;
+        const tagMatch = Array.isArray(biz.categoryTag)
+            ? biz.categoryTag.some((tag: string) =>
+                words.every(word => tag.toLowerCase().includes(word))
+            )
+            : false;
+
+        return nameMatch || categoryMatch || subCategoryMatch || tagMatch;
     })
 
     const normalize = <T,>(value: T | T[]): T[] => {

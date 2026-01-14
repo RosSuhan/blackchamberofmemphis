@@ -9,6 +9,7 @@ export const template : MembersListType = {
     profileDescription : "",
     profileCategory : [],
     profileSubCategory : [],
+    categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [{image : "", alt : ""}],
     businessHours : {
