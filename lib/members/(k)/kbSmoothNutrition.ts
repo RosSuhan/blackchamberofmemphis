@@ -17,6 +17,7 @@ export const kbSmoothNutrition : MembersListType = {
         "online-retailers",
         "beverages-smoothies"
     ],
+    categoryTag: [],
     profileBusinessDescription : `<p>K & B’s Smooth Nutrition, founded by entrepreneur and author Sondra King, is a Memphis and Cordova-based organic smoothie bar committed to holistic wellness. Combining superfood ingredients and fresh produce, their nutrient-rich blends are designed to energize and support optimal health for everyday life.</p>
                                     <p>Customers can order online for delivery or enjoy the convenience of multiple grab‑and‑go locations across the city. Whether you're refueling post-workout or looking for a wholesome snack, K & B’s caters to busy lifestyles without compromising quality.</p>
                                     <p>Driven by a mission rooted in healthy living, Sondra's philosophy is inspired by a blend of entrepreneurship and holistic nutrition—designed to empower others toward longevity and well‑being. A recurring tagline reinforces this commitment: “Blending to better health!”</p>
