@@ -1,0 +1,49 @@
+import { MembersListType } from './../membersListType'
+
+export const mission360strategies : MembersListType = {
+    memberStatus: true,
+    id : "mission360-strategies",
+    businessName : "Mission360 Strategies",
+    bannerImage : "",
+    profileLogo : "mission360-strategies",
+    profileDescription : "Mission360 Strategies, based in Germantown, TN, delivers customized strategic planning, resource development, and donor engagement services for nonprofits—driven by equity, innovation, and sustainable growth under the leadership of Tiffany Graham.",
+    profileCategory : [
+        "professional-legal-financial-services",
+        "community-faith-nonprofit-services",
+        
+    ],
+    profileSubCategory : [
+        "business-consultants",
+        "consultants",
+    ],
+    categoryTag: [
+        "education training youth development",
+        "strategic planning organizational development",
+        "economic workforce development",
+        "skills development training centres"
+    ],
+    profileBusinessDescription : ``,
+    gallery : [{image : "", alt : ""}],
+    businessHours : {
+        monHours : "",
+        tueHours : "",
+        wedHours : "",
+        thuHours : "",
+        friHours : "",
+        satHours : "",
+        sunHours : ""
+    },
+    addressLink : "",
+    address : "",
+    email : "tiffany@mission360strategies.com",
+    website : "https://mission360strategies.com/",
+    telNumber : "",
+    facebook : "https://www.facebook.com/profile.php?id=61567735566658",
+    instagram : "",
+    youtube : "",
+    linkedIn : "https://www.linkedin.com/company/mission360-strategies/",
+    linktree : "",
+    twitter: "",
+    tiktok : "",
+    pinterest : ""
+}

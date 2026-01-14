@@ -1,0 +1,46 @@
+import { MembersListType } from './../membersListType'
+
+export const diamondSafetyTraining : MembersListType = {
+    memberStatus: true,
+    id : "diamond-safety-training",
+    businessName : "Diamond Safety & Training",
+    bannerImage : "",
+    profileLogo : "diamond-safety-training",
+    profileDescription : "Diamond Safety & Training offers Memphis-area businesses AI-enhanced safety technologies, wearable monitoring, LMS-driven OSHA compliance, and certified coaching to foster proactive, tech-forward workplace safety.",
+    profileCategory : [
+        "professional-legal-financial-services",
+        "community-faith-nonprofit-services"
+    ],
+    profileSubCategory : [
+        "business-consultants",
+        "consultants"
+    ],
+    categoryTag:[
+        "skills development training centres",
+        "corporate training",
+    ],
+    profileBusinessDescription : ``,
+    gallery : [{image : "", alt : ""}],
+    businessHours : {
+        monHours : "",
+        tueHours : "",
+        wedHours : "",
+        thuHours : "",
+        friHours : "",
+        satHours : "",
+        sunHours : ""
+    },
+    addressLink : "",
+    address : "6921 E. 111th St. Suite# 17780, Kansas City, MO 64134",
+    email : "info@diamondsafetytraining.com",
+    website : "https://diamondsafetytraining.com/",
+    telNumber : "9015686228",
+    facebook : "https://www.facebook.com/diamondsafetytraining",
+    instagram : "https://www.instagram.com/diamondsafetyandtraining/",
+    youtube : "",
+    linkedIn : "https://www.linkedin.com/company/90416315/admin/feed/posts/",
+    linktree : "",
+    twitter: "https://twitter.com/DiamondSafetyT?s=08",
+    tiktok : "",
+    pinterest : ""
+}

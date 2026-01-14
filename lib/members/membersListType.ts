@@ -8,9 +8,9 @@ export interface MembersListType {
     profileCategory?: string[];
     profileSubCategory?: string[];
     categoryTag?: string[],
-    profileBusinessDescription: string;
-    gallery: { image: string; alt: string }[];
-    businessHours: {
+    profileBusinessDescription?: string;
+    gallery?: { image: string; alt: string }[];
+    businessHours?: {
         monHours: string;
         tueHours: string;
         wedHours: string;
@@ -19,17 +19,17 @@ export interface MembersListType {
         satHours: string;
         sunHours: string;
     };
-    addressLink: string;
-    address: string;
-    email: string;
-    website: string;
-    telNumber: string;
-    facebook: string;
-    instagram: string;
-    youtube: string;
-    linkedIn: string;
-    linktree: string;
-    twitter: string;
-    tiktok: string;
-    pinterest: string;
+    addressLink?: string;
+    address?: string;
+    email?: string;
+    website?: string;
+    telNumber?: string;
+    facebook?: string;
+    instagram?: string;
+    youtube?: string;
+    linkedIn?: string;
+    linktree?: string;
+    twitter?: string;
+    tiktok?: string;
+    pinterest?: string;
 }

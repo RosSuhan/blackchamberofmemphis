@@ -1,0 +1,49 @@
+import { MembersListType } from './../membersListType'
+
+export const thePaperSack : MembersListType = {
+    memberStatus: true,
+    id : "the-paper-sack",
+    businessName : "The Paper Sack",
+    bannerImage : "",
+    profileLogo : "the-paper-sack",
+    profileDescription : "The Paper Sack delivers handcrafted chocolate treats—including nut clusters, turtles, caramel bites, and vegan options—made in small batches and packaged with nostalgic charm. Inspired by holiday traditions, each order brings a sweet, personal touch to moments big and small.",
+    profileCategory : [
+        "food-drinks-hospitality",
+        "retail-shopping-consumer-goods",
+    ],
+    profileSubCategory : [
+        "bakery-pastries",
+        "cards-gifts",
+        "gifts",
+    ],
+    categoryTag: [
+        "handcrafted chocolate treats",
+        "specialty food gourmet products",
+        "bakeries catering event food services",
+        "gift shops specialty retail",
+    ],
+    profileBusinessDescription : ``,
+    gallery : [],
+    businessHours : {
+        monHours : "",
+        tueHours : "",
+        wedHours : "",
+        thuHours : "",
+        friHours : "",
+        satHours : "",
+        sunHours : ""
+    },
+    addressLink : "",
+    address : "",
+    email : "info@thepapersack.com",
+    website : "https://thepapersack.com/",
+    telNumber : "6016653282",
+    facebook : "",
+    instagram : "",
+    youtube : "",
+    linkedIn : "",
+    linktree : "",
+    twitter: "",
+    tiktok : "",
+    pinterest : ""
+}
