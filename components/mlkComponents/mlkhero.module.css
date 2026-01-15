@@ -1,0 +1,85 @@
+.mlkHeroSection {
+    background-image: url(/blog/mlk/mlk-hero-one.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100dvw;
+    color: #ffffff;
+    -webkit-text-stroke: #000000 .8px;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.mlkMainHeading {
+    width: 50%;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-wrap: balance;
+}
+
+.subHeading {
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 400px) {
+    .mlkHeroSection {
+        height: 200px;
+    }
+}
+
+@media (min-width: 500px) {
+    .mlkHeroSection {
+        height: 250px;
+    }
+}
+
+@media (min-width: 600px) {
+    .mlkHeroSection {
+        height: 300px;
+    }
+    
+    .mlkMainHeading {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-left: 2rem;
+    }
+    
+    .subHeading {
+        font-size: 1.4rem;
+        text-align: left;
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .mlkHeroSection {
+        height: 380px;
+        justify-content: center;
+    }
+    
+    .subHeading {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mlkHeroSection {
+        height: 600px;
+    }
+    
+    .mlkMainHeading {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    
+    .subHeading {
+        width: 55%;
+        font-size: 2rem;
+    }
+}

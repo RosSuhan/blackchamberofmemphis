@@ -39,7 +39,7 @@ import { bluffCityParties } from './(b)/bluffCityParties'
 import { boatrightConsulting } from './(b)/boatrightConsulting'
 import { butterifficBakeryCafe } from './(b)/butterifficBakeryCafe'
 import { brighterDaysNites } from './(b)/brighterDaysNites'
-
+import { bridges } from './(b)/bridges'
 // C
 import { carisCloset } from './(c)/carisCloset'
 import { certifiedDefendersOfAmerica } from './(c)/certifiedDefendersOfAmerica'
@@ -92,7 +92,7 @@ import { mleRealtyProperty } from './(m)/mleRealtyProperty'
 import { mobileDrugTest } from './(m)/mobileDrugTest'
 import { mayweatherFoods } from './(m)/mayweatherFoods'
 import { mission360strategies } from './(m)/mission360strategies'
-
+import { memphisUrbanLeague } from './(m)/memphisUrbanLeague'
 // N
 import { nailsByNicole } from './(n)/nailsByNicole'
 import { newVisionsTechSol } from './(n)/newVisionsTechSol'
@@ -151,6 +151,7 @@ import { theCulinaryExperience } from './(t)/theCulinaryExperience'
 import { theCarterMaloneGroup } from './(t)/theCarterMaloneGroup'
 import { theBlackPearlNailAcademy } from './(t)/theBlackPearlNailAcademy'
 import { tailoredCommunications } from './(t)/tailoredCommunications'
+import { twoOfaShineCleaning } from './(t)/twoOfaShineCleaning'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -173,6 +174,7 @@ import { williamLaurencePortraitArt } from './(w)/williamLaurencePortraitArt'
 import { willevasCatertainment } from './(w)/willevasCatertainment'
 import { whatTheDoula } from './(w)/whatTheDoula'
 import { whartonFirm } from './(w)/whartonFirm'
+import { williamsInsuranceFinancialServices } from './(w)/williamsInsuranceFinancialServices'
 // Y
 import { yourShirtInkCustomPrint } from './(y)/yourShirtInkCustomPrint'
 import { yourPersonalChef } from './(y)/yourPersonalChef'
@@ -222,6 +224,7 @@ export const businessList = [
     boatrightConsulting,
     butterifficBakeryCafe,
     brighterDaysNites,
+    bridges,
 // C
     capturingMemories,
     carisCloset,
@@ -270,6 +273,7 @@ export const businessList = [
     mobileDrugTest,
     mayweatherFoods,
     mission360strategies,
+    memphisUrbanLeague,
 // N
     nailsByNicole,
     newVisionsTechSol,
@@ -321,15 +325,12 @@ export const businessList = [
     trentonEvansPhotophraphy,
     trinityComprehensiveHealthcareCenter,
     trueConcierge,
-
-
-
     turnerFeild,
     trulyticsFinancialCorp,
     trustMarketingComs,
-
     topNotchSecurity,
     thePerfectTemperature,
+    twoOfaShineCleaning,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
@@ -351,6 +352,7 @@ export const businessList = [
     willevasCatertainment,
     whatTheDoula,
     whartonFirm,
+    williamsInsuranceFinancialServices,
 // Y
     yourShirtInkCustomPrint,
     yourPersonalChef,
