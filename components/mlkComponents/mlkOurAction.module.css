@@ -1,0 +1,283 @@
+.mlkOAsection {
+    background: #312d2d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.transitionText {
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-wrap: balance;
+}
+
+.transitionBlock {
+    width: 80%;
+    color: #ffffff;
+}
+
+.transitionHeading {
+    color: var(--gold);
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.transitionList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    line-height: 1.2;
+}
+
+.mlkOAButtonRow {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.mlkCtaButtonOne,
+.mlkCtaButtonTwo {
+    width: 100%;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125rem;
+    border-radius: 10px;
+
+}
+
+.mlkCtaButtonOne {
+    background: var(--gold);
+    color: #000000;
+}
+
+.mlkCtaButtonTwo {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+@media (min-width: 400px) {
+    .mlkOAsection {
+        /* background: #312d2d; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+        /* padding: 2rem 0; */
+    }
+    
+    .transitionText {
+        /* width: 90%; */
+        /* text-align: center; */
+        /* color: #ffffff; */
+        /* font-size: 1rem; */
+        /* line-height: 1.5; */
+        /* text-wrap: balance; */
+    }
+    
+    .transitionBlock {
+        /* width: 80%; */
+        /* color: #ffffff; */
+    }
+    
+    .transitionHeading {
+        /* color: var(--gold); */
+        font-size: 1.5rem;
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+    
+    .transitionList {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* row-gap: 1rem; */
+
+    }
+    
+    .mlkOAButtonRow {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 2rem; */
+        /* padding: 2rem 0; */
+    }
+    
+    .mlkCtaButtonOne,
+    .mlkCtaButtonTwo {
+        width: 70%;
+        /* padding: 1rem 0; */
+        /* text-decoration: none; */
+        /* text-align: center; */
+        /* font-size: 1.125rem; */
+        /* border-radius: 10px; */
+    
+    }
+    
+    .mlkCtaButtonOne {
+        /* background: var(--gold); */
+        /* color: #000000; */
+    }
+    
+    .mlkCtaButtonTwo {
+        /* border: 1px solid var(--gold); */
+        /* color: var(--gold); */
+    }
+}
+
+@media (min-width: 800px) {
+    .mlkOAsection {
+        /* background: #312d2d; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+        /* align-items: flex-start; */
+        /* padding: 2rem 0; */
+    }
+    
+    .transitionText {
+        width: 40%;
+        /* text-align: center; */
+        /* color: #ffffff; */
+        font-size: 1.2rem;
+        /* line-height: 1.5; */
+        /* text-wrap: balance; */
+    }
+    
+    .transitionBlock {
+        width: 45%;
+        /* background: green; */
+        /* color: #ffffff; */
+    }
+    
+    .transitionHeading {
+        /* color: var(--gold); */
+        /* font-size: 1.5rem; */
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+    
+    .transitionList {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* row-gap: 1rem; */
+
+    }
+    
+    .mlkOAButtonRow {
+        /* background: green; */
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 2rem; */
+        /* padding: 2rem 0; */
+    }
+    
+    .mlkCtaButtonOne,
+    .mlkCtaButtonTwo {
+        width: 45%;
+        /* text-wrap: balance; */
+        /* padding: 1rem 0; */
+        /* text-decoration: none; */
+        /* text-align: center; */
+        /* font-size: 1.125rem; */
+        /* border-radius: 10px; */
+    
+    }
+    
+    .mlkCtaButtonOne {
+        /* background: var(--gold); */
+        /* color: #000000; */
+    }
+    
+    .mlkCtaButtonTwo {
+        /* border: 1px solid var(--gold); */
+        /* color: var(--gold); */
+    }
+}
+
+@media (min-width: 1000px) {
+    .mlkOAsection {
+        /* background: #312d2d; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+        /* align-items: flex-start; */
+        /* padding: 2rem 0; */
+    }
+    
+    .transitionText {
+        /* width: 40%; */
+        /* text-align: center; */
+        /* color: #ffffff; */
+        /* font-size: 1.2rem; */
+        /* line-height: 1.5; */
+        /* text-wrap: balance; */
+    }
+    
+    .transitionBlock {
+        /* width: 45%; */
+        /* background: green; */
+        /* color: #ffffff; */
+    }
+    
+    .transitionHeading {
+        /* color: var(--gold); */
+        /* font-size: 1.5rem; */
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+    
+    .transitionList {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* row-gap: 1rem; */
+
+    }
+    
+    .mlkOAButtonRow {
+        /* background: green; */
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 2rem; */
+        /* padding: 2rem 0; */
+    }
+    
+    .mlkCtaButtonOne,
+    .mlkCtaButtonTwo {
+        width: 380px;
+        /* text-wrap: balance; */
+        /* padding: 1rem 0; */
+        /* text-decoration: none; */
+        /* text-align: center; */
+        /* font-size: 1.125rem; */
+        /* border-radius: 10px; */
+    
+    }
+    
+    .mlkCtaButtonOne {
+        /* background: var(--gold); */
+        /* color: #000000; */
+    }
+    
+    .mlkCtaButtonTwo {
+        /* border: 1px solid var(--gold); */
+        /* color: var(--gold); */
+    }
+}

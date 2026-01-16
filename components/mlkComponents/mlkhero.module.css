@@ -1,85 +1,82 @@
 .mlkHeroSection {
-    background-image: url(/blog/mlk/mlk-hero-one.png);
+    background-image: url(/blog/mlk/mlk-hero-mobile.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100dvw;
+    height: 480px;
     color: #ffffff;
     -webkit-text-stroke: #000000 .8px;
-    text-align: center;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 .mlkMainHeading {
-    width: 50%;
+    width: 95%;
     font-size: 1.5rem;
-    margin-left: 1rem;
-    text-wrap: balance;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .subHeading {
-    width: 90%;
+    width: 80%;
     font-size: 1.2rem;
-    padding: 0 1rem;
+    text-align: center;
+    text-wrap: balance;
 }
 
 @media (min-width: 400px) {
     .mlkHeroSection {
-        height: 200px;
-    }
-}
-
-@media (min-width: 500px) {
-    .mlkHeroSection {
-        height: 250px;
-    }
-}
-
-@media (min-width: 600px) {
-    .mlkHeroSection {
-        height: 300px;
+        background-color: #000000;
+        background-size: contain;
     }
     
     .mlkMainHeading {
-        font-size: 1.8rem;
-        text-align: left;
-        margin-left: 2rem;
+        width: 90%;
+    }    
+}
+
+@media (min-width: 600px) {
+    .mlkMainHeading {
+        width: 85%;
+        font-size: 2rem;
     }
     
     .subHeading {
-        font-size: 1.4rem;
-        text-align: left;
-        padding: 0 2rem;
+        font-size: 1.5rem;
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .mlkHeroSection {
-        height: 380px;
+        background-image: url(/blog/mlk/mlk-hero-desktop.webp);
+        background-size: cover;
+        height: 70svh;
+        align-items: flex-start;
         justify-content: center;
+    }
+    
+    .mlkMainHeading {
+        width: 50%;
+        margin-left: 3rem;
+        text-align: left;
     }
     
     .subHeading {
         width: 50%;
+        margin-left: 3rem;
+        text-align: left;
     }
 }
 
 @media (min-width: 1000px) {
-    .mlkHeroSection {
-        height: 600px;
-    }
-    
     .mlkMainHeading {
         font-size: 2.5rem;
-        margin-bottom: 0;
     }
     
     .subHeading {
-        width: 55%;
         font-size: 2rem;
     }
 }
