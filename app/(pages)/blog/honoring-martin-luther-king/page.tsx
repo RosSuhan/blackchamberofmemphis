@@ -1,4 +1,3 @@
-import MLKBannerSection from "@/components/mlkComponents/mlkBannerSection";
 import MLKHero from "@/components/mlkComponents/mlkHero";
 import MLKOurAction from "@/components/mlkComponents/mlkOurAction";
 import MLKQuoteBanner from "@/components/mlkComponents/mlkQuoteBanner";
@@ -66,7 +65,7 @@ export default function MLK(){
                         </span>
                         - Dr. Martin Luther King, Jr.
                     </p>`}
-                quoteImage={`/blog/mlk/mlk-quote-banner2.webp`}
+                quoteImage={``}
                 textColor={'#000000'}
             />
 
@@ -84,8 +83,8 @@ export default function MLK(){
                         </span>
                         - Dr. Martin Luther King, Jr.
                     </p>`}
-                quoteImage={`/blog/mlk/mlk-quote-banner.webp`}
-                textColor={`#ffffff`}
+                quoteImage={``}
+                textColor={`#000000`}
             />
 
             <MLKTextSection
