@@ -13,7 +13,7 @@ export default function MLKHero(){
             <h2
                 className={style.subHeading}
             >
-                Economic justice, dignity, and opportunity - then and now.
+                The Black Ledger: Invest in US
             </h2>
         </section>
     )
