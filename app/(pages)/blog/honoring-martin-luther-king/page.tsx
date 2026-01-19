@@ -27,9 +27,9 @@ export const metadata: Metadata = {
         url: 'https://blackchamberofmemphis.org/blog/honoring-martin-luther-king',
         images: [
             {
-                url: '/images/og-mlk.jpg',
-                width: 1200,
-                height: 630,
+                url: '/blog/mlk/MLK-bday.png',
+                width: 900,
+                height: 800,
                 alt: 'Honoring the life and legacy of Dr. Martin Luther King, Jr.'
             }
         ],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Honoring the Life and Legacy of Dr. Martin Luther King, Jr.',
         description: 'Reflecting on Dr. King’s call for economic justice, dignity, and opportunity—then and now.',
-        images: ['/images/og-mlk.jpg'],
+        images: ['/blog/mlk/MLK-bday.png'],
     },
 };
 
