@@ -5,7 +5,7 @@ export const memphisUrbanLeague : MembersListType = {
     id : "memphis-urban-league",
     businessName : "Memphis Urban League",
     bannerImage : "",
-    profileLogo : "",
+    profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "Memphis Urban League is a nonprofit organization dedicated to empowering underserved communities in Memphis by expanding economic opportunities and promoting equality, civic engagement, and social justice. Through workforce development, education, youth and senior programs, and community partnerships, the League works to create pathways for sustainable success and community well-being.",
     profileCategory: [
         "community-faith-nonprofit-services"

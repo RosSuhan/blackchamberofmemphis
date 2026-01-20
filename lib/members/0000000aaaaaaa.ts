@@ -5,7 +5,7 @@ export const template : MembersListType = {
     id : "",
     businessName : "",
     bannerImage : "",
-    profileLogo : "",
+    profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "",
     profileCategory : [],
     profileSubCategory : [],

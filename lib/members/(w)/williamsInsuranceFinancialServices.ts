@@ -5,7 +5,7 @@ export const williamsInsuranceFinancialServices : MembersListType = {
     id : "williams-insurance-financial-services",
     businessName : "Williams Insurance & Financial Services",
     bannerImage : "",
-    profileLogo : "",
+    profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "Affordable Memphis Insurance / Wayne Williams Insurance is a full-service insurance agency in Memphis, Tennessee, helping individuals, families, and businesses find smart, affordable coverage solutions. Licensed in Tennessee, Arkansas, Georgia, Mississippi, and Texas, the agency offers a wide range of insurance products — including auto, home, life, health, and business protection — backed by personalized service and expert guidance.",
     profileCategory: [
         "professional-legal-financial-services"

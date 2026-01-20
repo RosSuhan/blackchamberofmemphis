@@ -32,6 +32,8 @@ import { africaInAprilFestival } from './(a)/africaInAprilFestival'
 import { agapeChildFamilyServices } from './(a)/agapeChildFamilyServices'
 import { ahmadZaffarese } from './(a)/ahmadZaffarese'
 import { ajThomasAssociates } from './(a)/ajThomasAssociates'
+import { artichokeh2o } from './(a)/artichoke-h2o'
+import { alphaExpressTrans } from './(a)/alphaExpressTrans'
 
 // B
 import { betterDaysFinSer } from './(b)/betterDaysFinSer'
@@ -82,6 +84,8 @@ import { leadingInLifeEnterprise } from './(l)/leadingInLifeEnterprise'
 import { lemdaddyzKitchen } from './(l)/lemdaddyzKitchen'
 import { lilacImpactServices } from './(l)/lilacImpactServices'
 import { legalShieldServices } from './(l)/legalShieldServices'
+import { luxuryCleaning } from './(l)/luxuryCleaning'
+import { locksmith4Less } from './(l)/locksmith4Less'
 
 // M
 import { magnoliaBusSol } from './(m)/magnoliaBusSol'
@@ -218,6 +222,8 @@ export const businessList = [
     arBBQ,
     aWayTranzport,
     tourOfPossibilities,
+    artichokeh2o,
+    alphaExpressTrans,
 // B
     betterDaysFinSer,
     bluffCityParties,    
@@ -264,6 +270,8 @@ export const businessList = [
     lemdaddyzKitchen,
     lilacImpactServices,
     legalShieldServices,
+    luxuryCleaning,
+    locksmith4Less,
 // M
     magnoliaBusSol,
     mickeyPopcorn,

@@ -5,7 +5,7 @@ export const twoOfaShineCleaning : MembersListType = {
     id : "two-of-a-shine-cleaning",
     businessName : "Two of a Shine Cleaning Services",
     bannerImage : "",
-    profileLogo : "",
+    profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "Two of a Shine is a Black-owned, twin-owned commercial cleaning company providing reliable, detail-focused janitorial and post-construction cleaning services for offices, retail spaces, and commercial facilities. The company is committed to quality, consistency, and maintaining clean, professional environments that clients can depend on.",
     profileCategory: [
         "construction-home-improvement-trade-services"

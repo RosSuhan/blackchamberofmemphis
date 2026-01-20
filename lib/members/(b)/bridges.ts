@@ -5,7 +5,7 @@ export const bridges : MembersListType = {
     id : "bridges",
     businessName : "Bridges",
     bannerImage : "",
-    profileLogo : "",
+    profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "BRIDGES USA is a Memphis-based nonprofit organization that empowers diverse young people from middle and high school to become confident, courageous leaders committed to positive community impact. Through its Bridge Builders programs, customized workshops, and youth-led initiatives, BRIDGES provides experiential learning, leadership development, and opportunities for youth civic engagement and social transformation.",
     profileCategory: [
         "community-faith-nonprofit-services"
