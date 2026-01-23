@@ -5,7 +5,7 @@ export const hkPrints : MembersListType = {
     id : "hk-prints",
     businessName : "H & K Prints",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "hk-prints",
     profileDescription : "H & K Prints provides custom screen printing, embroidery, signage, and promotional product services in Memphis, crafting quality branded apparel, signs, and items for schools, organizations, events, and local businesses.",
     profileCategory : [
         "arts-culture-media-entertainment",

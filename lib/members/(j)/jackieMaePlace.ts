@@ -5,7 +5,7 @@ export const jackieMaePlace : MembersListType = {
     id : "jackie-mae-place",
     businessName : "Jackie Mae's Place",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "jackie-maes-place",
     profileDescription : "Jackie Mae’s Place is a beloved Memphis-area soul food restaurant in Millington serving classic Southern comfort favorites like fried catfish, collard greens, meatloaf, baked spaghetti, and black-eyed peas with generous portions and made-from-scratch sides.",
     profileCategory : [
         "food-dining-hospitality",

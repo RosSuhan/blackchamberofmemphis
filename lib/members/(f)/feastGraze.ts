@@ -5,7 +5,7 @@ export const feastGraze : MembersListType = {
     id : "feast-graze",
     businessName : "Feast & Graze",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "feastgraze",
     profileDescription : "Feast & Graze is a Memphis-based gourmet charcuterie and café destination offering artisan boards, grazing tables, curated sandwiches, fresh juices, and full-service catering for events of any size.",
     profileCategory : [
         "food-dining-hospitality",

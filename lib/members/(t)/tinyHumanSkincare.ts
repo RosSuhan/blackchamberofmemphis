@@ -5,7 +5,7 @@ export const tinyHumanSkincare : MembersListType = {
     id : "tiny-human-skincare",
     businessName : "Tiny Human Skincare",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "tiny-human",
     profileDescription : "Tiny Human Skincare offers an eco-friendly line of natural, toxin-free skincare products formulated for delicate skin, including cleansing mousse and facial oils crafted with plant-based ingredients that are safe for developing skin and environmentally kind.",
     profileCategory : [
         "retail-shopping-specialty-stores",

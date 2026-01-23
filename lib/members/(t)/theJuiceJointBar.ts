@@ -5,7 +5,7 @@ export const theJuiceJointBar : MembersListType = {
     id : "the-juice-joint-bar",
     businessName : "The Juice Joint Bar",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "the-juice-joint",
     profileDescription : "The Juice Joint is a Memphis juice bar offering fresh, all-natural cold-pressed juices, smoothies, açaí bowls, and wholesome snacks made with no added sugars or preservatives to support vibrant health and flavor.",
     profileCategory : [
         "food-dining-hospitality",

@@ -5,7 +5,7 @@ export const jebPublishing : MembersListType = {
     id : "jeb-publishing",
     businessName : "JEB Publishing",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "jeb-publishing",
     profileDescription : "JEB Publishing, LLC is a Memphis-based publishing and business communications service provider offering mobile notary support, document preparation, editing, self-publishing assistance, and custom branded stationery and promotional materials.",
     profileCategory : [
         "marketing-advertising-digital-services",

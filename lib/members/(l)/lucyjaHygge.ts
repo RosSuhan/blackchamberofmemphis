@@ -5,7 +5,7 @@ export const lucyjaHygge : MembersListType = {
     id : "lucyja-hygge",
     businessName : "Lucyja Hygge",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "lucyja-hugge",
     profileDescription : "Lucyja Hygge is a Midtown Memphis lifestyle and wellness shop offering a curated selection of metaphysical goods, organic herbs, essential oils, spiritual tools, and intuitive services to help customers cultivate comfort, healing, and inner balance.",
     profileCategory : [
         "retail-shopping-specialty-stores",

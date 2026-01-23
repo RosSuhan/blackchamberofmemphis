@@ -5,7 +5,7 @@ export const teaBar901 : MembersListType = {
     id : "tea-bar-901",
     businessName : "Tea Bar 901",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "tea-bar",
     profileDescription : "The Tea Bar 901 is a Memphis-based tea and specialty beverage brand offering a curated selection of premium loose-leaf teas, handcrafted honey blends, sea moss products, and seasonal wellness drinks inspired by local flavors.",
     profileCategory : [
         "food-dining-hospitality",

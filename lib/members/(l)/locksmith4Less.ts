@@ -5,7 +5,7 @@ export const locksmith4Less : MembersListType = {
     id : "locksmith-4-less",
     businessName : "Locksmith 4 Less",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "locksmith4less",
     profileDescription : "Locksmith 4 Less is a trusted Memphis locksmith offering fast, reliable residential, commercial, and automotive lock and key services—including emergency lockout assistance, rekeying, key cutting, and mobile on-site support throughout the Mid-South.",
     profileCategory : [
         "construction-home-improvement-trade-services",

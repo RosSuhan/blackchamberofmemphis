@@ -5,7 +5,7 @@ export const trPerryEventServices : MembersListType = {
     id : "tr-perry-event-services",
     businessName : "T&R Perry Event Services",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "tr-perry",
     profileDescription : "A Divine Affair Event Planning and Catering is a Memphis event design and planning company offering tailored wedding coordination, event décor, venue rental support, and full catering services that create unforgettable experiences.",
     profileCategory : [
         "events-weddings",

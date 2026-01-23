@@ -5,7 +5,7 @@ export const mandeDibi : MembersListType = {
     id : "mande-dibi",
     businessName : "Mande Dibi",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "mande-dibi",
     profileDescription : "Mande Dibi is a vibrant Memphis restaurant serving bold West African-inspired barbecue and flavorful fusion dishes—from jerk chicken and braised lamb to vegan options and housemade juices—celebrating culture and community in every plate.",
     profileCategory : [
         "food-dining-hospitality",

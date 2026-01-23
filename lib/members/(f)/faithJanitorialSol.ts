@@ -1,11 +1,11 @@
 import { MembersListType } from './../membersListType'
 
 export const faithJanitorialSol : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "faith-janitorial-solutions",
     businessName : "Faith Janitorial Solutions",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "faith-janitorial-solutions",
     profileDescription : "Faith Janitorial Solutions is a professional Memphis commercial cleaning company offering thorough janitorial services, office cleaning, carpet and window care, and customized maintenance plans to keep business environments safe, clean, and productive.",
     profileCategory : [
         "construction-home-improvement-trade-services",

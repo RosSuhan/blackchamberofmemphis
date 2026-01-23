@@ -5,7 +5,7 @@ export const h3MobileEntertainment : MembersListType = {
     id : "h3-mobile-entertainment",
     businessName : "H3 Mobile Entertainment",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "h3-mobile-enterntainment",
     profileDescription : "H3 Mobile Entertainment brings the party to you in the Memphis area with mobile entertainment services including video gaming buses, laser tag arenas, extreme foam parties, photo booths, and event attractions for birthdays, gatherings, and celebrations.",
     profileCategory : [
         "events-weddings",

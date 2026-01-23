@@ -5,7 +5,7 @@ export const giLocksmith : MembersListType = {
     id : "gi-locksmith",
     businessName : "GI Locksmith",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "gilocksmith",
     profileDescription : "G.I. Locksmith is a trusted Memphis locksmith providing 24/7 residential, commercial, and automotive lock and key solutions — from emergency lockouts and rekeying to advanced security system installations and lock replacements.",
     profileCategory : [
         "security-protection-services",

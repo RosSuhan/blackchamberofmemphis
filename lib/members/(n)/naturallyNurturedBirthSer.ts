@@ -5,7 +5,7 @@ export const naturallyNurturedBirthSer : MembersListType = {
     id : "naturally-nurtured-birth-services",
     businessName : "Naturally Nurtured Birth Services",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "naturelly-nurtured",
     profileDescription : "Naturally Nurtured Birth Services is a Memphis-based doula support center offering personalized pregnancy, labor, postpartum, lactation, and childbirth education services to help families prepare for and navigate birth with confidence and compassionate, evidence-based care.",
     profileCategory : [
         "health-medical-wellness-services",

@@ -5,7 +5,7 @@ export const wellsRoofingRemodeling : MembersListType = {
     id : "wells-roofing-and-remodeling",
     businessName : "Wells Roofing and Remodeling",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "wells-roofing",
     profileDescription : "Wells Roofing and Remodeling is a trusted Memphis roofing and home improvement contractor providing expert roof repair, replacement, remodeling, water-damage restoration, and exterior upgrades with over five decades of service to local homeowners, businesses, and churches.",
     profileCategory : [
         "construction-home-improvement-trade-services",

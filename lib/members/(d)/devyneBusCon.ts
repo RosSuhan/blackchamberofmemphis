@@ -5,7 +5,7 @@ export const devyneBusCon : MembersListType = {
     id : "devyne-business-consulting",
     businessName : "Devyne Business Consulting, LLC",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "devyne",
     profileDescription : "Devyne Business, LLC is a Memphis-based business consulting and strategic growth firm offering operational optimization, marketing support, leadership development, and funding guidance to help local businesses scale, improve efficiency, and achieve sustainable success.",
     profileCategory : [
         "professional-legal-financial-services",

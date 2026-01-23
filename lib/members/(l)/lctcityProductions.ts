@@ -5,7 +5,7 @@ export const lctcityProductions : MembersListType = {
     id : "lc-tcity-productions",
     businessName : "LC-TCity Productions",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "lc-tcity",
     profileDescription : "LCTCity Productions is a Memphis media production company specializing in film, commercial video, and photography services for weddings, fashion, corporate clients, and community projects.",
     profileCategory : [
         "arts-culture-media-entertainment",

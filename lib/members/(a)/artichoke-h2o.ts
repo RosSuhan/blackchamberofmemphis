@@ -5,7 +5,7 @@ export const artichokeh2o : MembersListType = {
     id : "artichoke-h2o",
     businessName : "Artichoke H2O",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "artichokeh2o",
     profileDescription : "Artic Life Enterprises offers premium artesian water, natural energy drinks, and science-backed wellness supplements crafted to support hydration, energy, immunity, and overall wellbeing.",
     profileCategory : [
         "retail-shopping-specialty-stores",

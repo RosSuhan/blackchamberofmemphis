@@ -5,7 +5,7 @@ export const rugsAllDay : MembersListType = {
     id : "rugsallday-mo",
     businessName : "RugsAllDay & Mo",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "rugsallday",
     profileDescription : "RugsAllDay & Mo, LLC is a Memphis-area home decor shop specializing in custom-made area rugs, floor coverings, and wall décor designed to complement any interior style.",
     profileCategory : [
         "retail-shopping-specialty-stores",

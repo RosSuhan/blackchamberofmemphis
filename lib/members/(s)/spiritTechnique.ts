@@ -5,7 +5,7 @@ export const spiritTechnique : MembersListType = {
     id : "spirit-technique",
     businessName : "Spirit Technique",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "spirit-tech",
     profileDescription : "Spirit Technique, LLC is a Cordova-based youth sports and activity center providing cheerleading, gymnastics, ninja, tumbling, and trampoline classes that build confidence, physical skills, teamwork, and fun for children ages 3–17 in Memphis and surrounding communities.",
     profileCategory : [
         "sports-recreation-leisure",

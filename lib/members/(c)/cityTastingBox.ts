@@ -5,7 +5,7 @@ export const cityTastingBox : MembersListType = {
     id : "city-tasting-box",
     businessName : "City Tasting Box",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "city-tasting-box",
     profileDescription : "City Tasting Box curates and delivers artisan food and beverage gift boxes featuring Memphis’s finest sauces, seasonings, sweets, coffee, teas, and snacks — perfect for gifting, corporate gifts, or sharing the flavor of the Bluff City.",
     profileCategory : [
         "food-dining-hospitality",

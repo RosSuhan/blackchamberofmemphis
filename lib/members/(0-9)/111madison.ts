@@ -5,7 +5,7 @@ export const iiimadison : MembersListType = {
     id : "111-madison",
     businessName : "111 Madison",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "111madison",
     profileDescription : "One11 Madison is an upscale downtown Memphis restaurant and event venue offering a chef-driven menu, craft cocktails, live music experiences, and private dining for brunch, dinner, celebrations, and social gatherings.",
     profileCategory : [
         "food-dining-hospitality",

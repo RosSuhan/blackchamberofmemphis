@@ -5,7 +5,7 @@ export const capstoneSolGroup : MembersListType = {
     id : "capstone-solutions-group",
     businessName : "Capstone Solutions Group",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "capstone-solutions-group",
     profileDescription : "Capstone Solutions Group LLC is a Memphis-area business consultancy offering tailored financial services, strategic planning, and expert advisory solutions for local businesses, investors, and developers.  ",
     profileCategory : [
         "professional-legal-financial-services",

@@ -5,7 +5,7 @@ export const angelsAroundTheClockHomecare : MembersListType = {
     id : "angels-around-the-clock-homecare",
     businessName : "Angels Around the Clock Homecare",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "angelsaroundtheclock",
     profileDescription : "Angels Around the Clock Homecare offers compassionate in-home care services in Memphis, including personal care assistance, medication reminders, supervision, companionship, and customized support for seniors and individuals with disabilities.",
     profileCategory : [
         "health-medical-wellness-services",

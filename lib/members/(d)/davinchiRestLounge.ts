@@ -5,7 +5,7 @@ export const davinchiRestLounge : MembersListType = {
     id : "davinchis-restaurant-lounge",
     businessName : "Davinchi's Restaurant & Lounge",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "davinchi-xcix-restaurant",
     profileDescription : "DaVinci’s Restaurant & Lounge was a downtown Memphis restaurant and lounge renowned for its casual American-style menu, seafood specialties, craft drinks, and vibrant social environment in the heart of the city.",
     profileCategory : [
         "food-dining-hospitality",

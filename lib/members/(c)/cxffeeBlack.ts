@@ -5,7 +5,7 @@ export const cxffeeBlack : MembersListType = {
     id : "cxffee-black",
     businessName : "Cxffee Black",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "cxffeeblack",
     profileDescription : "Cxffeeblack is a Memphis-based coffee brand and café celebrating Black heritage, community, and education through its all-Black supply chain, cultural programming, signature blends, and Anti-Gentrification Coffee Club in Highland Heights.",
     profileCategory : [
         "food-dining-hospitality",

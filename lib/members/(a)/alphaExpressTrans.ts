@@ -5,7 +5,7 @@ export const alphaExpressTrans : MembersListType = {
     id : "alpha-express-transportation",
     businessName : "Alpha Express Transportation",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "alpha-express-transportation",
     profileDescription : "Alpha Express Transportation LLC provides reliable, professional passenger transportation services in Memphis—including airport transfers, corporate travel, social event rides, and personalized concierge transport with a friendly, “Service With a Smile.”",
     profileCategory : [
         "automotive-transport-travel",

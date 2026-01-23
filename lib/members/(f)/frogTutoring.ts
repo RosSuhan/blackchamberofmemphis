@@ -5,7 +5,7 @@ export const frogTutoting : MembersListType = {
     id : "frog-tutoring-memphis",
     businessName : "Frog Tutoring Memphis",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "frogtutoringmemphis",
     profileDescription : "FrogTutoring provides personalized one-on-one academic tutoring in Memphis, offering in-home and online support across K-12, college, adult learners, and test prep to help students build confidence and achieve academic success.",
     profileCategory : [
         "community-faith-nonprofit-services",

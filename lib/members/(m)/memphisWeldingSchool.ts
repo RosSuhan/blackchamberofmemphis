@@ -5,7 +5,7 @@ export const memphisWeldingSchool : MembersListType = {
     id : "memphis-welding-school",
     businessName : "Memphis Welding School",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "memphis-welding-school",
     profileDescription : "Memphis Welding School is a hands-on trade school in Memphis providing welding and boilermaking training, apprenticeship-style instruction, and career preparation to equip students with practical skills for jobs in manufacturing, construction, and industrial sectors.",
     profileCategory : [
         "community-faith-nonprofit-services",

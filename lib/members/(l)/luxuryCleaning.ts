@@ -5,7 +5,7 @@ export const luxuryCleaning : MembersListType = {
     id : "luxury-cleaning",
     businessName : "Luxury Cleaning",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "luxury-cleaning",
     profileDescription : "Luxury Cleaning Agency provides professional residential and commercial cleaning services—including deep, move-in/move-out, and post-construction cleaning—tailored to create spotless, healthy environments with eco-friendly products.",
     profileCategory : [
         "construction-home-improvement-trade-services",
