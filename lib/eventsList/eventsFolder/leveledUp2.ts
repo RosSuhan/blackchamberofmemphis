@@ -2,7 +2,7 @@ import { EventListType } from "../eventListTypes";
 
 export const leveledUp2 : EventListType = {
     holidayStatus: false,
-    id : "leveled-up-feb-04",
+    id : "leveled-up",
     type: 'event',
     eventImage : '/events/leveledUp/leveledup-money.webp',
     eventImageAlt : 'LeveledUp Money Workshop',
