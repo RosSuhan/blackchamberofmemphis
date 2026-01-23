@@ -2,12 +2,12 @@ import { EventListType } from "../eventListTypes";
 
 export const leveledUp3 : EventListType = {
     holidayStatus: false,
-    id : "leveled-up-mar-04",
+    id : "leveled-up-feb-18",
     type: 'event',
     eventImage : '/events/leveledUp/leveledup-money.webp',
     eventImageAlt : 'LeveledUp Money Workshop',
     eventDate : 'Multiple Dates',
-    sortDate : '2026-03-04',
+    sortDate : '2026-02-18',
     eventTime : 'Time Slots',
     eventAddressLink : '/gmbLink',
     eventAddress : 'Epicenter, 150 Peabody PI, Memphis, TN, 38103',
