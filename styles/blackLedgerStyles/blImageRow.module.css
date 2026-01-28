@@ -32,3 +32,27 @@
         height: 250px;
     }
 }
+
+@media (min-width: 1000px) {
+    .blImgRowImage {
+        width: 33.33%;
+        margin: 1.5rem 0;
+        height: 280px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blImgRowImage {
+        width: 33.33%;
+        margin: 1.5rem 0;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .blImgRowImage {
+        width: 33.33%;
+        margin: 1.5rem 0;
+        height: 320px;
+    }
+}

@@ -3,6 +3,7 @@ import { BlackLedgerProp } from "./blackLedgerProp"
 import { Instagram } from "@/components/icons/InstagramIcon"
 import { Youtube } from "@/components/icons/YoutubeIcon"
 import { Linkedin2 } from "@/components/icons/LinkedInIcon"
+import { CompanyDirectory } from "@/components/icons/Directory"
 
 export const aTourOfPossibilities : BlackLedgerProp = {
     id : 'a-tour-of-posibilities',
@@ -21,25 +22,27 @@ export const aTourOfPossibilities : BlackLedgerProp = {
         },{
             icon: Linkedin2,
             href: "http://www.linkedin.com/in/carolyn-michael-banks-53ba4b43",
+        },{
+            icon: CompanyDirectory,
+            href: 'https://blackchamberofmemphis.org/members/tour-of-possibilities'
         }
     ],
     headingOne: `A Cultural Translator, Economic Connector, and Trusted Guide`,
-    answerOne : `<p>The Black Chamber of Memphis (BCoM) proudly recognizes A Tour of Possibilities (ATOP) as an honoree of its Black Ledger: Invest in US initiative. ATOP, a Black-led institution that strengthens Memphis’ economic foundation, stands out for the way it transforms cultural storytelling into sustained economic participation.</p>
+    answerOne : `<p>The Black Chamber of Memphis (BCoM) proudly recognizes A Tour of Possibilities (ATOP) as an honoree of its <strong>Black Ledger: Invest in US initiative</strong>. ATOP, a Black-led institution that strengthens Memphis’ economic foundation, stands out for the way it transforms cultural storytelling into sustained economic participation.</p>
                     <p>Founded in 2014, ATOP operates at the intersection of heritage tourism, education, and economic development. Through year-round African American heritage tours and educational programming, the organization leads visitors into historically Black neighborhoods, businesses, and cultural spaces that traditional tourism models have long overlooked. In doing so, ATOP ensures that Memphis’ cultural assets generate real, recurring economic value for the communities that created them.</p>`,
     
     headingTwo : `Strengthening the Black Economy Through Story and Place`,
-    answerTwo : `<p>ATOP’s work directly and indirectly advances BCoM’s Memphis TEN priorities — particularly economic participation, workforce readiness, and business sustainability. Each tour creates paid opportunities for local guides, storytellers, and cultural workers while supporting flexible, skills-building roles within the hospitality and creative economy.</p>
+    answerTwo : `<p>ATOP’s work advances BCoM’s Memphis TEN priorities — particularly economic participation, workforce readiness, and business sustainability. Each tour creates paid opportunities for local guides, storytellers, and cultural workers while supporting flexible, skills-building roles within the hospitality and creative economy.</p>
                     <p>Beyond individual tours, ATOP partners with schools, nonprofits, and civic organizations to generate repeat engagement and reliable revenue streams for Black-owned businesses and cultural partners. These collaborations move ATOP beyond one-time experiences and establish a model in which cultural education and economic circulation reinforce one another.</p>`,
     
-    headingThree: `Who Relies on ATOP — and Why`,
+    headingThree: `Who Relies on ATOP`,
     answerThree : `<p>People who want to truly understand Memphis, not just visit it, rely on ATOP.</p>
                     <p>ATOP’s core audience includes culturally curious travelers, educators, nonprofits, and civic organizations seeking context-rich programming rooted in honesty and respect. These groups turn to ATOP for clear, grounded interpretation of Memphis’ Black history and present-day realities — insight that helps participants engage the city with intention rather than assumption.</p>
+                    <p>Through recurring tours, group bookings, and educational partnerships, ATOP connects history to lived experience and helps diverse audiences understand how Memphis’ past continues to shape its neighborhoods, culture, and opportunities. Just as importantly, ATOP consistently directs visitors toward Black-owned businesses and local cultural workers, strengthening the city’s heritage tourism economy while deepening civic understanding.</p>
                     <p>For many organizations, ATOP provides a trusted entry point into conversations about place, power, and legacy by offering experiences that connect historical truth to contemporary civic life.</p>`,
 
-    headingFour : `A Present-Day Institutional Role`,
-    answerFour : `<p>Today, ATOP functions as a cultural translator, economic connector, and trusted guide within Memphis’ civic and tourism landscape.</p>
-                    <p>Through recurring tours, group bookings, and educational partnerships, ATOP connects history to lived experience and helps diverse audiences understand how Memphis’ past continues to shape its neighborhoods, culture, and opportunities. Just as importantly, ATOP consistently directs visitors toward Black-owned businesses and local cultural workers, strengthening the city’s heritage tourism economy while deepening civic understanding.</p>
-                    <p>This role positions ATOP not only as a tour provider, but as an institution that actively shapes how people experience, understand, and economically engage with Memphis.</p>`,
+    headingFour : `Present-Day Impact`,
+    answerFour : `<p>Today, ATOP functions as a cultural translator, economic connector, and trusted guide within Memphis’ civic and tourism landscape.This role positions ATOP not only as a tour provider, but as an institution that actively shapes how people experience, understand, and economically engage with Memphis.</p>`,
     
     headingFive : `Addressing Barriers to Access and Visibility`,
     answerFive : `<p>ATOP recognizes persistent barriers to access, visibility, and control over whose stories shape opportunity. Mainstream tourism pipelines often exclude Black communities and cultural contributors, limiting both narrative ownership and economic benefit.</p>
