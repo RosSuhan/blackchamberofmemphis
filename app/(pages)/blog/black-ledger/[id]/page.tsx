@@ -6,6 +6,7 @@ import SectionImageText from "../sectionImageText";
 import BlImageRow from "../blImageRow";
 import { blackLedgerList } from "@/lib/blackLedgerHonoree/blackLedgerList";
 import BlEndBlock from "../blEndBlock";
+import BlCTARow from "../blCTARow";
 
 
 export default function BlackLedger(){
@@ -74,6 +75,8 @@ export default function BlackLedger(){
             <BlEndBlock
                 endText={ selectedHonoree?.endBlockText || ''}
             />
+
+            <BlCTARow/>
         </main>
     )
 }

@@ -8,18 +8,20 @@
 .blImgRowImage {
     object-fit: cover;
     width: 60%;
-    height: auto;
+    height: 120px;
 }
 
 @media (min-width: 400px) {
     .blImgRowImage {
         width: 50%;
+        height: 150px;
     }
 }
 
 @media (min-width: 600px) {
     .blImgRowImage {
         width: 40%;
+        height: 200px;
     }
 }
 
@@ -27,5 +29,6 @@
     .blImgRowImage {
         width: 33.33%;
         margin: 1.5rem 0;
+        height: 250px;
     }
 }

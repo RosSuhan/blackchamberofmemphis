@@ -1,0 +1,54 @@
+.blCTARowSection {
+    background: var(--gold);
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+}
+
+.blCTAButton1,
+.blCTAbutton2 {
+    width: 80%;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.blCTAButton1 {
+    color: #000000;
+    border: #000000 solid 2px;
+}
+
+.blCTAbutton2 {
+    background: #000000;
+    color: #ffffff;
+}
+
+@media (min-width: 400px) {
+    .blCTARowSection {
+        padding: 3rem 0;
+    }
+    
+    .blCTAButton1,
+    .blCTAbutton2 {
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .blCTAButton1,
+    .blCTAbutton2 {
+        width: 35%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+}
