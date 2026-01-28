@@ -1,8 +1,10 @@
+import { SocialLink } from "./blackLedgerLinkProp";
+
 export interface BlackLedgerProp {
     id : string,
     backgroundImage : string,
     businessTitle : string,
-    // socialLinks: {icon: Element; href: string}[],
+    socialLinks: SocialLink[],
     answerOne : string,
     answerTwo : string,
     answerThree : string,

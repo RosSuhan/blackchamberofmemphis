@@ -1,25 +1,28 @@
-// import { FacebookFill } from "@/components/icons/FacebookIcon"
+import { FacebookFill } from "@/components/icons/FacebookIcon"
 import { BlackLedgerProp } from "./blackLedgerProp"
+import { Instagram } from "@/components/icons/InstagramIcon"
+import { Youtube } from "@/components/icons/YoutubeIcon"
+import { Linkedin2 } from "@/components/icons/LinkedInIcon"
 
 export const aTourOfPossibilities : BlackLedgerProp = {
     id : 'a-tour-of-posibilities',
     backgroundImage : '/blog/mlk/blackLedger/aTourOfPossibility.jpg',
     businessTitle : "A Tour of Possibilities",
-    // socialLinks : [
-    //     {
-    //         icon: FacebookFill,
-    //         href: "http://www.facebook.com/atopmemphis",
-    //     },{
-    //         icon: 'instagram',
-    //         href: "http://www.instagram.com/atopmemphis",
-    //     },{
-    //         icon: 'youtube',
-    //         href: "https://www.youtube.com/channel/UCbsPyf2w32XGg5e1UZmIxRA",
-    //     },{
-    //         icon: 'linkedIn',
-    //         href: "http://www.linkedin.com/in/carolyn-michael-banks-53ba4b43",
-    //     }
-    // ]
+    socialLinks : [
+        {
+            icon: FacebookFill,
+            href: "http://www.facebook.com/atopmemphis",
+        },{
+            icon: Instagram,
+            href: "http://www.instagram.com/atopmemphis",
+        },{
+            icon: Youtube,
+            href: "https://www.youtube.com/channel/UCbsPyf2w32XGg5e1UZmIxRA",
+        },{
+            icon: Linkedin2,
+            href: "http://www.linkedin.com/in/carolyn-michael-banks-53ba4b43",
+        }
+    ],
     answerOne : `<p><strong>ATOP strengthens Memphis’s Black economy by turning cultural truth into sustained economic participation.</strong></p>
                     <p>Through year-round African American heritage tours and educational programming, ATOP consistently directs visitors into Black neighborhoods, Black-owned businesses, and cultural spaces often excluded from traditional tourism. Each tour creates paid opportunities for local guides, storytellers, and partners while supporting flexible, skills-building work in the hospitality and creative economy.</p>
                     <p>By collaborating with schools, nonprofits, and civic organizations across multiple sectors, ATOP helps generate repeat engagement and revenue that supports long-term business sustainability.</p>`,

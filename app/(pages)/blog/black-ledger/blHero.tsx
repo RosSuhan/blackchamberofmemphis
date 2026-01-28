@@ -1,16 +1,14 @@
-import { FacebookFill } from '@/components/icons/FacebookIcon'
-import { Instagram } from '@/components/icons/InstagramIcon'
-import { BaselineMail } from '@/components/icons/MailIcon'
-import { TiktokIcon } from '@/components/icons/TikTokIcon'
+import { SocialLink } from '@/lib/blackLedgerHonoree/blackLedgerLinkProp'
 import style from '@/styles/blackLedgerStyles/blHero.module.css'
 import Image from 'next/image'
 
 type BlHeroProp = {
-    backgroundImage: string,
-    businessTitle: string,
+    backgroundImage : string,
+    businessTitle : string,
+    socialList : SocialLink[],
 }
 
-export default function BlHero({backgroundImage, businessTitle} : BlHeroProp){
+export default function BlHero({backgroundImage, businessTitle, socialList} : BlHeroProp){
     return (
         <section
             className={style.blHeroSection}
@@ -36,41 +34,24 @@ export default function BlHero({backgroundImage, businessTitle} : BlHeroProp){
                     {businessTitle}
                 </h1>
 
-                <div
-                    className={style.blHeroSocialRow}
-                >
-                    <a href=""
-                        className={style.blHeroSocialLink}
+                {socialList.length > 0 && (
+                    <div
+                        className={style.blHeroSocialRow}
                     >
-                        <FacebookFill
-                            className={style.blHeroSocialIcon}
-                        />
-                    </a>
-
-                    <a href=""
-                        className={style.blHeroSocialLink}
-                    >
-                        <BaselineMail
-                            className={style.blHeroSocialIcon}
-                        />
-                    </a>
-
-                    <a href=""
-                        className={style.blHeroSocialLink}
-                    >
-                        <Instagram
-                            className={style.blHeroSocialIcon}
-                        />
-                    </a>
-
-                    <a href=""
-                        className={style.blHeroSocialLink}
-                    >
-                        <TiktokIcon
-                            className={style.blHeroSocialIcon}
-                        />
-                    </a>
-                </div>
+                        {socialList.map(({icon: Icon, href}, index) => (
+                            
+                                <a href={href}
+                                    className={style.blHeroSocialLink}
+                                    key={index}
+                                >
+                                    <Icon
+                                        className={style.blHeroSocialIcon}
+                                    />
+                                </a>
+                            
+                        ))}
+                    </div> 
+                )}
             </div>
         </section>
     )
