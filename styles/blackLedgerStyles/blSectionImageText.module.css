@@ -1,0 +1,115 @@
+.sectionImageTextBlock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 3rem;
+    padding: 2rem 0;
+}
+
+.sectionTextBlock,
+.sectionTextBlockReverse {
+    width: 90%;
+}
+
+.blSectionTextTitle {
+    width: 90%;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.blSectionText {
+    width: 90%;
+    margin-top: .5rem;
+    font-size: 0.875rem;
+    line-height: 1.2;
+}
+
+.sectionImage,
+.sectionImageReverse {
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+}
+
+.sectionTextBlock {
+    order: 1;
+}
+
+.sectionTextBlockReverse {
+    order: 2;
+}
+
+.sectionImage {
+    order: 2;
+}
+
+.sectionImageReverse {
+    order: 1;
+}
+
+@media (min-width: 400px) {
+    .blSectionTextTitle {
+        font-size: 1.5rem;
+    }
+    
+    .blSectionText {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .blSectionTextTitle {
+        font-size: 1.6rem;
+    }
+    
+    .sectionImage,
+    .sectionImageReverse {
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    .sectionImageTextBlock {
+        justify-content: center;
+    }
+    
+    .sectionTextBlock,
+    .sectionTextBlockReverse {
+        width: 50%;
+    }
+    
+    .blSectionTextTitle {
+        font-size: 1.7rem;
+    }
+    
+    .sectionImage,
+    .sectionImageReverse {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .sectionTextBlock {
+        width: 55%;
+    }
+
+    .sectionTextBlockReverse {
+        width: 52%;
+        padding-left: 2rem;
+    }
+    
+    .blSectionTextTitle {
+        font-size: 1.9rem;
+    }
+    
+    .blSectionText {
+        font-size: 1.1rem;
+    }
+    
+    .sectionImage,
+    .sectionImageReverse {
+        width: 35%;
+    }
+}

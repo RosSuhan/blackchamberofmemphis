@@ -1,0 +1,348 @@
+.blHeroSection {
+    width: 100%;
+    position: relative;
+}
+
+.blHeroBackgroundImage {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.blHeroOverlay {
+    background: var(--overlayLight);
+    position: relative;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 300px;
+    padding: 3rem 0;
+}
+
+.blHeroSpan {
+    z-index: 50;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.blHeroBusinessName {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-top: 0;
+    -webkit-text-stroke: #000000 1px;
+}
+
+.blHeroSocialRow {
+    width: 90%;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blHeroSocialLink {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: #ffffff solid 1px;
+    padding: .5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.blHeroSocialIcon {
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 400px) {
+    .blHeroSection {
+        /* width: 100%; */
+        /* position: relative; */
+    }
+    
+    .blHeroBackgroundImage {
+        /* position: absolute; */
+        /* top: 0; */
+        /* object-fit: cover; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* z-index: 0; */
+    }
+    
+    .blHeroOverlay {
+        /* background: var(--overlayLight); */
+        /* position: relative; */
+        /* z-index: 50; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        /* height: 300px; */
+        /* padding: 3rem 0; */
+    }
+    
+    .blHeroSpan {
+        /* z-index: 50; */
+        /* color: #ffffff; */
+        font-size: 1.1rem;
+    }
+    
+    .blHeroBusinessName {
+        width: 90%;
+        /* text-align: center; */
+        font-size: 2.6rem;
+        margin-bottom: 5rem;
+        /* color: var(--gold); */
+        /* margin-top: 0; */
+    }
+    
+    .blHeroSocialRow {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-direction: row;     */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+    }
+    
+    .blHeroSocialLink {
+        /* color: #ffffff; */
+        /* text-decoration: none; */
+        /* font-size: 1.5rem; */
+        /* border: #ffffff solid 1px; */
+        /* padding: .5rem; */
+        /* border-radius: 50px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }   
+    
+    .blHeroSocialIcon {
+        /* color: #ffffff; */
+        /* width: 20px; */
+        /* height: 20px; */
+    }
+}
+
+@media (min-width: 600px) {
+    .blHeroSection {
+        /* width: 100%; */
+        /* position: relative; */
+    }
+    
+    .blHeroBackgroundImage {
+        /* position: absolute; */
+        /* top: 0; */
+        /* object-fit: cover; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* z-index: 0; */
+    }
+    
+    .blHeroOverlay {
+        /* background: var(--overlayLight); */
+        /* position: relative; */
+        /* z-index: 50; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        /* height: 300px; */
+        /* padding: 3rem 0; */
+    }
+    
+    .blHeroSpan {
+        /* z-index: 50; */
+        /* color: #ffffff; */
+        font-size: 1.12rem;
+    }
+    
+    .blHeroBusinessName {
+        /* width: 90%; */
+        /* text-align: center; */
+        font-size: 2.7rem;
+        /* margin-bottom: 5rem; */
+        /* color: var(--gold); */
+        /* margin-top: 0; */
+    }
+    
+    .blHeroSocialRow {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-direction: row;     */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+    }
+    
+    .blHeroSocialLink {
+        /* color: #ffffff; */
+        /* text-decoration: none; */
+        /* font-size: 1.5rem; */
+        /* border: #ffffff solid 1px; */
+        /* padding: .5rem; */
+        /* border-radius: 50px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }   
+    
+    .blHeroSocialIcon {
+        /* color: #ffffff; */
+        /* width: 20px; */
+        /* height: 20px; */
+    }
+}
+
+@media (min-width: 800px) {
+    .blHeroSection {
+        /* width: 100%; */
+        /* position: relative; */
+    }
+    
+    .blHeroBackgroundImage {
+        /* position: absolute; */
+        /* top: 0; */
+        /* object-fit: cover; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* z-index: 0; */
+    }
+    
+    .blHeroOverlay {
+        /* background: var(--overlayLight); */
+        /* position: relative; */
+        /* z-index: 50; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        /* height: 300px; */
+        /* padding: 3rem 0; */
+    }
+    
+    .blHeroSpan {
+        /* z-index: 50; */
+        /* color: #ffffff; */
+        font-size: 1.2rem;
+    }
+    
+    .blHeroBusinessName {
+        /* width: 90%; */
+        /* text-align: center; */
+        font-size: 2.9rem;
+        text-shadow: #a7a7a7 .5px .1px 3px;
+        /* margin-bottom: 5rem; */
+        /* color: var(--gold); */
+        /* margin-top: 0; */
+    }
+    
+    .blHeroSocialRow {
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-direction: row;     */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+    }
+    
+    .blHeroSocialLink {
+        /* color: #ffffff; */
+        /* text-decoration: none; */
+        /* font-size: 1.5rem; */
+        /* border: #ffffff solid 1px; */
+        /* padding: .5rem; */
+        /* border-radius: 50px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }   
+    
+    .blHeroSocialIcon {
+        /* color: #ffffff; */
+        /* width: 20px; */
+        /* height: 20px; */
+    }
+}
+
+@media (min-width: 1000px) {
+    .blHeroSection {
+        /* width: 100%; */
+        /* position: relative; */
+    }
+    
+    .blHeroBackgroundImage {
+        /* position: absolute; */
+        /* top: 0; */
+        /* object-fit: cover; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* z-index: 0; */
+    }
+    
+    .blHeroOverlay {
+        /* background: var(--overlayLight); */
+        /* position: relative; */
+        /* z-index: 50; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: flex-end; */
+        /* height: 300px; */
+        /* padding: 3rem 0; */
+    }
+    
+    .blHeroSpan {
+        /* z-index: 50; */
+        /* color: #ffffff; */
+        font-size: 1.3rem;
+    }
+    
+    .blHeroBusinessName {
+        /* width: 90%; */
+        /* text-align: center; */
+        font-size: 3.5rem;
+        /* text-shadow: #a7a7a7 .5px .1px 3px; */
+        /* margin-bottom: 5rem; */
+        /* color: var(--gold); */
+        /* margin-top: 0; */
+    }
+    
+    .blHeroSocialRow {
+        width: 70%;
+        /* display: flex; */
+        /* flex-direction: row;     */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+    }
+    
+    .blHeroSocialLink {
+        /* color: #ffffff; */
+        /* text-decoration: none; */
+        /* font-size: 1.5rem; */
+        /* border: #ffffff solid 1px; */
+        /* padding: .5rem; */
+        /* border-radius: 50px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }   
+    
+    .blHeroSocialIcon {
+        /* color: #ffffff; */
+        /* width: 20px; */
+        /* height: 20px; */
+    }
+}

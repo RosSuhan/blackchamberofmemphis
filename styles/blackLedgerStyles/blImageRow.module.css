@@ -1,0 +1,31 @@
+.blImageRowSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+}
+
+.blImgRowImage {
+    object-fit: cover;
+    width: 60%;
+    height: auto;
+}
+
+@media (min-width: 400px) {
+    .blImgRowImage {
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .blImgRowImage {
+        width: 40%;
+    }
+}
+
+@media (min-width: 800px) {
+    .blImgRowImage {
+        width: 33.33%;
+        margin: 1.5rem 0;
+    }
+}
