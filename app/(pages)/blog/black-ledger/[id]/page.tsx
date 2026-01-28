@@ -5,6 +5,7 @@ import SectionWide from "../sectionWide";
 import SectionImageText from "../sectionImageText";
 import BlImageRow from "../blImageRow";
 import { blackLedgerList } from "@/lib/blackLedgerHonoree/blackLedgerList";
+import BlEndBlock from "../blEndBlock";
 
 
 export default function BlackLedger(){
@@ -17,7 +18,7 @@ export default function BlackLedger(){
 
     return (
         <main
-            style={{padding:"2rem 0"}}
+            style={{paddingTop:"2rem"}}
         >
             <BlHero
                 backgroundImage={ selectedHonoree?.backgroundImage || '' }
@@ -26,20 +27,20 @@ export default function BlackLedger(){
             />
 
             <SectionWide
-                sectionHeading={'Alignment with MemphisTEN'}
+                sectionHeading={selectedHonoree?.headingOne || '' }
                 answerText={ selectedHonoree?.answerOne || '' }
             />
 
             <SectionImageText
                 direction={true}
-                sectionHeading={'Who Relies on This Work'}
+                sectionHeading={selectedHonoree?.headingTwo || ''}
                 answerText={ selectedHonoree?.answerTwo || '' }
                 blockImage={ selectedHonoree?.imageOne || '' }
                 blockImageAlt={ selectedHonoree?.imageOneAlt || '' }
             />
 
             <SectionWide
-                sectionHeading={'Their Role in Memphis Today'}
+                sectionHeading={ selectedHonoree?.headingThree || '' }
                 answerText={ selectedHonoree?.answerThree || '' }
             />
 
@@ -53,16 +54,25 @@ export default function BlackLedger(){
             />
 
             <SectionWide
-                sectionHeading={'Addressing Barriers to Access'}
+                sectionHeading={ selectedHonoree?.headingFour || '' }
                 answerText={ selectedHonoree?.answerFour || '' }
             />
 
             <SectionImageText
                 direction={false}
-                sectionHeading={'Creating Stability & Reducing Risk'}
+                sectionHeading={ selectedHonoree?.headingFive || ''}
                 answerText={ selectedHonoree?.answerFive || '' }
                 blockImage={ selectedHonoree?.imageFive || '' }
                 blockImageAlt={ selectedHonoree?.imageFiveAlt || '' }
+            />
+
+            <SectionWide
+                sectionHeading={ selectedHonoree?.headingSix || '' }
+                answerText={ selectedHonoree?.answerSix || '' }
+            />
+
+            <BlEndBlock
+                endText={ selectedHonoree?.endBlockText || ''}
             />
         </main>
     )
