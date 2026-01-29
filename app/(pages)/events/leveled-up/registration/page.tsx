@@ -157,11 +157,11 @@ export default function LevelUpRegistration(){
                         >
                             10 am - 12 pm
                         </span>
-                        <span
+                        {/* <span
                             style={{color:"red", fontSize:"0.8rem", margin:"-.5rem 0 1rem 0"}}
                         >
                             This session is fully booked. If you want to be on the waiting list you can proceed with this time slot.
-                        </span>
+                        </span> */}
 
                         <input 
                             type="radio" 
