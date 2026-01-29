@@ -137,14 +137,19 @@ export default function LevelUpRegistration(){
                         <legend>
                             What Time Slot?
                         </legend>
-                        <input 
+                        {/* <input 
                             type="radio" 
                             name="timeSlot"
                             value={"firstSession"} 
                             checked={timeSlot === "firstSession"}
                             onChange={(e) => setTimeSlot(e.target.value)}
                             className={style.faqFormRadioInput}
-                        />
+                        /> */}
+                        <span
+                            className={style.faqFormRadioInput}
+                        >
+                            Sorry this time slot is fully booked
+                        </span>
                         <span
                             className={style.faqFormRadioText}
                         >
