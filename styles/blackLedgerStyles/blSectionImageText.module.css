@@ -73,15 +73,21 @@
 @media (min-width: 800px) {
     .sectionImageTextBlock {
         justify-content: center;
+        align-items: flex-start;
     }
     
     .sectionTextBlock,
     .sectionTextBlockReverse {
         width: 50%;
     }
+
+    .sectionTextBlockReverse {
+        margin-left: 2rem;
+    }
     
     .blSectionTextTitle {
         font-size: 1.7rem;
+        margin-top: 0;
     }
     
     .sectionImage,

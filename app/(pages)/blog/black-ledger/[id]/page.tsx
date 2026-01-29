@@ -7,6 +7,7 @@ import BlImageRow from "../blImageRow";
 import { blackLedgerList } from "@/lib/blackLedgerHonoree/blackLedgerList";
 import BlEndBlock from "../blEndBlock";
 import BlCTARow from "../blCTARow";
+import BlVideo from "../blVideo";
 
 
 export default function BlackLedger(){
@@ -26,6 +27,8 @@ export default function BlackLedger(){
                 businessTitle={ selectedHonoree?.businessTitle || '' }
                 socialList={ selectedHonoree?.socialLinks || [] }
             />
+
+            {/* <BlVideo/> */}
 
             <SectionWide
                 sectionHeading={selectedHonoree?.headingOne || '' }

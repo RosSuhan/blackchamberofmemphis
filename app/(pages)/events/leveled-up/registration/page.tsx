@@ -13,7 +13,7 @@ export default function LevelUpRegistration(){
 
     const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzkjuFnKHiz3SIm7XDhopCQesabLlQsBUS-HZNSTqhGad5AF3oHxsmSfyDVjMJc2JZpyQ/exec"
 
-    // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbxr922kjKrGjRKDGUuKgUQHFyWASWrq3qvs3FFYgxdCjRvGtbzi1mwfPBRPeRR02BCX/exec"
+    // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyAaPSYd1ZmLCA7lOU9B00kSzQ9_SvnpJOpb1kUDdfZjCUND65WDWx90rTAU9Y4BwDUgw/exec"
 
     function resetLeveledUpApplicationForm(){
         setNameSurname("");

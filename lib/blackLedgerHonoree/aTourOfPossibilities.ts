@@ -55,13 +55,20 @@ export const aTourOfPossibilities : BlackLedgerProp = {
     endBlockText : `<p>To explore how A Tour of Possibilities is reshaping heritage tourism in Memphis — and to experience the city through a deeper, more intentional lens — visit <a href="https://atopmemphis.com">atopmemphis.com</a>, book a tour, or follow ATOP on social media.</p>`,
     
     imageOne : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageOneAlt : '',
-    imageTwo : '/blog/mlk/blackLedger/atop2.jpg',
-    imageTwoAlt : '',
-    imageThree : '/blog/mlk/blackLedger/atop3.jpg',
-    imageThreeAlt : '',
-    imageFour : '/blog/mlk/blackLedger/atop8.jpeg',
-    imageFourAlt : '',
+    imageOneAlt : 'Owner Carolyn with A Tour Of Possibiliies bus',
+    imageTwo : '/blog/mlk/blackLedger/atop3.jpg',
+    imageTwoAlt : 'A Tour of Possibilities Group of tourist posing for a photo',
+    imageThree : '/blog/mlk/blackLedger/atop8.jpeg',
+    imageThreeAlt : 'A Tour of Possibilities tour in Memphis',
+    imageFour : '/blog/mlk/blackLedger/atop2.jpg',
+    imageFourAlt : 'A Tour of Possibilities at Slave Haven',
     imageFive : '/blog/mlk/blackLedger/atop5.jpg',
-    imageFiveAlt : '',
+    imageFiveAlt : 'A Tour of Possibilities group photo in bus',
+    videoLink: [
+        {
+            isVideoTrue : true,
+            videoPath : 'https://blackbusinessassociationofmemp.box.com/s/164un8e99onq2q38scbodm3sfso2j9g1',
+            videoTitle : 'A Tour of Possibilities'
+        }
+    ]
 }

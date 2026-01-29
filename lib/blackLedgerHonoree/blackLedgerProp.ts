@@ -28,4 +28,5 @@ export interface BlackLedgerProp {
     imageFourAlt : string,
     imageFive : string,
     imageFiveAlt : string,
+    videoLink : { isVideoTrue : boolean, videoPath : string, videoTitle : string}[],
 }
