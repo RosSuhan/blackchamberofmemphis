@@ -11,7 +11,7 @@ export default function LevelUpRegistration(){
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState("")
 
-    const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyh9Y-XToPFseXBHoTJPCU9uj5rHq3g5T_8b3RUJxcz5PqcAowHJlM3oTNxI_iR2mxDMQ/exec"
+    const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzkjuFnKHiz3SIm7XDhopCQesabLlQsBUS-HZNSTqhGad5AF3oHxsmSfyDVjMJc2JZpyQ/exec"
 
     function resetLeveledUpApplicationForm(){
         setNameSurname("");
