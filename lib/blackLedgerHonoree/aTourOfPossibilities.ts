@@ -32,7 +32,7 @@ export const aTourOfPossibilities : BlackLedgerProp = {
                     <p>Founded in 2014, ATOP operates at the intersection of heritage tourism, education, and economic development. Through year-round African American heritage tours and educational programming, the organization leads visitors into historically Black neighborhoods, businesses, and cultural spaces that traditional tourism models have long overlooked. In doing so, ATOP ensures that Memphis’ cultural assets generate real, recurring economic value for the communities that created them.</p>`,
     
     headingTwo : `Strengthening the Black Economy Through Story and Place`,
-    answerTwo : `<p>ATOP’s work advances BCoM’s Memphis TEN priorities — particularly economic participation, workforce readiness, and business sustainability. Each tour creates paid opportunities for local guides, storytellers, and cultural workers while supporting flexible, skills-building roles within the hospitality and creative economy.</p>
+    answerTwo : `<p>ATOP’s work advances <a href="/memphis-ten" style="color: var(--gold)">BCoM’s Memphis TEN</a> priorities — particularly economic participation, workforce readiness, and business sustainability. Each tour creates paid opportunities for local guides, storytellers, and cultural workers while supporting flexible, skills-building roles within the hospitality and creative economy.</p>
                     <p>Beyond individual tours, ATOP partners with schools, nonprofits, and civic organizations to generate repeat engagement and reliable revenue streams for Black-owned businesses and cultural partners. These collaborations move ATOP beyond one-time experiences and establish a model in which cultural education and economic circulation reinforce one another.</p>`,
     
     headingThree: `Who Relies on ATOP`,
@@ -54,13 +54,13 @@ export const aTourOfPossibilities : BlackLedgerProp = {
 
     endBlockText : `<p>To explore how A Tour of Possibilities is reshaping heritage tourism in Memphis — and to experience the city through a deeper, more intentional lens — visit <a href="https://atopmemphis.com">atopmemphis.com</a>, book a tour, or follow ATOP on social media.</p>`,
     
-    imageOne : '/blog/mlk/blackLedger/atop4.jpg',
+    imageOne : '/blog/mlk/blackLedger/atop7.jpeg',
     imageOneAlt : '',
     imageTwo : '/blog/mlk/blackLedger/atop2.jpg',
     imageTwoAlt : '',
     imageThree : '/blog/mlk/blackLedger/atop3.jpg',
     imageThreeAlt : '',
-    imageFour : '/blog/mlk/blackLedger/atop1.jpg',
+    imageFour : '/blog/mlk/blackLedger/atop8.jpeg',
     imageFourAlt : '',
     imageFive : '/blog/mlk/blackLedger/atop5.jpg',
     imageFiveAlt : '',

@@ -13,6 +13,8 @@ export default function LevelUpRegistration(){
 
     const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzkjuFnKHiz3SIm7XDhopCQesabLlQsBUS-HZNSTqhGad5AF3oHxsmSfyDVjMJc2JZpyQ/exec"
 
+    // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbxr922kjKrGjRKDGUuKgUQHFyWASWrq3qvs3FFYgxdCjRvGtbzi1mwfPBRPeRR02BCX/exec"
+
     function resetLeveledUpApplicationForm(){
         setNameSurname("");
         setMail("");
@@ -137,23 +139,28 @@ export default function LevelUpRegistration(){
                         <legend>
                             What Time Slot?
                         </legend>
-                        {/* <input 
+                        <input 
                             type="radio" 
                             name="timeSlot"
                             value={"firstSession"} 
                             checked={timeSlot === "firstSession"}
                             onChange={(e) => setTimeSlot(e.target.value)}
                             className={style.faqFormRadioInput}
-                        /> */}
-                        <span
+                        />
+                        {/* <span
                             className={style.faqFormRadioInput}
                         >
                             Sorry this time slot is fully booked
-                        </span>
+                        </span> */}
                         <span
                             className={style.faqFormRadioText}
                         >
                             10 am - 12 pm
+                        </span>
+                        <span
+                            style={{color:"red", fontSize:"0.8rem", margin:"-.5rem 0 1rem 0"}}
+                        >
+                            This session is fully booked. If you want to be on the waiting list you can proceed with this time slot.
                         </span>
 
                         <input 
