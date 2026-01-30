@@ -20,8 +20,16 @@ const blogList : BlogListProp[] = [
         blogArticleDate: "19 Jan 2026",
         blogReadLink: `/blog/honoring-martin-luther-king`
     },
-    // {
-    //     id: 'test',
+    {
+        id: "blackLedger-atop",
+        blogName: `Honoring Dr. Martin Luther King Jr.`,
+        blogImage: `/blog/blank-background.webp`,
+        blogTitleColor: `#ffffff`,
+        blogArticleDate: "30 Jan 2026",
+        blogReadLink: `/blog/black-ledger/a-tour-of-possibilities`
+    },
+        // {
+    //     id: "",
     //     blogName: `Honoring Dr. Martin Luther King Jr.`,
     //     blogImage: `/blog/mlk/mlk-hero-desktop.webp`,
     //     blogTitleColor: `#ffffff`,
