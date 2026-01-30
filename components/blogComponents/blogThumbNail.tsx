@@ -22,7 +22,7 @@ const blogList : BlogListProp[] = [
     },
     {
         id: "blackLedger-atop",
-        blogName: `Honoring Dr. Martin Luther King Jr.`,
+        blogName: `The Black Ledger - A Tour of Possibilities`,
         blogImage: `/blog/blank-background.webp`,
         blogTitleColor: `#ffffff`,
         blogArticleDate: "30 Jan 2026",
