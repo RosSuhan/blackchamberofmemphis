@@ -6,7 +6,7 @@ import { Linkedin2 } from "@/components/icons/LinkedInIcon"
 import { CompanyDirectory } from "@/components/icons/Directory"
 
 export const aTourOfPossibilities : BlackLedgerProp = {
-    id : 'a-tour-of-posibilities',
+    id : 'a-tour-of-possibilities',
     backgroundImage : '/blog/mlk/blackLedger/aTourOfPossibility.jpg',
     businessTitle : "A Tour of Possibilities",
     socialLinks : [
