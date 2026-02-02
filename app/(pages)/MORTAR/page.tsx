@@ -1,3 +1,5 @@
+import { GlobeOutline } from '@/components/icons/Globe'
+import { BaselineMail } from '@/components/icons/MailIcon'
 import { OpenBookOutline } from '@/components/icons/OpenBookOutline'
 import { Phone } from '@/components/icons/Phone'
 import style from '@/styles/mortar.module.css'
@@ -247,30 +249,54 @@ export default function Mortar(){
             <section
                 className={style.mortarContactSection}
             >
-                <a href=""
-                    className={style.mortarContactLink}
+                <div
+                    className={style.mortarContactLinkBlock}
                 >
-                    <Phone/>
-                    901 800 8041
-                </a>
+                    <a href="tel:+19018008041"
+                        className={style.mortarContactLink}
+                    >
+                        <div
+                            className={style.mortarContactIcon}
+                        >
+                            <Phone/>
+                        </div>
+                        
+                        901 800 8041
+                    </a>
 
-                <a href=""
-                    className={style.mortarContactLink}
-                >
-                    @bomemphis
-                </a>
+                    <a href=""
+                        className={style.mortarContactLink}
+                    >
+                        <div
+                            className={style.mortarContactIcon}
+                        >
+                            @
+                        </div>
+                        @bomemphis
+                    </a>
 
-                <a href=""
-                    className={style.mortarContactLink}
-                >
-                    jasmine@bbamemphis.com
-                </a>
+                    <a href="mailto:jasmine@bbamemphis.com"
+                        className={style.mortarContactLink}
+                    >
+                        <div
+                            className={style.mortarContactIcon}
+                        >
+                            <BaselineMail/>
+                        </div>
+                        jasmine@bbamemphis.com
+                    </a>
 
-                <a href=""
-                    className={style.mortarContactLink}
-                >
-                    Website
-                </a>
+                    <a href="https://blackchamberofmemphis"
+                        className={style.mortarContactLink}
+                    >
+                        <div
+                            className={style.mortarContactIcon}
+                        >
+                            <GlobeOutline/>
+                        </div>
+                        Website
+                    </a>
+                </div>
             </section>
         </main>
     )

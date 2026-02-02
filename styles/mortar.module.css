@@ -195,20 +195,40 @@
     background: var(--gold);
     padding: 4rem 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     row-gap: 2rem;
     column-gap: 5%;
 }
 
+.mortarContactLinkBlock {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+}
+
 .mortarContactLink {
-    width: 40%;
+    width: 90%;
+    overflow-x: hidden;
     text-align: center;
     text-decoration: none;
     color: #000000;
     display: flex;
     align-items: center;
     column-gap: 5%;
+}
+
+.mortarContactIcon {
+    background: #000000;
+    color: var(--gold);
+    padding: .5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width:400px) {
@@ -239,6 +259,47 @@
 
     .steptext {
         width: 100%;
+    }
+
+        /* Contact Section */
+    .mortarContactSection {
+        /* background: var(--gold); */
+        /* padding: 4rem 0; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* row-gap: 2rem; */
+        /* column-gap: 5%; */
+    }
+
+    .mortarContactLinkBlock {
+        width: 90%;
+        column-gap: 5%;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* row-gap: 1.5rem; */
+    }
+
+    .mortarContactLink {
+        width: 40%;
+        /* overflow-x: hidden; */
+        /* text-align: center; */
+        /* text-decoration: none; */
+        /* color: #000000; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* column-gap: 5%; */
+    }
+
+    .mortarContactIcon {
+        /* background: #000000; */
+        /* color: var(--gold); */
+        /* padding: .5rem; */
+        /* border-radius: 20px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
     }
 }
 
@@ -279,6 +340,48 @@
     .mortarHeroItalicSpan {
         font-size: 1.1rem;
     }
+
+   /* Contact Section */
+    .mortarContactSection {
+        /* background: var(--gold); */
+        /* padding: 4rem 0; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* row-gap: 2rem; */
+        /* column-gap: 5%; */
+    }
+
+    .mortarContactLinkBlock {
+        /* width: 90%; */
+        /* column-gap: 5%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* row-gap: 1.5rem; */
+        /* background: gray; */
+    }
+
+    .mortarContactLink {
+        /* width: 40%; */
+        /* overflow-x: hidden; */
+        /* text-align: center; */
+        /* text-decoration: none; */
+        /* color: #000000; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* column-gap: 5%; */
+    }
+
+    .mortarContactIcon {
+        /* background: #000000; */
+        /* color: var(--gold); */
+        /* padding: .5rem; */
+        /* border-radius: 20px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
 }
 
 @media (min-width:700px) {
@@ -300,6 +403,38 @@
     
     .mortarHeroItalicSpan {
         font-size: 1.2rem;
+    }
+
+    /* Contact Section */
+    .mortarContactSection {
+        /* background: var(--gold); */
+        /* padding: 4rem 0; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 2rem; */
+        /* column-gap: 5%; */
+    }
+
+    .mortarContactLink {
+        /* width: 280px; */
+        /* overflow-x: hidden; */
+        /* text-align: center; */
+        /* text-decoration: none; */
+        /* color: #000000; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* column-gap: 5%; */
+    }
+
+    .mortarContactIcon {
+        /* background: #000000; */
+        /* color: var(--gold); */
+        /* padding: .5rem; */
+        /* border-radius: 20px; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
     }
 }
 
@@ -436,6 +571,38 @@
     .mortarImageOddColumn {
         height: 700px;
     }
+
+        /* Contact Section */
+        .mortarContactSection {
+            /* background: var(--gold); */
+            /* padding: 4rem 0; */
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
+            /* row-gap: 2rem; */
+            /* column-gap: 5%; */
+        }
+    
+        .mortarContactLink {
+            /* width: 400px; */
+            /* overflow-x: hidden; */
+            /* text-align: center; */
+            /* text-decoration: none; */
+            /* color: #000000; */
+            /* display: flex; */
+            /* align-items: center; */
+            /* column-gap: 5%; */
+        }
+    
+        .mortarContactIcon {
+            /* background: #000000; */
+            /* color: var(--gold); */
+            /* padding: .5rem; */
+            /* border-radius: 20px; */
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
 }
 
 @media (min-width:1000px) {
