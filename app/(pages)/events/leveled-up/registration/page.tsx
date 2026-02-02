@@ -11,9 +11,9 @@ export default function LevelUpRegistration(){
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState("")
 
-    const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzkjuFnKHiz3SIm7XDhopCQesabLlQsBUS-HZNSTqhGad5AF3oHxsmSfyDVjMJc2JZpyQ/exec"
+    // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzkjuFnKHiz3SIm7XDhopCQesabLlQsBUS-HZNSTqhGad5AF3oHxsmSfyDVjMJc2JZpyQ/exec"
 
-    // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyAaPSYd1ZmLCA7lOU9B00kSzQ9_SvnpJOpb1kUDdfZjCUND65WDWx90rTAU9Y4BwDUgw/exec"
+    const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyAaPSYd1ZmLCA7lOU9B00kSzQ9_SvnpJOpb1kUDdfZjCUND65WDWx90rTAU9Y4BwDUgw/exec"
 
     function resetLeveledUpApplicationForm(){
         setNameSurname("");
@@ -157,11 +157,11 @@ export default function LevelUpRegistration(){
                         >
                             10 am - 12 pm
                         </span>
-                        {/* <span
+                        <span
                             style={{color:"red", fontSize:"0.8rem", margin:"-.5rem 0 1rem 0"}}
                         >
                             This session is fully booked. If you want to be on the waiting list you can proceed with this time slot.
-                        </span> */}
+                        </span>
 
                         <input 
                             type="radio" 

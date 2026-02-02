@@ -1,8 +1,30 @@
+import { OpenBookOutline } from '@/components/icons/OpenBookOutline'
+import { Phone } from '@/components/icons/Phone'
 import style from '@/styles/mortar.module.css'
 import Image from 'next/image'
 
 
 export default function Mortar(){
+
+    const mortarSteps = [
+        {
+            stepHeading: `Equip early-stage entrepreneurs`,
+            stepText: `With the mindset, tools, and practical training needed to move from ideation to execution and sustainability.`
+        },{
+            stepHeading: `Increase business readiness`,
+            stepText: `Through structured curriculum focused on strategy, financial fundamentals, customer discovery, and operational discipline.`
+        },{
+            stepHeading: `Expand access to culturally responsive entrepreneurship education`,
+            stepText: `That reflects the lived experiences, creativity, and innovation of Memphis founders.`
+        },{
+            stepHeading: `Strengthen Memphis’ small-business ecosystem`,
+            stepText: `By connecting founders to trusted capital providers, technical assistance partners, and subject-matter experts.`
+        },{
+            stepHeading: `Support long-term economic impact`,
+            stepText: `By helping entrepreneurs build businesses grounded in ownership, reinvestment, and community stability.`
+        }
+    ]
+
     return (
         <main>
             <section
@@ -54,72 +76,202 @@ export default function Mortar(){
                 </p>
             </section>
 
-            <section>
-                
+            <section
+                className={style.mortarTwoColumnSection}
+            >
+                <div
+                    className={style.mortarTextColumn}
+                >
+                    <p
+                        className={style.mortarParagraph}
+                    >
+                        To date, MORTAR has supported hundreds of entrepreneurs through its training programs, helping founders launch, stabilize, and grow businesses across a range of industries. Its model is widely recognized for combining rigor, cultural relevance, and measurable outcomes, making it a trusted partner for cities, corporations, and philanthropic institutions seeking to expand equitable access to entrepreneurship.
+                    </p>
+
+                    <h3
+                        className={style.mortarBlockHeading}
+                    >
+                        MORTAR’s curriculum emphasizes:
+                    </h3>
+
+                    <ul
+                        className={style.mortarGoldButtonList}
+                    >
+                        <li
+                            className={style.mortarGoldButton}
+                        >
+                            Customer discovery and validation
+                        </li>
+                        <li
+                            className={style.mortarGoldButton}
+                        >
+                            Financial fundamentals and cash-flow management
+                        </li>
+                        <li
+                            className={style.mortarGoldButton}
+                        >
+                            Strategic planning and execution
+                        </li>
+                        <li
+                            className={style.mortarGoldButton}
+                        >
+                            Pitch preparation and capital readiness
+                        </li>
+                        <li
+                            className={style.mortarGoldButton}
+                        >
+                            Peer learning and ecosystem connection
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    className={style.mortarImageColumn}
+                >
+                    <Image
+                        src={'/programs/mortar/mortar-image.webp'}
+                        alt=''
+                        width={640}
+                        height={480}
+                        className={style.mortarImage}
+                    />
+                </div>
             </section>
 
-            {/* 
-                Block style - text left image right
-                paragraph: 
-                To date, MORTAR has supported hundreds of entrepreneurs through its training programs, helping founders launch, stabilize, and grow businesses across a range of industries. Its model is widely recognized for combining rigor, cultural relevance, and measurable outcomes, making it a trusted partner for cities, corporations, and philanthropic institutions seeking to expand equitable access to entrepreneurship.
+            <section
+                className={style.mortarTwoColumnWhiteSection}
+            >
+                <div
+                    className={style.mortarImageOddColumn}
+                >
+                    <Image
+                        src={'/programs/mortar/mortar-group-1.webp'}
+                        alt=''
+                        width={640}
+                        height={480}
+                        className={style.mortarOddImage}
+                    />
+                </div>
 
-                subheading: MORTAR’s curriculum emphasizes:
+                <div
+                    className={style.mortarTextColumn}
+                >
+                    <h3
+                        className={style.mortarBlockHeading}
+                    >
+                        MORTAR Memphis
+                    </h3>
 
-                gold buttons white text:
-                Customer discovery and validation
-                Financial fundamentals and cash-flow management
-                Strategic planning and execution
-                Pitch preparation and capital readiness
-                Peer learning and ecosystem connection
-            */}
+                    <p
+                        className={style.mortarParagraph}
+                    >
+                        Through its expansion into Memphis, MORTAR brings a proven national framework, aligned with BCoM’s MemphisTen initiative to help businesses scale and hire employees,  while working in close partnership with local ecosystem leaders to ensure programming is place-based, culturally grounded, and responsive to Memphis’ unique entrepreneurial landscape.
+                    </p>
+                    <p
+                        className={style.mortarParagraph}
+                    >
+                        Inspired by a hip-hop framework for entrepreneurship, the academy reflects the same principles that have shaped generations of artists into moguls: vision, grind, storytelling, discipline, collaboration, and investment.
+                    </p>
+                    <p
+                        className={style.mortarParagraph}
+                    >
+                        Just as hip-hop has evolved across decades—innovating, adapting, and reinvesting into new voices—MORTAR Memphis is designed to cultivate the next generation of the city’s entrepreneurs by training founders, aligning ecosystem partners, and scaling impact together.
+                    </p>
+                </div>
+            </section>
 
-            {/* 
-                block style: 
-                Text and image
-                Heading: MORTAR Memphis
-                paragraph: 
-                Through its expansion into Memphis, MORTAR brings a proven national framework, aligned with BCoM’s MemphisTen initiative to help businesses scale and hire employees,  while working in close partnership with local ecosystem leaders to ensure programming is place-based, culturally grounded, and responsive to Memphis’ unique entrepreneurial landscape.
-                Inspired by a hip-hop framework for entrepreneurship, the academy reflects the same principles that have shaped generations of artists into moguls: vision, grind, storytelling, discipline, collaboration, and investment.
-                Just as hip-hop has evolved across decades—innovating, adapting, and reinvesting into new voices—MORTAR Memphis is designed to cultivate the next generation of the city’s entrepreneurs by training founders, aligning ecosystem partners, and scaling impact together.
-            */}
+            <section
+                className={style.mortarTableSection}
+            >
+                <ul
+                    className={style.mortarTableList}
+                >
+                    {mortarSteps.map(({stepHeading, stepText},index) => (
+                        <li
+                            key={index}
+                            className={style.mortarListItem}
+                        >
+                            <OpenBookOutline
+                                className={style.mortarIcon}
+                            />
+                            <span
+                                className={style.stepTitle}
+                            >
+                                {stepHeading}
+                            </span>
+                            <span
+                                className={style.steptext}
+                            >
+                                {stepText}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+            </section>
 
-            {/* 
-                This should be table or div rows: bold bullet point left - description right
+            <section
+                className={style.mortarSponsorSection}
+            >
+                <h2
+                    className={style.mortarSponsorHeading}
+                >
+                    Become an Inaugural Sponsor Today
+                </h2>
 
-                -  Equip early-stage entrepreneurs 
-                with the mindset, tools, and practical training needed to move from ideation to execution and sustainability.
+                <p
+                    className={style.mortarSponsorText}
+                >
+                    Inaugural sponsors play a critical role in launching MORTAR Memphis. Your support helps provide early access to capital-readiness education, trusted mentorship, and practical business infrastructure—removing common barriers that prevent promising ideas from becoming viable businesses.
+                </p>
+                <p
+                    className={style.mortarSponsorText}
+                >
+                    By investing at the ground level, you help strengthen Memphis’s business ecosystem, expand pathways to ownership, and contribute to long-term economic vitality across the city. Inaugural sponsors are not only supporting individual entrepreneurs—they are helping to shape the foundation of a program designed to deliver lasting community impact.
+                </p>
 
-                - Increase business readiness
-                through structured curriculum focused on strategy, financial fundamentals, customer discovery, and operational discipline.
+                <div
+                    className={style.mortarSponsorCTArow}
+                >
+                    <p
+                        className={style.mortarSponsorRowText}
+                    >
+                        For more information on sponsorship opportunities and benefits.
+                    </p>
+                    <button
+                        className={style.mortarSponsorButton}
+                    >
+                        Learn More
+                    </button>
+                </div>
+            </section>
 
-                - Expand access to culturally responsive entrepreneurship education
-                that reflects the lived experiences, creativity, and innovation of Memphis founders. 
+            <section
+                className={style.mortarContactSection}
+            >
+                <a href=""
+                    className={style.mortarContactLink}
+                >
+                    <Phone/>
+                    901 800 8041
+                </a>
 
-                -Strengthen Memphis’ small-business ecosystem 
-                by connecting founders to trusted capital providers, technical assistance partners, and subject-matter experts.
+                <a href=""
+                    className={style.mortarContactLink}
+                >
+                    @bomemphis
+                </a>
 
-                - Support long-term economic impact
-                by helping entrepreneurs build businesses grounded in ownership, reinvestment, and community stability.
-            */}
+                <a href=""
+                    className={style.mortarContactLink}
+                >
+                    jasmine@bbamemphis.com
+                </a>
 
-            {/* 
-                heading: Become an Inaugural Sponsor Today
-                paragraph: 
-                Inaugural sponsors play a critical role in launching MORTAR Memphis. Your support helps provide early access to capital-readiness education, trusted mentorship, and practical business infrastructure—removing common barriers that prevent promising ideas from becoming viable businesses.
-                By investing at the ground level, you help strengthen Memphis’s business ecosystem, expand pathways to ownership, and contribute to long-term economic vitality across the city. Inaugural sponsors are not only supporting individual entrepreneurs—they are helping to shape the foundation of a program designed to deliver lasting community impact.
-
-                CTA:
-                For more information on sponsorship opportunities and benefits, click here.
-            */}
-
-            {/* 
-                Contact block:
-
-                phone: 901 800 8041
-                @bomemphis
-                jasmine@bbamemphis.com
-                website
-            */}
+                <a href=""
+                    className={style.mortarContactLink}
+                >
+                    Website
+                </a>
+            </section>
         </main>
     )
 }
