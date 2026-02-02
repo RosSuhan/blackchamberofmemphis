@@ -8,6 +8,8 @@ export default function LevelUpRegistration(){
     const [ busName, setBusName ] = useState('');
     const [ tel, setTel ] = useState('');
     const [ timeSlot, setTimeSlot ] = useState('')
+    const [ firstSlot, setFirstSlot ] = useState(false)
+    const [ secondSlot, setSecondSlot ] = useState(false)
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState("")
 
@@ -15,14 +17,16 @@ export default function LevelUpRegistration(){
 
     // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyAaPSYd1ZmLCA7lOU9B00kSzQ9_SvnpJOpb1kUDdfZjCUND65WDWx90rTAU9Y4BwDUgw/exec"
 
-    const LEVELEDUP_GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbxXdIsyVyO3F-eUYM_XbRXFJ4PY0IO8dR0hLcXFQ3x6QgP2y30YJt1hnrZKuBtV3aFq8w/exec'
+    const LEVELEDUP_GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbzkuzWJrJubkDpV2WiBl2IZYYPueiZSxsKuJUhg8Nnthy8mb38YJ9AfA9_YTCnJjXy8jA/exec'
 
     function resetLeveledUpApplicationForm(){
         setNameSurname("");
         setMail("");
         setBusName("");
         setTel("");
-        setTimeSlot("")
+        setTimeSlot("",)
+        setFirstSlot(false);
+        setSecondSlot(false)
     }
 
     async function handleLeveledUpRegistration(e: React.FormEvent) {
@@ -36,6 +40,8 @@ export default function LevelUpRegistration(){
             busName,
             tel,
             timeSlot,
+            firstSlot,
+            secondSlot,
         }
 
         try {
@@ -48,6 +54,7 @@ export default function LevelUpRegistration(){
 
             setSubmitMessage("Thank you for registering for the LeveledUp Money Workshop. Please look out for confirmation in you mailbox.")
             setLoading(false)
+            console.log(leveledUpApplication)
 
             setTimeout(() => {
                 resetLeveledUpApplicationForm();
@@ -146,7 +153,10 @@ export default function LevelUpRegistration(){
                             name="timeSlot"
                             value={"firstSession"} 
                             checked={timeSlot === "firstSession"}
-                            onChange={(e) => setTimeSlot(e.target.value)}
+                            onChange={(e) => {
+                                setFirstSlot(true)
+                                setTimeSlot(e.target.value)
+                            }}
                             className={style.faqFormRadioInput}
                         />
                         {/* <span
@@ -170,7 +180,10 @@ export default function LevelUpRegistration(){
                             name="timeSlot" 
                             value={"secondSession"}
                             checked={timeSlot === "secondSession"}
-                            onChange={(e) => setTimeSlot(e.target.value)}
+                            onChange={(e) => {
+                                setTimeSlot(e.target.value)
+                                setSecondSlot(true)
+                            }}
                             className={style.faqFormRadioInput}
                         />
                         <span
