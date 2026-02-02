@@ -13,7 +13,9 @@ export default function LevelUpRegistration(){
 
     // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbzkjuFnKHiz3SIm7XDhopCQesabLlQsBUS-HZNSTqhGad5AF3oHxsmSfyDVjMJc2JZpyQ/exec"
 
-    const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyAaPSYd1ZmLCA7lOU9B00kSzQ9_SvnpJOpb1kUDdfZjCUND65WDWx90rTAU9Y4BwDUgw/exec"
+    // const LEVELEDUP_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbyAaPSYd1ZmLCA7lOU9B00kSzQ9_SvnpJOpb1kUDdfZjCUND65WDWx90rTAU9Y4BwDUgw/exec"
+
+    const LEVELEDUP_GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbxXdIsyVyO3F-eUYM_XbRXFJ4PY0IO8dR0hLcXFQ3x6QgP2y30YJt1hnrZKuBtV3aFq8w/exec'
 
     function resetLeveledUpApplicationForm(){
         setNameSurname("");
