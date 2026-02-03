@@ -45,6 +45,7 @@ import { butterifficBakeryCafe } from './(b)/butterifficBakeryCafe'
 import { brighterDaysNites } from './(b)/brighterDaysNites'
 import { bridges } from './(b)/bridges'
 import { bectonCapitalCoaching } from './(b)/bectonCapitalCoaching'
+import { baldwinFinancialServices } from './(b)/baldwinFinancialServices'
 // C
 import { carisCloset } from './(c)/carisCloset'
 import { certifiedDefendersOfAmerica } from './(c)/certifiedDefendersOfAmerica'
@@ -103,6 +104,7 @@ import { luxuryCleaning } from './(l)/luxuryCleaning'
 import { locksmith4Less } from './(l)/locksmith4Less'
 import { lucyjaHygge } from './(l)/lucyjaHygge'
 import { lctcityProductions } from './(l)/lctcityProductions'
+import { leveledUpMoney } from './(l)/leveledUpMoney'
 // M
 import { magnoliaBusSol } from './(m)/magnoliaBusSol'
 import { mickeyPopcorn } from './(m)/mickeyPopcorn'
@@ -263,6 +265,7 @@ export const businessList = [
     brighterDaysNites,
     bridges,
     bectonCapitalCoaching,
+    baldwinFinancialServices,
 // C
     capturingMemories,
     carisCloset,
@@ -319,6 +322,7 @@ export const businessList = [
     locksmith4Less,
     lucyjaHygge,
     lctcityProductions,
+    leveledUpMoney,
 // M
     magnoliaBusSol,
     mickeyPopcorn,
