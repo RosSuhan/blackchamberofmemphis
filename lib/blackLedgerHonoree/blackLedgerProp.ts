@@ -17,6 +17,8 @@ export interface BlackLedgerProp {
     answerFive : string,
     headingSix : string,
     answerSix : string,
+    headingSeven : string,
+    answerSeven : string,
     endBlockText : string,
     imageOne : string,
     imageOneAlt : string,
@@ -28,5 +30,7 @@ export interface BlackLedgerProp {
     imageFourAlt : string,
     imageFive : string,
     imageFiveAlt : string,
+    imageSix : string,
+    imageSixAlt : string,
     videoLink : { isVideoTrue : boolean, videoPath : string, videoTitle : string}[],
 }

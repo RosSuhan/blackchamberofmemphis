@@ -52,6 +52,9 @@ export const aTourOfPossibilities : BlackLedgerProp = {
     answerSix : `<p>By making cultural work visible, valued, and repeatable, ATOP reduces economic risk and helps create stability for Black-owned businesses, guides, creatives, and cultural workers.</p>
                     <p>Through consistent tours and returning group partners, ATOP generates dependable income opportunities while providing sustained exposure for Black businesses and neighborhoods. Its model reinforces long-term stability built on narrative ownership, community credibility, and repeat economic engagement—key ingredients for resilient local economies.</p>`,
 
+    headingSeven : '',
+    answerSeven : '',
+
     endBlockText : `<p>To explore how A Tour of Possibilities is reshaping heritage tourism in Memphis — and to experience the city through a deeper, more intentional lens — visit <a href="https://atopmemphis.com">atopmemphis.com</a>, book a tour, or follow ATOP on social media.</p>`,
     
     imageOne : '/blog/mlk/blackLedger/atop7.jpeg',
@@ -64,6 +67,8 @@ export const aTourOfPossibilities : BlackLedgerProp = {
     imageFourAlt : 'A Tour of Possibilities at Slave Haven',
     imageFive : '/blog/mlk/blackLedger/atop5.jpg',
     imageFiveAlt : 'A Tour of Possibilities group photo in bus',
+    imageSix : '/blog/mlk/blackLedger/atop5.jpg',
+    imageSixAlt : 'A Tour of Possibilities group photo in bus',
     videoLink: [
         {
             isVideoTrue : true,

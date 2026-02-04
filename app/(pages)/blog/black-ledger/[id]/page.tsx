@@ -75,6 +75,16 @@ export default function BlackLedger(){
                 answerText={ selectedHonoree?.answerSix || '' }
             />
 
+            {selectedHonoree?.headingSeven ?
+                <SectionImageText
+                    direction={true}
+                    sectionHeading={ selectedHonoree?.headingSeven || ''}
+                    answerText={ selectedHonoree?.answerSeven || '' }
+                    blockImage={ selectedHonoree?.imageSix || '' }
+                    blockImageAlt={ selectedHonoree?.imageSixAlt || '' }
+                />
+            : null}
+
             <BlEndBlock
                 endText={ selectedHonoree?.endBlockText || ''}
             />

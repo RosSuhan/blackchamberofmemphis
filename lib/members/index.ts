@@ -185,6 +185,7 @@ import { teaBar901 } from './(t)/teaBar901'
 import { theJuiceJointBar } from './(t)/theJuiceJointBar'
 import { tinyHumanSkincare } from './(t)/tinyHumanSkincare'
 import { trPerryEventServices } from './(t)/trPerryEventServices'
+import { theCollectiveBluePrint } from './(t)/theCollectiveBluePrint'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -401,6 +402,7 @@ export const businessList = [
     theJuiceJointBar,
     tinyHumanSkincare,
     trPerryEventServices,
+    theCollectiveBluePrint,
 // U
     urbanSecSol,
     upskilEdtechConsulting,

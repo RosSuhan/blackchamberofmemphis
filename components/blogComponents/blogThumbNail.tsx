@@ -1,48 +1,14 @@
 import style from '@/styles/blogThumbNail.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { blogList } from '@/lib/blogList'
 
-type BlogListProp = {
-    id: string;
-    blogName: string;
-    blogImage: string;
-    blogTitleColor: string;
-    blogArticleDate: string;
-    blogReadLink: string;
-}
-
-const blogList : BlogListProp[] = [
-    {
-        id: 'mlk',
-        blogName: `Honoring Dr. Martin Luther King Jr.`,
-        blogImage: `/blog/mlk/mlk-hero-desktop.webp`,
-        blogTitleColor: `#ffffff`,
-        blogArticleDate: "19 Jan 2026",
-        blogReadLink: `/blog/honoring-martin-luther-king`
-    },
-    {
-        id: "blackLedger-atop",
-        blogName: `The Black Ledger - A Tour of Possibilities`,
-        blogImage: `/blog/blank-background.webp`,
-        blogTitleColor: `#ffffff`,
-        blogArticleDate: "30 Jan 2026",
-        blogReadLink: `/blog/black-ledger/a-tour-of-possibilities`
-    },
-        // {
-    //     id: "",
-    //     blogName: `Honoring Dr. Martin Luther King Jr.`,
-    //     blogImage: `/blog/mlk/mlk-hero-desktop.webp`,
-    //     blogTitleColor: `#ffffff`,
-    //     blogArticleDate: "19 Jan 2026",
-    //     blogReadLink: `/blog/honoring-martin-luther-king`
-    // },
-]
 
 
 export default function BlogThumbNail(){
     return(
         <>
-        {blogList.map(({id, blogName, blogImage, blogTitleColor, blogArticleDate, blogReadLink}: BlogListProp) => (
+        {blogList.map(({id, blogName, blogImage, blogTitleColor, blogArticleDate, blogReadLink}) => (
             <div
                 className={style.blogBlock}
                 key={id}

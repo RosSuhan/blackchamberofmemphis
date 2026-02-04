@@ -6,7 +6,7 @@ export const leveledUp3 : EventListType = {
     type: 'event',
     eventImage : '/events/leveledUp/leveledup-money.webp',
     eventImageAlt : 'LeveledUp Money Workshop',
-    eventDate : 'Multiple Dates',
+    eventDate : 'February 18, 2026',
     sortDate : '2026-02-18',
     eventTime : 'Time Slots',
     eventAddressLink : '/gmbLink',
