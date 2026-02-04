@@ -72,6 +72,19 @@ export default function EventSingle(){
                 className={style.singleEventBio}
                 dangerouslySetInnerHTML={{__html: selectedEvent?.eventLongDescription || ""}}
             />
+
+            {selectedEvent?.eventCTAbuttonLink ? 
+                <div
+                    className={style.singleRegisterRow}
+                >
+                    <a 
+                        href={selectedEvent?.eventCTAbuttonLink}
+                        className={style.singleRegistrationButton}
+                    >
+                        {selectedEvent?.eventCTAbuttonText}
+                    </a>
+                </div>
+            : null}
         </article>
     )
 }

@@ -104,6 +104,24 @@
     display: none;
 }
 
+.singleRegisterRow {
+    width: 100%;
+    background: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.singleRegistrationButton {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
 @media (min-width:600px) {
     .singleEventImage {
         height: 300px;
