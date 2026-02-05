@@ -6,7 +6,7 @@ import { CompanyDirectory } from "@/components/icons/Directory"
 
 export const kudzukian : BlackLedgerProp = {
     id : 'kudzukian',
-    backgroundImage : '/blog/mlk/blackLedger/aTourOfPossibility.jpg',
+    backgroundImage : '/blog/mlk/blackLedger/kudzukian/kudzukian3.webp',
     businessTitle : 'Kudzukian',
     socialLinks: [
         {
@@ -56,17 +56,17 @@ export const kudzukian : BlackLedgerProp = {
                     <p>For Memphis as a whole, KUDZUKIAN anchors high-capability media infrastructure in the city, keeping talent development, production spend, and creative ownership local while serving regional and national partners.</p>`,
 
     endBlockText : 'To explore how KUDZUKIAN is strengthening Memphis through owned media infrastructure, visit <a href="https://kudzukian.com">kudzukian.com</a>, explore its original programming, or follow KUDZUKIAN across digital platforms.',
-    imageOne : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageOneAlt : '',
-    imageTwo : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageTwoAlt : 'string',
-    imageThree : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageThreeAlt : 'string',
-    imageFour : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageFourAlt : 'string',
-    imageFive : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageFiveAlt : 'string',
-    imageSix : '/blog/mlk/blackLedger/atop7.jpeg',
-    imageSixAlt : 'string',
+    imageOne : '/blog/mlk/blackLedger/kudzukian/kudzukian1.webp',
+    imageOneAlt : 'Kudzukian image',
+    imageTwo : '/blog/mlk/blackLedger/kudzukian/kudzukian2.webp',
+    imageTwoAlt : 'Kudzukian Video shoot',
+    imageThree : '/blog/mlk/blackLedger/kudzukian/kudzukian4.webp',
+    imageThreeAlt : 'Kudzukian Conference setup',
+    imageFour : '/blog/mlk/blackLedger/kudzukian/kudzukian7.webp',
+    imageFourAlt : 'Kudzukian Panel Seating',
+    imageFive : '/blog/mlk/blackLedger/kudzukian/kudzukian9.webp',
+    imageFiveAlt : 'Kudzukian Conference',
+    imageSix : '/blog/mlk/blackLedger/kudzukian/kudzukian10.webp',
+    imageSixAlt : 'Kudzukian Sound Desk',
     videoLink : [{ isVideoTrue : false, videoPath : 'string', videoTitle : 'string'}],
 }

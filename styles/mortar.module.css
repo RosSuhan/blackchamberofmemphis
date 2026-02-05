@@ -29,12 +29,12 @@
     bottom: 0;
 }
 
-.mortarHeroItalicSpan {
+/* .mortarHeroItalicSpan {
     font-style: italic;
     color: #ffffff;
     font-size: .9rem;
     padding: .5rem 0;
-}
+} */
 
 /* About Section */
 .mortarAboutSection {
@@ -131,6 +131,7 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
+    background: var(--gold);
 }
 
 .mortarTableList {
@@ -236,10 +237,10 @@
         font-size: 1.3rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1rem;
         padding: 1rem 0 0 0;
-    }
+    } */
 
     .mortarAboutHeading,
     .mortarBlockHeading,
@@ -337,9 +338,49 @@
         font-size: 1.4rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1.1rem;
+    } */
+
+    /* Mortar Table Section */
+    /* .mortarTableSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        background: var(--gold);
+    } */
+
+    /* .mortarTableList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    } */
+
+    /* .mortarListItem {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 1rem 0;
+    } */
+
+    /* .mortarIcon {
+        min-width: 30px;
+        min-height: 30px;
+    } */
+
+    .stepTitle {
+        /* width: 50%; */
+        /* font-weight: 900; */
+        /* font-size: 1.1rem; */
+        /* margin-left: .5rem; */
     }
+
+    /* .steptext {
+        margin-left: .5rem;
+        font-size: 1rem;
+    } */
 
    /* Contact Section */
     .mortarContactSection {
@@ -401,9 +442,9 @@
         font-size: 1.5rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1.2rem;
-    }
+    } */
 
     /* Contact Section */
     .mortarContactSection {
@@ -451,9 +492,9 @@
         font-size: 1.7rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1.3rem;
-    }
+    } */
 
     .mortarAboutHeading,
     .mortarBlockHeading,
@@ -501,16 +542,19 @@
     /* Mortar Table Section */
     .mortarTableList {
         width: 95%;
+        background-color: pink;
     }
 
     .stepTitle {
-        width: 45%;
+        width: 35%;
         font-size: 1.25rem;
+        background-color: green;
     }
 
     .steptext {
-        width: 48%;
+        width: 58%;
         font-size: 1.1rem;
+        background-color: purple;
     }
 
     /* mortar Sponsor Section */
@@ -550,10 +594,10 @@
         font-size: 1.8rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1.4rem;
         padding: 2rem 0 0 0;
-    }
+    } */
 
     .mortarAboutSection {
         padding: 3rem 0;
@@ -614,9 +658,9 @@
         font-size: 1.9rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1.5rem;
-    }
+    } */
 
     .mortarAboutSection {
         padding: 4rem 0;
@@ -675,9 +719,9 @@
         font-size: 2rem;
     }
     
-    .mortarHeroItalicSpan {
+    /* .mortarHeroItalicSpan {
         font-size: 1.7rem;
-    }
+    } */
 
     /* Two column */
     .mortarImageColumn {

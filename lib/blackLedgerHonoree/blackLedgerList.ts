@@ -3,5 +3,5 @@ import { kudzukian } from "./kudzukian";
 
 export const blackLedgerList = [
     aTourOfPossibilities,
-    // kudzukian
+    kudzukian
 ]

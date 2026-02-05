@@ -24,14 +24,14 @@ export const blogList : BlogListProp[] = [
         blogArticleDate: "30 Jan 2026",
         blogReadLink: `/blog/black-ledger/a-tour-of-possibilities`
     },
-    // {
-    //     id: "blackLedger-Kudzukian",
-    //     blogName: `The Black Ledger - Kudzukian`,
-    //     blogImage: `/blog/blank-background.webp`,
-    //     blogTitleColor: `#ffffff`,
-    //     blogArticleDate: "4 Feb 2026",
-    //     blogReadLink: `/blog/black-ledger/kudzukian`
-    // },
+    {
+        id: "blackLedger-Kudzukian",
+        blogName: `The Black Ledger - Kudzukian`,
+        blogImage: `/blog/blank-background.webp`,
+        blogTitleColor: `#ffffff`,
+        blogArticleDate: "4 Feb 2026",
+        blogReadLink: `/blog/black-ledger/kudzukian`
+    },
         // {
     //     id: "",
     //     blogName: `Honoring Dr. Martin Luther King Jr.`,
