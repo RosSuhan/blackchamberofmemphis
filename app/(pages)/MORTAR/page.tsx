@@ -1,4 +1,6 @@
+import { BrandDatabricks } from '@/components/icons/BrandDatabricks'
 import { GlobeOutline } from '@/components/icons/Globe'
+import { Instagram } from '@/components/icons/InstagramIcon'
 import { BaselineMail } from '@/components/icons/MailIcon'
 import { OpenBookOutline } from '@/components/icons/OpenBookOutline'
 import { Phone } from '@/components/icons/Phone'
@@ -69,12 +71,17 @@ export default function Mortar(){
                 <p
                     className={style.mortarAboutText}
                 >
-                    MORTAR is a nationally recognized entrepreneurship organization founded in Cincinnati with a mission to build inclusive pathways to business ownership. MORTAR specializes in delivering structured, cohort-based entrepreneurship training designed for founders who are often overlooked by traditional business support systems.
+                    MORTAR is a nationally recognized entrepreneurship organization founded in Cincinnati with a mission to expand access to business ownership. MORTAR delivers structured, cohort-based entrepreneurship training designed to support founders navigating barriers to traditional business support systems.
                 </p>
                 <p
                     className={style.mortarAboutText}
                 >
-                    Through its signature entrepreneurship academies, MORTAR provides founders with practical business education, accountability, and access to capital readiness tools—helping entrepreneurs clarify their ideas, strengthen their business models, and prepare for sustainable growth.
+                    Through its signature entrepreneurship academies, MORTAR provides practical business education, accountability, and capital-readiness tools, helping entrepreneurs clarify their ideas, strengthen their business models, and prepare for sustainable growth.
+                </p>
+                <p
+                    className={style.mortarAboutText}
+                >
+                    <strong>At the culmination of the 16-week program, participating businesses compete in a Pitch Night for cash awards.</strong> These funds provide flexible capital to help businesses scale operations, strengthen infrastructure, or advance production based on their growth stage and needs.
                 </p>
             </section>
 
@@ -87,7 +94,7 @@ export default function Mortar(){
                     <p
                         className={style.mortarParagraph}
                     >
-                        To date, MORTAR has supported hundreds of entrepreneurs through its training programs, helping founders launch, stabilize, and grow businesses across a range of industries. Its model is widely recognized for combining rigor, cultural relevance, and measurable outcomes, making it a trusted partner for cities, corporations, and philanthropic institutions seeking to expand equitable access to entrepreneurship.
+                        To date, MORTAR has supported hundreds of entrepreneurs through its training programs, helping founders launch, stabilize, and grow businesses across a wide range of industries. Its model is recognized for its rigor, founder-centered approach, and measurable outcomes, making MORTAR a trusted partner for cities, corporations, and philanthropic institutions seeking to strengthen local entrepreneurship ecosystems.
                     </p>
 
                     <h3
@@ -102,27 +109,27 @@ export default function Mortar(){
                         <li
                             className={style.mortarGoldButton}
                         >
-                            Customer discovery and validation
+                            Customer Discovery & Validation
                         </li>
                         <li
                             className={style.mortarGoldButton}
                         >
-                            Financial fundamentals and cash-flow management
+                            Financial Fundamentals and Cash-flow Management
                         </li>
                         <li
                             className={style.mortarGoldButton}
                         >
-                            Strategic planning and execution
+                            Strategic Planning and Execution
                         </li>
                         <li
                             className={style.mortarGoldButton}
                         >
-                            Pitch preparation and capital readiness
+                            Pitch Preparation and Capital Readiness
                         </li>
                         <li
                             className={style.mortarGoldButton}
                         >
-                            Peer learning and ecosystem connection
+                            Peer Learning and Ecosystem Connection
                         </li>
                     </ul>
                 </div>
@@ -192,19 +199,21 @@ export default function Mortar(){
                             key={index}
                             className={style.mortarListItem}
                         >
-                            <OpenBookOutline
+                            <BrandDatabricks
                                 className={style.mortarIcon}
                             />
-                            {/* <span
+
+
+                            <span
                                 className={style.stepTitle}
-                            > */}
+                            >
                                 {stepHeading}
-                            {/* </span> */}
-                            {/* <span
+                            </span>
+                            <span
                                 className={style.steptext}
-                            > */}
-                                {stepText}
-                            {/* </span> */}
+                            >
+                            {` ${stepText}`}
+                            </span>
                         </li>
                     ))}
                 </ul>
@@ -267,11 +276,10 @@ export default function Mortar(){
                     <a href=""
                         className={style.mortarContactLink}
                     >
-                        <div
-                            className={style.mortarContactIcon}
-                        >
-                            @
-                        </div>
+                        
+                        <Instagram
+                            className={style.mortarContactInstagramIcon}
+                        />
                         @bomemphis
                     </a>
 

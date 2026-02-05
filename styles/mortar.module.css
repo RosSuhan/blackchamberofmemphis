@@ -29,13 +29,6 @@
     bottom: 0;
 }
 
-/* .mortarHeroItalicSpan {
-    font-style: italic;
-    color: #ffffff;
-    font-size: .9rem;
-    padding: .5rem 0;
-} */
-
 /* About Section */
 .mortarAboutSection {
     width: 100%;
@@ -57,8 +50,7 @@
 
 .mortarAboutText,
 .mortarParagraph,
-.mortarSponsorText,
-.mortarSponsorRowText {
+.mortarSponsorText {
     width: 90%;
     text-align: center;
     font-size: 1rem;
@@ -131,38 +123,43 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
-    background: var(--gold);
+    background: var(--darkGrey);
+    color: #ffffff;
 }
 
 .mortarTableList {
     list-style: none;
     padding: 0;
-    margin: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
     width: 90%;
 }
 
 .mortarListItem {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 1rem 0;
+    align-items: center;
 }
 
 .mortarIcon {
+    color: var(--gold);
     min-width: 30px;
     min-height: 30px;
 }
 
 .stepTitle {
+    color: var(--gold);
     width: 86%;
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-left: .5rem;
 }
 
 .steptext {
-    margin-left: .5rem;
     font-size: 1rem;
+    margin-top: .5rem;
 }
 
 /* sponsor section */
@@ -171,17 +168,25 @@
     flex-direction: column;
     align-items: center;
     background: var(--grey);
+    padding-top: 3rem;
 }
 
 .mortarSponsorCTArow {
-    /* background: var(--gold); */
     width: 100%;
     background: #000000;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    row-gap: 1rem;
     padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.mortarSponsorRowText {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .mortarSponsorButton {
@@ -189,11 +194,12 @@
     padding: .5rem 1rem;
     border: none;
     border-radius: 5px;
+    font-size: 1.25rem;
 }
 
 /* Contact Section */
 .mortarContactSection {
-    background: var(--gold);
+    background: var(--gold);  
     padding: 4rem 0;
     display: flex;
     align-items: center;
@@ -203,7 +209,7 @@
 }
 
 .mortarContactLinkBlock {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -220,6 +226,7 @@
     display: flex;
     align-items: center;
     column-gap: 5%;
+    font-size: 1.2rem;
 }
 
 .mortarContactIcon {
@@ -232,15 +239,18 @@
     justify-content: center;
 }
 
+.mortarContactInstagramIcon {
+    width: 18px;
+    color: var(--gold);
+    background-color: #000000;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
 @media (min-width:400px) {
     .mortarHeroHeading {
         font-size: 1.3rem;
     }
-    
-    /* .mortarHeroItalicSpan {
-        font-size: 1rem;
-        padding: 1rem 0 0 0;
-    } */
 
     .mortarAboutHeading,
     .mortarBlockHeading,
@@ -253,54 +263,12 @@
         height: 350px;
     }
 
-    /* Mortar Table Section */
     .stepTitle {
         width: 89%;
     }
 
-    .steptext {
-        width: 100%;
-    }
-
-        /* Contact Section */
-    .mortarContactSection {
-        /* background: var(--gold); */
-        /* padding: 4rem 0; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* row-gap: 2rem; */
-        /* column-gap: 5%; */
-    }
-
-    .mortarContactLinkBlock {
-        width: 90%;
-        column-gap: 5%;
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* align-items: center; */
-        /* row-gap: 1.5rem; */
-    }
-
-    .mortarContactLink {
-        width: 40%;
-        /* overflow-x: hidden; */
-        /* text-align: center; */
-        /* text-decoration: none; */
-        /* color: #000000; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* column-gap: 5%; */
-    }
-
-    .mortarContactIcon {
-        /* background: #000000; */
-        /* color: var(--gold); */
-        /* padding: .5rem; */
-        /* border-radius: 20px; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
+    .mortarSponsorCTArow {
+        padding: 2rem 0 3rem 0;
     }
 }
 
@@ -318,6 +286,16 @@
     .mortarAboutText {
         width: 80%;
         text-align: left;
+    }
+
+    /* Contact Section */
+    .mortarContactLinkBlock {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .mortarContactLink {
+        width: 48%;
     }
 }
 
@@ -338,90 +316,17 @@
         font-size: 1.4rem;
     }
     
-    /* .mortarHeroItalicSpan {
-        font-size: 1.1rem;
-    } */
-
     /* Mortar Table Section */
-    /* .mortarTableSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 0;
-        background: var(--gold);
-    } */
-
-    /* .mortarTableList {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 90%;
-    } */
-
-    /* .mortarListItem {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding: 1rem 0;
-    } */
-
-    /* .mortarIcon {
-        min-width: 30px;
-        min-height: 30px;
-    } */
-
     .stepTitle {
-        /* width: 50%; */
-        /* font-weight: 900; */
-        /* font-size: 1.1rem; */
-        /* margin-left: .5rem; */
+        font-size: 1.3rem;
     }
 
-    /* .steptext {
-        margin-left: .5rem;
-        font-size: 1rem;
-    } */
-
-   /* Contact Section */
-    .mortarContactSection {
-        /* background: var(--gold); */
-        /* padding: 4rem 0; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* row-gap: 2rem; */
-        /* column-gap: 5%; */
+    .steptext {
+        font-size: 1.1rem;
     }
 
-    .mortarContactLinkBlock {
-        /* width: 90%; */
-        /* column-gap: 5%; */
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* align-items: center; */
-        /* row-gap: 1.5rem; */
-        /* background: gray; */
-    }
-
-    .mortarContactLink {
-        /* width: 40%; */
-        /* overflow-x: hidden; */
-        /* text-align: center; */
-        /* text-decoration: none; */
-        /* color: #000000; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* column-gap: 5%; */
-    }
-
-    .mortarContactIcon {
-        /* background: #000000; */
-        /* color: var(--gold); */
-        /* padding: .5rem; */
-        /* border-radius: 20px; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
+    .mortarSponsorRowText {
+        width: 65%;
     }
 }
 
@@ -441,41 +346,11 @@
     .mortarHeroHeading {
         font-size: 1.5rem;
     }
-    
-    /* .mortarHeroItalicSpan {
-        font-size: 1.2rem;
-    } */
 
     /* Contact Section */
-    .mortarContactSection {
-        /* background: var(--gold); */
-        /* padding: 4rem 0; */
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* justify-content: space-evenly; */
-        /* row-gap: 2rem; */
-        /* column-gap: 5%; */
-    }
-
     .mortarContactLink {
-        /* width: 280px; */
-        /* overflow-x: hidden; */
-        /* text-align: center; */
-        /* text-decoration: none; */
-        /* color: #000000; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* column-gap: 5%; */
-    }
-
-    .mortarContactIcon {
-        /* background: #000000; */
-        /* color: var(--gold); */
-        /* padding: .5rem; */
-        /* border-radius: 20px; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
+        column-gap: 3%;
+        font-size: 1.25rem;
     }
 }
 
@@ -492,23 +367,21 @@
         font-size: 1.7rem;
     }
     
-    /* .mortarHeroItalicSpan {
-        font-size: 1.3rem;
-    } */
-
     .mortarAboutHeading,
     .mortarBlockHeading,
-    .mortarSponsorHeading {
+    .mortarSponsorHeading,
+    .mortarSponsorRowText {
         width: 85%;
         font-size: 1.7rem;
+        text-align: left;
     }
     
     .mortarAboutText,
     .mortarParagraph,
-    .mortarSponsorText,
-    .mortarSponsorRowText {
+    .mortarSponsorText {
         width: 85%;
         font-size: 1.1rem;
+        text-align: left;
     }
 
     /* Two column */
@@ -539,53 +412,31 @@
         font-size: 1.1rem;
     }
 
-    /* Mortar Table Section */
-    .mortarTableList {
-        width: 95%;
-        background-color: pink;
-    }
-
     .stepTitle {
-        width: 35%;
-        font-size: 1.25rem;
-        background-color: green;
+        font-size: 1.4rem;
     }
 
     .steptext {
-        width: 58%;
-        font-size: 1.1rem;
-        background-color: purple;
+        font-size: 1.2rem;
     }
 
-    /* mortar Sponsor Section */
-    .mortarSponsorSection {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* background: var(--grey); */
-    }
-    
-    .mortarSponsorCTArow {
-        /* background: var(--gold); */
-        /* background: #000000; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: space-evenly; */
-        /* flex-wrap: wrap; */
-        /* padding: 1rem 0; */
-    }
-    
     .mortarSponsorRowText {
-        /* width: 90%; */
-        /* text-align: center; */
-        /* color: #ffffff; */
+        width: 50%;
+        font-size: 1.5rem;
     }
     
     .mortarSponsorButton {
-        /* background: var(--gold); */
-        /* padding: .5rem 1rem; */
-        /* border: none; */
-        /* border-radius: 5px; */
+        font-size: 1.5rem;
+    }
+
+    /* Contact Section */
+    .mortarContactLinkBlock {
+        width: 72%;
+    }
+
+    .mortarContactLink {
+        width: 50%;
+        font-size: 1.3rem;
     }
 }
 
@@ -593,11 +444,6 @@
     .mortarHeroHeading {
         font-size: 1.8rem;
     }
-    
-    /* .mortarHeroItalicSpan {
-        font-size: 1.4rem;
-        padding: 2rem 0 0 0;
-    } */
 
     .mortarAboutSection {
         padding: 3rem 0;
@@ -608,45 +454,10 @@
         height: 850px;
     }
 
-    .mortarTableSection {
-        padding: 4rem 0;
-    }
 
     .mortarImageOddColumn {
         height: 700px;
     }
-
-        /* Contact Section */
-        .mortarContactSection {
-            /* background: var(--gold); */
-            /* padding: 4rem 0; */
-            /* display: flex; */
-            /* flex-wrap: wrap; */
-            /* justify-content: space-evenly; */
-            /* row-gap: 2rem; */
-            /* column-gap: 5%; */
-        }
-    
-        .mortarContactLink {
-            /* width: 400px; */
-            /* overflow-x: hidden; */
-            /* text-align: center; */
-            /* text-decoration: none; */
-            /* color: #000000; */
-            /* display: flex; */
-            /* align-items: center; */
-            /* column-gap: 5%; */
-        }
-    
-        .mortarContactIcon {
-            /* background: #000000; */
-            /* color: var(--gold); */
-            /* padding: .5rem; */
-            /* border-radius: 20px; */
-            /* display: flex; */
-            /* align-items: center; */
-            /* justify-content: center; */
-        }
 }
 
 @media (min-width:1000px) {
@@ -657,10 +468,6 @@
     .mortarHeroHeading {
         font-size: 1.9rem;
     }
-    
-    /* .mortarHeroItalicSpan {
-        font-size: 1.5rem;
-    } */
 
     .mortarAboutSection {
         padding: 4rem 0;
@@ -674,9 +481,7 @@
     }
     
     .mortarAboutText,
-    .mortarParagraph,
-    .mortarSponsorText,
-    .mortarSponsorRowText {
+    .mortarParagraph {
         font-size: 1.2rem;
         text-align: left;
     }
@@ -701,12 +506,16 @@
     }
 
     /* Mortar Table Section */
-    .stepTitle {
-        font-size: 1.4rem;
+    .mortarTableList {
+        width: 60%;
     }
-
-    .steptext {
-        font-size: 1.2rem;
+    
+    .mortarSponsorRowText {
+        font-size: 1.7rem;
+    }
+    
+    .mortarSponsorButton {
+        font-size: 1.7rem;
     }
 }
 
@@ -718,10 +527,6 @@
     .mortarHeroHeading {
         font-size: 2rem;
     }
-    
-    /* .mortarHeroItalicSpan {
-        font-size: 1.7rem;
-    } */
 
     /* Two column */
     .mortarImageColumn {
@@ -734,6 +539,10 @@
 
     .mortarTableSection {
         padding: 3rem 0;
+    }
+
+    .mortarSponsorRowText {
+        width: 40%;
     }
 }
 
