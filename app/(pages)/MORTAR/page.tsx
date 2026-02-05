@@ -50,11 +50,11 @@ export default function Mortar(){
                     </h1>
                 </div>
 
-                <span
+                {/* <span
                     className={style.mortarHeroItalicSpan}
                 >
                     Partnering for Impact, Growth, and Visibility
-                </span>
+                </span> */}
             </section>
 
             <section
@@ -63,7 +63,7 @@ export default function Mortar(){
                 <h2
                     className={style.mortarAboutHeading}
                 >
-                    Partnering for Impact, Growth, and Visibility
+                    ABOUT MORTAR
                 </h2>
 
                 <p
@@ -195,16 +195,16 @@ export default function Mortar(){
                             <OpenBookOutline
                                 className={style.mortarIcon}
                             />
-                            <span
+                            {/* <span
                                 className={style.stepTitle}
-                            >
+                            > */}
                                 {stepHeading}
-                            </span>
-                            <span
+                            {/* </span> */}
+                            {/* <span
                                 className={style.steptext}
-                            >
+                            > */}
                                 {stepText}
-                            </span>
+                            {/* </span> */}
                         </li>
                     ))}
                 </ul>
