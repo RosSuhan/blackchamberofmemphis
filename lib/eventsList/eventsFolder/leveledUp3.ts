@@ -9,7 +9,7 @@ export const leveledUp3 : EventListType = {
     eventDate : 'February 18, 2026',
     sortDate : '2026-02-18',
     eventTime : 'Time Slots',
-    eventAddressLink : '/gmbLink',
+    eventAddressLink : '/https://maps.app.goo.gl/34sRfp1ADxjxGenw7',
     eventAddress : 'Epicenter, 150 Peabody PI, Memphis, TN, 38103',
     eventName : 'LeveledUp Money',
     eventDescription : 'LeveledUp Money is a four-session, in-person workshop series designed to help business owners take control of their finances with clarity and confidence. Through practical guidance and real-world strategies, you’ll learn how to organize your financial systems, prepare for tax season, and make smarter money decisions that strengthen your business long-term.',
