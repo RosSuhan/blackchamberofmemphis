@@ -1,0 +1,55 @@
+import { MembersListType } from './../membersListType'
+
+export const dawgTeamApparel : MembersListType = {
+    memberStatus: true,
+    id : "dawg-team-apparel",
+    businessName : "Dawg Team Apparel, USA",
+    bannerImage : "",
+    profileLogo : "dawg-team",
+    profileDescription : "Dawg Team Apparel, USA is a Black‑ and veteran‑owned Memphis pet boutique offering grooming (mobile & in‑store), boarding, $15 self‑serve dog washes, sports apparel, gourmet food, and personalized care—all under one roof.",
+    profileCategory : [
+        "animals-pets-veterinary-services",
+    ],
+    profileSubCategory : [
+        "pet-grooming",
+        "pet-boarding-daycare",
+        "mobile-pet-services",
+        "pet-stores-boutiques",
+        "pet-food-supplies",
+        "natural-specialty-pet-foods",
+        "pet-accessories-apparel",
+    ],
+    categoryTag: [
+        'mobile grooming',
+        'dog wash',
+        'pet boarding',
+        'pet daycare',
+        'pet apparel',
+        'pet food',
+        'pet accessories',
+    ],
+    profileBusinessDescription : ``,
+    gallery : [{image : "", alt : ""}],
+    businessHours : {
+        monHours : "",
+        tueHours : "",
+        wedHours : "",
+        thuHours : "",
+        friHours : "",
+        satHours : "",
+        sunHours : ""
+    },
+    addressLink : "https://maps.app.goo.gl/hWcztCe55qggSv2V6",
+    address : "74 Beechmont Ct, Schaumburg 60193",
+    email : "inquire@dawgteamusa.com",
+    website : "https://www.dawgteamproducts.com/",
+    telNumber : "9013104773",
+    facebook : "https://www.facebook.com/dawgteam",
+    instagram : "https://www.instagram.com/dawgteam",
+    youtube : "https://www.youtube.com/dawgteam",
+    linkedIn : "https://www.linkedin.com/company/dawg-team-apparel-usa",
+    linktree : "",
+    twitter: "",
+    tiktok : "",
+    pinterest : ""
+}

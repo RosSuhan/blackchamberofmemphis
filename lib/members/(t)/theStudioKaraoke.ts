@@ -1,0 +1,52 @@
+import { MembersListType } from './../membersListType'
+
+export const theStudioKaraoke : MembersListType = {
+    memberStatus: true,
+    id : "the-studio-karaoke",
+    businessName : "The Studio Karaoke",
+    bannerImage : "",
+    profileLogo : "the-studio-karaoke",
+    profileDescription : "The Studio Karaoke is a lively entertainment venue in Memphis offering private karaoke suites by the hour, complete with an extensive song library, food, drinks, and a fun, immersive atmosphere. Ideal for birthdays, celebrations, team outings, and social gatherings, guests can enjoy singing, good vibes, and memorable moments with friends and family.",
+    profileCategory : [
+        "events-weddings",
+        "arts-culture-media-entertainment",
+    ],
+    profileSubCategory : [
+        "corporate-events",
+    ],
+    categoryTag: [
+        "entertainment",
+        'nightlife',
+        "karaoke",
+        'music venues',
+        'event spaces',
+        'lounges with entertainment',
+        'group activities',
+        'social experiences',
+        'private party'
+    ],
+    profileBusinessDescription : ``,
+    gallery : [{image : "", alt : ""}],
+    businessHours : {
+        monHours : "Closed",
+        tueHours : "Closed",
+        wedHours : "4pm - 11pm",
+        thuHours : "4pm - 11pm",
+        friHours : "4pm - 12am",
+        satHours : "12pm - 12am",
+        sunHours : "12pm - 12am"
+    },
+    addressLink : "https://share.google/mXNJKoAtPVBMF4aQx",
+    address : "3460 Plaza Ave, Memphis, TN 38111",
+    email : "hello@thestudiokaraoke.com",
+    website : "https://thestudiokaraoke.com/",
+    telNumber : "9018009417",
+    facebook : "https://www.facebook.com/p/The-Studio-Karaoke-Memphis-61571672972190",
+    instagram : "https://www.instagram.com/thestudiokaraoke",
+    youtube : "",
+    linkedIn : "",
+    linktree : "",
+    twitter: "",
+    tiktok : "https://www.tiktok.com/@thestudiokaraoke",
+    pinterest : ""
+}
