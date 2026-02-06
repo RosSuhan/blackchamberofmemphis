@@ -4,7 +4,7 @@ export const succSolFeb : EventListType = {
     holidayStatus: false,
     id : 'succession-solutions-acquiring-wealth-by-acquisition-the-legal-perspective',
     type: 'event',
-    eventImage : '/events/mten-succession-solutions.webp',
+    eventImage : '/events/m10-succession-solutions-feb-2026/mten-succession-solutions.webp',
     eventImageAlt : 'Succession Solutions presents - Acquiring Wealth by Acquisition: "The Legal Perspective"',
     eventDate : "February 11, 2026",
     sortDate : '2026-02-11',
@@ -19,26 +19,25 @@ export const succSolFeb : EventListType = {
         <h3>Join Us</h3>
         <p>Embark on your journey to wealth through acquisition, equipped with the legal knowledge and practical skills to make informed, confident decisions.</p>
         <h3> EXPERT LED PANELIST:</h3>
-        <ul>
-            <li
-                style="padding: .5rem 0"
-            >
+        <div style="display:flex; align-items: center; justify-content: space-evenly; width: 90dvw;">
+            <div style="width: 30%">
                 <span style="color:var(--gold); margin-right:1rem">Kelvin Woods</span>
                 <span>- Woods M&A Group/CBI Team</span>
-            </li>
-            <li
-                style="padding: .5rem 0"
-            >
+                <img src="/events/m10-succession-solutions-feb-2026/Kelvin-Woods.png" alt="Kelvin Woods - Woods M&A Group/CBI Team" style="width:60%; height: auto; object-fit:contain" />
+            </div>
+
+            <div style="width: 30%">
                 <span style="color:var(--gold); margin-right:1rem">Kevin Bruce</span>
                 <span>- Bruce Law PLLC</span>
-            </li>
-            <li
-                style="padding: .5rem 0"
-            >
-                <span style="color:var(--gold); margin-right:1rem">Katriece Field</span>
-                <span>- Turner Field PLLC</span>
-            </li>
-        </ul>`,
+                <img src="/events/m10-succession-solutions-feb-2026/Kevin-Bruce.png" alt="Kevin Bruce - Bruce Law PLLC" style="width:60%; height: auto; object-fit:contain" />
+            </div>
+
+            <div style="width: 30%">
+                <span style="color:var(--gold); margin-right:1rem">Katrice D.P. Feild</span>
+                <span>- Turner Feild PLLC</span>
+                <img src="/events/m10-succession-solutions-feb-2026/Katrice-Feild.png" alt="Katrice D.P. Feild - Turner Feild, PLLC" style="width:60%; height: auto; object-fit:contain" />
+            </div>
+        </div>`,
     eventPastDescription: "",
     eventPastBlog: ``,
     eventDescription : 'Join us for our First Succession Soluitons for 2026 with insights from Expert Attorneys – Professional Broker Advice Focused on Wealth Strategies',
