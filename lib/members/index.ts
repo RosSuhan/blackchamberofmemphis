@@ -65,6 +65,7 @@ import { dottedIAlliance } from './(d)/dottedIAlliance'
 import { diamondSafetyTraining } from './(d)/diamondSafetyTraining'
 import { davinchiRestLounge } from './(d)/davinchiRestLounge'
 import { devyneBusCon } from './(d)/devyneBusCon'
+import { dawgTeamApparel } from './(d)/dawgTeamApparel'
 // E
 import { epicenter } from './(e)/epicenter'
 import { expressWages } from './(e)/expressWages'
@@ -186,6 +187,7 @@ import { theJuiceJointBar } from './(t)/theJuiceJointBar'
 import { tinyHumanSkincare } from './(t)/tinyHumanSkincare'
 import { trPerryEventServices } from './(t)/trPerryEventServices'
 import { theCollectiveBluePrint } from './(t)/theCollectiveBluePrint'
+import { theStudioKaraoke } from './(t)/theStudioKaraoke'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -286,6 +288,7 @@ export const businessList = [
     diamondSafetyTraining,
     davinchiRestLounge,
     devyneBusCon,
+    dawgTeamApparel,
 // E
     epicenter,
     expressWages,
@@ -403,6 +406,7 @@ export const businessList = [
     tinyHumanSkincare,
     trPerryEventServices,
     theCollectiveBluePrint,
+    theStudioKaraoke,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
