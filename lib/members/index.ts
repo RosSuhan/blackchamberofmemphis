@@ -188,6 +188,7 @@ import { tinyHumanSkincare } from './(t)/tinyHumanSkincare'
 import { trPerryEventServices } from './(t)/trPerryEventServices'
 import { theCollectiveBluePrint } from './(t)/theCollectiveBluePrint'
 import { theStudioKaraoke } from './(t)/theStudioKaraoke'
+import { theSoulsvilleFoundation } from './(t)/theSoulsvilleFoundation'
 // U
 import { urbanSecSol } from './(u)/urbanSecSol'
 import { upskilEdtechConsulting } from './(u)/upskilEdtechConsulting'
@@ -407,6 +408,7 @@ export const businessList = [
     trPerryEventServices,
     theCollectiveBluePrint,
     theStudioKaraoke,
+    theSoulsvilleFoundation,
 // U
     urbanSecSol,
     upskilEdtechConsulting,
