@@ -1,4 +1,4 @@
-import style from '@/app/(pages)/memphis-ten/[id]/mtenSubPage.module.css'
+import style from '@/styles/bossPage.module.css'
 import Image from 'next/image'
 
 export default function BOSS(){
@@ -20,15 +20,8 @@ export default function BOSS(){
                     <h2
                         className={style.mtenSubPageCaptionHeading}
                     >
-                        Back-Office & Operational Support powered by remoting.work — your Workforce-as-a-Service partner. 
+                        Back-Office & Operational Support powered by remoting.work - your Workforce-as-a-Service partner. 
                     </h2>
-                    
-                    {/* <Link
-                        href={selectedProgram.formLink}
-                        className={style.mtenSubPageHeroCTA}
-                    >
-                        {selectedProgram.ctaButtonName}
-                    </Link> */}
                 </div>
                 <Image
                     src={'/assets/back-office-support.webp'}
@@ -40,7 +33,7 @@ export default function BOSS(){
             </section>
 
             <section
-                className={style.mtenProgramSection}
+                className={style.mtenProgramVideoSection}
             >
                 <p
                     className={style.mtenProgramTextBlock}
@@ -49,7 +42,7 @@ export default function BOSS(){
                 </p>
 
                 <a 
-                    href=""
+                    href="https://go.remoting.work/BCoM"
                     className={style.mtenSubPageHeroCTA}
                 >
                     Get Started
@@ -68,7 +61,6 @@ export default function BOSS(){
                 ></iframe>
             </section>
 
-            {/* program description */}
             <section
                 className={style.mtenProgramSection}
             >
@@ -107,62 +99,222 @@ export default function BOSS(){
                 </div>
             </section>
 
-
-            {/* process overview */}
-            {/* <section
-                className={style.mtenProcessSection}
-            >
-                <span
-                    className={style.mtenProcessText}
-                >
-                    Apply &#8594; Assessment &#8594; Support &#8594; Scale
-                </span>
-            </section> */}
-
-            {/* {selectedProgram.bottomParagraph ?  */}
-                <section
-                    // className={style.mtenProgramSection}
-                >
-                    
-                        {/* <div
-                            className={style.mtenProgramTextBlock}
-                            dangerouslySetInnerHTML={{__html:selectedProgram.bottomParagraph}}
-                        />  */}
-                    
-                </section>
-            {/* : null} */}
-
-            {/* eligibility */}
             <section
-                // className={style.mtenEligilitySection}
+                className={style.mtenProgramSection}
             >
-                <div
-                    // className={style.mtenEligibilityContextBlock}
+                <h2
+                    className={style.mtenProgramHeading}
                 >
-                    <h2
-                        // className={style.mtenEligibilityContextHeading}
+                    How BOSS Delivers Real Operational Support 
+                </h2>
+                <div
+                    className={style.mtenProgramTextBlock}
+                >
+                    <p>
+                        With remoting.work, businesses can get access to hands-on back-office and operational support for roles in marketing, tech, operations, admin, and customer support.
+                    </p>
+                    <p>
+                        Memphis businesses can now enjoy seamless connection with vetted, full-time or fractional global professionals for as low as $6 an hour, all while payroll, compliance, security, and management are handled for you. 
+                    </p>
+                    <p>
+                        That means you get the team you need to make growth possible and create more job opportunities in the local business climate. 
+                    </p>
+                </div>
+            </section>
+
+            <section
+                className={style.mtenProgramSection}
+            >
+                <h2
+                    className={style.mtenProgramHeading}
+                >
+                    What You Get Through remoting.work  
+                </h2>
+                <h3>
+                    Dedicated support built for Memphis businesses.
+                </h3>
+                <div
+                    className={style.mtenProgramTextBlock}
+                >
+                    <p>Businesses can access:</p>
+                    <ul
+                        className={style.businessAccessList}
                     >
-                        Let&apos;s Get Started
-                    </h2>
+                        <li>✔ Administrative & virtual assistants</li>
+                        <li>✔ Customer service & support teams</li>
+                        <li>✔ Marketing & lead generation specialists</li>
+                        <li>✔ Operations & project coordinators</li>
+                        <li>✔ Bookkeeping & back-office staff</li>
+                        <li>✔ Specialized roles based on your needs</li>
+                        <p>Plus:</p>
+                        <li>✔ Pre-vetted professionals only</li>
+                        <li>✔ Full-time or fractional, dedicated team members</li>
+                        <li>✔ Up to 50–65% lower labor costs</li>
+                        <li>✔ Payroll & compliance handled</li>
+                        <li>✔ Secure infrastructure & data protection</li>
+                        <li>✔ Ongoing support from an Employer Concierge</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section
+                className={style.bossStepsSection}
+            >
+                <h2
+                    className={style.mtenProgramHeading}
+                >
+                    How It Works  
+                </h2>
+                
+                <div
+                    className={style.mtenProgramStepsBlock}
+                >
                     <div
-                        // className={style.mtenEligibilityCtaRow}
+                        className={style.stepBlock}
                     >
-                        {/* <Link
-                            href={selectedProgram.formLink}
-                            className={style.mtenEligibilityCTA}
+                        <span
+                            className={style.stepHeading}
                         >
-                            {selectedProgram.ctaButtonName}
-                        </Link> */}
+                            Step 1 - Match 
+                        </span>
+                        <span
+                            className={style.stepText}
+                        >
+                            We learn about your business and identify the roles you need.
+                        </span> 
+                    </div>
+                    
+                    <div
+                        className={style.stepBlock}
+                    >
+                        <span
+                            className={style.stepHeading}
+                        >
+                            Step 2 – Hire 
+                        </span>
+                        <span
+                            className={style.stepText}
+                        >
+                            Interview pre-vetted candidates and select your dedicated team members.
+                        </span>
+                        
+                    </div>
+
+                    <div
+                        className={style.stepBlock}
+                    >
+                        <span
+                            className={style.stepHeading}
+                        >
+                            Step 3 – Grow 
+                        </span>
+                        <span
+                            className={style.stepText}
+                        >
+                            remoting.work handles compliance, payroll, and security so you can focus on scaling.
+                        </span>
+                        
                     </div>
                 </div>
-                {/* <Image
-                    src={selectedProgram.backImage}
-                    alt={selectedProgram.alt || ''}
-                    width={400}
-                    height={500}
-                    className={style.mtenEligibilityImage}
-                /> */}
             </section>
+
+            <section
+                className={style.mtenProgramVideoSection}
+            >
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/QejJSMfq6jg?si=H4tknON3I4UPn4ZJ" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                    className={style.mtenVideo}
+                >
+                </iframe>
+
+                <a 
+                    href="https://go.remoting.work/BCoM"
+                    className={style.mtenSubPageHeroCTA}
+                >
+                    Get Started
+                </a>
+            </section>
+            
+            <section
+                className={style.mtenProgramSection}
+            >
+                <h2
+                    className={style.mtenProgramHeading}
+                >
+                    Why This Matters for Memphis Businesses
+                </h2>
+                <div
+                    className={style.mtenProgramTextBlock}
+                >
+                    <p>
+                        With the right operational support, you can:
+                    </p>
+                    <ul>
+                        <li>
+                            Serve more customers
+                        </li>
+                        <li>
+                            Reduce overhead costs
+                        </li>
+                        <li>
+                            Stop burnout
+                        </li>
+                        <li>
+                            Deliver faster
+                        </li>
+                        <li>
+                            Take on bigger opportunities
+                        </li>
+                        <li>
+                            Create jobs and grow sustainably
+                        </li>
+                    </ul>
+                    <p>
+                        This is how Memphis businesses move from survival to scale.
+                    </p>
+                </div>
+            </section>
+
+            <section
+                className={style.mtenProgramSection}
+            >
+                <h2
+                    className={style.mtenProgramHeading}
+                >
+                    Ready to build your support team?
+                </h2>
+                <div
+                    className={style.mtenProgramTextBlock}
+                >
+                    <p>
+                        Get matched with vetted back-office professionals through our Memphis TEN partner, remoting.work.
+                    </p>
+                </div>
+            </section>
+            <div
+                className={style.bossButtonRow}
+            >
+                <a 
+                    href="https://go.remoting.work/BCoM"
+                    className={style.bossCtaButtons}
+                >
+                    Get Started Now
+                </a>
+
+                <a 
+                    href="https://hello.remoting.work/widget/bookings/employer/discovery_call?referrer_name=Black+Chamber+of+Memphis&referrer_email=ernest@bbamemphis.com"
+                    className={style.bossCtaButtons}
+                >
+                    Talk to an Advisor
+                </a> 
+            </div>
         </main>
     )
 }
