@@ -286,7 +286,7 @@ export default function NMO(){
 
                     <Link 
                         href=""
-                        className={style.nmoLink}
+                        className={style.nmoLinkLong}
                     >
                         Contact the Black Chamber of Memphis
                     </Link>

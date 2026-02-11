@@ -119,6 +119,7 @@ import { memphisUrbanLeague } from './(m)/memphisUrbanLeague'
 import { mandeDibi } from './(m)/mandeDibi'
 import { memphisWeldingSchool } from './(m)/memphisWeldingSchool'
 import { mjEdwardsWhitehavenFuneral } from './(m)/mjEdwardsWhitehavenFuneral'
+import { moneyality } from './(m)/moneyality'
 // N
 import { nailsByNicole } from './(n)/nailsByNicole'
 import { newVisionsTechSol } from './(n)/newVisionsTechSol'
@@ -341,6 +342,7 @@ export const businessList = [
     mandeDibi,
     memphisWeldingSchool,
     mjEdwardsWhitehavenFuneral,
+    moneyality,
 // N
     nailsByNicole,
     newVisionsTechSol,
