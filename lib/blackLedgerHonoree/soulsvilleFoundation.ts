@@ -12,19 +12,22 @@ export const soulsvilleFoundation : BlackLedgerProp = {
     socialLinks : [
         {
             icon: FacebookFill,
-            href: "",
+            href: "https://www.facebook.com/staxmusicacademy",
         },{
             icon: Instagram,
-            href: "",
+            href: "https://www.instagram.com/staxmusicacademy",
         },{
-            icon: Youtube,
-            href: "",
+            icon: FacebookFill,
+            href: "https://www.facebook.com/staxmuseum",
         },{
-            icon: Linkedin2,
-            href: "",
+            icon: Instagram,
+            href: "https://www.instagram.com/staxmuseum",
         },{
-            icon: CompanyDirectory,
-            href: ''
+            icon: FacebookFill,
+            href: 'https://www.facebook.com/tscsmemphis'
+        },{
+            icon: Instagram,
+            href: 'https://www.instagram.com/thesoulsvillecharterschool/'
         }
     ],
     headingOne: `Converting Cultural Legacy Into Opportunity for Memphis`,
