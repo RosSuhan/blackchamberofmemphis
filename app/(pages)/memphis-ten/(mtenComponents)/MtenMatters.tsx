@@ -49,14 +49,6 @@ export default function MtenMatters(){
                 allowFullScreen
                 className={style.mtenVideo}
                 ></iframe>
-            
-            {/* <Image
-                src={mtenTwoColumnImage1}
-                alt={''}
-                width={300}
-                height={200}
-                className={style.mtenTwoColumnImage}
-            /> */}
         </section>
     )
 }
