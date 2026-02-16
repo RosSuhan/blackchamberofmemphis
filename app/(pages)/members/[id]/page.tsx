@@ -14,7 +14,6 @@ import { businessList } from '@/lib/members';
 import style from '@/styles/membersPage.module.css'
 import Image from 'next/image'
 import { useParams } from 'next/navigation';
-export { businessList } from '@/lib/members/index'
 
 export default function MembersPage(){
     const params = useParams();

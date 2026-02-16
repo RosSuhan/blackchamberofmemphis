@@ -4,8 +4,8 @@ import Link from "next/link"
 import { useState } from 'react'
 import { categories } from '@/lib/categories'
 import SearchBar from "@/components/SearchBar/page"
-import { businessList } from '@/lib/members'
 import BusinessBlock from '@/components/directoryComponents/BusinessBlock'
+import { businessList } from '@/lib/members'
 
 export default function Directory(){
     const [ searchValue, setSearchValue ] = useState('')

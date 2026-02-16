@@ -1,7 +1,7 @@
 'use client'
 
-import { businessList } from '@/lib/members'
 import { categories } from '@/lib/categories'
+import { businessList } from '@/lib/members'
 
 import BusinessBlock from "@/components/directoryComponents/BusinessBlock"
 import PageTitleSection from "@/components/pageTitleSection/page"

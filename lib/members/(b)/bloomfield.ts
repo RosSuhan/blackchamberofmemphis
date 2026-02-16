@@ -1,9 +1,9 @@
-import { MembersListType } from './membersListType'
+import { MembersListType } from './../membersListType'
 
-export const template : MembersListType = {
+export const bloomfield : MembersListType = {
     memberStatus: false,
-    id : "",
-    businessName : "",
+    id : "bloomfield-full-gospel-baptist-church",
+    businessName : "Bloomfield Full Gospel Baptist Church",
     bannerImage : "",
     profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "",

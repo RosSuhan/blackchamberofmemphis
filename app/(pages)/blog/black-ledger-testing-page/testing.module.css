@@ -1,0 +1,39 @@
+.blogHeroSection {
+    width: 100%;
+    height: 600px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blHeroBackgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.blHeroOverlay {
+    background: var(--overlay);
+    z-index: 900;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.blHeroSocialIcon {
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+}
+
+.blHeroSpan {
+    z-index: 900;
+}

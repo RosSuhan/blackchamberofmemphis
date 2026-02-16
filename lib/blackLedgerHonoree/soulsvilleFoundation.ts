@@ -1,9 +1,6 @@
 import { FacebookFill } from "@/components/icons/FacebookIcon"
 import { BlackLedgerProp } from "./blackLedgerProp"
 import { Instagram } from "@/components/icons/InstagramIcon"
-import { Youtube } from "@/components/icons/YoutubeIcon"
-import { Linkedin2 } from "@/components/icons/LinkedInIcon"
-import { CompanyDirectory } from "@/components/icons/Directory"
 
 export const soulsvilleFoundation : BlackLedgerProp = {
     id : 'the-soulsville-foundation',
@@ -41,7 +38,7 @@ export const soulsvilleFoundation : BlackLedgerProp = {
     headingThree: `A Cultural Anchor With Economic Impact`,
     answerThree : `<p>At the core of Soulsville Foundation’s model is the belief that culture should not be treated as nostalgia or entertainment alone—but as infrastructure.</p>
                     <p>Through rigorous curriculum, leadership development, and exposure to professional standards, young people gain transferable skills including discipline, collaboration, project management, public speaking, and digital and media literacy. These skills prepare students for careers in music and the arts and for success across industries.</p>
-                    <p>Students gain real-world experience through workforce programs at Stax Music Academy and The Soulsville Charter School (TsCS) Student Growth Experiences, while alumni go on to pursue careers in music, arts administration, education, business, and other professional fields.</p>`,
+                    <p>Students gain real-world experience through workforce programs at Stax Music Academy and The Soulsville Charter School (TSCS) Student Growth Experiences, while alumni go on to pursue careers in music, arts administration, education, business, and other professional fields.</p>`,
 
     headingFour : `Who Relies on Soulsville Foundation Today`,
     answerFour : `<p>Soulsville Foundation is relied on most by Black students and families from South Memphis and surrounding neighborhoods, many of whom face under-resourced schools, limited access to arts education, and economic instability.</p>
