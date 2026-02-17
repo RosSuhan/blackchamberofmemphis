@@ -21,7 +21,7 @@ export const capstoneSolGroup : MembersListType = {
         "strategic financial planning",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

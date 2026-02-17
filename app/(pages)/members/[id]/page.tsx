@@ -12,8 +12,10 @@ import { TwitterStroke12 } from '@/components/icons/TwitterIcon';
 import { Youtube } from '@/components/icons/YoutubeIcon';
 import { businessList } from '@/lib/members';
 import style from '@/styles/membersPage.module.css'
+import clsx from 'clsx';
 import Image from 'next/image'
 import { useParams } from 'next/navigation';
+import { useState } from 'react';
 
 export default function MembersPage(){
     const params = useParams();
@@ -22,6 +24,8 @@ export default function MembersPage(){
     const selectedMember = businessList.find(a => a.id === id);
 
     const longDescription = selectedMember?.profileBusinessDescription
+
+    const [ showGallery, setShowGallery ] = useState(false)
 
     if(!id) return null;
     if(!selectedMember) {return <p>Business not found.</p>}
@@ -45,9 +49,6 @@ export default function MembersPage(){
                         />
                     </div>
                 : null}
-
-                
-                
 
                 {selectedMember.profileLogo? 
                     <Image
@@ -141,6 +142,7 @@ export default function MembersPage(){
                     : null}
                 </div>
             </section>
+
             <section
                 className={style.membersDescriptionBlock}
             >
@@ -246,8 +248,31 @@ export default function MembersPage(){
                         </a>
                     : null} 
                 </div>
+
+                {selectedMember?.gallery && selectedMember?.gallery.length > 0  && (
+                    <div
+                        className={style.profileButtonBlock}
+                    >
+                        <button 
+                            type="button"
+                            className={clsx(showGallery ? style.profileButton : style.profileActiveButton)}
+                            onClick={() => setShowGallery(false)}
+                        >
+                            Information
+                        </button>
+
+                        <button 
+                            type="button"
+                            className={clsx(showGallery ? style.profileActiveButton : style.profileButton)}
+                            onClick={() => setShowGallery(true)}
+                        >
+                            Gallery
+                        </button>
+                    </div>
+                )}
+                
                 <article
-                    className={style.profileDescriptionBlock}
+                    className={clsx(showGallery ? style.hide : style.profileDescriptionBlock)}
                 >
                     {selectedMember?.profileBusinessDescription  ?
                     <div 
@@ -255,7 +280,27 @@ export default function MembersPage(){
                         className={style.longBusinessDescription}
                     /> : selectedMember.profileDescription}
                 </article>
-                
+
+                {selectedMember?.gallery && selectedMember?.gallery.length > 0 && (
+                    <div
+                        className={clsx(showGallery ? style.masonryGrid : style.hide)}
+                    >
+                        {selectedMember?.gallery.map((image, index) => (
+                            <div
+                                key={index}
+                                className={style.masonryItem}
+                            >
+                                <Image
+                                    src={`${image.image}`}
+                                    alt={image.alt}
+                                    width={image.width}
+                                    height={image.height}
+                                    className={style.gallerImage}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                )}
             </section>
         </main>
     )

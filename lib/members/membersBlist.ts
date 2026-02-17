@@ -9,6 +9,7 @@ import { baldwinFinancialServices } from './(b)/baldwinFinancialServices'
 import { bartlettChurchOfChrist } from './(b)/bartlettChurchOfChrist'
 import { bellevueBaptistChurch } from './(b)/bellevueBaptistChurch'
 import { bereanMissionaryBaptistChurch } from './(b)/bereanMissionaryBaptistChurch'
+import { bloomfield } from './(b)/bloomfield'
 
 export const membersBlist = [
     betterDaysFinSer,
@@ -22,4 +23,5 @@ export const membersBlist = [
     bartlettChurchOfChrist,
     bellevueBaptistChurch,
     bereanMissionaryBaptistChurch,
+    bloomfield,
 ]

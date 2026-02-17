@@ -19,7 +19,7 @@ export const bartlettChurchOfChrist : MembersListType = {
         "Church of Christ",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

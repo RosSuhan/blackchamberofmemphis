@@ -19,7 +19,7 @@ export const bereanMissionaryBaptistChurch : MembersListType = {
         'Missionary Baptist',
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

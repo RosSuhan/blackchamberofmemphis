@@ -33,7 +33,7 @@ export const twoOfaShineCleaning : MembersListType = {
         <p>Two of a Shine places a strong emphasis on building long-term relationships with its clients. The company works closely with each business to develop customized cleaning plans tailored to their specific needs, schedules, and facility requirements. Reliable service, clear communication, and flexible scheduling are central to the company’s approach, allowing clients to trust that their spaces will be maintained without disruption to daily operations.</p>
         </p>Beyond cleanliness, Two of a Shine understands the importance of presentation and health in professional environments. Clean, well-maintained spaces contribute to productivity, safety, and positive first impressions, and the company takes pride in supporting the success of the businesses it serves.</p>
         <p>Guided by a mission to help businesses shine—one space at a time—Two of a Shine continues to deliver dependable commercial cleaning services rooted in integrity, quality workmanship, and a genuine commitment to client satisfaction.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8:30am - 5pm",
         tueHours : "8:30am - 5pm",

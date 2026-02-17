@@ -20,7 +20,7 @@ export const lucyjaHygge : MembersListType = {
         "fragrance oils",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "12pm - 6pm",
         tueHours : "By Appointment",

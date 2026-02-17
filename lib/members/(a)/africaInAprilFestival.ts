@@ -19,7 +19,7 @@ export const africaInAprilFestival : MembersListType = {
         "festivals community activities",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

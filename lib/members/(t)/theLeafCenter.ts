@@ -11,7 +11,7 @@ export const theLeafCenter : MembersListType = {
     profileSubCategory : [],
     categoryTag: [],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

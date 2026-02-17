@@ -20,7 +20,7 @@ export const tinyHumanSkincare : MembersListType = {
         "toxin free skincare products",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

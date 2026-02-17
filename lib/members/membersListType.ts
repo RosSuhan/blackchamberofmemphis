@@ -9,7 +9,7 @@ export interface MembersListType {
     profileSubCategory: string[];
     categoryTag: string[],
     profileBusinessDescription: string;
-    gallery?: { image: string; alt: string }[];
+    gallery?: { image: string; alt: string; width : number, height : number }[];
     businessHours: {
         monHours: string;
         tueHours: string;

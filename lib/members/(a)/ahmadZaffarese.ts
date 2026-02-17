@@ -16,7 +16,7 @@ export const ahmadZaffarese : MembersListType = {
     ],
     categoryTag: [],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

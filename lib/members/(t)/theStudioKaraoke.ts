@@ -26,7 +26,13 @@ export const theStudioKaraoke : MembersListType = {
         'private party'
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [
+        { image : "/members/the-studio-karaoke/the-studio-karaoke-img1.webp", alt : "The Studio Karaoke Booth", width : 1024, height : 683 },
+        { image : "/members/the-studio-karaoke/the-studio-karaoke-img2.webp", alt : "The Studio Karaoke Singing Girls", width : 1024, height : 683 },
+        { image : "/members/the-studio-karaoke/the-studio-karaoke-img3.webp", alt : "The Studio Karaoke Staff", width : 1024, height : 683 },
+        { image : "/members/the-studio-karaoke/the-studio-karaoke-img4.webp", alt : "The Studio Karaoke Singing Girls", width : 1024, height : 683 },
+        { image : "/members/the-studio-karaoke/the-studio-karaoke-img5.webp", alt : "The Studio Karaoke Singing Girls", width : 1024, height : 683 }
+    ],
     businessHours : {
         monHours : "Closed",
         tueHours : "Closed",

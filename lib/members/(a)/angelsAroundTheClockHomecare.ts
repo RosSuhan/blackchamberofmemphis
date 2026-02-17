@@ -18,7 +18,7 @@ export const angelsAroundTheClockHomecare : MembersListType = {
         "daily living assistance",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

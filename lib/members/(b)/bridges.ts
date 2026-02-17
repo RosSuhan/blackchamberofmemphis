@@ -28,7 +28,7 @@ export const bridges : MembersListType = {
         "team building experiences"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8am - 5pm",
         tueHours : "8am - 5pm",

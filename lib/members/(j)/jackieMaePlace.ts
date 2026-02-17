@@ -37,7 +37,7 @@ export const jackieMaePlace : MembersListType = {
             <li><strong>Community Favorite:</strong> Voted as part of Memphis Black Restaurant Week and a hub for soulful Southern cuisine.</li>
             <li><strong>Stellar Reviews:</strong> Consistently earns 4.6–5★ for food quality, generous portions, and live entertainment.</li>
         </ul>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "Closed",
         tueHours : "Closed",

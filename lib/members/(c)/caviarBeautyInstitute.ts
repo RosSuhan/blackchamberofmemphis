@@ -20,7 +20,7 @@ export const caviarBeautyInstitute : MembersListType = {
         "beauty apprenticeship school"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

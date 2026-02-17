@@ -23,12 +23,7 @@ export const fourWayGrill : MembersListType = {
         "historic cultural restaurants"
     ],
     profileBusinessDescription : ``,
-    gallery : [
-        {
-            image : "",
-            alt : " "
-        }
-    ],
+    gallery : [],
     businessHours : {
         monHours : "Closed",
         tueHours : "Closed",

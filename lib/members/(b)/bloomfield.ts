@@ -6,7 +6,7 @@ export const bloomfield : MembersListType = {
     businessName : "Bloomfield Full Gospel Baptist Church",
     bannerImage : "",
     profileLogo : "Black-chamber-of-Memphis",
-    profileDescription : "",
+    profileDescription : "Bloomfield Baptist Church is a faith-centered Christian congregation in Memphis, Tennessee, dedicated to worshiping God, studying Scripture, and serving both members and the local community. The church offers uplifting worship services, Bible teaching, fellowship opportunities, and ministry support for individuals and families of all ages.",
     profileCategory : [
         "community-faith-nonprofit-services",
     ],
@@ -15,9 +15,11 @@ export const bloomfield : MembersListType = {
         "church",
         "descipleship-programs",
     ],
-    categoryTag: [],
+    categoryTag: [
+        "full gospel"
+    ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",
@@ -27,12 +29,12 @@ export const bloomfield : MembersListType = {
         satHours : "",
         sunHours : ""
     },
-    addressLink : "",
-    address : "",
-    email : "",
-    website : "",
-    telNumber : "",
-    facebook : "",
+    addressLink : "https://share.google/oNKYopbyvo6A130IG",
+    address : "123 South Pkwy W, Memphis, TN 38109,",
+    email : "bbcchurch@comcast.net",
+    website : "https://bloomfieldbc.org/",
+    telNumber : "9019483078",
+    facebook : "https://www.facebook.com/Bloomfield123",
     instagram : "",
     youtube : "",
     linkedIn : "",

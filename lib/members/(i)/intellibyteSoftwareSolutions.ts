@@ -21,7 +21,7 @@ export const intellibyteSoftwareSolutions : MembersListType = {
         "it support software development"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

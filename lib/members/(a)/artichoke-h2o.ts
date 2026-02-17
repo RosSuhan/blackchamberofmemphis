@@ -22,7 +22,7 @@ export const artichokeh2o : MembersListType = {
         "wellness supplements",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

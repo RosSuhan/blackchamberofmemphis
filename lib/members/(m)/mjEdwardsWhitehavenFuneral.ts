@@ -20,7 +20,7 @@ export const mjEdwardsWhitehavenFuneral : MembersListType = {
         "cremation",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

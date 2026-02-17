@@ -17,7 +17,7 @@ export const template : MembersListType = {
     ],
     categoryTag: [],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [{image : "", alt : "", width : 100, height: 100}],
     businessHours : {
         monHours : "",
         tueHours : "",

@@ -21,7 +21,7 @@ export const actionChem : MembersListType = {
     ],
     categoryTag: [],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8am - 4:30pm",
         tueHours : "8am - 4:30pm",

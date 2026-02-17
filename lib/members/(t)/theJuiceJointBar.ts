@@ -18,7 +18,7 @@ export const theJuiceJointBar : MembersListType = {
         "customizable juice blends"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "7am - 6pm",
         tueHours : "7am - 6pm",

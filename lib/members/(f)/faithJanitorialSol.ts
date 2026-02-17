@@ -23,7 +23,7 @@ export const faithJanitorialSol : MembersListType = {
         <p><strong>Faith Janitorial Solutions</strong> is a full-service commercial janitorial and facility cleaning company providing reliable, high-quality cleaning services for corporate, educational, industrial, and government clients across Memphis and the surrounding region. The company is committed to maintaining safe, sanitary, and professional environments that support daily operations, employee well-being, and regulatory standards.</p>
         <p>The company’s services include routine janitorial cleaning, scheduled deep cleaning, carpet and floor maintenance, restroom sanitation, window cleaning, and customized facility care programs tailored to each client’s building requirements, budget, and service frequency. <strong>Faith Janitorial Solutions</strong> utilizes commercial-grade equipment, trained staff, and structured quality control systems to ensure consistent performance across facilities of all sizes.</p>
         <p><strong>Faith Janitorial Solutions</strong> is equipped to support contract-based cleaning needs for public institutions, private sector partners, and high-traffic environments where reliability and professionalism are essential. The company’s focus on responsiveness, detailed service delivery, and operational excellence makes it a trusted vendor partner for organizations seeking dependable facility maintenance and long-term janitorial support.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8am - 5pm",
         tueHours : "8am - 5pm",

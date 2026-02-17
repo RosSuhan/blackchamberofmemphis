@@ -8,6 +8,7 @@ import { cherrylPigues } from './(c)/cherrylPigues'
 import { capstoneSolGroup } from './(c)/capstoneSolGroup'
 import { cxffeeBlack } from './(c)/cxffeeBlack'
 import { cityTastingBox } from './(c)/cityTastingBox'
+import { christMissionaryBaptist } from './(c)/christMissionaryBaptist'
 
 export const membersClist = [
     capturingMemories,
@@ -20,4 +21,5 @@ export const membersClist = [
     capstoneSolGroup,
     cxffeeBlack,
     cityTastingBox,
+    christMissionaryBaptist,
 ]

@@ -19,7 +19,7 @@ export const rugsAllDay : MembersListType = {
         "wall decor",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

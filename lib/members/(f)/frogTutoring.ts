@@ -18,7 +18,7 @@ export const frogTutoting : MembersListType = {
         "academic tutoring",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

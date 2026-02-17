@@ -23,7 +23,7 @@ export const locksmith4Less : MembersListType = {
         
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "6am - 11pm",
         tueHours : "6am - 11pm",

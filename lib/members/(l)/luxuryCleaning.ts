@@ -21,7 +21,7 @@ export const luxuryCleaning : MembersListType = {
         "eco-friendly cleaning solutions"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "7am - 8pm",
         tueHours : "7am - 8pm",

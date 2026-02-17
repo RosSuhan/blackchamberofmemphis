@@ -23,7 +23,7 @@ export const wellsRoofingRemodeling : MembersListType = {
         "roof inspections"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8am - 6pm",
         tueHours : "8am - 6pm",

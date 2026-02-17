@@ -35,7 +35,7 @@ export const memphisUrbanLeague : MembersListType = {
         <p>In addition to youth and workforce services, the organization offers digital literacy and senior support programs that help bridge technological divides and enhance the quality of life for older adults. Financial literacy workshops, small business development resources, and community events further bolster the League’s efforts to uplift Memphis neighborhoods and foster long-term resilience.</p>
         <p>True to its civil rights heritage, the Memphis Urban League advocates for equity and inclusion, engaging local leaders and stakeholders to influence policy, promote civic participation, and amplify community voices. Signature events such as forums, panel discussions, and public advocacy efforts reflect the League’s role in shaping a more just and equitable Memphis.</p>
         <p>Through comprehensive programs, dedicated advocacy, and community collaboration, Memphis Urban League continues to create meaningful opportunities, strengthen families, and empower residents to overcome barriers and thrive.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 4pm",
         tueHours : "9am - 4pm",

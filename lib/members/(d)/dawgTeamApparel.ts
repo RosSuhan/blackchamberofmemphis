@@ -29,7 +29,7 @@ export const dawgTeamApparel : MembersListType = {
         'pet accessories',
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

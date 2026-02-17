@@ -18,7 +18,7 @@ export const bectonCapitalCoaching : MembersListType = {
         "financial guidance",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 5pm",
         tueHours : "9am - 5pm",

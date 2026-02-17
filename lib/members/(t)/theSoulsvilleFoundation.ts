@@ -28,7 +28,7 @@ export const theSoulsvilleFoundation : MembersListType = {
         'historical preservation'
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

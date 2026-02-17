@@ -22,7 +22,7 @@ export const nailsByNicole : MembersListType = {
                                     <p>Beyond the aesthetics, Nicole’s Nails is committed to creating a safe and inviting atmosphere where self-care is celebrated. Each appointment is an opportunity not only to enhance beauty but also to provide relaxation and confidence. By staying on top of the latest nail trends and techniques, Nya ensures her clients receive both modern artistry and lasting quality.</p>
                                     <p>Whether you are preparing for a special event, refreshing your everyday look, or simply treating yourself to well-deserved self-care, Nicole’s Nails provides a personalized service that goes beyond beauty. For Nya, nails are more than a service—they are a form of storytelling, artistry, and empowerment.</p>
                                     <p>With a growing presence on Instagram and TikTok, Nicole’s Nails continues to share creative designs, inspiring clients to see nails as an extension of their individuality.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "10am - 4pm",
         tueHours : "Closed",

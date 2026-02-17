@@ -24,7 +24,7 @@ export const brighterDaysNites : MembersListType = {
         "electrical lighting supplies",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

@@ -19,7 +19,7 @@ export const iiimadison : MembersListType = {
         'craft cocktails',
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

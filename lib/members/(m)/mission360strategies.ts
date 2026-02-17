@@ -23,7 +23,7 @@ export const mission360strategies : MembersListType = {
         "skills development training centres"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

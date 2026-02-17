@@ -27,7 +27,7 @@ export const williamsInsuranceFinancialServices : MembersListType = {
         "policy review services"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 5pm",
         tueHours : "9am - 5pm",

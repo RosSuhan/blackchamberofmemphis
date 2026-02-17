@@ -21,7 +21,7 @@ export const expressWages : MembersListType = {
         "accounting financial services"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

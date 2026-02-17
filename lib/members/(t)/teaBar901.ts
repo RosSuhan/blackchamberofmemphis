@@ -20,7 +20,7 @@ export const teaBar901 : MembersListType = {
         "sea moss products",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

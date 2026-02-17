@@ -20,7 +20,7 @@ export const diamondSafetyTraining : MembersListType = {
         "corporate training",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

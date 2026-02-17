@@ -24,7 +24,7 @@ export const jebPublishing : MembersListType = {
         <p>In addition to branded printed media, JEB Publishing provides editing and document preparation services, helping authors and professionals refine manuscripts, reports, and other written materials with polished structure, accuracy, and readability. The company also supports aspiring writers and independent authors through self-publishing assistance, including formatting, editing, and guidance through the publishing process—making it easier for clients to bring their written work to life.</p>
         <p>A valued local resource, JEB Publishing also offers mobile notary services, providing flexible, on-site notarization for documents such as affidavits, contracts, and legal forms. This convenience helps individuals and businesses in Memphis save time while ensuring legal compliance.</p>
         <p>With a commitment to quality, professionalism, and personalized service, JEB Publishing stands out as a trusted partner for Memphis clients looking to strengthen their written communications, brand identity, and publishing outcomes.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 6pm",
         tueHours : "9am - 6pm",

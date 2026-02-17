@@ -21,7 +21,7 @@ export const hkPrints : MembersListType = {
         "embroidery"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 3pm",
         tueHours : "9am - 3pm",

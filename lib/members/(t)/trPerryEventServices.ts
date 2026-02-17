@@ -19,7 +19,7 @@ export const trPerryEventServices : MembersListType = {
         "wedding coordination",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8am - 8pm",
         tueHours : "8am - 8pm",

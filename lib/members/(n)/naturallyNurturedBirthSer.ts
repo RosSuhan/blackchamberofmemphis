@@ -21,7 +21,7 @@ export const naturallyNurturedBirthSer : MembersListType = {
         "childbirth education",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

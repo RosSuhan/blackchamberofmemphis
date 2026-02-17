@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .membersBanner {
@@ -86,8 +87,52 @@
 
 }
 
+.profileButtonBlock {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1%;
+    border-bottom: #000000 1px solid;
+}
+
+.profileButton {
+    font-size: 1rem;
+    border: none;
+    background: none;
+}
+
+.profileActiveButton {
+    background: none;
+    border: none;
+    font-size: 1.125rem;
+    color: var(--gold);
+}
+
+.hide {
+    display: none;
+}
+
 .profileDescriptionBlock {
+    margin-bottom: 2rem;
+    display: initial;
+}
+
+.masonryGrid {
+    column-count: 2;
+    column-gap: 1.25rem;
     padding-bottom: 2rem;
+}
+
+.masonryItem {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+.gallerImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
 }
 
 .longBusinessDescription {
@@ -124,6 +169,10 @@
     .memberContactLink {
         width: 80%;
     }    
+
+    .masonryGrid {
+        column-count: 3;
+    }
 }
 
 @media (min-width: 800px) {

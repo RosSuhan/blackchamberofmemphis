@@ -21,7 +21,7 @@ export const h3MobileEntertainment : MembersListType = {
         "photo booths"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 8pm",
         tueHours : "9am - 8pm",

@@ -30,7 +30,7 @@ export const baldwinFinancialServices : MembersListType = {
         <p>In addition to bookkeeping, Baldwin Financial Services Co provides <strong>professional tax preparation services</strong>, assisting clients with sales tax returns, business tax filings, and customized accounting solutions tailored to the specific needs of each business. Payroll processing and related reporting are also available, helping clients manage employee compensation efficiently and compliantly.</p>
         <p>Understanding that every business has unique financial goals and challenges, the firm offers <strong>financial analysis and consulting</strong> to support business strategy, performance evaluation, and long-term planning. Whether a client needs periodic financial reports, budgeting support, or strategic insights to guide growth, Baldwin Financial Services Co serves as a reliable partner in navigating the financial landscape.</p>
         <p>With a focus on delivering dependable service and building trusted client relationships, <strong>Baldwin Financial Services Co</strong> empowers small business owners to focus on their core operations while maintaining sound financial health and compliance.`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

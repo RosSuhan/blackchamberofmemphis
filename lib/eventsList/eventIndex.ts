@@ -6,6 +6,7 @@ import { leveledUp2 } from "./eventsFolder/leveledUp2";
 import { leveledUp3 } from "./eventsFolder/leveledUp3";
 import { leveledUp4 } from "./eventsFolder/leveledUp4";
 import { succSolFeb } from "./eventsFolder/succSolFeb";
+import { theStudioKaraokeRibbonCut } from "./eventsFolder/theStudioKaraokeRibbonCut";
 
 export const eventIndex = [
     leveledUp,
@@ -16,4 +17,5 @@ export const eventIndex = [
     leveledUp3,
     leveledUp4,
     succSolFeb,
+    theStudioKaraokeRibbonCut,
 ].sort((a, b) => new Date(a.sortDate).getTime() - new Date(b.sortDate).getTime());

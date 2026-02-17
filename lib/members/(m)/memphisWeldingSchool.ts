@@ -21,7 +21,7 @@ export const memphisWeldingSchool : MembersListType = {
         "apprenticeship",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "8am - 4pm",
         tueHours : "8am - 4pm",

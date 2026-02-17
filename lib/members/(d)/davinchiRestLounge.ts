@@ -19,7 +19,7 @@ export const davinchiRestLounge : MembersListType = {
         "craft drinks",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

@@ -17,7 +17,7 @@ export const skiinetPowerTech : MembersListType = {
         "technology support",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

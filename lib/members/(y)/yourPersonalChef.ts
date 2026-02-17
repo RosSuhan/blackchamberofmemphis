@@ -27,7 +27,7 @@ export const yourPersonalChef : MembersListType = {
         "culinary workshops"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

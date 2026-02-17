@@ -17,7 +17,7 @@ export const leveledUpMoney : MembersListType = {
     ],
     categoryTag: [],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

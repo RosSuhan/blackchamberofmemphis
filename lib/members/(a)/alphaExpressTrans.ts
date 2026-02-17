@@ -22,7 +22,7 @@ export const alphaExpressTrans : MembersListType = {
         "concierge-style transportation",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

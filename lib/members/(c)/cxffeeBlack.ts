@@ -21,7 +21,7 @@ export const cxffeeBlack : MembersListType = {
         "educational coffee experience",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "Closed",
         tueHours : "7:30am - 4pm",

@@ -20,7 +20,7 @@ export const cityTastingBox : MembersListType = {
 
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

@@ -28,7 +28,7 @@ export const theCollectiveBluePrint : MembersListType = {
         'leadership development'
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

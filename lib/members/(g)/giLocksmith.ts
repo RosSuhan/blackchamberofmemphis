@@ -33,7 +33,7 @@ export const giLocksmith : MembersListType = {
         <p>Commercial customers benefit from advanced security solutions such as access control systems, high-security lock installation, master key systems, and panic bar or exit device upgrades — all designed to reinforce safety and regulatory compliance in businesses of all sizes.</p>
         <p>Automotive services include emergency lockout assistance, key cutting and programming, ignition repair, and replacement key fobs for many makes and models — providing quick, professional help when drivers are stranded or facing lost keys.</p>
         <p>Known for their responsiveness, expertise with major lock brands, and commitment to affordable pricing, GI Locksmith stands out as a trusted local partner for security and locksmith needs in the Memphis community.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "Open 24 Hours",
         tueHours : "Open 24 Hours",

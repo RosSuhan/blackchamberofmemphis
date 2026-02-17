@@ -19,7 +19,7 @@ export const lctcityProductions : MembersListType = {
         "fashion photography",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "9am - 5pm",
         tueHours : "9am - 5pm",

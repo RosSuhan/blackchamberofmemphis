@@ -20,7 +20,7 @@ export const kudzukian : MembersListType = {
     ],
     categoryTag: [],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "10am - 5pm",
         tueHours : "10am - 5pm",

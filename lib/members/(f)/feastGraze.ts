@@ -21,7 +21,7 @@ export const feastGraze : MembersListType = {
         "full service catering"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "Closed",
         tueHours : "10am - 5pm",

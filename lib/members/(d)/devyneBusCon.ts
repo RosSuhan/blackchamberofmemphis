@@ -20,7 +20,7 @@ export const devyneBusCon : MembersListType = {
         "funding assistance"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "6pm - 10pm",
         tueHours : "6pm - 10pm",

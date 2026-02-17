@@ -19,7 +19,7 @@ export const mandeDibi : MembersListType = {
         "memphis barbecue traditions"
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "11pm - 8pm",
         tueHours : "11pm - 8pm",

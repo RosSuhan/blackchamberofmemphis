@@ -19,7 +19,7 @@ export const bellevueBaptistChurch : MembersListType = {
         'Baptist church',
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

@@ -24,7 +24,7 @@ export const moneyality : MembersListType = {
         "adult financial skills development"
     ],
     profileBusinessDescription : `<p>Moneyality, LLC is a transformative Personal Finance business designed for every individual seeking to master the psychology of wealth. We define Moneyality as how you think, feel, and act regarding your finances, recognizing that your Money Personality is your distinct Financial DNA. Our approach moves beyond traditional budgeting to a deeper understanding of the self, guiding Scholars through our ACE framework: "Activate" your Mind, "Circulate" your Money, and "Elevate" your Self. By identifying your dominant Moneyality Circulator—whether you are a Splurger (Fanatic Purchaser), Keeper (Fanatic Saver), Tracker (Security Planner), Adventurer (Risky, Thrill-Seeker), or Mingler (Carefree Socializer)—you gain the power to align your habits with your values. We help you reshape how you think about value, stabilize how you feel by building a "Sunnyday Fund," and refine how you act by intentionally circulating resources. This integration creates a sustainable lifestyle of financial wellness, empowering you to build a lasting legacy.</p>`,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",

@@ -18,7 +18,7 @@ export const oneSourceAutoGroup : MembersListType = {
         "pre owned vehicles",
     ],
     profileBusinessDescription : ``,
-    gallery : [{image : "", alt : ""}],
+    gallery : [],
     businessHours : {
         monHours : "",
         tueHours : "",
