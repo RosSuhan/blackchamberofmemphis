@@ -13,11 +13,10 @@ export const theStudioKaraokeRibbonCut : EventListType = {
     eventAddress : '3460 Plaza Ave., Memphis, TN 38111',
     eventName : 'Grand Opening & Ribbon Cutting Ceebration of The Studio Karaoke',
     eventLongDescription: `
-        <p>Founded by Memphis native, Deidre Ellis, The Studio Karaoke was created to bring more joy to Memphis by offering a fun, welcoming, and accessible way to experience karaoke that is already popular in other major cities around the world. The “karaoke box” style venue features five private, Memphis-inspired suites designed for family celebrations, birthdays, team outings, nights out with friends and more.</p>
-        <p>“Memphis is known for its music, but karaoke in public can be intimidating,” said founder Deidre Ellis. “The beauty of private suites is that when you close that door, there’s no judgment - just good vibes, good food, and good drinks!”</p>
-        <p>In addition to private celebrations, The Studio plans to launch a school field trip program, introducing students to the musical heritage of Memphis along with the social and mental health benefits of singing.</p>
-        <p>Community members and media are invited to attend and celebrate the opening of The Studio Karaoke, which is proud to be a Black-owned, woman-owned, Memphian-owned business. During the family-friendly celebration, guests will enjoy light refreshments, activities, tours, and giveaways.</p>
-        `,
+        <p>The Black Chamber of Memphis is pleased to serve as a partner for The Studio Karaoke’s Grand Opening and Ribbon Cutting Celebration.</p>
+        <p>Join us as we celebrate Memphis’ newest private-suite karaoke restaurant, founded by Memphis native Deidre Ellis. Designed to bring more joy to the city, The Studio Karaoke features five Memphis-inspired private suites perfect for birthdays, team outings, family celebrations, and nights out with friends.</p> 
+        <p>This family-friendly celebration will include music, activities for kids, light refreshments, tours of the space, and giveaways.</p>
+        <p>Come out to help us officially welcome The Studio Karaoke to the Memphis business community.</p>`,
     eventPastDescription: "",
     eventPastBlog: ``,
     eventDescription : '',

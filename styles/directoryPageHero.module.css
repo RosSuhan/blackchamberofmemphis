@@ -1,0 +1,75 @@
+.directoryPageHero {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(/assets/pagetitleimage.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.directoryPageTitle {
+    /* background-color: green; */
+    color: #ffffff;
+}
+
+.directorySearchBlock {
+    width: 80%;
+    background: var(--overlay);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.directorySearchInput,
+.directorySearchSelect {
+    /* width: 200px; */
+    background-color: #ffffff;
+    border: solid #3e3e3e 1px;
+    border-radius: 5px;
+    position: relative;
+    color: #000000;
+    width: 70%;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.directorySearchSelect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.directoryDropdown {
+    margin-top: -2rem;
+    background-color: #ffffff;
+    width: 70%;
+    height: 250px;
+    padding: .5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.hide {
+    display: none;
+    
+}
+
+.directorySearchButton {
+    background-color: var(--gold);
+    color: #000000;
+    width: 77%;
+    padding: .5rem 0;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 800;
+}

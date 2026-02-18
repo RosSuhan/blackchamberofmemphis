@@ -1,6 +1,8 @@
 import PageTitleSection from "@/components/pageTitleSection/page"
 import type { Metadata } from "next"
 import Directory from "./Directory";
+// import NewDirectoryHero from "@/components/directoryComponents/newDirectoryHero";
+// import NewDirectory from "./newDirectory";
 
 export const metadata: Metadata = {
     title: 'Black-Owned Business Directory | Memphis Entrepreneurs & Services',
@@ -35,6 +37,9 @@ export default function BusinessDirectory(){
         <main
             style={{width:"100%", display:"flex", flexDirection:"column", alignItems:"center"}}
         >
+            {/* <NewDirectory/> */}
+
+
             <PageTitleSection
                 pageTitle="All Categories:"
             />
