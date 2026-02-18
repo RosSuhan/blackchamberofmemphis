@@ -40,6 +40,14 @@ export const blogList : BlogListProp[] = [
         blogArticleDate: "12 Feb 2026",
         blogReadLink: `/blog/black-ledger/the-soulsville-foundation`
     },
+    {
+        id: "the-collective-blueprint",
+        blogName: `The Black Ledger - The Collective Blueprint`,
+        blogImage: `/blog/blank-background.webp`,
+        blogTitleColor: `#ffffff`,
+        blogArticleDate: "18 Feb 2026",
+        blogReadLink: `/blog/black-ledger/the-collective-blueprint`
+    },
     
         // {
     //     id: "",
