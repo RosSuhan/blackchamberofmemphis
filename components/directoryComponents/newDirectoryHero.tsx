@@ -4,10 +4,27 @@ import { ChevronDown } from '../icons/ChevronDown'
 import { useState } from 'react'
 import clsx from 'clsx'
 import { ChevronUp12 } from '../icons/ChevronUp'
+import { categories } from '@/lib/categories'
 
-export default function NewDirectoryHero(){
+
+type NewDirectoryHeroProps = {
+    searchTerm: string
+    setSearchTerm: React.Dispatch<React.SetStateAction<string>>
+    selectedCategory: string
+    setSelectedCategory: React.Dispatch<React.SetStateAction<string>>
+}
+
+export default function NewDirectoryHero({
+    searchTerm,
+    setSearchTerm,
+    selectedCategory,
+    setSelectedCategory,
+}: NewDirectoryHeroProps){
     const [ selectOpen, setSelectOpen ] = useState(false)
 
+    const hasActiveFilters = searchTerm.trim() !== "" || selectedCategory !== "all"
+
+    console.log(selectedCategory)
     
     return (
         <section
@@ -19,48 +36,75 @@ export default function NewDirectoryHero(){
                 Our Directory:
             </h1>
 
-            <form
-                action={''}
+            <div
                 className={style.directorySearchBlock}
             >
-                <input 
-                    type="text" 
-                    name="" 
-                    id="" 
-                    placeholder='Keyword'
-                    className={style.directorySearchInput}
-                />
-
-                <span
-                    className={style.directorySearchSelect}
-                    onClick={() => setSelectOpen(!selectOpen)}
+                <fieldset
+                    className={style.directoryFieldset}
                 >
-                    Categories
-                    
-                    {selectOpen ? <ChevronUp12/> : <ChevronDown/>}
-                </span>
+                    <legend
+                        className={style.directoryFieldsetLegend}
+                    >
+                        Search
+                    </legend>
+                    <input 
+                        type="text" 
+                        placeholder='Keyword'
+                        className={style.directorySearchInput}
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
 
-                <div
-                    className={clsx(selectOpen ? style.directoryDropdown : style.hide)}
-                    // className={style.hide}
-                >
-                    <span>
-                        Restaurant
-                    </span>
-                    <span>
-                        Shop
-                    </span>
-                    <span>
-                        Iets
-                    </span>
-                </div>
+                    <button
+                        type='button'
+                        className={style.directorySearchSelect}
+                        onClick={() => setSelectOpen(!selectOpen)}
+                    >
+                        {selectedCategory === "all" ? "Categories" : selectedCategory}
+                        
+                        {selectOpen ? <ChevronUp12/> : <ChevronDown/>}
+                    </button>
 
-                <input 
-                    type="submit" 
-                    value="Search" 
-                    className={style.directorySearchButton}
-                />
-            </form>
+                    <div
+                        className={clsx(selectOpen ? style.directoryDropdown : style.hide)}
+                    >
+                            <div
+                                className={style.categoryLink}
+                                onClick={() => {
+                                    setSelectedCategory("all")
+                                    setSelectOpen(false)
+                                }}
+                            >
+                                All Categories
+                            </div>
+
+                        {categories?.map(({name, id}) => (
+                            <div
+                                key={id}
+                                className={style.categoryLink}
+                                onClick={() => {
+                                    setSelectedCategory(id)
+                                    setSelectOpen(false)
+                                }}
+                            >
+                                {name}
+                            </div>
+                        ))}
+                    </div>
+
+                    {hasActiveFilters && (
+                            <button
+                            type='button'
+                            onClick={() => {
+                                setSearchTerm('')
+                                setSelectedCategory("all")
+                            }}
+                            className={style.directorySearchButton}
+                        > Clear Filter</button>
+                    )}
+
+                </fieldset>
+            </div>
         </section>
     )
 }
