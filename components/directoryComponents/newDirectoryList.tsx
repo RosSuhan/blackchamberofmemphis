@@ -1,4 +1,5 @@
 import style from '@/styles/directoryList.module.css'
+import { useEffect, useMemo, useState } from 'react'
 import BusinessBlock from './BusinessBlock'
 import { businessList } from '@/lib/members'
 
@@ -12,10 +13,15 @@ export default function NewDirectoryList({
     selectedCategory
 } : NewDirectoryListProps){
 
+    const [ initialRandomOrder ] = useState(() =>
+        [...businessList].sort(() => Math.random() - 0.5))
+
+    const q = searchTerm.toLowerCase();
+    const words = q.split(" ")
+
+    const noFilters = searchTerm.trim() === "" && selectedCategory === "all";
+
     const filtered = businessList.filter((biz) => {
-        const q = searchTerm.toLowerCase();
-        const words = q.split(" ")
-    
 
         const categorySelected = selectedCategory !== 'all';
         
@@ -51,7 +57,9 @@ export default function NewDirectoryList({
             : nameMatch || categoryMatch || subCategoryMatch || tagMatch;
 
         return searchMatch && dropdownCatMatch
-    })
+    });
+
+    const finalList = noFilters ? initialRandomOrder : filtered
 
     console.log("selected category:", selectedCategory)
 
@@ -63,7 +71,7 @@ export default function NewDirectoryList({
             className={style.directoryListSection}
         >
             
-            {filtered?.map((biz) => (
+            {finalList?.map((biz) => (
                 <BusinessBlock
                     key={biz.id}
                     id={biz.id}
