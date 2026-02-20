@@ -1,0 +1,8 @@
+.memberContactSection {
+    background-color: purple;
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

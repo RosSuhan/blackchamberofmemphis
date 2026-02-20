@@ -5,6 +5,7 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import { ChevronUp12 } from '../icons/ChevronUp'
 import { categories } from '@/lib/categories'
+import { businessList } from '@/lib/members'
 
 
 type NewDirectoryHeroProps = {
@@ -24,7 +25,17 @@ export default function NewDirectoryHero({
 
     const hasActiveFilters = searchTerm.trim() !== "" || selectedCategory !== "all"
 
-    console.log(selectedCategory)
+    const normalize = <T,>(value: T | T[]): T[] => {
+            return Array.isArray(value) ? value : [value]
+        }
+    
+    const countBusinessesInCategory = (categoryId: string) => {
+        return businessList.filter((business) => {
+            const categories = normalize(business.profileCategory);
+
+            return categories.includes(categoryId);
+        }).length;
+    }
     
     return (
         <section
@@ -78,7 +89,7 @@ export default function NewDirectoryHero({
                                 All Categories
                             </div>
 
-                        {categories?.map(({name, id}) => (
+                        {categories?.filter(({id})=> countBusinessesInCategory(id) > 0).map(({name, id}) => (
                             <div
                                 key={id}
                                 className={style.categoryLink}
@@ -87,7 +98,10 @@ export default function NewDirectoryHero({
                                     setSelectOpen(false)
                                 }}
                             >
-                                {name}
+                                <span>
+                                    {name} 
+                                </span>
+                                ({countBusinessesInCategory(id)})
                             </div>
                         ))}
                     </div>

@@ -9,6 +9,7 @@ import { capstoneSolGroup } from './(c)/capstoneSolGroup'
 import { cxffeeBlack } from './(c)/cxffeeBlack'
 import { cityTastingBox } from './(c)/cityTastingBox'
 import { christMissionaryBaptist } from './(c)/christMissionaryBaptist'
+import { christTheKingLutheranChurch } from './(c)/christTheKingLutheranChurch'
 
 export const membersClist = [
     capturingMemories,
@@ -22,4 +23,5 @@ export const membersClist = [
     cxffeeBlack,
     cityTastingBox,
     christMissionaryBaptist,
+    christTheKingLutheranChurch,
 ]

@@ -1,0 +1,86 @@
+.memberHeroSection {
+    background-color: pink;
+    background-image: url(/assets/pagetitleimage.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlayBlock {
+    width: 100%;
+    height: 100%;
+    background: var(--overlay);
+    padding: 3rem 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.memberBadge {
+    width: 55%;
+    height: auto;
+    object-fit: contain;
+}
+
+.memberTitle {
+    width: 80%;
+    text-align: center;
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.shareRow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.shareBtn {
+    background: transparent;
+    border: 1px solid var(--goldOverlay);
+    color: var(--goldOverlay);
+    padding: .2rem .5rem;
+    border-radius: 5px;
+}
+
+@media (min-width:500px) {
+    .overlayBlock {
+        column-gap: 2%;
+    }
+    
+    .memberBadge {
+        width: 30%;
+    }
+    
+    .memberTitle {
+        width: 60%;
+        text-align: left;
+    }
+}
+
+@media (min-width:800px) {
+    .memberBadge {
+        width: 25%;
+    }
+    
+    .memberTitle {
+        width: 65%;
+    }
+}
+
+@media (min-width:900px) {
+    .overlayBlock {
+        padding: 4rem 0 1rem 0;
+    }
+    
+    .memberBadge {
+        width: 20%;
+    }
+    
+    .memberTitle {
+        width: 65%;
+        font-size: 2.3rem;
+    }
+}
