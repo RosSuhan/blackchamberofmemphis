@@ -5,7 +5,7 @@ export const theStudioKaraoke : MembersListType = {
     id : "the-studio-karaoke",
     businessName : "The Studio Karaoke",
     bannerImage : "",
-    profileLogo : "the-studio-karaoke",
+    profileLogo : "the-studio-karaoke-logo",
     profileDescription : "The Studio Karaoke is a lively entertainment venue in Memphis offering private karaoke suites by the hour, complete with an extensive song library, food, drinks, and a fun, immersive atmosphere. Ideal for birthdays, celebrations, team outings, and social gatherings, guests can enjoy singing, good vibes, and memorable moments with friends and family.",
     profileCategory : [
         "events-weddings",
