@@ -1,12 +1,34 @@
 'use client'
 import style from '@/styles/memberHero.module.css'
+import clsx from 'clsx'
 import Image from 'next/image'
-// const handleFacebookShare = useCallback(()=>{
-//     const shareUrl = `https://inenom.co.za${profile.path}`;
-//     window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`)
-// })
+import { useCallback, useState } from 'react'
 
-export default function MemberHeroSection(){
+
+type memberHeroSectionProp = {
+    memberStatus : boolean
+    businessName : string
+    path : string
+}
+
+export default function MemberHeroSection({
+    memberStatus,
+    businessName,
+    path
+} : memberHeroSectionProp){
+
+    const [ shareButton, setShareButton ] = useState(true)
+
+    const handleFacebookShare = useCallback(()=>{
+        const shareUrl = `https://blackchamberofmemphis.org/members/${path}`;
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
+            "_blank",
+            "noopener,noreferrer"
+        );
+
+        console.log(shareUrl)
+    }, [path]);
+
     return(
         <section
             className={style.memberHeroSection}
@@ -14,18 +36,21 @@ export default function MemberHeroSection(){
             <div
                 className={style.overlayBlock}
             >
-                <Image
-                    src={"/assets/membersBadge.webp"}
-                    alt=''
-                    width={250}
-                    height={111}
-                    className={style.memberBadge}
-                />
+                {memberStatus ? 
+                    <Image
+                        src={"/assets/membersBadge.webp"}
+                        alt=''
+                        width={250}
+                        height={111}
+                        className={style.memberBadge}
+                    />
+                : null}
+                
 
                 <h1
                     className={style.memberTitle}
                 >
-                    Business Name
+                    {businessName}
                 </h1>
 
                 <div
@@ -34,9 +59,32 @@ export default function MemberHeroSection(){
                     <button 
                         type="button"
                         className={style.shareBtn}
+                        onClick={() => setShareButton(true)}
                     >
                         Share
                     </button>
+
+                    <div
+                        className={clsx(shareButton ? style.shareBlock : style.hide)}
+                    >
+                        <div
+                            className={style.closeShareButtonRow}
+                        >
+                            <button 
+                                type="button"
+                                className={style.closeButton}
+                                onClick={() => setShareButton(false)}
+                            >
+                                X
+                            </button>
+                        </div>
+                        <button
+                            className={style.shareButton}
+                            onClick={handleFacebookShare}
+                        >
+                            Facebook
+                        </button>
+                    </div>
                 </div>
             </div>
             

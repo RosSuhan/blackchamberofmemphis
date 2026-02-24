@@ -16,6 +16,8 @@ export const bcomMixer : EventListType = {
     eventLongDescription: ``,
     eventCTAbuttonLink : "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/xRF8qV6uMCYC7",
     eventCTAbuttonText : "Register today",
+    registrationButtonText : "Register Today",
+    registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/xRF8qV6uMCYC7',
     eventPastDescription: "The Black Chamber of Memphis, along with its members and partners, came together for an evening of celebration as we reflected on our achievements from 2025. Guests enjoyed holiday treats while mingling and celebrating with entertainment, delicious food, and special messages and highlights. The holiday event was a truly delightful experience for everyone in attendance.",
     eventPastBlog: `
         <h1>BCOM 2025 Holiday Mixer Recap: Celebrating Growth, Leadership & Community in Memphis</h1>

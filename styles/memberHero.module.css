@@ -1,5 +1,4 @@
 .memberHeroSection {
-    background-color: pink;
     background-image: url(/assets/pagetitleimage.webp);
     background-position: center;
     background-size: cover;
@@ -35,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 .shareBtn {
@@ -43,6 +43,45 @@
     color: var(--goldOverlay);
     padding: .2rem .5rem;
     border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.shareBlock {
+    background: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 28px;
+    width: 250px;
+    row-gap: 1rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.closeShareButtonRow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background: green; */
+}
+
+.closeButton {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+}
+
+.shareButton {
+    padding: .5rem 1rem;
+    border: var(--gold) 2px solid;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--gold);
 }
 
 @media (min-width:500px) {

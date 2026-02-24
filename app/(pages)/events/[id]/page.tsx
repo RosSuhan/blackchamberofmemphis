@@ -73,15 +73,15 @@ export default function EventSingle(){
                 dangerouslySetInnerHTML={{__html: selectedEvent?.eventLongDescription || ""}}
             />
 
-            {selectedEvent?.eventCTAbuttonLink ? 
+            {selectedEvent?.registrationButtonLink ? 
                 <div
                     className={style.singleRegisterRow}
                 >
                     <a 
-                        href={selectedEvent?.eventCTAbuttonLink}
+                        href={selectedEvent?.registrationButtonLink}
                         className={style.singleRegistrationButton}
                     >
-                        {selectedEvent?.eventCTAbuttonText}
+                        {selectedEvent?.registrationButtonText}
                     </a>
                 </div>
             : null}

@@ -1,3 +1,6 @@
+import { GalleryImage } from "./memberGalleryType";
+import { BusinessHoursType } from "./memberHoursTypes";
+
 export interface MembersListType {
     memberStatus: boolean,
     id: string;
@@ -9,16 +12,8 @@ export interface MembersListType {
     profileSubCategory: string[];
     categoryTag: string[],
     profileBusinessDescription: string;
-    gallery?: { image: string; alt: string; width : number, height : number }[];
-    businessHours: {
-        monHours: string;
-        tueHours: string;
-        wedHours: string;
-        thuHours: string;
-        friHours: string;
-        satHours: string;
-        sunHours: string;
-    };
+    gallery?: GalleryImage[];
+    businessHours: BusinessHoursType[];
     addressLink: string;
     address: string;
     email: string;
@@ -31,5 +26,5 @@ export interface MembersListType {
     linktree: string;
     twitter: string;
     tiktok: string;
-    pinterest?: string;
+    pinterest: string;
 }

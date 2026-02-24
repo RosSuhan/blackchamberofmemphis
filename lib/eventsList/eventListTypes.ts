@@ -16,6 +16,8 @@ export interface EventListType {
     eventPastBlog: string,
     eventCTAbuttonLink : string,
     eventCTAbuttonText : string,
+    registrationButtonText : string,
+    registrationButtonLink : string,
     eventGallery: {src: string, alt: string,}[],
 }
 

@@ -4,6 +4,8 @@ import { frogTutoting } from './(f)/frogTutoring'
 import { feastGraze } from './(f)/feastGraze'
 import { faithJanitorialSol } from './(f)/faithJanitorialSol'
 import { faithBusSol } from './(f)/faithBusSol'
+import { firstBaptistChurch } from './(f)/firstBaptistChurch'
+import { fordChapelAME } from './(f)/fordChapelAME'
 
 export const membersFlist = [
     functionallyBalancedHealth,
@@ -12,4 +14,6 @@ export const membersFlist = [
     feastGraze,
     faithJanitorialSol,
     faithBusSol,
+    firstBaptistChurch,
+    fordChapelAME,
 ]

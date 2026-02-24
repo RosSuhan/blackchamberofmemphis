@@ -1,8 +1,101 @@
 .memberContactSection {
-    background-color: purple;
     order: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 0;
+}
+
+.logoBlock,
+.memberContactBlock,
+.memberSocialBlock {
+    width: 80%;
+    display: flex;
+    border: 1px solid var(--gold);
+    padding: 1rem;
+}
+
+.memberContactBlock {
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+.memberSocialBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.logoBlock {
+    align-items: center;
+    justify-content: center;
+}
+
+.memberLogo {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.memberContactLink,
+.memberSocialLink {
+    text-decoration: none;
+    color: #000000;
+}
+
+.memberContactLink {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.memberContactIcon,
+.memberSocialLinkIcon {
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.memberContactIcon {
+    margin-right: .5rem;
+}
+
+.busHoursList {
+    list-style: none;
+    padding: 0;
+}
+
+.busHoursListHeading {
+    margin: 0 0 .2rem 0;
+}
+
+.busHoursItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem 0;
+}
+
+@media (min-width: 400px) {
+    .memberLogo {
+        width: 60%;
+    }
+}
+
+@media (min-width: 800px) {
+    .memberContactSection {
+        order: 2;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .memberContactSection {
+        order: 2;
+        width: 30%;
+    }
 }

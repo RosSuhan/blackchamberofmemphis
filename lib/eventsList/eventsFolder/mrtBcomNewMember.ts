@@ -49,5 +49,7 @@ export const mrtBcomNewMember : EventListType = {
     eventPastBlog: ``,
     eventCTAbuttonLink : "/events/march-new-member-orientation",
     eventCTAbuttonText : "Read more",
+    registrationButtonText : '',
+    registrationButtonLink : '',
     eventGallery: [{src: "", alt: ""}]
 }

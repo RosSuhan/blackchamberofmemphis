@@ -48,5 +48,7 @@ export const febBcomNewMember : EventListType = {
     eventPastBlog: ``,
     eventCTAbuttonLink : "/events/february-new-member-orientation",
     eventCTAbuttonText : "Read more",
+    registrationButtonText : '',
+    registrationButtonLink : '',
     eventGallery: [{src: "", alt: ""}]
 }

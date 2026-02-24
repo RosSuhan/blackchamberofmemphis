@@ -43,5 +43,7 @@ export const succSolFeb : EventListType = {
     eventDescription : 'Join us for our First Succession Soluitons for 2026 with insights from Expert Attorneys – Professional Broker Advice Focused on Wealth Strategies',
     eventCTAbuttonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/succession-solutions-presents-acquiring-wealth-by-acquisition-the-legal-perspective-1591108?sourceTypeId=Hub',
     eventCTAbuttonText : 'Register Today!',
+    registrationButtonText : '',
+    registrationButtonLink : '',
     eventGallery: [{src: "", alt: ""}]
 }

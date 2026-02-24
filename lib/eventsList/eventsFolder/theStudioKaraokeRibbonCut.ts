@@ -22,5 +22,7 @@ export const theStudioKaraokeRibbonCut : EventListType = {
     eventDescription : '',
     eventCTAbuttonLink : 'https://thestudiokaraoke.com/RSVP',
     eventCTAbuttonText : 'RSVP',
+    registrationButtonLink : 'https://thestudiokaraoke.com/RSVP',
+    registrationButtonText : 'RSVP',
     eventGallery: [{src: "", alt: ""}]
 }

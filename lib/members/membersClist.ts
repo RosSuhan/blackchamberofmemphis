@@ -10,6 +10,7 @@ import { cxffeeBlack } from './(c)/cxffeeBlack'
 import { cityTastingBox } from './(c)/cityTastingBox'
 import { christMissionaryBaptist } from './(c)/christMissionaryBaptist'
 import { christTheKingLutheranChurch } from './(c)/christTheKingLutheranChurch'
+import { crossroadsBaptistChurch } from './(c)/crossroadsBaptistChurch'
 
 export const membersClist = [
     capturingMemories,
@@ -24,4 +25,5 @@ export const membersClist = [
     cityTastingBox,
     christMissionaryBaptist,
     christTheKingLutheranChurch,
+    crossroadsBaptistChurch,
 ]

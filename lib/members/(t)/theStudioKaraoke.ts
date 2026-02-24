@@ -37,15 +37,15 @@ export const theStudioKaraoke : MembersListType = {
         { image : "/members/the-studio-karaoke/the-studio-karaoke-img4.webp", alt : "The Studio Karaoke Singing Girls", width : 1024, height : 683 },
         { image : "/members/the-studio-karaoke/the-studio-karaoke-img5.webp", alt : "The Studio Karaoke Singing Girls", width : 1024, height : 683 }
     ],
-    businessHours : {
-        monHours : "Closed",
-        tueHours : "Closed",
-        wedHours : "4pm - 11pm",
-        thuHours : "4pm - 11pm",
-        friHours : "4pm - 12am",
-        satHours : "12pm - 12am",
-        sunHours : "12pm - 12am"
-    },
+    businessHours : [
+        { day : "Monday", hours : "Closed"},
+        { day : "Tuesday", hours : "Closed"},
+        { day : "Wednesday", hours : "4pm - 11pm"},
+        { day : "Thursday", hours : "4pm - 11pm"},
+        { day : "Friday", hours : "4pm - 12am"},
+        { day : "Saturday", hours : "12pm - 12am"},
+        { day : "Sunday", hours : "12pm - 12am"}
+    ],
     addressLink : "https://share.google/mXNJKoAtPVBMF4aQx",
     address : "3460 Plaza Ave, Memphis, TN 38111",
     email : "hello@thestudiokaraoke.com",
