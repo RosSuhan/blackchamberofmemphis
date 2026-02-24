@@ -10,6 +10,9 @@ import { BaselineLocationOn } from '../icons/Location'
 import { Instagram } from '../icons/InstagramIcon'
 import { Linkedin2 } from '../icons/LinkedInIcon'
 import { BusinessHoursType } from '@/lib/members/memberHoursTypes'
+import { LinktreeLogoBold } from '../icons/Linktree'
+import { TiktokIcon } from '../icons/TikTokIcon'
+import { Pinterest } from '../icons/Pinterest'
 
 type memberContactProp = {
     phone : string
@@ -191,7 +194,7 @@ export default function MemberContactSection({
                         href={linktree}
                         className={style.memberSocialLink}
                     >
-                        <TwitterStroke12
+                        <LinktreeLogoBold
                             className={style.memberSocialLinkIcon}
                         />
                     </a>
@@ -213,7 +216,7 @@ export default function MemberContactSection({
                         href={tiktok}
                         className={style.memberSocialLink}
                     >
-                        <TwitterStroke12
+                        <TiktokIcon
                             className={style.memberSocialLinkIcon}
                         />
                     </a>
@@ -224,7 +227,7 @@ export default function MemberContactSection({
                         href={pinterest}
                         className={style.memberSocialLink}
                     >
-                        <TwitterStroke12
+                        <Pinterest
                             className={style.memberSocialLinkIcon}
                         />
                     </a>
