@@ -22,15 +22,15 @@ export const travelWellConcierge : MembersListType = {
                                     <p>With a vibrant presence across social platforms—including Instagram, Pinterest, YouTube, and Facebook—the agency shares travel inspiration, booking specials, and curated tips, engaging an audience eager to explore with confidence.</p>
                                     <p>Whether it’s a romantic wedding abroad, a smooth family reunion, or an adventurous group getaway, Travel Well Concierge delivers unforgettable experiences—underpinned by passion, precision, and personal service that elevates each trip into a story worth telling.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "10am - 8pm",
-        tueHours : "10am - 8pm",
-        wedHours : "10am - 8pm",
-        thuHours : "Closed",
-        friHours : "Closed",
-        satHours : "12am - 5pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "10am - 8pm",},
+        { day : "Tuesday", hours : "10am - 8pm",},
+        { day : "Wednesday", hours :"10am - 8pm", },
+        { day : "Thursday", hours : "Closed",},
+        { day : "Friday", hours :  "Closed",},
+        { day : "Saturday", hours : "12am - 5pm",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/HFYl5bMyEGW9iacs9",
     address : "",
     email : "info@travelwellconcierge.com",

@@ -12,15 +12,7 @@ export const theCharBar : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/7CGb2il0LF6RUxgZH",
     address : "5349 SILVER STONE DR Memphis 38125",
     email : "thecharbar24@gmail.com",

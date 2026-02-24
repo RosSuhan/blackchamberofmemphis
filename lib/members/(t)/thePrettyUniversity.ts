@@ -20,15 +20,7 @@ export const thePrettyUniversity : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "5865 Ridgeway Center Pkwy, Ste 300, Memphis Tn 38120",
     email : "contact@theprettyuniversity.com",

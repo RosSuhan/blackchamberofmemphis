@@ -18,15 +18,7 @@ export const leveledUpMoney : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "Memphis",
     email : "info@leveledupmoney.com",

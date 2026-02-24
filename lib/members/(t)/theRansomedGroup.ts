@@ -18,15 +18,7 @@ export const theRansomedGroup : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "6545 Espalier Circle, Memphis, TN, 38119",
     email : "jennifer@ransomedconstruction.com",

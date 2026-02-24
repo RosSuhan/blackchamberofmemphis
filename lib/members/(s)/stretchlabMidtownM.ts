@@ -21,15 +21,7 @@ export const stretchlabMidtownM : MembersListType = {
     ],
     profileBusinessDescription : `<p>StretchLab Midtown Memphis brings the nation’s leading assisted-stretching brand directly to our community. Backed by Xponential Fitness and a network of 500+ studios nationwide, we deliver world-class expertise with a local, personal touch. Our certified Flexologists™ provide customized one-on-one stretching using proven techniques to improve flexibility, reduce tension, boost mobility, and enhance posture. Most clients feel a difference after their very first 25- or 50-minute session—often saying, “I didn’t know I needed this until I tried it.” With a welcoming studio environment and optional Normatec™ compression therapy, we make recovery, movement, and wellness easier for everyone. StretchLab Midtown Memphis: where better flexibility leads to better living.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "1618 Union Ave. Memphis, TN  38104",
     email : "midtownmemphis@stretchlab.com",

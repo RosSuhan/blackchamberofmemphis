@@ -20,15 +20,7 @@ export const bellevueBaptistChurch : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/Wk8gZsJMCPlnUQd4U",
     address : "2000 Appling Rd, Cordova",
     email : "",

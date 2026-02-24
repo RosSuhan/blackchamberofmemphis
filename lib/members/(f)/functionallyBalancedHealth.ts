@@ -24,15 +24,7 @@ export const functionallyBalancedHealth : MembersListType = {
                                     <p>Functionally Balanced Health does not participate in insurance networks; fees are billed directly (insurance claim submission is the patient’s responsibility). HSA/FSA payments are accepted. The practice does not substitute for primary care—including acute care—and coordinated care with a primary physician is recommended.</p>
                                     <p>With a mission to help women reclaim vitality beyond autoimmune disease, Functionally Balanced Health stands out in the Memphis wellness landscape by combining clinical rigor, personalized support, and a belief in long-term healing rooted in nutrition, lifestyle, and functional diagnostics.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "5865 Ridgeway Center Parkway Suite 300, Memphis, Tn, 38120",
     email : "info@functionallybalancedhealth.com",

@@ -20,15 +20,7 @@ export const bloomfield : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/oNKYopbyvo6A130IG",
     address : "123 South Pkwy W, Memphis, TN 38109,",
     email : "bbcchurch@comcast.net",

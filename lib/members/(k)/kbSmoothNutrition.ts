@@ -24,15 +24,15 @@ export const kbSmoothNutrition : MembersListType = {
                                     <p>The brand has a growing local presence online and via Instagram, where they connect with wellness communities and feature promotions like 10% off new orders through email sign-ups. Customer reviews highlight their “just fruit” purity and thoughtful portion sizing.</p>
                                     <p>With a BBB rating of A, K & B’s Smooth Nutrition is recognized for professional practices since incorporation in February 2023. Sondra King leads customer engagement and operations, reflecting the close-knit nature of this business.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8am - 5pm",
-        tueHours : "8am - 5pm",
-        wedHours : "8am - 5pm",
-        thuHours : "8am - 5pm",
-        friHours : "8am - 5pm",
-        satHours : "9am - 4pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8am - 5pm"},
+        { day : "Tuesday", hours : "8am - 5pm"},
+        { day : "Wednesday", hours : "8am - 5pm"},
+        { day : "Thursday", hours : "8am - 5pm"},
+        { day : "Friday", hours : "8am - 5pm"},
+        { day : "Saturday", hours : "9am - 4pm"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://maps.app.goo.gl/frmwj2VTSh4jRnHCA",
     address : "588 Cooper St, Memphis, TN 38104, United States",
     email : "sondra@kbssmoothnutrition.com",

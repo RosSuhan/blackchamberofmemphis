@@ -38,15 +38,15 @@ export const jackieMaePlace : MembersListType = {
             <li><strong>Stellar Reviews:</strong> Consistently earns 4.6–5★ for food quality, generous portions, and live entertainment.</li>
         </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "Closed",
-        tueHours : "Closed",
-        wedHours : "Closed",
-        thuHours : "11am - 4pm",
-        friHours : "11am - 4pm",
-        satHours : "Closed",
-        sunHours : "12pm - 5pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "Closed"},
+        { day : "Tuesday", hours : "Closed"},
+        { day : "Wednesday", hours : "Closed"},
+        { day : "Thursday", hours : "11am - 4pm"},
+        { day : "Friday", hours : "11am - 4pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "12pm - 5pm"},
+    ],
     addressLink : "https://g.co/kgs/1xZkpHL",
     address : "6646 HIGHWAY 51 N Millington 38053",
     email : "evansjacki77@gmail.com ",

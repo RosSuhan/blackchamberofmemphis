@@ -28,15 +28,15 @@ export const staffRite : MembersListType = {
         <p>With experience serving industries such as healthcare, logistics, manufacturing, and technology, StaffRIte USA is well-positioned to meet the evolving workforce needs of today’s businesses. Beyond placements, the company prioritizes building long-term partnerships with both employers and candidates, recognizing that the right match creates stronger teams and healthier workplaces.</p>
         <p>Driven by a customer-first approach and a commitment to workforce excellence, StaffRIte USA continues to be a reliable partner for businesses seeking dependable staffing solutions in a competitive and changing labor market.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8am - 4:30pm",
-        tueHours : "8am - 4:30pm",
-        wedHours : "8am - 4:30pm",
-        thuHours : "8am - 4:30pm",
-        friHours : "8am - 4:30pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8am - 4:30pm",},
+        { day : "Tuesday", hours :  "8am - 4:30pm",},
+        { day : "Wednesday", hours : "8am - 4:30pm",},
+        { day : "Thursday", hours :  "8am - 4:30pm",},
+        { day : "Friday", hours : "8am - 4:30pm",},
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/LktTSJPRqIO6F6wDz",
     address : "5812 WInchester Rd Memphis, TN 38115",
     email : "paul.johnson@staffriteusa.com",

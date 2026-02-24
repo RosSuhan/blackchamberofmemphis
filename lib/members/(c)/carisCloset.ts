@@ -30,15 +30,7 @@ export const carisCloset : MembersListType = {
                                         <li><strong>Curated Sales & Pop-Ups:</strong> Select pieces and project highlights offered by appointment or at occasional in-person events.</li>
                                     </ul>
                                     <p>Cari's Closet is known for its flexible, approachable service and commitment to helping people learn, repair, and create with confidence.</p>`,
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "1161 Dearing Rd, Memphis, Tn, 38117",
     email : "cariscloset901@gmail.com",
@@ -50,5 +42,6 @@ export const carisCloset : MembersListType = {
     youtube : "",
     linktree : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

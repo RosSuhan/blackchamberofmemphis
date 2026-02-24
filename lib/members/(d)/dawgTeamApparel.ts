@@ -30,15 +30,7 @@ export const dawgTeamApparel : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/hWcztCe55qggSv2V6",
     address : "74 Beechmont Ct, Schaumburg 60193",
     email : "inquire@dawgteamusa.com",

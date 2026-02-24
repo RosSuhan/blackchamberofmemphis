@@ -23,15 +23,7 @@ export const alphaExpressTrans : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "2630 Carnes Ave. Memphis 38114",
     email : "acey@alphaxpress.org",

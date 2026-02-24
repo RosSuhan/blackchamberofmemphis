@@ -31,15 +31,7 @@ export const baldwinFinancialServices : MembersListType = {
         <p>Understanding that every business has unique financial goals and challenges, the firm offers <strong>financial analysis and consulting</strong> to support business strategy, performance evaluation, and long-term planning. Whether a client needs periodic financial reports, budgeting support, or strategic insights to guide growth, Baldwin Financial Services Co serves as a reliable partner in navigating the financial landscape.</p>
         <p>With a focus on delivering dependable service and building trusted client relationships, <strong>Baldwin Financial Services Co</strong> empowers small business owners to focus on their core operations while maintaining sound financial health and compliance.`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "5865 Ridgeway, Memphis, TN 38120",
     email : "baldwinfinancial4@gmail.com",

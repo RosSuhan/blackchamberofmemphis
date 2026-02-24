@@ -26,15 +26,7 @@ export const dbkStudios : MembersListType = {
         <p>Their versatile offerings encompass commercial spots, promo and TV narration, audiobooks, Christian-themed scripts, government projects (including a “The Book of Revelation” narration), sports announcements, and personal engagements like reunions or client greetings. Past clients include high-profile names such as Dallas Theological Seminary, Johns Hopkins University, the NFL's Rams, Boys & Girls Clubs, Coca-Cola, and the VA Department of Highways.</p>
         <p>DBK takes pride in professional-grade audio production using state-of-the-art recording gear, ensuring consistency and character across each project. Client testimonials highlight swift turnaround, strong responsiveness, emotional depth, and versatility—from military-themed video games to animated governmental content.</p>
         <p>As a proud disabled-veteran-friendly business, DBK Studios blends integrity, creativity, and community service into its voiceover craft — a passion that began as a hobby and grew into a trusted source for impactful, personal audio storytelling.</p>`,
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "david@dbkstudios.com",
@@ -46,5 +38,6 @@ export const dbkStudios : MembersListType = {
     linkedIn : "https://www.linkedin.com/in/david-b-kelley-b1808a173/",
     linktree : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

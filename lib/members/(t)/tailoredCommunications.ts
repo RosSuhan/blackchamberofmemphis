@@ -34,15 +34,7 @@ export const tailoredCommunications : MembersListType = {
     //     <p>Operating out of 3112 Scotland Road, Memphis, TN 38128, the firm employs 2–10 team members and maintains flexible consultation scheduling by appointment. Contact is available at <a href="tel:+13195041665">(319) 504‑1665</a> or via email at <a href="mailto:info@tailoredcomm.com">info@tailoredcomm.com</a>.</p>
     //     <p>The company also hosts workshops and programs such as the Influence Collective and public relations bootcamps—emphasizing communication training and leadership development across audiences.</p>`,
     // gallery : [{image : "", alt : ""}],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "4332 Stage Rd., Memphis, TN 38128",
     email : "info@tailoredcomm.com",

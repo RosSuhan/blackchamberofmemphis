@@ -27,15 +27,7 @@ export const upskilEdtechConsulting : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "5371 Weaver Road, Memphis, Tn 38109",
     email : "ricky.richardson@gmail.com",

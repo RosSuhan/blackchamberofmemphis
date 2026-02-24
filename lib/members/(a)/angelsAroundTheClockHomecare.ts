@@ -19,15 +19,7 @@ export const angelsAroundTheClockHomecare : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/L6aLt6ySo2EKEGKq5",
     address : "3565 Ridge Meadow Pkwy, Memphis, TN 38115",
     email : "angelsaroundtheclock7@outlook.com",

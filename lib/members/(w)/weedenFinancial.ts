@@ -40,15 +40,7 @@ export const weedenFinancial : MembersListType = {
                                     <p>Rhonda holds licenses in 9 STATES INCLUDING Tennessee, Mississippi, and Arkansas, and combines her gift for teaching with deep industry knowledge to educate and empower clients. Weeden Financial also serves as a certified notary and signing agent, offering additional convenience. The agency maintains an active community presence—hosting informational events and distributing educational newsletters to help individuals make informed insurance decisions.</p>
                                     <p>Focused on personalized service, Weeden Financial’s mission is to put people first: “You are the reason this business exists.” With flexible coverage solutions, expert guidance, and client-centric values, they help families and business owners protect their financial futures across the Mid-South region.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "info@weedenfinancial.com",

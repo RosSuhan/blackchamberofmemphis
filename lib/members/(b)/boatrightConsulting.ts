@@ -21,15 +21,15 @@ export const boatrightConsulting : MembersListType = {
                                     <p>Core services include comprehensive bookkeeping, tax return preparation, payroll processing, retirement strategy guidance, and business consulting—all designed to optimize financial efficiency and compliance. Boatright CS supports a wide clientele, from startups to established small businesses, helping them make informed decisions and maintain healthy financial records.</p>
                                     <p>With a strong commitment to client success, Boatright CS blends technical expertise and practical planning to simplify complex financial tasks. Their consultative approach fosters long-term partnerships, while an emphasis on accuracy, transparency, and responsive service helps clients navigate tax regulations, business growth, and retirement readiness with confidence.</p>
                                     <p>As a locally owned and operated firm with more than a decade of service, Boatright Consulting Services is recognized for its trustworthiness, hands-on support, and dedication to sustaining the financial health of businesses and families in Millington and Memphis.</p>`,
-    businessHours : {
-        monHours : "Closed",
-        tueHours : "11:30am - 2pm",
-        wedHours : "11:30am - 2pm",
-        thuHours : "11:30am - 2pm",
-        friHours : "Closed",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "Closed"},
+        { day : "Tuesday", hours : "11:30am - 2pm"},
+        { day : "Wednesday", hours : "11:30am - 2pm"},
+        { day : "Thursday", hours : "11:30am - 2pm"},
+        { day : "Friday", hours : "Closed"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://g.co/kgs/J8dhn4a",
     address : "7864 Harrold Cove, Millington, TN 38053",
     email : "atwork4u@boatrightcs.com",
@@ -41,5 +41,6 @@ export const boatrightConsulting : MembersListType = {
     linkedIn : "",
     linktree : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

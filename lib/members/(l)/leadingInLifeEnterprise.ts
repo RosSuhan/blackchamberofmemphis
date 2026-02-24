@@ -41,15 +41,7 @@ export const leadingInLifeEnterprise : MembersListType = {
                                         <li>Identity + Strategy = Impact</br>We help leaders who never saw themselves as “leaders” uncover their purpose, build emotional capacity, and influence culture.</li>
                                         <li>Co-Led by Kinah L. Burks™ & Cheyenne Gray</br>Kinah L. Burks™ – EQ Trainer, Communication Strategist & Emcee</br>Cheyenne Gray – COO, Brand Identity Designer, Curriculum Architect & Civic Connector`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/d1xC3qBHpECMEQEL9",
     address : "1840 Pyramid Pl Suite 348, Memphis, TN 38132",
     email : "info@leadinginlifeent.com",

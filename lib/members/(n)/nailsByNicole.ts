@@ -23,15 +23,15 @@ export const nailsByNicole : MembersListType = {
                                     <p>Whether you are preparing for a special event, refreshing your everyday look, or simply treating yourself to well-deserved self-care, Nicole’s Nails provides a personalized service that goes beyond beauty. For Nya, nails are more than a service—they are a form of storytelling, artistry, and empowerment.</p>
                                     <p>With a growing presence on Instagram and TikTok, Nicole’s Nails continues to share creative designs, inspiring clients to see nails as an extension of their individuality.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "10am - 4pm",
-        tueHours : "Closed",
-        wedHours : "10am - 4pm",
-        thuHours : "10am - 4pm",
-        friHours : "10am - 4pm",
-        satHours : "10am - 4pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "10am - 4pm",},
+        { day : "Tuesday", hours : "Closed",},
+        { day : "Wednesday", hours : "10am - 4pm",},
+        { day : "Thursday", hours : "10am - 4pm",},
+        { day : "Friday", hours :"10am - 4pm", },
+        { day : "Saturday", hours : "10am - 4pm",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "",
     address : "",
     email : "collinsnya413@gmail.com",

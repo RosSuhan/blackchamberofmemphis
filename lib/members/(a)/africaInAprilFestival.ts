@@ -20,15 +20,7 @@ export const africaInAprilFestival : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/q2NfWbe",
     address : "1234 Mississippi Blvd # 100B, Memphis, TN 38106",
     email : "aiafest@bellsouth.net",

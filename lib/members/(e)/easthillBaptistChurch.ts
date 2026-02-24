@@ -20,15 +20,7 @@ export const easthillBaptistChurch : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/CVI46cJW4pfJZfWEehttps://share.google/CVI46cJW4pfJZfWEe",
     address : "7054 Saint Elmo Rd, Memphis, TN 38135",
     email : "",

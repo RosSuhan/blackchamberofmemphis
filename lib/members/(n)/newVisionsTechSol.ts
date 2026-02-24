@@ -28,15 +28,7 @@ export const newVisionsTechSol : MembersListType = {
                                     <p>New Visions emphasizes a collaborative, detail-oriented process—starting with creative direction, followed by planning, execution, and review. This approach ensures each solution reflects the client’s industry, goals, and aesthetic identity. With a Memphis phone contact listed at (901) 210‑9103, they maintain a local presence while serving clients broadly.</p>
                                     <p>Although specific staff credentials and years in business aren’t disclosed, LinkedIn indicates at least one team member, Lucy Richardson, has served as a Certified Adobe Captivate Specialist since 2019, highlighting in-house eLearning expertise.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "lucyrichardson@newvisionsts.com",

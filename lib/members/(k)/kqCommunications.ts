@@ -23,15 +23,15 @@ export const kqCommunications : MembersListType = {
                                     <p>The agency has earned significant recognition, including winning six PRSA VOX Awards and seven Gold Awards, and being named 2024 Best Small Agency (15+ Employees) by PRSA Memphis—affirming their creative excellence and strategic execution. They also earned a Platinum MarCom Award for standout advertising campaigns, including the “Moving Memphis Forward” initiative for Forward Memphis, a financial empowerment project supporting marginalized communities facing predatory lending practices.</p>
                                     <p>With a team of approximately 10–50 employees, KQ maintains a boutique ethos with measurable capacity. Their clients span across 15 states in nonprofit, education, faith-based, social enterprise, and government sectors, all united by values-driven missions and an emphasis on impactful communications, engagement, and brand visibility in regional and national contexts.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8:30am - 5pm",
-        tueHours : "8:30am - 5pm",
-        wedHours : "8:30am - 5pm",
-        thuHours : "8:30am - 5pm",
-        friHours : "8:30am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8:30am - 5pm"},
+        { day : "Tuesday", hours : "8:30am - 5pm"},
+        { day : "Wednesday", hours : "8:30am - 5pm"},
+        { day : "Thursday", hours : "8:30am - 5pm"},
+        { day : "Friday", hours : "8:30am - 5pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://g.co/kgs/bEwwft2",
     address : "5050 Poplar Ave Suite 1220, Memphis, TN 38157",
     email : "info@kqcommunications.com",

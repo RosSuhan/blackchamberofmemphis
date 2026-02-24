@@ -24,15 +24,15 @@ export const inclusiveExcellenceConsulting : MembersListType = {
                                     <p>The firm’s assessment and audit services offer organizations a clear understanding of performance strengths, skills gaps, and cultural needs. This insight guides the development of targeted strategies that support a healthy organizational culture and long-term business success.</p>
                                     <p>As a certified diverse supplier—WBENC WBE, SBA WOSB, Disability:IN DOBE, and NMSDC MBE—Inclusive Excellence Consulting brings a unique, equity-centered perspective to every partnership, ensuring clients receive holistic, people-focused, and impactful solutions.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm"},
+        { day : "Tuesday", hours : "9am - 5pm"},
+        { day : "Wednesday", hours : "9am - 5pm"},
+        { day : "Thursday", hours : "9am - 5pm"},
+        { day : "Friday", hours : "9am - 5pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://maps.app.goo.gl/uZEqrasbPi8jxVV17",
     address : "Memphis",
     email : "marym@ieconsultingfirm.com",

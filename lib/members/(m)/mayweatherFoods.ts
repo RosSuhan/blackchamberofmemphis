@@ -22,15 +22,7 @@ export const mayweatherFoods : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "1245 North Germantown Pkwy. Cordova, Tennessee 38016",
     email : "daniel@mayweatherfoods.com",

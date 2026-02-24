@@ -25,15 +25,15 @@ export const dbosRiverdale : MembersListType = {
                                     <p>The Riverdale branch leans heavily into its local identity—emphasizing Memphis style, boldness, and consistency. The location is often spotlighted in coverage of Memphis wing culture and restaurant reviews, and patrons highlight both flavor variety and atmosphere. </p>
                                     <p>In sum, D’Bo’s Riverdale stands as a vibrant, full-service wing & seafood destination that embodies the brand’s Memphis heritage, menu breadth, and commitment to flavor. Whether you’re craving spicy wings, seafood combos, or a bold frozen daiquiri, this location instantiates what many patrons love about D’Bo’s.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "11am - 10pm",
-        tueHours : "11am - 10pm",
-        wedHours : "11am - 10pm",
-        thuHours : "11am - 12am",
-        friHours : "11am - 12am",
-        satHours : "11am - 12am",
-        sunHours : "12pm - 7pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "11am - 10pm"},
+        { day : "Tuesday", hours : "11am - 10pm"},
+        { day : "Wednesday", hours : "11am - 10pm"},
+        { day : "Thursday", hours : "11am - 12am"},
+        { day : "Friday", hours : "11am - 12am"},
+        { day : "Saturday", hours : "11am - 12am"},
+        { day : "Sunday", hours : "12pm - 7pm"},
+    ],
     addressLink : "https://maps.app.goo.gl/9mTYiFhPU2ZdLYZB7",
     address : "7050 Malco Crossing, Suite 106, , Memphis, TN 38125",
     email : "info@dboswings.com",
@@ -45,5 +45,6 @@ export const dbosRiverdale : MembersListType = {
     linkedIn : "https://twitter.com/dboswings",
     linktree : "",
     twitter: "https://twitter.com/dboswings",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

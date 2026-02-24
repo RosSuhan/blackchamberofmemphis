@@ -38,15 +38,7 @@ export const techfit : MembersListType = {
                                     <h3>Participant Impact:</h3>
                                     <p>Seniors report improved balance, digital confidence, and health management post-program—from video calling family to using health apps.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/MzH7XeQ",
     address : "954 N. Second St, Memphis, TN 38107",
     email : "fcrayton@techfittn.org",

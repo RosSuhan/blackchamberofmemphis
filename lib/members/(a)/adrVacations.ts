@@ -31,15 +31,7 @@ export const adrVacations : MembersListType = {
                                         <li><strong>All-Inclusive Resorts:</strong> Sun-soaked, worry-free vacations at resorts handpicked for comfort, culture, and local connection.</li>
                                     </ul>
                                     <p>Whether it's a luxury cruise or a historical journey rooted in identity and pride, <strong>ADR Vacations</strong> makes it easy for clients to travel meaningfully—with every detail managed from start to finish.</p>`,
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "adrvacations@aol.com",
@@ -52,4 +44,5 @@ export const adrVacations : MembersListType = {
     linkedIn : "",
     linktree : "",
     twitter: "",
+    pinterest : ''
 }

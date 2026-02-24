@@ -20,15 +20,7 @@ export const davinchiRestLounge : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/sqEgj1KJWkP3mFBK6",
     address : "299 S Main St Memphis 38103",
     email : "davinchirestaurantandlounge@gmail.com",

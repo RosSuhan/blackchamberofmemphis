@@ -30,15 +30,15 @@ export const bluffCityParties : MembersListType = {
                                         <li><strong>Variety of Offerings:</strong> From toddler-friendly bounce houses to large obstacle courses and foam zones—ensuring entertainment for all ages.</li>
                                         <li><strong>Greater Memphis Coverage:</strong> Available in Memphis, Bartlett, Germantown, Collierville, Cordova, Millington, Southaven, Olive Branch, West Memphis, and surrounding areas.</li>
                                     </ul>`,
-    businessHours : {
-        monHours : "8am - 7pm",
-        tueHours : "8am - 7pm",
-        wedHours : "8am - 7pm",
-        thuHours : "8am - 7pm",
-        friHours : "8am - 7pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8am - 7pm"},
+        { day : "Tuesday", hours : "8am - 7pm"},
+        { day : "Wednesday", hours : "8am - 7pm"},
+        { day : "Thursday", hours : "8am - 7pm"},
+        { day : "Friday", hours : "8am - 7pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://g.co/kgs/jsLikZc",
     address : "Memphis",
     email : "customerservice@bluffcityfun.com",
@@ -50,5 +50,6 @@ export const bluffCityParties : MembersListType = {
     linkedIn : "",
     linktree : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

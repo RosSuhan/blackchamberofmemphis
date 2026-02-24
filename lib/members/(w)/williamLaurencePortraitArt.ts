@@ -26,15 +26,15 @@ export const williamLaurencePortraitArt : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "10am - 6pm",
-        tueHours : "10am - 6pm",
-        wedHours : "10am - 5:30pm",
-        thuHours : "10am - 6pm",
-        friHours : "10am - 5pm",
-        satHours : "12pm - 4pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "10am - 6pm",},
+        { day : "Tuesday", hours : "10am - 6pm",},
+        { day : "Wednesday", hours : "10am - 5:30pm",},
+        { day : "Thursday", hours : "10am - 6pm",},
+        { day : "Friday", hours : "10am - 5pm",},
+        { day : "Saturday", hours :  "12pm - 4pm",},
+        { day : "Sunday", hours : "Closed"}
+    ],
     addressLink : "https://maps.app.goo.gl/Wu741VFkxMccH8Gr5",
     address : "10120 Shrewsbury Run W, Collierville, TN 38017",
     email : "artist@williamlaurence.com",

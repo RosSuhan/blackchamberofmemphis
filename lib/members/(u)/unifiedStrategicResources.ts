@@ -31,15 +31,7 @@ export const unifiedStrategicResources : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/QbTWfynu1Cvfacc98",
     address : "137 National Plaza, Forest Heights, MD 20745",
     email : "montez@unifiedstrategic.com",

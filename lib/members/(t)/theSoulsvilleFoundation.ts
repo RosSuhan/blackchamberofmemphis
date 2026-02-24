@@ -29,15 +29,7 @@ export const theSoulsvilleFoundation : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/PIZArki2bUDrR41Ek",
     address : "926 E. McLemore Avenue Memphis, TN 38106",
     email : "samson.mobashar@soulsvillefoundation.org",

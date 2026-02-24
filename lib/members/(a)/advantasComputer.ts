@@ -36,15 +36,15 @@ export const advantasComputer : MembersListType = {
                                         <li><strong>Testimonials</strong> overflow with praise:</li>
                                     </ul>
                                     <span style="font-style: italic;">“Great skills, awesome design, excellent customer service at an affordable price…” — Tiffanie W.</span>`,
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm"},
+        { day : "Tuesday", hours : "9am - 5pm"},
+        { day : "Wednesday", hours : "9am - 5pm"},
+        { day : "Thursday", hours : "9am - 5pm"},
+        { day : "Friday", hours : "9am - 5pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://g.co/kgs/SNhz6xr",
     address : "6759 E Shelby Dr, Memphis, TN 38141",
     email : "advantascomputertechnology@gmail.com",
@@ -56,5 +56,6 @@ export const advantasComputer : MembersListType = {
     linkedIn : "",
     linktree : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

@@ -34,15 +34,15 @@ export const twoOfaShineCleaning : MembersListType = {
         </p>Beyond cleanliness, Two of a Shine understands the importance of presentation and health in professional environments. Clean, well-maintained spaces contribute to productivity, safety, and positive first impressions, and the company takes pride in supporting the success of the businesses it serves.</p>
         <p>Guided by a mission to help businesses shine—one space at a time—Two of a Shine continues to deliver dependable commercial cleaning services rooted in integrity, quality workmanship, and a genuine commitment to client satisfaction.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8:30am - 5pm",
-        tueHours : "8:30am - 5pm",
-        wedHours : "8:30am - 5pm",
-        thuHours : "8:30am - 5pm",
-        friHours : "8:30am - 8:30pm",
-        satHours : "7am - 9pm",
-        sunHours : "7am - 5pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8:30am - 5pm",},
+        { day : "Tuesday", hours : "8:30am - 5pm",},
+        { day : "Wednesday", hours : "8:30am - 5pm",},
+        { day : "Thursday", hours : "8:30am - 5pm",},
+        { day : "Friday", hours : "8:30am - 8:30pm",},
+        { day : "Saturday", hours : "7am - 9pm",},
+        { day : "Sunday", hours : "7am - 5pm"},
+    ],
     addressLink : "https://maps.app.goo.gl/eq7LNpQukpNyJwkx6?g_st=ic",
     address : "6000 Poplar Avenue Suite 250",
     email : "services@twoofashine.org",

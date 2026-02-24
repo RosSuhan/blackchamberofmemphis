@@ -19,15 +19,7 @@ export const ajElectric : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [],
     addressLink : "https://share.google/IwkZjyWxrOGsOXvhA",
     address : "4987 S Grundy Quarles Hwy, Bloomington Springs, TN 38545",
     email : "ajelectric@aj-electricllc.com",

@@ -28,15 +28,15 @@ export const spiritTechnique : MembersListType = {
         <p>Spirit Technique extends beyond classes with after-school programs, birthday party events, private sessions, and seasonal camps that blend physical activity with character-building opportunities and creative exploration. The facility’s party packages and drop-in play options give families flexible ways to celebrate milestones or simply enjoy quality time through movement and play.</p>
         <p>Parents appreciate Spirit Technique’s supportive environment where children are known by name, encouraged to set personal goals, and celebrated for every achievement — whether mastering a cartwheel, completing a trampoline sequence, or performing with a cheer team. With experienced staff and a focus on holistic youth development, Spirit Technique stands out as a trusted place for families seeking active recreation and growth for their kids in the Memphis area.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "4pm - 9pm",
-        tueHours : "10am - 9pm",
-        wedHours : "4pm - 9pm",
-        thuHours : "4pm - 9pm",
-        friHours : "By Appointment",
-        satHours : "9am - 2:30pm",
-        sunHours : "3:30pm - 5:30pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "4pm - 9pm",},
+        { day : "Tuesday", hours : "10am - 9pm",},
+        { day : "Wednesday", hours : "4pm - 9pm",},
+        { day : "Thursday", hours : "4pm - 9pm",},
+        { day : "Friday", hours : "By Appointment",},
+        { day : "Saturday", hours : "9am - 2:30pm",},
+        { day : "Sunday", hours : "3:30pm - 5:30pm"},
+    ],
     addressLink : "https://maps.app.goo.gl/bXps3trL2F4mq2ZUA",
     address : "9551 Macon Rd, Cordova, TN 38016",
     email : "support@spirittechnique.net",

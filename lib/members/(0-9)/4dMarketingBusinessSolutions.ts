@@ -24,15 +24,7 @@ export const fourDMarketingBusinessSolutionsFirm : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "3725 Champion Hills Dr, Ste 3200, Memphis, Tn, 38125",
     email : "z4dmarketing.biz.rn@outlook.com",

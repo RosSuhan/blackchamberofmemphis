@@ -20,15 +20,7 @@ export const bartlettChurchOfChrist : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/eA0oFcohtO2ANOlnh",
     address : "2704 Charles Bryan Rd, Bartlett",
     email : "",

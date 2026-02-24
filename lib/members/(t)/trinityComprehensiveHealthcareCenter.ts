@@ -20,15 +20,7 @@ export const trinityComprehensiveHealthcareCenter : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/BDsf9ST",
     address : "2838 Hickory Hill Rd Suite 29, Memphis, TN 38115",
     email : "willisdawna@gmail.com",

@@ -26,15 +26,7 @@ export const mickeyPopcorn : MembersListType = {
                                     <p>Their growth story includes recognition as EDGE Business of the Year 2023, and support via a $15K loan that helped renovate a new 4,588 sq ft facility to scale production from 500 to 6,000 bags per week. They’ve also secured retail presence through branded co-productions and distribution through retailers like Kroger, Publix, Hilton Hotels, and Horseshoe Tunica—featuring their signature whiskey caramel popcorn.</p>
                                     <p>Located in Memphis at 3127 Stonebrook Circle, Mickey’s Popcorn blends craftsmanship, purpose, and confection into a brand that’s as meaningful as it is flavorful.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "3127 Stonebrook Circle, Memphis, TN, 38116",
     email : "penny@grad-us.com",

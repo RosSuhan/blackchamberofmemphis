@@ -18,15 +18,7 @@ export const greaterNewLibertyChurch : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/Y1Z8nSL6NeaYEP3cq",
     address : "250 E Raines Rd, Memphis",
     email : "",

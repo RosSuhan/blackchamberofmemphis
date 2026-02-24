@@ -18,15 +18,7 @@ export const turnerFeild : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/DNcwZtR",
     address : "2650 Thousand Oaks Blvd Suite 2325, Memphis, TN 38118",
     email : "katrice@turnerfeildlaw.com",

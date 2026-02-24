@@ -20,15 +20,7 @@ export const agapeChildFamilyServices : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/BJQUduM",
     address : "3160 Directors Row, Memphis, Tn, 38131",
     email : "info@agapemeanslove.org",

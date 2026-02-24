@@ -27,15 +27,15 @@ export const mleRealtyProperty : MembersListType = {
                                     <p>Led by the MLE Realty & Property Management, headed by Zakiyyah Langford, the team has closed 56 properties in the past year alone, with price points ranging from $20K to $509K and an average sale price near $165K. Client feedback is strong—Langford’s Zillow team rating stands at 5.0/5 based on seven team reviews, praising expertise and responsiveness.</p>
                                     <p>With a streamlined customer-first ethos, MLE Realty consistently emphasizes local market knowledge, high-touch support, and a dedication to making Memphis feel like home—whether you're buying, selling, or investing.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 4pm",
-        tueHours : "9am - 4pm",
-        wedHours : "9am - 4pm",
-        thuHours : "9am - 4pm",
-        friHours : "9am - 4pm",
-        satHours : "9am - 4pm",
-        sunHours : "9am - 4pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 4pm",},
+        { day : "Tuesday", hours : "9am - 4pm",},
+        { day : "Wednesday", hours : "9am - 4pm",},
+        { day : "Thursday", hours : "9am - 4pm",},
+        { day : "Friday", hours : "9am - 4pm",},
+        { day : "Saturday", hours : "9am - 4pm",},
+        { day : "Sunday", hours : "9am - 4pm"},
+    ],
     addressLink : "https://maps.app.goo.gl/VMJNWUB698SJyBg49",
     address : "4745 Poplar Ave #302, Memphis, TN 38117",
     email : "za@mlerealty.com",

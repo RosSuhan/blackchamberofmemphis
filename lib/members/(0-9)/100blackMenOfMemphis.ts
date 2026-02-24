@@ -21,15 +21,7 @@ export const blackMenOfMemphis : MembersListType = {
         "community development"
     ],
     profileBusinessDescription : ``,
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "darrell@universalcommercial.com",

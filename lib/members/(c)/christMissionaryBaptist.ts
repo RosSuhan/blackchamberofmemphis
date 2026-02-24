@@ -20,15 +20,7 @@ export const christMissionaryBaptist : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/uV3I5baHy7SuSRckV",
     address : "494 S Pkwy E, Memphis",
     email : "cmbc@christmbc.org",

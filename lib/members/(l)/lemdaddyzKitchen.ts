@@ -26,15 +26,15 @@ export const lemdaddyzKitchen : MembersListType = {
                                     <p>Beyond pop-ups, they offer pre-orders via Instagram and Facebook, providing flexible pickup or delivery options two days after ordering. Customers consistently share how the desserts evoke childhood memories and a heartfelt sense of comfort.</p>
                                     <p>LemdaddyZ Kitchen LLC is more than a dessert shop—it’s a warm, authentic experience where love, heritage, and sweetness meet. Every treat is a tribute to memory, culture, and community.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "9am - 5pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm"},
+        { day : "Tuesday", hours : "9am - 5pm"},
+        { day : "Wednesday", hours : "9am - 5pm"},
+        { day : "Thursday", hours : "9am - 5pm"},
+        { day : "Friday", hours : "9am - 5pm"},
+        { day : "Saturday", hours : "9am - 5pm"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/KgONZ55fwLyhwZYfy",
     address : "Memphis",
     email : "lemdaddyzkitchen@gmail.com",

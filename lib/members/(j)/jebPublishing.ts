@@ -25,15 +25,15 @@ export const jebPublishing : MembersListType = {
         <p>A valued local resource, JEB Publishing also offers mobile notary services, providing flexible, on-site notarization for documents such as affidavits, contracts, and legal forms. This convenience helps individuals and businesses in Memphis save time while ensuring legal compliance.</p>
         <p>With a commitment to quality, professionalism, and personalized service, JEB Publishing stands out as a trusted partner for Memphis clients looking to strengthen their written communications, brand identity, and publishing outcomes.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 6pm",
-        tueHours : "9am - 6pm",
-        wedHours : "9am - 6pm",
-        thuHours : "9am - 6pm",
-        friHours : "9am - 6pm",
-        satHours : "9am - 6pm",
-        sunHours : "1pm - 7pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 6pm"},
+        { day : "Tuesday", hours : "9am - 6pm"},
+        { day : "Wednesday", hours : "9am - 6pm"},
+        { day : "Thursday", hours : "9am - 6pm"},
+        { day : "Friday", hours : "9am - 6pm"},
+        { day : "Saturday", hours : "9am - 6pm"},
+        { day : "Sunday", hours : "1pm - 7pm"},
+    ],
     addressLink : "https://share.google/Ixm6sf7RHBySayHoJ",
     address : "Memphis",
     email : "jeb.publishing.llc@gmail.com",

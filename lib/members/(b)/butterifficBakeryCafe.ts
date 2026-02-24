@@ -35,15 +35,15 @@ export const butterifficBakeryCafe : MembersListType = {
                                         <li>Featured in local guides like Downtown Memphis and Black Restaurant Weeks, with glowing online reviews (4.6–5.0-star average) and viral social posts.</li>
                                     </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 7pm",
-        tueHours : "9am - 7pm",
-        wedHours : "9am - 7pm",
-        thuHours : "9am - 7pm",
-        friHours : "9am - 9pm",
-        satHours : "12pm - 9pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 7pm"},
+        { day : "Tuesday", hours : "9am - 7pm"},
+        { day : "Wednesday", hours : "9am - 7pm"},
+        { day : "Thursday", hours : "9am - 7pm"},
+        { day : "Friday", hours : "9am - 9pm"},
+        { day : "Saturday", hours : "12pm - 9pm"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://g.co/kgs/T6ftGfe",
     address : "488 S 2nd St, Memphis, TN 38103",
     email : "butterifficbakery@gmail.com",

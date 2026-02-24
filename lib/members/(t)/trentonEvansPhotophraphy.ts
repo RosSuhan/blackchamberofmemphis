@@ -23,15 +23,7 @@ export const trentonEvansPhotophraphy : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/p2zybgOhpQUYV6FAT",
     address : "8220 E Us Highway 79, Bells, Tn 38006",
     email : "trentonevans34@gmail.com",

@@ -28,15 +28,15 @@ export const epicenter : MembersListType = {
         <p>Epicenter offers a range of curated programs and initiatives, including accelerator tracks like the <strong>Capital Readiness Accelerator</strong>, the <strong>ZeroTo510 medical device accelerator</strong>, the <strong>Medical Device Operations Challenge</strong>, and the <strong>Innovate Xcelerate Pitch Competition</strong>. The organization also hosts engaging events, such as the <strong>DelTech Conference, Epicenter Live!</strong> (a series blending live music and pitch presentations), and hands-on meetups like “Coffee Break with Epicenter” to foster community and innovation.</p>
         <p>By providing physical space, expert mentorship, programmatic support, and network connections, Epicenter ensures that diverse and underrepresented founders—notably those in fields like medtech and logistics—have the resources to succeed and thrive in Memphis.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm"},
+        { day : "Tuesday", hours : "9am - 5pm"},
+        { day : "Wednesday", hours : "9am - 5pm"},
+        { day : "Thursday", hours : "9am - 5pm"},
+        { day : "Friday", hours : "9am - 5pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/NRc6XoOz6gXkToeSB",
     address : "150 Peabody Place Lower Level, Memphis, Tn 38103",
     email : "info@epicentermemphis.org",

@@ -23,15 +23,7 @@ export const theResumeReviveCareerServ : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/pK8XD7x",
     address : "5104 Autumn Morning Lane, Memphis, Tn, 38125",
     email : "kameke@theresumerevive.com",

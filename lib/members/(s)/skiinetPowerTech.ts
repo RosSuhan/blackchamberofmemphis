@@ -18,15 +18,7 @@ export const skiinetPowerTech : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "4945 CANASTA COVE ARLINGTON 38002",
     email : "support@skiinetpowertech.com",

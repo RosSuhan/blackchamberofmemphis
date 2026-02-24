@@ -35,15 +35,7 @@ export const christieTaylorConsulting : MembersListType = {
                                         <li>Christie Taylor Consulting proudly represents Memphis as a creative and strategic communications hub. Its founder, Christie, a radio personality, consultant and produced filmmaker, has been featured on Live at 9 (Marybeth Connelly & Alex Coleman), Bluff City Life (Janeen Gordon)  Verbally Effective Podcast (Ena Esco),  Sharvette Mitchell Radio Show and in ARTist Feature Magazine, Speakers Magazine, Memphis Voyager, and Sheen Magazine.</li> 
                                         <li>This DC native's leadership is shaped by her West Tennessee upbringing, decades in radio, and commitment to building an inclusive creative economy has enjoyed a storied radio career that led to her hosting The Christie Taylor Show on Comcast Southeast cable TV and currently hosting River City Roundup Public Affairs Show on Right On Radio 87.7 FM and Bumpin' 96.3 FM.</li>
                                         <li>Born in D.C., grew up in West Tennessee, and transitioned from a storied radio career to founding her own consultancy in 2019.</li>`,
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "6000 Poplar Avenue, suite 250-2026, Memphis, Tn, 38119",
     email : "christie@christietaylorconsulting.com",
@@ -55,5 +47,6 @@ export const christieTaylorConsulting : MembersListType = {
     linktree : "https://linktr.ee/christietaylorconsulting",    
     youtube : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

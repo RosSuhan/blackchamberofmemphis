@@ -27,15 +27,7 @@ export const wrightNow : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "8498 Kamin Ln, Memphis, Tn 38125",
     email : "laquitawright40@gmail.com",

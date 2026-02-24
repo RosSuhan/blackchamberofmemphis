@@ -20,15 +20,7 @@ export const iiimadison : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/39CGzxkNEgD6QnN76",
     address : "111 Madison Ave. Memphis 38103",
     email : "contact@one11madison.com",

@@ -24,15 +24,15 @@ export const faithJanitorialSol : MembersListType = {
         <p>The company’s services include routine janitorial cleaning, scheduled deep cleaning, carpet and floor maintenance, restroom sanitation, window cleaning, and customized facility care programs tailored to each client’s building requirements, budget, and service frequency. <strong>Faith Janitorial Solutions</strong> utilizes commercial-grade equipment, trained staff, and structured quality control systems to ensure consistent performance across facilities of all sizes.</p>
         <p><strong>Faith Janitorial Solutions</strong> is equipped to support contract-based cleaning needs for public institutions, private sector partners, and high-traffic environments where reliability and professionalism are essential. The company’s focus on responsiveness, detailed service delivery, and operational excellence makes it a trusted vendor partner for organizations seeking dependable facility maintenance and long-term janitorial support.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8am - 5pm",
-        tueHours : "8am - 5pm",
-        wedHours : "8am - 5pm",
-        thuHours : "8am - 5pm",
-        friHours : "8am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8am - 5pm"},
+        { day : "Tuesday", hours : "8am - 5pm"},
+        { day : "Wednesday", hours : "8am - 5pm"},
+        { day : "Thursday", hours : "8am - 5pm"},
+        { day : "Friday", hours : "8am - 5pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/HRtqp2cqbDEnJy4oo",
     address : "6228 East Shelby Dr. ",
     email : "info@faithjs.com",

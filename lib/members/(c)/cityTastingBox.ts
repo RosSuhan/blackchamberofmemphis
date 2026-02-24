@@ -21,15 +21,7 @@ export const cityTastingBox : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/srhqnKQrlECUA142g",
     address : "55 S Main St #101, Memphis, TN 38103, United States",
     email : "hello@citytastingbox.com",

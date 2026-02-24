@@ -20,15 +20,7 @@ export const totalVibeRide : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "1603 Tern Rest Cove	, Cordova, Tn 38016",
     email : "totalviberide@gmail.com",

@@ -31,15 +31,7 @@ export const lilacImpactServices : MembersListType = {
                                     <p>Through testimonials, clients celebrate Lilac’s thoughtful presence, relational strength, and deep community network.  One client noted, “She brings wisdom and light… thoughtful in her approach to her work, timely, and knowledgeable.” Another highlighted her as “extremely organized, timely, and efficient,” especially in facilitating significant community spaces.</p>
                                     <p>ositioned at the intersection of equity, leadership, and community transformation, Lilac Impact Services is recognized for combining strategic clarity with compassionate facilitation—making it a trusted partner for organizations pursuing social change in Memphis and beyond.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "kayla@lilacimpactservices.com",

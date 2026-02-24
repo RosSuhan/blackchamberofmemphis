@@ -21,15 +21,7 @@ export const totsPlayWorld : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/CC7JzoJXLEYC8ZlUI",
     address : "3184 E. Raines Road, Memphis, Tn 38118",
     email : "info@totsplayworld.com",

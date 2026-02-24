@@ -35,15 +35,7 @@ export const dottedIAlliance : MembersListType = {
                                         <li><strong>End-to-End Support:</strong> From training workshops to compliance tracking systems, they connect the entire project lifecycle (“Connecting the Dots”).</li>
                                     </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "info@dottedialliance.com",

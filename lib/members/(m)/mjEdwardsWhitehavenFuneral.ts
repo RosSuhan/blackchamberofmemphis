@@ -21,15 +21,7 @@ export const mjEdwardsWhitehavenFuneral : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/SQ5MoE6UAOnBPx2VP",
     address : "5494 Elvis Presley Blvd Memphis 38116",
     email : "",

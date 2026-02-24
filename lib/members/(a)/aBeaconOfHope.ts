@@ -28,15 +28,15 @@ export const beaconOfHope : MembersListType = {
                                     <p>Beyond caregiving, A Beacon of Hope delivers <strong>immigration documentation assistance</strong>, offering reliable help with completing and filing immigration forms—such as renewals and status adjustments—with privacy and precision.</p>
                                     <p>They further expand their service portfolio with <strong>health & diagnostic testing</strong>, offering accurate, private, and convenient health checks and exam services suited to a wide range of needs. Additionally, they provide <strong>DNA & immigration testing</strong> that is court-admissible and handled with strict confidentiality—ideal for legal or personal documentation purposes.</p>
                                     <p>Located at 1840 Pyramid Place, Suite 213, Memphis, TN, A Beacon of Hope Home Care provides free consultations (typically $35) to help potential clients explore the best support options for their needs. Their inclusive approach, reliability, and depth of service make them a valuable resource for families navigating health, legal, or transitional challenges with confidence and care.</p>`,
-    businessHours : {
-        monHours : "Open 24 hours",
-        tueHours : "Open 24 hours",
-        wedHours : "Open 24 hours",
-        thuHours : "Open 24 hours",
-        friHours : "Open 24 hours",
-        satHours : "Open 24 hours",
-        sunHours : "Open 24 hours"
-    },
+    businessHours : [
+        { day : "Monday", hours : "24 hours"},
+        { day : "Tuesday", hours : "24 hours"},
+        { day : "Wednesday", hours : "24 hours"},
+        { day : "Thursday", hours : "24 hours"},
+        { day : "Friday", hours : "24 hours"},
+        { day : "Saturday", hours : "24 hours"},
+        { day : "Sunday", hours : "24 hours"},
+    ],
     addressLink : "https://share.google/O8Y3fSNMhaoQibiMv",
     address : "1840 Pyramid Pl Suite 213, Memphis, TN 38132",
     email : "support@abeaconofhopehomecare.com",
@@ -48,5 +48,6 @@ export const beaconOfHope : MembersListType = {
     linkedIn : "",
     linktree : "",
     twitter: "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : '',
 }

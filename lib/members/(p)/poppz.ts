@@ -32,15 +32,15 @@ export const poppz : MembersListType = {
                                         <li><strong>Community Connection:</strong> A local favorite that brings the fun to events across the Mid-South.</li>
                                         <li><strong>Bright & Bubbly Vibe:</strong> Friendly team and drinks that make any event pop.`,
     gallery : [],
-    businessHours : {
-        monHours : "10am - 8pm",
-        tueHours : "10am - 8pm",
-        wedHours : "10am - 8pm",
-        thuHours : "10am - 8pm",
-        friHours : "10am - 8pm",
-        satHours : "10am - 8pm",
-        sunHours : "12pm - 6pm"
-    },
+    businessHours : [
+        { day : "Monday", hours : "10am - 8pm",},
+        { day : "Tuesday", hours : "10am - 8pm",},
+        { day : "Wednesday", hours : "10am - 8pm",},
+        { day : "Thursday", hours : "10am - 8pm",},
+        { day : "Friday", hours :  "10am - 8pm"},
+        { day : "Saturday", hours : "10am - 8pm",},
+        { day : "Sunday", hours : "12pm - 6pm"},
+    ],
     addressLink : "https://share.google/RrJU9g4k1aIQTeVKg",
     address : "4600 Merchants Park Cir Suite 137, Collierville, TN 38017",
     email : "hello@poppzdrinks.com",

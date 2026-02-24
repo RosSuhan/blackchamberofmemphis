@@ -36,15 +36,15 @@ export const memphisUrbanLeague : MembersListType = {
         <p>True to its civil rights heritage, the Memphis Urban League advocates for equity and inclusion, engaging local leaders and stakeholders to influence policy, promote civic participation, and amplify community voices. Signature events such as forums, panel discussions, and public advocacy efforts reflect the League’s role in shaping a more just and equitable Memphis.</p>
         <p>Through comprehensive programs, dedicated advocacy, and community collaboration, Memphis Urban League continues to create meaningful opportunities, strengthen families, and empower residents to overcome barriers and thrive.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 4pm",
-        tueHours : "9am - 4pm",
-        wedHours : "9am - 4pm",
-        thuHours : "9am - 4pm",
-        friHours : "9am - 4pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 4pm"},
+        { day : "Tuesday", hours : "9am - 4pm"},
+        { day : "Wednesday", hours : "9am - 4pm"},
+        { day : "Thursday", hours : "9am - 4pm"},
+        { day : "Friday", hours : "9am - 4pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/9qHL1ysiHGa29zEG4",
     address : "413 N. Cleveland St., Memphis, TN  38104",
     email : "gjonescarson@memul.org",

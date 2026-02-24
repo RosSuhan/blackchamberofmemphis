@@ -51,15 +51,15 @@ export const tabicanTechSol : MembersListType = {
                                     <p>This mix suggests Tabican Technology may serve sectors like healthcare (through telemedicine support), small to mid-sized businesses (via VoIP and IT support), and organizations seeking eco-conscious technology disposal. The company's mission, history, and service philosophy remain undisclosed—details that would strengthen the profile significantly.</p>
                                     <p>Once the actual services, client base, company history, or mission is shared, I can refine this entry into a polished, authentic directory description.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8am - 5pm",
-        tueHours : "8am - 5pm",
-        wedHours : "8am - 5pm",
-        thuHours : "8am - 5pm",
-        friHours : "8am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8am - 5pm",},
+        { day : "Tuesday", hours : "8am - 5pm",},
+        { day : "Wednesday", hours : "8am - 5pm",},
+        { day : "Thursday", hours : "8am - 5pm", },
+        { day : "Friday", hours :"8am - 5pm", },
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours :"Closed" },
+    ],
     addressLink : "https://share.google/fXZnxUVaNpj6mGq6O",
     address : "Memphis",
     email : "tabitha.calvin@tabicantechnology.com",

@@ -33,15 +33,7 @@ export const sheGotGameLeague : MembersListType = {
                                     <h3>Why It Matters:</h3>
                                     <p>SGG fosters equality and empowerment through sport—creating spaces where women and girls connect, build confidence, and chase their athletic and life goals.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/ilrDpG7cbtFFBVHMM",
     address : "2809 Kirby Pkwy, Ste 116-154, Memphis, Tn, 38119",
     email : "ceo@shegotgameleague.com",

@@ -23,15 +23,15 @@ export const systematicEquitySol : MembersListType = {
         <p>Systematic Equity Solutions serves a diverse client base, particularly entities seeking to refine internal systems, governance, or policy implementation. Given its local roots in Memphis, it is likely to understand region-specific business dynamics, regulatory environments, and the challenges local organizations face—to deliver consulting that is both practical and responsive. Systematic Equity Solutions has had client engagements across the country.</p>
         <p>The firm operates out of a Memphis location and is classified under Dun & Bradstreet for its consulting services. The leadership brings credibility through its principal’s role, and Systematic Equity Solutions seems well suited for clients who want to engage a consulting partner capable of exploring scientific, technical, and management-oriented solutions.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm",},
+        { day : "Tuesday", hours : "9am - 5pm",},
+        { day : "Wednesday", hours : "9am - 5pm",},
+        { day : "Thursday", hours : "9am - 5pm",},
+        { day : "Friday", hours : "9am - 5pm",},
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours :  "Closed"},
+    ],
     addressLink : "https://share.google/k8TQWLyRgk5mSlPQC",
     address : "5821 Park Ave #17659, Memphis, TN 38119",
     email : "dcray5@systematices.com",

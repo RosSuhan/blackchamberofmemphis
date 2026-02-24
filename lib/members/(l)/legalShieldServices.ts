@@ -19,15 +19,7 @@ export const legalShieldServices : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "4516 Polk Lane, Olive Branch, MS, 38654",
     email : "hla587@yahoo.com",

@@ -21,15 +21,7 @@ export const theBlackPearlNailAcademy : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "1012 East Raines Road, Memphis, Tn 38116",
     email : "theblackpearlnailacademy@gmail.com",

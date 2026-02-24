@@ -22,15 +22,7 @@ export const capstoneSolGroup : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "9575 Woodland Creek Lane Memphis 38018",
     email : "derekb@capstonesolutionsgroup.com",

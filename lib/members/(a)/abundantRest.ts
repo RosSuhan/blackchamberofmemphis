@@ -20,15 +20,7 @@ export const abundantRest : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "65 Harbor Town Square Apt #101, Memphis, Tn, 38103",
     email : "llrowsey@gmail.com",

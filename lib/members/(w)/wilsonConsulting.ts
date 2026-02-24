@@ -25,15 +25,7 @@ export const wilsonConsulting : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "5865 Ridgeway Center Parkway, Suite 300, Memphis, Tn, 38120",
     email : "robin@wilsonconsultingllc.info",

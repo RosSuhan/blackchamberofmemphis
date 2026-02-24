@@ -20,15 +20,7 @@ export const graceBaptistChurch : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/ZNV1cuvluZAq6NDWS",
     address : "1203 N Manassas St, Memphis",
     email : "",

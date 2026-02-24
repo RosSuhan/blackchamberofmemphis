@@ -23,15 +23,7 @@ export const artichokeh2o : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "3725 CHAMPION HILLS STE 3200 Memphis 38125",
     email : "articlife@outlook.com",

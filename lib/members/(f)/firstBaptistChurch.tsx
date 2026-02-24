@@ -20,15 +20,7 @@ export const firstBaptistChurch : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/4fWFDiWm4x5al9Q3l",
     address : "2835 Broad Ave, Memphis, TN 38112",
     email : "info@fbcbroad.org",

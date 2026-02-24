@@ -27,15 +27,7 @@ export const faithBusSol : MembersListType = {
         <p><strong>F.A.I.T.H Business Solutions</strong> understands the operational demands faced by growing companies and government-facing vendors and provides scalable back-office solutions designed to reduce burdens, increase efficiency, and support contract readiness. The firm’s approach is professional, confidential, and detail-oriented, ensuring clients maintain accurate records, consistent procedures, and strong business infrastructure.</p>
         <p><strong>F.A.I.T.H Business Solutions</strong> serves as a trusted partner for organizations seeking reliable administrative expertise, responsive support, and systems that promote sustainable growth, compliance, and operational success.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/HRtqp2cqbDEnJy4oo",
     address : "6228 East Shelby Dr.",
     email : "info@faithbusinesspro.com",

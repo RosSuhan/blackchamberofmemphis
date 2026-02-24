@@ -28,15 +28,7 @@ export const midSouthLatinoChamber : MembersListType = {
                                     <p>With a board comprising experienced, diverse professionals, MLCC fosters an inclusive chamber environment where all are welcome to leverage shared values of excellence, leadership, inclusion, and progress.</p>
                                     <p>As the fastest-growing business organization of its kind in the region, MLCC continues to activate entrepreneurial growth and cultural exchange—connecting Latino businesses with broader markets, civic entities, and opportunities for sustainable advancement.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "",
     email : "info@mlcctn.org",

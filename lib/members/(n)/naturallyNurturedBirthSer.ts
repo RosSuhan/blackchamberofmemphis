@@ -22,15 +22,7 @@ export const naturallyNurturedBirthSer : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/uSPilKtJ1J2bFLbZQ",
     address : "3514 Winhoma Drive Memphis 38118 ",
     email : "naturallynurturedbirth@gmail.com",

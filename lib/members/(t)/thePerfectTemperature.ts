@@ -20,15 +20,7 @@ export const thePerfectTemperature : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "803 Randle Street, Memphis TN 38107",
     email : "joe@theperftemp.com",

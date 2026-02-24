@@ -20,15 +20,7 @@ export const theSolutionFactory : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/9DKV1WQ8oY0O5n5Gn",
     address : "5865 Ridgeway Center Parkway, Memphis, Tn 38120",
     email : "info@solutionfactore.com",

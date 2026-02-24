@@ -22,15 +22,7 @@ export const theLegacyConsultingStaffingAgency : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/wBENHh1xwcCNB49sO",
     address : "3124 Thomas St, Memphis, TN 38127",
     email : "thelegacyconsultingandstaffing@gmail.com",

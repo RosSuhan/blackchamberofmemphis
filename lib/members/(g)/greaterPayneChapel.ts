@@ -20,15 +20,7 @@ export const greaterPayneChapel : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/zduIvdTWQM5o9Rc9F",
     address : "1087 N Watkins St, Memphis, TN 38107",
     email : "",

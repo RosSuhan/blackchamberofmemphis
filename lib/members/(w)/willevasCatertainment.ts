@@ -25,15 +25,7 @@ export const willevasCatertainment : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "4796 Gill Rd, 220 S Main St, Memphis, TN, 38109",
     email : "willevas@gmail.com",

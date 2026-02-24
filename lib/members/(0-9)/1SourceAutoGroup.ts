@@ -19,15 +19,7 @@ export const oneSourceAutoGroup : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/xZ1Ufdi8tgBi6iSDH",
     address : "2999 Summer Ave Memphis 38112",
     email : "1sourceautogroupllc@gmail.com",

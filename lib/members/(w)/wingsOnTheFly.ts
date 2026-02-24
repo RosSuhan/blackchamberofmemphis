@@ -28,15 +28,7 @@ export const wingsOnTheFly : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/V1776BPZZniF9qHhe",
     address : "4560 Millbranch Rd, Memphis, TN 38116",
     email : "wingsontheflyfoodtrucks@gmail.com",

@@ -37,15 +37,7 @@ export const pcss : MembersListType = {
                                         <li><strong>Flexible Solutions</li> tailored to business needs, including full service contracts and preventative care.</li>
                                     </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/HApkLFuLngPZ9eBQ9",
     address : "1910 Madison Ave, Suite 2379, Memphis, TN 38104",
     email : "sales@gopcss.net",

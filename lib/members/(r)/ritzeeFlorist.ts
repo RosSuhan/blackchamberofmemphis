@@ -35,15 +35,7 @@ export const ritzeeFlorist : MembersListType = {
             <li>Bridal & Groom Event Styling<br>(Additional services available upon request)</li>
         </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "306 S Dudley St, Memphis, TN 38104",
     email : "sharon.coleman38@yahoo.com",

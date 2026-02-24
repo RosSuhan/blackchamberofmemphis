@@ -39,15 +39,15 @@ export const hqDirect : MembersListType = {
                                         <li><strong>Highly Rated & Responsive:</strong> Local reviews note swift response, reliable staffing, and treated with dignity—rated 4.7★ on multiple platforms.</li>
                                     </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "5am - 6pm",
-        tueHours : "5am - 6pm",
-        wedHours : "5am - 6pm",
-        thuHours : "5am - 6pm",
-        friHours : "5am - 6pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "5am - 6pm"},
+        { day : "Tuesday", hours : "5am - 6pm"},
+        { day : "Wednesday", hours : "5am - 6pm"},
+        { day : "Thursday", hours : "5am - 6pm"},
+        { day : "Friday", hours : "5am - 6pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/1CgeoyFC6Cb3bbKLp",
     address : "1023 Cooper St, Memphis, TN 38104",
     email : "ljefferson@hqdirect.com",

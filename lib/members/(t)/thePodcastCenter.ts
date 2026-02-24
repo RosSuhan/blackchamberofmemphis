@@ -24,15 +24,15 @@ export const thePodcastCenter : MembersListType = {
                                     <p>With strategic partnerships such as Flinn Broadcasting and Comcast Southeast, The Podcast Center also facilitates radio station management and syndication, including managing Bumpin 96.3 FM and Right On Radio 87.7. </p>
                                     <p>Under Tina Tilton’s leadership, a media personality with experience across Memphis radio and television, the studio continues to nurture emerging creators. The Midtown  location now serves as a production, educational, and incubator platform for the region’s future media talent with the other side providing event opportunities holding 125 (seated) and and 225 (standing).</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm",},
+        { day : "Tuesday", hours : "9am - 5pm",},
+        { day : "Wednesday", hours : "9am - 5pm",},
+        { day : "Thursday", hours : "9am - 5pm",},
+        { day : "Friday", hours : "9am - 5pm"},
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/L8mXCmCGLGdfxGqwx",
     address : "6510 Stage Rd # 2, Bartlett, TN 38134",
     email : "thepodcastcenter@gmail.com",

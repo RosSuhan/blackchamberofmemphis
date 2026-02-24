@@ -25,15 +25,7 @@ export const mobileDrugTest : MembersListType = {
                                     <p>Whether at businesses, homes, or their centralized lab, appointments are efficient—most clients complete screenings in under 15 minutes—with results delivered swiftly while ensuring strict confidentiality . With a mission dedicated to promoting safety, wellness, and legal reliability, the team empowers clients—from employers to individuals—with accurate, accessible, and court-admissible testing solutions.<p>
                                     <p>Serving Memphis and nearby Northern Mississippi, Mobile Drug Testing & DNA Paternity stands as a trusted local partner, supporting secure workplaces, legal processes, family matters, and health objectives with integrity and precision.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "5830 Mt Moriah Rd, Suite 9, Memphis, Tn 38115",
     email : "mobiledrugtesters@gmail.com",

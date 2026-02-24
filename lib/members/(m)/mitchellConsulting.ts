@@ -23,15 +23,15 @@ export const mitchellConsulting : MembersListType = {
                                     <p>The leadership style at Mitchell Consulting focuses on building bridges across divides. By actively engaging with diverse perspectives, the team ensures that all voices are heard and empowered to make a difference. Their approach is both strategic and compassionate, always centered on delivering tangible results that elevate the quality of life for all.</p>
                                     <p>Whether working to expand access to affordable housing, championing local initiatives, creating safe communities, or helping small businesses thrive, Mitchell Consulting stands at the forefront of efforts to make Memphis a more inclusive and prosperous city. Their unwavering commitment to building a better community is not just a vision—it is a call to action for all to come together and create lasting, positive change.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm",},
+        { day : "Tuesday", hours : "9am - 5pm",},
+        { day : "Wednesday", hours : "9am - 5pm",},
+        { day : "Thursday", hours : "9am - 5pm",},
+        { day : "Friday", hours : "9am - 5pm",},
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://maps.app.goo.gl/FyUVKuuqwdi8k6kC6",
     address : "534N 2nd Street, Memphis, Tn, 38107",
     email : "tanja.mitchellconsulting@gmail.com",

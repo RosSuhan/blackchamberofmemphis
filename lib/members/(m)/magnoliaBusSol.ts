@@ -33,15 +33,7 @@ export const magnoliaBusSol : MembersListType = {
                                         <li><strong>Minority-Owned with Community Focus:</strong> Bringing diverse ownership and customer-centric values to every commercial project.</li>
                                     </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/QLTz6EuKEbJywYTr7",
     address : "5000 Summer Ave, Memphis, TN 38122",
     email : "jamel.tate@magnoliabusinesssolutions.net",

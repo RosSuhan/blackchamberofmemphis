@@ -34,15 +34,15 @@ export const otekaTechnologies : MembersListType = {
                                     <p>Oteka holds an 8(a) SBA certification and self-identifies as a Minority, Woman-Owned Small Business (WOSB), enabling it to deliver government and private-sector projects with agility and equitable impact.</p>
                                     <p>As a trusted member of the Memphis business community, Oteka is recognized for its quality craftsmanship, customer-oriented service, and smart-city infrastructure expertise.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "8am - 5pm",
-        tueHours : "8am - 5pm",
-        wedHours : "8am - 5pm",
-        thuHours : "8am - 5pm",
-        friHours : "8am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "8am - 5pm",},
+        { day : "Tuesday", hours : "8am - 5pm",},
+        { day : "Wednesday", hours : "8am - 5pm",},
+        { day : "Thursday", hours : "8am - 5pm",},
+        { day : "Friday", hours : "8am - 5pm",},
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://share.google/dYabXQxEhT9JSD1C1",
     address : "3349 Winbrook Dr, Memphis, TN 38116",
     email : "alandas@otekatech.com",

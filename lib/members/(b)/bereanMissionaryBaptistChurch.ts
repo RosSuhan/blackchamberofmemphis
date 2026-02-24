@@ -20,15 +20,7 @@ export const bereanMissionaryBaptistChurch : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://share.google/LkKsWBraD7P2eYrC4",
     address : "1666 E Raines Rd, Memphis",
     email : "",

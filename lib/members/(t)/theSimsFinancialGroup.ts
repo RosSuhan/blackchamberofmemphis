@@ -18,15 +18,7 @@ export const theSimsFinancialGroup : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/TKHnvVq",
     address : "855 RidgeLake Blvd. #303	, Memphis, Tn 38120",
     email : "csims@simsfinancialgroup.com",

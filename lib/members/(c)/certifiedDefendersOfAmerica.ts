@@ -23,15 +23,15 @@ export const certifiedDefendersOfAmerica : MembersListType = {
                                     <p>The specialty areas cover a broad range of settings: from city and county buildings to federal properties; from commercial real estate to construction zones; and from emergency services and special event security to continuous vehicle patrols. The company also includes metal detection screening officers, bolstering entrance security for locations where controlled access is critical.<p>
                                     <p>Seeing safety as more than a static presence, the company prioritizes consistent communication, regular on-site management, and adaptive strategies to address evolving risk. Whether the challenge is preventing unauthorized access, deterrence, or rapid response readiness, Certified Defenders of America strives to provide peace of mind to clients through rigorous standards, integrity, and excellence in operations.</p>
                                     <p>With its headquarters in Memphis, the firm serves a diverse clientele seeking reliable, professional security services grounded in both tradition and modern best practices.</p>`,
-    businessHours : {
-        monHours : "9am - 4pm",
-        tueHours : "9am - 4pm",
-        wedHours : "9am - 4pm",
-        thuHours : "9am - 4pm",
-        friHours : "9am - 4pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 4pm"},
+        { day : "Tuesday", hours : "9am - 4pm"},
+        { day : "Wednesday", hours : "9am - 4pm"},
+        { day : "Thursday", hours : "9am - 4pm"},
+        { day : "Friday", hours : "9am - 4pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://maps.app.goo.gl/FUDMQifAMqAfmQSC9",
     address : "5100 Poplar Ave (27th Floor), Memphis, TN 38137",
     email : "admin@certifieddefenders.com",
@@ -43,5 +43,6 @@ export const certifiedDefendersOfAmerica : MembersListType = {
     instagram : "",
     youtube : "",
     linktree : "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

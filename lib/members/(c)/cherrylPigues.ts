@@ -28,15 +28,7 @@ export const cherrylPigues : MembersListType = {
                                         <li><strong>Community Service & Mentorship:</strong> Volunteer opportunities, phone banks, and crisis-relief efforts that support vulnerable and underserved populations.</li>
                                     </ul>
                                     <p>Cherryl's leadership has been spotlighted across platforms, from MLK50 and LinkedIn success stories to SisterReach celebrations, honoring her resilience and profound impact.</p>`,
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "856 Faxon Ave, Memphis, Tn, 38105",
     email : "cherryl@cherrylcrite.com",
@@ -48,5 +40,6 @@ export const cherrylPigues : MembersListType = {
     youtube : "https://www.youtube.com/@cherrylpiguescrite3557",
     linkedIn : "https://www.linkedin.com/in/cherryl-pigues-crite-738b8728",
     linktree : "",
-    tiktok : ""
+    tiktok : "",
+    pinterest : ''
 }

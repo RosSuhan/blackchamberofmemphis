@@ -28,15 +28,7 @@ export const nineOoneSugarDaddysCigars : MembersListType = {
     //     <p>In addition to its curated cigar offerings, the business operates as a mobile cigar lounge, a high-growth and innovative service model that brings a luxury cigar experience directly to clients. Designed to meet the needs of modern consumers, the mobile lounge provides an elevated alternative to traditional cigar shops by offering on-site cigar experiences for corporate events, weddings, private celebrations, and special occasions. This personalized approach allows guests to enjoy premium cigars in a relaxed, social environment tailored to the event.</p>
     //     <p>By combining premium products, expert sourcing, and a flexible mobile service, the business creates memorable cigar experiences that go beyond simple retail. Its focus on quality, presentation, and customer engagement positions it as a distinctive player in the cigar industry, offering both sophistication and accessibility. Whether serving individual enthusiasts or hosting large-scale events, the business remains committed to delivering an exceptional cigar experience rooted in craftsmanship, culture, and connection.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "7341 Thomas Drive",
     email : "ervin_puryear@hotmail.com",

@@ -24,15 +24,15 @@ export const theCultureCollab : MembersListType = {
                                     <p>With a team rooted in culture-first values and Memphis heritage, the organization has attracted national clientele while maintaining a strong local presence. Their brand is built on the belief in unapologetic creativity, intentional disruption, and strategic authenticity—empowering clients to build meaningful, sustainable brands and voices across markets.</p>
                                     <p>If you're searching for a marketing partner that understands cultural nuance. The Culture Collab presents a dual offering: culturally grounded consulting and influencer marketing services, and brand activations" in the heart of Memphis.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "Closed",
-        friHours : "Closed",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "9am - 5pm",},
+        { day : "Tuesday", hours : "9am - 5pm",},
+        { day : "Wednesday", hours :"9am - 5pm", },
+        { day : "Thursday", hours : "Closed",},
+        { day : "Friday", hours :  "Closed",},
+        { day : "Saturday", hours : "Closed",},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://g.co/kgs/ZqJzMFo",
     address : "6041 Mt. Moriah Rd Ext, Suite 1, Memphis, Tn, 38115",
     email : "info@theculturecollab.co",

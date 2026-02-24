@@ -35,15 +35,15 @@ export const jasperFloatSpaWellness : MembersListType = {
                                         <li>Over 200 glowing Google reviews and features on TripAdvisor and Yelp.</li>
                                         <li>A people-first, professional atmosphere that caters to burnout executives, creatives, and local business leaders.</li>`,
     gallery : [],
-    businessHours : {
-        monHours : "Closed",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "9am - 3pm",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "Closed"},
+        { day : "Tuesday", hours : "9am - 5pm"},
+        { day : "Wednesday", hours : "9am - 5pm"},
+        { day : "Thursday", hours : "9am - 5pm"},
+        { day : "Friday", hours : "9am - 5pm"},
+        { day : "Saturday", hours : "9am - 3pm"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://maps.app.goo.gl/dChTwecPnLTXx4Su9",
     address : "60 S Main St Suite 102, Memphis, TN 38103",
     email : "antwanette@jasperfloatspa.com",

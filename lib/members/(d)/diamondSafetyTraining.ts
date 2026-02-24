@@ -21,15 +21,7 @@ export const diamondSafetyTraining : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "6921 E. 111th St. Suite# 17780, Kansas City, MO 64134",
     email : "info@diamondsafetytraining.com",

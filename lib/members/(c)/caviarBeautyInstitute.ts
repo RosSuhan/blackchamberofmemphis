@@ -21,15 +21,7 @@ export const caviarBeautyInstitute : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "348 New Byhalia Rd., Ste. 1, Collierville, Tn 38017",
     email : "caviarbeautyinstitute@gmail.com",

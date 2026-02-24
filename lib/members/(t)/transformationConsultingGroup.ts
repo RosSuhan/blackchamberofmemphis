@@ -23,15 +23,7 @@ export const transformationConsultingGroup : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "1331 Union Avenue Suite 1250, Memphis TN 38104",
     email : "transformationcg@gmail.com",

@@ -17,15 +17,7 @@ export const ahmadZaffarese : MembersListType = {
     categoryTag: [],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "One South Broad St #1810, Philadelphia, PA, 19107",
     email : "wahmad@azlawllc.com",

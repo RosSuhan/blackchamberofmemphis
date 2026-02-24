@@ -19,15 +19,7 @@ export const bectonCapitalCoaching : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "9am - 5pm",
-        tueHours : "9am - 5pm",
-        wedHours : "9am - 5pm",
-        thuHours : "9am - 5pm",
-        friHours : "9am - 5pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [],
     addressLink : "https://share.google/T9IQAIrwdrcbKkWQx",
     address : "6000 Poplar Avenue Memphis 38119",
     email : "jamesbecton@bectoncapital.com",

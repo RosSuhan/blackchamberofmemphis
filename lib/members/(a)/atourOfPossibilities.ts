@@ -31,15 +31,7 @@ export const tourOfPossibilities : MembersListType = {
             <li><strong>Flexible Formats & Accessibility</strong>: Options for public, private, virtual, groups, families, and organizations.</li>
         </ul>`,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/WBtNEoLE7dDtgxF58",
     address : "119 Riverside Dr, Memphis, TN 38103",
     email : "atopmemphiscmb@gmail.com",

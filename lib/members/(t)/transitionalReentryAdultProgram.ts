@@ -23,15 +23,7 @@ export const transitionalReentryAdultProgram : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "",
     address : "9971 Monarch Dr, Cordova, Tn 38016",
     email : "portiamoore@trapevolution.com",

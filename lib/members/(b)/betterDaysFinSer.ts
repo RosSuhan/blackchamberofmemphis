@@ -24,15 +24,15 @@ export const betterDaysFinSer : MembersListType = {
                                     <p>With over 20 years of experience among its practitioners, the team at Better Days positions itself as a trusted partner rather than merely a service provider. Their ethos revolves around creating “better days” for clients: reducing stress, saving time, and enabling financial peace of mind.</p>
                                     <p>In the competitive financial services landscape, Better Days Financial distinguishes itself through its local presence in Memphis, commitment to education, and full-spectrum approach to wealth and tax strategy. Whether a family looking to solidify its financial future or a business aiming for sustainable growth, they offer an integrated suite of services designed to guide clients toward better financial health.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "12pm - 4pm",
-        tueHours : "12pm - 4pm",
-        wedHours : "12pm - 4pm",
-        thuHours : "12pm - 4pm",
-        friHours : "12pm - 4pm",
-        satHours : "Closed",
-        sunHours : "Closed"
-    },
+    businessHours : [
+        { day : "Monday", hours : "12pm - 4pm"},
+        { day : "Tuesday", hours : "12pm - 4pm"},
+        { day : "Wednesday", hours : "12pm - 4pm"},
+        { day : "Thursday", hours : "12pm - 4pm"},
+        { day : "Friday", hours : "12pm - 4pm"},
+        { day : "Saturday", hours : "Closed"},
+        { day : "Sunday", hours : "Closed"},
+    ],
     addressLink : "https://maps.app.goo.gl/r7KQSngpdi1Qy1SP6",
     address : "6073 Mt. Moriah Rd. Ext. Suite 17, Memphis, TN. 38115",
     email : "info@betterdaysfinancial.com",

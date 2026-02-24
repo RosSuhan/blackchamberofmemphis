@@ -34,15 +34,15 @@ export const giLocksmith : MembersListType = {
         <p>Automotive services include emergency lockout assistance, key cutting and programming, ignition repair, and replacement key fobs for many makes and models — providing quick, professional help when drivers are stranded or facing lost keys.</p>
         <p>Known for their responsiveness, expertise with major lock brands, and commitment to affordable pricing, GI Locksmith stands out as a trusted local partner for security and locksmith needs in the Memphis community.</p>`,
     gallery : [],
-    businessHours : {
-        monHours : "Open 24 Hours",
-        tueHours : "Open 24 Hours",
-        wedHours : "Open 24 Hours",
-        thuHours : "Open 24 Hours",
-        friHours : "Open 24 Hours",
-        satHours : "Open 24 Hours",
-        sunHours : "Open 24 Hours"
-    },
+    businessHours : [
+        { day : "Monday", hours : "24 Hours"},
+        { day : "Tuesday", hours : "24 Hours"},
+        { day : "Wednesday", hours : "24 Hours"},
+        { day : "Thursday", hours : "24 Hours"},
+        { day : "Friday", hours : "24 Hours"},
+        { day : "Saturday", hours : "24 Hours"},
+        { day : "Sunday", hours : "24 Hours"},
+    ],
     addressLink : "https://maps.app.goo.gl/KYqHJGGQMeBNJsPK8",
     address : "9 North 2nd Street Suite 102 Memphis 38103",
     email : "giunlocks901@gmail.com",

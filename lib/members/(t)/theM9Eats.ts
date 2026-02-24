@@ -22,15 +22,7 @@ export const theM9Eats : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [],
-    businessHours : {
-        monHours : "",
-        tueHours : "",
-        wedHours : "",
-        thuHours : "",
-        friHours : "",
-        satHours : "",
-        sunHours : ""
-    },
+    businessHours : [],
     addressLink : "https://g.co/kgs/bjwEoUH",
     address : "1249 Heistan Place, Memphis, TN 38104",
     email : "them9memphis@yahoo.com",
