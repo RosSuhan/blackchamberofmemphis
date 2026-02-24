@@ -17,7 +17,7 @@ export default function MemberHeroSection({
     path
 } : memberHeroSectionProp){
 
-    const [ shareButton, setShareButton ] = useState(true)
+    const [ shareButton, setShareButton ] = useState(false)
 
     const handleFacebookShare = useCallback(()=>{
         const shareUrl = `https://blackchamberofmemphis.org/members/${path}`;
