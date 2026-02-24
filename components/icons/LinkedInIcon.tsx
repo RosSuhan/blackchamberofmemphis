@@ -4,7 +4,7 @@ export function Linkedin2(props: SVGProps<SVGSVGElement>) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 2 13 16"
+            viewBox="1 1 15 14"
             {...props}
         >
         <path
