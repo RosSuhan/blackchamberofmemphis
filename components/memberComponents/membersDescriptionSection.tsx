@@ -32,17 +32,17 @@ export default function MembersDescriptionSection({
                     Information
                 </button>
 
-                {gallery ? 
-                    <button
-                        type='button'
-                        className={clsx(buttonActive ? style.memberActiveButtonTwo : style.memberDescriptionButtons)}
-                        onClick={() => setButtonActive(true)}
-                    >
-                        Gallery
-                    </button>
-                : null}
-
-                
+                {gallery.length > 0 &&
+                    (
+                        <button
+                            type='button'
+                            className={clsx(buttonActive ? style.memberActiveButtonTwo : style.memberDescriptionButtons)}
+                            onClick={() => setButtonActive(true)}
+                        >
+                            Gallery
+                        </button>
+                    )
+                }
             </div>
 
             {longBusDescription ? 
