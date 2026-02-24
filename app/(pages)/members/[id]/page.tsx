@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             images: selectedMember.profileLogo
                 ? [
                     {
-                        url: `https://blackchamberofmemphis.org/${selectedMember.profileLogo}.webp`,
+                        url: `https://blackchamberofmemphis.org/members/${selectedMember.profileLogo}.webp`,
                         width: 1200,
                         height: 630,
                     },
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: selectedMember.businessName,
             description: selectedMember.profileDescription,
             images: selectedMember.profileLogo
-                ? [`https://blackchamberofmemphis.org/${selectedMember.profileLogo}.webp`]
+                ? [`https://blackchamberofmemphis.org/members/${selectedMember.profileLogo}.webp`]
                 : [],
         },
     }
