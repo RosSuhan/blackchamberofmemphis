@@ -7,6 +7,7 @@ import { locksmith4Less } from './(l)/locksmith4Less'
 import { lucyjaHygge } from './(l)/lucyjaHygge'
 import { lctcityProductions } from './(l)/lctcityProductions'
 import { leveledUpMoney } from './(l)/leveledUpMoney'
+import { letsBeFrank } from './(l)/letsBeFrank'
 
 export const membersLlist = [
     leadingInLifeEnterprise,
@@ -18,4 +19,5 @@ export const membersLlist = [
     lucyjaHygge,
     lctcityProductions,
     leveledUpMoney,
+    letsBeFrank,
 ]
