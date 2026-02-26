@@ -1,3 +1,23 @@
+.reverendPageHero {
+    width: 100%;
+    height: 100svh;
+    background-image: url(/assets/reverendmobilebackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.reverendHeroBlock{
+    width: 90%;
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-shadow: #000000 3px 3px 5px;
+    text-align: center;
+}
+
 .reverendJesseTextSection {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +38,24 @@
     justify-content: center;
 }
 
+@media (min-width:400px) {
+    .reverendHeroBlock {
+        font-size: 2.2rem;
+    }
+}
+
 @media (min-width:700px) {
+    .reverendPageHero {
+        height: 400px;
+        background-image: url(/assets/reverendpagetitleimage.webp);
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .reverendHeroBlock{
+        width: 70%;
+    }
+
     .reverendJesseArticle {
         width: 55%;
         padding: 0 1rem;
@@ -30,6 +67,15 @@
 }
 
 @media (min-width:800px) {
+    .reverendPageHero {
+        height: 350px;
+    }
+    
+    .reverendHeroBlock{
+        width: 60%;
+        margin-left: 2rem;
+    }
+
     .reverendJesseArticle {
         width: 55%;
     }
@@ -50,6 +96,11 @@
 }
 
 @media (min-width:1000px) {
+    .reverendHeroBlock{
+        /* width: 60%; */
+        margin-left: 4rem;
+    }
+
     .reverendJesseArticle {
         width: 45%;
         padding: 0 1.5rem;

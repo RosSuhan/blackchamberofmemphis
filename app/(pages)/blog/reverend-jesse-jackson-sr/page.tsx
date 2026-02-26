@@ -1,15 +1,32 @@
-import PageTitleSection from '@/components/pageTitleSection/page'
+// import PageTitleSection from '@/components/pageTitleSection/page'
 import style from './reverend.module.css'
+import localFont from 'next/font/local'
+
+const specialFont = localFont({
+    src : './../../../fonts/Edwardian Script ITC/edwardianscriptitc.ttf',
+    weight: '600',
+    style : 'normal',
+})
 
 export default function ReverendJesseJackson(){
     return(
         <main
             className={style.reverendJessePage}
         >
-            <PageTitleSection
-                pageTitle='Honoring a Tireless Advocate for Equality'
-            />
-
+            <section
+                className={style.reverendPageHero}
+            >
+                <div
+                    className={style.reverendHeroBlock}
+                >
+                    <h1
+                        className={specialFont.className}
+                    >
+                        Honoring a Tireless Advocate for Equality
+                    </h1>
+                </div>
+            </section>
+            
             <section
                 className={style.reverendJesseTextSection}
             >
