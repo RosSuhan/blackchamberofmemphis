@@ -1,4 +1,3 @@
-// 'use client'
 import type { Metadata } from "next";
 import MemberContactSection from "@/components/memberComponents/memberContactSection";
 import MemberHeroSection from "@/components/memberComponents/memberHeroSection";

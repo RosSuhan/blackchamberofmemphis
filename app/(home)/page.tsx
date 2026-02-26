@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'Black Chamber of Memphis | Empowering Black-Owned Businesses',
   description:
-    'Empowering Black-owned businesses and entrepreneurs across Greater Memphis through advocacy, networking, and business growth programs. Join the Black Chamber of Memphis and build lasting economic opportunity.',
+    'The Black Chamber of Memphis empowers Black-owned businesses across Greater Memphis through advocacy, networking, education, and economic development programs. Join today and grow your business.',
   keywords: [
     'Black Chamber of Commerce Memphis',
     'Black-owned businesses Memphis',
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: 'https://blackchamberofmemphis.org' },
   openGraph: {
-    title: 'Black Chamber of Memphis',
+    title: 'Empowering Black-Owned Businesses in Greater Memphis',
     description:
-      'Empowering Black-owned businesses and entrepreneurs across Greater Memphis through advocacy, networking, and business growth programs.',
+      'Advocacy. Networking. Growth. The Black Chamber of Memphis is building lasting economic opportunity across Greater Memphis. Join the movement.',
     url: 'https://blackchamberofmemphis.org',
     siteName: 'Black Chamber of Memphis',
     images: [
       {
-        url: '/images/og-home.jpg',
+        url: '/assets/bcom-building-black-business-in-memphis-since-1970.png',
         width: 1200,
         height: 630,
         alt: 'Black Chamber of Memphis Community',
@@ -35,10 +35,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Black Chamber of Memphis',
+    title: 'Empowering Black-Owned Businesses in Greater Memphis',
     description:
-      'Connecting and empowering Black entrepreneurs across Greater Memphis.',
-    images: ['/images/og-home.jpg'],
+      'Advocacy. Networking. Growth. The Black Chamber of Memphis is building lasting economic opportunity across Greater Memphis. Join the movement.',
+    images: ['/assets/bcom-building-black-business-in-memphis-since-1970.png'],
   },
 };
 

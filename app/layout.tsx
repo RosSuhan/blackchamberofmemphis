@@ -54,7 +54,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
+              '@type': ['Organization', 'LocalBusiness'],
               name: 'Black Chamber of Memphis',
               alternateName: ['BCOM', 'Black Chamber Memphis'],
               url: 'https://blackchamberofmemphis.org',
@@ -68,7 +68,7 @@ export default function RootLayout({
               ],
               contactPoint: {
                 '@type': 'ContactPoint',
-                telephone: '+1-901-636-9300', // replace with your public line if applicable
+                telephone: '+1-901-636-9300', 
                 contactType: 'Customer Service',
                 areaServed: 'US',
                 availableLanguage: 'English',
@@ -81,14 +81,78 @@ export default function RootLayout({
                 postalCode: '38126',
                 addressCountry: 'US',
               },
-              // foundingDate: '2001', // update to your actual founding year
+              foundingDate: '1970',
+              areaServed: {
+                '@type': 'AdministrativeArea',
+                name: 'Greater Memphis, Tennessee',
+              },
               // founder: {
                 // '@type': 'Person',
                 // name: 'Black Business Association Leadership', // or Chamber founder’s name if preferred
               // },
               description:
                 'The Black Chamber of Memphis empowers Black-owned businesses and entrepreneurs through advocacy, education, and strategic networking across Greater Memphis.',
-              numberOfEmployees: 5, 
+              numberOfEmployees: {
+                '@type': 'QuantitativeValue',
+                value: 5,
+              }, 
+              knowsAbout: [
+                'Black-owned businesses',
+                'Minority entrepreneurship',
+                'Economic development',
+                'Business networking',
+                'Small business advocacy',
+                'Workforce development',
+              ],
+              '@id':'https://blackchamberofmemphis.org/#organization',
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: 'Business Support Programs',
+                itemListElement: [
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Entrepreneur Education Programs',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Advocacy and Policy Representation',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Back Office Support Services',
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Procurement Support',
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Acquisition Program',
+                    }
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Membership Support'
+                    }
+                  }
+                ],
+              },
               department: [
                 {
                   '@type': 'Organization',
