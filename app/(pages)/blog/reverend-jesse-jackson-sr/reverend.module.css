@@ -97,7 +97,7 @@
 
 @media (min-width:1000px) {
     .reverendHeroBlock{
-        /* width: 60%; */
+        width: 60%;
         margin-left: 4rem;
     }
 

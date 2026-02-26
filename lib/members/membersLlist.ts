@@ -8,6 +8,9 @@ import { lucyjaHygge } from './(l)/lucyjaHygge'
 import { lctcityProductions } from './(l)/lctcityProductions'
 import { leveledUpMoney } from './(l)/leveledUpMoney'
 import { letsBeFrank } from './(l)/letsBeFrank'
+import { lindenwoodChristianChurch } from './(l)/lindenwoodChristianChurch'
+import { lordOfLifeLutheranChurch } from './(l)/lordOfLifeLutheranChurch'
+import { lordsTabernacleHolinessChurch } from './(l)/lordsTabernacleHolinessChurch'
 
 export const membersLlist = [
     leadingInLifeEnterprise,
@@ -20,4 +23,7 @@ export const membersLlist = [
     lctcityProductions,
     leveledUpMoney,
     letsBeFrank,
+    lindenwoodChristianChurch,
+    lordOfLifeLutheranChurch,
+    lordsTabernacleHolinessChurch,
 ]
