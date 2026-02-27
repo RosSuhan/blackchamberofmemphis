@@ -51,6 +51,17 @@ export default function MemberContactSection({
     businessName,
     businessHours,
 } : memberContactProp){
+    const socials = [
+        { url: facebook, Icon: FacebookFill },
+        { url: instagram, Icon: Instagram },
+        { url: youtube, Icon: Youtube },
+        { url: linkedIn, Icon: Linkedin2 },
+        { url: linktree, Icon: LinktreeLogoBold },
+        { url: twitter, Icon: TwitterStroke12 },
+        { url: tiktok, Icon: TiktokIcon },
+        { url: pinterest, Icon: Pinterest },
+    ].filter(item => item.url)
+
     return(
         <section
             className={style.memberContactSection}
@@ -142,97 +153,23 @@ export default function MemberContactSection({
                 )}
             </div>
 
-            <div
-                className={style.memberSocialBlock}
-            >
-                {facebook ? (
-                    <a 
-                        href={facebook}
-                        className={style.memberSocialLink}
-                    >
-                        <FacebookFill
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-                
-                {instagram ? (
-                    <a 
-                        href={instagram}
-                        className={style.memberSocialLink}
-                    >
-                        <Instagram
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-
-                {youtube ? (
-                    <a 
-                        href={youtube}
-                        className={style.memberSocialLink}
-                    >
-                        <Youtube
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-
-                {linkedIn ? (
-                    <a 
-                        href={linkedIn}
-                        className={style.memberSocialLink}
-                    >
-                        <Linkedin2
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-
-                {linktree ? (
-                    <a 
-                        href={linktree}
-                        className={style.memberSocialLink}
-                    >
-                        <LinktreeLogoBold
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-
-                {twitter ? (
-                    <a 
-                        href={twitter}
-                        className={style.memberSocialLink}
-                    >
-                        <TwitterStroke12
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-
-                {tiktok ? (
-                    <a 
-                        href={tiktok}
-                        className={style.memberSocialLink}
-                    >
-                        <TiktokIcon
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-
-                {pinterest ? (
-                    <a 
-                        href={pinterest}
-                        className={style.memberSocialLink}
-                    >
-                        <Pinterest
-                            className={style.memberSocialLinkIcon}
-                        />
-                    </a>
-                ) : null }
-            </div>
+            {socials.length > 0 && (
+                <div
+                    className={style.memberSocialBlock}
+                >
+                    {socials.map(({url, Icon}, index) => (
+                        <a 
+                            href={url}
+                            key={index}
+                            className={style.memberSocialLink}
+                        >
+                            <Icon
+                                className={style.memberSocialLinkIcon}
+                            />
+                        </a>
+                    ))}
+                </div>
+            )}
 
             <div
                 className={style.logoBlock}

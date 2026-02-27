@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
+    row-gap: 2rem;
 }
 
 .logoBlock,
@@ -27,7 +28,6 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 2rem 0;
 }
 
 .logoBlock {
