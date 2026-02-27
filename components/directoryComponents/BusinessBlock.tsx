@@ -30,7 +30,7 @@ export default function BusinessBlock({id, blockPath, blockImage, businessTitle,
             key={id}
         >
             <Link
-                href={"/members/" + blockPath}
+                href={"/business-directory/" + blockPath}
                 className={style.businessLogoBlock}
             >
                 <Image
@@ -46,7 +46,7 @@ export default function BusinessBlock({id, blockPath, blockImage, businessTitle,
                 className={style.businessDescBlock}
             >
                 <Link
-                    href={"/members/" + blockPath}
+                    href={"/business-directory/" + blockPath}
                     className={style.businessNameLink}
                 >
                     <h2
@@ -106,7 +106,7 @@ export default function BusinessBlock({id, blockPath, blockImage, businessTitle,
                 : null}
 
                 <Link
-                    href={"/members/" + blockPath}
+                    href={"/business-directory/" + blockPath}
                     className={style.viewProfile}
                 >
                     View Profile

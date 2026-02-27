@@ -121,7 +121,7 @@ export default function MemberContactSection({
                     )
                 ) : null}
                 
-                {businessHours ? (
+                {businessHours.length > 0 && (
                     <ul 
                         className={style.busHoursList}
                     >
@@ -139,7 +139,7 @@ export default function MemberContactSection({
                         ))}
                         
                     </ul>
-                ) : null}
+                )}
             </div>
 
             <div

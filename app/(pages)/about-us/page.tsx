@@ -6,8 +6,8 @@ import WordImageBlocks from "@/components/WordImageBlocks/WordImage";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Us | Black Chamber of Memphis | Economic Empowerment & Advocacy',
-    description: 'Learn how the Black Chamber of Memphis drives economic equity and supports Black entrepreneurs through education, advocacy, and collaborative partnerships across the Mid-South.',
+    title: 'About Us the Black Chamber of Memphis | Economic Empowerment & Advocacy Since 1970',
+    description: 'Learn how the Black Chamber of Memphis drives economic equity and supports Black entrepreneurs through education, advocacy, and collaborative partnerships across the Mid-South, since 1970.',
     keywords: [
         'about Black Chamber of Memphis',
         'Memphis business advocacy',
@@ -17,15 +17,23 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://blackchamberofmemphis.org/about-us' },
     openGraph: {
         title: 'About the Black Chamber of Memphis',
-        description: 'Empowering Black entrepreneurs and driving economic equity across the Mid-South.',
+        description: 'Over 50 years of strengthening Black-owned businesses and advancing economic opportunity across Greater Memphis.',
         url: 'https://blackchamberofmemphis.org/about-us',
-        images: [{ url: '/images/og-about.jpg', width: 1200, height: 630 }],
+        siteName: 'Black Chamber of Memphis',
+        images: [
+            {
+                url: '/assets/black-chamber-of-memphis-building-black-business-in-memphis-since-1970.webp', 
+                alt: 'Black Chamber of Memphis Leadership and Community Impact',
+                width: 1200, 
+                height: 630 
+            }
+        ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'About the Black Chamber of Memphis',
-        description: 'Empowering Black entrepreneurs and driving economic equity across the Mid-South.',
-        images: ['/images/og-about.jpg'],
+        description: 'Building economic power and supporting Black entrepreneurs in Greater Memphis since 1970.',
+        images: ['/assets/black-chamber-of-memphis-building-black-business-in-memphis-since-1970.webp'],
     },
 };
 
