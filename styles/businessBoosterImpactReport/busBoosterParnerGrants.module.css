@@ -1,0 +1,166 @@
+.busBoosterPartnerGrantsSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 0 3rem 0;
+}
+
+.busBoosPartGrantLeftBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.busBoosPartGrantTopBlock {
+    width: 90%;
+    border: var(--gold) solid 2px;
+}
+
+.busBoosPartGrantGoldBlock {
+    background: #cfb43b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.busBoosPartGrantIcon {
+    object-fit: contain;
+    width: 50%;
+    height: auto;
+}
+
+.busBoosPartGrantGoldHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.busBoosPartGrantBigHeading {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.busBoosPartGrantSmallHeading {
+    font-size: 1.3rem;
+}
+
+.busBoosPartGrantPartnerListBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.busBoosPartGrantPartnerList {
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.busBoosPartGrantPartnerItem {
+    padding: .2rem 0;
+    color: #ffffff;
+}
+
+.busBoosterPartnerLeftBlockSubText {
+    padding: 2rem 0;
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.busBoosterPartnerGrantsRightBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    padding: 1rem 0;
+    border-top: var(--gold) solid 3px;
+}
+
+.busBoosterPartnerGrantWinnerImages {
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+}
+
+@media (min-width:500px) {
+    .busBoosPartGrantIcon {
+        width: 35%;
+    }
+}
+
+@media (min-width:600px) {
+    .busBoosPartGrantTopBlock {
+        width: 70%;
+    }
+    
+    .busBoosPartGrantIcon {
+        width: 30%;
+    }
+    
+    .busBoosterPartnerGrantWinnerImages {
+        width: 70%;
+    }
+}
+
+@media (min-width:800px) {
+    .busBoosPartGrantTopBlock {
+        width: 80%;
+    }
+    
+    .busBoosterPartnerGrantsRightBlock {
+        width: 40%;
+    }
+    
+    .busBoosterPartnerGrantWinnerImages {
+        width: 90%;
+    }
+}
+
+@media (min-width:900px) {
+    .busBoosPartGrantLeftBlock {
+        width: 70%;
+    }
+    
+    .busBoosPartGrantTopBlock {
+        width: 80%;
+    }
+    
+    .busBoosterPartnerGrantsRightBlock {
+        width: 30%;
+    }
+    
+    .busBoosterPartnerGrantWinnerImages {
+        width: 90%;
+    }
+}
+
+@media (min-width:1000px) {
+    .busBoosterPartnerGrantsSection {
+        justify-content: center;
+        line-height: 1.4;
+    }
+    
+    .busBoosPartGrantLeftBlock {
+        width: 50%;
+    }
+    
+    .busBoosPartGrantTopBlock {
+        width: 80%;
+    }
+    
+    .busBoosterPartnerGrantsRightBlock {
+        width: 30%;
+    }
+    
+    .busBoosterPartnerGrantWinnerImages {
+        width: 90%;
+    }
+}
