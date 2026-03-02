@@ -1,0 +1,83 @@
+.busBoosterHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.busBoosterPageTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.busBoosterGoldTitle {
+    font-size: 2rem;
+    color: var(--gold);
+}
+
+.busBoosterWhiteTitle {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.busBoosterHeroLine {
+    color: var(--gold);
+    width: 60%;
+    height: .1rem;
+    background: var(--gold);
+}
+
+@media (min-width:400px) {
+    .busBoosterHeroLine {
+        width: 40%;
+    }
+}
+
+@media (min-width: 600px) {
+    .busBoosterGoldTitle {
+        font-size: 2.5rem;
+    }
+    
+    .busBoosterWhiteTitle {
+        font-size: 1.6rem;
+    }
+    
+    .busBoosterHeroLine {
+        width: 40%;
+    }
+}
+
+@media (min-width: 800px) {
+    .busBoosterHero {
+        padding: 2rem 0 3rem 0;
+    }
+    
+    .busBoosterGoldTitle {
+        font-size: 2.8rem;
+    }
+    
+    .busBoosterWhiteTitle {
+        font-size: 1.8rem;
+    }
+    
+    .busBoosterHeroLine {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .busBoosterGoldTitle {
+        font-size: 3rem;
+    }
+    
+    .busBoosterWhiteTitle {
+        font-size: 2rem;
+    }
+    
+    .busBoosterHeroLine {
+        width: 200px;
+        margin-top: 1rem;
+    }
+}
