@@ -68,5 +68,9 @@ export const business : BlackLedgerProp = {
             videoPath : '',
             videoTitle : ''
         }
-    ]
+    ],
+    seoDescription : '',
+    seoImage: '',
+    seoTwitterDescription : '',
+    seoTwitterImage : ''
 }
