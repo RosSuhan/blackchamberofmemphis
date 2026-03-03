@@ -81,5 +81,9 @@ export const soulsvilleFoundation : BlackLedgerProp = {
             videoPath : '',
             videoTitle : ''
         }
-    ]
+    ],
+    seoDescription : 'Featured in the Black Ledger, The Soulsville Foundation strengthens Memphis through arts education, workforce development, and preservation of Black cultural legacy.',
+    seoImage: '/soulsville-foundation/black-chamber-of-memphis-the-black-ledger-honoring-soulsville-foundation.png',
+    seoTwitterDescription : 'The Soulsville Foundation transforms Memphis’s cultural legacy into education, workforce opportunity, and community stability — featured in the Black Ledger by the Black Chamber of Memphis.',
+    seoTwitterImage : '/soulsville-foundation/black-chamber-of-memphis-black-ledger-honoring-soulsville-foundation.png'
 }

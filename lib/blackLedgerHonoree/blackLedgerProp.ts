@@ -33,4 +33,8 @@ export interface BlackLedgerProp {
     imageSix : string,
     imageSixAlt : string,
     videoLink : { isVideoTrue : boolean, videoPath : string, videoTitle : string}[],
+    seoDescription : string,
+    seoImage: string,
+    seoTwitterDescription : string,
+    seoTwitterImage : string
 }

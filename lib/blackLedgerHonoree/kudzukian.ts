@@ -69,4 +69,8 @@ export const kudzukian : BlackLedgerProp = {
     imageSix : '/blog/mlk/blackLedger/kudzukian/kudzukian10.webp',
     imageSixAlt : 'Kudzukian Sound Desk',
     videoLink : [{ isVideoTrue : false, videoPath : 'string', videoTitle : 'string'}],
+    seoDescription : 'Featured in the Black Ledger, KUDZUKIAN empowers Memphis institutions and entrepreneurs through strategic media infrastructure and storytelling systems rooted in community ownership.',
+    seoImage: '/soulsville-foundation/black-chamber-of-memphis-the-black-ledger-honoring-soulsville-foundation.png',
+    seoTwitterDescription : 'KUDZUKIAN strengthens Memphis through media infrastructure, empowering institutions and entrepreneurs with platforms that expand visibility and economic opportunity.',
+    seoTwitterImage : '/soulsville-foundation/black-chamber-of-memphis-black-ledger-honoring-soulsville-foundation.png'
 }

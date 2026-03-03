@@ -1,5 +1,4 @@
-'use client'
-import { useParams } from "next/navigation";
+import { Metadata } from "next";
 import BlHero from "../blHero";
 import SectionWide from "../sectionWide";
 import SectionImageText from "../sectionImageText";
@@ -7,14 +6,58 @@ import BlImageRow from "../blImageRow";
 import { blackLedgerList } from "@/lib/blackLedgerHonoree/blackLedgerList";
 import BlEndBlock from "../blEndBlock";
 import BlCTARow from "../blCTARow";
-import BlVideo from "../blVideo";
+// import BlVideo from "../blVideo";
+
+type Props = {
+    params: Promise<{id: string}>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { id } = await params
+    const selectedHonoree = blackLedgerList.find(c => c.id === id);
+
+    if(!selectedHonoree) {
+        return {
+            title: "Blog not found"
+        }
+    }
+
+    const url = `https://blackchamberofmemphis.org/black-ledger/${id}`
+
+    return {
+        title: selectedHonoree.businessTitle,
+        description: selectedHonoree.seoDescription,
+
+        openGraph: {
+            title: selectedHonoree.businessTitle,
+            description: selectedHonoree.seoDescription,
+            url: url,
+            type: 'website',
+            images: selectedHonoree.seoImage
+                ? [
+                    {
+                        url: `https://blackchamberofmemphis.org/blog/mlk/blackLedger/${selectedHonoree.seoImage}`,
+                        width: 1200,
+                        height: 630,
+                    },
+                ]
+            : [],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: selectedHonoree.businessTitle,
+            description: selectedHonoree.seoTwitterDescription,
+            images: selectedHonoree.seoTwitterImage
+                ? [`https://blackchamberofmemphis.org/blog/mlk/blackLedger/${selectedHonoree.seoTwitterImage}`]
+                : [],
+        },
+    }
+}
 
 
-export default function BlackLedger(){
-    const params = useParams();
-    const id = params?.id as string
-
-    if(!id) return null;
+export default async function BlackLedger({ params }: Props){
+    const { id } = await params
 
     const selectedHonoree = blackLedgerList.find(c => c.id === id)
 

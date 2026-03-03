@@ -7,7 +7,7 @@ import { CompanyDirectory } from "@/components/icons/Directory"
 
 export const aTourOfPossibilities : BlackLedgerProp = {
     id : 'a-tour-of-possibilities',
-    backgroundImage : '/blog/mlk/blackLedger/aTourOfPossibility.jpg',
+    backgroundImage : '/blog/mlk/blackLedger/atop/aTourOfPossibility.jpg',
     businessTitle : "A Tour of Possibilities",
     socialLinks : [
         {
@@ -57,17 +57,17 @@ export const aTourOfPossibilities : BlackLedgerProp = {
 
     endBlockText : `<p>To explore how A Tour of Possibilities is reshaping heritage tourism in Memphis — and to experience the city through a deeper, more intentional lens — visit <a href="https://atopmemphis.com">atopmemphis.com</a>, book a tour, or follow ATOP on social media.</p>`,
     
-    imageOne : '/blog/mlk/blackLedger/atop7.jpeg',
+    imageOne : '/blog/mlk/blackLedger/atop/atop7.jpeg',
     imageOneAlt : 'Owner Carolyn with A Tour Of Possibiliies bus',
-    imageTwo : '/blog/mlk/blackLedger/atop3.jpg',
+    imageTwo : '/blog/mlk/blackLedger/atop/atop3.jpg',
     imageTwoAlt : 'A Tour of Possibilities Group of tourist posing for a photo',
-    imageThree : '/blog/mlk/blackLedger/atop8.jpeg',
+    imageThree : '/blog/mlk/blackLedger/atop/atop8.jpeg',
     imageThreeAlt : 'A Tour of Possibilities tour in Memphis',
-    imageFour : '/blog/mlk/blackLedger/atop2.jpg',
+    imageFour : '/blog/mlk/blackLedger/atop/atop2.jpg',
     imageFourAlt : 'A Tour of Possibilities at Slave Haven',
-    imageFive : '/blog/mlk/blackLedger/atop5.jpg',
+    imageFive : '/blog/mlk/blackLedger/atop/atop5.jpg',
     imageFiveAlt : 'A Tour of Possibilities group photo in bus',
-    imageSix : '/blog/mlk/blackLedger/atop5.jpg',
+    imageSix : '/blog/mlk/blackLedger/atop/atop5.jpg',
     imageSixAlt : 'A Tour of Possibilities group photo in bus',
     videoLink: [
         {
@@ -75,5 +75,9 @@ export const aTourOfPossibilities : BlackLedgerProp = {
             videoPath : 'https://blackbusinessassociationofmemp.box.com/s/164un8e99onq2q38scbodm3sfso2j9g1',
             videoTitle : 'A Tour of Possibilities'
         }
-    ]
+    ],
+    seoDescription: "A Tour of Possibilities offers immersive African American cultural and historical tours in Memphis, TN. Featured in the Black Ledger by the Black Chamber of Memphis, learn how this honoree celebrates Black heritage and community through powerful storytelling and guided experiences.",
+    seoImage: '/atop/black-chamber-of-memphis-the-black-ledger-honoring-a-tour-of-possibilities.png',
+    seoTwitterDescription: "A Tour of Possibilities brings Memphis’s Black history to life with immersive guided cultural tours. Featured in the Black Ledger series by the Black Chamber of Memphis, this honoree celebrates heritage, resilience, and community storytelling.",
+    seoTwitterImage: "/atop/black-chamber-of-memphis-black-ledger-honoring-a-tour-of-possibilities.png"
 }

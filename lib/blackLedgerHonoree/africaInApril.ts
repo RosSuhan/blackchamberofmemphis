@@ -68,5 +68,9 @@ export const africaInApril : BlackLedgerProp = {
             videoPath : '',
             videoTitle : ''
         }
-    ]
+    ],
+    seoDescription : '',
+    seoImage: '',
+    seoTwitterDescription : '',
+    seoTwitterImage : ''
 }

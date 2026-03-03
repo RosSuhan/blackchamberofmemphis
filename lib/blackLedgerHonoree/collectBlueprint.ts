@@ -6,7 +6,7 @@ import { CompanyDirectory } from "@/components/icons/Directory"
 
 export const collectBlueprint : BlackLedgerProp = {
     id : 'the-collective-blueprint',
-    backgroundImage : '/blog/mlk/blackLedger/the-collective-blue-print/tcbp1.jpg',
+    backgroundImage : '/blog/mlk/blackLedger/the-collective-blue-print/collective-blueprint-img1.webp',
     businessTitle : "The Collective Blueprint",
     socialLinks : [
         {
@@ -79,5 +79,9 @@ export const collectBlueprint : BlackLedgerProp = {
             videoPath : '',
             videoTitle : ''
         }
-    ]
+    ],
+    seoDescription : 'The Collective Blueprint strengthens Memphis’s workforce by connecting young adults to living-wage careers, featured in the Black Ledger by the Black Chamber of Memphis.',
+    seoImage: '/the-collective-blue-print/black-chamber-of-memphis-the-black-ledger-honoring-the-collective-blueprint.png',
+    seoTwitterDescription : 'Featured in the Black Ledger, The Collective Blueprint builds structured pathways to living-wage careers, expanding economic participation and workforce readiness across Memphis.',
+    seoTwitterImage : '/the-collective-blue-print/black-chamber-of-memphis-black-ledger-honoring-the-collective-blueprint.png'
 }
