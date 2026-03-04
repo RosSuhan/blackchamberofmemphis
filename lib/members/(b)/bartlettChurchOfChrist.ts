@@ -5,7 +5,7 @@ export const bartlettChurchOfChrist : MembersListType = {
     id : "bartlett-church-of-christ",
     businessName : "Bartlett Church of Christ",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "bartlett-woods",
     profileDescription : "Bartlett Church of Christ is a faith-based community congregation in Bartlett, Tennessee, dedicated to worship, spiritual growth, and service. Anchored in the teachings of Christ, the church offers weekly worship services, Bible study, discipleship programs, and ministry opportunities designed to deepen faith, strengthen fellowship, and serve the local community.",
     profileCategory : [
         "community-faith-nonprofit-services",

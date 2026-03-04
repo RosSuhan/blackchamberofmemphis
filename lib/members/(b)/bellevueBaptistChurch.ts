@@ -5,7 +5,7 @@ export const bellevueBaptistChurch : MembersListType = {
     id : "bellevue-baptist-church",
     businessName : "Bellevue Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "bellevue-baptist-church",
     profileDescription : "Bellevue Baptist Church is a Southern Baptist congregation in the Memphis-Cordova area committed to worship, spiritual growth, and community outreach. The church offers engaging worship services, Bible study, discipleship programs, and opportunities for fellowship and service, welcoming individuals and families of all ages to grow in faith and purpose.",
     profileCategory : [
         "community-faith-nonprofit-services",

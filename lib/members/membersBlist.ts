@@ -10,6 +10,7 @@ import { bartlettChurchOfChrist } from './(b)/bartlettChurchOfChrist'
 import { bellevueBaptistChurch } from './(b)/bellevueBaptistChurch'
 import { bereanMissionaryBaptistChurch } from './(b)/bereanMissionaryBaptistChurch'
 import { bloomfield } from './(b)/bloomfield'
+import { backboneTech } from './(b)/backboneTech'
 
 export const membersBlist = [
     betterDaysFinSer,
@@ -24,4 +25,5 @@ export const membersBlist = [
     bellevueBaptistChurch,
     bereanMissionaryBaptistChurch,
     bloomfield,
+    backboneTech
 ]

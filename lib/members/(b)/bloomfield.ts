@@ -5,7 +5,7 @@ export const bloomfield : MembersListType = {
     id : "bloomfield-full-gospel-baptist-church",
     businessName : "Bloomfield Full Gospel Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "bloomfield-baptist-church",
     profileDescription : "Bloomfield Baptist Church is a faith-centered Christian congregation in Memphis, Tennessee, dedicated to worshiping God, studying Scripture, and serving both members and the local community. The church offers uplifting worship services, Bible teaching, fellowship opportunities, and ministry support for individuals and families of all ages.",
     profileCategory : [
         "community-faith-nonprofit-services",

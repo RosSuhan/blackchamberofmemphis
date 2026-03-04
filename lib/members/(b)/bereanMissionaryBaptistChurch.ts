@@ -5,7 +5,7 @@ export const bereanMissionaryBaptistChurch : MembersListType = {
     id : "berean-missionary-baptist-church",
     businessName : "Berean Missionary Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "berean-missionary-baptist-church",
     profileDescription : "Berean Memphis is a Christian church and faith community in Memphis, Tennessee, devoted to studying the Bible, worshiping God, and serving others. With teachings rooted in Scripture, Berean Memphis offers worship services, Bible studies, discipleship classes, and community outreach ministries that nurture spiritual growth and encourage active engagement in faith and service.",
     profileCategory : [
         "community-faith-nonprofit-services",

@@ -5,7 +5,7 @@ export const christMissionaryBaptist : MembersListType = {
     id : "christ-missionary-baptist-church",
     businessName : "Christ Missionary Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "christ-missionary-baptist-church",
     profileDescription : "Christ Missionary Baptist Church is a faith-driven Christian congregation in Memphis, Tennessee, committed to worship, spiritual growth, and community service. The church offers meaningful worship services, Bible teaching, ministries for all ages, and outreach initiatives that support spiritual formation and serve the local community.",
     profileCategory : [
         "community-faith-nonprofit-services",
