@@ -11,7 +11,7 @@ import { BaselineArrowForward } from '../icons/BaselineArrowForward';
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 export default function CalendarGrid(){
-    const [ currentDate, setCurrentDate ] = useState(new Date(2026, 1));
+    const [ currentDate, setCurrentDate ] = useState(new Date(2026, 2));
 
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
