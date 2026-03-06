@@ -17,7 +17,7 @@ export const firstQuarterlyNetwork : EventListType = {
         <h3>Join Us for the BCOM 2026 Quarterly Networking Event!</h3>
         <p>We're back with another unforgettable evening on <strong>March 19th, 2025, from 5:30 PM to 8:30 PM at 150 Peabody Place, Memphis, TN 38103</strong>!</p>
         <p>The Black Chamber of Memphis (BCOM) invites you to the first Quarterly Networking Event of the year. Join the opportunity to connect, engage, and collaborate with the BCOM team and Members. Network with fellow entrepreneurs, learn about membership updates, and discover potential future partnerships and collaborative opportunities!</p>
-        <p style="font-size: 2rem; font-weight: 800;">Don't miss this chance. Register now for an inspiring evening that will energize your entrepreneurial journey!</p>
+        <p style="font-size: 1.6rem; font-weight: 800;">Don't miss this chance. Register now for an inspiring evening that will energize your entrepreneurial journey!</p>
     `,
     eventPastDescription: "",
     eventPastBlog: ``,
