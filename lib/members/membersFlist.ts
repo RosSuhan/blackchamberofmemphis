@@ -6,6 +6,7 @@ import { faithJanitorialSol } from './(f)/faithJanitorialSol'
 import { faithBusSol } from './(f)/faithBusSol'
 import { firstBaptistChurch } from './(f)/firstBaptistChurch'
 import { fordChapelAME } from './(f)/fordChapelAME'
+import { focusOnYou } from './(f)/focusOnYou'
 
 export const membersFlist = [
     functionallyBalancedHealth,
@@ -16,4 +17,5 @@ export const membersFlist = [
     faithBusSol,
     firstBaptistChurch,
     fordChapelAME,
+    focusOnYou,
 ]

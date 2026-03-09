@@ -11,6 +11,9 @@ import { mandeDibi } from './(m)/mandeDibi'
 import { memphisWeldingSchool } from './(m)/memphisWeldingSchool'
 import { mjEdwardsWhitehavenFuneral } from './(m)/mjEdwardsWhitehavenFuneral'
 import { moneyality } from './(m)/moneyality'
+import { mississippiBoulevardChristianChurch } from './(m)/mississippiBoulevardChristianChurch'
+import { morningStarMissionaryBaptistChurch } from './(m)/morningStarMissionaryBaptistChurch'
+import { mtNeboBaptistChurch } from './(m)/mtNeboBaptistChurch'
 
 export const membersMlist = [
     magnoliaBusSol,
@@ -26,4 +29,7 @@ export const membersMlist = [
     memphisWeldingSchool,
     mjEdwardsWhitehavenFuneral,
     moneyality,
+    mississippiBoulevardChristianChurch,
+    morningStarMissionaryBaptistChurch,
+    mtNeboBaptistChurch,
 ]

@@ -5,6 +5,7 @@ import { hkPrints } from './(h)/hkPrints'
 import { harmonyChurchOfBartlett } from './(h)/harmonyChurchOfBartlett'
 import { hillChapelMissionaryBaptistChurch } from './(h)/hillChapelMissionaryBaptistChurch'
 import { holyCityChurchOfGod } from './(h)/holyCityChurchOfGod'
+import { hustleHarder } from './(h)/hustleHarder'
 
 export const membersHlist = [
     hqDirect,
@@ -14,4 +15,5 @@ export const membersHlist = [
     harmonyChurchOfBartlett,
     hillChapelMissionaryBaptistChurch,
     holyCityChurchOfGod,
+    hustleHarder,
 ]
