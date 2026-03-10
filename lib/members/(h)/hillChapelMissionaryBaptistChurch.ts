@@ -5,7 +5,7 @@ export const hillChapelMissionaryBaptistChurch : MembersListType = {
     id : "hill-chapel-missionary-baptist-church",
     businessName : "Hill Chapel Missionary Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "hill-chapel",
     profileDescription : "Hill Chapel Missionary Baptist Church is a Christian congregation in Memphis, Tennessee, devoted to worship, biblical teaching, and community fellowship. The church offers worship services, Bible study, discipleship opportunities, and ministries designed to strengthen spiritual growth and serve both its members and the local community.",
     profileCategory : [
         "community-faith-nonprofit-services",

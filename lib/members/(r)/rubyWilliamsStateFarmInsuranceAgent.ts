@@ -5,7 +5,7 @@ export const rubyWilliamsStateFarmInsuranceAgent : MembersListType = {
     id : "ruby-williams-state-farm-insurance-agent",
     businessName : "Ruby Williams - State Farm Insurance Agent",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "statefarm",
     profileDescription : "CallRuby (Ruby Receptionists / Ruby) is a U.S.-based virtual receptionist and live chat service provider that helps small and growing businesses manage customer communications with real, human receptionists. The company delivers 24/7 phone answering and web chat support designed to capture leads, schedule appointments, and enhance customer experience, allowing business owners to focus on core operations.",
     profileCategory : [
         "professional-legal-financial-services",

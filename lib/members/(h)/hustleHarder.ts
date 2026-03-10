@@ -5,7 +5,7 @@ export const hustleHarder : MembersListType = {
     id : "hustle-harder",
     businessName : "Hustle Harder",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "hustle-harder",
     profileDescription : "Hustle Harder is a vibrant life coaching brand born in 2024 and proudly rooted in West Orange. Dedicated to empowering both men and women, it embodies the hustler mindset—a steadfast belief that true success comes from discipline, resilience, and relentless effort.",
     profileCategory : [
         "health-medical-wellness-services",

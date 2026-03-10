@@ -5,7 +5,7 @@ export const rollingSudsPowerWashing : MembersListType = {
     id : "rolling-suds-power-washing",
     businessName : "Rolling Suds Power Washing",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "rolling-suds",
     profileDescription : "Rolling Suds Power Washing offers professional exterior cleaning services for residential and commercial properties in the Memphis area. Specializing in power washing driveways, sidewalks, siding, decks, fences, and outdoor surfaces, the company delivers reliable, high-quality cleaning that enhances curb appeal and restores property appearance.",
     profileCategory : [
         "construction-home-improvement-trade-services",

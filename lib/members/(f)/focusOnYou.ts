@@ -5,7 +5,7 @@ export const focusOnYou : MembersListType = {
     id : "focus-on-you",
     businessName : "Focus on You",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "focus-on-you",
     profileDescription : "Focus On You is the vision of a talented photographer passionate about capturing the authentic essence of every individual. Opening its doors in July 2025, this premier studio is dedicated to transforming fleeting moments into lasting memories through creativity, intention, and heartfelt artistry. With a keen eye for detail and a deep appreciation for personal stories, the studio offers bespoke portrait and lifestyle photography that celebrates natural beauty and uniqueness.",
     profileCategory : [
         "arts-culture-media-entertainment",

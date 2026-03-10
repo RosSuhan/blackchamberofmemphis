@@ -2,10 +2,10 @@ import { MembersListType } from './../membersListType'
 
 export const newAlenAMEChurch : MembersListType = {
     memberStatus: false,
-    id : "new-alen-ame-church",
-    businessName : "New Alen AME Church",
+    id : "new-allen-ame-church",
+    businessName : "New Allen AME Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "new-allen-chapel",
     profileDescription : "New Allen Chapel AME Church in Memphis is a faith-centered congregation committed to worship, spiritual growth, and serving the local community through the traditions of the African Methodist Episcopal Church.",
     profileCategory : [
         "community-faith-nonprofit-services",

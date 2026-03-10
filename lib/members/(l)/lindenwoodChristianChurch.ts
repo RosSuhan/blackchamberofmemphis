@@ -5,7 +5,7 @@ export const lindenwoodChristianChurch : MembersListType = {
     id : "lindenwood-christian-church",
     businessName : "Lindenwood Christian Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "lindenwood-christian-church",
     profileDescription : "Lindenwood Christian Church is a faith-centered Christian congregation in Memphis, Tennessee, devoted to worship, biblical teaching, and community engagement. The church offers meaningful worship services, discipleship opportunities, Bible studies, and outreach ministries designed to strengthen faith and foster connection within the community.",
     profileCategory : [
         "community-faith-nonprofit-services",

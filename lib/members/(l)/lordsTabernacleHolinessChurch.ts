@@ -5,7 +5,7 @@ export const lordsTabernacleHolinessChurch : MembersListType = {
     id : "lords-tabernacle-holiness-church",
     businessName : "Lord's Tabernacle Holiness Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "the-lords-tabernacle-holiness-church",
     profileDescription : "Lord’s Tabernacle Holiness Church is a vibrant Christian congregation in Memphis, Tennessee, devoted to worship, biblical teaching, discipleship, and community connection. The church conducts regular worship services, prayer meetings, ministries for all ages, and outreach programs designed to encourage spiritual growth and service.",
     profileCategory : [
         "community-faith-nonprofit-services",

@@ -1,11 +1,11 @@
-import { MembersListType } from './../membersListType'
+import { MembersListType } from '../membersListType'
 
 export const firstBaptistChurch : MembersListType = {
     memberStatus: false,
     id : "first-baptist-church-broad-ave",
     businessName : "First Baptist Church Broad Ave",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "first-baptist-church-broad",
     profileDescription : "First Baptist Church Broad is a welcoming Christian congregation in Memphis, Tennessee, committed to worship, biblical teaching, and community fellowship. The church offers weekly worship services, Bible study, discipleship opportunities, and ministries designed to strengthen spiritual growth and serve both members and the local community.",
     profileCategory : [
         "community-faith-nonprofit-services",

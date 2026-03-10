@@ -5,7 +5,7 @@ export const letsBeFrank : MembersListType = {
     id : "lets-be-frank",
     businessName : "Let's Be Frank",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "lets-be-frank",
     profileDescription : "Let’s Be Frank! is a Memphis, Tennessee food service business specializing in classic comfort fare like steamed ¼-lb hot dogs and other quick-service favorites. Available for walk-up service and catering, the business serves up flavorful food for everyday meals and special events.",
     profileCategory : [
         "food-dining-hospitality",
@@ -17,6 +17,7 @@ export const letsBeFrank : MembersListType = {
     categoryTag: [
         'food truck',
         'mobile eateries',
+        'lets be frank'
     ],
     profileBusinessDescription : ``,
     gallery : [],

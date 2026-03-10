@@ -5,7 +5,7 @@ export const wolfOfFitness : MembersListType = {
     id : "wolf-of-fitness",
     businessName : "Wolf of Fitness",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "wolf-of-fitness",
     profileDescription : "Wolf Of Fitness is more than a wellness brand — it’s a personal mission born from a profound loss that sparked a legacy of strength and renewal. Rooted in the memory of a beloved great grandmother, whose resilience in the face of darkness inspired a transformative vision, this West Orange-based coaching and wellness company empowers individuals to rise above their challenges and discover their true potential.",
     profileCategory : [
         "beauty-personal-care-fitness",

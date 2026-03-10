@@ -5,7 +5,7 @@ export const lordOfLifeLutheranChurch : MembersListType = {
     id : "lord-of-life-lutheran-church",
     businessName : "Lord of Life Lutheran Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "lord-of-life-lutheran-church",
     profileDescription : "Lord of Life Lutheran Church is a welcoming Christian congregation in Memphis, Tennessee, committed to worship, spiritual growth, and community service. The church offers meaningful worship services, Lutheran teaching rooted in Scripture, faith formation programs, and opportunities to serve and connect within the congregation and local community.",
     profileCategory : [
         "community-faith-nonprofit-services",

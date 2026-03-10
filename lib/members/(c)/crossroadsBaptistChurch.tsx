@@ -5,7 +5,7 @@ export const crossroadsBaptistChurch : MembersListType = {
     id : "crossroads-baptist-church-arlington",
     businessName : "Crossroads Baptist Church Arlington",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "crossroads",
     profileDescription : "Christian Restoration Church is a faith-centered church in Memphis, Tennessee, devoted to worship, spiritual transformation, and community engagement. The church offers worship services, biblical teaching, discipleship, and outreach ministries designed to strengthen faith, support spiritual growth, and serve the local community.",
     profileCategory : [
         "community-faith-nonprofit-services",

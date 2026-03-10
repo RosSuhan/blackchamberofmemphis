@@ -5,7 +5,7 @@ export const newHopeBaptistChurchMemphis : MembersListType = {
     id : "new-hope-baptist-church-of-memphis",
     businessName : "New Hope Baptist Church of Memphis",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "new-hope-of-memphis",
     profileDescription : "New Hope Baptist Church of Memphis is a welcoming Christian congregation committed to spreading the Gospel, strengthening faith through worship and discipleship, and building a supportive community of believers.",
     profileCategory : [
         "community-faith-nonprofit-services",

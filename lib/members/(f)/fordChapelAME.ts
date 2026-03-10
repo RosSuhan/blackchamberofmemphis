@@ -1,11 +1,11 @@
-import { MembersListType } from './../membersListType'
+import { MembersListType } from '../membersListType'
 
 export const fordChapelAME : MembersListType = {
     memberStatus: false,
     id : "ford-chapel-ame-zion-church",
     businessName : "Ford Chapel AME Zion Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "ford-chapel",
     profileDescription : "The African Methodist Episcopal Zion Church (AMEZ) is a historic Christian denomination rooted in the Wesleyan-Arminian tradition that proclaims the gospel of Jesus Christ and serves communities through worship, discipleship, and outreach. Known informally as the “Freedom Church,” AMEZ brings together believers to deepen spiritual growth, offer compassionate community support, and live out Christian faith in daily life.",
     profileCategory : [
         "community-faith-nonprofit-services",

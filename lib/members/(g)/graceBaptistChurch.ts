@@ -5,7 +5,7 @@ export const graceBaptistChurch : MembersListType = {
     id : "grace-baptist-church",
     businessName : "Grace Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "grace-missionary-baptist-church",
     profileDescription : "Grace Missionary Baptist Church is a Christian congregation in Memphis, Tennessee, devoted to faith-centered worship, biblical teaching, and community fellowship. The church offers worship services, Bible study, discipleship programs, and ministries designed to support spiritual growth, connection, and service within the community.",
     profileCategory : [
         "community-faith-nonprofit-services",

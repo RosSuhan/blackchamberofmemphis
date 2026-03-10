@@ -5,7 +5,7 @@ export const morningStarMissionaryBaptistChurch : MembersListType = {
     id : "morning-star-missionary-baptist-church",
     businessName : "Morning Star Missionary Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "morning-star-church",
     profileDescription : "Morning Star Missionary Baptist Church – Midtown is a Christian congregation located in Memphis, Tennessee, dedicated to worship, biblical teaching, and community fellowship. The church provides worship services and faith-based programs designed to encourage spiritual growth and strengthen connections within the local community.",
     profileCategory : [
         "community-faith-nonprofit-services",

@@ -5,7 +5,7 @@ export const newSalemMissionaryBaptist : MembersListType = {
     id : "new-salem-missionary-baptist",
     businessName : "New Salem Missionary Baptist",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "new-salem-baptist",
     profileDescription : "New Salem Baptist Church of Memphis is a historic and dynamic congregation dedicated to worship, discipleship, and community outreach, serving the Memphis community through faith-centered ministries and spiritual leadership.",
     profileCategory : [
         "community-faith-nonprofit-services",

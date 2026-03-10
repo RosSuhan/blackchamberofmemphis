@@ -5,7 +5,7 @@ export const mississippiBoulevardChristianChurch : MembersListType = {
     id : "mississippi-boulevard-christian-church",
     businessName : "Mississippi Boulevard Christian Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "mississippi-boulevard",
     profileDescription : "Mississippi Boulevard Christian Church (The BLVD) is a historic Christian congregation in Memphis, Tennessee, committed to leading people into a transformative relationship with Jesus Christ through worship, fellowship, discipleship, and community outreach. The church offers dynamic worship services, life groups, educational ministries, and service opportunities designed to strengthen faith and build meaningful connections within the community.",
     profileCategory : [
         "community-faith-nonprofit-services",
