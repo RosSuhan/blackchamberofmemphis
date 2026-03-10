@@ -16,7 +16,7 @@ export const wolfOfFitness : MembersListType = {
     categoryTag: [
         "handcrafted sneakers",
         "lifestyle products",
-        "athleetic footwear",
+        "athletic footwear",
     ],
     profileBusinessDescription : `
         <p>Wolf Of Fitness is more than a wellness brand — it’s a personal mission born from a profound loss that sparked a legacy of strength and renewal. Rooted in the memory of a beloved great grandmother, whose resilience in the face of darkness inspired a transformative vision, this West Orange-based coaching and wellness company empowers individuals to rise above their challenges and discover their true potential.</p>

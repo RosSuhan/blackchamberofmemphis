@@ -16,7 +16,8 @@ export const lordsTabernacleHolinessChurch : MembersListType = {
         "descipleship-programs",
     ],
     categoryTag: [
-        'Holiness'
+        'holiness',
+        'lords tabernacle holiness church',
     ],
     profileBusinessDescription : ``,
     gallery : [],
