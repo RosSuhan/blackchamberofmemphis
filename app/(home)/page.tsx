@@ -2,7 +2,7 @@ import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/Home
 import StayInformedSection from "@/components/forms/stayInformed";
 import HomeHero from "@/components/heroSections/HomeHero";
 import Partners from "@/components/partners/page";
-import Popup from "@/components/Popup/page";
+// import Popup from "@/components/Popup/page";
 import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
 import WhoWeAre from "@/components/whoWeAre/page";
 import type { Metadata } from "next";
@@ -45,19 +45,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <section>
-      <Popup
-        imageSrc={'/events/leveledUp/leveledupmoney.webp'}
-        imageAlt={"25% Discount on renewal fees and new memberships"}
-        imageWidth={1587}
-        imageHeight={2245}
-        title=""
-        description={""}
-        ctaText={"Read More"}
-        // ctaText=""
-        // ctaLink={""}
-        ctaLink={"/events/leveled-up"}
-        storageKey={"leveledUp"}
-      />
 
       <HomeHero/>
 
