@@ -20,13 +20,36 @@ export default function MemberHeroSection({
     const [ shareButton, setShareButton ] = useState(false)
 
     const handleFacebookShare = useCallback(()=>{
-        const shareUrl = `https://blackchamberofmemphis.org/members/${path}`;
+        const shareUrl = `https://blackchamberofmemphis.org/business-directory/${path}`;
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
             "_blank",
             "noopener,noreferrer"
         );
 
         console.log(shareUrl)
+    }, [path]);
+
+    const handleCopyLink = useCallback(async() => {
+        const shareUrl = `https://blackchamberofmemphis.org/business-directory/${path}`;
+    
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            alert("Link Copied to Clipboard!")
+        } catch (err) {
+            console.error("Failed to copy:", err);
+        }
+    }, [path]);
+
+    const handleLinkedInShare = useCallback(() => {
+        const shareUrl = `https://blackchamberofmemphis.org/business-directory/${path}`;
+    
+        window.open(
+            `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
+            "_blank",
+            "noopener,noreferrer"
+        );
+    
+        console.log(shareUrl);
     }, [path]);
 
     return(
@@ -83,6 +106,20 @@ export default function MemberHeroSection({
                             onClick={handleFacebookShare}
                         >
                             Facebook
+                        </button>
+
+                        <button
+                            className={style.shareButton}
+                            onClick={handleCopyLink}
+                        >
+                            LinkedIn
+                        </button>
+
+                        <button
+                            className={style.shareButton}
+                            onClick={handleLinkedInShare}
+                        >
+                            Copy Link
                         </button>
                     </div>
                 </div>
