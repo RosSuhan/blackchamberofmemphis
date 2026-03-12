@@ -7,6 +7,7 @@ import { smartCremation } from './(s)/smartCremation'
 import { staffRite } from './(s)/staffRite'
 import { spiritTechnique } from './(s)/spiritTechnique'
 import { skiinetPowerTech } from './(s)/skiinetPowerTech'
+import { shoneyElectronicRepair } from './(s)/shoneyElectronicRepair'
 
 export const membersSlist = [
     sheGotGameLeague,
@@ -18,4 +19,5 @@ export const membersSlist = [
     staffRite,
     spiritTechnique,
     skiinetPowerTech,
+    shoneyElectronicRepair,
 ]
