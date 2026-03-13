@@ -6,7 +6,7 @@ export const firstQuarterlyNetwork : EventListType = {
     type: 'event',
     eventImage : "/events/black-chamber-of-memphis-quarterly-netwoking-event-march-invitation.webp",
     eventImageAlt : "Black Chamber of Memphis March Quaterly Netwoking Event",
-    eventDate : "March 19, 2025",
+    eventDate : "March 19, 2026",
     sortDate : "2026-03-19",
     eventTime : "5:30 PM to 8:30 PM",
     eventAddressLink : "https://share.google/P6Y7znprTRNXOW3fW",
