@@ -8,6 +8,11 @@ import { staffRite } from './(s)/staffRite'
 import { spiritTechnique } from './(s)/spiritTechnique'
 import { skiinetPowerTech } from './(s)/skiinetPowerTech'
 import { shoneyElectronicRepair } from './(s)/shoneyElectronicRepair'
+import { salemGilfieldBaptistChurch } from './(s)/salemGilfieldBaptistChurch'
+import { springdaleBaptistChurch } from './(s)/springdaleBaptistChurch'
+import { stJohnBaptistChurch } from './(s)/stJohnBaptistChurch'
+import { stAndrewAMEChurch } from './(s)/stAndrewAMEChurch'
+import { stAugustineCatholicChurch } from './(s)/stAugustineCatholicChurch'
 
 export const membersSlist = [
     sheGotGameLeague,
@@ -20,4 +25,9 @@ export const membersSlist = [
     spiritTechnique,
     skiinetPowerTech,
     shoneyElectronicRepair,
+    salemGilfieldBaptistChurch,
+    springdaleBaptistChurch,
+    stJohnBaptistChurch,
+    stAndrewAMEChurch,
+    stAugustineCatholicChurch,
 ]

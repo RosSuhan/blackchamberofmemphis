@@ -5,7 +5,7 @@ export const oakGroveMissionaryBaptist : MembersListType = {
     id : "oak-grove-missionary-baptist-church",
     businessName : "Oak Grove Missionary Baptist Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "oak-grove-missionary-baptist",
     profileDescription : "Oak Grove Missionary Baptist Church is a historic Memphis congregation dedicated to helping people grow spiritually through worship, ministry, evangelism, fellowship, and discipleship. The church offers engaging worship services, Bible study opportunities, and ministry programs designed to strengthen faith and build meaningful community connections.",
     profileCategory : [
         "community-faith-nonprofit-services",

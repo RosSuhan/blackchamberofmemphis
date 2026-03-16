@@ -5,7 +5,7 @@ export const pursuitOfGodChurch : MembersListType = {
     id : "pursuit-of-god-church",
     businessName : "Pursuit of God Church",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "pursuit-of-god",
     profileDescription : "The Pursuit of God Transformation Center is a Memphis-based Christian congregation focused on spiritual growth, discipleship, and community transformation. Led by Pastors Ricky and Sheila Floyd, the church offers worship services, leadership development programs, and community outreach initiatives designed to help individuals grow in their relationship with God and make a positive impact in their community.",
     profileCategory : [
         "community-faith-nonprofit-services",

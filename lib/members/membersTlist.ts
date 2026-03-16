@@ -42,6 +42,10 @@ import { trPerryEventServices } from './(t)/trPerryEventServices'
 import { theCollectiveBluePrint } from './(t)/theCollectiveBluePrint'
 import { theStudioKaraoke } from './(t)/theStudioKaraoke'
 import { theSoulsvilleFoundation } from './(t)/theSoulsvilleFoundation'
+import { tabernacleMissionaryBaptistChurch } from './(t)/tabernacleMissionaryBaptistChurch'
+import { tabernacleOfPraise } from './(t)/tabernacleOfPraise'
+import { templeOfDeliveranceChurch } from './(t)/templeOfDeliveranceChurch'
+import { theLifeChurch } from './(t)/theLifeChurch'
 
 export const membersTlist = [
     tabicanTechSol,
@@ -88,4 +92,8 @@ export const membersTlist = [
     theCollectiveBluePrint,
     theStudioKaraoke,
     theSoulsvilleFoundation,
+    tabernacleMissionaryBaptistChurch,
+    tabernacleOfPraise,
+    templeOfDeliveranceChurch,
+    theLifeChurch,
 ]

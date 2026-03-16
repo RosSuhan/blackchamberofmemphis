@@ -5,7 +5,7 @@ export const reformationMemphis : MembersListType = {
     id : "reformation-memphis",
     businessName : "Reformation Memphis",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "reformation-memphis",
     profileDescription : "Reformation Memphis is a Memphis-based Christian church dedicated to spiritual transformation through biblical teaching, worship, and community engagement. Led by Pastors Brandon and Cristabel Clack, the church provides weekly worship experiences, discipleship opportunities, and events designed to help individuals grow in faith and positively impact their communities.",
     profileCategory : [
         "community-faith-nonprofit-services",
