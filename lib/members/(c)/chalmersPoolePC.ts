@@ -23,7 +23,7 @@ export const chalmersPoolePC : MembersListType = {
     gallery : [],
     businessHours : [],
     addressLink : "",
-    address : "",
+    address : "700 Colonial Road, Suite 130 Memphis, Tennessee 38117",
     email : "achalmers@chalmers-poole.com",
     website : "https://www.chalmers-poole.com/",
     telNumber : "(901) 763-3335",
