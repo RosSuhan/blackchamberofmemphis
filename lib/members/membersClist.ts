@@ -11,6 +11,7 @@ import { cityTastingBox } from './(c)/cityTastingBox'
 import { christMissionaryBaptist } from './(c)/christMissionaryBaptist'
 import { christTheKingLutheranChurch } from './(c)/christTheKingLutheranChurch'
 import { crossroadsBaptistChurch } from './(c)/crossroadsBaptistChurch'
+import { chalmersPoolePC } from './(c)/chalmersPoolePC'
 
 export const membersClist = [
     capturingMemories,
@@ -26,4 +27,5 @@ export const membersClist = [
     christMissionaryBaptist,
     christTheKingLutheranChurch,
     crossroadsBaptistChurch,
+    chalmersPoolePC,
 ]
