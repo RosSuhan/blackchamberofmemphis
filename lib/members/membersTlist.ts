@@ -46,6 +46,7 @@ import { tabernacleMissionaryBaptistChurch } from './(t)/tabernacleMissionaryBap
 import { tabernacleOfPraise } from './(t)/tabernacleOfPraise'
 import { templeOfDeliveranceChurch } from './(t)/templeOfDeliveranceChurch'
 import { theLifeChurch } from './(t)/theLifeChurch'
+import { tennesseeHospTourism } from './(t)/tennesseeHospTourism'
 
 export const membersTlist = [
     tabicanTechSol,
@@ -96,4 +97,5 @@ export const membersTlist = [
     tabernacleOfPraise,
     templeOfDeliveranceChurch,
     theLifeChurch,
+    tennesseeHospTourism,
 ]

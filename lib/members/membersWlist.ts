@@ -13,6 +13,8 @@ import { whartonFirm } from './(w)/whartonFirm'
 import { williamsInsuranceFinancialServices } from './(w)/williamsInsuranceFinancialServices'
 import { wellsRoofingRemodeling } from './(w)/wellsRoofingRemodeling'
 import { wolfOfFitness } from './(w)/wolfOfFitness'
+import { womenOfPower } from './(w)/womenOfPower'
+
 
 export const membersWlist = [
     weedenFinancial,
@@ -30,4 +32,5 @@ export const membersWlist = [
     williamsInsuranceFinancialServices,
     wellsRoofingRemodeling,
     wolfOfFitness,
+    womenOfPower,
 ]

@@ -12,6 +12,8 @@ import { nineOoneMemphisEventRentals } from './(0-9)/901MemphisEventRentals'
 import { nineOoneSugarDaddysCigars } from './(0-9)/901SugarDaddysCigars'
 import { iiimadison } from './(0-9)/111madison'
 import { oneSourceAutoGroup } from './(0-9)/1SourceAutoGroup'
+import { threedMarketingConcepts } from './(0-9)/3dMarketingConcepts'
+
 
 export const membersNumberList = [
         CupCoffee,
@@ -28,4 +30,5 @@ export const membersNumberList = [
         nineOoneMemphisEventRentals,
         iiimadison,
         oneSourceAutoGroup,
+        threedMarketingConcepts,
 ]
