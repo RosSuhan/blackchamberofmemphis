@@ -36,6 +36,6 @@ export const sassySpiritzMobileBartending : MembersListType = {
     linkedIn : "",
     linktree : "",
     twitter: "",
-    tiktok : "",
+    tiktok : "https://www.tiktok.com/@sassyspiritzbartending?_r=1&_t=ZT-94ltbD3GdF0",
     pinterest : ""
 }
