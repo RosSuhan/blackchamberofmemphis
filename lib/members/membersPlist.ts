@@ -4,6 +4,7 @@ import { pentecostalTempleChurchOfGod } from "./(p)/pentecostalTempleChurchOfGod
 import { progressiveMissionaryBaptist } from "./(p)/progressiveMissionaryBaptist";
 import { providenceAME } from "./(p)/providenceAME";
 import { pursuitOfGodChurch } from "./(p)/pursuitOfGodChurch";
+import { planNetMarketing } from "./(p)/planNetMarketing";
 
 export const membersPlist = [
     pcss,
@@ -12,4 +13,5 @@ export const membersPlist = [
     progressiveMissionaryBaptist,
     providenceAME,
     pursuitOfGodChurch,
+    planNetMarketing,
 ]

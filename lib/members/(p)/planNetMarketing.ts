@@ -1,0 +1,45 @@
+import { MembersListType } from './../membersListType'
+
+export const planNetMarketing : MembersListType = {
+    memberStatus: true,
+    id : "plannet-marketing",
+    businessName : "PlanNet Marketing",
+    bannerImage : "",
+    profileLogo : "inteletravel",
+    profileDescription : "Deener Newberry is an independent travel advisor with InteleTravel, providing personalized travel planning services for vacations, cruises, and group travel. With a focus on convenience and tailored experiences, clients receive expert support in booking and organizing memorable trips.",
+    profileCategory : [
+        "automotive-transport-travel",
+    ],
+    profileSubCategory : [
+        "tours",
+        "travel-services",
+    ],
+    categoryTag: [
+        "travel agencies",
+        "travel advisors",
+        "vacation planning",
+        "cruise planning",
+        "group travel",
+        "destination travel services",
+        "honeymoon travel",
+        "romantic travel",
+        "corporate trips",
+        "group trips",
+    ],
+    profileBusinessDescription : ``,
+    gallery : [],
+    businessHours : [],
+    addressLink : "",
+    address : "",
+    email : "deener_newberry@yahoo.com",
+    website : "https://deenernewberry.inteletravel.com/booktravel.cfm",
+    telNumber : "9013314183",
+    facebook : "",
+    instagram : "",
+    youtube : "",
+    linkedIn : "",
+    linktree : "",
+    twitter: "",
+    tiktok : "",
+    pinterest : ""
+}
