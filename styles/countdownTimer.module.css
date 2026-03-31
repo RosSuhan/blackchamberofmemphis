@@ -1,0 +1,42 @@
+.countDownContainer {
+    padding: 1rem 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ffffff;
+}
+
+.countDownBlock {
+    width: 20%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.countDownText{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.countDownSmallText {
+    font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+    .countDownContainer {
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) {
+    .countDownContainer {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .countDownContainer {
+        width: 60%;
+    }
+}

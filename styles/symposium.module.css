@@ -1,0 +1,320 @@
+.symposiumHero {
+    width: 100%;
+    position: relative;
+}
+
+.symposiumHeroBackgroundImage {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.symposiumHeroOverlay {
+    position: relative;
+    z-index: 99;
+    background: var(--overlay);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    row-gap: 2rem;
+}
+
+.symposiumMainHeading {
+    width: 255px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--gold);
+}
+
+.symBigHeading {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 0;
+}
+
+.symMedHeading {
+    width: 75%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.symSmallHeading {
+    width: 20%;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.symposiumEventDate {
+    color: #ffffff;
+}
+
+.symposiumCtaBtnRow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.symposiumCta {
+    width: 130px;
+    padding: .8rem 0;
+    color: #ffffff;
+    background: var(--gold);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Wide Text Section */
+.wideTextSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.textHeading {
+    font-size: 2.488rem;
+    width: 90%;
+    text-align: center;
+    margin: 0;
+}
+
+.textHeadingH3 {
+    text-align: center;
+    width: 90%;
+    font-size: 1.44rem;
+    margin: 0;
+}
+
+.text {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Two Column Section */
+.twoColumnSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    padding: 0;
+}
+
+.columnOne {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nonBulletList {
+    width: 90%;
+    list-style: none;
+    padding: 0;
+}
+
+.bulletList {
+    width: 90%;
+}
+
+.nonBulletItem {
+    padding: .5rem 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bulletItem {
+    padding: .5rem 0;
+}
+
+.goldText {
+    color: var(--gold);
+    margin-right: .5rem;
+}
+
+.sectionFeatureImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.twoColumnCtaSection {
+    width: 100%;
+    background: var(--darkGrey);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+.twoColumnFirstBlock {
+    width: 90%;
+    color: #ffffff;
+}
+
+.sectionCtaBtnRow {
+    width: 90%;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionCta {
+    background: var(--gold);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--darkGrey);
+}
+
+/* sponsorship section */
+.sponsorshipSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+
+
+
+@media (min-width: 400px) {
+    .symposiumCtaBtnRow {
+        width: 80%;
+    }
+
+    .twoColumnFirstBlock {
+        width: 80%;
+    }
+
+    .bulletList {
+        width: 88%;
+    }
+}
+
+@media (min-width:500px) {
+    .twoColumnFirstBlock {
+        width: 90%;
+    }
+
+    .textHeadingH3 {
+        text-align: left;
+    }
+    
+    .sectionCtaBtnRow {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 600px) {
+    .symposiumHeroOverlay {
+        padding: 3rem 0;
+    }
+    
+    .symposiumMainHeading {
+        width: 320px;
+        justify-content: space-between;
+    }
+    
+    .symBigHeading {
+        font-size: 4.2rem;
+    }
+    
+    .symMedHeading {
+        font-size: 2.5rem;
+    }
+    
+    .symSmallHeading {
+        font-size: 1.2rem;
+    }
+    
+    .symposiumCtaBtnRow {
+        width: 70%;
+    }
+
+    .sectionFeatureImage {
+        width: 80%;
+    }
+
+    .textHeading,
+    .text {
+        text-align: left;
+    }
+}
+
+@media (min-width:700px) {
+    .twoColumnCtaSection {
+        align-items: flex-end;
+    }
+
+    .twoColumnFirstBlock {
+        width: 45%;
+    }
+    
+    .sectionCtaBtnRow {
+        width: 45%;
+    }
+}
+
+@media (min-width: 800px) {
+    .symposiumHeroOverlay {
+        padding: 4rem 0;
+        row-gap: 1rem;
+    }
+    
+    .symposiumCtaBtnRow {
+        width: 60%;
+    }
+    
+    .symposiumCta {
+        width: 180px;
+        padding: 1rem 0;
+    }
+
+    .wideTextSection {
+        text-align: left;
+        padding: 5rem 0;
+    }
+    
+    .columnOne {
+        width: 60%;
+    }
+
+    .sectionFeatureImage {
+        width: 40%;
+        height: 530px;
+        object-fit: cover;
+    }
+
+    .twoColumnFirstBlock {
+        width: 40%;
+    }
+    
+    .sectionCtaBtnRow {
+        width: 30%;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1000px) {
+    .symposiumCtaBtnRow {
+        width: 50%;
+    }
+}

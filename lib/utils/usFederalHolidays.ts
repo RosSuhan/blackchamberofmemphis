@@ -126,6 +126,27 @@ export function getUSFederalHolidays(year: number): Holiday[] {
             sortDate: `${year}-12-25`,
             type: 'holiday',
             isFederal: true,
+        },
+        {
+            id: 'easter-friday',
+            eventName: "Easter Friday",
+            sortDate: "2026-04-03",
+            type: 'holiday',
+            isFederal: true,
+        },
+        {
+            id: 'easter-saturday',
+            eventName: "Easter Saturday",
+            sortDate: "2026-04-04",
+            type: 'holiday',
+            isFederal: true,
+        },
+        {
+            id: 'easter-sunday',
+            eventName: "Easter Sunday",
+            sortDate: "2026-04-05",
+            type: 'holiday',
+            isFederal: true,
         }
     ];
 }
