@@ -1,0 +1,88 @@
+.symposiumHero {
+    width: 100%;
+    position: relative;
+}
+
+.symposiumHeroBackgroundImage {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.symposiumHeroOverlay {
+    position: relative;
+    z-index: 99;
+    background: var(--overlay);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    row-gap: 2rem;
+}
+
+.symposiumMainHeading {
+    width: 255px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--gold);
+}
+
+.symBigHeading {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 0;
+}
+
+.symMedHeading {
+    width: 75%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.symSmallHeading {
+    width: 20%;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.symposiumEventDate {
+    color: #ffffff;
+}
+
+
+@media (min-width: 600px) {
+    .symposiumHeroOverlay {
+        padding: 3rem 0;
+    }
+    
+    .symposiumMainHeading {
+        width: 320px;
+        justify-content: space-between;
+    }
+    
+    .symBigHeading {
+        font-size: 4.2rem;
+    }
+    
+    .symMedHeading {
+        font-size: 2.5rem;
+    }
+    
+    .symSmallHeading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .symposiumHeroOverlay {
+        padding: 4rem 0;
+        row-gap: 1rem;
+    }
+}

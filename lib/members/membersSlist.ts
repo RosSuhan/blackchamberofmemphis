@@ -14,6 +14,7 @@ import { stJohnBaptistChurch } from './(s)/stJohnBaptistChurch'
 import { stAndrewAMEChurch } from './(s)/stAndrewAMEChurch'
 import { stAugustineCatholicChurch } from './(s)/stAugustineCatholicChurch'
 import { sassySpiritzMobileBartending } from './(s)/sassySpiritzMobileBartending'
+import { selfSolutions } from './(s)/selfSolutions'
 
 export const membersSlist = [
     sheGotGameLeague,
@@ -32,4 +33,5 @@ export const membersSlist = [
     stAndrewAMEChurch,
     stAugustineCatholicChurch,
     sassySpiritzMobileBartending,
+    selfSolutions,
 ]

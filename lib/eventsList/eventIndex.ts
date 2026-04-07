@@ -10,8 +10,10 @@ import { succSolFeb } from "./eventsFolder/succSolFeb";
 import { theStudioKaraokeRibbonCut } from "./eventsFolder/theStudioKaraokeRibbonCut";
 import { firstQuarterlyNetwork } from "./eventsFolder/firstQuarterlyNetwork";
 import { aprilBcomNewMember } from "./eventsFolder/aprilBcomNewMember";
+import { remotingWorkshop1 } from "./eventsFolder/remotingWorkshop1";
 
 export const eventIndex = [
+    remotingWorkshop1,
     leveledUp,
     bcomMixer,
     janBcomNewMember,

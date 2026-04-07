@@ -1,0 +1,42 @@
+.twoButtonBlock {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    /* background-color: aqua; */
+}
+
+.symposiumCta {
+    width: 200px;
+    padding: .8rem 0;
+    color: #ffffff;
+    background: var(--gold);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .symposiumHeroOverlay {
+        padding: 4rem 0;
+        row-gap: 1rem;
+    }
+    
+    .twoButtonBlock {
+        width: 60%;
+    }
+    
+    .symposiumCta {
+        width: 180px;
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .twoButtonBlock {
+        width: 50%;
+    }
+}

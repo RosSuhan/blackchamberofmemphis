@@ -1,76 +1,31 @@
-import CountdownTimer from '@/components/countDownTimer/page'
+import SymposiumHero from '@/components/symposiumComps/hero/HeroSection'
+import ThreeBlockRow from '@/components/symposiumComps/threeBlockRow/page'
+// import WideTextSection from '@/components/symposiumComps/wideTextSection/page'
 import style from '@/styles/symposium.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
 
 export default function Symposium(){
+    const ctaButtons = [
+        {   
+            path: "/",
+            buttonName: "Register To Attend"
+        },
+        {
+            path: "#sponsorship",
+            buttonName: "Become a Sponsor"
+        }
+    ]
+
     return (
         <main>
-            <section
-                className={style.symposiumHero}
-            >
-                <div
-                    className={style.symposiumHeroOverlay}
-                >
-                    <h1
-                        className={style.symposiumMainHeading}
-                    >
-                        <span className={style.symBigHeading}>BUILDING WEALTH</span>
-                        <span className={style.symSmallHeading}>IN OUR</span>
-                        <span className={style.symMedHeading}>COMMUNITY</span>
-                    </h1>
-                    
-                    <CountdownTimer
-                        eventDate = {"August 27, 2026 00:00:00"}
-                    />
-                    
-                    <h2
-                        className={style.symposiumEventDate}
-                    >
-                        August 27 - 28, 2026
-                    </h2>
-                    <div
-                        className={style.symposiumCtaBtnRow}
-                    >
-                        <Link
-                            href={''}
-                            className={style.symposiumCta}
-                        >
-                            Sponsor
-                        </Link>
+            <SymposiumHero
+                showButtons={true}
+                ctaButtons={ctaButtons || []}
+            />
 
-                        <Link
-                            href={''}
-                            className={style.symposiumCta}
-                        >
-                            Register
-                        </Link>
-                    </div>
-                </div>
-                <Image
-                    src={'/events/symposium/BCOM_Symposium_2025_Day2-16.jpg'}
-                    alt=''
-                    width={2048}
-                    height={1363}
-                    className={style.symposiumHeroBackgroundImage}
-                />
-            </section>
-
-            <section
-                className={style.wideTextSection}
-            >
-                <h2
-                    className={style.textHeading}
-                >
-                    Who We Are
-                </h2>
-                <p
-                    className={style.text}
-                >
-                    The Black Chamber of Memphis (BCoM) is an advocacy and economic development organization dedicated to strengthening and scaling businesses across the Mid-South. Through strategic programming,  access to capital, partnerships, and education, BCoM works to ensure entrepreneurs have the tools, networks, and opportunities needed to grow sustainable enterprises. 
-                </p>
-            </section>
+            <ThreeBlockRow/>
 
             <section
                 className={style.twoColumnSection}
@@ -155,11 +110,6 @@ export default function Symposium(){
                     <ul
                         className={style.bulletList}
                     >
-                        {/* <li
-                            className={style.bulletItem}
-                        >
-                            Members Exchange Market
-                        </li> */}
                         <li
                             className={style.bulletItem}
                         >

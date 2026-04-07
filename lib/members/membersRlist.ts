@@ -4,6 +4,7 @@ import { rubyWilliamsStateFarmInsuranceAgent } from "./(r)/rubyWilliamsStateFarm
 import { rollingSudsPowerWashing } from "./(r)/rollingSudsPowerWashing";
 import { reformationMemphis } from "./(r)/reformationMemphis";
 import { riversideMissionaryBaptistChurch } from "./(r)/riversideMissionaryBaptistChurch";
+import { redlee } from "./(r)/redlee";
 
 export const membersRlist = [
     ritzeeFlorist,
@@ -12,4 +13,5 @@ export const membersRlist = [
     rollingSudsPowerWashing,
     reformationMemphis,
     riversideMissionaryBaptistChurch,
+    redlee,
 ]
