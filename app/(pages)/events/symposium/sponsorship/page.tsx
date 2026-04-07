@@ -55,9 +55,9 @@ export default function Sponsorship(){
 
     return (
         <main>
-            <SymposiumHero
+            {/* <SymposiumHero
                 showButtons = {true}
-            />
+            /> */}
 
             <section>
                 <h2>

@@ -31,7 +31,7 @@ export default function CreativeProdApplication(){
             /> */}
 
 
-            <SymposiumApplication/>
+            {/* <SymposiumApplication/> */}
         </main>
     )
 }
