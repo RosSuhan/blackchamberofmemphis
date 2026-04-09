@@ -31,25 +31,18 @@
     text-align: center;
 }
 
-.sectionList {
+.text ul {
     width: 100%;
     padding: 0;
 }
 
-.listItem {
+.text ul li {
     padding: .5rem 0;
 }
 
-.boldText {
+.text ul li span {
     font-weight: 800;
     margin-right: .5rem;
     font-size: 1.2rem;
-    line-height: 1.2rem;
-}
-
-.secondBoldText {
-    font-weight: 1.1rem;
-    font-weight: 600;
-    margin-right: .5rem;
     line-height: 1.2rem;
 }

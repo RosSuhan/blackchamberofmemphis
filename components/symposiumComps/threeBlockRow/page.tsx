@@ -14,7 +14,7 @@ export default function ThreeBlockRow(){
                     <p
                         className={style.blockText}
                     >
-                        200+ <br/> Attendees
+                        250+ <br/> Attendees
                     </p>
                 </div>
                 <div

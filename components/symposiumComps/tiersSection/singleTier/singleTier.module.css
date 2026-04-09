@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .tierPrice {
@@ -60,12 +61,12 @@
     .tierBlock {
         width: 30%;
         margin: 0;
-        height: 900px;
+        /* height: 900px; */
     }
 
     .tierBlock:first-child,
     .tierBlock:last-child {
-        height: 850px;
+        /* height: 850px; */
     }
     
     .tierTitle {
@@ -76,12 +77,12 @@
 
 @media (min-width: 700px) {
     .tierBlock {
-        height: 800px;
+        /* height: 800px; */
     }
 
     .tierBlock:first-child,
     .tierBlock:last-child {
-        height: 730px;
+        /* height: 730px; */
     }
     
     .tierTitle {
@@ -91,12 +92,12 @@
 
 @media (min-width: 800px) {
     .tierBlock {
-        height: 780px;
+        /* height: 780px; */
     }
 
     .tierBlock:first-child,
     .tierBlock:last-child {
-        height: 700px;
+        /* height: 700px; */
     }
     
     .tierTitle {
@@ -106,13 +107,13 @@
 
 @media (min-width: 900px) {
     .tierBlock {
-        height: 750px;
+        /* height: 750px; */
     }
 }
 
 @media (min-width: 1000px) {
     .tierBlock {
-        height: 740px;
+        /* height: 740px; */
     }
 
     .tierBlock:first-child,
@@ -123,11 +124,11 @@
 
 @media (min-width: 1100px) {
     .tierBlock {
-        height: 680px;
+        /* height: 680px; */
     }
 
     .tierBlock:first-child,
     .tierBlock:last-child {
-        height: 630px;
+        /* height: 630px; */
     }
 }

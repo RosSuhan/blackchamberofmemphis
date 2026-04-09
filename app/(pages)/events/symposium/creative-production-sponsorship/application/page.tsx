@@ -1,19 +1,27 @@
 import SymposiumApplication from "@/components/symposiumComps/applicationForm/page";
-// import SymposiumHero from "@/components/symposiumComps/hero/HeroSection";
-// import WideTextSection from "@/components/symposiumComps/wideTextSection/page";
+import SymposiumHero from "@/components/symposiumComps/hero/HeroSection";
+import WideTextSection from "@/components/symposiumComps/wideTextSection/page";
 
 
 export default function CreativeProdApplication(){
+    const sponsorCtaButtons = [
+        {
+            path: "/events/symposium/creative-production-sponsorship/application",
+            buttonName: "Become a Sponsor",
+            type : "internal"
+        }
+    ]
+
     return(
         <main>
-            {/* <SymposiumHero
+            <SymposiumHero
                 showButtons={false}
-            /> */}
+                ctaButtons={sponsorCtaButtons}
+            />
 
-            {/* <WideTextSection
-                h2Heading="2026 Creative & Production In-Kind Sponsorship Application"
-                h3Heading={'Building Wealth in Our Community Symposium'}
-                paragraph={`
+            <WideTextSection
+                wideTextSectionHeading={"2026 Creative & Production In-Kind Sponsorship Application"}
+                wideTextSectionText={`
                     <p>
                         Thank you for your interest in serving as a Creative & Production Sponsor for the 2026 Building Wealth in Our Community Symposium, the Black Chamber of Memphis’ annual fundraiser.
                     </p>
@@ -27,11 +35,12 @@ export default function CreativeProdApplication(){
                     <p>
                         Selected partners will be assigned sponsorship recognition based on the verified fair market value of services provided.<br/>
                         <strong>Submission Deadline: Friday, May 1, 2026</strong>
-                    </p>`}
-            /> */}
+                    </p>`
+                }
+            />
 
 
-            {/* <SymposiumApplication/> */}
+            <SymposiumApplication/>
         </main>
     )
 }

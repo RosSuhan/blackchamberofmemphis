@@ -38,11 +38,22 @@
 }
 
 .faqAnswer {
+    width: 98%;
     display: flex;
-    padding: .5rem;
+    flex-direction: column;
+    padding: 1rem;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     border-radius: 0 0 8px 8px;
+    line-height: 1.5;
+}
+
+.faqAnswer p {
+    margin: .2rem 0;
+}
+
+.faqAnswer ul {
+    margin-top: 0;
 }
 
 .hide {

@@ -29,12 +29,15 @@ export default function SingleTier({
                         </span>
                         {amount}
                     </h3>
-                    <div
-                        className={style.tierTitle}
-                        style={{background: `${sponsorTitleBackground}`}}
-                    >
-                        {sponsorTitle}
-                    </div>
+                    {sponsorTitle ? 
+                        <div
+                            className={style.tierTitle}
+                            style={{background: `${sponsorTitleBackground}`}}
+                        >
+                            {sponsorTitle}
+                        </div>
+                    : null}
+                        
                     {sponsorDate ? 
                         <span
                             className={style.tierSponsorDate}

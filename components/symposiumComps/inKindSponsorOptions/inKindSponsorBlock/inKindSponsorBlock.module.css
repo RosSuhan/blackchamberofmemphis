@@ -1,0 +1,104 @@
+.inKindSponsorOptionRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 0 5rem 0;
+    row-gap: 2rem;
+}
+
+.inKindSponsor {
+    background-color: #ededed;
+    border: solid 2px #a1995f;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inKindSponsorTitle {
+    text-align: center;
+    width: 90%;
+    font-size: 1.602rem;
+}
+
+.inKindSponsorInfo {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inKindSponsorCTA {
+    background: #a1995f;
+    margin: 1rem 0 1.5rem 0;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.266rem;
+}
+
+.inKindSponsorPopUpBlock {
+    display: none;
+}
+
+.popUpOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100svh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.inKindSponsorPopUp {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 50svh;
+    padding: 0 0 2rem 0;
+    box-shadow: 10px 10px 20px #000000;
+    border: solid #a1995f 8px;
+    border-radius: 10px;
+    /* top: 0; */
+    /* z-index: 999; */
+}
+
+.closeButtonRow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.closeButton {
+    font-size: 2rem;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+}
+
+.popUpText {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* text-align: center; */
+}
+
+.applicationLink {
+    background: #a1995f;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.266rem;
+    color: #000000;
+    font-weight: 800;
+}

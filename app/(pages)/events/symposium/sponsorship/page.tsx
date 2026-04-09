@@ -15,7 +15,7 @@ export default function Sponsorship(){
             type : "external"
         },
         {   
-            path: "/download",
+            path: "/events/symposium/Symposium_Sponsorship_Deck_2026.pdf",
             buttonName: "Download Sponsorship Deck",
             type : "download"
         },
@@ -61,6 +61,7 @@ export default function Sponsorship(){
                 "Logo Displayed on Printed & Digital Material",
                 "On-site Activation",
                 "15 Symposium Tickets",
+                "15 Momentum Mixer Tickets",
                 "5 Speaker Meet & Greet Tickets",
                 "2 President's Power Tickets Breakfast",
                 "1 Item Included in Attendee Bags",
@@ -102,7 +103,7 @@ export default function Sponsorship(){
                 "2026 President's Power Breakfast Title Sponsor",
                 "Billboard Ad for 14 Days",
                 "3 Minutes of Remarks",
-                "Promo Video Displayed at Symposium",
+                "Promo Video During Symposium",
                 "Logo Displayed on Printed & Digital Material",
                 "On-site Activation",
                 "15 Symposium Tickets",
@@ -114,10 +115,121 @@ export default function Sponsorship(){
         },
     ]
 
+    const secondPresentingSponsorTiers = [
+        {
+            tIndex : "secondPresentOne",
+            tierBlockBackground : "#2d353c",
+            tierPriceColor : "#ffffff",
+            tierTextColor : "#ffffff",
+            amount : "10,000",
+            sponsorTitle : "Panel",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Presenting Sponsor for 1 Main Stage Panel",
+                "1 Moderator or Panelist Spot",
+                "Logo Displayed on Printed & Digital Material",
+                "1 Vendor Table",
+                "8 Symposium Tickets",
+                "5 Speaker Meet & Greet Tickets",
+                "5 Momentum Mixer Tickets",
+                "1 President's Power Tickets Breakfast",
+                "1 Item Included in Attendee Bags"
+            ]
+        },
+        {
+            tIndex : "secondPresentTwo",
+            tierBlockBackground : "#2d353c",
+            tierPriceColor : "#ffffff",
+            tierTextColor : "#ffffff",
+            amount : "15,000",
+            sponsorTitle : "Keynote Speaker",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "2026 Keynote Speaker Presenting Sponsor",
+                "Introduces Keynote Speaker",
+                "Logo Displayed on Printed & Digital Material",
+                "1 Vendor Table",
+                "10 Symposium Tickets",
+                "10 Speaker Meet & Greet Tickets",
+                "5 Momentum Mixer Tickets",
+                "1 President's Power Tickets Breakfast",
+                "1 Item Included in Attendee Bags",
+            ]
+        },
+        {
+            tIndex : "secondPresentThree",
+            tierBlockBackground : "#2d353c",
+            tierPriceColor : "#ffffff",
+            tierTextColor : "#ffffff",
+            amount : "7,500",
+            sponsorTitle : "Breakout",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Presenting Sponsor for 1 Breakout Session",
+                "2 minutes of Opening Remarks during the Breakout",
+                "Logo Displayed on Printed & Digital Material",
+                "1 Vendor Table",
+                "5 Symposium Tickets",
+                "3 Speaker Meet & Greet Tickets",
+                "3 Momentum Mixer Tickets",
+                "1 Item Included in Attendee Bags",
+            ]
+        }
+    ]
+
+    const supportingSponsorTiers = [
+
+        {
+            tIndex : "supportingOne",
+            tierBlockBackground : "#2d353c",
+            tierPriceColor : "#ffffff",
+            tierTextColor : "#ffffff",
+            amount : "2,500",
+            sponsorTitle : "Silver",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Name Displayed on Select Material",
+                "2 Symposium Tickets",
+                "2 Momentum Mixer Tickets",
+                "1 Vendor Table at Momentum Mixer",
+            ]
+        },
+        {
+            tIndex : "supportingTwo",
+            tierBlockBackground : "#2d353c",
+            tierPriceColor : "#ffffff",
+            tierTextColor : "#ffffff",
+            amount : "5,000",
+            sponsorTitle : "Gold",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Logo Displayed on Printed & Digital Material",
+                "1 Vendor Table at Momentum Mixer",
+                "5 Symposium Tickets",
+                "5 Speaker Meet & Greet Tickets",
+                "5 Momentum Mixer Tickets"
+            ]
+        },
+        {
+            tIndex : "supportingThree",
+            tierBlockBackground : "#2d353c",
+            tierPriceColor : "#ffffff",
+            tierTextColor : "#ffffff",
+            amount : "1,000",
+            sponsorTitle : "Bronze",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Name Included on Post-Event Email & Social Media",
+                "2 Symposium Tickets",
+                "2 Momentum Mixer Tickets",
+                "1 Vendor Table at Momentum Mixer"
+            ]
+        }
+    ]
     return (
         <main>
             <SymposiumHero
-                showButtons={false}
+                showButtons={true}
                 ctaButtons={sponsorCtaButtons}
             />
 
@@ -127,6 +239,20 @@ export default function Sponsorship(){
                 sectionBackground = {"#f1dbb9"}
                 sectionTitle={"Presenting Sponsors:"}
                 tiersToShow = {presentingSponsorTiers}
+                sponsorTitleBackground = {"#d8bca5"}
+            />
+
+            <TierSection
+                sectionBackground = {"#a1995f"}
+                sectionTitle={"Presenting Sponsors:"}
+                tiersToShow = {secondPresentingSponsorTiers}
+                sponsorTitleBackground = {"#d8bca5"}
+            />
+
+            <TierSection
+                sectionBackground = {"#f1dbb9"}
+                sectionTitle={"Supporting Sponsors:"}
+                tiersToShow = {supportingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
             />
 
@@ -182,70 +308,7 @@ export default function Sponsorship(){
             {/* <section> */}
                 
 
-                {/* keynote speaker sponsor */}
-                {/* <div>
-                    <p>
-                        <span>$</span>
-                        15,000
-                    </p>
-                    <span>
-                        Keynote Speaker
-                    </span>
-                    <ul>
-                        <li>2026 Keynote Speaker Presenting Sponsor</li>
-                        <li>Introduces Keynote Speaker</li>
-                        <li>Logo Displayed on Printed & Digital Material</li>
-                        <li>1 Vendor Table</li>
-                        <li>10 Symposium Tickets</li>
-                        <li>10 Speaker Meet & Greet Tickets</li>
-                        <li>5 Momentum Mixer Tickets</li>
-                        <li>1 President&apos;s Power Tickets Breakfast</li>
-                        <li>1 Item Included in Attendee Bags</li>
-                    </ul>
-                </div> */}
-
-                {/* panel sponsor */}
-                {/* <div>
-                    <p>
-                        <span>$</span>
-                        10,000
-                    </p>
-                    <span>
-                        Panel
-                    </span>
-                    <ul>
-                        <li>Presenting Sponsor for 1 Main Stage Panel</li>
-                        <li>1 Moderator or Panelist Spot</li>
-                        <li>Logo Displayed on Printed & Digital Material</li>
-                        <li>1 Vendor Table</li>
-                        <li>8 Symposium Tickets</li>
-                        <li>5 Speaker Meet & Greet Tickets</li>
-                        <li>5 Momentum Mixer Tickets</li>
-                        <li>1 President&apos;s Power Tickets Breakfast</li>
-                        <li>1 Item Included in Attendee Bags</li>
-                    </ul>
-                </div> */}
-
-                {/* breakout sponsor */}
-                {/* <div>
-                    <p>
-                        <span>$</span>
-                        7,500
-                    </p>
-                    <span>
-                        Breakout
-                    </span>
-                    <ul>
-                        <li>Presenting Sponsor for 1 Breakout Session</li>
-                        <li>2 minutes of Opening Remarks during the Breakout</li>
-                        <li>Logo Displayed on Printed & Digital Material</li>
-                        <li>1 Vendor Table</li>
-                        <li>5 Symposium Tickets</li>
-                        <li>3 Speaker Meet & Greet Tickets</li>
-                        <li>3 Momentum Mixer Tickets</li>
-                        <li>1 Item Included in Attendee Bags</li>
-                    </ul>
-                </div> */}
+                
 
                 {/* Gold sponsor */}
                 {/* <div>
