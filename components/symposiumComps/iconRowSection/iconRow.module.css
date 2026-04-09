@@ -1,0 +1,32 @@
+.iconRowSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.iconRowHeading {
+    font-size: 1.802rem;
+    width: 90%;
+    text-align: center;
+}
+
+.iconRowParagraph {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.flipBoxGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width:768px) {
+    .flipBoxGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

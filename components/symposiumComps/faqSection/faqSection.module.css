@@ -1,0 +1,21 @@
+.faqSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 6rem 0;
+    /* background-color: orange; */
+}
+
+.faqSectionHeading {
+    font-size: 1.802rem;
+    width: 90%;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.faqIntroText {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}

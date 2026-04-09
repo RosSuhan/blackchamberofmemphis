@@ -5,13 +5,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 2rem;
-    /* background-color: aqua; */
 }
 
 .symposiumCta {
-    width: 200px;
+    width: 300px;
     padding: .8rem 0;
-    color: #ffffff;
+    color: #000000;
     background: var(--gold);
     border-radius: 5px;
     text-decoration: none;
@@ -26,17 +25,17 @@
     }
     
     .twoButtonBlock {
-        width: 60%;
+        /* width: 60%; */
     }
     
     .symposiumCta {
-        width: 180px;
+        /* width: 180px; */
         padding: 1rem 0;
     }
 }
 
 @media (min-width: 1000px) {
-    .twoButtonBlock {
+    /* .twoButtonBlock {
         width: 50%;
-    }
+    } */
 }

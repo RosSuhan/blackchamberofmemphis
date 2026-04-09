@@ -9,7 +9,7 @@ export default function ThreeBlockRow(){
             >
                 <div
                     className={style.block}
-                    style={{background:"#977A66"}}
+                    style={{background:"#977A66", color: "#121523"}}
                 >
                     <p
                         className={style.blockText}

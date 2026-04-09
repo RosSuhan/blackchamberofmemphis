@@ -1,0 +1,60 @@
+.businessSessions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #977A66;
+    padding: 4rem 0 6rem 0;
+    row-gap: 2rem;
+}
+
+.sessionHeading {
+    font-size: 1.802rem;
+    width: 90%;
+    text-align: center;
+    margin: 0;
+}
+
+.sessionBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #D8BCA5;
+    box-shadow: 5px 5px 10px #000000;
+    border-radius: 8px;
+    padding: 2rem 0;
+}
+
+.sessionSubHeading {
+    text-align: center;
+    width: 80%;
+    font-size: 1.44rem;
+    margin: 0;
+}
+
+.sessionInfoText {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    .sessionSubHeading {
+        width: 90%;
+    }
+    
+    .sessionInfoText {
+        width: 90%;
+    }
+}
+
+@media (min-width:800px) {
+    .sessionSubHeading {
+        text-align: left;
+    }
+    
+    .sessionInfoText {
+        text-align: left;
+    }
+}

@@ -1,0 +1,65 @@
+.partnerWithUsSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 0 6rem 0;
+}
+
+.partnerSectionHeading {
+    font-size: 1.802rem;
+    width: 90%;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.partnerSectionParagraph,
+.partnerIntro {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.partnerOptionBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: #a1995f;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+.partnerTitle {
+    text-align: center;
+    margin: 0;
+    width: 90%;
+    font-size: 1.602rem;
+}
+
+.partnerCTAButton {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    width: 85%;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 8px;
+}
+
+@media (min-width: 800px) {
+    .partnerOptionBlock {
+        width: 45%;
+        height: 240px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 950px) {
+    .partnerOptionBlock {
+        height: fit-content;
+    }
+}
