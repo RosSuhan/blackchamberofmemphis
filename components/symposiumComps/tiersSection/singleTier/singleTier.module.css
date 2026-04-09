@@ -53,68 +53,14 @@
 @media (min-width: 400px) {
     .tierBlock {
         width: 70%;
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
-        /* margin: 0 1rem; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-    }
-    
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
-    .tierTitle {
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }
 
 @media (min-width: 600px) {
     .tierBlock {
         width: 30%;
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
         margin: 0;
         height: 900px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
     }
 
     .tierBlock:first-child,
@@ -122,62 +68,15 @@
         height: 850px;
     }
     
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
     .tierTitle {
         width: 70%;
         text-align: center;
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }
 
 @media (min-width: 700px) {
     .tierBlock {
-        /* width: 30%; */
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
-        /* margin: 0; */
         height: 800px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
     }
 
     .tierBlock:first-child,
@@ -185,62 +84,14 @@
         height: 730px;
     }
     
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
     .tierTitle {
         width: 80%;
-        /* text-align: center; */
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }
 
 @media (min-width: 800px) {
     .tierBlock {
-        /* width: 30%; */
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
-        /* margin: 0; */
         height: 780px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
     }
 
     .tierBlock:first-child,
@@ -248,237 +99,35 @@
         height: 700px;
     }
     
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
     .tierTitle {
         width: 70%;
-        /* text-align: center; */
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }
 
 @media (min-width: 900px) {
     .tierBlock {
-        /* width: 30%; */
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
-        /* margin: 0; */
         height: 750px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-    }
-
-    .tierBlock:first-child,
-    .tierBlock:last-child {
-        /* height: 700px; */
-    }
-    
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
-    .tierTitle {
-        /* width: 70%; */
-        /* text-align: center; */
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }
 
 @media (min-width: 1000px) {
     .tierBlock {
-        /* width: 30%; */
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
-        /* margin: 0; */
         height: 740px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
     }
 
     .tierBlock:first-child,
     .tierBlock:last-child {
         height: 680px;
-    }
-    
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
-    .tierTitle {
-        /* width: 70%; */
-        /* text-align: center; */
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }
 
 @media (min-width: 1100px) {
     .tierBlock {
-        /* width: 30%; */
-        /* display: none; */
-        /* border: solid 1px #3e3e3e; */
-        /* margin: 0; */
         height: 680px;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
     }
 
     .tierBlock:first-child,
     .tierBlock:last-child {
         height: 630px;
-    }
-    
-    .tierPrice {
-        /* width: 90%; */
-        /* font-size: 1.802rem; */
-        /* display: flex; */
-        /* align-items: flex-start; */
-        /* justify-content: center; */
-    }
-    
-    .tierPriceCurrency {
-        /* font-size: 0.889rem; */
-    }
-    
-    .tierTitle {
-        /* width: 70%; */
-        /* text-align: center; */
-        /* padding: .5rem 1rem; */
-        /* border-radius: 50px; */
-        /* font-size: 1.125rem; */
-        /* font-weight: 800; */
-    }
-    
-    .tierSponsorDate {
-        /* margin-top: 1rem; */
-    }
-    
-    .tierList {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 0; */
-        /* list-style: none; */
-    }
-    
-    .tierItem {
-        /* padding: .5rem 0; */
-        /* width: 90%; */
-        /* display: flex; */
-        /* align-items: center; */
-    }
-    
-    .tierIcon {
-        /* min-width: 10px; */
-        /* margin-right: .5rem; */
     }
 }

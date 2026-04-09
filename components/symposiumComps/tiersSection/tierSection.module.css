@@ -19,29 +19,4 @@
     justify-content: center;
     row-gap: 2rem;
     padding-top: 2rem;
-    background-color: green;
-}
-
-@media (min-width: 700px) {
-    .tierSection {
-        /* padding: 4rem 0 6rem 0; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-    }
-    
-    .tierHeading {
-        /* font-size: 1.802rem; */
-        /* width: 90%; */
-        /* text-align: center; */
-    }
-    
-    .tierRowBlock {
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* row-gap: 2rem; */
-        /* padding-top: 2rem; */
-    }
 }
