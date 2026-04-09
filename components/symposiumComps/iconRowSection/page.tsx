@@ -1,14 +1,14 @@
 'use client'
 import Flipbox from '@/components/FLIPBOX/page'
 import style from './iconRow.module.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export default function IconRowSection(){
-    const [ activeIndex, setActiveIndex ] = useState(null);
+    // const [ activeIndex, setActiveIndex ] = useState(null);
 
-    const handleToggle = (index) => {
-        setActiveIndex(activeIndex === index ? null : index );
-    }
+    // const handleToggle = (index) => {
+    //     setActiveIndex(activeIndex === index ? null : index );
+    // }
 
     const flipBoxData = [
         {
@@ -50,10 +50,10 @@ export default function IconRowSection(){
                 {flipBoxData.map(({index, frontTitle, backText}) => (
                     <Flipbox
                         key={index}
-                        flipboxHeader={frontTitle}
-                        flipboxText={backText}
-                        flipped={flippedIndexes.includes(index)}
-                        onClick={() => handleToggle(index)}
+                        // flipboxHeader={frontTitle}
+                        // flipboxText={backText}
+                        // flipped={flippedIndexes.includes(index)}
+                        // onClick={() => handleToggle(index)}
                     />
                 ))}
             </div>
