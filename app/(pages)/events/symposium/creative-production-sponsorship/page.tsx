@@ -4,7 +4,6 @@ import InKindSponsorOptions from "@/components/symposiumComps/inKindSponsorOptio
 import LastCtaSection from "@/components/symposiumComps/lastCTASection/page";
 import ThreeBlockRow from "@/components/symposiumComps/threeBlockRow/page";
 import TierSection from "@/components/symposiumComps/tiersSection/page";
-import WideTextSection from "@/components/symposiumComps/wideTextSection/page";
 
 
 export default function CreativeProdSponsor(){
@@ -15,7 +14,7 @@ export default function CreativeProdSponsor(){
             type : "internal"
         },
         {   
-            path: "/download",
+            path: "/events/symposium/Creative_Production_Symposium_Sponsorship_Deck.pdf",
             buttonName: "Download Sponsorship Deck",
             type : "download"
         },
@@ -207,11 +206,6 @@ export default function CreativeProdSponsor(){
             />
 
             <ThreeBlockRow/>
-
-            {/* <WideTextSection
-                wideTextSectionHeading={"What is In-Kind Sponsorship"}
-                wideTextSectionText={""}
-            /> */}
 
             <FAQSection
                 sectionHeading={'Why Sponsor?'}
