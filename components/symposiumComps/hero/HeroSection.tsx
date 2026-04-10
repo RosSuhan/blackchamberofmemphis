@@ -25,9 +25,9 @@ export default function SymposiumHero({showButtons, ctaButtons}: SymposiumHeroPr
                         <span className={style.symMedHeading}>COMMUNITY</span>
                     </h1>
                     
-                    <CountdownTimer
+                    {/* <CountdownTimer
                         eventDate = {"August 27, 2026 00:00:00"}
-                    />
+                    /> */}
                     
                     <h2
                         className={style.symposiumEventDate}

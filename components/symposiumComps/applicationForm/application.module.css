@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    padding: 0 0 4rem 0;
 }
 
 .symFormH3 {
@@ -78,4 +79,31 @@
 .symFormcaption {
     font-size: 0.889rem;
     margin-bottom: .5rem;
+}
+
+.symFormSelect {
+    width: 100%;
+    font-size: 1rem;
+    padding: .4rem 0;
+}
+
+.symFormAvailabilityRow {
+    width: 100%;
+    display: flex;
+    background-color: green;
+}
+
+.submitButtonRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitButton {
+    background: var(--gold);
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
 }

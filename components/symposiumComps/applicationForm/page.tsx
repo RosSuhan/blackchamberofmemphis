@@ -1,7 +1,101 @@
 'use client'
+import { useState } from 'react'
 import style from './application.module.css'
 
+type symposiumFormDataType = {
+    businessName : string
+    contactPerson : string
+    titleRole : string
+    email : string
+    phone : string
+    businessAddress : string
+    website : string
+    socialHandles : string
+    membership : string
+    serviceCategory : string[]
+    otherServiceCategory : string
+    ScopeOfWork : string
+    fairMarketAmount : string
+    experience : string
+    capacityOfExecution : string
+    executionApproach : string
+    equipmentToBeUsed : string
+    availability : string
+    optionalEnhancements : string
+    agreementOne: boolean,
+    agreementTwo: boolean,
+    agreementThree: boolean,
+}
+
 export default function SymposiumApplication(){
+    const [ symposiumFormData, setSymposiumFormData ] = useState({
+        businessName : '',
+        contactPerson : '',
+        titleRole : '',
+        email : '',
+        phone : '',
+        businessAddress : '',
+        website : '',
+        socialHandles : '',
+        membership : '',
+        serviceCategory : [] as string[],
+        otherServiceCategory : '',
+        ScopeOfWork : '',
+        fairMarketAmount : '',
+        experience : '',
+        capacityOfExecution : '',
+        executionApproach : '',
+        equipmentToBeUsed : '',
+        availability : '',
+        optionalEnhancements : '',
+        agreementOne: false,
+        agreementTwo: false,
+        agreementThree: false,
+    })
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const { name, value } = e.currentTarget;
+
+        setSymposiumFormData((prev) => ({
+            ...prev,
+            [name]: value
+        }))
+    }
+
+    const handleCheckbox = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value, checked } = e.currentTarget;
+    
+        setSymposiumFormData((prev) => {
+            const currentValues = prev[name as keyof typeof prev] as string[];
+    
+            if (checked) {
+                return {
+                    ...prev,
+                    [name]: [...currentValues, value],
+                };
+            } else {
+                return {
+                    ...prev,
+                    [name]: currentValues.filter((item) => item !== value),
+                };
+            }
+        });
+    };
+
+    const handleAgreementChecker = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, checked } = e.currentTarget;
+
+        setSymposiumFormData((prev) => ({
+            ...prev,
+            [name]: checked
+        }))
+    }
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log(symposiumFormData)
+    }
+
     return(
         <section
             className={style.symFormSection}
@@ -26,8 +120,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="businessName" 
+                        value={symposiumFormData.businessName}
+                        onChange={handleChange}
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -39,12 +134,13 @@ export default function SymposiumApplication(){
                     <legend
                         className={style.symFormLegend}
                     >
-                        Primary Contact
+                        Primary Contact Person
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="contactPerson" 
+                        value={symposiumFormData.contactPerson}
+                        onChange={handleChange}
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -60,8 +156,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="titleRole" 
+                        value={symposiumFormData.titleRole}
+                        onChange={handleChange}
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -77,8 +174,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="email"
+                        value={symposiumFormData.email} 
+                        onChange={handleChange} 
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -94,8 +192,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="phone"
+                        value={symposiumFormData.phone}
+                        onChange={handleChange} 
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -111,8 +210,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="businessAddress"
+                        value={symposiumFormData.businessAddress} 
+                        onChange={handleChange}
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -128,8 +228,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="website"
+                        value={symposiumFormData.website} 
+                        onChange={handleChange} 
                         className={style.symFormInput}
                     />
                 </fieldset>
@@ -144,8 +245,9 @@ export default function SymposiumApplication(){
                         Social Media Handles:
                     </legend>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="socialHandles" 
+                        value={symposiumFormData.socialHandles}
+                        onChange={handleChange}
                         rows={5}
                         className={style.symFormTextarea}
                     ></textarea>
@@ -165,8 +267,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="radio" 
-                            name="" 
-                            id="" 
+                            name="membership" 
+                            onChange={handleChange}
+                            value={"Yes"}
+                            checked={symposiumFormData.membership === "Yes"}
                             className={style.symFormRadio}
                         />
                         Yes
@@ -176,8 +280,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="radio" 
-                            name="" 
-                            id="" 
+                            name="membership" 
+                            onChange={handleChange}
+                            value={"No"}
+                            checked={symposiumFormData.membership === "No"}
                             className={style.symFormRadio}
                         />
                         No
@@ -187,8 +293,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="radio" 
-                            name="" 
-                            id="" 
+                            name="membership" 
+                            onChange={handleChange}
+                            value={"Not Sure"}
+                            checked={symposiumFormData.membership === "Not Sure"} 
                             className={style.symFormRadio}
                         />
                         Not Sure
@@ -215,8 +323,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory" 
+                            value={"Florals"}
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Florals")} 
                             className={style.symFormRadio}
                         />
                         Florals
@@ -227,8 +337,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Event Production"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Event Production")} 
                             className={style.symFormRadio}
                         />
                         Event Production
@@ -239,8 +351,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Photography"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Photography")} 
                             className={style.symFormRadio}
                         />
                         Photography
@@ -251,8 +365,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Videography"} 
+                            onChange={handleCheckbox} 
+                            checked={symposiumFormData.serviceCategory.includes("Videography")}
                             className={style.symFormRadio}
                         />
                         Videography
@@ -263,8 +379,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Decor-Design"} 
+                            onChange={handleCheckbox} 
+                            checked={symposiumFormData.serviceCategory.includes("Decor-Design")}
                             className={style.symFormRadio}
                         />
                         Decor & Design
@@ -275,8 +393,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Logistical Support"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Logistical Support")} 
                             className={style.symFormRadio}
                         />
                         Logistical Support
@@ -287,8 +407,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory" 
+                            value={"Marketing-Public Relations"}
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Marketing-Public Relations")}
                             className={style.symFormRadio}
                         />
                         Marketing & Public Relations
@@ -299,8 +421,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Signage-Environmental Branding"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Signage-Environmental Branding")}
                             className={style.symFormRadio}
                         />
                         Signage & Environmental Branding
@@ -311,8 +435,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Content Creation"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Content Creation")}
                             className={style.symFormRadio}
                         />
                         Content Creation
@@ -323,8 +449,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Creative Media Services"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.serviceCategory.includes("Creative Media Services")}
                             className={style.symFormRadio}
                         />
                         Creative Media Services (Design)
@@ -335,8 +463,10 @@ export default function SymposiumApplication(){
                     >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="serviceCategory"
+                            value={"Entertainment"} 
+                            onChange={handleCheckbox} 
+                            checked={symposiumFormData.serviceCategory.includes("Entertainment")}
                             className={style.symFormRadio}
                         />
                         Entertainment
@@ -348,8 +478,9 @@ export default function SymposiumApplication(){
                         Other:
                         <input 
                             type="text" 
-                            name="" 
-                            id="" 
+                            name="otherServiceCategory" 
+                            value={symposiumFormData.otherServiceCategory}
+                            onChange={handleChange}
                             className={style.symFormOtherInput}
                         />
                     </div>
@@ -370,8 +501,9 @@ export default function SymposiumApplication(){
                         Briefly describe the services you propose to provide, including key deliverables and how they align with the needs of a multi-day, 250+ attendee event.
                     </span>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="ScopeOfWork"
+                        value={symposiumFormData.ScopeOfWork} 
+                        onChange={handleChange} 
                         rows={5}
                         className={style.symFormTextarea}
                     ></textarea>
@@ -388,8 +520,9 @@ export default function SymposiumApplication(){
                     </legend>
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="fairMarketAmount" 
+                        value={symposiumFormData.fairMarketAmount}
+                        onChange={handleChange}
                         className={style.symFormInput}
                         placeholder='$'
                     />
@@ -411,62 +544,78 @@ export default function SymposiumApplication(){
                         Briefly describe your experience supporting events of similar size, scope, or audience.
                     </span>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="experience" 
+                        value={symposiumFormData.experience}
+                        onChange={handleChange} 
                         rows={5}
                         className={style.symFormTextarea}
                     ></textarea>
                 </fieldset>
 
+                {/* Capacity and Execution */}
                 <fieldset
                     className={style.symFormFieldset}
                 >
                     <legend
                         className={style.symFormLegend}
                     >
-                        Capacity of Execution
+                        Capacity & Execution
                     </legend>
                     <select 
-                        name="" 
-                        id=""
+                        name="capacityOfExecution"
+                        value={symposiumFormData.capacityOfExecution}
+                        onChange={handleChange}
                         className={style.symFormSelect}
                     >
-                        <option value="">option 1</option>
+                        <option value="solo-operator">Solo Operator</option>
+                        <option value="small-team">Small Team (2-5)</option>
+                        <option value="med-team">Mid-size Team (6-15)</option>
+                        <option value="large-team">Large-scale Production Team (15+)</option>
                     </select>
                 </fieldset>
 
+                 {/* execution approach */}
                 <fieldset
                     className={style.symFormFieldset}
                 >
                     <legend
                         className={style.symFormLegend}
                     >
-                        Execution Approuch
+                        Execution Approach
                     </legend>
+                    <span
+                        className={style.symFormcaption}
+                    >
+                        Briefly describe how you would execute your services for this event.
+                    </span>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="executionApproach" 
+                        value={symposiumFormData.executionApproach}
+                        onChange={handleChange} 
                         rows={5}
                         className={style.symFormTextarea}
                     ></textarea>
                 </fieldset>
 
+                {/* list of Equipment */}
                 <fieldset
                     className={style.symFormFieldset}
                 >
                     <legend
                         className={style.symFormLegend}
                     >
-                        List any Equipment, tech or resources
+                        List any equipment, technology, or resources you will provide (if applicable)
                     </legend>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="equipmentToBeUsed" 
+                        value={symposiumFormData.equipmentToBeUsed}
+                        onChange={handleChange} 
                         rows={5}
                         className={style.symFormTextarea}
                     ></textarea>
                 </fieldset>
 
+                {/* available dates */}
                 <fieldset
                     className={style.symFormFieldset}
                 >
@@ -475,26 +624,35 @@ export default function SymposiumApplication(){
                     >
                         Availability:
                     </legend>
-                    <div>
+                    <div
+                        className={style.symFormAvailabilityRow}
+                    >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
-                            className={style.symFormInput}
+                            name="availability" 
+                            value={"August 27"}
+                            onChange={handleCheckbox} 
+                            checked={symposiumFormData.availability.includes("August 27")}
+                            className={style.symFormAvailabilityCheck}
                         />
                         August 27, 2026
                     </div>
-                    <div>
+                    <div
+                        className={style.symFormAvailabilityRow}
+                    >
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="availability"
+                            value={"August 28"} 
+                            onChange={handleCheckbox}
+                            checked={symposiumFormData.availability.includes("August 28")}
                             className={style.symFormInput}
                         />
                         August 28, 2026
                     </div>
                 </fieldset>
 
+                {/* optional enhancements */}
                 <fieldset
                     className={style.symFormFieldset}
                 >
@@ -504,8 +662,9 @@ export default function SymposiumApplication(){
                         Optional Enhancements
                     </legend>
                     <textarea 
-                        name="" 
-                        id="" 
+                        name="optionalEnhancements" 
+                        onChange={handleChange} 
+                        value={symposiumFormData.optionalEnhancements}
                         rows={5}
                         className={style.symFormTextarea}
                     ></textarea>
@@ -520,33 +679,48 @@ export default function SymposiumApplication(){
                     <div>
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="agreementOne"
+                            onChange={handleAgreementChecker}
+                            checked={symposiumFormData.agreementOne}
                             className={style.symFormInput}
                         />
-                        <p></p>
+                        <p>I understand that sponsorship tier placement is based on the fair market value of my in-kind contribution and is subject to review and approval by the Black Chamber of Memphis.</p>
                     </div>
 
                     <div>
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="agreementTwo" 
+                            onChange={handleAgreementChecker}
+                            checked={symposiumFormData.agreementTwo}
                             className={style.symFormInput}
                         />
-                        <p></p>
+                        <p>I understand that selection is not guaranteed and that BCoM reserves the right to request revisions, clarification, or adjust scope as needed.</p>
                     </div>
                     
                     <div>
                         <input 
                             type="checkbox" 
-                            name="" 
-                            id="" 
+                            name="agreementThree" 
+                            onChange={handleAgreementChecker}
+                            checked={symposiumFormData.agreementThree}
                             className={style.symFormInput}
                         />
-                        <p></p>
+                        <p>I understand that a Memorandum of Understanding (MOU) will be required if selected.</p>
                     </div>
                 </fieldset>
+
+                <div
+                    className={style.submitButtonRow}
+                >
+                    <button 
+                        type="button"
+                        onClick={handleSubmit}
+                        className={style.submitButton}
+                    >
+                        Send Application
+                    </button>
+                </div>
             </form>
         </section>
     )

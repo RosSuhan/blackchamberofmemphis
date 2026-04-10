@@ -10,7 +10,7 @@ import FAQSection from '@/components/symposiumComps/faqSection/page'
 export default function Sponsorship(){
     const sponsorCtaButtons = [
         {
-            path: "https://growthzone",
+            path: "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3",
             buttonName: "Become a Sponsor",
             type : "external"
         },
