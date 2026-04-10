@@ -28,6 +28,9 @@ type symposiumFormDataType = {
 }
 
 export default function SymposiumApplication(){
+    const [ loading, setLoading ] = useState(false)
+    const [ submitMessage, setSubmitMessage ] = useState("")
+
     const [ symposiumFormData, setSymposiumFormData ] = useState({
         businessName : '',
         contactPerson : '',
@@ -40,7 +43,7 @@ export default function SymposiumApplication(){
         membership : '',
         serviceCategory : [] as string[],
         otherServiceCategory : '',
-        ScopeOfWork : '',
+        scopeOfWork : '',
         fairMarketAmount : '',
         experience : '',
         capacityOfExecution : '',
@@ -91,9 +94,32 @@ export default function SymposiumApplication(){
         }))
     }
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const SYMPOSIUM_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwPnXcexd7mSCz2lp6jvmjMrUAm32vaAnuQFJGFV8J3Hl-O8u3kH3Sv9fAIMIT5ZrSSvg/exec"
+
+    async function handleSubmit(e: React.FormEvent){
         e.preventDefault();
-        console.log(symposiumFormData)
+
+        try {
+            await fetch(SYMPOSIUM_GOOGLE_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(symposiumFormData)
+            })
+
+            setSubmitMessage("")
+            setLoading(false)
+            console.log(symposiumFormData)
+
+            setTimeout(() => {
+            //     resetLeveledUpApplicationForm();
+                setSubmitMessage("");
+            }, 5000);
+        } catch (err) {
+            console.error(err);
+            setSubmitMessage("Something went wrong. Please try again later.")
+            setLoading(false)
+        }
     }
 
     return(
@@ -501,8 +527,8 @@ export default function SymposiumApplication(){
                         Briefly describe the services you propose to provide, including key deliverables and how they align with the needs of a multi-day, 250+ attendee event.
                     </span>
                     <textarea 
-                        name="ScopeOfWork"
-                        value={symposiumFormData.ScopeOfWork} 
+                        name="scopeOfWork"
+                        value={symposiumFormData.scopeOfWork} 
                         onChange={handleChange} 
                         rows={5}
                         className={style.symFormTextarea}
@@ -633,7 +659,7 @@ export default function SymposiumApplication(){
                             value={"August 27"}
                             onChange={handleCheckbox} 
                             checked={symposiumFormData.availability.includes("August 27")}
-                            className={style.symFormAvailabilityCheck}
+                            className={style.symFormRadio}
                         />
                         August 27, 2026
                     </div>
@@ -646,7 +672,7 @@ export default function SymposiumApplication(){
                             value={"August 28"} 
                             onChange={handleCheckbox}
                             checked={symposiumFormData.availability.includes("August 28")}
-                            className={style.symFormInput}
+                            className={style.symFormRadio}
                         />
                         August 28, 2026
                     </div>
@@ -676,35 +702,41 @@ export default function SymposiumApplication(){
                 <fieldset
                     className={style.symFormFieldset}
                 >
-                    <div>
+                    <div
+                        className={style.symFormAvailabilityRow}
+                    >
                         <input 
                             type="checkbox" 
                             name="agreementOne"
                             onChange={handleAgreementChecker}
                             checked={symposiumFormData.agreementOne}
-                            className={style.symFormInput}
+                            className={style.symFormRadio}
                         />
                         <p>I understand that sponsorship tier placement is based on the fair market value of my in-kind contribution and is subject to review and approval by the Black Chamber of Memphis.</p>
                     </div>
 
-                    <div>
+                    <div
+                        className={style.symFormAvailabilityRow}
+                    >
                         <input 
                             type="checkbox" 
                             name="agreementTwo" 
                             onChange={handleAgreementChecker}
                             checked={symposiumFormData.agreementTwo}
-                            className={style.symFormInput}
+                            className={style.symFormRadio}
                         />
                         <p>I understand that selection is not guaranteed and that BCoM reserves the right to request revisions, clarification, or adjust scope as needed.</p>
                     </div>
                     
-                    <div>
+                    <div
+                        className={style.symFormAvailabilityRow}
+                    >
                         <input 
                             type="checkbox" 
                             name="agreementThree" 
                             onChange={handleAgreementChecker}
                             checked={symposiumFormData.agreementThree}
-                            className={style.symFormInput}
+                            className={style.symFormRadio}
                         />
                         <p>I understand that a Memorandum of Understanding (MOU) will be required if selected.</p>
                     </div>
@@ -718,9 +750,18 @@ export default function SymposiumApplication(){
                         onClick={handleSubmit}
                         className={style.submitButton}
                     >
-                        Send Application
+                        {loading ? "Submitting..." : "Send Application"}
                     </button>
                 </div>
+
+                {submitMessage ? 
+                    <p
+                        className={style.submitMessage}
+                        
+                    >
+                        {submitMessage}
+                    </p>
+                : null}
             </form>
         </section>
     )
