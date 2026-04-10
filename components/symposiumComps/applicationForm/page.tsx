@@ -1,35 +1,36 @@
 'use client'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import style from './application.module.css'
 
-type symposiumFormDataType = {
-    businessName : string
-    contactPerson : string
-    titleRole : string
-    email : string
-    phone : string
-    businessAddress : string
-    website : string
-    socialHandles : string
-    membership : string
-    serviceCategory : string[]
-    otherServiceCategory : string
-    ScopeOfWork : string
-    fairMarketAmount : string
-    experience : string
-    capacityOfExecution : string
-    executionApproach : string
-    equipmentToBeUsed : string
-    availability : string
-    optionalEnhancements : string
-    agreementOne: boolean,
-    agreementTwo: boolean,
-    agreementThree: boolean,
-}
+// type symposiumFormDataType = {
+//     businessName : string
+//     contactPerson : string
+//     titleRole : string
+//     email : string
+//     phone : string
+//     businessAddress : string
+//     website : string
+//     socialHandles : string
+//     membership : string
+//     serviceCategory : string[]
+//     otherServiceCategory : string
+//     ScopeOfWork : string
+//     fairMarketAmount : string
+//     experience : string
+//     capacityOfExecution : string
+//     executionApproach : string
+//     equipmentToBeUsed : string
+//     availability : string
+//     optionalEnhancements : string
+//     agreementOne: boolean,
+//     agreementTwo: boolean,
+//     agreementThree: boolean,
+// }
 
 export default function SymposiumApplication(){
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState("")
+    const submittingRef = useRef(false)
 
     const [ symposiumFormData, setSymposiumFormData ] = useState({
         businessName : '',
@@ -98,6 +99,12 @@ export default function SymposiumApplication(){
 
     async function handleSubmit(e: React.FormEvent){
         e.preventDefault();
+
+        if(submittingRef.current) return
+
+        submittingRef.current = true
+
+        setLoading(true)
 
         try {
             await fetch(SYMPOSIUM_GOOGLE_URL, {
@@ -696,12 +703,15 @@ export default function SymposiumApplication(){
                     ></textarea>
                 </fieldset>
 
-                <h3>
+                <h3
+                    className={style.symFormH3}
+                >
                     Agreement & Acknowledgement
                 </h3>
                 <fieldset
                     className={style.symFormFieldset}
                 >
+                    
                     <div
                         className={style.symFormAvailabilityRow}
                     >

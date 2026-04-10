@@ -108,3 +108,26 @@
     border-radius: 8px;
     font-size: 1.2rem;
 }
+
+.submitMessage {
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+@media (min-width:500px) {
+    .symForm {
+        width: 80%;
+    }
+}
+
+@media (min-width:600px) {
+    .symForm {
+        width: 70%;
+    }
+}
+
+@media (min-width:800px) {
+    .symForm {
+        width: 60%;
+    }
+}
