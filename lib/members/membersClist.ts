@@ -12,6 +12,7 @@ import { christMissionaryBaptist } from './(c)/christMissionaryBaptist'
 import { christTheKingLutheranChurch } from './(c)/christTheKingLutheranChurch'
 import { crossroadsBaptistChurch } from './(c)/crossroadsBaptistChurch'
 import { chalmersPoolePC } from './(c)/chalmersPoolePC'
+import { cushionEmployerServices } from './(c)/cushionEmployerServices'
 
 export const membersClist = [
     capturingMemories,
@@ -28,4 +29,5 @@ export const membersClist = [
     christTheKingLutheranChurch,
     crossroadsBaptistChurch,
     chalmersPoolePC,
+    cushionEmployerServices,
 ]
