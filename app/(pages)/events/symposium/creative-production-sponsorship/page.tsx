@@ -7,9 +7,11 @@ import TierSection from "@/components/symposiumComps/tiersSection/page";
 
 
 export default function CreativeProdSponsor(){
+    const applicationLink = "/events/symposium/creative-production-sponsorship/application"
+
     const sponsorCtaButtons = [
         {
-            path: "/events/symposium/creative-production-sponsorship/application",
+            path: applicationLink,
             buttonName: "Become a Sponsor",
             type : "internal"
         },
@@ -43,7 +45,16 @@ export default function CreativeProdSponsor(){
                 "2 Speaker Meet & Greet Tickets",
                 "1 President's Power Breakfast Tickets",
                 "1 Item Included in Attendee Bags"
-            ]
+            ],
+            featureBenefits : [
+                "High-impact brand visibility across event, media, and promotional channels",
+                "On-stage presence with speaking or panel participation opportunity",
+                "Integrated video promotion during main stage programming",
+                "Direct audience engagement through on-site activation",
+                "Premium access to attendees, speakers, and networking experiences"
+            ],
+            // featureHighlight : "Multi-channel brand exposure with on-stage presence and audience engagement"
+            featureHighlight : ''
         },
         {
             tIndex : "partnershipTwo",
@@ -65,7 +76,16 @@ export default function CreativeProdSponsor(){
                 "2 Speaker Meet & Greet Tickets",
                 "1 President's Power Breakfast Tickets",
                 "1 Item Included in Attendee Bags"
-            ]
+            ],
+            featureBenefits : [
+                "Multi-channel brand visibility across event platforms",
+                "Video promotion during main stage transitions",
+                "Featured brand exposure through dedicated spotlight content",
+                "Verbal recognition during the main programme",
+                "Curated access to attendees and networking opportunities",
+            ],
+            // featureHighlight : "Amplify your brand across digital, stage, and audience touchpoints"
+            featureHighlight : ""
         },
         {
             tIndex : "partnershipThree",
@@ -86,7 +106,16 @@ export default function CreativeProdSponsor(){
                 "4 Momentum Mixer Tickets",
                 "2 Speaker Meet & Greet Tickets",
                 "1 Item Included in Attendee Bags"
-            ]
+            ],
+            featureBenefits : [
+                "Brand visibility across digital and on-site event channels",
+                "Promotional spotlight across event platforms",
+                "On-stage recognition during the programme",
+                "Opportunity to connect with attendees through event presence",
+                "Access to key sessions and networking experiences"
+            ],
+            // featureHighlight : "Build brand presence while connecting with a targeted audience"
+            featureHighlight : ""
         },
         {
             tIndex : "creativeSponsorOne",
@@ -105,7 +134,16 @@ export default function CreativeProdSponsor(){
                 "2 Symposium Tickets",
                 "2 Momentum Mixer Tickets",
                 "1 Speaker Meet & Greet Ticket"
-            ]
+            ],
+            featureBenefits : [
+                "On-site activation to engage attendees directly",
+                "Brand visibility across event materials and platforms",
+                "Featured sponsor spotlight content",
+                "Verbal recognition during the event",
+                "Access to event and networking experiences"
+            ],
+            // featureHighlight : "Connect with attendees through on-site presence and promotion"
+            featureHighlight : ""
         },
         {
             tIndex : "creativeSponsorTwo",
@@ -121,7 +159,15 @@ export default function CreativeProdSponsor(){
                 "On-stage Verbal Recognition During Main Program",
                 "2 Symposium Tickets",
                 "2 Momentum Mixer Tickets"
-            ]
+            ],
+            featureBenefits : [
+                "Brand visibility across digital event materials",
+                "Inclusion in post-event sponsor recognition",
+                "Verbal recognition during the programme",
+                "Access to symposium and networking events",
+            ],
+            // featureHighlight : "Be recognised as a contributing partner to the event experience"
+            featureHighlight : ""
         },
         {
             tIndex : "creativeSponsorThree",
@@ -136,7 +182,14 @@ export default function CreativeProdSponsor(){
                 "Inclusion in Post-event group sponsor thank-you Graphic & Email",
                 "1 Symposium Tickets",
                 "1 Momentum Mixer Tickets"
-            ]
+            ],
+            featureBenefits : [
+                "Recognition during the event programme",
+                "Inclusion in post-event sponsor acknowledgements",
+                "Access to the symposium and networking experience"
+            ],
+            // featureHighlight : "Support the event and gain community recognition"
+            featureHighlight : ""
         }
     ]
 
@@ -225,6 +278,7 @@ export default function CreativeProdSponsor(){
                 sectionTitle={"Creative Sponsors levels:"}
                 tiersToShow = {supportingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
+                sponsorshipApplicationLink={applicationLink}
             />
 
             <FAQSection

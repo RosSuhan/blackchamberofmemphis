@@ -84,7 +84,7 @@ export default function Symposium(){
 
             <GallerySection
                 sectionBackground='#D8BCA5'
-                galleryHeadingText={"Our Partners"}
+                galleryHeadingText={"Our 2025 Partners"}
                 galleryImages={symposiumPartners}
             />
 

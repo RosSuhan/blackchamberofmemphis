@@ -8,9 +8,11 @@ import TierSection from '@/components/symposiumComps/tiersSection/page'
 import FAQSection from '@/components/symposiumComps/faqSection/page'
 
 export default function Sponsorship(){
+    const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3"
+
     const sponsorCtaButtons = [
         {
-            path: "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3",
+            path: applySponsorshipLink,
             buttonName: "Become a Sponsor",
             type : "external"
         },
@@ -65,7 +67,15 @@ export default function Sponsorship(){
                 "5 Speaker Meet & Greet Tickets",
                 "2 President's Power Tickets Breakfast",
                 "1 Item Included in Attendee Bags",
-            ]
+            ],
+            featureBenefits : [
+                "Exclusive branding as the Momentum Mixer Title Sponsor",
+                "Speaking opportunity during the networking event",
+                "High-impact visibility across event platforms and promotions",
+                "Direct attendee engagement through on-site activation",
+                "Strong guest access with networking-focused ticket allocation"
+            ],
+            featureHighlight : "Own the networking experience"
         },
         {
             tIndex : "presentTwo",
@@ -89,7 +99,15 @@ export default function Sponsorship(){
                 "5 President's Power Tickets Breakfast",
                 "5 Speaker Meet & Greet Tickets",
                 "2 Branded Items in Attendee Bags",
-            ]
+            ],
+            featureBenefits : [
+                "Headline branding as the official Symposium Title Sponsor",
+                "On-stage presence including remarks and panel participation",
+                "Major media exposure including billboard campaign and press interview",
+                "Premium brand visibility across all event and marketing channels",
+                "VIP access and hosting opportunities with top-tier ticket allocation"
+            ],
+            featureHighlight : "Own the entire symposium experience"
         },
         {
             tIndex : "presentThree",
@@ -111,16 +129,27 @@ export default function Sponsorship(){
                 "5 President's Power Tickets Breakfast",
                 "5 Speaker Meet & Greet Tickets",
                 "1 Item Included in Attendee Bags"
-            ]
+            ],
+            featureBenefits : [
+                "Title sponsorship of the exclusive President's Power Breakfast",
+                "Speaking opportunity in a high-level, intimate setting",
+                "Premium visibility across event materials and promotions",
+                "Direct engagement with speakers and VIP attendees",
+                "Curated access through premium ticket allocation"
+            ],
+            featureHighlight : "Own the leadership room"
         },
     ]
 
     const secondPresentingSponsorTiers = [
         {
             tIndex : "secondPresentOne",
-            tierBlockBackground : "#2d353c",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
+            // tierBlockBackground : "#2d353c",
+            // tierPriceColor : "#ffffff",
+            // tierTextColor : "#ffffff",
+            tierBlockBackground : "#ffffff",
+            tierPriceColor : "#2d353c",
+            tierTextColor : "#2d353c",
             amount : "10,000",
             sponsorTitle : "Panel",
             sponsorDate : "",
@@ -134,7 +163,15 @@ export default function Sponsorship(){
                 "5 Momentum Mixer Tickets",
                 "1 President's Power Tickets Breakfast",
                 "1 Item Included in Attendee Bags"
-            ]
+            ],
+            featureBenefits : [
+                "Sponsorship of a main stage panel session",
+                "Opportunity to participate as moderator or panelist",
+                "Brand visibility across event materials and promotions",
+                "Direct audience engagement via exhibitor presence",
+                "Access to attendees and speakers through ticket allocation"
+            ],
+            featureHighlight : "Be part of the conversation"
         },
         {
             tIndex : "secondPresentTwo",
@@ -154,13 +191,24 @@ export default function Sponsorship(){
                 "5 Momentum Mixer Tickets",
                 "1 President's Power Tickets Breakfast",
                 "1 Item Included in Attendee Bags",
-            ]
+            ],
+            featureBenefits : [
+                "Exclusive association with the keynote speaker experience",
+                "Opportunity to introduce the keynote on stage",
+                "Strong brand visibility across event and promotional platforms",
+                "On-site activation to engage attendees directly",
+                "Access to key moments with curated ticket allocation"
+            ],
+            featureHighlight : "Align your brand with the main voice of the event"
         },
         {
             tIndex : "secondPresentThree",
-            tierBlockBackground : "#2d353c",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
+            // tierBlockBackground : "#2d353c",
+            // tierPriceColor : "#ffffff",
+            // tierTextColor : "#ffffff",
+            tierBlockBackground : "#ffffff",
+            tierPriceColor : "#2d353c",
+            tierTextColor : "#2d353c",
             amount : "7,500",
             sponsorTitle : "Breakout",
             sponsorDate : "",
@@ -173,7 +221,15 @@ export default function Sponsorship(){
                 "3 Speaker Meet & Greet Tickets",
                 "3 Momentum Mixer Tickets",
                 "1 Item Included in Attendee Bags",
-            ]
+            ],
+            featureBenefits : [
+                "Sponsorship of a breakout session",
+                "Opportunity to address attendees during the session",
+                "Brand visibility across event materials",
+                "On-site presence to connect with attendees",
+                "Targeted access through curated ticket allocation"
+            ],
+            featureHighlight : "Engage with focused audience"
         }
     ]
 
@@ -181,9 +237,12 @@ export default function Sponsorship(){
 
         {
             tIndex : "supportingOne",
-            tierBlockBackground : "#2d353c",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
+            // tierBlockBackground : "#2d353c",
+            // tierPriceColor : "#ffffff",
+            // tierTextColor : "#ffffff",
+            tierBlockBackground : "#a29e96",
+            tierPriceColor : "#000000",
+            tierTextColor : "#000000",
             amount : "2,500",
             sponsorTitle : "Silver",
             sponsorDate : "",
@@ -192,7 +251,14 @@ export default function Sponsorship(){
                 "2 Symposium Tickets",
                 "2 Momentum Mixer Tickets",
                 "1 Vendor Table at Momentum Mixer",
-            ]
+            ],
+            featureBenefits : [
+                "Brand visibility across select event materials",
+                "On-site presence at the Momentum Mixer",
+                "Access to both the symposium and networking experiences",
+                "Increased opportunity to engage with attendees and peers",
+            ],
+            featureHighlight : "Build visibility and start engaging"
         },
         {
             tIndex : "supportingTwo",
@@ -208,13 +274,23 @@ export default function Sponsorship(){
                 "5 Symposium Tickets",
                 "5 Speaker Meet & Greet Tickets",
                 "5 Momentum Mixer Tickets"
-            ]
+            ],
+            featureBenefits : [
+                "Expanded brand visibility across digital and on-site event channels",
+                "Direct audience engagement through on-site activation",
+                "Access to exclusive speaker and networking experiences",
+                "Generous ticket allocation for team and client hosting",
+            ],
+            featureHighlight : "Strengthen your presence and connections"
         },
         {
             tIndex : "supportingThree",
-            tierBlockBackground : "#2d353c",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
+            // tierBlockBackground : "#2d353c",
+            // tierPriceColor : "#ffffff",
+            // tierTextColor : "#ffffff",
+            tierBlockBackground : "#a29e96",
+            tierPriceColor : "#000000",
+            tierTextColor : "#000000",
             amount : "1,000",
             sponsorTitle : "Bronze",
             sponsorDate : "",
@@ -222,8 +298,15 @@ export default function Sponsorship(){
                 "Name Included on Post-Event Email & Social Media",
                 "2 Symposium Tickets",
                 "2 Momentum Mixer Tickets",
-                "1 Vendor Table at Momentum Mixer"
-            ]
+                "1 Vendor Table at Momentum Mixer",
+            ],
+            featureBenefits : [
+                "Brand recognition across post-event communications and social media",
+                "Access to the symposium and networking events",
+                "Entry-level presence at the Momentum Mixer",
+                "Opportunity to connect with attendees in a relaxed setting",
+            ],
+            featureHighlight : "Get your brand in the room",
         }
     ]
     return (
@@ -236,24 +319,30 @@ export default function Sponsorship(){
             <ThreeBlockRow/>
 
             <TierSection
-                sectionBackground = {"#f1dbb9"}
+                // sectionBackground = {"#f1dbb9"}
+                sectionBackground={"#ffffff"}
                 sectionTitle={"Presenting Sponsors:"}
                 tiersToShow = {presentingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
+                sponsorshipApplicationLink = {applySponsorshipLink}
             />
 
             <TierSection
                 sectionBackground = {"#a1995f"}
+                // sectionBackground={"#ffffff"}
                 sectionTitle={"Presenting Sponsors:"}
                 tiersToShow = {secondPresentingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
+                sponsorshipApplicationLink = {applySponsorshipLink}
             />
 
             <TierSection
-                sectionBackground = {"#f1dbb9"}
+                // sectionBackground = {"#f1dbb9"}
+                sectionBackground={"#ffffff"}
                 sectionTitle={"Supporting Sponsors:"}
                 tiersToShow = {supportingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
+                sponsorshipApplicationLink = {applySponsorshipLink}
             />
 
             <FAQSection

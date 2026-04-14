@@ -1,7 +1,10 @@
-.tierBlock {
+.tierContainer {
     width: 80%;
+}
+
+.tierBlock {
+    width: 100%;
     border: solid 1px #3e3e3e;
-    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +24,25 @@
 }
 
 .tierTitle {
+    width: 70%;
     padding: .5rem 1rem;
-    border-radius: 50px;
+    border-radius: 20px;
     font-size: 1.125rem;
     font-weight: 800;
+    text-align: center;
 }
 
 .tierSponsorDate {
     margin-top: 1rem;
+}
+
+.tierhighlight {
+    margin-top: 1rem;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tierList {
@@ -40,7 +54,7 @@
 }
 
 .tierItem {
-    padding: .5rem 0;
+    margin: .5rem 0;
     width: 90%;
     display: flex;
     align-items: center;
@@ -51,84 +65,167 @@
     margin-right: .5rem;
 }
 
+.tierCTAButton {
+    background: var(--gold);
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    font-size: 1.266rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.inKindSponsorPopUpBlock {
+    display: none;
+}
+
+.popUpOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100svh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.inKindSponsorPopUp {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 50svh;
+    padding: 0 0 2rem 0;
+    box-shadow: 10px 10px 20px #000000;
+    border: solid #a1995f 8px;
+    border-radius: 10px;
+}
+
+.closeButtonRow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.closeButton {
+    font-size: 2rem;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+}
+
+.popUpText {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.applicationLink {
+    background: #a1995f;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.266rem;
+    color: #000000;
+    font-weight: 800;
+}
+
 @media (min-width: 400px) {
-    .tierBlock {
+    .tierContainer {
         width: 70%;
     }
 }
 
 @media (min-width: 600px) {
-    .tierBlock {
-        width: 30%;
+    .tierContainer {
+        width: 32%;
         margin: 0;
-        /* height: 900px; */
+        box-shadow: #3e3e3e 5px 5px 10px;
     }
 
-    .tierBlock:first-child,
-    .tierBlock:last-child {
-        /* height: 850px; */
+    .tierContainer:first-child,
+    .tierContainer:last-child {
+        transform: translateY(20px);
+        box-shadow: none;
     }
-    
+
+    .tierPrice {
+        margin: 1rem 0;
+    }
+
     .tierTitle {
         width: 70%;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
     }
+    
+    .tierhighlight {
+        height: 80px;
+    }
+
+    .tierItem {
+        text-wrap: balance;
+        height: 80px;
+    }
+
 }
 
 @media (min-width: 700px) {
     .tierBlock {
-        /* height: 800px; */
+        padding: 2rem 0;
     }
 
-    .tierBlock:first-child,
-    .tierBlock:last-child {
-        /* height: 730px; */
+    .tierhighlight {
+        height: 50px;
     }
-    
-    .tierTitle {
-        width: 80%;
+
+    .tierItem {
+        height: 70px;
     }
 }
 
 @media (min-width: 800px) {
     .tierBlock {
-        /* height: 780px; */
-    }
-
-    .tierBlock:first-child,
-    .tierBlock:last-child {
-        /* height: 700px; */
+        padding: 2rem 0;
     }
     
-    .tierTitle {
-        width: 70%;
+    .tierhighlight {
+        height: 50px;
+        width: 90%;
+    }
+
+    .tierItem {
+        text-wrap: initial;
+        height: 70px;
+    }
+
+    .tierIcon {
+        margin-right: 1rem;
     }
 }
 
-@media (min-width: 900px) {
-    .tierBlock {
-        /* height: 750px; */
+@media (min-width: 800px) {
+    .tierTitle {
+        height: 50px;
+    }
+    
+    .tierhighlight {
+        margin-top: 2rem;
+        height: 60px;
     }
 }
 
 @media (min-width: 1000px) {
-    .tierBlock {
-        /* height: 740px; */
-    }
-
-    .tierBlock:first-child,
-    .tierBlock:last-child {
-        height: 680px;
-    }
-}
-
-@media (min-width: 1100px) {
-    .tierBlock {
-        /* height: 680px; */
-    }
-
-    .tierBlock:first-child,
-    .tierBlock:last-child {
-        /* height: 630px; */
+    .tierItem {
+        margin: .8rem 0;
+        height: 50px;
     }
 }

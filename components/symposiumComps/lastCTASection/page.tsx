@@ -9,6 +9,7 @@ export default function LastCtaSection({buttonsInfo}: LastCtaSectionProps){
     return(
         <section
             className={style.lastCtaSection}
+            style={{background: "#000000"}}
         >
             <TwoButtonRow
                 buttonsInfo={buttonsInfo}

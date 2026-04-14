@@ -5,8 +5,20 @@ import style from './tierSection.module.css'
 type TierSectionProp = {
     sectionBackground : string
     sectionTitle : string
-    tiersToShow : { tIndex: string, tierPriceColor : string, tierTextColor: string, tierBlockBackground : string, amount : string, sponsorTitle : string, sponsorDate : string, sponsorBenefits : string[]}[], 
+    tiersToShow : { 
+        tIndex : string, 
+        tierPriceColor : string, 
+        tierTextColor: string, 
+        tierBlockBackground : string, 
+        amount : string, 
+        sponsorTitle : string, 
+        sponsorDate : string, 
+        sponsorBenefits : string[], 
+        featureBenefits : string[], 
+        featureHighlight : string,
+    }[],
     sponsorTitleBackground : string,
+    sponsorshipApplicationLink : string,
 }
 
 export default function TierSection({
@@ -14,6 +26,7 @@ export default function TierSection({
     sectionTitle, 
     tiersToShow,  
     sponsorTitleBackground, 
+    sponsorshipApplicationLink,
 }: TierSectionProp){
     return(
         <section
@@ -32,6 +45,7 @@ export default function TierSection({
                 <SingleTier
                     tiersToShow = {tiersToShow}
                     sponsorTitleBackground = { sponsorTitleBackground}
+                    sponsorshipApplicationLink = {sponsorshipApplicationLink}
                 />
             </div>
             
