@@ -111,6 +111,7 @@ export default function SingleTier({
                         <button 
                             type="button"
                             className={style.tierCTAButton}
+                            onClick={() => setShowDetails(tIndex)}
                         >
                             View more
                         </button>
@@ -133,19 +134,28 @@ export default function SingleTier({
                                     X
                                 </button>
                             </div>
-                            <h3
-                                className={style.inKindSponsorTitle}
-                            >
-                                {sponsorTitle}
-                            </h3>
+
+                            {sponsorTitle ? 
+                                <h3
+                                    className={style.inKindSponsorTitle}
+                                >
+                                    {sponsorTitle}
+                                </h3>
+                            :
+                                <h3
+                                    className={style.inKindSponsorTitle}
+                                >
+                                    $ {amount}
+                                </h3>  
+                            }
                             <ul
-                                className={style.tierList}
+                                className={style.popUpTierList}
                                 // style={{color:`${tierTextColor}`}}
                             >
                                 {sponsorBenefits.map((benefit, index) => (
                                     <li
                                         key={index}
-                                        className={style.tierItem}
+                                        className={style.popUpTierItem}
                                     >
                                         <span
                                             className={style.tierIcon}

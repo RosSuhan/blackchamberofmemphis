@@ -24,6 +24,40 @@ export default function CreativeProdSponsor(){
 
     const supportingSponsorTiers = [
         {
+            tIndex : "partnershipTwo",
+            // tierBlockBackground : "#a1995f",
+            // tierPriceColor : "#ffffff",
+            // tierTextColor : "#ffffff",
+            tierBlockBackground : "#D8BCA5",
+            tierPriceColor : "#000000",
+            tierTextColor : "#000000",
+            amount : "15,000",
+            sponsorTitle : "",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Optional: Limited 3-day Digital Billboard Rotation",
+                "Up to 60 second Promo Video During Main Stage Transition",
+                "Logo Displayed on Printed & Digital Material",
+                "1 Dedicated Sponsor Spotlight Post across BCoM platforms",
+                "1 Post-event Spotlight Promo (video or reel shared within 60 days)",
+                "On-stage Verbal Recognition During Main Program",
+                "6 Symposium Tickets",
+                "6 Momentum Mixer Tickets",
+                "2 Speaker Meet & Greet Tickets",
+                "1 President's Power Breakfast Tickets",
+                "1 Item Included in Attendee Bags"
+            ],
+            featureBenefits : [
+                "Multi-channel brand visibility across event platforms",
+                "Video promotion during main stage transitions",
+                "Featured brand exposure through dedicated spotlight content",
+                "Verbal recognition during the main programme",
+                "Curated access to attendees and networking opportunities",
+            ],
+            // featureHighlight : "Amplify your brand across digital, stage, and audience touchpoints"
+            featureHighlight : ""
+        },
+        {
             tIndex : "partnershipOne",
             tierBlockBackground : "#a1995f",
             tierPriceColor : "#ffffff",
@@ -57,41 +91,10 @@ export default function CreativeProdSponsor(){
             featureHighlight : ''
         },
         {
-            tIndex : "partnershipTwo",
-            tierBlockBackground : "#a1995f",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
-            amount : "15,000",
-            sponsorTitle : "",
-            sponsorDate : "",
-            sponsorBenefits : [
-                "Optional: Limited 3-day Digital Billboard Rotation",
-                "Up to 60 second Promo Video During Main Stage Transition",
-                "Logo Displayed on Printed & Digital Material",
-                "1 Dedicated Sponsor Spotlight Post across BCoM platforms",
-                "1 Post-event Spotlight Promo (video or reel shared within 60 days)",
-                "On-stage Verbal Recognition During Main Program",
-                "6 Symposium Tickets",
-                "6 Momentum Mixer Tickets",
-                "2 Speaker Meet & Greet Tickets",
-                "1 President's Power Breakfast Tickets",
-                "1 Item Included in Attendee Bags"
-            ],
-            featureBenefits : [
-                "Multi-channel brand visibility across event platforms",
-                "Video promotion during main stage transitions",
-                "Featured brand exposure through dedicated spotlight content",
-                "Verbal recognition during the main programme",
-                "Curated access to attendees and networking opportunities",
-            ],
-            // featureHighlight : "Amplify your brand across digital, stage, and audience touchpoints"
-            featureHighlight : ""
-        },
-        {
             tIndex : "partnershipThree",
-            tierBlockBackground : "#a1995f",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
+            tierBlockBackground : "#D8BCA5",
+            tierPriceColor : "#000000",
+            tierTextColor : "#000000",
             amount : "10,000",
             sponsorTitle : "",
             sponsorDate : "",
@@ -117,9 +120,35 @@ export default function CreativeProdSponsor(){
             // featureHighlight : "Build brand presence while connecting with a targeted audience"
             featureHighlight : ""
         },
+    ]
+    const creativeSponsorTiers = [
+        {
+            tIndex : "creativeSponsorTwo",
+            tierBlockBackground : "#D8BCA5",
+            tierPriceColor : "#000000",
+            tierTextColor : "#000000",
+            amount : "2,500",
+            sponsorTitle : "",
+            sponsorDate : "",
+            sponsorBenefits : [
+                "Logo Displayed on Digital Material",
+                "Inclusion in Post-event group sponsor thank-you Graphic & Email",
+                "On-stage Verbal Recognition During Main Program",
+                "2 Symposium Tickets",
+                "2 Momentum Mixer Tickets"
+            ],
+            featureBenefits : [
+                "Brand visibility across digital event materials",
+                "Inclusion in post-event sponsor recognition",
+                "Verbal recognition during the programme",
+                "Access to symposium and networking events",
+            ],
+            // featureHighlight : "Be recognised as a contributing partner to the event experience"
+            featureHighlight : ""
+        },
         {
             tIndex : "creativeSponsorOne",
-            tierBlockBackground : "#a1995f",
+            tierBlockBackground : "#121523",
             tierPriceColor : "#ffffff",
             tierTextColor : "#ffffff",
             amount : "5,000",
@@ -146,34 +175,10 @@ export default function CreativeProdSponsor(){
             featureHighlight : ""
         },
         {
-            tIndex : "creativeSponsorTwo",
-            tierBlockBackground : "#a1995f",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
-            amount : "2,500",
-            sponsorTitle : "",
-            sponsorDate : "",
-            sponsorBenefits : [
-                "Logo Displayed on Digital Material",
-                "Inclusion in Post-event group sponsor thank-you Graphic & Email",
-                "On-stage Verbal Recognition During Main Program",
-                "2 Symposium Tickets",
-                "2 Momentum Mixer Tickets"
-            ],
-            featureBenefits : [
-                "Brand visibility across digital event materials",
-                "Inclusion in post-event sponsor recognition",
-                "Verbal recognition during the programme",
-                "Access to symposium and networking events",
-            ],
-            // featureHighlight : "Be recognised as a contributing partner to the event experience"
-            featureHighlight : ""
-        },
-        {
             tIndex : "creativeSponsorThree",
-            tierBlockBackground : "#a1995f",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
+            tierBlockBackground : "#D8BCA5",
+            tierPriceColor : "#000000",
+            tierTextColor : "#000000",
             amount : "500",
             sponsorTitle : "",
             sponsorDate : "",
@@ -274,9 +279,19 @@ export default function CreativeProdSponsor(){
             <InKindSponsorOptions/>
 
             <TierSection
-                sectionBackground = {"#f1dbb9"}
+                // sectionBackground = {"#f1dbb9"}
+                sectionBackground = {"#fffffff"}
                 sectionTitle={"Creative Sponsors levels:"}
                 tiersToShow = {supportingSponsorTiers}
+                sponsorTitleBackground = {"#d8bca5"}
+                sponsorshipApplicationLink={applicationLink}
+            />
+
+            <TierSection
+                // sectionBackground = {"#f1dbb9"}
+                sectionBackground = {"#fffffff"}
+                sectionTitle={"Creative Sponsors levels:"}
+                tiersToShow = {creativeSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
                 sponsorshipApplicationLink={applicationLink}
             />
