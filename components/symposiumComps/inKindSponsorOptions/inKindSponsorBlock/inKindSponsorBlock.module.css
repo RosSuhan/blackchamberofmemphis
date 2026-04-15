@@ -71,8 +71,6 @@
     box-shadow: 10px 10px 20px #000000;
     border: solid #a1995f 8px;
     border-radius: 10px;
-    /* top: 0; */
-    /* z-index: 999; */
 }
 
 .closeButtonRow {
@@ -93,7 +91,6 @@
     width: 90%;
     font-size: 1rem;
     line-height: 1.5;
-    /* text-align: center; */
 }
 
 .applicationLink {
@@ -105,4 +102,37 @@
     font-size: 1.2rem;
     color: #000000;
     font-weight: 800;
+}
+
+@media (min-width: 600px) {
+    .inKindSponsor {
+        width: 45%;
+        height: 280px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 600px) {
+    .inKindSponsor {
+        height: 250px;
+        padding: 1.5rem 0 ;
+    }
+}
+
+@media (min-width: 800px) {
+    .inKindSponsor {
+        height: 220px;
+        padding: 2rem 0 1rem 0 ;
+    }
+}
+
+@media (min-width: 1000px) {
+    .inKindSponsorOptionRow {
+        row-gap: 4rem;
+    }
+    
+    .inKindSponsor {
+        width: 30%;
+        height: 250px;
+    }
 }
