@@ -7,8 +7,10 @@ import { newChurchMemphis } from './(n)/newChurchMemphis'
 import { newHopeBaptist } from './(n)/newHopeBaptist'
 import { newHopeBaptistChurchMemphis } from './(n)/newHopeBaptistChurchMemphis'
 import { newSalemMissionaryBaptist } from './(n)/newSalemMissionaryBaptist'
+import { neatNtidy } from './(n)/neatNtidy'
 
 export const membersNlist = [
+    neatNtidy,
     nailsByNicole,
     newVisionsTechSol,
     npsProtectiveService,

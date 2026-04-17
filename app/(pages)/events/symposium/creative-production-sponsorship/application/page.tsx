@@ -1,5 +1,6 @@
 import SymposiumApplication from "@/components/symposiumComps/applicationForm/page";
 import SymposiumHero from "@/components/symposiumComps/hero/HeroSection";
+import SymFooter from "@/components/symposiumComps/symFooter/page";
 import WideTextSection from "@/components/symposiumComps/wideTextSection/page";
 
 
@@ -35,12 +36,31 @@ export default function CreativeProdApplication(){
                     <p>
                         Selected partners will be assigned sponsorship recognition based on the verified fair market value of services provided.<br/>
                         <strong>Submission Deadline: Friday, May 1, 2026</strong>
-                    </p>`
+                    </p>
+                    <h3 style="margin: 4rem 0 0 0;">
+                        <strong>Momentum: BCoM's Official Cocktail Party</strong>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li><strong>Date: </strong> Thursday, August 27, 2026</li>
+                        <li><strong>Time: </strong> To be Confirmed</li>
+                        <li><strong>Location: </strong> To be Confirmed</li>
+                    </ul>
+                    <h3 style="margin: 3rem 0 0 0;">
+                        <strong>2026 Building Wealth in Our Community Symposium</strong>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; display:flex; flex-direction: column; align-items: flex-start;">
+                        <li><strong>Date: </strong> Friday, August 28, 2026</li>
+                        <li><strong>Time: </strong> 8 AM - 3 PM </li>
+                        <li><strong>Location: </strong> FedEx Event Center</li>
+                    </ul>
+                    `
                 }
             />
 
 
             <SymposiumApplication/>
+
+            <SymFooter/>
         </main>
     )
 }

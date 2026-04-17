@@ -2,6 +2,7 @@ import FAQSection from "@/components/symposiumComps/faqSection/page";
 import SymposiumHero from "@/components/symposiumComps/hero/HeroSection";
 import InKindSponsorOptions from "@/components/symposiumComps/inKindSponsorOptions/page";
 import LastCtaSection from "@/components/symposiumComps/lastCTASection/page";
+import SymFooter from "@/components/symposiumComps/symFooter/page";
 import ThreeBlockRow from "@/components/symposiumComps/threeBlockRow/page";
 import TierSection from "@/components/symposiumComps/tiersSection/page";
 
@@ -310,6 +311,8 @@ export default function CreativeProdSponsor(){
             <LastCtaSection
                 buttonsInfo={sponsorCtaButtons}
             />
+
+            <SymFooter/>
         </main>
     )
 }
