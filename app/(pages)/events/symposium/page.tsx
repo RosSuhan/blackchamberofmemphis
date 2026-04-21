@@ -4,6 +4,7 @@ import CtaSection from '@/components/symposiumComps/CTAsection/page'
 import SymposiumHero from '@/components/symposiumComps/hero/HeroSection'
 import LastCtaSection from '@/components/symposiumComps/lastCTASection/page'
 import PartnerWithUs from '@/components/symposiumComps/partnerWithUs/page'
+import SymFooter from '@/components/symposiumComps/symFooter/page'
 import ThreeBlockRow from '@/components/symposiumComps/threeBlockRow/page'
 import WideTextSection from '@/components/symposiumComps/wideTextSection/page'
 import { symposiumPartners } from '@/lib/symposium'
@@ -91,6 +92,8 @@ export default function Symposium(){
             <LastCtaSection
                 buttonsInfo={ctaButtons || []}
             />
+
+            <SymFooter/>
         </main>
     )
 }

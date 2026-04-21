@@ -1,0 +1,130 @@
+.kitchenBlogHeroSection {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.overlayBlock {
+    background: var(--overlay);
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kitchenBlogMainHeading {
+    width: 90%;
+    color: #ffffff;
+    margin: 0;
+}
+
+.kitchenBlogSubHeading {
+    width: 90%;
+    color: #ffffff;
+    margin: 0;
+}
+
+.kitchenBlogHeroBackgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    z-index: 0;
+}
+
+.kitchenBlogArticle {
+    padding: 1rem;
+}
+
+.kitchenBlogImage,
+.kitchenBlogLongImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.kitchenBlogArticleSpan {
+    background-color: var(--darkGrey);
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.kitchenContactBlock {
+    background-color: #ededed;
+    box-shadow: 5px 5px 10px #000000;
+    padding: 1.5rem 0 2rem 0;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kitchenContactBlockHeading {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width:400px) {
+    .kitchenBlogArticle {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (min-width:600px) {
+    .kitchenBlogArticle {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    
+    .kitchenBlogArticleHeading,
+    .kitchenBlogArticleText {
+        width: 100%;
+    }
+    
+    .kitchenBlogImage {
+        width: 80%;
+    }
+
+    .kitchenBlogLongImage {
+        width: 60%;
+    }
+    
+    .kitchenContactBlock {
+        width: 45%;
+    }
+    
+    .kitchenContactBlockHeading {
+        height: 40px;
+    }
+}
+
+@media (min-width:700px) {
+    .kitchenBlogImage {
+        width: 70%;
+    }
+
+    .kitchenBlogLongImage {
+        width: 40%;
+    }
+    
+    .kitchenBlogArticleSpan {
+        width: 100%;
+    }
+    
+    .kitchenContactBlock {
+        width: 40%;
+    }
+}

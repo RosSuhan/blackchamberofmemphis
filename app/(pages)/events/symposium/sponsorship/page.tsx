@@ -6,6 +6,7 @@ import ThreeBlockRow from '@/components/symposiumComps/threeBlockRow/page'
 import LastCtaSection from '@/components/symposiumComps/lastCTASection/page'
 import TierSection from '@/components/symposiumComps/tiersSection/page'
 import FAQSection from '@/components/symposiumComps/faqSection/page'
+import SymFooter from '@/components/symposiumComps/symFooter/page'
 
 export default function Sponsorship(){
     const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3"
@@ -79,7 +80,8 @@ export default function Sponsorship(){
         },
         {
             tIndex : "presentTwo",
-            tierBlockBackground : "#2d353c",
+            // tierBlockBackground : "#2d353c",
+            tierBlockBackground : "#977A66",
             tierPriceColor : "#ffffff",
             tierTextColor : "#ffffff",
             amount : "50,000",
@@ -175,7 +177,7 @@ export default function Sponsorship(){
         },
         {
             tIndex : "secondPresentTwo",
-            tierBlockBackground : "#2d353c",
+            tierBlockBackground : "#977A66",
             tierPriceColor : "#ffffff",
             tierTextColor : "#ffffff",
             amount : "15,000",
@@ -262,7 +264,7 @@ export default function Sponsorship(){
         },
         {
             tIndex : "supportingTwo",
-            tierBlockBackground : "#2d353c",
+            tierBlockBackground : "#977A66",
             tierPriceColor : "#ffffff",
             tierTextColor : "#ffffff",
             amount : "5,000",
@@ -451,10 +453,10 @@ export default function Sponsorship(){
             </section> */}
             <GallerySection
                 sectionBackground='#D8BCA5'
-                galleryHeadingText={"Our Partners"}
+                galleryHeadingText={"Our 2025 Partners"}
                 galleryImages={symposiumPartners}
             />
-
+            <SymFooter/>
         </main>
     )
 }

@@ -48,6 +48,14 @@ export const blogList : BlogListProp[] = [
         blogArticleDate: "18 Feb 2026",
         blogReadLink: `/blog/black-ledger/the-collective-blueprint`
     },
+    {
+        id: "kitchen-classroom-to-career-pathways",
+        blogName: `Kitchen Classroom to Career Pathways`,
+        blogImage: `/blog/blank-background.webp`,
+        blogTitleColor: `#ffffff`,
+        blogArticleDate: "30 Mar 2026",
+        blogReadLink: `/blog/kitchen-classroom-to-career-pathways`
+    },
     
         // {
     //     id: "",

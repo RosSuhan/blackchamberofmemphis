@@ -1,3 +1,4 @@
+import GallerySection from "@/components/GALLERYSECTION/page";
 import FAQSection from "@/components/symposiumComps/faqSection/page";
 import SymposiumHero from "@/components/symposiumComps/hero/HeroSection";
 import InKindSponsorOptions from "@/components/symposiumComps/inKindSponsorOptions/page";
@@ -5,7 +6,7 @@ import LastCtaSection from "@/components/symposiumComps/lastCTASection/page";
 import SymFooter from "@/components/symposiumComps/symFooter/page";
 import ThreeBlockRow from "@/components/symposiumComps/threeBlockRow/page";
 import TierSection from "@/components/symposiumComps/tiersSection/page";
-
+import { symposiumPartners } from "@/lib/symposium";
 
 export default function CreativeProdSponsor(){
     const applicationLink = "/events/symposium/creative-production-sponsorship/application"
@@ -310,6 +311,12 @@ export default function CreativeProdSponsor(){
 
             <LastCtaSection
                 buttonsInfo={sponsorCtaButtons}
+            />
+
+            <GallerySection
+                sectionBackground='#D8BCA5'
+                galleryHeadingText={"Our 2025 Partners"}
+                galleryImages={symposiumPartners}
             />
 
             <SymFooter/>
