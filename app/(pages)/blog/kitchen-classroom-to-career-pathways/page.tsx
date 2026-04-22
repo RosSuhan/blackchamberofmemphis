@@ -103,7 +103,7 @@ export default function KitchenCareerPathways(){
                     As they prepare to take that momentum to the national stage, these students carry more than talent. They represent the future of Memphis’ business community.
                 </p>
                 <Image
-                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-13.webp'}
+                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-24.webp'}
                     alt=""
                     width={4000}
                     height={1868}
@@ -136,7 +136,7 @@ export default function KitchenCareerPathways(){
                     </p>
                 </div>
                 <Image
-                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-24.webp'}
+                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-13.webp'}
                     alt=""
                     width={4000}
                     height={1868}
