@@ -136,7 +136,7 @@ export default function KitchenCareerPathways(){
                     </p>
                 </div>
                 <Image
-                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-14.webp'}
+                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-24.webp'}
                     alt=""
                     width={4000}
                     height={1868}
@@ -206,7 +206,7 @@ export default function KitchenCareerPathways(){
                     Donations should be made directly to each school. Additional giving instructions will be provided by the respective program contacts.
                 </p>
                 <Image
-                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-24.webp'}
+                    src={'/blog/bcom_culinary_program/bcom-culinary-excellence-acknowledgements-14.webp'}
                     alt=""
                     width={4000}
                     height={1868}

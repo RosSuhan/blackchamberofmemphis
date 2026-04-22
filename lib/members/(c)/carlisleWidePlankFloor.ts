@@ -1,0 +1,45 @@
+import { MembersListType } from './../membersListType'
+
+export const carlisleWidePlankFloor : MembersListType = {
+    memberStatus: false,
+    id : "carlisle-wide-plank-floors",
+    businessName : "Carlisle Wide Plank Floors",
+    bannerImage : "",
+    profileLogo : "carlisle-wood-floors",
+    profileDescription : "Carlisle Wide Plank Floors offers timeless, handcrafted wood floors designed to transform homes & spaces with unmatched beauty & durability.",
+    profileCategory : [
+        "construction-home-improvement-trade-services",
+    ],
+    profileSubCategory : [
+        "interior-decorating",
+        "home-repair",
+    ],
+    categoryTag: [
+        "hardwood flooring",
+        "flooring suppliers",
+        "custom wood flooring",
+        "home improvements",
+        "renovations",
+        "luxury home finishes",
+        "wide plank flooring specialists",
+        "engineered wood flooring",
+        "sustainable flooring solutions",
+        "custom interior finishes",
+    ],
+    profileBusinessDescription : `<p>Carlisle Wide Plank Flooring is renowned for its artisan-crafted, custom wood floors that emphasize both luxury and natural beauty. Founded in 1966 and based in New Hampshire, Carlisle specializes in creating some of the widest and longest planks available, with widths averaging 8–10 inches and reaching up to 20 inches—nearly double the size of standard flooring planks. Each floor is made to order, crafted from the heartwood of mature trees sourced sustainably from regions where each species grows best, ensuring both durability and a distinctive grain pattern. The company’s signature SlowCraft™ process involves up to two dozen skilled artisans hand-selecting, shaping, and finishing each board, resulting in floors with fewer seams and a seamless, expansive aesthetic. Carlisle offers a wide range of species, finishes, and custom options, including solid, engineered, unfinished, and pre-finished floors, as well as reclaimed wood, to suit both traditional and contemporary spaces. Their commitment to sustainability is reflected in their use of non-clear-cut timber, low-VOC finishes, and recycling of manufacturing by-products. Carlisle’s personal, consultative approach ensures that every client receives a floor tailored to their vision, making each installation a unique work of art.</p>`,
+    gallery : [],
+    businessHours : [],
+    addressLink : "",
+    address : "1676 Route 9  Stoddard, NH 03464",
+    email : "digital@wideplankflooring.com",
+    website : "https://wideplankflooring.com/",
+    telNumber : "8005959663",
+    facebook : "https://www.facebook.com/carlislewideplankfloors",
+    instagram : "https://www.instagram.com/carlislewideplankfloors/",
+    youtube : "https://www.youtube.com/user/Carlislefloors",
+    linkedIn : "https://www.linkedin.com/company/carlisle-wide-plank-floors/",
+    linktree : "",
+    twitter: "https://x.com/CarlisleFloor",
+    tiktok : "",
+    pinterest : "https://www.pinterest.com/carlislewpf/"
+}
