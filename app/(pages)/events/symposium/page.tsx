@@ -58,7 +58,7 @@ export default function Symposium(){
                             <span>
                                 Symposium - 
                             </span>
-                            FedEx Event Center - 415 Great View Dr E Suite 103, Memphis, TN 38134
+                            To be confirmed
                         </li>
                         <li>
                             <span>Theme:</span>
@@ -71,6 +71,7 @@ export default function Symposium(){
                     </ul>
                 `}
             />
+            {/* FedEx Event Center - 415 Great View Dr E Suite 103, Memphis, TN 38134 */}
 
             <CtaSection/>
 
