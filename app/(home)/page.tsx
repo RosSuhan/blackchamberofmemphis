@@ -1,6 +1,7 @@
 import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/HomepageMemberDirectoryCTArow";
 import StayInformedSection from "@/components/forms/stayInformed";
 import HomeHero from "@/components/heroSections/HomeHero";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import Partners from "@/components/partners/page";
 // import Popup from "@/components/Popup/page";
 import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
@@ -43,10 +44,34 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const heroCTAbuttons = [
+    {
+      name : "Get Listed (Free)",
+      path : "/business-directory/get-listed",
+      type : "globalGoldButton"
+    },
+    {
+      name : "Find a Business",
+      path : "/business-directory",
+      type : "globalGoldButton"
+    },
+    {
+      name : "View Events",
+      path : "/events",
+      type : "globalGoldButton"
+    }
+  ]
+
   return (
     <section>
 
-      <HomeHero/>
+      {/* <HomeHero/> */}
+      <PageHeroSection
+        mainHeading = "Grow your business beyond visibility"
+        subHeading = "Join a powerful network of Black-owned businesses, explore trusted local services, and stay connected with events that move Memphis forward."
+        searchbar = {false}
+        ctaButtons = {heroCTAbuttons}
+      />
 
       <WhoWeAre/>
 

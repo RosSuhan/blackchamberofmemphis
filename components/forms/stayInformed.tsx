@@ -59,67 +59,63 @@ export default function StayInformedSection(){
     }
 
     return (
-        <section
-            className={style.stayInformedSection}
-        >   
-            <div className={style.stayInformedWhiteBlock}/>
-            <form 
-                onSubmit={handleStayInformed}
-                className={style.stayInformedForm}
+        <form 
+            onSubmit={handleStayInformed}
+            className={style.stayInformedForm}
+        >
+            <h2
+                className={"globalSecondHeading"}
             >
-                <h2
-                    className={style.stayInformedHeading}
-                >
-                    Stay Informed
-                </h2>
-                <p
-                    className={style.stayInformedText}
-                >
-                    We have many great things to come and we want to make sure you are aware of our new offerings.
-                </p>
-                <p
-                    className={style.stayInformedText}
-                >
-                    Please join to be in the know as we roll out new services, programs, events, and resources.
-                </p>
+                Stay Informed
+            </h2>
+            <p
+                className={"globalText"}
+            >
+                We have many great things to come and we want to make sure you are aware of our new offerings.
+            </p>
+            <p
+                className={"globalText"}
+            >
+                Please join to be in the know as we roll out new services, programs, events, and resources.
+            </p>
 
-                {frontMessage && (
-                    <p>{frontMessage}</p>
-                )}
-                <input 
-                    placeholder='First Name'
-                    type="text" 
-                    className={style.stayInformedInput}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    value={firstName}
-                />
+            {frontMessage && (
+                <p>{frontMessage}</p>
+            )}
+            <input 
+                placeholder='First Name'
+                type="text" 
+                className={style.stayInformedInput}
+                onChange={(e) => setFirstName(e.target.value)}
+                value={firstName}
+            />
 
-                <input 
-                    placeholder='Last Name'
-                    type="text" 
-                    className={style.stayInformedInput}
-                    onChange={(e) => setLastName(e.target.value)}
-                    value={lastName}
-                />
-                <input 
-                    placeholder='Email'
-                    type="email" 
-                    className={style.stayInformedInput}
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                />
+            <input 
+                placeholder='Last Name'
+                type="text" 
+                className={style.stayInformedInput}
+                onChange={(e) => setLastName(e.target.value)}
+                value={lastName}
+            />
+            <input 
+                placeholder='Email'
+                type="email" 
+                className={style.stayInformedInput}
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+            />
 
-                <button
-                    type='submit'
-                    className={style.stayInformedButton}
-                >
-                    {loading ? "Registering..." : "Subscribe"}
-                </button>
+            <button
+                type='submit'
+                className={"globalGoldButton"}
+                style={{margin:"1rem 0"}}
+            >
+                {loading ? "Registering..." : "Subscribe"}
+            </button>
 
-                {submitMessage && (
-                    <p>{submitMessage}</p>
-                )}
-            </form>
-        </section>
+            {submitMessage && (
+                <p>{submitMessage}</p>
+            )}
+        </form>
     )
 }

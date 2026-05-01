@@ -2,10 +2,10 @@ import { EventListType } from "../eventListTypes";
 
 export const mayBcomNewMember : EventListType = {
     holidayStatus: false,
-    id : "may-new-member-orientation",
+    id : "may-member-orientation",
     type: 'event',
     eventImage : "/events/new-member/maymemberorientation.webp",
-    eventImageAlt : "May 2026 New Member Orientation",
+    eventImageAlt : "May 2026 New and Returning Member Orientation",
     eventDate : "Friday, May 8, 2026",
     sortDate : "2026-05-08",
     eventTime : "10am - 11am",
@@ -46,7 +46,7 @@ export const mayBcomNewMember : EventListType = {
                 </button>`,
     eventPastDescription: "",
     eventPastBlog: ``,
-    eventCTAbuttonLink : "/events/may-new-member-orientation",
+    eventCTAbuttonLink : "/events/may-member-orientation",
     eventCTAbuttonText : "Read more",
     registrationButtonText : '',
     registrationButtonLink : '',

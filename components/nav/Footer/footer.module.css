@@ -1,21 +1,76 @@
 .footer {
-    background: #000000;
+    background: var(--black);
     width: 100dvw;
-    padding: 2rem 0;
+    padding: 4rem 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.footerLeftBlock,
+.footerRightBlock {
+    width: 90%;
+}
+
+.footerRightBlock {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 2rem;
+}
+
+.footerContactRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.footerContactLink {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 70%;
+    column-gap: 5%;
+}
+
+.footerContactLinkIcon {
+    min-width: 10px;
+}
+
+.footerNavRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+    padding: 1rem 0;
+}
+
+.footerNavLink {
+    width: 40%;
+    text-decoration: none;
+    color: var(--white);
+    padding: .5rem 0;
+    text-align: center;
 }
 
 .socialBlock {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1.5rem 0;
+    row-gap: 1.5rem;
 }
 
 .socialLink {
+    margin: 0 1rem;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -35,7 +90,12 @@
 .footerEnd {
     width: 90%;
     text-align: center;
-    font-size: .875rem;
     color: #ffffff;
-    line-height: 1.4rem;
+}
+
+@media (min-width:800px) {
+    .footerLeftBlock,
+    .footerRightBlock {
+        width: 45%;
+    }
 }

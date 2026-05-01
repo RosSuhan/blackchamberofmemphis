@@ -2,12 +2,37 @@
   --background: #ffffff;
   --foreground: #171717;
   --gold: #c7ac38;
-  --black: #1c1c1c;
   --grey: #cacaca;
   --darkGrey: #373636;
   --overlay: #000000d6;
-  --overlayLight : #000000b5;
+  --overlayLight : #00000059;
   --goldOverlay:#b29a2dd1; 
+  /* bcom brand kit */
+  --white: #ffffff; 
+  --offWhite: #e1dfdc;
+  --black: #090b09;
+  --lightGold: #d0b43c;
+  --darkGold: #b59c2c/
+}
+
+@font-face {
+  font-family: "Arboria";
+  src: url(/font/Arboria/Arboria_Black.otf);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(/public/font/Roboto/static/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(/public/font/Roboto/static/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(/public/font/Roboto/static/Roboto-Regular.ttf);
 }
 
 html {
@@ -24,5 +49,97 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* font-size: 62.5%; */
+}
+
+.globalMainHeading {
+  font-size: 2.027rem;
+  font-family: "Arboria";
+  width: 90%;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.globalSecondHeading {
+  font-size: 1.802rem;
+  font-family: "Arboria";
+  margin: .5rem 0 1rem 0;
+  width: 90%;
+  /* color: var(--lightGold); */
+}
+
+.globalThirdHeading {
+  font-size: 1.602rem;
+  font-family: "Roboto-Medium";
+  width: 90%;
+}
+
+.globalText {
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "Roboto-Regular";
+  letter-spacing: .02rem;
+  line-height: 1.1;
+  margin: .5rem 0;
+}
+
+.globalGoldButton,
+.globalDarkButton {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.424rem;
+  font-family: "Roboto-Bold";
+  text-decoration: none;
+  border: var(--lightGold) 2px solid;
+}
+
+.globalGoldButton {
+  background-color: var(--lightGold);
+  color: var(--black);
+}
+
+.globalDarkButton {
+  background: transparent;
+  color: var(--lightGold);
+}
+
+.globalSmallText {
+  font-family: "Roboto-Regular";
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+
+.globalXsmallText {
+  font-family: "Roboto-Regular";
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+}
+
+@media (min-width:400px) {
+  .globalMainHeading {
+    font-size: 2.986rem;
+  }
+  
+  .globalSecondHeading {
+    font-size: 2.488rem;
+  }
+  
+  .globalThirdHeading {
+    font-size: 1.728rem;
+  }
+}
+
+@media (min-width:700px) {
+  .globalMainHeading {
+    font-size: 3.052rem;
+  }
+}
+
+@media (min-width:1000px) {
+  .globalMainHeading {
+    font-size: 3.815rem;
+  }
 }

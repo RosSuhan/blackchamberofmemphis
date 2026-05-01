@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageTitleSection from "@/components/pageTitleSection/page";
 import EventsCalendar from "@/components/eventsCalendar/page";
 import EventsSearchBar from "@/components/eventsCalendar/eventsSearchComponent";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 
 export const metadata: Metadata = {
     title: 'Events & Workshops | Black Chamber of Memphis Networking',
@@ -35,8 +36,11 @@ export default function Events(){
         <main
             style={{width:"100%", display:"flex", flexDirection:"column", alignItems:"center"}}
         >
-            <PageTitleSection
-                pageTitle="Events"
+            <PageHeroSection
+                mainHeading = "Find events that move your business forward"
+                subHeading = ""
+                searchbar = {false}
+                ctaButtons={[]}
             />
 
             <EventsSearchBar/>
