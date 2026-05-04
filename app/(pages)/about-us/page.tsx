@@ -46,6 +46,7 @@ export default function AboutUs(){
                 subHeading=""
                 searchbar = {false}
                 ctaButtons={[]}
+                placeholder=""
             />
 
             <WordImageBlocks

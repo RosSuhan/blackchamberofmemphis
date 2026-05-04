@@ -72,10 +72,10 @@ export default function Directory(){
             <div
                 className={style.searchbarRow}
             >
-                <SearchBar
+                {/* <SearchBar
                     searchValue={searchValue}
                     setSearchValue={setSearchValue}
-                />
+                /> */}
             </div>
 
             {filtered ? 

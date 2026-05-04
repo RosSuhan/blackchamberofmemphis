@@ -1,9 +1,6 @@
 import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/HomepageMemberDirectoryCTArow";
-import StayInformedSection from "@/components/forms/stayInformed";
-import HomeHero from "@/components/heroSections/HomeHero";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import Partners from "@/components/partners/page";
-// import Popup from "@/components/Popup/page";
 import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
 import WhoWeAre from "@/components/whoWeAre/page";
 import type { Metadata } from "next";
@@ -81,14 +78,10 @@ export default function Home() {
 
       <ThreeLinkBlock/>
 
-      {/* block with buttons for news, events */}
-
       <HomepageMemberDirectoryCTArow/>
 
       <Partners/>
-
-      {/* <StayInformedSection/> */}
-
+      
     </section>
   );
 }

@@ -63,6 +63,7 @@ export default function Resources(){
                 subHeading=''
                 searchbar = {false}
                 ctaButtons={[]}
+                placeholder = ""
             />
 
             <section

@@ -70,6 +70,7 @@ export default function OurTeam(){
                 subHeading=""
                 searchbar = {false}
                 ctaButtons={[]}
+                placeholder = ""
             />
 
             <section

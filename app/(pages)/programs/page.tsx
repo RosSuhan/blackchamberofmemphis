@@ -93,6 +93,7 @@ export default function Programs(){
                 subHeading=''
                 searchbar = {false}
                 ctaButtons={[]}
+                placeholder = ''
             />
 
             {programsList.map(({id, pImage, pImageHeight, pImageWidth, gText, pHeading, pText, direction, pButtonText, pButtonCaption, pButtonLink, pDetails})=> (

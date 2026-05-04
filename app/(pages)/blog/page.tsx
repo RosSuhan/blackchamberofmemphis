@@ -46,6 +46,7 @@ export default function Blog(){
                 subHeading=''
                 searchbar = {false}
                 ctaButtons={[]}
+                placeholder=""
             />
 
             <section

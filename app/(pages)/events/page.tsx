@@ -40,7 +40,8 @@ export default function Events(){
                 mainHeading = "Find events that move your business forward"
                 subHeading = ""
                 searchbar = {false}
-                ctaButtons={[]}
+                ctaButtons = {[]}
+                placeholder = ""
             />
 
             <EventsSearchBar/>
