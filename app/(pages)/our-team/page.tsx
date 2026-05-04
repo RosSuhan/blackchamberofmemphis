@@ -6,6 +6,7 @@ import { boardmembers } from '@/lib/boardmembers'
 import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 // import type { Metadata } from 'next';
 
 // export const metadata: Metadata = {
@@ -60,8 +61,15 @@ export default function OurTeam(){
             className={style.ourTeamPage}
             style={{position:"relative"}}
         >
-            <PageTitleSection
+            {/* <PageTitleSection
                 pageTitle="Our Team"
+            /> */}
+
+            <PageHeroSection
+                mainHeading="Meet Our Team"
+                subHeading=""
+                searchbar = {false}
+                ctaButtons={[]}
             />
 
             <section
@@ -70,7 +78,7 @@ export default function OurTeam(){
                 <h2
                     className={style.ourTeamHeading}
                 >
-                    Meet the Team
+                    The Core Team
                 </h2>
 
                 {team.map(({first_name, last_name, title, image, bio}) => (

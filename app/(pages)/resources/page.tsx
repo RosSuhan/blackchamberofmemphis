@@ -8,6 +8,7 @@ import { useState } from "react";
 import { ChevronDown } from "@/components/icons/ChevronDown";
 import { ChevronUp12 } from "@/components/icons/ChevronUp";
 import { clsx } from "clsx";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 // import type { Metadata } from "next";
 
 // export const metadata: Metadata = {
@@ -57,8 +58,11 @@ export default function Resources(){
 
     return(
         <main>
-            <PageTitleSection
-                pageTitle="Resources"
+            <PageHeroSection
+                mainHeading='Resources'
+                subHeading=''
+                searchbar = {false}
+                ctaButtons={[]}
             />
 
             <section

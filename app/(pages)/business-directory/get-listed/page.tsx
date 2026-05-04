@@ -1,13 +1,17 @@
 'use client'
 import GetListedForm from '@/components/forms/GetListedForm'
-import PageTitleSection from '@/components/pageTitleSection/page'
+import PageHeroSection from '@/components/heroSections/pageHeroSection'
 import style from '@/styles/getListed.module.css'
 
 export default function GetListed(){
     return(
         <main>
-            <PageTitleSection
-                pageTitle='Get Listed Today!'
+            <PageHeroSection
+                mainHeading = "Get Your Business Listed"
+                subHeading = "Share your business with the community - we'll help you refine and present it professionally so it stands out and gets discovered."
+                searchbar = {false}
+                ctaButtons={[]}
+                placeholder=""
             />
             
             <section

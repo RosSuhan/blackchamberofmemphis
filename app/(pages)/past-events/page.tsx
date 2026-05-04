@@ -1,3 +1,4 @@
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import PageTitleSection from "@/components/pageTitleSection/page";
 import PastEvents from "@/components/PastEvents/page";
 import type { Metadata } from "next";
@@ -32,8 +33,11 @@ export const metadata: Metadata = {
 export default function PastEventsPage(){
     return(
         <main>
-            <PageTitleSection
-                pageTitle="Past Events"
+            <PageHeroSection
+                mainHeading='Past Events'
+                subHeading=''
+                searchbar = {false}
+                ctaButtons={[]}
             />
             
             <PastEvents/>

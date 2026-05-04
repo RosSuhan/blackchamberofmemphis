@@ -1,5 +1,5 @@
 import StayInformedSection from "@/components/forms/stayInformed";
-import PageTitleSection from "@/components/pageTitleSection/page";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import ImageWordBlocks from "@/components/WordImageBlocks/ImageWord";
 import TextBackdrop from "@/components/WordImageBlocks/TextBackdrop";
 import WordImageBlocks from "@/components/WordImageBlocks/WordImage";
@@ -40,8 +40,12 @@ export const metadata: Metadata = {
 export default function AboutUs(){
     return(
         <main>
-            <PageTitleSection
-                pageTitle = {'About Us'}
+
+            <PageHeroSection
+                mainHeading="About the Black Chamber of Memphis"
+                subHeading=""
+                searchbar = {false}
+                ctaButtons={[]}
             />
 
             <WordImageBlocks
@@ -65,7 +69,7 @@ export default function AboutUs(){
                                         <p>Essentially, we've created an exit strategy for the owner, who has a succession challenge. And, we've created an expanding wealth opportunity for business owners who are trying to grow their businesses.</p>`}
             />
 
-            <StayInformedSection/>
+            {/* <StayInformedSection/> */}
         </main>
     )
 }

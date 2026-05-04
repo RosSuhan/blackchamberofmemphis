@@ -1,6 +1,11 @@
+'use client'
 import Link from 'next/link'
 import style from './pageHero.module.css'
 import Image from 'next/image'
+import React from 'react'
+import SearchBar from '../SearchBar/page'
+import { useState } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 type ctaButtonProps = {
     name: string
@@ -13,16 +18,34 @@ type pageHeroProps = {
     subHeading : string
     searchbar : boolean
     ctaButtons : ctaButtonProps
+    placeholder : string
 }
 
 export default function PageHeroSection({
     mainHeading,
     subHeading,
     searchbar,
-    ctaButtons
+    ctaButtons,
+    placeholder
 }: pageHeroProps){
 
-    const backgroundImage = "/assets/may-hero-image.webp"
+    const backgroundImage = "/assets/pageHeroImage.jpg"
+
+    const router = useRouter();
+    const searchParams = useSearchParams();
+
+    const [ searchTerm, setSearchTerm ] = useState(searchParams.get('q') || '')
+
+    function handleSubmit(e: React.FormEvent){
+        e.preventDefault()
+
+        if (!searchTerm.trim()) return;
+
+        console.log("search to be excecuted", searchTerm)
+
+        router.push(`/business-directory?q=${encodeURIComponent(searchTerm)}`)
+    }
+
     return(
         <section
             className={style.pageHeroSection}
@@ -52,16 +75,17 @@ export default function PageHeroSection({
                 : null}
 
                 {searchbar ? 
-                    <form action=""
+                    <div
                         className={style.pageHeroSearchBar}
                     >
-                        <input 
-                            type="text" 
-                            name="" 
-                            placeholder='Search for services, businesses or keywords...'
-                            className={style.pageSearchBar}
+                        <SearchBar
+                            handleSubmit = {handleSubmit}
+                            searchValue = {searchTerm}
+                            setSearchValue = {setSearchTerm}
+                            placeholder = {placeholder}
                         />
-                    </form>
+                    </div>
+                    
                 : null}
 
                 {ctaButtons?

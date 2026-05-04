@@ -1,4 +1,5 @@
 import BlogThumbNail from "@/components/blogComponents/blogThumbNail";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import PageTitleSection from "@/components/pageTitleSection/page";
 import type { Metadata } from "next"
 
@@ -40,8 +41,11 @@ export const metadata: Metadata = {
 export default function Blog(){
     return(
         <main>
-            <PageTitleSection
-                pageTitle="Blog"
+            <PageHeroSection
+                mainHeading='Blog'
+                subHeading=''
+                searchbar = {false}
+                ctaButtons={[]}
             />
 
             <section

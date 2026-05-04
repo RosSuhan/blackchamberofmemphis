@@ -1,20 +1,22 @@
 'use client'
-import NewDirectoryHero from "@/components/directoryComponents/newDirectoryHero";
+import { useSearchParams } from "next/navigation";
 import NewDirectoryList from "@/components/directoryComponents/newDirectoryList";
-import { useState } from "react";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 
 export default function NewDirectory(){
+    const searchParams = useSearchParams();
 
-    const [ searchTerm, setSearchTerm ] = useState('')
-    const [ selectedCategory, setSelectedCategory ] = useState("all")
+    const searchTerm = searchParams.get('q') || '';
+    const selectedCategory = searchParams.get('category') || 'all'
 
     return (
         <>
-            <NewDirectoryHero
-                searchTerm = {searchTerm}
-                setSearchTerm = {setSearchTerm}
-                selectedCategory = {selectedCategory}
-                setSelectedCategory = {setSelectedCategory}
+            <PageHeroSection
+                mainHeading = "Find Trusted Memphis Businesses"
+                subHeading = ""
+                searchbar = {true}
+                ctaButtons={[]}
+                placeholder="Search for services, business or keywords..."
             />
 
             <NewDirectoryList

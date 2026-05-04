@@ -7,6 +7,7 @@ import { ChevronDown } from '@/components/icons/ChevronDown';
 import { ChevronUp12 } from '@/components/icons/ChevronUp';
 import { useState } from 'react';
 import PageTitleSection from '@/components/pageTitleSection/page';
+import PageHeroSection from '@/components/heroSections/pageHeroSection';
 
 const programsList = [
     {
@@ -83,8 +84,15 @@ export default function Programs(){
     const [ detailBlock, setDetailBlock ] = useState<string | null>(null)
     return(
         <main>
-            <PageTitleSection
+            {/* <PageTitleSection
                 pageTitle='Programs'
+            /> */}
+
+            <PageHeroSection
+                mainHeading='Programs'
+                subHeading=''
+                searchbar = {false}
+                ctaButtons={[]}
             />
 
             {programsList.map(({id, pImage, pImageHeight, pImageWidth, gText, pHeading, pText, direction, pButtonText, pButtonCaption, pButtonLink, pDetails})=> (
@@ -170,7 +178,7 @@ export default function Programs(){
                 </div>
             ))}
 
-            <StayInformedSection/>
+            {/* <StayInformedSection/> */}
         </main>
     )
 }

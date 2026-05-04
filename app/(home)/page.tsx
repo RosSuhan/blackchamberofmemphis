@@ -8,6 +8,7 @@ import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
 import WhoWeAre from "@/components/whoWeAre/page";
 import type { Metadata } from "next";
 
+
 export const metadata: Metadata = {
   title: 'Black Chamber of Memphis | Empowering Black-Owned Businesses',
   description:
@@ -62,6 +63,8 @@ export default function Home() {
     }
   ]
 
+
+
   return (
     <section>
 
@@ -69,8 +72,9 @@ export default function Home() {
       <PageHeroSection
         mainHeading = "Grow your business beyond visibility"
         subHeading = "Join a powerful network of Black-owned businesses, explore trusted local services, and stay connected with events that move Memphis forward."
-        searchbar = {false}
+        searchbar = {true}
         ctaButtons = {heroCTAbuttons}
+        placeholder = {"Search for services, businesses or keywords..."}
       />
 
       <WhoWeAre/>
@@ -83,7 +87,7 @@ export default function Home() {
 
       <Partners/>
 
-      <StayInformedSection/>
+      {/* <StayInformedSection/> */}
 
     </section>
   );

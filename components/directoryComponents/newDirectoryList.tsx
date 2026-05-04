@@ -1,5 +1,5 @@
 import style from '@/styles/directoryList.module.css'
-import { useEffect, useMemo, useState } from 'react'
+import { useState } from 'react'
 import BusinessBlock from './BusinessBlock'
 import { businessList } from '@/lib/members'
 

@@ -16,7 +16,7 @@
     width: 100%;
     z-index: 100;
     position: relative;
-    background: var(--overlayLight);
+    background: var(--overlay);
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -31,13 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.pageSearchBar {
-    width: 100%;
-    padding: .5rem 1rem;
-    font-size: 1.266rem;
-    border-radius: 8px;
+    column-gap: 5%;
+    margin-top: 2rem;
 }
 
 .pageHeroButtonRow {
