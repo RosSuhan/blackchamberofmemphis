@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Suspense } from "react";
 import NewDirectory from "./newDirectory";
 
 export const metadata: Metadata = {
@@ -34,7 +35,9 @@ export default function BusinessDirectory(){
         <main
             style={{width:"100%", display:"flex", flexDirection:"column", alignItems:"center"}}
         >
-            <NewDirectory/>
+            <Suspense fallback={<div>Loading directory...</div>}>
+                <NewDirectory/>
+            </Suspense>
         </main>
     )
 }

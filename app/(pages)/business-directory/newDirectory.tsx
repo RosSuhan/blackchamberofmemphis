@@ -17,6 +17,7 @@ export default function NewDirectory(){
                 searchbar = {true}
                 ctaButtons={[]}
                 placeholder="Search for services, business or keywords..."
+                initialSearchTerm={searchTerm}
             />
 
             <NewDirectoryList
