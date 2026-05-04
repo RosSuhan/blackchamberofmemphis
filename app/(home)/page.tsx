@@ -64,8 +64,6 @@ export default function Home() {
 
   return (
     <section>
-
-      {/* <HomeHero/> */}
       <PageHeroSection
         mainHeading = "Grow your business beyond visibility"
         subHeading = "Join a powerful network of Black-owned businesses, explore trusted local services, and stay connected with events that move Memphis forward."
@@ -81,7 +79,7 @@ export default function Home() {
       <HomepageMemberDirectoryCTArow/>
 
       <Partners/>
-      
+
     </section>
   );
 }

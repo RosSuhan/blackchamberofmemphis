@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import SearchBar from '../SearchBar/page'
 import { useState } from 'react'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter} from 'next/navigation'
 
 type ctaButtonProps = {
     name: string
@@ -19,6 +19,7 @@ type pageHeroProps = {
     searchbar : boolean
     ctaButtons : ctaButtonProps
     placeholder : string
+    initialSearchTerm? : string
 }
 
 export default function PageHeroSection({
@@ -26,15 +27,15 @@ export default function PageHeroSection({
     subHeading,
     searchbar,
     ctaButtons,
-    placeholder
+    placeholder,
+    initialSearchTerm
 }: pageHeroProps){
 
     const backgroundImage = "/assets/pageHeroImage.jpg"
 
     const router = useRouter();
-    const searchParams = useSearchParams();
 
-    const [ searchTerm, setSearchTerm ] = useState(searchParams.get('q') || '')
+    const [ searchTerm, setSearchTerm ] = useState(initialSearchTerm || '')
 
     function handleSubmit(e: React.FormEvent){
         e.preventDefault()
