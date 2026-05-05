@@ -13,15 +13,15 @@ type BusinessBlockProps = {
     id : string
     blockPath : string
     blockImage : string
-    blockTitle : string
-    blockDescription : string
+    businessTitle : string
+    businessDescription : string
     phoneNumber? : string
     emailText? : string
     websiteLink? : string
 }
 
 
-export default function BusinessBlock({id, blockPath, blockImage, blockTitle, blockDescription, phoneNumber, emailText, websiteLink }: BusinessBlockProps){
+export default function BusinessBlock({id, blockPath, blockImage, businessTitle, businessDescription, phoneNumber, emailText, websiteLink }: BusinessBlockProps){
 
     
     return (
@@ -52,7 +52,7 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                     <h2
                         className={style.businessBlockName}
                     >
-                        {blockTitle}
+                        {businessTitle}
                     </h2>
                 </Link>
 
@@ -60,7 +60,7 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                     className={style.businessBlockDesc}
                 >
                     <ReadMore
-                        text = {blockDescription}
+                        text = {businessDescription}
                         limit={15}
                     />
                 </article>
