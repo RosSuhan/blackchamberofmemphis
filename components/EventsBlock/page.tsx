@@ -5,7 +5,7 @@ import { Clock } from '../icons/Clock'
 import { BaselineLocationOn } from '../icons/Location'
 import { eventIndex } from '@/lib/eventsList/eventIndex'
 import { useState } from 'react'
-import ReadMore from '../directoryComponents/ReadMore'
+import ReadMore from '../READMORE/ReadMore'
 
 export default function EventsBlock(){
     const [ searchTerm, setSearchTerm ] = useState('');

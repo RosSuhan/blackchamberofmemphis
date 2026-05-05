@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import style from '@/styles/readMore.module.css'
+import style from './readMore.module.css'
 
 interface ReadMoreProps {
     text: string;

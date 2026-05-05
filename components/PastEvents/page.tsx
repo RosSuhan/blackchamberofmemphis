@@ -3,7 +3,7 @@ import style from '@/styles/eventsPage.module.css'
 import Image from 'next/image'
 import { eventIndex } from '@/lib/eventsList/eventIndex'
 import { useState } from 'react'
-import ReadMore from '../directoryComponents/ReadMore'
+import ReadMore from '../READMORE/ReadMore'
 import { Clock } from '../icons/Clock'
 
 export default function PastEvents(){

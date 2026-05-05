@@ -12,7 +12,7 @@
   --offWhite: #e1dfdc;
   --black: #090b09;
   --lightGold: #d0b43c;
-  --darkGold: #b59c2c/
+  --darkGold: #b59c2c;
 }
 
 @font-face {
@@ -69,6 +69,7 @@ body {
 
 .globalThirdHeading {
   font-size: 1.602rem;
+  margin: .5rem 0;
   font-family: "Roboto-Medium";
   width: 90%;
 }
@@ -80,6 +81,18 @@ body {
   letter-spacing: .02rem;
   line-height: 1.1;
   margin: .5rem 0;
+}
+
+.globalSmallText {
+  font-family: "Roboto-Regular";
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+}
+
+.globalXsmallText {
+  font-family: "Roboto-Regular";
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
 }
 
 .globalGoldButton,
@@ -106,16 +119,15 @@ body {
   color: var(--lightGold);
 }
 
-.globalSmallText {
-  font-family: "Roboto-Regular";
+.globalBlackButton {
+  background: var(--black);
+  color: var(--white);
+  font-family: "Roboto-Bold";
   font-size: 1.2rem;
-  letter-spacing: 0.02rem;
-}
-
-.globalXsmallText {
-  font-family: "Roboto-Regular";
-  font-size: 1.1rem;
-  letter-spacing: 0.02rem;
+  letter-spacing: 1.1;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border-radius: 8px;
 }
 
 @media (min-width:400px) {

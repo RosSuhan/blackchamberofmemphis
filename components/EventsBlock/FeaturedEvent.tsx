@@ -1,35 +1,12 @@
-'use client'
-import Image from "next/image";
-import Link from "next/link";
-import style from '@/styles/directoryMemberBlock.module.css'
-import ReadMore from "../READMORE/ReadMore";
-import { Phone } from "../icons/Phone";
-import { BaselineMail } from "../icons/MailIcon";
-import { GlobeOutline } from "../icons/Globe";
+import style from './featuredEvent.module.css'
 
-
-
-type BusinessBlockProps = {
-    id : string
-    blockPath : string
-    blockImage : string
-    blockTitle : string
-    blockDescription : string
-    phoneNumber? : string
-    emailText? : string
-    websiteLink? : string
-}
-
-
-export default function BusinessBlock({id, blockPath, blockImage, blockTitle, blockDescription, phoneNumber, emailText, websiteLink }: BusinessBlockProps){
-
-    
+export default function FeaturedEvent(){
     return (
         <div
             className={style.businessBlockLink}
-            key={id}
+            // key={id}
         >
-            <Link
+            {/* <Link
                 href={blockPath}
                 className={style.businessLogoBlock}
             >
@@ -40,9 +17,9 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                     height={1363}
                     className={style.businessBlockImage}
                 />
-            </Link>
+            </Link> */}
 
-            <div
+            {/* <div
                 className={style.businessDescBlock}
             >
                 <Link
@@ -64,12 +41,12 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                         limit={15}
                     />
                 </article>
-            </div>
+            </div> */}
 
-            <div
+            {/* <div
                 className={style.businessContactBlock}
-            >
-                {phoneNumber? 
+            > */}
+                {/* {phoneNumber? 
                         <a 
                         href={"tel:" + phoneNumber}
                         className={style.businessContactBlockLink}
@@ -79,9 +56,9 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                         />
                         {phoneNumber}
                     </a>    
-                : null}
+                : null} */}
 
-                {emailText ? 
+                {/* {emailText ? 
                     <a 
                         href={"mailto:" + emailText}
                         className={style.businessContactBlockLink}
@@ -91,9 +68,9 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                         />
                         {emailText}
                     </a>    
-                : null}
+                : null} */}
 
-                {websiteLink ? 
+                {/* {websiteLink ? 
                     <a 
                         href={websiteLink}
                         className={style.businessContactBlockLink}
@@ -103,15 +80,15 @@ export default function BusinessBlock({id, blockPath, blockImage, blockTitle, bl
                         />
                         {websiteLink}
                     </a>    
-                : null}
+                : null} */}
 
-                <Link
+                {/* <Link
                     href={blockPath}
                     className={style.viewProfile}
                 >
                     View Profile
-                </Link>
-            </div>
+                </Link> */}
+            {/* </div> */}
         </div>
     )
 }

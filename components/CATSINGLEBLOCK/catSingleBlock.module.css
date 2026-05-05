@@ -1,0 +1,82 @@
+.catBlock {
+    background: var(--white);
+    width: 200px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+    border: solid 2px var(--darkGold);
+    border-radius: 10px;
+}
+
+.catStar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.catLogo {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.catName {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catText {
+    width: 90%;
+    margin-bottom: .5rem;
+    min-height: 100px;
+}
+
+.catDateTimePrice {
+    width: 90%;
+}
+
+.catList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catItem {
+    display: flex;
+    align-items: center;
+    padding: .5rem 0;
+    font-size: 1.266rem;
+    column-gap: 2%;
+}
+
+.catIcon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width:310px) {
+    .catBlock {
+        width: 300px;
+    }
+}
+
+@media (min-width:380px) {
+    .catBlock {
+        width: 350px;
+    }
+}
+
+@media (min-width:800px) {
+    .catName {
+        height: 80px;
+    }
+}

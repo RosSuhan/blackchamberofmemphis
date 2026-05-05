@@ -1,103 +1,45 @@
 import Link from 'next/link'
 import style from './sandbox.module.css'
 import Image from 'next/image'
+import ReadMore from '@/components/READMORE/ReadMore'
+import CATsingleBlock from '@/components/CATSINGLEBLOCK/page'
+import PageHeroSection from '@/components/heroSections/pageHeroSection'
+import BusinessBlock from '@/components/directoryComponents/BusinessBlock'
 
 export default function Sandbox(){
-    const backgroundImage = "/assets/may-hero-image.webp"
     return(
-        <section
+        <main
             className={style.pageHeroSection}
-            // style={{display:"flex", flexDirection:"column", alignItems:"center", padding:"2rem 0"}}
+            // style={{background:"green", display:"flex", alignItems:"center", justifyContent:"space-evenly", padding:"4rem 0", flexWrap: "wrap", rowGap:"2rem", columnGap:'5%'}}
         >
-            <Image
-                src={backgroundImage}
-                alt=''
-                width={1400}
-                height={500}
-                className={style.herobackgroundImage}
+            <PageHeroSection
+                mainHeading = "Find events that move your business forward"
+                subHeading = ""
+                searchbar = {false}
+                ctaButtons = {[]}
+                placeholder = ""
             />
-            <div
-                className={style.pageHeroOverlay}
+
+            <section
+                className={style.calendarSection}
             >
-                <h1
-                    className='globalMainHeading'
-                >
-                    Grow your business beyond visibility
-                </h1>
-                <h2
-                    className='globalThirdHeading'
-                >
-                    Join a powerful network of Black-owned businesses, explore trusted local services, and stay connected with events that move Memphis forward.
-                </h2>
-
-                <form action=""
-                    className={style.pageHeroSearchBar}
-                >
-                    <input 
-                        type="text" 
-                        name="" 
-                        placeholder='Search for services, businesses or keywords...'
-                        className={style.pageSearchBar}
-                    />
-                </form>
-
                 <div
-                    className={style.pageHeroButtonRow}
+                    className={style.calendarSidebar}
                 >
-                    <Link 
-                        href={""}
-                        className='globalGoldButton'
-                    >
-                        Button
-                    </Link>
-
-                    <Link
-                        href={""}
-                        className='globalDarkButton'
-                    >
-                        Button Two
-                    </Link>
+                    Sidebar
                 </div>
-            </div>
-        </section>
+                <div
+                    className={style.calendarEvents}
+                >
+                    <BusinessBlock
+                        id = {'syposium'}
+                        blockPath = {'/events/symposium'}
+                        blockImage = {'/events/symposium/BCOM_Symposium_2025_Day2-16.jpg'}
+                        blockTitle='Building Wealth in Our Community Symposium'
+                        blockDescription=''
+                    />
+                </div>
+            </section>
+        </main>
     )
 }
-
-// <h1
-// className="globalMainHeading"
-// >
-//     Find Trusted Memphis Businesses
-// </h1>
-// <h2
-//     className="globalSecondHeading"
-// >
-//     this is the h2 tag
-// </h2>
-// <h3
-//     className="globalThirdHeading"
-// >  
-//     This is the h3 tag
-// </h3>
-// <div
-//     className="globalGoldButton"
-// >
-//     button One
-// </div>
-
-// <p
-//     className="globalText"
-// >
-//     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime porro, nulla earum omnis sint sequi alias nemo placeat laudantium mollitia, minima perferendis itaque eveniet suscipit labore dolor. Beatae, dicta.
-// </p>
-
-// <div
-//     className="globalSmallText"
-// >
-//     this is small text
-// </div>
-
-// <div
-//     className="globalXsmallText"
-// >
-//     this is xs text
-// </div>

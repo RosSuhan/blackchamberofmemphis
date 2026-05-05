@@ -1,7 +1,7 @@
 import style from '@/styles/directoryList.module.css'
 import { useState } from 'react'
-import BusinessBlock from './BusinessBlock'
 import { businessList } from '@/lib/members'
+import CATsingleBlock from '../CATSINGLEBLOCK/page'
 
 type NewDirectoryListProps = {
     searchTerm : string,
@@ -72,16 +72,15 @@ export default function NewDirectoryList({
         >
             
             {finalList?.map((biz) => (
-                <BusinessBlock
-                    key={biz.id}
-                    id={biz.id}
-                    blockPath={biz.id}
-                    blockImage={biz.profileLogo}
-                    businessTitle={biz.businessName}
-                    businessDescription={biz.profileDescription}
-                    phoneNumber={biz.telNumber}
-                    emailText={biz.email}
-                    websiteLink={biz.website}
+                <CATsingleBlock
+                    key = {biz.id}
+                    star = {biz.memberStatus}
+                    featureImage = {`/members/${biz.profileLogo}.webp`}
+                    featureName = {biz.businessName}
+                    featureText = {biz.profileDescription}
+                    featureTextLimit = {15}
+                    featureLink = {`business-directory/${biz.id}`}
+                    featureLinkText = {'View Profile'}
                 />
             ))}
 
