@@ -31,13 +31,7 @@ export default function Sandbox(){
                 <div
                     className={style.calendarEvents}
                 >
-                    <BusinessBlock
-                        id = {'syposium'}
-                        blockPath = {'/events/symposium'}
-                        blockImage = {'/events/symposium/BCOM_Symposium_2025_Day2-16.jpg'}
-                        blockTitle='Building Wealth in Our Community Symposium'
-                        blockDescription=''
-                    />
+                    
                 </div>
             </section>
         </main>
