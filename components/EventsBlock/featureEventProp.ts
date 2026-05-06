@@ -10,4 +10,6 @@ export type featureEventProp = {
     featuredEventAddressLink? : string
     featuredEventAddress? : string
     featuredEventDescription : string
+    featuredEventActionLink : string
+    featuredEventActionBtnText? : string
 }

@@ -17,7 +17,9 @@ export default function FeaturedEvent({
     featuredEventPrice,
     featuredEventAddressLink,
     featuredEventAddress,
-    featuredEventDescription
+    featuredEventDescription,
+    featuredEventActionLink,
+    featuredEventActionBtnText
 }: featureEventProp){
     return (
         <div
@@ -96,10 +98,10 @@ export default function FeaturedEvent({
                 className={style.featuredEventActionBtn}
             >
                 <Link
-                    href={'blockPath'}
+                    href={featuredEventActionLink}
                     className={'globalBlackButton'}
                 >
-                    View Profile
+                    {featuredEventActionBtnText}
                 </Link>
             </div>
         </div>
