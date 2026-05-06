@@ -39,7 +39,7 @@ export default function EventsPageSection(){
                     featuredImageHeight = {1363}
                     featuredEventName = {'Building Wealth In Our Community Symposium'}
                     featuredEventDateTime = {'August 28, 2026'}
-                    featuredEventPrice = {"Free"}
+                    featuredEventPrice = {"$60 (Non-member); $50 (member)"}
                     featuredEventAddressLink = {"/events/symposium"}
                     featuredEventAddress = {"Epicenter, 150 Peabody Pl, Memphis, TN 38103, United States"}
                     featuredEventDescription = {"The Black Chamber of Memphis Symposium is a flagship event focused on advancing entrepreneurship, economic mobility, and wealth-building within the community. Bringing together business owners, leaders, and professionals, the event offers a dynamic mix of networking, expert-led discussions, and practical insights designed to help entrepreneurs start, grow, and scale sustainable businesses."}
