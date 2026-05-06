@@ -70,17 +70,19 @@ export default function CATsingleBlock({
 
                             {featureDate}
                         </li>
-                        <li
-                            className={style.catItem}
-                        >
-                            <div
-                                style={{fontSize:"1.2rem", fontWeight:"800"}}
-                                className={style.catIcon}
+                        {featurePrice ? 
+                            <li
+                                className={style.catItem}
                             >
-                                $
-                            </div>
-                            {featurePrice}
-                        </li>
+                                <div
+                                    style={{fontSize:"1.2rem", fontWeight:"800"}}
+                                    className={style.catIcon}
+                                >
+                                    $
+                                </div>
+                                {featurePrice}
+                            </li>
+                        : null}
                         <li
                             className={style.catItem}
                         >

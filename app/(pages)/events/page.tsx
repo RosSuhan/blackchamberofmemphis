@@ -3,6 +3,7 @@ import PageTitleSection from "@/components/pageTitleSection/page";
 import EventsCalendar from "@/components/eventsCalendar/page";
 import EventsSearchBar from "@/components/eventsCalendar/eventsSearchComponent";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
+import EventsPageSection from "@/components/EventsBlock/eventsPageSection";
 
 export const metadata: Metadata = {
     title: 'Events & Workshops | Black Chamber of Memphis Networking',
@@ -44,9 +45,11 @@ export default function Events(){
                 placeholder = ""
             />
 
-            <EventsSearchBar/>
+            <EventsPageSection/>
 
-            <EventsCalendar/>
+            {/* <EventsSearchBar/> */}
+
+            {/* <EventsCalendar/> */}
         </main>
     )
 }

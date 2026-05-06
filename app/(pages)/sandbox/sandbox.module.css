@@ -2,23 +2,3 @@
     width: 100%;
 }
 
-.calendarSection {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    background: var(--darkGrey);
-}
-
-.calendarSidebar {
-    width: 30%;
-    height: 100%;
-}
-
-.calendarEvents {
-    background: var(--offWhite);
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}

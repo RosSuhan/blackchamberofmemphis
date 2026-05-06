@@ -1,127 +1,147 @@
-.businessBlockLink {
-    background: #eeeeee;
-    width: 95%;
+.featuredEventBlock {
+    width: 90%;
+    padding: 1rem 0;
+    border: solid 2px var(--darkGold);
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    border: solid 2px var(--gold);
-    box-shadow: var(--gold) 1px 1px 5px;
-    padding: 2rem 0;
-    row-gap: 1rem;
+    justify-content: space-evenly;
+    background: var(--white);
+    box-shadow: 10px 10px 20px #000000;
 }
 
-.businessLogoBlock {
-    border-radius: 30px;
-    width: 60%;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: var(--gold) solid 1px;
-}
-
-.businessBlockImage {
+.featuredEventImage {
+    object-fit: contain;
     width: 90%;
     height: auto;
-    object-fit: contain;
-    border-radius: 30px;
+    border-radius: 8px;
 }
 
-.businessDescBlock {
+.featuredEventDescBlock {
     width: 90%;
-    display: flex;
-    flex-direction: column;
+    padding: .5rem 0 1rem 0;
 }
 
-.businessNameLink {
-    width: 100%;
+.featuredEventNameLink {
     text-decoration: none;
-}
-
-.businessBlockName {
-    width: 100%;
-    color: var(--gold);
-    font-size: 1.25rem;
-}
-
-.businessBlockDesc {
-    font-size: 1rem;
-    line-height: 1.5;
-    border-top: solid var(--gold) 1px;
-    padding-top: .8rem;
-}
-
-.businessContactBlock{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-}
-
-.businessContactBlockLink {
-    border: solid var(--gold) .2px;
-    width: 90%;
-    padding: .5rem .5rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: hidden;
-    color: #000000;
-    text-decoration: none;
-    font-size: .875rem;
-}
-
-.contactIcon {
-    color: var(--gold);
-    min-width: 20px;
-    min-height: 20px;
-    margin-right: .2rem;
-}
-
-.viewProfile {
-    width: 90%;
-    background-color: #000000;
-    color: var(--gold);
-    text-decoration: none;
+    color: var(--darkGold);
     text-align: center;
-    padding: .5rem;
-    border-radius: 5px;
 }
 
-@media (min-width: 600px) {
-    .businessContactBlock{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+.featuredEventTimeList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featuredEventTimeItem {
+    display: flex;
+    align-items: center;
+    padding: .5rem 0;
+    column-gap: 2%;
+    font-size: 1rem;
+}
+
+.featuredEventIcon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredEventAddressLink {
+    display: flex;
+    align-items: center;
+    column-gap: 2%;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.featuredEventDesciption {
+    padding: .5rem 0;
+}
+
+.featuredEventActionBtn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 500px) {
+    .featuredEventBlock {
+        padding: 2rem 0;
     }
     
-    .businessContactBlockLink {
-        width: 45%;
+    .featuredEventImage {
+        object-fit: cover;
+        height: 200px;
     }
 }
 
 @media (min-width: 800px) {
-    .businessBlockLink {
-        justify-content: space-evenly;
+    .featuredEventBlock {
+        align-items: flex-start;
+        justify-content: center;
     }
     
-    .businessLogoBlock {
-        width: 15%;
+    .featuredEventImage {
+        width: 35%;
+        height: 280px;
     }
     
-    .businessDescBlock {
-        width: 50%;
+    .featuredEventDescBlock {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
-    .businessContactBlock{
-        width: 20%;
-    }
-    
-    .businessContactBlockLink {
+    .featuredEventNameLink {
         width: 90%;
+        text-align: left;
+    }
+    
+    .featuredEventTimeList {
+        width: 90%;
+    }
+    
+    .featuredEventDesciption {
+        width: 90%;
+    }
+    
+    .featuredEventActionBtn {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 800px) {
+    .featuredEventImage {
+        height: 330px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .featuredEventImage {
+        height: 280px;
+    }
+
+    .featuredEventNameLink {
+        width: 90%;
+        text-align: left;
+    }
+    
+    .featuredEventTimeList {
+        width: 90%;
+    }
+    
+    .featuredEventDesciption {
+        width: 90%;
+    }
+    
+    .featuredEventActionBtn {
+        justify-content: flex-end;
     }
 }

@@ -1,94 +1,107 @@
+import Image from 'next/image'
 import style from './featuredEvent.module.css'
+import Link from 'next/link'
+import ReadMore from '../READMORE/ReadMore'
+import { BaselineCalendarMonth } from '../icons/Calendar'
+import { BaselineLocationOn } from '../icons/Location'
+import { featureEventProp } from './featureEventProp'
 
-export default function FeaturedEvent(){
+export default function FeaturedEvent({
+    featuredEventId,
+    featuredImage,
+    featuredImageWidth,
+    featuredImageHeight,
+    featuredImageAlt,
+    featuredEventName,
+    featuredEventDateTime,
+    featuredEventPrice,
+    featuredEventAddressLink,
+    featuredEventAddress,
+    featuredEventDescription
+}: featureEventProp){
     return (
         <div
-            className={style.businessBlockLink}
-            // key={id}
+            className={style.featuredEventBlock}
+            key={featuredEventId}
         >
-            {/* <Link
-                href={blockPath}
-                className={style.businessLogoBlock}
-            >
-                <Image
-                    src={blockImage}
-                    alt=""
-                    width={2048}
-                    height={1363}
-                    className={style.businessBlockImage}
-                />
-            </Link> */}
+            <Image
+                src={featuredImage}
+                alt={featuredImageAlt}
+                width={featuredImageWidth}
+                height={featuredImageHeight}
+                className={style.featuredEventImage}
+            />
 
-            {/* <div
-                className={style.businessDescBlock}
+
+            <div
+                className={style.featuredEventDescBlock}
             >
                 <Link
-                    href={blockPath}
-                    className={style.businessNameLink}
+                    href={'blockPath'}
+                    className={style.featuredEventNameLink}
                 >
                     <h2
-                        className={style.businessBlockName}
+                        className={'globalThirdHeading'}
                     >
-                        {blockTitle}
+                        {featuredEventName}
                     </h2>
                 </Link>
+                <ul
+                    className={style.featuredEventTimeList}
+                >
+                    <li
+                        className={style.featuredEventTimeItem}
+                    >
+                        <BaselineCalendarMonth
+                            className={style.featuredEventIcon}
+                        />
+
+                        {featuredEventDateTime}
+                    </li>
+                    <li
+                        className={style.featuredEventTimeItem}
+                    >
+                        <div
+                            style={{fontSize:"1.2rem", fontWeight:"800"}}
+                            className={style.featuredEventIcon}
+                        >
+                            $
+                        </div>
+                        {featuredEventPrice}
+                    </li>
+                    <li
+                        className={style.featuredEventTimeItem}
+                    >
+                        <a href={featuredEventAddressLink}
+                            className={style.featuredEventAddressLink}
+                        >
+                            <BaselineLocationOn
+                                className={style.featuredEventIcon}
+                            />
+                            {featuredEventAddress}
+                        </a>
+                    </li>
+                </ul>
 
                 <article
-                    className={style.businessBlockDesc}
+                    className={style.featuredEventDesciption}
                 >
                     <ReadMore
-                        text = {blockDescription}
+                        text = {featuredEventDescription}
                         limit={15}
                     />
                 </article>
-            </div> */}
-
-            {/* <div
-                className={style.businessContactBlock}
-            > */}
-                {/* {phoneNumber? 
-                        <a 
-                        href={"tel:" + phoneNumber}
-                        className={style.businessContactBlockLink}
-                    >
-                        <Phone
-                            className={style.contactIcon}
-                        />
-                        {phoneNumber}
-                    </a>    
-                : null} */}
-
-                {/* {emailText ? 
-                    <a 
-                        href={"mailto:" + emailText}
-                        className={style.businessContactBlockLink}
-                    >
-                        <BaselineMail
-                            className={style.contactIcon}
-                        />
-                        {emailText}
-                    </a>    
-                : null} */}
-
-                {/* {websiteLink ? 
-                    <a 
-                        href={websiteLink}
-                        className={style.businessContactBlockLink}
-                    >
-                        <GlobeOutline
-                            className={style.contactIcon}
-                        />
-                        {websiteLink}
-                    </a>    
-                : null} */}
-
-                {/* <Link
-                    href={blockPath}
-                    className={style.viewProfile}
+            </div>
+            <div
+                className={style.featuredEventActionBtn}
+            >
+                <Link
+                    href={'blockPath'}
+                    className={'globalBlackButton'}
                 >
                     View Profile
-                </Link> */}
-            {/* </div> */}
+                </Link>
+            </div>
         </div>
     )
 }
