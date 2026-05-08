@@ -6,6 +6,7 @@ import React from 'react'
 import SearchBar from '../SearchBar/page'
 import { useState } from 'react'
 import { useRouter} from 'next/navigation'
+import clsx from 'clsx'
 
 type ctaButtonProps = {
     name: string
@@ -20,6 +21,9 @@ type pageHeroProps = {
     ctaButtons : ctaButtonProps
     placeholder : string
     initialSearchTerm? : string
+    eventDate? : string
+    eventTime? : string
+    eventAddress? : string
 }
 
 export default function PageHeroSection({
@@ -28,7 +32,10 @@ export default function PageHeroSection({
     searchbar,
     ctaButtons,
     placeholder,
-    initialSearchTerm
+    initialSearchTerm,
+    eventDate,
+    eventTime,
+    eventAddress
 }: pageHeroProps){
 
     const backgroundImage = "/assets/pageHeroImage.jpg"
@@ -89,9 +96,20 @@ export default function PageHeroSection({
                     
                 : null}
 
+                {eventDate ? 
+                    <div
+                        className={style.dateTimeAddress}
+                    >
+                        <span>{eventDate}</span>
+                        {eventTime ? <><span>@</span><span>{eventTime}</span></>: null}
+                        
+                        {eventAddress ? <span>{eventAddress}</span> : null}
+                    </div>
+                : null}
+
                 {ctaButtons?
                     <div
-                        className={style.pageHeroButtonRow}
+                        className={clsx(eventDate ? style.pageHeroHalfCtaButtonRow : style.pageHeroButtonRow)}
                     >
                         {ctaButtons.map((button, index) => (
                             <Link 

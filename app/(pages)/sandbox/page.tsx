@@ -10,18 +10,13 @@ import Calendar from '@/components/CALENDAR/page'
 import { eventIndex } from '@/lib/eventsList/eventIndex'
 
 export default function Sandbox(){
-
-    const today = new Date();
-    today.setHours(0,0,0,0)
-
-    const filteredEvents = eventIndex.filter(event => {
-        const eventDateObj = new Date(event.sortDate);
-        eventDateObj.setHours(0,0,0,0);
-
-        const isUpcomingEvent = eventDateObj >= today;
-
-        return isUpcomingEvent
-    })
+    const eventActionBtn = [
+        {
+            name : 'Register Now',
+            path: '/', 
+            type: 'globalGoldButton'
+        }
+    ]
 
     return(
         <main
@@ -29,6 +24,17 @@ export default function Sandbox(){
             // style={{background:"green", display:"flex", alignItems:"center", justifyContent:"space-evenly", padding:"4rem 0", flexWrap: "wrap", rowGap:"2rem", columnGap:'5%'}}
         >
         
+        <PageHeroSection
+            mainHeading = 'LeveledUp Money - Building Wealth, One Level at a Time'
+            subHeading = 'A powerful four-part workshop series for Memphis solopreneurs & microbusiness owners'
+            ctaButtons = {eventActionBtn}
+            searchbar = {false}
+            placeholder = ''
+            eventDate = {'April 15, 2026'}
+            eventTime = {'10 am - 12 pm'}
+            eventAddress={'Epicenter, 150 Peabolt ave, Memphis'}
+        />
+
         </main>
     )
 }

@@ -1,0 +1,81 @@
+.multiWeekInfoSection {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    row-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.infoBlock {
+    width: 100%;
+    background: var(--darkGrey);
+    border: solid 2px var(--darkGold);
+    border-radius: 10px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0 2rem 0;
+}
+
+.eventTimeList {
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.eventTimeItem,
+.eventAddressLink {
+    padding: .2rem 0;
+    display: flex;
+    align-items: center;
+    column-gap: 2%;
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.eventIcon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiWeekInfoCtaButton {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+@media (min-width: 500px) {
+    .multiWeekInfoCtaButton {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 800px) {
+    .multiWeekInfoSection {
+        gap: 2rem;
+    }
+    
+    .infoBlock {
+        width: 40%;
+    }
+    
+    .multiWeekInfoCtaButton {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .infoBlock {
+        min-width: 400px;
+    }
+}

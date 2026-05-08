@@ -1,0 +1,19 @@
+.oneCtaButtonSection {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+
+.oneCtaTextBlock {
+    width: 50%;
+    color: var(--white);
+}
+
+.oneCtaButtonBlock {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

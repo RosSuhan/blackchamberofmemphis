@@ -68,7 +68,7 @@ body {
 }
 
 .globalThirdHeading {
-  font-size: 1.602rem;
+  font-size: 1.402rem;
   margin: .5rem 0;
   font-family: "Roboto-Medium";
   width: 90%;
@@ -84,6 +84,7 @@ body {
 }
 
 .globalSmallText {
+  width: 90%;
   font-family: "Roboto-Regular";
   font-size: 1rem;
   letter-spacing: 0.02rem;
