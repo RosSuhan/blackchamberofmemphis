@@ -180,6 +180,8 @@ export default function Boomin(){
             />
 
             <OneCtaButtonRow
+                sectionBackground="var(--grey)"
+                textColor="var(--black)"
                 ctaText = {`
                     <h3 className='globalThirdHeading'>Not Sure Where to Start? Start Here.</h3>
                     <p>If you're not sure which program is the right fit, that's okay. Boomin University's Navigate U session is designed to help you assess where your business is, explore your funding readiness, and get pointed in the right direction — no pressure, no sales pitch.</p>

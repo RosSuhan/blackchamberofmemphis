@@ -1,19 +1,41 @@
 .oneCtaButtonSection {
-    background: var(--black);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 4rem 0;
+    row-gap: 2rem;
 }
 
 .oneCtaTextBlock {
-    width: 50%;
-    color: var(--white);
+    width: 90%;
+    text-align: center;
 }
 
 .oneCtaButtonBlock {
-    width: 30%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 800px) {
+    .oneCtaButtonSection {
+        /* display: flex; */
+        /* align-items: flex-end; */
+        /* justify-content: space-evenly; */
+        /* padding: 4rem 0; */
+    }
+    
+    .oneCtaTextBlock {
+        width: 50%;
+        text-align: left;
+    }
+    
+    .oneCtaButtonBlock {
+        width: 40%;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
 }
