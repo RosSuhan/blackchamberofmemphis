@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const midSouthLatinoChamber : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "mid-south-latino-chamber-of-commerce",
     businessName : "Mid-South Latino Chamber of Commerce (MLCC)",
     bannerImage : "",

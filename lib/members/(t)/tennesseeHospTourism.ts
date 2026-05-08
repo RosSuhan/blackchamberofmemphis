@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const tennesseeHospTourism : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "tennessee-hospitality-tourism-association",
     businessName : "Tennessee Hospitality & Tourism Association",
     bannerImage : "",

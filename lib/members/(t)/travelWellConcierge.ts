@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const travelWellConcierge : MembersListType = {
-    memberStatus: true,
+    memberStatus: false,
     id : "travel-well-concierge",
     businessName : "Travel Well Concierge",
     bannerImage : "",

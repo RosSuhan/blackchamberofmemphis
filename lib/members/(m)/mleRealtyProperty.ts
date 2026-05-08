@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const mleRealtyProperty : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "mle-realty-property-management",
     businessName : "MLE Realty & Property Management",
     bannerImage : "",

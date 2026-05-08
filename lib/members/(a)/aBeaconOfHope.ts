@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const beaconOfHope : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "a-beacon-of-hope-homecare",
     businessName : "A Beacon of Hope Homecare",
     bannerImage : "",

@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const epicenter : MembersListType = {
-    memberStatus: true,
+    memberStatus: false,
     id : "epicenter-memphis",
     businessName : "Epicenter Memphis",
     bannerImage : "",
