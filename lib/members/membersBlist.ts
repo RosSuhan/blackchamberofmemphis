@@ -11,8 +11,13 @@ import { bellevueBaptistChurch } from './(b)/bellevueBaptistChurch'
 import { bereanMissionaryBaptistChurch } from './(b)/bereanMissionaryBaptistChurch'
 import { bloomfield } from './(b)/bloomfield'
 import { backboneTech } from './(b)/backboneTech'
+import { boominU } from './(b)/boominU'
+import { brentHooks } from './(b)/brentHooks'
+
 
 export const membersBlist = [
+    boominU,
+    brentHooks,
     betterDaysFinSer,
     bluffCityParties,    
     boatrightConsulting,

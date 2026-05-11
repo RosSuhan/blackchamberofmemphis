@@ -15,8 +15,12 @@ import { stAndrewAMEChurch } from './(s)/stAndrewAMEChurch'
 import { stAugustineCatholicChurch } from './(s)/stAugustineCatholicChurch'
 import { sassySpiritzMobileBartending } from './(s)/sassySpiritzMobileBartending'
 import { selfSolutions } from './(s)/selfSolutions'
+import { sincereSalads } from './(s)/sincereSalads'
+import { southernBancorpMortgage } from './(s)/southernBancorpMortgage'
 
 export const membersSlist = [
+    southernBancorpMortgage,
+    sincereSalads,
     sheGotGameLeague,
     sweetAroma,
     systematicEquitySol,

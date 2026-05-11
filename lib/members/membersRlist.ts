@@ -5,8 +5,10 @@ import { rollingSudsPowerWashing } from "./(r)/rollingSudsPowerWashing";
 import { reformationMemphis } from "./(r)/reformationMemphis";
 import { riversideMissionaryBaptistChurch } from "./(r)/riversideMissionaryBaptistChurch";
 import { redlee } from "./(r)/redlee";
+import { rowManagementGroup } from "./(r)/rowManagementGroup";
 
 export const membersRlist = [
+    rowManagementGroup,
     ritzeeFlorist,
     rugsAllDay,
     rubyWilliamsStateFarmInsuranceAgent,

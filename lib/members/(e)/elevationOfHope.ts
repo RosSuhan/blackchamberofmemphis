@@ -1,9 +1,9 @@
-import { MembersListType } from './membersListType'
+import { MembersListType } from './../membersListType'
 
 export const template : MembersListType = {
-    memberStatus: false,
-    id : "",
-    businessName : "",
+    memberStatus: true,
+    id : "elevation-of-hope",
+    businessName : "Elevation of Hope",
     bannerImage : "",
     profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "",
@@ -27,9 +27,9 @@ export const template : MembersListType = {
     ],
     addressLink : "",
     address : "",
-    email : "",
+    email : "teoh@theelevationofhope.com",
     website : "",
-    telNumber : "",
+    telNumber : "9016538946",
     facebook : "",
     instagram : "",
     youtube : "",

@@ -1,7 +1,7 @@
-import { MembersListType } from './membersListType'
+import { MembersListType } from './../membersListType'
 
 export const template : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "",
     businessName : "",
     bannerImage : "",

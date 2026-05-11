@@ -14,8 +14,10 @@ import { moneyality } from './(m)/moneyality'
 import { mississippiBoulevardChristianChurch } from './(m)/mississippiBoulevardChristianChurch'
 import { morningStarMissionaryBaptistChurch } from './(m)/morningStarMissionaryBaptistChurch'
 import { mtNeboBaptistChurch } from './(m)/mtNeboBaptistChurch'
+import { memphisShelbyCountyFilm } from './(m)/memphisShelbyCountyFilm'
 
 export const membersMlist = [
+    memphisShelbyCountyFilm,
     magnoliaBusSol,
     mickeyPopcorn,
     midSouthLatinoChamber,

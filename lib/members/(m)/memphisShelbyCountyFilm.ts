@@ -1,0 +1,52 @@
+import { MembersListType } from './../membersListType'
+
+export const memphisShelbyCountyFilm : MembersListType = {
+    memberStatus: true,
+    id : "memphis-shelby-county-film-tv-commission-foundation",
+    businessName : 'Memphis & Shelby County Film and Television Commission Foundation',
+    bannerImage : "",
+    profileLogo : "memphis-shelby-county-film-commission",
+    profileDescription : "The Memphis & Shelby County Film and Television Commission is the official film commission for Memphis and Shelby County, supporting film, television, and media productions through permitting, location assistance, production resources, and industry development services.",
+    profileCategory : [
+        "arts-culture-media-entertainment",
+    ],
+    profileSubCategory : [
+        "video-services",
+        "content-production",
+    ],
+    categoryTag: [
+        'film production services',
+        'television production services',
+        'film commission',
+        'media production support services',
+        'economic development organizations',
+        'film industry resources',
+        'production coordination services',
+        'entertainment industry services',
+        'location scouting services',
+        'film permitting services',
+        'television production support',
+        'creative industry development',
+        'commercial production services',
+        'independent film resources',
+        'production logistics',
+        'production coordination',
+        'memphis film industry organizations'
+    ],
+    profileBusinessDescription : ``,
+    gallery : [],
+    businessHours : [],
+    addressLink : "https://share.google/r7fRJIo1S0LtM7khX",
+    address : "254 Court Ave Suite 412, Memphis, TN 38103",
+    email : "linn@filmmemphis.org",
+    website : "https://www.filmmemphis.org/",
+    telNumber : "9015278300",
+    facebook : "https://www.facebook.com/filmmemphis",
+    instagram : "https://www.instagram.com/filmmemphis/",
+    youtube : "",
+    linkedIn : "",
+    linktree : "",
+    twitter: "https://twitter.com/filmmemphis",
+    tiktok : "",
+    pinterest : ""
+}

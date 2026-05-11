@@ -1,0 +1,48 @@
+import { MembersListType } from './../membersListType'
+
+export const sincereSalads : MembersListType = {
+    memberStatus: true,
+    id : "sincere-salads",
+    businessName : "Sincere Salads",
+    bannerImage : "",
+    profileLogo : "Black-chamber-of-Memphis",
+    profileDescription : "Sincere Salads is a Memphis-based healthy food company offering fresh, handcrafted salads, wraps, and nutritious meal options focused on wellness, flavor, and convenient healthy eating.",
+    profileCategory : [
+        "food-dining-hospitality",
+        "events-weddings",
+    ],
+    profileSubCategory : [
+        "restaurants",
+        "catering",
+    ],
+    categoryTag: [
+        'healthy restaurants',
+        'salad restaurants',
+        'health food services',
+        'meal prep services',
+        'healthy catering services',
+        'wellness food services',
+        'nutrition food services',
+        'fresh food restaurant',
+        'health conscious dining',
+        'quick healthy meals',
+        'fitness food options',
+        'wellness food options',
+    ],
+    profileBusinessDescription : ``,
+    gallery : [],
+    businessHours : [],
+    addressLink : "",
+    address : "9359 ",
+    email : "msdbutler1514@gmail.com",
+    website : "https://sinceresalads.com/",
+    telNumber : "9013268619",
+    facebook : "",
+    instagram : "",
+    youtube : "",
+    linkedIn : "",
+    linktree : "",
+    twitter: "",
+    tiktok : "",
+    pinterest : ""
+}

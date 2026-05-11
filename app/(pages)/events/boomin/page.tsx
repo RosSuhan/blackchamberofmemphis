@@ -16,54 +16,57 @@ export default function Boomin(){
         {
             eventTopic : "Fund U - Interest-Free Capital Match with Kiva",
             eventDateTime : "June 9, 2026 | 6:30 - 7:30 PM CST",
-            eventAddressLink : 'Epicenter',
-            eventAddress : "Epicenter",
+            eventAddressLink : '',
+            eventAddress : "Virtual",
             eventCtaButton : 'Register',
-            eventCtaLink : '/register',
-            eventDetails : `<p>Access Up to $15,000 in 0% Interest Capital. No Minimum Credit Score Required.</p>
-                            <p>Need funding but don't want to deal with traditional banks? Through Boomin University's Kiva partnership, you can access loans between $1,000 and $15,000 at zero percent interest — with full support from start to funded.</p>
-                            <p>Boomin University is an official Kiva Platform Partner, Trustee, and Managed Lending Partner, which means they walk with you through every step of the process. 100% of their borrowers have been fully funded.</p>
-                            <h4>What You Get:</h4>
-                            <ul>
-                                <li>Fundraising strategy and application support</li>
-                                <li>Access to a network of lenders and supporters</li>
-                                <li>Loan matching support to help you reach your goal faster</li>
-                                <li>Ongoing coaching and accountability throughout the process</li>
-                            </ul>`
+            eventCtaLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/zBFA24OCgCACR',
+            // eventDetails : `<p>Access Up to $15,000 in 0% Interest Capital. No Minimum Credit Score Required.</p>
+            //                 <p>Need funding but don't want to deal with traditional banks? Through Boomin University's Kiva partnership, you can access loans between $1,000 and $15,000 at zero percent interest — with full support from start to funded.</p>
+            //                 <p>Boomin University is an official Kiva Platform Partner, Trustee, and Managed Lending Partner, which means they walk with you through every step of the process. 100% of their borrowers have been fully funded.</p>
+            //                 <h4>What You Get:</h4>
+            //                 <ul>
+            //                     <li>Fundraising strategy and application support</li>
+            //                     <li>Access to a network of lenders and supporters</li>
+            //                     <li>Loan matching support to help you reach your goal faster</li>
+            //                     <li>Ongoing coaching and accountability throughout the process</li>
+            //                 </ul>`
+            eventDetails : `<p>Learn how to navigate the Kiva crowdfunding platform and apply for a 0% interest small business loan. Ideal for entrepreneurs who need capital but want to avoid high-interest debt.</p>`
         },
         {
             eventTopic : "BCoM Annual Family Night at AutoZone Park",
-            eventDateTime : "June 19, 2026",
+            eventDateTime : "June 19, 2026 | 7 PM",
             eventAddressLink : '/',
             eventAddress : "In-Person - AutoZone Park, Memphis",
             eventCtaButton : 'Register',
             eventCtaLink : '/register-now',
-            eventDetails : `<p>Personalized Support Built Around Your Business.</p>
-                            <p>This is Boomin University's most comprehensive offering. If you're an established entrepreneur who needs hands-on, customized support — not a one-size-fits-all program — Build to Boom is for you.</p>
-                            <h4>What's Included:</h4>
-                            <ul>
-                                <li>One-on-one coaching tailored to your specific goals</li>
-                                <li>Free accounting services to strengthen your financial management</li>
-                                <li>Free marketing services to support visibility and growth</li>
-                                <li>Strategic support across operations, finances, and marketing</li>
-                            </ul>`
+            // eventDetails : `<p>Personalized Support Built Around Your Business.</p>
+            //                 <p>This is Boomin University's most comprehensive offering. If you're an established entrepreneur who needs hands-on, customized support — not a one-size-fits-all program — Build to Boom is for you.</p>
+            //                 <h4>What's Included:</h4>
+            //                 <ul>
+            //                     <li>One-on-one coaching tailored to your specific goals</li>
+            //                     <li>Free accounting services to strengthen your financial management</li>
+            //                     <li>Free marketing services to support visibility and growth</li>
+            //                     <li>Strategic support across operations, finances, and marketing</li>
+            //                 </ul>`
+            eventDetails : `<p>Network with the Memphis business community during the Memphis Red Birds’ annual commemoration of the Memphis Red Sox Negro League. Learn more about BCoM and Boomin University programs in a relaxed, community-focused setting.</p>`
         },
         {
             eventTopic : "Boomin Marketing Program",
             eventDateTime : "June 30, 2026 | 5:30 - 7:30 PM CST",
             eventAddressLink : '',
+            eventAddress : "In-person Orientation + Virtual",
             eventCtaButton : 'Register',
             eventCtaLink : '/',
-            eventAddress : "In-person Orientation + Virtual",
-            eventDetails : `<p>Clarify Your Message. Strengthen Your Marketing. Attract the Right Customers.<p>
-                            <p>This program is for you if you want to communicate your value more clearly, market with confidence, and attract the right customers — consistently.</p>
-                            <h4>What You'll Work On:</h4>
-                            <ul>
-                                <li>Identifying your ideal customer</li>
-                                <li>Strengthening your brand message and positioning</li>
-                                <li>Building a practical, actionable marketing plan</li>
-                                <li>Showing up consistently and confidently in your marketing</li>
-                            </ul>`
+            eventDetails : `<p>Build your brand’s online presence with training in AI-powered marketing, SEO, website optimization, and media readiness. Designed for small business owners ready to attract more customers and stand out in a crowded market.</p>`
+            // eventDetails : `<p>Clarify Your Message. Strengthen Your Marketing. Attract the Right Customers.<p>
+            //                 <p>This program is for you if you want to communicate your value more clearly, market with confidence, and attract the right customers — consistently.</p>
+            //                 <h4>What You'll Work On:</h4>
+            //                 <ul>
+            //                     <li>Identifying your ideal customer</li>
+            //                     <li>Strengthening your brand message and positioning</li>
+            //                     <li>Building a practical, actionable marketing plan</li>
+            //                     <li>Showing up consistently and confidently in your marketing</li>
+            //                 </ul>`
         },
         {
             eventTopic : "Boomin to the Bank",
@@ -72,15 +75,16 @@ export default function Boomin(){
             eventAddress : "Virtual",
             eventCtaButton : 'Register',
             eventCtaLink : '/',
-            eventDetails : `<p>Strengthen Your Financials. Build Confidence. Prepare for What's Next.</p>
-                            <p>This program is for you if you want to better understand your finances, get organized, and build the financial readiness that lenders and investors look for.</p>
-                            <h4>What You'll Work On:</h4>
-                            <ul>
-                                <li>Understanding your personal and business financials</li>
-                                <li>Improving financial organization and decision-making</li>
-                                <li>Learning what lenders look for when evaluating businesses</li>
-                                <li>Building a step-by-step plan to strengthen your financial position</li>
-                            </ul>`
+            eventDetails : `<p>Master the financial reports that banks and investors look for, develop better organizational habits, and learn to make data-driven decisions that position your business to secure future funding.</p>`
+            // eventDetails : `<p>Strengthen Your Financials. Build Confidence. Prepare for What's Next.</p>
+            //                 <p>This program is for you if you want to better understand your finances, get organized, and build the financial readiness that lenders and investors look for.</p>
+            //                 <h4>What You'll Work On:</h4>
+            //                 <ul>
+            //                     <li>Understanding your personal and business financials</li>
+            //                     <li>Improving financial organization and decision-making</li>
+            //                     <li>Learning what lenders look for when evaluating businesses</li>
+            //                     <li>Building a step-by-step plan to strengthen your financial position</li>
+            //                 </ul>`
         }
     ]
     
