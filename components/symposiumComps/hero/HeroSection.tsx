@@ -26,13 +26,13 @@ export default function SymposiumHero({showButtons, ctaButtons}: SymposiumHeroPr
                     </h1>
                     
                     <CountdownTimer
-                        eventDate = {"August 27, 2026 00:00:00"}
+                        eventDate = {"August 28, 2026 00:00:00"}
                     />
                     
                     <h2
                         className={style.symposiumEventDate}
                     >
-                        August 27 - 28, 2026
+                        August 28, 2026
                     </h2>
                     {showButtons ?
                         <TwoButtonRow

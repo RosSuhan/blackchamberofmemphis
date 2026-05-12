@@ -6,10 +6,10 @@ import style from './faq.module.css'
 import { useState } from 'react'
 
 type FAQProps = {
-    faqBlockWidth : string
+    faqBlockWidth? : string
     qAList : { qIndex: string, question : string, answer : string }[],
-    questionBackground : string,
-    answerBackground : string
+    questionBackground? : string,
+    answerBackground? : string
 }
 
 export default function FAQ({

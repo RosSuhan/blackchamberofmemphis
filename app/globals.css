@@ -57,6 +57,7 @@ body {
   width: 90%;
   text-transform: capitalize;
   margin: 0;
+  text-align: center;
 }
 
 .globalSecondHeading {
@@ -64,7 +65,7 @@ body {
   font-family: "Arboria";
   margin: .5rem 0 1rem 0;
   width: 90%;
-  /* color: var(--lightGold); */
+  text-align: center;
 }
 
 .globalThirdHeading {
@@ -72,6 +73,7 @@ body {
   margin: .5rem 0;
   font-family: "Roboto-Medium";
   width: 90%;
+  text-align: center;
 }
 
 .globalText {
@@ -99,7 +101,7 @@ body {
 .globalGoldButton,
 .globalDarkButton {
   width: 200px;
-  height: 40px;
+  /* height: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,6 +133,13 @@ body {
   border-radius: 8px;
 }
 
+@media (min-width:300px) {
+  .globalGoldButton,
+  .globalDarkButton {
+    width: 250px;
+  }
+}
+
 @media (min-width:400px) {
   .globalMainHeading {
     font-size: 2.986rem;
@@ -143,11 +152,47 @@ body {
   .globalThirdHeading {
     font-size: 1.728rem;
   }
+
+  .globalGoldButton,
+  .globalDarkButton {
+    width: 350px;
+  }
+}
+
+@media (min-width:600px) {
+  .globalGoldButton,
+  .globalDarkButton {
+    width: 120px;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 @media (min-width:700px) {
   .globalMainHeading {
     font-size: 3.052rem;
+    text-align: left;
+  }
+  
+  .globalSecondHeading {
+    text-align: left;
+  }
+
+  .globalThirdHeading {
+    text-align: left;
+  }
+  
+  .globalGoldButton,
+  .globalDarkButton {
+    width: 150px;
+  }
+}
+
+@media (min-width:800px) {
+  .globalGoldButton,
+  .globalDarkButton {
+    width: 180px;
+    padding: 1rem;
   }
 }
 

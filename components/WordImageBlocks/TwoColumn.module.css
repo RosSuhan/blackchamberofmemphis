@@ -1,0 +1,60 @@
+.twoColumnSection,
+.twoColumnSectionReverse {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sectionColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.twoColumnImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.twoColumnButtonRow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+@media (min-width:600px) {
+    .twoColumnSection {
+        align-items: stretch;
+    }
+
+    .twoColumnSectionReverse {
+        flex-direction: row-reverse;
+    }
+    
+    .sectionColumn {
+        width: 50%;
+        flex:1 1 300px;
+    }
+    
+    .twoColumnImage {
+        min-height: 400px;
+        max-height: 600px;
+    }
+    
+    .twoColumnButtonRow {
+        justify-content: flex-end;
+        margin-top: auto;
+    }
+}
+
+@media (min-width:800px) {
+    .twoColumnImage {
+        max-height: 450px;
+    }
+}

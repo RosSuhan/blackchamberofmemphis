@@ -1,4 +1,5 @@
 'use client'
+import { SearchIcon } from '../icons/search'
 import style from './searchBar.module.css'
 
 
@@ -24,21 +25,17 @@ export default function SearchBar({handleSubmit, searchValue, placeholder, setSe
                 onChange = {(e) => setSearchValue(e.target.value)}
             />
 
-            <input 
-                type="submit" 
-                value="Search"
-                className='globalGoldButton' 
-            />
-
-            {/* <button 
-                type="button"
-                className='globalGoldButton'
-                onClick={handleSubmit}
+            <button 
+                type="submit"
+                className={style.searchButton}
             >
-                Search
-            </button> */}
+                <SearchIcon/> 
+                <span
+                    className={style.searchButtonText}
+                >
+                    Search
+                </span>
+            </button>
         </form>
     )
 }
-
-// Search by business name or category...

@@ -1,0 +1,53 @@
+.communityLinkSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--darkGrey);
+    color: var(--white);
+    /* text-align: center; */
+    padding: 4rem 0;
+    row-gap: 3rem;
+}
+
+.linkRow,
+.linkRow2 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+}
+
+@media (min-width:700px) {
+    .linkRow2 {
+        /* width: 90%; */
+        /* display: flex; */
+        flex-wrap: nowrap;
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 2rem; */
+    }
+
+    .linkRow2 a {
+        width: 300px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width:800px) {
+    .linkRow {
+        justify-content: space-between;
+    }
+
+    .linkRow2 {
+        column-gap: 5%;
+        /* width: 90%; */
+        /* display: flex; */
+        /* flex-wrap: nowrap; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* row-gap: 2rem; */
+    }
+}
