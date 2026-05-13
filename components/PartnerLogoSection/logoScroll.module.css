@@ -1,0 +1,15 @@
+.logoSliderRow {
+    width: 90%;
+    /* background: #eeeeee; */
+    display: flex;
+    overflow-x: scroll;
+    gap: 4rem;
+    /* border: solid 1px var(--grey); */
+    /* padding: 0 .5rem; */
+}
+
+.partnersLogo {
+    object-fit: contain;
+    height: 100px;
+    max-width: 200px;
+}

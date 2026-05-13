@@ -37,8 +37,8 @@ export default function Boomin(){
             eventDateTime : "June 19, 2026 | 7 PM",
             eventAddressLink : '/',
             eventAddress : "In-Person - AutoZone Park, Memphis",
-            eventCtaButton : 'Register',
-            eventCtaLink : '/register-now',
+            eventCtaButton : 'Read More',
+            eventCtaLink : '/events/bcom-annual-family-night-autozone-park',
             // eventDetails : `<p>Personalized Support Built Around Your Business.</p>
             //                 <p>This is Boomin University's most comprehensive offering. If you're an established entrepreneur who needs hands-on, customized support — not a one-size-fits-all program — Build to Boom is for you.</p>
             //                 <h4>What's Included:</h4>
@@ -56,7 +56,7 @@ export default function Boomin(){
             eventAddressLink : '',
             eventAddress : "In-person Orientation + Virtual",
             eventCtaButton : 'Register',
-            eventCtaLink : '/',
+            eventCtaLink : 'https://boominu.org/2026-boomin-marketing-onboarding/?cohort=July%202026%20Cohort&referral_source=BCOM&organization_referral=Black%20Chamber%20of%20Memphis',
             eventDetails : `<p>Build your brand’s online presence with training in AI-powered marketing, SEO, website optimization, and media readiness. Designed for small business owners ready to attract more customers and stand out in a crowded market.</p>`
             // eventDetails : `<p>Clarify Your Message. Strengthen Your Marketing. Attract the Right Customers.<p>
             //                 <p>This program is for you if you want to communicate your value more clearly, market with confidence, and attract the right customers — consistently.</p>
@@ -74,7 +74,7 @@ export default function Boomin(){
             eventAddressLink : '',
             eventAddress : "Virtual",
             eventCtaButton : 'Register',
-            eventCtaLink : '/',
+            eventCtaLink : 'https://boominu.org/2026-boomin-to-the-bank-onboarding-form/?cohort=September%202026%20Cohort',
             eventDetails : `<p>Master the financial reports that banks and investors look for, develop better organizational habits, and learn to make data-driven decisions that position your business to secure future funding.</p>`
             // eventDetails : `<p>Strengthen Your Financials. Build Confidence. Prepare for What's Next.</p>
             //                 <p>This program is for you if you want to better understand your finances, get organized, and build the financial readiness that lenders and investors look for.</p>

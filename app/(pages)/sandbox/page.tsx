@@ -11,6 +11,7 @@ import { eventIndex } from '@/lib/eventsList/eventIndex'
 import TwoColumnTextImage from '@/components/WordImageBlocks/TwoColumnTextImage'
 import MultiCtaButtonRow from '@/components/callToAction/multiCtaButtonRow'
 import CommunityLinkSection from '@/components/COMMUNITYlink/page'
+import PartnerLogoSection from '@/components/PartnerLogoSection/page'
 
 export default function Sandbox(){
     // const eventActionBtn = [
@@ -71,6 +72,8 @@ export default function Sandbox(){
             /> */}
 
             <CommunityLinkSection/>
+
+            <PartnerLogoSection/>
         </main>
     )
 }

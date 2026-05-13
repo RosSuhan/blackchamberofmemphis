@@ -1,0 +1,27 @@
+.logoStaticRow {
+    width: 90%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    gap: 2rem;
+}
+
+.partnersLogo {
+    height: 120px;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+@media (min-width:800px) {
+    .logoStaticRow {
+        /* width: 90%; */
+        /* background-color: blue; */
+        /* display: flex; */
+        /* align-items: center; */
+        justify-content: space-between;
+        /* overflow-x: scroll; */
+        /* gap: 2rem; */
+    }
+}

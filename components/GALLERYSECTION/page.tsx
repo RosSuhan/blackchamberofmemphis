@@ -3,8 +3,8 @@ import { GalleryImageType } from './GalleryImageType'
 import style from './gallery.module.css'
 
 type GallerySectionProps = {
-    sectionBackground : string
-    galleryHeadingText : string
+    sectionBackground? : string
+    galleryHeadingText? : string
     galleryImages: GalleryImageType[],
 }
 
@@ -18,11 +18,13 @@ export default function GallerySection({
             className={style.gallerySection}
             style={{background:`${sectionBackground}`}}
         >
-            <h2
-                className={style.galleryHeading}
-            >
-                {galleryHeadingText}
-            </h2>
+            {galleryHeadingText ? 
+                <h2
+                    className={style.galleryHeading}
+                >
+                    {galleryHeadingText}
+                </h2> 
+            : null}
 
             <div
                 className={style.galleryImageRow} //memberGalleryBlock
@@ -41,7 +43,6 @@ export default function GallerySection({
                             className={style.galleryImage} //memberGalleryImage
                         />
                     </div>
-                
                 ))}
             </div>
         </section>
