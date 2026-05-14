@@ -1,6 +1,7 @@
 import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/HomepageMemberDirectoryCTArow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import Partners from "@/components/partners/page";
+import Popup from "@/components/Popup/page";
 import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
 import WhoWeAre from "@/components/whoWeAre/page";
 import type { Metadata } from "next";
@@ -60,10 +61,20 @@ export default function Home() {
     }
   ]
 
-
-
   return (
     <section>
+      <Popup
+        imageSrc={'/pop-up/boomin-kiva.png'}
+        imageAlt={'BCoM and Boomin U - Ready to build a stronger business?'}
+        imageWidth={4500}
+        imageHeight={4500}
+        title={"Boomin U 2026 Programs for Small Business Owners"}
+        description={""}
+        ctaText={'Read More'}
+        ctaLink={"/events/boomin"}
+        storageKey="kiva"
+      />
+
       <PageHeroSection
         mainHeading = "Grow your business beyond visibility"
         subHeading = "Join a powerful network of Black-owned businesses, explore trusted local services, and stay connected with events that move Memphis forward."

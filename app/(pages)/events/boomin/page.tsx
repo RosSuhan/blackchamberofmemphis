@@ -4,13 +4,13 @@ import OneColumn from "@/components/WordImageBlocks/OneColumn";
 
 
 export default function Boomin(){
-    const eventActionBtn = [
-        {
-            name : 'Register Now',
-            path: 'https://boominu.org/bcom/', 
-            type: 'globalGoldButton'
-        }
-    ]
+    // const eventActionBtn = [
+    //     {
+    //         name : 'Register Now',
+    //         path: 'https://boominu.org/bcom/', 
+    //         type: 'globalGoldButton'
+    //     }
+    // ]
 
     const events = [
         {
