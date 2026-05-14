@@ -83,6 +83,7 @@ export default function CATsingleBlock({
                                 {featurePrice}
                             </li>
                         : null}
+                        {featureLocation ? 
                         <li
                             className={style.catItem}
                         >
@@ -91,6 +92,7 @@ export default function CATsingleBlock({
                             />
                             {featureLocation}
                         </li>
+                        : null}
                     </ul>
                 </div>
             : null}

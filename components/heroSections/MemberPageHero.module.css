@@ -22,13 +22,101 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 2rem 0;
+    row-gap: 3rem;
 }
 
 .pageHeroImageBlock {
-    width: 35%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageHeroNameBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .memberLogo {
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 20px;
+}
+
+.memberVerification {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 2rem;
+    background: var(--darkGrey);
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    font-size: .7rem;
+    letter-spacing: 1;
+}
+
+@media (min-width:300px) {
+    .memberVerification {
+        width: 70%;
+        font-size: .8rem;
+    }
+}
+
+@media (min-width:400px) {
+    .pageHeroOverlay {
+        padding: 4rem 0;
+    }
+    
+    .memberLogo {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .memberVerification {
+        width: 50%;
+    }
+}
+
+@media (min-width:700px) {
+    .pageHeroOverlay {
+        gap: 1rem;
+    }
+    
+    .pageHeroImageBlock {
+        width: 45%;
+    }
+    
+    .pageHeroNameBlock {
+        width: 55%;
+    }
+    
+    .memberLogo {
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .memberVerification {
+        width: 70%;
+    }
+}
+
+@media (min-width:800px) {
+    .pageHeroImageBlock {
+        width: 230px;
+    }
+    
+    .pageHeroNameBlock {
+        width: 65%;
+    }
+    
+    .memberVerification {
+        width: 200px;
+    }
 }

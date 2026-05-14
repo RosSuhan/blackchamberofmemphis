@@ -12,8 +12,14 @@ import { firstQuarterlyNetwork } from "./eventsFolder/firstQuarterlyNetwork";
 import { aprilBcomNewMember } from "./eventsFolder/aprilBcomNewMember";
 import { remotingWorkshop1 } from "./eventsFolder/remotingWorkshop1";
 import { mayBcomNewMember } from "./eventsFolder/mayBcomNewMember";
+import { boominToBank } from "./eventsFolder/boominToBank";
+import { boominMarketing } from "./eventsFolder/boominMarketing";
+import { boominFundU } from "./eventsFolder/boominFundU";
 
 export const eventIndex = [
+    boominFundU,
+    boominMarketing,
+    boominToBank,
     mayBcomNewMember,
     remotingWorkshop1,
     leveledUp,

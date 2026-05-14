@@ -1,6 +1,7 @@
 export interface EventListType {
     holidayStatus: boolean,
     id : string,
+    path? : string,
     type: string,
     eventImage : string,
     eventImageAlt : string,
@@ -18,7 +19,7 @@ export interface EventListType {
     eventCTAbuttonText : string,
     registrationButtonText : string,
     registrationButtonLink : string,
-    eventGallery: {src: string, alt: string,}[],
+    eventGallery? : {src: string, alt: string,}[],
 }
 
 // holidayStatus: "",

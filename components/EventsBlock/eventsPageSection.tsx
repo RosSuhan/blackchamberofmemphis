@@ -55,7 +55,7 @@ export default function EventsPageSection(){
                             featureName = {event.eventName}
                             featureText = {event.eventDescription}
                             featureTextLimit = {15}
-                            featureLink = {`/events/${event.id}`}
+                            featureLink = {`/events/${event.path}`}
                             featureDate = {`${event.eventDate} ${event.eventTime}`}
                             featurePrice = {''}
                             featureLocation = {event.eventAddress}
@@ -63,9 +63,10 @@ export default function EventsPageSection(){
                         />
                     ))
                 ):
-                    <p>
-                        No events match your search or selected month.
-                    </p>
+                    null
+                    // <p>
+                    //     No events match your search or selected month.
+                    // </p>
                 }
             </div>
         </section>

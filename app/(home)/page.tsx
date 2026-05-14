@@ -69,7 +69,7 @@ export default function Home() {
         imageWidth={4500}
         imageHeight={4500}
         title={"Boomin U 2026 Programs for Small Business Owners"}
-        description={""}
+        description={"Get a 0% Interest Loan for Your BusinessCopy: Join us June 9 for Fund U — learn how to access Kiva's"}
         ctaText={'Read More'}
         ctaLink={"/events/boomin"}
         storageKey="kiva"

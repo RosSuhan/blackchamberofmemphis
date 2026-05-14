@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import style from './MemberPageHero.module.css'
+import { Star } from '../icons/star'
 
 type MemberPageHeroProp = {
     profileLogo : string
@@ -36,10 +37,18 @@ export default function MemberPageHero({profileLogo, businessName}: MemberPageHe
                     />
                 </div>
 
-                <div>
-                    <h1>Business Name</h1>
-                    <div>
-                        star 
+                <div
+                    className={style.pageHeroNameBlock}
+                >
+                    <h1
+                        className='globalMainHeading'
+                    >
+                        {businessName}
+                    </h1>
+                    <div
+                        className={style.memberVerification}
+                    >
+                        <Star/>
                         Verified BCoM Member
                     </div>
                 </div>
