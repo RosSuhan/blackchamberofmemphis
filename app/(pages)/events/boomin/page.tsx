@@ -7,7 +7,7 @@ export default function Boomin(){
     const eventActionBtn = [
         {
             name : 'Register Now',
-            path: '/', 
+            path: 'https://boominu.org/bcom/', 
             type: 'globalGoldButton'
         }
     ]
@@ -38,7 +38,7 @@ export default function Boomin(){
             eventAddressLink : '/',
             eventAddress : "In-Person - AutoZone Park, Memphis",
             eventCtaButton : 'Read More',
-            eventCtaLink : '/events/bcom-annual-family-night-autozone-park',
+            eventCtaLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/bcom-networking-mixer-annual-family-night-at-autozone-park-1735311?sourceTypeId=Hub',
             // eventDetails : `<p>Personalized Support Built Around Your Business.</p>
             //                 <p>This is Boomin University's most comprehensive offering. If you're an established entrepreneur who needs hands-on, customized support — not a one-size-fits-all program — Build to Boom is for you.</p>
             //                 <h4>What's Included:</h4>
@@ -93,7 +93,8 @@ export default function Boomin(){
             <PageHeroSection
                 mainHeading = 'Boomin U 2026 Programs for Small Business Owners'
                 subHeading = ''
-                ctaButtons = {eventActionBtn}
+                // ctaButtons = {eventActionBtn}
+                ctaButtons={[]}
                 searchbar = {false}
                 placeholder = ''
                 eventDate = {'June - September, 2026'}
@@ -101,19 +102,18 @@ export default function Boomin(){
                 eventAddress={''}
             />
 
-            <OneColumn
+            {/* <OneColumn
                 backgroundColor = {'var(--white)'}
-                blockHeading = {'Building Real Pathways for Black Entrepreneurs'}
+                blockHeading = {'Building Real Pathways for You'}
                 paragraph = {`
-                    <p>The Black Chamber of Memphis (BCoM) and Boomin University have joined forces to create something bigger than a program — a pipeline. This partnership brings together BCoM’s deep roots in the Memphis business community with Boomin University’s proven training, funding access, and founder-first approach.</p>
-                    <p>Together, we’re equipping Black-owned and small businesses across the Mid-South with the tools, capital, and connections needed to grow, compete, and win — not someday, but now.</p>
+                    <p>The Black Chamber of Memphis and Boomin University have joined forces to create a real pipeline for small businesses across the region. No gatekeeping. No runaround. Just practical programs designed to move your business forward — from start-up to scale and beyond. </p><a href="/blog" class="globalGoldButton">Learn More →</a>
                 `}
                 multiEvents={[]}
-            />
+            /> */}
 
-            <OneColumn
+            {/* <OneColumn
                 backgroundColor = {"var(--grey)"}
-                blockHeading = {"From Idea to Income - and Beyond"}
+                blockHeading = {"Program Offerings"}
                 paragraph = {`
                     <p style="font-style: italic">This isn’t theory. This is execution.</p>
                     <p>The Boomin University x BCoM experience is designed to meet entrepreneurs exactly where they are — whether you're starting from scratch, trying to stabilize your business, or ready to scale.</p>
@@ -127,16 +127,17 @@ export default function Boomin(){
                     <p>Each program is hands-on, practical, and built for real-world results — so you leave with progress, not just notes.</p>
                 `}
                 multiEvents={[]}
-            />
+            /> */}
 
             <OneColumn
                 backgroundColor = {'var(--black)'}
                 textColor = {"var(--white)"}
-                blockHeading = {"One Pipeline. Four Pathways. Built For You"}
+                blockHeading = {"One Pipeline. Three Pathways. Built For You."}
                 headingTextColor = {"var(--darkGold)"}
                 paragraph = {`
-                    <p>Through this partnership, BCoM members and Mid-South entrepreneurs now have direct access to Boomin University's full suite of free and low-cost business programs — no runaround, no gatekeeping. The programs are designed to meet you where you are, whether you need to sharpen your marketing, get your finances investor-ready, access zero-interest capital, or get one-on-one coaching to take your business to the next level.</p>
-                    <p>Every program is cohort-based or rolling enrollment — meaning you'll learn alongside other entrepreneurs, stay accountable, and walk away with tools you can put to work immediately. These aren't theoretical workshops. This is practical, structured support designed to move your business forward.</p>
+                    <p>The Black Chamber of Memphis and Boomin University have joined forces to create a real pipeline for small businesses across the Mid-South. No gatekeeping. No runaround. Just practical programs designed to move your business forward — from start-up to scale and beyond. <a href="blog/clearer-path-to-capital-and-training">Learn More →</a></p>
+                    <p>Through this partnership, BCoM members and entrepreneurs across the region now have direct access to Boomin University's full suite of free business resources. The programs are designed to meet you where you are — whether you need to sharpen your marketing, get your finances investor-ready, access zero-interest capital, or get one-on-one coaching to reach the next level.</p>
+                    <p>The cohort-based programs allow you to learn alongside fellow entrepreneurs, stay accountable, and walk away with tools you can put to work immediately. These aren't theoretical workshops. This is practical, structured support built to move your business forward.</p>
                 `}
                 multiWeekProgram = {true}
                 multiEvents={events}
@@ -152,7 +153,7 @@ export default function Boomin(){
                 multiWeekProgram = {false}
                 multiEvents = {[]}
                 paragraph = {`
-                    <p>Whether you join one program or all four, you'll walk away with practical skills, stronger financials, and a clear path forward for your business.</p>
+                    <p>Whether you join one program or all three, you'll walk away with practical skills, stronger financials, and a clear path forward for your business.</p>
                     <h4>Marketing & Brand Clarity</h4>
                     <ul>
                         <li>How to identify and speak directly to your ideal customer</li>
@@ -184,14 +185,14 @@ export default function Boomin(){
             />
 
             <OneCtaButtonRow
-                sectionBackground="var(--grey)"
-                textColor="var(--black)"
+                sectionBackground="var(--darkGrey)"
+                textColor="var(--white)"
                 ctaText = {`
                     <h3 className='globalThirdHeading'>Not Sure Where to Start? Start Here.</h3>
                     <p>If you're not sure which program is the right fit, that's okay. Boomin University's Navigate U session is designed to help you assess where your business is, explore your funding readiness, and get pointed in the right direction — no pressure, no sales pitch.</p>
                     `}
-                ctaLink = {'/string'}
-                ctaButton = {'Register...'}
+                ctaLink = {'https://boominu.org/bcom/'}
+                ctaButton = {'Learn More'}
             />
         </main>
     )

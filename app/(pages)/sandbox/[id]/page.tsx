@@ -1,6 +1,7 @@
 import { businessList } from '@/lib/members'
-import style from './sandbox.module.css'
+import style from './../sandbox.module.css'
 import PageHeroSection from '@/components/heroSections/pageHeroSection'
+import MemberPageHero from '@/components/heroSections/MemberPageHero'
 
 type Props = {
     params: Promise<{id: string}>
@@ -18,16 +19,9 @@ export default async function Sandbox({params} : Props){
         <main
             className={style.pageHeroSection}
         >
-            <PageHeroSection
-                mainHeading = {''}
-                subHeading = {''} 
-                searchbar = {false}
-                ctaButtons ={[]} 
-                placeholder = {''} 
-                initialSearchTerm = {''} 
-                eventDate = {''} 
-                eventTime = {''} 
-                eventAddress = {''}
+            <MemberPageHero
+                    profileLogo = {selectedMember.profileLogo}
+                    businessName = {selectedMember.businessName}
             />
         </main>
     )

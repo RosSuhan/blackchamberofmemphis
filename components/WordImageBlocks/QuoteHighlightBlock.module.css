@@ -1,0 +1,20 @@
+.quoteSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3rem 0; */
+}
+
+.quoteLightbox {
+    width: 70%;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #000000;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-family: "Roboto-Regular";
+    letter-spacing: .02rem;
+    line-height: 1.1;
+    margin: .5rem 0;
+}

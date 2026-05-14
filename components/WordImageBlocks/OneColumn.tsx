@@ -42,7 +42,7 @@ export default function OneColumn({backgroundColor, textColor, headingIntro, hea
                     className='globalSmallText'
                     style={{width:"90%", margin:"-1rem 0 0 0"}}
                 >
-                    founder, the benjamin law firm
+                    {subHeading}
                 </div>
             : null}
 

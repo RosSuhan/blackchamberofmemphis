@@ -1,0 +1,34 @@
+.memberPageHero {
+    width: 100%;
+    position: relative;
+}
+
+.herobackgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.pageHeroOverlay {
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    background: var(--overlay);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.pageHeroImageBlock {
+    width: 35%;
+}
+
+.memberLogo {
+    border-radius: 20px;
+}

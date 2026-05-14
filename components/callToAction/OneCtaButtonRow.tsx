@@ -6,7 +6,7 @@ type OneCtaButtonSectionProp = {
     textColor : string
     ctaText : string,
     ctaLink : string,
-    ctaButton : string
+    ctaButton : string,
 }
 
 export default function OneCtaButtonRow({sectionBackground, textColor, ctaText, ctaButton, ctaLink}:OneCtaButtonSectionProp){
@@ -17,7 +17,7 @@ export default function OneCtaButtonRow({sectionBackground, textColor, ctaText, 
         >
             <div
                 className={style.oneCtaTextBlock}
-                style={{color:textColor}}
+                style={{color:textColor,}}
                 dangerouslySetInnerHTML={{__html : ctaText}}
             />
 
