@@ -3,6 +3,7 @@ import style from './../sandbox.module.css'
 import MemberPageHero from '@/components/heroSections/MemberPageHero'
 import CategoryContactRow from '@/components/memberComponents/CategoryContactRow'
 import { categories } from '@/lib/categories'
+import VerifiedBanner from '@/components/memberComponents/VerifiedBanner'
 
 type Props = {
     params: Promise<{id: string}>
@@ -28,6 +29,7 @@ export default async function Sandbox({params} : Props){
             <MemberPageHero
                 profileLogo = {selectedMember.profileLogo}
                 businessName = {selectedMember.businessName}
+                memberStatus = {selectedMember.memberStatus}
             />
 
             <CategoryContactRow
@@ -38,6 +40,11 @@ export default async function Sandbox({params} : Props){
                 mail = {selectedMember.email}
                 website = {selectedMember.website}
                 businessHours = {selectedMember.businessHours}
+            />
+
+            <VerifiedBanner
+                backgroundColor='var(--grey)'
+                textColor='var(--black)'
             />
         </main>
     )
