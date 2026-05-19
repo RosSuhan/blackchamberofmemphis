@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { catSingleBlockProp } from './catSinglePropType'
 import { BaselineCalendarMonth } from '../icons/Calendar'
 import { BaselineLocationOn } from '../icons/Location'
+import { Star } from '../icons/star'
 
 
 export default function CATsingleBlock({
@@ -26,14 +27,12 @@ export default function CATsingleBlock({
             className={style.catBlock}
             key={key}
         >
-            {star ? 
-                <Image
-                    src={'/icons/star-svgrepo-com.svg'}
-                    alt=''
+            {star ?
+                <Star
                     width={40}
                     height={40}
                     className={style.catStar}
-                />
+                /> 
             : null }
 
             <Image

@@ -3,6 +3,15 @@ import MemberContactSection from "@/components/memberComponents/memberContactSec
 import MemberHeroSection from "@/components/memberComponents/memberHeroSection";
 import MembersDescriptionSection from "@/components/memberComponents/membersDescriptionSection";
 import { businessList } from "@/lib/members";
+import MemberPageHero from "@/components/heroSections/MemberPageHero";
+import CategoryContactRow from "@/components/memberComponents/CategoryContactRow";
+import { categories } from "@/lib/categories";
+import OneColumn from "@/components/WordImageBlocks/OneColumn";
+import TwoColumnText from "@/components/WordImageBlocks/TwoColumnText";
+import GallerySection from "@/components/GALLERYSECTION/page";
+import VerifiedBanner from "@/components/memberComponents/VerifiedBanner";
+import NewDirectoryList from "@/components/directoryComponents/newDirectoryList";
+import MoreBusinessRow from "@/components/memberComponents/MoreBusinessRow";
 
 type Props = {
     params: Promise<{id: string}>
@@ -57,31 +66,91 @@ export default async function NewMemberPage({ params }: Props){
     const { id } = await params
     const selectedMember = businessList.find(a => a.id === id);
 
+    const selectedCategories = categories.filter(category => selectedMember?.profileCategory.includes(category.id))
+
+    const showMoreBusinesses = selectedCategories[0]?.name || "";
+
+    console.log('search for more businesses in this category:', showMoreBusinesses)
+
     if(!selectedMember) {
         return <main>Member not found</main>
     }
 
-    
-    const longDescription = selectedMember?.profileBusinessDescription
-
     return (
         <main>
-            <MemberHeroSection
-                memberStatus = {selectedMember?.memberStatus || false}
-                businessName = {selectedMember?.businessName || "Business Name"}
-                path = {selectedMember?.id || ''}
+            <MemberPageHero
+                profileLogo = {selectedMember?.profileLogo}
+                businessName = {selectedMember?.businessName}
+                memberStatus = {selectedMember.memberStatus}
             />
 
-            <div
+            <CategoryContactRow
+                sharePath = {selectedMember.id}
+                categoryList = {selectedCategories}
+                addressLink = {selectedMember.addressLink}
+                telNumber = {selectedMember.telNumber}
+                mail = {selectedMember.email}
+                website = {selectedMember.website}
+                businessHours = {selectedMember.businessHours}
+            />
+
+            <OneColumn
+                backgroundColor = {'var(--white)'} 
+                textColor = {'var(--black)'}
+                paragraph = {selectedMember.profileDescription}
+                multiWeekProgram = {false}
+                multiEvents = {[]}
+            />
+
+            <TwoColumnText
+                backgroundColor = {"var(--darkGrey)"}
+                textColor = {"var(--white)"}
+                blockHeadingOne = {'What They Offer:'}
+                blockTextOne = {selectedMember.offering}
+                blockHeadingTwo = {'Why Choose This Business:'}
+                blockTextTwo = {selectedMember.busBullets}
+            />
+
+            {selectedMember.gallery ? 
+                <GallerySection
+                    sectionBackground = {"var(--white)"}
+                    galleryHeadingText = {"Gallery"}
+                    galleryImages = {selectedMember?.gallery || []}
+                />
+            :null}
+            
+            {selectedMember?.profileBusinessDescription ? 
+                <OneColumn
+                    blockHeading = {"Detaild Description for this business:"}
+                    paragraph = {selectedMember.profileBusinessDescription}
+                    multiWeekProgram = {false}
+                    multiEvents = {[]}
+                />
+            :null}
+
+            {selectedMember.memberStatus ? 
+                <VerifiedBanner
+                    backgroundColor = {"var(--darkGrey)"}
+                    textColor = {"var(--white)"}
+                />
+            : null}
+
+            {/* <MoreBusinessRow
+                showMoreBus = {showMoreBusinesses}
+                searchTerm = {''}
+                selectedCategory = {''}
+            /> */}
+
+            {/* <div
                 style={{width:"100%", display:"flex", alignItems:"flex-start", flexWrap:"wrap"}}
-            >
-                <MembersDescriptionSection
+            > */}
+                {/* <MembersDescriptionSection
                     shortDescription = {selectedMember?.profileDescription || ''}
                     longBusDescription = {longDescription || ''}
                     gallery = {selectedMember?.gallery || []}
-                />
+                /> */}
 
-                <MemberContactSection
+                {/* <MemberContactSection
                     phone = {selectedMember?.telNumber || ''}
                     mail = {selectedMember?.email || ''}
                     website = {selectedMember?.website || ''}
@@ -98,8 +167,8 @@ export default async function NewMemberPage({ params }: Props){
                     profileLogo = {selectedMember?.profileLogo || ''}
                     businessName = {selectedMember?.businessName || ''}
                     businessHours = {selectedMember?.businessHours || []}
-                />
-            </div>
+                /> */}
+            {/* </div> */}
         </main>
     )
 }

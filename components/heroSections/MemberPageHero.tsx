@@ -5,11 +5,12 @@ import { Star } from '../icons/star'
 type MemberPageHeroProp = {
     profileLogo : string
     businessName : string
+    memberStatus : boolean
 }
 
 const backgroundImage = "/assets/pageHeroImage.jpg"
 
-export default function MemberPageHero({profileLogo, businessName}: MemberPageHeroProp){
+export default function MemberPageHero({profileLogo, businessName, memberStatus}: MemberPageHeroProp){
     
     return(
         <section
@@ -45,12 +46,16 @@ export default function MemberPageHero({profileLogo, businessName}: MemberPageHe
                     >
                         {businessName}
                     </h1>
-                    <div
-                        className={style.memberVerification}
-                    >
-                        <Star/>
-                        Verified BCoM Member
-                    </div>
+                    {memberStatus ? 
+                        <div
+                            className={style.memberVerification}
+                        >
+                            <Star
+                                className={style.memberHeroStar}
+                            />
+                            Verified BCoM Member
+                        </div>
+                    : null}
                 </div>
             </div>
         </section>

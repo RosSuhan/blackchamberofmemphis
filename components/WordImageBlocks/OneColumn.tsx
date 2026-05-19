@@ -7,7 +7,7 @@ type OneColumnProps = {
     textColor? : string
     headingIntro? : string
     headingTextColor? : string
-    blockHeading : string
+    blockHeading? : string
     subHeading? : string
     paragraph : string
     multiWeekProgram? : boolean
@@ -16,7 +16,17 @@ type OneColumnProps = {
 
 
 
-export default function OneColumn({backgroundColor, textColor, headingIntro, headingTextColor, blockHeading, subHeading, paragraph, multiWeekProgram, multiEvents}: OneColumnProps){
+export default function OneColumn({
+    backgroundColor, 
+    textColor, 
+    headingIntro, 
+    headingTextColor, 
+    blockHeading, 
+    subHeading, 
+    paragraph, 
+    multiWeekProgram, 
+    multiEvents
+}: OneColumnProps){
     return(
         <section
             className={style.oneColumnSection}
@@ -30,12 +40,14 @@ export default function OneColumn({backgroundColor, textColor, headingIntro, hea
                 </p>
             : null}
 
-            <h2
-                className='globalSecondHeading'
-                style={{color:headingTextColor}}
-            >
-                {blockHeading}
-            </h2>
+            {blockHeading ? 
+                <h2
+                    className='globalSecondHeading'
+                    style={{color:headingTextColor}}
+                >
+                    {blockHeading}
+                </h2>
+            : null}    
             
             {subHeading ? 
                 <div

@@ -2,16 +2,18 @@
 .twoColumnSectionReverse {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-direction: row;
 }
 
 .sectionColumn {
+    /* background-color: purple; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem 0;
 }
 
 .twoColumnImage {

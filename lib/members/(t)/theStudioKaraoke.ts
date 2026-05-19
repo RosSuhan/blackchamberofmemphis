@@ -58,5 +58,23 @@ export const theStudioKaraoke : MembersListType = {
     linktree : "",
     twitter: "",
     tiktok : "https://www.tiktok.com/@thestudiokaraoke",
-    pinterest : ""
+    pinterest : "",
+    offering : `
+        <ul style="text-align: left">
+            <li>Private, soundproof karaoke suites</li>
+            <li>Song library acorss all genres</li>
+            <li>High-quality audio & visuals</li>
+            <li>Food and drinks available</li>
+            <li>Rooms for small to large groups</li>
+            <li>Central Poplar Plaza location</li>
+        </ul>`,
+    busBullets : `
+        <ul style="text-align: left">
+            <li>Private, personalized karaoke experience</li>
+            <li>Perfect for parties and group outings</li>
+            <li>Comfortable, no-pressure environment</li>
+            <li>Fun, social, and memorable atmosphere</li>
+            <li>All-in-one entertainment venue</li>
+        </ul>
+    `
 }

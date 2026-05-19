@@ -9,7 +9,7 @@ import WordImageBlocks from "@/components/WordImageBlocks/WordImage";
 export default function ITEP(){
     return (
         <main>
-            <ProgramHero
+            {/* <ProgramHero
                 programHeroBackgroundImage={'/assets/BCOM Website Backgrounds.png'}
                 programMainTitle={"Industry Training & Entrepreneurship Program (ITEP)"}
                 programSubHeading={"Building career pathways. Strengthening businesses. Connecting talent to opportunity."}
@@ -18,9 +18,9 @@ export default function ITEP(){
                 programCtaText={"Apply Today"}
                 programCtaLink2={""} 
                 programCtaText2={""}
-            />
+            /> */}
 
-            <WordImageBlocks
+            {/* <WordImageBlocks
                 wordHeaderText={"About ITEP"}
                 wordParagraphTexts={`
                     <p>The Industry Training & Entrepreneurship Program (ITEP) is a workforce and business development initiative designed to align industry-driven training with real job and entrepreneurship opportunities in Memphis.</p>
@@ -34,9 +34,9 @@ export default function ITEP(){
                     </ul>
                 `}
                 blockImage={'/assets/networking-scaled-1.webp'}
-            />
+            /> */}
 
-            <ImageWordBlocks
+            {/* <ImageWordBlocks
                 blockImage={'/assets/networking-scaled-1.webp'}
                 wordHeaderText={"Next Level Leadership (NLL) - Entrepreneurship Program"}
                 wordParagraphTexts={`
@@ -51,16 +51,16 @@ export default function ITEP(){
                     </ul>
                     <p>Through NLL, entrepreneurs receive targeted support while helping shape workforce training that prepares future employees for real business needs.</p>
                 `}
-            />
+            /> */}
 
-            <SingleCTAButton
+            {/* <SingleCTAButton
                 singleCtaHeading={"Sign up to be part of the ITEP Program."}
                 singleCtaText={""}
                 singleCtaButtonLink={"https://form.jotform.com/242944863505160"}
                 singleCtaButtonText={"Register Today"}
-            />
+            /> */}
 
-            <WordImageBlocks
+            {/* <WordImageBlocks
                 wordHeaderText={"Talent Connect – Career Pathways & Job Matching"}
                 wordParagraphTexts={`
                     <p>Talent Connect provides job seekers with access to full-time employment opportunities across a range of industries. The program features an AI-powered job matching tool that connects participants to available positions based on skills, interests, and career goals.</p>
@@ -73,9 +73,9 @@ export default function ITEP(){
                     </ul>
                     <p>Talent Connect supports individuals looking to launch new careers or improve their long-term career trajectory.</p>`}
                 blockImage={'/assets/networking-scaled-1.webp'}
-            />
+            /> */}
 
-            <DoubleTextBox
+            {/* <DoubleTextBox
                 doubleTextHeadingText={'Industry-Specific Workforce Training'}
                 doubleTextParagraphText={`
                     <p>
@@ -102,9 +102,9 @@ export default function ITEP(){
                             Financial support options where eligible
                         </li>
                     </ul>`}
-            />
+            /> */}
 
-            <ImageWordBlocks
+            {/* <ImageWordBlocks
                 wordHeaderText={"Recruitment & Participant Intake"}
                 wordParagraphTexts={`
                     <p>
@@ -114,9 +114,9 @@ export default function ITEP(){
                         This personalized intake process helps participants identify the best pathway toward employment, entrepreneurship, or career advancement.
                     </p>`}
                 blockImage={'/assets/networking-scaled-1.webp'}
-            />
+            /> */}
 
-            <WordImageBlocks
+            {/* <WordImageBlocks
                 wordHeaderText={'Workflow training & Employer Connections'}
                 wordParagraphTexts={`
                     <p>
@@ -132,16 +132,16 @@ export default function ITEP(){
                         <li>Long-term career planning support</li>
                     </ul>`}
                 blockImage={'/assets/networking-scaled-1.webp'}
-            />
+            /> */}
 
-            <SingleCTAButton
+            {/* <SingleCTAButton
                 singleCtaHeading={"Sign up to be part of the ITEP Program."}
                 singleCtaText={""}
                 singleCtaButtonLink={"https://form.jotform.com/242944863505160"}
                 singleCtaButtonText={"Register Today"}
-            />
+            /> */}
 
-            <ThreeTextBlock/>
+            {/* <ThreeTextBlock/> */}
         </main>
     )
 }

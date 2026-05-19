@@ -1,0 +1,68 @@
+.verifiedBannerSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    gap: 2%;
+}
+
+.memberStar {
+    width: 20%;
+}
+
+.verifiedBannerHeading {
+    font-size: 1.802rem;
+    font-family: "Arboria";
+    margin: .5rem 0 1rem 0;
+    width: 90%;
+    text-align: center;
+}
+
+.verifiedBannerText {
+    width: 90%;
+    font-size: 1.1rem;
+    font-family: "Roboto-Regular";
+    letter-spacing: .02rem;
+    line-height: 1.1;
+    margin: .5rem 0;
+    text-align: center;
+    text-wrap: balance;
+}
+
+@media (min-width:300px) {
+    .memberStar {
+        width: 10%;
+    }
+}
+
+@media (min-width:500px) {
+    .memberStar {
+        width: 8%;
+    }
+
+    .verifiedBannerHeading {
+        max-width: 70%;
+        text-align: left;
+    }
+}
+
+@media (min-width:600px) {
+    .memberStar {
+        width: 5%;
+    }
+
+    .verifiedBannerHeading {
+        width: auto;
+    }
+    
+    .verifiedBannerText {
+        text-wrap: auto;
+    }
+}
+
+@media (min-width:700px) {
+    .memberStar {
+        width: 4%;
+    }
+}

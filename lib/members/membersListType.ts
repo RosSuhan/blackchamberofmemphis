@@ -27,4 +27,6 @@ export interface MembersListType {
     twitter: string;
     tiktok: string;
     pinterest: string;
+    offering? : string;
+    busBullets? : string;
 }

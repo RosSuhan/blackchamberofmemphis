@@ -21,6 +21,7 @@ export default function NewDirectory(){
             />
 
             <NewDirectoryList
+                showMoreBus = {""}
                 searchTerm = {searchTerm}
                 selectedCategory = {selectedCategory}
             />

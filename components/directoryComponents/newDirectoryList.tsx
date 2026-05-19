@@ -1,22 +1,29 @@
+'use client'
 import style from '@/styles/directoryList.module.css'
 import { useState } from 'react'
 import { businessList } from '@/lib/members'
 import CATsingleBlock from '../CATSINGLEBLOCK/page'
 
 type NewDirectoryListProps = {
+    showMoreBus : string,
     searchTerm : string,
     selectedCategory : string
 }
 
 export default function NewDirectoryList({
+    showMoreBus,
     searchTerm,
     selectedCategory
 } : NewDirectoryListProps){
 
-    const [ initialRandomOrder ] = useState(() =>
-        [...businessList].sort(() => Math.random() - 0.5))
+    const [ initialRandomOrder ] = useState(() => [...businessList].sort(() => Math.random() - 0.5))
+
+    console.log('testing the showMoreBus', showMoreBus)
 
     const q = searchTerm.toLowerCase();
+
+    // console.log('the answer to q is:', q)
+
     const words = q.split(" ")
 
     const noFilters = searchTerm.trim() === "" && selectedCategory === "all";
@@ -61,10 +68,7 @@ export default function NewDirectoryList({
 
     const finalList = noFilters ? initialRandomOrder : filtered
 
-    console.log("selected category:", selectedCategory)
-
-    console.log("Business Categories:", businessList[0].profileCategory);
-
+    console.log('the final list is:', finalList)
 
     return (
         <section

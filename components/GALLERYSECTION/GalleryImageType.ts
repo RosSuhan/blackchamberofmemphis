@@ -1,5 +1,5 @@
 export type GalleryImageType = {
-    name: string
+    name?: string
     image : string
     alt : string
     width : number

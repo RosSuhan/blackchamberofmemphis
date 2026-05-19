@@ -29,11 +29,11 @@ export default function GallerySection({
             <div
                 className={style.galleryImageRow} //memberGalleryBlock
             >
-                {galleryImages.map((image) => (
+                {galleryImages.map((image, index) => (
                 
                     <div
                         className={style.galleryImageBlock} //memberGalleryImageBlock
-                        key={image.name}
+                        key={index}
                     >
                         <Image
                             src={image.image}

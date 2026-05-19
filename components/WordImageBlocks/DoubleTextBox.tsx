@@ -1,32 +1,36 @@
 import style from '@/styles/doubleText.module.css'
 
 type DoubleTextBoxProp = {
-    doubleTextHeadingText: string,
-    doubleTextParagraphText: string,
-    doubleTextListBlockText: string,
+    doubleTextHeadingText?: string,
+    doubleTextBlockOne: string,
+    doubleTextBlockTwo: string,
+    backgroundColor? : string
 }
 
-export default function DoubleTextBox({doubleTextHeadingText, doubleTextParagraphText, doubleTextListBlockText} : DoubleTextBoxProp){
+export default function DoubleTextBox({doubleTextHeadingText, doubleTextBlockOne, doubleTextBlockTwo, backgroundColor} : DoubleTextBoxProp){
     return(
         <section
             className={style.doubleTextSection}
+            style={{background:backgroundColor}}
         >
-            <h2
-                className={style.doubleTextHeading}
-            >
-                {doubleTextHeadingText}
-            </h2>
+            {doubleTextHeadingText ? 
+                <h2
+                    className={style.doubleTextHeading}
+                >
+                    {doubleTextHeadingText}
+                </h2>
+            : null }
 
             <div
                 className={style.doubleTextBlock}
             >
                 <div
                     className={style.doubleSectionText}
-                    dangerouslySetInnerHTML={{__html:doubleTextParagraphText}}
+                    dangerouslySetInnerHTML={{__html:doubleTextBlockOne}}
                 />
                 <div
                     className={style.doubleTextFeatureBlock}
-                    dangerouslySetInnerHTML={{__html:doubleTextListBlockText}}
+                    dangerouslySetInnerHTML={{__html:doubleTextBlockTwo}}
                 />
             </div>
         </section>

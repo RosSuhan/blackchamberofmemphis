@@ -61,6 +61,11 @@
     letter-spacing: 1;
 }
 
+.memberHeroStar {
+    width: 24px;
+    height: 24px;
+}
+
 @media (min-width:300px) {
     .memberVerification {
         width: 70%;
