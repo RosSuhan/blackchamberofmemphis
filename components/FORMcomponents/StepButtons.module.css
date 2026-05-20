@@ -1,0 +1,14 @@
+.stepButton {
+    background: var(--darkGrey);
+    border: none;
+    color: var(--white);
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonText {
+    display: none;
+}

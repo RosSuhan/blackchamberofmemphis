@@ -1,0 +1,22 @@
+.stepRowSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.stepRowButtonBlock {
+    width: 20%;
+}
+
+.stepRowStepsIndicator {
+    width: 60%;
+}
+
+.stepRowButtonBlock,
+.stepRowStepsIndicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

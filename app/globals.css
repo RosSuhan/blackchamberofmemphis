@@ -102,7 +102,7 @@ body {
 .globalGoldButton,
 .globalDarkButton {
   width: 200px;
-  /* height: 40px; */
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +198,7 @@ body {
   .globalGoldButton,
   .globalDarkButton {
     width: 180px;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 }
 
