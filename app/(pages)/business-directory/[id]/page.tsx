@@ -101,23 +101,25 @@ export default async function NewMemberPage({ params }: Props){
                 multiWeekProgram = {false}
                 multiEvents = {[]}
             />
-
-            <TwoColumnText
-                backgroundColor = {"var(--darkGrey)"}
-                textColor = {"var(--white)"}
-                blockHeadingOne = {'What They Offer:'}
-                blockTextOne = {selectedMember.offering}
-                blockHeadingTwo = {'Why Choose This Business:'}
-                blockTextTwo = {selectedMember.busBullets}
-            />
-
-            {selectedMember.gallery ? 
-                <GallerySection
-                    sectionBackground = {"var(--white)"}
-                    galleryHeadingText = {"Gallery"}
-                    galleryImages = {selectedMember?.gallery || []}
+            
+            {selectedMember.offering && selectedMember.busBullets ? 
+                <TwoColumnText
+                    backgroundColor = {"var(--darkGrey)"}
+                    textColor = {"var(--white)"}
+                    blockHeadingOne = {'What They Offer:'}
+                    blockTextOne = {selectedMember.offering}
+                    blockHeadingTwo = {'Why Choose This Business:'}
+                    blockTextTwo = {selectedMember.busBullets}
                 />
-            :null}
+            : null}
+
+            {selectedMember?.gallery && selectedMember?.gallery?.length > 0 && (
+                <GallerySection
+                sectionBackground = {"var(--white)"}
+                galleryHeadingText = {"Gallery"}
+                galleryImages = {selectedMember?.gallery || []}
+            />
+            )}
             
             {selectedMember?.profileBusinessDescription ? 
                 <OneColumn

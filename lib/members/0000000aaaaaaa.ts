@@ -37,5 +37,7 @@ export const template : MembersListType = {
     linktree : "",
     twitter: "",
     tiktok : "",
-    pinterest : ""
+    pinterest : "",
+    offering : ``,
+    busBullets : ``,
 }

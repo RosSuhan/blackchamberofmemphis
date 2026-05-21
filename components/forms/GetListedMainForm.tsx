@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import style from './GetListedMainForm.module.css'
+import { useRouter } from 'next/navigation'
 
 type GetListedMainFormProp = {
     stepOne : boolean
@@ -13,6 +14,7 @@ type GetListedMainFormProp = {
 }
 
 export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour, stepTwoNextBtn, stepThreeNextBtn, stepFourNextBtn}: GetListedMainFormProp){
+    const router = useRouter();
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState('')
     const [ formData, setFormData ] = useState({
@@ -32,16 +34,16 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
         serveCustomer: "",
         serveLocation: "",
         facebookLink: "",
-        instagramLink: "",
+        instagramLink: "",   
         tiktokLink: "",     
         twitterLink: "",
         pinterestLink: "",
-        linkedInLink: "",
+        linkedInLink: "",        
         youtubLink: "",
         linktree: "",
     })
 
-    const GETLISTED_GOOGLE_URL = ""
+    const GETLISTED_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbxNtBdr1q4Tcc3QMB0QfDx4Zj_KkNiJt1IE-8ZThdmBrTzjFQcINQj3NFXIrG4PrC8B/exec"
 
     async function handleGetListedForm(e: React.FormEvent){
         e.preventDefault();
@@ -58,18 +60,17 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
             // setSubmitMessage("Thank you joining the Black Chamber Directory. your submission is received. Our team will review your information to ensure your listing is clear, complete, and ready to publish.")
             setSubmitMessage("Form submission successfull.")
             setLoading(false)
-            
 
-            setTimeout(() => {
-                FormReset();
-                setSubmitMessage("");
-            }, 5000);
+            router.push('/get-listed/confirmed')
+            // setTimeout(() => {
+            //     setSubmitMessage("");
+            // }, 5000);
         } catch (err) {
             console.error(err);
             setSubmitMessage("Something went wrong. Please try again.")
             setLoading(false)
         }
-        console.log("The details for business directory has been submitted")
+        console.log("Form Data Sent:", formData)
     }
 
     function FormReset() {
@@ -292,7 +293,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         <div>
                             <input 
                                 type="radio" 
-                                name="serveCustomers" 
+                                name="serveCustomer" 
                                 onChange={handleOnChange}
                                 value={"Yes"}
                                 checked={formData.serveCustomer === "Yes"}
@@ -303,7 +304,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         <div>
                             <input 
                                 type="radio" 
-                                name="serveCustomers" 
+                                name="serveCustomer" 
                                 onChange={handleOnChange}
                                 value={"No"}
                                 checked={formData.serveCustomer === "No"}
@@ -348,7 +349,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     </h2>
 
                     <input type="url" 
-                        name="facebook" 
+                        name="facebookLink" 
                         placeholder = 'Facebook'
                         className={style.formTextInput}
                         value={formData.facebookLink}
@@ -356,7 +357,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     />
 
                     <input type="url" 
-                        name="instagram" 
+                        name="instagramLink" 
                         placeholder = 'Instagram'
                         className={style.formTextInput}
                         value={formData.instagramLink}
@@ -364,7 +365,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     />
 
                     <input type="url" 
-                        name="tiktok" 
+                        name="tiktokLink" 
                         placeholder = 'TikTok'
                         className={style.formTextInput}
                         value={formData.tiktokLink}
@@ -372,7 +373,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     />
 
                     <input type="url" 
-                        name="twitter" 
+                        name="twitterLink" 
                         placeholder = 'Twitter'
                         className={style.formTextInput}
                         value={formData.twitterLink}
@@ -381,7 +382,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
             
                     <input 
                         type="url" 
-                        name="pinterest" 
+                        name="pinterestLink" 
                         placeholder = 'Pinterest'
                         className={style.formTextInput}
                         value={formData.pinterestLink}
@@ -389,7 +390,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     />
 
                     <input type="url" 
-                        name="linkedin" 
+                        name="linkedInLink" 
                         placeholder = 'LinkedIn'
                         className={style.formTextInput}
                         value={formData.linkedInLink}
@@ -397,7 +398,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     />
 
                     <input type="url" 
-                        name="youtube" 
+                        name="youtubLink" 
                         placeholder = 'YouTube'
                         className={style.formTextInput}
                         value={formData.youtubLink}
@@ -421,7 +422,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         className='globalGoldButton'
                         onClick={handleGetListedForm}
                     >
-                        Submit
+                        {loading ? "Sending" : "Submit"}
                     </button>
                 </div>
             </> :null}
