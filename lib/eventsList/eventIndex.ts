@@ -15,8 +15,10 @@ import { mayBcomNewMember } from "./eventsFolder/mayBcomNewMember";
 import { boominToBank } from "./eventsFolder/boominToBank";
 import { boominMarketing } from "./eventsFolder/boominMarketing";
 import { boominFundU } from "./eventsFolder/boominFundU";
+import { bcomRedBirdMixer } from './eventsFolder/bcomRedBirdMixer';
 
 export const eventIndex = [
+    bcomRedBirdMixer,
     boominFundU,
     boominMarketing,
     boominToBank,

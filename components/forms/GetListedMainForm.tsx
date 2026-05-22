@@ -8,13 +8,14 @@ type GetListedMainFormProp = {
     stepTwo : boolean
     stepThree : boolean
     stepFour : boolean
-    stepTwoNextBtn : React.MouseEventHandler<HTMLButtonElement>
-    stepThreeNextBtn : React.MouseEventHandler<HTMLButtonElement>
-    stepFourNextBtn : React.MouseEventHandler<HTMLButtonElement>
+    stepTwoNextBtn : () => void
+    stepThreeNextBtn : () => void
+    stepFourNextBtn : () => void
 }
 
 export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour, stepTwoNextBtn, stepThreeNextBtn, stepFourNextBtn}: GetListedMainFormProp){
     const router = useRouter();
+    const [ errors, setErrors ] = useState<Record<string, string>>({})
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState('')
     const [ formData, setFormData ] = useState({
@@ -43,10 +44,100 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
         linktree: "",
     })
 
+    function validateStepOneForm(){
+        const errors: Record<string, string> = {};
+
+        if (!formData.fullName || formData.fullName.trim().length < 2){
+            errors.fullName = "Please provide a full name."
+        }
+
+        const phoneRegex = /^(?:\+1\s?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$/;
+        if (!phoneRegex.test(formData.phoneNumber)) {
+            errors.phoneNumber = "Please enter a valid phone number.";
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            errors.email = "Please enter a valid email address.";
+        }
+
+        return errors
+    }
+
+    function testStepTwoNextBtn(){
+        const validationErrors = validateStepOneForm();
+
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+            return;
+        }
+
+        setErrors({})
+        stepTwoNextBtn()
+    }
+
+    
+
+    function validateStepTwoForm(){
+        const errors: Record<string, string> = {};
+
+        if (!formData.busName || formData.busName.trim().length < 2){
+            errors.busName = "Please enter a valid business name."
+        }
+
+        if (!formData.busDescription || formData.busDescription.trim().length < 2){
+            errors.busDescription = "Please tell us something about your business."
+        }
+
+        return errors
+    }
+
+    function testStepThreeNextBtn(){
+        const validationErrors = validateStepTwoForm();
+
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors)
+            return;
+        }
+
+        setErrors({})
+        stepThreeNextBtn()
+    }
+
+
+    function validateStepThreeForm(){
+        const errors: Record<string, string> = {}
+
+        if (!formData.city || formData.city.trim().length < 2){
+            errors.city = 'Please state in which state you are operating in.'
+        }
+        return errors
+    }
+
+    function testStepFourNextBtn(){
+        const validationErrors = validateStepThreeForm();
+
+        if (Object.keys(validationErrors).length > 0){
+            setErrors(validationErrors)
+            return
+        }
+
+        setErrors({})
+        stepFourNextBtn()
+    }
+
     const GETLISTED_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbxNtBdr1q4Tcc3QMB0QfDx4Zj_KkNiJt1IE-8ZThdmBrTzjFQcINQj3NFXIrG4PrC8B/exec"
 
     async function handleGetListedForm(e: React.FormEvent){
         e.preventDefault();
+
+        // const validationErrors = validateStepOneForm();
+
+        // if (Object.keys(validationErrors).length > 0) {
+        //     setErrors(validationErrors);
+        //     return;
+        // }
+        // setErrors({});
         setLoading(true);
 
         try {
@@ -71,34 +162,6 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
             setLoading(false)
         }
         console.log("Form Data Sent:", formData)
-    }
-
-    function FormReset() {
-        setFormData({
-            fullName: "",
-            phoneNumber: "",
-            email: "",
-            busName: "",
-            webLink: "",
-            busDescription: "",
-            busCategories: "",
-            addLine1: "",
-            addLine2: "",
-            city: "",
-            state: "",
-            postCode: "",
-            gmbLink: "",
-            serveCustomer: "",
-            serveLocation: "",
-            facebookLink: "",
-            instagramLink: "",
-            tiktokLink: "",     
-            twitterLink: "",
-            pinterestLink: "",
-            linkedInLink: "",
-            youtubLink: "",
-            linktree: "",
-        })
     }
 
     const handleOnChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -133,6 +196,12 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         onChange={handleOnChange}
                     />
 
+                    {errors.fullName && (
+                        <p className={style.errorText}>
+                            {errors.fullName}
+                        </p>
+                    )}
+
                     <input type="tel" 
                         name="phoneNumber" 
                         placeholder = 'Phone Number'
@@ -141,6 +210,12 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         onChange={handleOnChange}
                     />
 
+                    {errors.phoneNumber && (
+                        <p className={style.errorText}>
+                            {errors.phoneNumber}
+                        </p>
+                    )}
+
                     <input type="email" 
                         name="email" 
                         placeholder = 'Email Address'
@@ -148,6 +223,12 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         value={formData.email}
                         onChange={handleOnChange}
                     />
+
+                    {errors.email && (
+                        <p className={style.errorText}>
+                            {errors.email}
+                        </p>
+                    )}
                 </div>
 
                 <div
@@ -156,7 +237,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     <button 
                         type="button"
                         className='globalGoldButton'
-                        onClick={stepTwoNextBtn}
+                        onClick={testStepTwoNextBtn}
                     >
                         Next
                     </button>
@@ -183,6 +264,11 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         value={formData.busName}
                         onChange={handleOnChange}
                     />
+                    {errors.busName && (
+                        <p className={style.errorText}>
+                            {errors.busName}
+                        </p>
+                    )}
 
                     <input type="url" 
                         name="webLink" 
@@ -200,6 +286,11 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         value={formData.busDescription}
                         onChange={handleOnChange}
                     ></textarea>
+                    {errors.busDescription && (
+                        <p className={style.errorText}>
+                            {errors.busDescription}
+                        </p>
+                    )}
 
                     <textarea 
                         name="busCategories" 
@@ -217,7 +308,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     <button 
                         type="button"
                         className='globalGoldButton'
-                        onClick={stepThreeNextBtn}
+                        onClick={testStepThreeNextBtn}
                     >
                         Next
                     </button>
@@ -259,6 +350,11 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                         value={formData.city}
                         onChange={handleOnChange}
                     />
+                    {errors.city && (
+                        <p className={style.errorText}>
+                            {errors.city}
+                        </p>
+                    )}
 
                     <input type="text" 
                         name="state" 
@@ -329,7 +425,7 @@ export default function GetListedMainForm({stepOne, stepTwo, stepThree, stepFour
                     <button 
                         type="button"
                         className='globalGoldButton'
-                        onClick={stepFourNextBtn}
+                        onClick={testStepFourNextBtn}
                     >
                         Next
                     </button>

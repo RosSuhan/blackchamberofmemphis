@@ -53,3 +53,8 @@
 .formFieldset div {
     padding: .5rem 0;
 }
+
+.errorText {
+    color: red;
+    margin-top: -.5rem;
+}

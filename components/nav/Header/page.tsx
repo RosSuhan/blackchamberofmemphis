@@ -93,7 +93,7 @@ export default function Header(){
                         </li>
                     ))}
 
-                    <li
+                    {/* <li
                         className={style.navItem}
                     >
                         <Link 
@@ -106,7 +106,7 @@ export default function Header(){
                         >
                             MemphisTEN
                         </Link>
-                    </li>           
+                    </li>            */}
 
                     {/* <li>
                         <a 
