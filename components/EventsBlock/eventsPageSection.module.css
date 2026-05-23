@@ -15,11 +15,21 @@
     background: var(--offWhite);
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     padding: 2rem 0;
     row-gap: 2rem;
+}
+
+.extraEvents {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    /* flex: ; */
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    /* background: green; */
 }
 
 @media (min-width: 900px) {

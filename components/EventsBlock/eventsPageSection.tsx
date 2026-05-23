@@ -47,27 +47,27 @@ export default function EventsPageSection(){
                     featuredEventActionBtnText = {'Read More'}
                 />
 
-                {filteredEvents.length > 0 ? (
-                    filteredEvents.map((event) => (
-                        <CATsingleBlock
-                            key = {event.id}
-                            featureImage = {event.eventImage}
-                            featureName = {event.eventName}
-                            featureText = {event.eventDescription}
-                            featureTextLimit = {15}
-                            featureLink = {`/events/${event.path}`}
-                            featureDate = {`${event.eventDate} ${event.eventTime}`}
-                            featurePrice = {''}
-                            featureLocation = {event.eventAddress}
-                            featureLinkText = {'Read More'}
-                        />
-                    ))
-                ):
-                    null
-                    // <p>
-                    //     No events match your search or selected month.
-                    // </p>
-                }
+                <div
+                    className={style.extraEvents}
+                >
+                    {filteredEvents.length > 0 && (
+                        filteredEvents.map((event) => (
+                            <CATsingleBlock
+                                key = {event.id}
+                                featureImage = {event.eventImage}
+                                featureName = {event.eventName}
+                                featureText = {event.eventDescription}
+                                featureTextLimit = {15}
+                                featureLink = {`/events/${event.path}`}
+                                featureDate = {`${event.eventDate} ${event.eventTime}`}
+                                featurePrice = {''}
+                                featureLocation = {event.eventAddress}
+                                featureLinkText = {'Read More'}
+                            />
+                        ))
+                    )}
+                </div>
+                
             </div>
         </section>
     )

@@ -3,7 +3,7 @@ import { EventListType } from "../eventListTypes";
 export const boominFundU : EventListType = {
     holidayStatus: false,
     id : "boomin-fund-u",
-    path : '/boomin',
+    path : 'boomin',
     type: 'event',
     eventImage : "/events/boominU/bcom-fund-u.webp",
     eventImageAlt : "Invitation to Boomin Fund U: Interest-Free Capital Match with Kiva",

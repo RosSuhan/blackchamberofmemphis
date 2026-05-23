@@ -28,10 +28,10 @@ export default function GetListedPage(){
                     <h2 class="globalThirdHeading">3. Go Live</h2>
                     <p class="globalText">Once approved, your listing is published and shared with our audience.</p>`}
                 blockTextTwo = {`
-                    <h3>Contact Information</h3>
-                    <h3>Busic business details</h3>
-                    <h3>A business description</h3>
-                    <h3>Website and social links</h3>`}
+                    <h3 style="text-align:center">Contact Information</h3>
+                    <h3 style="text-align:center">Busic business details</h3>
+                    <h3 style="text-align:center">A business description</h3>
+                    <h3 style="text-align:center">Website and social links</h3>`}
                 ctaLinkOne = {''}
                 ctaLinkTwo = {''}
                 buttonTextOne = {''}
@@ -42,7 +42,7 @@ export default function GetListedPage(){
                 sectionBackground = {"var(--darkGrey)"}
                 textColor = {"var(--white)"}
                 ctaText = {`Don't worry if you don't have everything ready - you can still submit and update later.`}
-                ctaLink = {"/get-listed/step-one"}
+                ctaLink = {"/get-listed/form"}
                 ctaButton = {"Get Started"}
             />
         </main>

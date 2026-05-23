@@ -3,6 +3,7 @@ import { EventListType } from "../eventListTypes";
 export const bcomRedBirdMixer : EventListType = {
     holidayStatus: false,
     id : "bcom-redbird-mixer",
+    path: 'bcom-redbird-mixer',
     type: 'event',
     eventImage : "/events/bcom-redbird-quarterly-mixer.webp",
     eventImageAlt : "BCoM Networking Mixer + Annual Family Night at AutoZone Park",
