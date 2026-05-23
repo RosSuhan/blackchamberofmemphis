@@ -46,7 +46,7 @@ export default function Home() {
   const heroCTAbuttons = [
     {
       name : "Get Listed (Free)",
-      path : "/business-directory/get-listed",
+      path : "/get-listed",
       type : "globalGoldButton"
     },
     {
