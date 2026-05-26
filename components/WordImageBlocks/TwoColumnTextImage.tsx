@@ -32,7 +32,7 @@ export default function TwoColumnTextImage({
             className={clsx(rowDirection ? style.twoColumnSection : style.twoColumnSectionReverse)}
         >
             <div
-                className={style.sectionColumn}
+                className={style.sectionImageColumn}
             >
                 <Image
                     src={imageLink}
@@ -55,16 +55,18 @@ export default function TwoColumnTextImage({
                     className='globalText'
                     dangerouslySetInnerHTML={{__html : blockText}}
                 />
-                <div
-                    className={style.twoColumnButtonRow}
-                >
-                    <Link 
-                        href={ctaLink}
-                        className='globalGoldButton'
+                {ctaLink ? 
+                    <div
+                        className={style.twoColumnButtonRow}
                     >
-                        {buttonText}
-                    </Link>
-                </div>
+                        <Link 
+                            href={ctaLink}
+                            className='globalGoldButton'
+                        >
+                            {buttonText}
+                        </Link>
+                    </div>
+                : null}
             </div>
         </section>
     )

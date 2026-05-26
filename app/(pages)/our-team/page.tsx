@@ -57,27 +57,16 @@ export default function OurTeam(){
     console.log("team data:", team)
 
     return(
-        <main
+        <div
             className={style.ourTeamPage}
             style={{position:"relative"}}
         >
-            {/* <PageTitleSection
-                pageTitle="Our Team"
-            /> */}
-
-            <PageHeroSection
-                mainHeading="Meet Our Team"
-                subHeading=""
-                searchbar = {false}
-                ctaButtons={[]}
-                placeholder = ""
-            />
-
             <section
                 className={style.teamRow}
+                style={{rowGap:'1rem'}}
             >
                 <h2
-                    className={style.ourTeamHeading}
+                    className="globalSecondHeading"
                 >
                     The Core Team
                 </h2>
@@ -159,9 +148,10 @@ export default function OurTeam(){
 
             <section
                 className={style.teamRow}
+                style={{marginTop:'2rem', rowGap:'1rem'}}
             >
                 <h2
-                    className={style.ourTeamHeading}
+                    className='globalSecondHeading'
                 >
                     Our Board Members
                 </h2>
@@ -196,7 +186,6 @@ export default function OurTeam(){
                     </div>
                 ))}
             </section>
-
-        </main>
+        </div>
     )
 }
