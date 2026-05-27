@@ -1,12 +1,9 @@
-import StayInformedSection from "@/components/forms/stayInformed";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
-import ImageWordBlocks from "@/components/WordImageBlocks/ImageWord";
 import OneColumn from "@/components/WordImageBlocks/OneColumn";
-import TextBackdrop from "@/components/WordImageBlocks/TextBackdrop";
 import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
-import WordImageBlocks from "@/components/WordImageBlocks/WordImage";
 import type { Metadata } from 'next';
 import OurTeam from "../our-team/page";
+import MultiCtaButtonRow from "@/components/callToAction/multiCtaButtonRow";
 
 export const metadata: Metadata = {
     title: 'About Us the Black Chamber of Memphis | Economic Empowerment & Advocacy Since 1970',
@@ -41,6 +38,17 @@ export const metadata: Metadata = {
 };
 
 export default function AboutUs(){
+
+    const ctaRowButtons = [
+        {
+            buttonLink : '/get-listed',
+            buttonName : 'List Your Business'
+        },
+        {
+            buttonLink : '/membership',
+            buttonName : 'Explore Membership'
+        }
+    ]
     return(
         <main>
             <PageHeroSection
@@ -107,6 +115,14 @@ export default function AboutUs(){
             />
 
             <OurTeam/>
+
+            <MultiCtaButtonRow
+                sectionBackground = {'var(--darkGrey'} 
+                sectionTextColor = {'var(--white)'}
+                sectionHeading = {'Ready to grow with us? Become a BCoM Member today.'}
+                sectionText = {'Partner with the Black Chamber of Memphis to expand your reach, connect with decision-makers, and play a role in shaping the local business ecosystem.'}
+                sectionButtons = {ctaRowButtons}
+            />
         </main>
     )
 }

@@ -1,0 +1,95 @@
+.tierRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    row-gap: 2rem;
+}
+
+.tierBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: #eeeeee;
+}
+
+.tierHeading {
+    width: 90%;
+    font-size: 1.44rem;
+    text-align: center;
+}
+
+.tierPriceRow {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tierDollar {
+    font-size: 1rem;
+}
+
+.tierPriceNumber {
+    font-size: 1.44rem;
+    font-weight: 800;
+}
+
+.tierTerm {
+    font-size: 0.889rem;
+    margin-top: auto;
+}
+
+.tierSubHeading {
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tierIntro {
+    width: 90%;
+    text-align: center;
+}
+
+.tierListHeading {
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.tierList {
+    width: 85%;
+    margin: .2rem 0;
+    padding: 0 0 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.tierList li {
+    padding: .2rem 0;
+}
+
+.tierActionButton {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.266rem;
+    padding: .5rem 0;
+    background: var(--black);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+@media (min-width:500px) {
+    .tierBlock {
+        width: 45%;
+    }
+}
+
+@media (min-width:850px) {
+    .tierBlock {
+        width: 380px;
+    }
+}

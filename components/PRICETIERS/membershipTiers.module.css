@@ -1,0 +1,29 @@
+.memberTiersSection {
+    padding: 4rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--grey);
+}
+
+.featureTierRow{
+    width: 100%;
+    background-image: url('/assets/members-of-bcom-3.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.tierImageRow {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.tierImage {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}

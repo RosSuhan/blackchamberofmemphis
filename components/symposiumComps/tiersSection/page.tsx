@@ -1,5 +1,5 @@
 'use client'
-import SingleTier from './singleTier/page'
+import SingleTier from '@/components/singleTier/page'
 import style from './tierSection.module.css'
 
 type TierSectionProp = {

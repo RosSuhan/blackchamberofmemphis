@@ -23,11 +23,13 @@ export default function MultiCtaButtonRow({
         >
             <h2
                 className='globalSecondHeading'
+                style={{textAlign:'center'}}
             >
                 {sectionHeading}
             </h2>
             <p
                 className='globalText'
+                style={{textAlign:'center'}}
             >
                 {sectionText}
             </p>
