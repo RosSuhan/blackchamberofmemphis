@@ -8,7 +8,7 @@ export default function MembershipTiers(){
             id : 'rising-ent',
             tierName : 'Rising Entrepreneur',
             tierPrice : '37.50',
-            tierTerm : 'Quarterly',
+            tierTerm : 'Semi-Annual',
             tierIntroHeading : 'Emerging founders (18-25) ready to start strong',
             tierIntroText : 'Build your foundation, gain exposure, and connect with real opportunities in the Memphis business Community.',
             tierListItem : [
@@ -18,7 +18,7 @@ export default function MembershipTiers(){
                 'A professional profile in the Info Hub',
                 '1 free event ticket to start building your network'
             ],
-            tierActionLink : '/',
+            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
@@ -27,7 +27,7 @@ export default function MembershipTiers(){
             id : 'micro-bus',
             tierName : 'Micro Business',
             tierPrice : '62.50',
-            tierTerm : 'Quarterly',
+            tierTerm : 'Semi-Annual',
             tierIntroHeading : 'Solo business owners ready to grow visibility',
             tierIntroText : 'Establish your presence, access new opportunities, and start positioning your business for consistent growth.',
             tierListItem : [
@@ -37,7 +37,7 @@ export default function MembershipTiers(){
                 '50% off event tickets and networking opportunities',
                 'Staff consultation to support your next steps'
             ],
-            tierActionLink : '/',
+            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
@@ -49,7 +49,7 @@ export default function MembershipTiers(){
             id : 'small-bus',
             tierName : 'Small Business',
             tierPrice : '125',
-            tierTerm : 'Quarterly',
+            tierTerm : 'Semi-Annual',
             tierIntroHeading : 'For growing businesses ready to scale',
             tierIntroText : 'Unlock more consistent opportunities, increase your visibility, and actively grow your business through the Chamber network.',
             tierListHeading : 'Everything in Micro, plus:',
@@ -59,7 +59,7 @@ export default function MembershipTiers(){
                 'Exclusive invitations to training programs',
                 'Dedicated support and business engagement'
             ],
-            tierActionLink : '/',
+            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '4px',
             borderColor : 'var(--darkGold)'
@@ -71,7 +71,7 @@ export default function MembershipTiers(){
             id : 'pres-council',
             tierName : "President's Council",
             tierPrice : '625',
-            tierTerm : 'Quarterly',
+            tierTerm : 'Semi-Annual',
             tierIntroHeading : 'For established businesses ready to expand influence',
             tierIntroText : 'Join one of the most influential networks of Black business leaders in Memphis. Collaborate with peers, contribute to strategic conversations, and position your business at the center of opportunity.',
             tierListHeading : 'Everything in Small Business, plus:',
@@ -82,7 +82,7 @@ export default function MembershipTiers(){
                 'CEO consultation and strategic engagement',
                 'Recognition as a President’s Council Member'
             ],
-            tierActionLink : '/',
+            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
@@ -91,7 +91,7 @@ export default function MembershipTiers(){
             id : 'corporate',
             tierName : 'Corporate',
             tierPrice : '1250',
-            tierTerm : 'Quarterly',
+            tierTerm : 'Semi-Annual',
             tierIntroHeading : 'For organisations leading at scale',
             tierIntroText : 'Position your company as a key driver of economic growth in Memphis while gaining direct access to high-value opportunities, partnerships, and visibility.',
             tierListItem : [
@@ -101,7 +101,7 @@ export default function MembershipTiers(){
                 'Priority access to partnerships and procurement opportunities',
                 'Strategic positioning within the Memphis business ecosystem'
             ],
-            tierActionLink : '/',
+            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
