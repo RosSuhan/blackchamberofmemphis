@@ -3,8 +3,43 @@ import style from '@/styles/contactUs.module.css'
 import { BaselineMail } from "@/components/icons/MailIcon";
 import { Phone } from "@/components/icons/Phone";
 import { useState } from 'react';
+// import { Metadata } from 'next';
 
-
+// export const metadata: Metadata = {
+//     title: 'Contact Us | Black Chamber of Memphis',
+//     description:
+//         'Get in touch with the Black Chamber of Memphis. We welcome general enquiries from local businesses, entrepreneurs, and community members across Greater Memphis. Visit us at [ADDRESS], Memphis, TN, or reach out online.',
+//     keywords: [
+//         'contact Black Chamber of Memphis',
+//         'Black Chamber of Memphis enquiries',
+//         'Memphis business chamber contact',
+//         'reach Black Chamber of Memphis',
+//         'Memphis business support contact',
+//     ],
+//     alternates: { canonical: 'https://blackchamberofmemphis.org/contact-us' },
+//     openGraph: {
+//         title: 'Contact Us | Black Chamber of Memphis',
+//         description:
+//         'Have a question or enquiry? Reach out to the Black Chamber of Memphis — supporting local businesses and entrepreneurs across Greater Memphis.',
+//         url: 'https://blackchamberofmemphis.org/contact-us',
+//         siteName: 'Black Chamber of Memphis',
+//         images: [
+//         {
+//             url: '/images/og-contact.jpg',
+//             width: 1200,
+//             height: 630,
+//             alt: 'Contact the Black Chamber of Memphis',
+//         },
+//         ],
+//     },
+//     twitter: {
+//         card: 'summary_large_image',
+//         title: 'Contact Us | Black Chamber of Memphis',
+//         description:
+//         'Have a question or enquiry? Reach out to the Black Chamber of Memphis — supporting local businesses and entrepreneurs across Greater Memphis.',
+//         images: ['/images/og-contact.jpg'],
+//     },
+// }
 
 export default function ContactUs(){
     const [ loading, setLoading ] = useState(false)

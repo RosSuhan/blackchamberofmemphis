@@ -1,13 +1,53 @@
 'use client'
 import style from '@/styles/programMain.module.css'
 import { clsx } from 'clsx';
-import StayInformedSection from "@/components/forms/stayInformed";
 import Image from 'next/image';
 import { ChevronDown } from '@/components/icons/ChevronDown';
 import { ChevronUp12 } from '@/components/icons/ChevronUp';
 import { useState } from 'react';
-import PageTitleSection from '@/components/pageTitleSection/page';
 import PageHeroSection from '@/components/heroSections/pageHeroSection';
+// import { Metadata } from 'next';
+
+// export const metadata: Metadata = {
+//     title: 'Programs | Business Growth & Support Initiatives | Black Chamber of Memphis',
+//     description:
+//         'Explore Black Chamber of Memphis programmes designed to help Memphis entrepreneurs scale, hire, and thrive. From back-office support and procurement access to grants, mentorship, and business booster resources.',
+//     keywords: [
+//         'Black Chamber of Memphis programs',
+//         'Memphis business programmes',
+//         'MemphisTen programme',
+//         'BCOM Business Booster',
+//         'Memphis entrepreneur support',
+//         'small business grants Memphis',
+//         'business mentorship Memphis',
+//         'Memphis procurement programme',
+//         'back office support Memphis',
+//         'Memphis business development initiatives',
+//     ],
+//     alternates: { canonical: 'https://blackchamberofmemphis.org/programs' },
+//     openGraph: {
+//         title: 'Programs | Business Growth & Support Initiatives | Black Chamber of Memphis',
+//         description:
+//         'From MemphisTen\'s job creation strategy to the BCOM Business Booster — explore programmes built to help Memphis entrepreneurs scale, access procurement, secure grants, and grow sustainably.',
+//         url: 'https://blackchamberofmemphis.org/programs',
+//         siteName: 'Black Chamber of Memphis',
+//         images: [
+//         {
+//             url: '/images/og-programs.jpg',
+//             width: 1200,
+//             height: 630,
+//             alt: 'Black Chamber of Memphis Business Growth Programmes',
+//         },
+//         ],
+//     },
+//     twitter: {
+//         card: 'summary_large_image',
+//         title: 'Programs | Business Growth & Support Initiatives | Black Chamber of Memphis',
+//         description:
+//         'Grants, mentorship, back-office support, procurement access, and more — explore BCOM\'s growing portfolio of programmes built for Memphis entrepreneurs at every stage.',
+//         images: ['/images/og-programs.jpg'],
+//     },
+// };
 
 const programsList = [
     {

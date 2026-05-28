@@ -26,7 +26,7 @@ import PageHeroSection from "@/components/heroSections/pageHeroSection";
 //         title: 'Resources for Black Entrepreneurs | Black Chamber of Memphis',
 //         description:
 //             'Your go-to hub for tools, funding, and guidance to help your business thrive in Memphis.',
-//         url: 'https://blackchamberofmemphis.org/resources',
+//         url: '/assets/bcom-building-black-business-in-memphis-since-1970.png',
 //         images: [{ url: '/images/og-resources.jpg', width: 1200, height: 630 }],
 //     },
 //     twitter: {
@@ -34,7 +34,7 @@ import PageHeroSection from "@/components/heroSections/pageHeroSection";
 //         title: 'Business Resources | Black Chamber of Memphis',
 //         description:
 //         'Access funding, tools, and expert resources to grow your business in Memphis.',
-//         images: ['/images/og-resources.jpg'],
+//         images: ['/assets/bcom-building-black-business-in-memphis-since-1970.png'],
 //     },
 // };
 

@@ -3,28 +3,31 @@ import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import EventsPageSection from "@/components/EventsBlock/eventsPageSection";
 
 export const metadata: Metadata = {
-    title: 'Events & Workshops | Black Chamber of Memphis Networking',
+    title: 'Events & Workshops | Black Chamber of Memphis',
     description:
-        'Explore upcoming networking events, workshops, and business expos hosted by the Black Chamber of Memphis. Connect, collaborate, and grow your business community.',
+        'Explore upcoming networking events, workshops, and business expos hosted by the Black Chamber of Memphis. Connect, collaborate, and grow with the local business community across Greater Memphis.',
     keywords: [
         'Memphis business events',
-        'networking Memphis',
-        'Black Chamber events',
+        'networking events Memphis',
+        'Black Chamber of Memphis events',
         'business workshops Memphis',
+        'Memphis business expos',
+        'Greater Memphis entrepreneur events',
     ],
     alternates: { canonical: 'https://blackchamberofmemphis.org/events' },
     openGraph: {
-        title: 'Events | Black Chamber of Memphis',
+        title: 'Events & Workshops | Black Chamber of Memphis',
         description:
-            'Join business events, workshops, and networking opportunities in Memphis.',
+        'Explore upcoming networking events, workshops, and business expos hosted by the Black Chamber of Memphis. Connect, collaborate, and grow with local entrepreneurs across Greater Memphis.',
         url: 'https://blackchamberofmemphis.org/events',
+        siteName: 'Black Chamber of Memphis',
         images: [{ url: '/images/og-events.jpg', width: 1200, height: 630 }],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Events | Black Chamber of Memphis',
+        title: 'Events & Workshops | Black Chamber of Memphis',
         description:
-        'Connect and grow your business through Memphis Chamber networking events.',
+        'Connect, collaborate, and grow your business through networking events, workshops, and expos hosted by the Black Chamber of Memphis across Greater Memphis.',
         images: ['/images/og-events.jpg'],
     },
 };

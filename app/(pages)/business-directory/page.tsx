@@ -3,28 +3,30 @@ import { Suspense } from "react";
 import NewDirectory from "./newDirectory";
 
 export const metadata: Metadata = {
-    title: 'Black-Owned Business Directory in Memphis | Support Local Entrepreneurs',
+    title: 'Memphis Business Directory | Black Chamber of Memphis',
     description:
-        'Discover and support Black-owned businesses in Memphis through the official Black Chamber of Memphis Business Directory. Find trusted local entrepreneurs, services, and community leaders.',
+        'Discover and support local businesses in Memphis through the official Black Chamber of Memphis Business Directory. Find trusted local entrepreneurs, services, and community leaders across Greater Memphis.',
     keywords: [
-        'Black-owned business directory Memphis',
-        'Memphis business listings',
-        'support Black businesses Memphis',
-        'local Black entrepreneurs',
+        'Memphis business directory',
+        'local business listings Memphis',
+        'Memphis small business directory',
+        'find local businesses Memphis',
+        'Greater Memphis entrepreneurs',
+        'Black Chamber of Memphis directory',
     ],
     alternates: { canonical: 'https://blackchamberofmemphis.org/business-directory' },
     openGraph: {
-        title: 'Business Directory | Black Chamber of Memphis',
+        title: 'Memphis Business Directory | Black Chamber of Memphis',
         description:
-            'Discover and support Black-owned businesses in Memphis through the official Black Chamber of Memphis Business Directory. Find trusted local entrepreneurs, services, and community leaders.',
+        'Browse the official Black Chamber of Memphis Business Directory. Discover and support trusted local entrepreneurs, services, and community leaders across Greater Memphis.',
         url: 'https://blackchamberofmemphis.org/business-directory',
-        images: [{ url: '/images/og-directory.jpg', width: 1200, height: 630 }],
+        images: [{ url: '/assets/bcom-building-black-business-in-memphis-since-1970.png', width: 1200, height: 630 }],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Business Directory | Black Chamber of Memphis',
+        title: 'Memphis Business Directory | Black Chamber of Memphis',
         description:
-            'Discover and support Black-owned businesses in Memphis through the official Black Chamber of Memphis Business Directory. Find trusted local entrepreneurs, services, and community leaders.',
+        'Browse the official Black Chamber of Memphis Business Directory. Discover and support trusted local entrepreneurs, services, and community leaders across Greater Memphis.',
         images: ['/images/og-directory.jpg'],
     },
 };

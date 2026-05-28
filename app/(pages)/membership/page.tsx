@@ -1,7 +1,45 @@
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
 import MembershipTiers from "@/components/PRICETIERS/membershipTiers";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: 'Membership | Join the Black Chamber of Memphis & Grow Your Business',
+    description:
+        'Join the Black Chamber of Memphis and unlock networking, procurement opportunities, business visibility, and community influence. Membership plans from $37.50 — built for every stage of business growth in Memphis.',
+    keywords: [
+        'join Black Chamber of Memphis',
+        'Memphis chamber membership',
+        'Memphis business membership',
+        'small business networking Memphis',
+        'Memphis procurement opportunities',
+        'business growth Memphis',
+        'Memphis entrepreneur membership',
+    ],
+    alternates: { canonical: 'https://blackchamberofmemphis.org/membership' },
+    openGraph: {
+        title: 'Join the Black Chamber of Memphis | Membership Plans & Benefits',
+        description:
+        'From visibility and connections to procurement opportunities and leadership access — membership at the Black Chamber of Memphis is designed to help your business thrive at every stage. Plans from $37.50.',
+        url: 'https://blackchamberofmemphis.org/membership',
+        siteName: 'Black Chamber of Memphis',
+        images: [
+        {
+            url: '/images/og-membership.jpg',
+            width: 1200,
+            height: 630,
+            alt: 'Black Chamber of Memphis Membership Plans',
+        },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Join the Black Chamber of Memphis | Membership Plans & Benefits',
+        description:
+        'Networking, procurement opportunities, business visibility, and community influence — explore membership plans starting at $37.50 and grow your business across Greater Memphis.',
+        images: ['/images/og-membership.jpg'],
+    },
+};
 
 export default function Membership(){
     const heroCtaBtn = [

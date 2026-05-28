@@ -1,5 +1,46 @@
 import style from '@/styles/bossPage.module.css'
+import { Metadata } from 'next';
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+    title: 'Back Office Support Services (BOSS) | MemphisTen | Black Chamber of Memphis',
+    description:
+        'BOSS connects Memphis small businesses with vetted, full-time or fractional back-office professionals from $6/hr — powered by remoting.work. Admin, marketing, operations, and more. Payroll and compliance handled for you.',
+    keywords: [
+        'back office support Memphis',
+        'BOSS MemphisTen',
+        'remote back office staff Memphis',
+        'affordable business support Memphis',
+        'remoting.work Memphis',
+        'virtual assistant Memphis business',
+        'fractional back office professionals',
+        'Memphis small business operations support',
+        'Black Chamber of Memphis BOSS programme',
+    ],
+    alternates: { canonical: 'https://blackchamberofmemphis.org/memphis-ten/back-office-support' },
+    openGraph: {
+        title: 'Back Office Support Services (BOSS) | MemphisTen | Black Chamber of Memphis',
+        description:
+        'Scale your Memphis business without doing everything yourself. BOSS powered by remoting.work gives you vetted back-office professionals from $6/hr — with payroll, compliance, and management handled for you.',
+        url: 'https://blackchamberofmemphis.org/memphis-ten/back-office-support',
+        siteName: 'Black Chamber of Memphis',
+        images: [
+        {
+            url: '/assets/back-office-support.webp',
+            width: 1200,
+            height: 630,
+            alt: 'Back Office Support Services powered by remoting.work and Black Chamber of Memphis',
+        },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Back Office Support Services (BOSS) | MemphisTen | Black Chamber of Memphis',
+        description:
+        'Stop doing everything yourself. BOSS connects Memphis businesses with vetted back-office professionals from $6/hr — admin, marketing, ops, and more. Powered by remoting.work.',
+        images: ['/assets/back-office-support.webp'],
+    },
+};
 
 export default function BOSS(){
     return (

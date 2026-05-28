@@ -1,6 +1,44 @@
 import OneCtaButtonRow from "@/components/callToAction/OneCtaButtonRow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import TwoColumnText from "@/components/WordImageBlocks/TwoColumnText";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Get Your Business Listed | Black Chamber of Memphis Directory',
+    description:
+        'Submit your business to the Black Chamber of Memphis Business Directory. Complete a short form, our team reviews and refines your listing, and you go live — getting discovered by the Greater Memphis community.',
+    keywords: [
+        'list my business Memphis',
+        'add business to Memphis directory',
+        'Black Chamber of Memphis business listing',
+        'Memphis business directory submission',
+        'get discovered Memphis',
+        'Memphis small business listing',
+    ],
+    alternates: { canonical: 'https://blackchamberofmemphis.org/get-listed' },
+    openGraph: {
+        title: 'Get Your Business Listed | Black Chamber of Memphis Directory',
+        description:
+        'Submit your business details, our team refines your listing, and you go live in the Black Chamber of Memphis Business Directory — reaching local customers across Greater Memphis.',
+        url: 'https://blackchamberofmemphis.org/get-listed',
+        siteName: 'Black Chamber of Memphis',
+        images: [
+        {
+            url: '/images/og-get-listed.jpg',
+            width: 1200,
+            height: 630,
+            alt: 'Get Your Business Listed on the Black Chamber of Memphis Directory',
+        },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Get Your Business Listed | Black Chamber of Memphis Directory',
+        description:
+        'Submit your business, get reviewed by our team, and go live in the Black Chamber of Memphis Directory. Start getting discovered across Greater Memphis.',
+        images: ['/images/og-get-listed.jpg'],
+    },
+};
 
 export default function GetListedPage(){
     return(

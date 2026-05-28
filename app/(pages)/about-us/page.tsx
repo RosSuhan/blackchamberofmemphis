@@ -6,34 +6,39 @@ import OurTeam from "../our-team/page";
 import MultiCtaButtonRow from "@/components/callToAction/multiCtaButtonRow";
 
 export const metadata: Metadata = {
-    title: 'About Us the Black Chamber of Memphis | Economic Empowerment & Advocacy Since 1970',
-    description: 'Learn how the Black Chamber of Memphis drives economic equity and supports Black entrepreneurs through education, advocacy, and collaborative partnerships across the Mid-South, since 1970.',
+    title: 'Black Chamber of Memphis | Empowering Local Businesses in Memphis',
+    description:
+        'The Black Chamber of Memphis supports and empowers local businesses across Greater Memphis through advocacy, networking, education, and economic development programs. Join today and grow your business.',
     keywords: [
-        'about Black Chamber of Memphis',
-        'Memphis business advocacy',
-        'minority business organization',
-        'economic empowerment Memphis',
+        'Black Chamber of Commerce Memphis',
+        'Memphis business network',
+        'Memphis small business',
+        'local entrepreneurship Memphis',
+        'Memphis business community',
+        'economic development Memphis',
     ],
-    alternates: { canonical: 'https://blackchamberofmemphis.org/about-us' },
+    alternates: { canonical: 'https://blackchamberofmemphis.org' },
     openGraph: {
-        title: 'About the Black Chamber of Memphis',
-        description: 'Over 50 years of strengthening Black-owned businesses and advancing economic opportunity across Greater Memphis.',
-        url: 'https://blackchamberofmemphis.org/about-us',
+        title: 'Empowering Local Businesses in Greater Memphis',
+        description:
+        'Advocacy. Networking. Growth. The Black Chamber of Memphis is building lasting economic opportunity across Greater Memphis. Join the movement.',
+        url: 'https://blackchamberofmemphis.org',
         siteName: 'Black Chamber of Memphis',
         images: [
-            {
-                url: '/assets/black-chamber-of-memphis-building-black-business-in-memphis-since-1970.webp', 
-                alt: 'Black Chamber of Memphis Leadership and Community Impact',
-                width: 1200, 
-                height: 630 
-            }
+        {
+            url: '/assets/bcom-building-black-business-in-memphis-since-1970.png',
+            width: 1200,
+            height: 630,
+            alt: 'Black Chamber of Memphis Community',
+        },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'About the Black Chamber of Memphis',
-        description: 'Building economic power and supporting Black entrepreneurs in Greater Memphis since 1970.',
-        images: ['/assets/black-chamber-of-memphis-building-black-business-in-memphis-since-1970.webp'],
+        title: 'Empowering Local Businesses in Greater Memphis',
+        description:
+        'Advocacy. Networking. Growth. The Black Chamber of Memphis is building lasting economic opportunity across Greater Memphis. Join the movement.',
+        images: ['/assets/bcom-building-black-business-in-memphis-since-1970.png'],
     },
 };
 
