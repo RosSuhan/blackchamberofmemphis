@@ -31,7 +31,7 @@ export default function EventsPageSection(){
             <div
                 className={style.calendarEvents}
             >
-                <FeaturedEvent
+                {/* <FeaturedEvent
                     // featuredEventId
                     featuredImage = {'/events/symposium/BCOM_Symposium_2025_Day2-16.jpg'}
                     featuredImageAlt = {'Black Chamber of Memphis Building Wealth In Our Community Symposium - August 28, 2026'}
@@ -45,7 +45,7 @@ export default function EventsPageSection(){
                     featuredEventDescription = {"The Black Chamber of Memphis Symposium is a flagship event focused on advancing entrepreneurship, economic mobility, and wealth-building within the community. Bringing together business owners, leaders, and professionals, the event offers a dynamic mix of networking, expert-led discussions, and practical insights designed to help entrepreneurs start, grow, and scale sustainable businesses."}
                     featuredEventActionLink = {`/events/symposium`}
                     featuredEventActionBtnText = {'Read More'}
-                />
+                /> */}
 
                 <div
                     className={style.extraEvents}
