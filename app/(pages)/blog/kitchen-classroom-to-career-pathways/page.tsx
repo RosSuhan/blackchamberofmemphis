@@ -1,10 +1,14 @@
 import Image from "next/image";
 import style from './kitchenCareerPath.module.css'
+// import PageHeroSection from "@/components/heroSections/pageHeroSection";
 
 
 export default function KitchenCareerPathways(){
     return(
         <main>
+
+            {/* <PageHeroSection/> */}
+
             <section
                 className={style.kitchenBlogHeroSection}
             >
@@ -32,6 +36,11 @@ export default function KitchenCareerPathways(){
                     className={style.kitchenBlogHeroBackgroundImage}
                 />
             </section>
+
+
+
+
+
             <article
                 className={style.kitchenBlogArticle}
             >

@@ -1,6 +1,6 @@
 'use client'
 import style from '@/styles/directoryList.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { businessList } from '@/lib/members'
 import CATsingleBlock from '../CATSINGLEBLOCK/page'
 
@@ -15,6 +15,11 @@ export default function NewDirectoryList({
     searchTerm,
     selectedCategory
 } : NewDirectoryListProps){
+
+    const [ visibleCount, setVisibleCount ] = useState(12);
+    useEffect(() => {
+        setVisibleCount(12);
+    }, [searchTerm, selectedCategory])
 
     const [ initialRandomOrder ] = useState(() => [...businessList].sort(() => Math.random() - 0.5))
 
@@ -68,14 +73,19 @@ export default function NewDirectoryList({
 
     const finalList = noFilters ? initialRandomOrder : filtered
 
+    const displayList = finalList.slice(0, visibleCount);
+
     console.log('the final list is:', finalList)
 
     return (
         <section
             className={style.directoryListSection}
         >
-            
-            {finalList?.map((biz) => (
+            <p className={style.resultCount}>
+                Showing {Math.min(visibleCount, finalList.length)} of {finalList.length} businesses
+            </p>
+
+            {displayList?.map((biz) => (
                 <CATsingleBlock
                     key = {biz.id}
                     star = {biz.memberStatus}
@@ -88,6 +98,16 @@ export default function NewDirectoryList({
                 />
             ))}
 
+            {visibleCount < finalList.length && (
+                <div className={style.showMoreContainer}>
+                    <button
+                        className="globalGoldButton"
+                        onClick={() => setVisibleCount(prev => prev + 12)}
+                    >
+                        Show More Businesses
+                    </button>
+                </div>
+            )}
         </section>
     )
 }

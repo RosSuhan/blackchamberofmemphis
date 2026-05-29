@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 3rem 0; */
+    padding: 3rem 0;
 }
 
 .quoteLightbox {
@@ -18,3 +18,4 @@
     line-height: 1.1;
     margin: .5rem 0;
 }
+

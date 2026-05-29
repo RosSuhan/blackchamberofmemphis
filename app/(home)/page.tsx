@@ -5,6 +5,7 @@ import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage"
 import type { Metadata } from "next";
 import HomePageCategorySection from "./homePageCategorySection";
 import OneCtaButtonRow from "@/components/callToAction/OneCtaButtonRow";
+import PartnerLogoSection from "@/components/PartnerLogoSection/page";
 
 
 export const metadata: Metadata = {
@@ -120,7 +121,7 @@ export default function Home() {
         ctaLink="/get-listed"
       />
 
-      
+      <PartnerLogoSection/>
     </section>
   );
 }

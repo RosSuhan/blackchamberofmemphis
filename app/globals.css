@@ -170,7 +170,7 @@ body {
 @media (min-width:600px) {
   .globalGoldButton,
   .globalDarkButton {
-    width: 30%;
+    width: 165px;
   }
 }
 
@@ -188,14 +188,14 @@ body {
   
   .globalGoldButton,
   .globalDarkButton {
-    width: 28%;
+    width: 180px;
   }
 }
 
 @media (min-width:850px) {
   .globalGoldButton,
   .globalDarkButton {
-    width: 25%;
+    width: 250px;
     /* padding: 1rem; */
   }
 }

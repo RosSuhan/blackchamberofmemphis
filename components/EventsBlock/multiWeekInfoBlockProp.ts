@@ -1,9 +1,10 @@
 export type MultiWeekInfoProp = {
     eventTopic : string
-    eventDateTime : string
-    eventAddressLink : string
-    eventAddress : string
-    eventCtaButton : string,
-    eventCtaLink : string,
+    eventDateTime? : string
+    address? : boolean
+    eventAddressLink? : string
+    eventAddress? : string
+    eventCtaButton? : string,
+    eventCtaLink? : string,
     eventDetails : string
 }

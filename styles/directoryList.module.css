@@ -9,3 +9,7 @@
     row-gap: 2rem;
     column-gap: 5%;
 }
+
+.resultCount {
+    width: 90%;
+}

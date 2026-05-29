@@ -12,6 +12,7 @@ type OneColumnProps = {
     paragraph : string
     multiWeekProgram? : boolean
     multiEvents : MultiWeekInfoProp[]
+    paragraphTwo? : string
 }
 
 
@@ -25,7 +26,8 @@ export default function OneColumn({
     subHeading, 
     paragraph, 
     multiWeekProgram, 
-    multiEvents
+    multiEvents,
+    paragraphTwo
 }: OneColumnProps){
     return(
         <section
@@ -68,6 +70,13 @@ export default function OneColumn({
                     multiEvents={multiEvents}
                 />
             : null}
+
+            {paragraphTwo ?
+                <div
+                    className='globalText'
+                    dangerouslySetInnerHTML={{__html:paragraphTwo}}
+                />
+            :null}
         </section>
     )
 }

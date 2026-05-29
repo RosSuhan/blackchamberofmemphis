@@ -28,6 +28,7 @@ export default function MultiWeekInfoBlock({
                         { event.eventTopic}
                     </h3>
 
+                    {event.address ? 
                     <ul
                         className={style.eventTimeList}
                     >
@@ -62,7 +63,7 @@ export default function MultiWeekInfoBlock({
                                 </>
                             }
                         </li>
-                    </ul>
+                    </ul> : null}
 
                     <div
                         className='globalSmallText'
