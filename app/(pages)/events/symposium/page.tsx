@@ -18,7 +18,7 @@ export default function Symposium(){
             type : "internal" 
         },
         {   
-            path: "https://growthzone.bcom/registration",
+            path: "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3",
             buttonName: "Register To Attend",
             type : 'external'
         },

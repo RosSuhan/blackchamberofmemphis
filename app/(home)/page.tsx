@@ -1,10 +1,10 @@
-import HomepageMemberDirectoryCTArow from "@/components/directoryComponents/HomepageMemberDirectoryCTArow";
+import MultiCtaButtonRow from "@/components/callToAction/multiCtaButtonRow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
-import Partners from "@/components/partners/page";
 import Popup from "@/components/Popup/page";
-import ThreeLinkBlock from "@/components/threeLinkBlocks/page";
-import WhoWeAre from "@/components/whoWeAre/page";
+import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
 import type { Metadata } from "next";
+import HomePageCategorySection from "./homePageCategorySection";
+import OneCtaButtonRow from "@/components/callToAction/OneCtaButtonRow";
 
 
 export const metadata: Metadata = {
@@ -84,14 +84,43 @@ export default function Home() {
         placeholder = {"Search for services, businesses or keywords..."}
       />
 
-      <WhoWeAre/>
+      <TwoColumnTextImage
+        rowDirection = {true}
+        imageLink = {"/assets/bcom-new-website-image.webp"}
+        imageAlt=""
+        imageWidth={1000}
+        imageHeight={704}
+        blockHeading = {"Your Next Step Starts Here"}
+        blockText = {"Whether you're launching a new venture, growing an established business, or simply looking to connect with the right people — the Black Chamber of Memphis has the resources, network, and programmes to support you every step of the way. We bring together Memphis business owners, community leaders, and industry partners to create real opportunities for growth and collaboration. From membership benefits and business listings to events and dedicated support programmes, everything we offer is designed with your success in mind. Take your next step today and discover what becoming part of the Black Chamber of Memphis community can do for your business."}
+        ctaLink=""
+        buttonText = {"Learn More"}
+        columnBackgroundColor = {'var(--white)'}
+      />
 
-      <ThreeLinkBlock/>
+      <TwoColumnTextImage
+        rowDirection = {false}
+        imageLink = {"/assets/members-of-bcom-3.webp"}
+        imageAlt = ""
+        imageWidth={2048}
+        imageHeight={1365}
+        blockHeading = {"Why Join The Chamber?"}
+        blockText = {'Membership with the Black Chamber of Memphis connects you with a powerful network of business leaders, decision-makers, and community partners who open doors to new clients, referrals, and exclusive opportunities. Elevate your brand presence, build trust, and align with a respected organisation that reinforces your credibility across Greater Memphis. From educational content and member-only resources to events and collaborations, you gain the practical tools and meaningful connections needed to grow at every stage of your business journey.'} 
+        ctaLink = {"/membership"}
+        buttonText = {"Membership"}
+        columnBackgroundColor = {'var(--white)'}
+      />
 
-      <HomepageMemberDirectoryCTArow/>
+      <HomePageCategorySection/>
 
-      <Partners/>
+      <OneCtaButtonRow
+        sectionBackground = {"var(--darkGrey)"}
+        textColor="var(--white)"
+        ctaText="List your business for free and get discovered by the Memphis community."
+        ctaButton="Add Your Business"
+        ctaLink="/get-listed"
+      />
 
+      
     </section>
   );
 }

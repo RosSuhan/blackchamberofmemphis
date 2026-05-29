@@ -13,6 +13,7 @@ type TwoColumnProps = {
     blockText : string
     ctaLink : string
     buttonText : string
+    columnBackgroundColor? : string
 }
 
 export default function TwoColumnTextImage({
@@ -24,7 +25,8 @@ export default function TwoColumnTextImage({
     blockHeading, 
     blockText,
     ctaLink, 
-    buttonText
+    buttonText,
+    columnBackgroundColor
 }:TwoColumnProps){
 
     return(
@@ -44,7 +46,7 @@ export default function TwoColumnTextImage({
             </div>
             <div
                 className={style.sectionColumn}
-                style={{padding:"1rem 0"}}
+                style={{padding:"1rem 0", background:columnBackgroundColor}}
             >
                 <h2
                     className='globalSecondHeading'

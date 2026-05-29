@@ -117,6 +117,7 @@ body {
 .globalGoldButton {
   background-color: var(--lightGold);
   color: var(--black);
+  border: solid var(--black) 1px;
 }
 
 .globalDarkButton {
