@@ -1,0 +1,48 @@
+.videoBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+
+}
+
+.video {
+    width: 200px;
+    height: 112.5px;
+}
+
+@media (min-width:300px) {
+    .video {
+        width: 300px;
+        height: 168px;
+    }
+}
+
+@media (min-width:400px) {
+    .video {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (min-width:500px) {
+    .video {
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media (min-width:700px) {
+    .video {
+        width: 600px;
+        height: 338px;
+    }
+}
+
+@media (min-width:1000px) {
+    .video {
+        width: 1000px;
+        height: 563px;
+    }
+}

@@ -7,6 +7,7 @@ import PartnerWithUs from '@/components/symposiumComps/partnerWithUs/page'
 import SymFooter from '@/components/symposiumComps/symFooter/page'
 import ThreeBlockRow from '@/components/symposiumComps/threeBlockRow/page'
 import WideTextSection from '@/components/symposiumComps/wideTextSection/page'
+import VideoBlock from '@/components/VIDEO/page'
 import { symposiumPartners } from '@/lib/symposium'
 
 export default function Symposium(){
@@ -31,6 +32,8 @@ export default function Symposium(){
             />
 
             <ThreeBlockRow/>
+
+            <VideoBlock/>
 
             <WideTextSection
                 wideTextSectionHeading={"Building Wealth In Our Community Symposium"}
