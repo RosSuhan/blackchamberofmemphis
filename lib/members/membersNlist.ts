@@ -8,8 +8,10 @@ import { newHopeBaptist } from './(n)/newHopeBaptist'
 import { newHopeBaptistChurchMemphis } from './(n)/newHopeBaptistChurchMemphis'
 import { newSalemMissionaryBaptist } from './(n)/newSalemMissionaryBaptist'
 import { neatNtidy } from './(n)/neatNtidy'
+import { nextMoveNationConsulting } from './(n)/nextMoveNationConsulting'
 
 export const membersNlist = [
+    nextMoveNationConsulting,
     neatNtidy,
     nailsByNicole,
     newVisionsTechSol,

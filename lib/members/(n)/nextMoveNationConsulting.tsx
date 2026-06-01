@@ -1,6 +1,6 @@
 import { MembersListType } from './../membersListType'
 
-export const template : MembersListType = {
+export const nextMoveNationConsulting : MembersListType = {
     memberStatus: true,
     id : "next-move-nation-consulting",
     businessName : "Next Move Nation Consulting",
