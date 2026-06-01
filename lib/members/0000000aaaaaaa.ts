@@ -38,6 +38,12 @@ export const template : MembersListType = {
     twitter: "",
     tiktok : "",
     pinterest : "",
-    offering : ``,
-    busBullets : ``,
+    offering : `
+        <ul style="text-align: left">
+            <li></li>
+        </ul>`,
+    busBullets : `
+        <ul style="text-align: left">
+            <li></li>
+        </ul>`,
 }

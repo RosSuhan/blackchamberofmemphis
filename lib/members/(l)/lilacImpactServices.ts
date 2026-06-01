@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const lilacImpactServices : MembersListType = {
-    memberStatus: true,
+    memberStatus: false,
     id : "lilac-impact-services",
     businessName : "Lilac Impact Services",
     bannerImage : "",
