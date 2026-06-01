@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const caviarBeautyInstitute : MembersListType = {
-    memberStatus: true,
+    memberStatus: false,
     id : "caviar-beauty-intitute",
     businessName : "Caviar Beauty Institute",
     bannerImage : "",

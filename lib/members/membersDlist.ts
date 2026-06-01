@@ -6,8 +6,10 @@ import { diamondSafetyTraining } from './(d)/diamondSafetyTraining'
 import { davinchiRestLounge } from './(d)/davinchiRestLounge'
 import { devyneBusCon } from './(d)/devyneBusCon'
 import { dawgTeamApparel } from './(d)/dawgTeamApparel'
+import { doreTouchEventCenter } from './(d)/doreTouchEventCenter'
 
 export const membersDlist = [
+        doreTouchEventCenter,
         dbkStudios,
         dbosElvisPresley,
         dbosRiverdale,
