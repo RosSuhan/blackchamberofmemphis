@@ -22,7 +22,7 @@ export const bcomRedBirdMixer : EventListType = {
     eventCTAbuttonLink : "",
     eventCTAbuttonText : "Register today",
     registrationButtonText : "Register Today",
-    registrationButtonLink : '',
+    registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/bcom-networking-mixer-annual-family-night-at-autozone-park-1735311?sourceTypeId=EmailInvitation',
     eventPastDescription: "",
     eventPastBlog: ``,
     eventGallery: []
