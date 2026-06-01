@@ -132,7 +132,7 @@ export default async function NewMemberPage({ params }: Props){
             
             {selectedMember?.profileBusinessDescription ? 
                 <OneColumn
-                    blockHeading = {"Detaild Description for this business:"}
+                    blockHeading = {"Detailed Description for this business:"}
                     paragraph = {selectedMember.profileBusinessDescription}
                     multiWeekProgram = {false}
                     multiEvents = {[]}
