@@ -1,3 +1,16 @@
 .partnerCatSection {
     background: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.partnersLinksRow {
+    padding: 2rem 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }

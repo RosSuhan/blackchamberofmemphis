@@ -1,4 +1,6 @@
+import OneCtaButtonRow from "@/components/callToAction/OneCtaButtonRow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
+import PartnerCatSection from "@/components/PARTNERSHIP/partnerCatSection/page";
 import OneColumn from "@/components/WordImageBlocks/OneColumn";
 import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
 
@@ -35,10 +37,10 @@ export default function PartnerSingle(){
 
             <TwoColumnTextImage
                 rowDirection = {false}
-                imageLink = {''} 
+                imageLink = {'/assets/networking-scaled-1.webp'} 
                 imageAlt = {''} 
-                imageWidth = {100} 
-                imageHeight = {100} 
+                imageWidth = {2560} 
+                imageHeight = {1468} 
                 blockHeading = {"Our Vision for Partnership"} 
                 blockText = {`
                     <p>We are building a coalition of organisations that are genuinely invested in the economic advancement of Black entrepreneurs and Black-owned businesses across the Greater Memphis area.</p>
@@ -86,10 +88,10 @@ export default function PartnerSingle(){
 
             <TwoColumnTextImage
                 rowDirection = {true}
-                imageLink = {''} 
+                imageLink = {'/assets/members-of-bcom-1.webp'} 
                 imageAlt = {''} 
-                imageWidth = {100} 
-                imageHeight = {100} 
+                imageWidth = {2048} 
+                imageHeight = {1363} 
                 blockHeading = {"What Our Partnerships Mean for You"} 
                 blockText = {`
                     <p>As a BCoM member, our partnerships are your partnerships. When we align with an organisation, we do so with the goal of creating a direct line between their resources, networks, and opportunities and the businesses in our directory.</p>
@@ -104,6 +106,23 @@ export default function PartnerSingle(){
                 ctaLink = {''}
                 buttonText = {''}
                 columnBackgroundColor = {''}
+            />
+
+            <PartnerCatSection/>
+
+            <OneCtaButtonRow
+                sectionBackground = {"var(--darkGrey)"}
+                textColor = {"var(--white)"}
+                ctaText = {`
+                    <h2 style="globalSecondHeading">Becoming a Partner</h2>
+                    <p>
+                        We are actively growing our coalition. If your organisation is aligned with our mission and is looking to invest meaningfully in Memphis's Black business community, we would like to hear from you.
+                    </p>
+                    <p>
+                        A BCoM partnership is not a sponsorship arrangement — it is a working relationship with a clear purpose. We bring our network, our credibility, and our commitment. We ask the same of our partners.
+                    </p>`}
+                ctaButton = {"Become a Partner"}
+                ctaLink = {"/partnerships/become-a-partner"}
             />
         </main>
     )
