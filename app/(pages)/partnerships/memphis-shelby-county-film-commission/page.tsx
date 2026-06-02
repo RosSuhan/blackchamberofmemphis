@@ -8,10 +8,10 @@ import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage"
 export default function MemphisShelbyCountyFilmComission(){
     const twoDirectoryList = [
         {
-            eventTopic : "Get listed on the BCom Member Directory",
+            eventTopic : "Get listed in the BCom Member Directory",
             eventDetails : `<p>Your listing on our website connects you with fellow entrepreneurs, potential partners, and clients across the Memphis/Shelby County business community.</p>`
         },{
-            eventTopic : "Get listed on the Film Commission's Production Directory",
+            eventTopic : "Get listed in the Film Commission's Production Directory",
             eventDetails : `<p>Your listing at filmmemphis.org puts your business directly in front of film and television productions actively looking for Memphis/Shelby County-based vendors and service providers.</p>`
         }
     ]
