@@ -7,6 +7,7 @@ import LastCtaSection from '@/components/symposiumComps/lastCTASection/page'
 import TierSection from '@/components/symposiumComps/tiersSection/page'
 import FAQSection from '@/components/symposiumComps/faqSection/page'
 import SymFooter from '@/components/symposiumComps/symFooter/page'
+import OneColumn from '@/components/WordImageBlocks/OneColumn'
 
 export default function Sponsorship(){
     const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3"
@@ -307,7 +308,19 @@ export default function Sponsorship(){
                 ctaButtons={sponsorCtaButtons}
             />
 
-            <ThreeBlockRow/>
+            <OneColumn
+                backgroundColor='#2d353c'
+                textColor='var(--white)'
+                headingIntro=''
+                headingTextColor=''
+                blockHeading=''
+                subHeading=''
+                paragraph = {`
+                    <p>The 2026 BCOM Symposium offers sponsors a focused opportunity to align with entrepreneurship, economic mobility, and business growth in Memphis. With a curated audience of approximately 120 entrepreneurs, investors, public-sector leaders, corporate partners, and ecosystem builders, the event is designed for high-quality engagement and long-term community investment. Your sponsorship helps BCOM create a practical business growth experience centered on access to capital, investment readiness, procurement visibility, technology adoption, and business mobility.</p>`}
+                multiEvents={[]}
+            />
+
+            {/* <ThreeBlockRow/> */}
 
             <TierSection
                 // sectionBackground = {"#f1dbb9"}
@@ -336,7 +349,26 @@ export default function Sponsorship(){
                 sponsorshipApplicationLink = {applySponsorshipLink}
             />
 
-            <FAQSection
+            <OneColumn
+                backgroundColor='#2d353c'
+                textColor='var(--white)'
+                headingIntro=''
+                headingTextColor=''
+                blockHeading='Why Sponsor?'
+                subHeading=''
+                paragraph={`
+                    <p>Your sponsorship is an investment in business growth, economic mobility, and the future of entrepreneurship in Memphis. By partnering with BCOM, you gain access to a focused room of entrepreneurs, funders, civic leaders, business advisors, and decision-makers actively shaping the local and regional business landscape.</p>
+                    <ul style="text-align:left">
+                        <li>Be positioned as a partner in Memphis’ entrepreneurial future</li>
+                        <li>Engage directly with growth-ready businesses and ecosystem leaders</li>
+                        <li>Align with a timely civic and economic development platform</li>
+                        <li>Support practical conversations around capital, procurement, innovation, and business readiness</li>
+                        <li>Gain visibility across event marketing, digital channels, onsite materials, and post-event storytelling</li>
+                    </ul>`}
+                multiEvents={[]}
+            />
+
+            {/* <FAQSection
                 sectionHeading={'Why Sponsor?'}
                 sectionIntro={`
                     <p><strong>Invest in the future of Memphis.</strong> <br/>Your partnership helps BCoM educate and equip entrepreneurs, while positioning your brand as a catalyst for economic growth and opportunity.</p>
@@ -345,101 +377,12 @@ export default function Sponsorship(){
                 qAList={corporateQandA}
                 questionBackground = {"#977A66"}
                 answerBackground = {"#ededed"}
-            />
+            /> */}
 
             <LastCtaSection
                 buttonsInfo={sponsorCtaButtons}
             />
 
-            {/* <section>
-                <h2>
-                    Connect with Influencers
-                </h2>
-                <p>
-                    Engage directly with seasoned business owners, corporate leaders, policymakers, and emerging entrepreneurs who are shaping the city’s economic future.
-                </p>
-            </section> */}
-
-            {/* <section>
-                <h2>
-                    Stand Out Across Platforms
-                </h2>
-                <p>
-                    Gain prominent visibility through billboards, digital campaigns, printed material, media coverage, and on-site engagement.
-                </p>
-            </section> */}
-            {/* <section>
-                <h2>
-                    Lead as a Champion
-                </h2>
-                <p>
-                    Demonstrate your commitment to strengthening Memphis’ business ecosystem and advancing economic growth. Sponsorship positions your brand as a leader invested in the city’s future.
-                </p>
-            </section> */}
-            {/* <section>
-                <h2>
-                    Expand Access & Opportunity
-                </h2>
-                <p>
-                    Your support helps lower ticket costs and creates opportunities to sponsor attendance for local college students and emerging entrepreneurs—broadening participation and strengthening the business community.
-                </p>
-            </section> */}
-            {/* sponsor tiers */}
-            {/* <section> */}
-                
-
-                
-
-                {/* Gold sponsor */}
-                {/* <div>
-                    <p>
-                        <span>$</span>
-                        5,000
-                    </p>
-                    <span>
-                        Gold
-                    </span>
-                    <ul>
-                        <li>Logo Displayed on Printed & Digital Material</li>
-                        <li>1 Vendor Table</li>
-                        <li>5 Symposium Tickets</li>
-                        <li>5 Speaker Meet & Greet Tickets</li>
-                        <li>5 Momentum Mixer Tickets</li>
-                    </ul>
-                </div> */}
-
-                {/* Silver sponsor */}
-                {/* <div>
-                    <p>
-                        <span>$</span>
-                        2,500
-                    </p>
-                    <span>
-                        Silver
-                    </span>
-                    <ul>
-                        <li>Name Displayed on Select Material</li>
-                        <li>2 Symposium Tickets</li>
-                        <li>2 Momentum Mixer Tickets</li>
-                    </ul>
-                </div> */}
-
-                {/* bronze sponsor */}
-                {/* <div>
-                    <p>
-                        <span>$</span>
-                        1,000
-                    </p>
-                    <span>
-                        Bronze
-                    </span>
-                    <ul>
-                        <li>Name Included on Post-Event Email & Social Media</li>
-                        <li>2 Symposium Tickets</li>
-                        <li>2 Momentum Mixer Tickets</li>
-                    </ul>
-                </div>
-            </section> */}
             <GallerySection
                 sectionBackground='#D8BCA5'
                 galleryHeadingText={"Our 2025 Partners"}

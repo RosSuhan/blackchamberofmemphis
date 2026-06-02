@@ -25,7 +25,7 @@ export default function BusinessSession(){
                     A high-level economic outlook designed to translate today’s market conditions into practical business strategy. This session will break down key indicators—including interest rates, lending trends, consumer behavior, and sector shifts—and what they mean for growth, pricing, hiring, and capital decisions. Attendees will leave with clear insights to navigate uncertainty and position their businesses for stability and expansion.
                 </p>
             </div>
-            <div
+            {/* <div
                 className={style.sessionBlock}
             >
                 <h3
@@ -38,7 +38,7 @@ export default function BusinessSession(){
                 >
                     This session equips growth-minded brands with the strategies needed to expand beyond local markets. From preparing for retail buyers to optimizing distribution channels and strengthening e-commerce operations, leaders will gain actionable insights to increase reach, revenue, and operational readiness. Designed for businesses ready to scale, this conversation bridges ambition with execution.
                 </p>
-            </div>
+            </div> */}
             <div
                 className={style.sessionBlock}
             >

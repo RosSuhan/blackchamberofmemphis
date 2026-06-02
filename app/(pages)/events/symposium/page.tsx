@@ -13,7 +13,7 @@ import { symposiumPartners } from '@/lib/symposium'
 export default function Symposium(){
     const ctaButtons = [
         {
-            path: "#sponsorship",
+            path: "/events/symposium/sponsorship",
             buttonName: "Become a Sponsor",
             type : "internal" 
         },
@@ -31,22 +31,22 @@ export default function Symposium(){
                 ctaButtons={ctaButtons || []}
             />
 
-            <ThreeBlockRow/>
+            {/* <ThreeBlockRow/> */}
 
             <VideoBlock/>
 
             <WideTextSection
                 wideTextSectionHeading={"Building Wealth In Our Community Symposium"}
                 wideTextSectionText = {`
-                    <p>The 2026 Building Wealth in Our Community Symposium is anchored in Building Entrepreneur City—a bold vision aligned with the City of Memphis’ commitment to positioning entrepreneurship as a key driver of economic growth. This approach recognizes that the strength of our city is directly tied to the success, sustainability, and scalability of its businesses.</p>
-                    <p>Through this lens, the Symposium brings together business leaders, policymakers, and corporate partners to move beyond conversation and into action—equipping attendees with the strategies, access, and connections needed to grow, compete, and contribute meaningfully to Memphis’s economy.</p>
-                    <p>With a strong emphasis on collaboration, this year’s experience is designed to break down silos across sectors, elevate local voices, and highlight the real impact individual businesses have on shaping the city’s future. Sessions will explore procurement opportunities, local and national economic trends, and what it truly means to build an entrepreneur-centered city.</p>
-                    <p>More than a theme, Building Entrepreneur City is a call to align vision with action—challenging each participant to see their business not only as an individual venture, but as a critical part of Memphis’s long-term economic ecosystem.</p>
+                    <p>The 2026 Building Wealth in Our Community Symposium is anchored in Building Entrepreneur City: Access, Investment, Mobility - a bold vision aligned with the City of Memphis’ commitment to positioning entrepreneurship as a key driver of economic growth. This approach recognizes that the strength of our city is directly tied to the success, sustainability, and scalability of its businesses.</p>
+                    <p>This year’s Symposium will be an intentionally curated, limited-capacity convening for entrepreneurs, investors, corporate leaders, public-sector partners, and business infrastructure providers. Hosted at Epicenter, the experience focuses on the capital, relationships, technology, procurement pathways, and advisory support needed to help growth-ready businesses move forward.</p>
+                    <p>With a strong emphasis on collaboration, the experience is designed to break down silos across sectors, elevate local voices, and highlight the real impact individual businesses have on shaping the city’s future. </p>
+                    <p>More than a theme, Building Entrepreneur City is a call to align vision with action-challenging each participant to see their business not only as an individual venture, but as a critical part of Memphis’s long-term economic ecosystem.</p>
 
                     <ul style="list-style: none; padding:0; margin: 0; text-align: left">
                         <li>
                             <span>Date:</span>
-                            August 28, 2026
+                            Friday, August 28, 2026
                         </li>
                         <li>
                             <span>
@@ -56,18 +56,15 @@ export default function Symposium(){
                         </li>
                         <li>
                             <span>Theme:</span>
-                            Building Entreprener City
+                            Building Entreprener City: Access, Investment, Mobility
                         </li>
-                        <li>
-                            <span>Expected Attendance:</span>
-                            250+ entrepreneurs, executives, policymakers, and professionals from across the region
-                        </li>
+                        
                     </ul>
                 `}
             />
             {/* FedEx Event Center - 415 Great View Dr E Suite 103, Memphis, TN 38134 */}
 
-            <CtaSection/>
+            {/* <CtaSection/> */}
 
             <BusinessSession/>
             
