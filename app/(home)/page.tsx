@@ -66,15 +66,15 @@ export default function Home() {
   return (
     <section>
       <Popup
-        imageSrc={'/pop-up/boomin-kiva.png'}
+        imageSrc={'/pop-up/bcom-kiva.png'}
         imageAlt={'BCoM and Boomin U - Ready to build a stronger business?'}
         imageWidth={4500}
         imageHeight={4500}
-        title={"Boomin U 2026 Programs for Small Business Owners"}
-        description={"Get a 0% Interest Loan for Your BusinessCopy: Join us June 9 for Fund U — learn how to access Kiva's"}
+        title={"Get a 0% Interest Loan for Your Business"}
+        description={"Join us June 9 for Fund U — learn how to access Kiva's interest-free small business loans. Free. Virtual. Real funding."}
         ctaText={'Read More'}
         ctaLink={"/events/boomin"}
-        storageKey="kiva"
+        storageKey="kiva-program"
       />
 
       <PageHeroSection

@@ -1,7 +1,62 @@
 'use client'
+import { useState } from 'react'
 import style from './becomePartnerForm.module.css'
+import { useRouter } from 'next/navigation'
 
 export default function BecomePartnerForm(){
+    const router = useRouter();
+    const [ loading, setLoading ] = useState(false)
+    const [ submitMessage, setSubmitMessage ] = useState('')
+    const [ partnerFormData, setPartnerFormData ] = useState({
+        businessName : '',
+        website : '',
+        businessSector : '',
+        partnerDescription : '',
+        contactPerson : '',
+        jobTitle : '',
+        contactEmail : '',
+        contactNumber : '',
+        partnershipBenefits : '',
+        resources : '',
+    })
+
+    const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+
+        setPartnerFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }))
+    }
+
+    const BECOMEPARTNER_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwYNY0N_ZDv0aA0CtpIFl1ZmRmdUyH1patWaQHeU5EFalpCUIHzugSVOv0HTERHz2ad/exec"
+    // const BECOMEPARTNER_GOOGLE_URL = ''
+
+    async function handlePartnerApplication(e:React.FormEvent) {
+        e.preventDefault();
+
+        setLoading(true);
+
+        try {
+            await fetch(BECOMEPARTNER_GOOGLE_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(partnerFormData)
+            })
+
+            console.log("Details of form:", partnerFormData)
+            setSubmitMessage("Form successfully submitted")
+            setLoading(false)
+
+            router.push('/')
+        } catch (err) {
+            console.error(err);
+            setSubmitMessage("Something went wrong. Please try again.")
+            setLoading(false)
+        }
+    }
+
     return (
         <section
             className={style.becomePartnerFormSection}
@@ -18,34 +73,45 @@ export default function BecomePartnerForm(){
                     >
                         Business Details
                     </h2>
-
+                    
+                    {/* businessName */}
                     <input 
                         type="text" 
-                        name="" 
+                        name="businessName" 
                         placeholder='Business Name'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.businessName}
                     />
 
+                    {/* website */}
                     <input 
-                        type="text" 
-                        name="" 
+                        type="url" 
+                        name="website" 
                         placeholder='Website'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.website}
                     />
                     
+                    {/* businessSector */}
                     <input 
                         type="text" 
-                        name="" 
+                        name="businessSector" 
                         placeholder='Industry / Sector'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.businessSector}
                     />
 
+                    {/* partnerDescription */}
                     <textarea 
-                        name="" 
-                        id=""
+                        name="partnerDescription" 
                         placeholder='Brief description of what you do.'
                         rows={5}
                         className={style.becomePartnerTextArea}
+                        onChange={handleInput}
+                        value={partnerFormData.partnerDescription}
                     ></textarea>
                 </div>
                 
@@ -59,32 +125,44 @@ export default function BecomePartnerForm(){
                         Contact Person
                     </h2>
                 
+                    {/* contactPerson */}
                     <input 
                         type="text" 
-                        name="" 
+                        name="contactPerson" 
                         placeholder='Full Name'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.contactPerson}
                     />
 
+                    {/* jobTitle */}
                     <input 
                         type="text" 
-                        name="" 
+                        name="jobTitle" 
                         placeholder='Position in the Company'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.jobTitle}
                     />
 
+                    {/* contactEmail */}
                     <input 
                         type="text" 
-                        name="" 
+                        name="contactEmail" 
                         placeholder='Email Address'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.contactEmail}
                     />
 
+                    {/* contactNumber */}
                     <input 
                         type="text" 
-                        name="" 
+                        name="contactNumber" 
                         placeholder='Phone number'
                         className={style.becomePartnerInput}
+                        onChange={handleInput}
+                        value={partnerFormData.contactNumber}
                     />
                 </div>
 
@@ -105,10 +183,11 @@ export default function BecomePartnerForm(){
                             How do you see this partnership benefiting BCoM Members?
                         </legend>
                         <textarea 
-                            name="" 
-                            id=""
+                            name="partnershipBenefits" 
                             rows={8}
                             className={style.becomePartnerTextArea}
+                            onChange={handleInput}
+                            value={partnerFormData.partnershipBenefits}
                         ></textarea>
                     </fieldset>
 
@@ -119,10 +198,11 @@ export default function BecomePartnerForm(){
                             What resources or opportunities can your organisation bring?
                         </legend>
                         <textarea 
-                            name="" 
-                            id=""
+                            name="resources" 
                             rows={8}
                             className={style.becomePartnerTextArea}
+                            onChange={handleInput}
+                            value={partnerFormData.resources}
                         ></textarea>
                     </fieldset>
                 </div>
@@ -133,10 +213,19 @@ export default function BecomePartnerForm(){
                     <button 
                         type="submit"
                         className='globalGoldButton'
+                        onClick={handlePartnerApplication}
                     >
-                        Submit
+                        {loading ? "Sending" : "Submit"}
                     </button>
                 </div>
+
+                {submitMessage ? 
+                    <p
+                        className='globalXsmallText'
+                    >
+                        {submitMessage}
+                    </p>
+                : null }
             </form>
         </section>
     )
