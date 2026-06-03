@@ -49,7 +49,7 @@ export default function BecomePartnerForm(){
             setSubmitMessage("Form successfully submitted")
             setLoading(false)
 
-            router.push('/')
+            router.push('/become-a-partner/form-successful')
         } catch (err) {
             console.error(err);
             setSubmitMessage("Something went wrong. Please try again.")
