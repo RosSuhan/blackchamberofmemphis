@@ -9,9 +9,15 @@ export default function PartnerCatSection(){
             featureImage : '/members/memphis-shelby-county-film-commission.webp',
             featureName : 'Memphis/Shelby County Film Commission',
             featureText : 'Founded by joint City/County resolution in 1985, the Memphis & Shelby County Film and Television Commission is the official economic development agency for film and television in the region. When productions come to Memphis, they need local businesses — caterers, transportation providers, construction crews, suppliers, and more. Our partnership ensures that BCoM members are visible, listed, and ready to be found when those opportunities arrive.',
-            featureTextLimit : 15,
-            featureLink : 'memphis-shelby-county-film-commission',
-            featureLinkText : 'string'
+            featureLink : '/partnerships/memphis-shelby-county-film-commission',
+        },
+        {
+            key : 'remoting',
+            star : false,
+            featureImage : '/members/remoting.webp',
+            featureName : 'Remoting.work',
+            featureText : "Growing a business shouldn't mean doing everything yourself. Through our partnership with remoting.work, BCoM members can access vetted, full-time or fractional back-office professionals — covering admin, marketing, operations, customer support, and more — for as low as $6 an hour, with payroll, compliance, and management fully handled. Less time in the back office means more time focused on growth.",
+            featureLink : 'https://blackchamberofmemphis.org/memphis-ten/back-office-support',
         }
     ]
 
@@ -33,15 +39,15 @@ export default function PartnerCatSection(){
             <div
                 className={style.partnersLinksRow}
             >
-                {collaboratePartners.map(({key, star, featureImage, featureName, featureText, featureTextLimit, featureLink, featureLinkText}) => (
+                {collaboratePartners.map(({key, star, featureImage, featureName, featureText, featureLink}) => (
                     <CATsingleBlock
                         key = {key}
                         star = {star}
                         featureImage = {featureImage}
                         featureName = {featureName}
                         featureText = {featureText}
-                        featureTextLimit = {featureTextLimit}
-                        featureLink = {`/partnerships/${featureLink}`}
+                        featureTextLimit = {15}
+                        featureLink = {featureLink}
                         featureLinkText = {'Read More'}
                     />
                 ))}
