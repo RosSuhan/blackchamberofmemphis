@@ -12,6 +12,8 @@ export const remotingWorkshop1 : EventListType = {
     eventAddressLink : "",
     eventAddress : "Virtual",
     eventName : "Be Staffed For Growth",
+    eventCaption : '',
+    eventHostName : '',
     eventDescription : "Join the Black Chamber of Memphis for Be Staffed for Growth, a webinar in partnership with remoting.work, focused on smart staffing strategies for sustainable business growth. Learn how to scale efficiently with remote talent, connect with professionals, and gain expert insights.",
     eventLongDescription : `
         <p>The Black Chamber of Memphis is pleased to invite you to our upcoming webinar, Be Staffed for Growth, hosted in collaboration with <a href="https://remoting.work">remoting.work</a>.</p>

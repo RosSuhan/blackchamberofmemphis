@@ -12,6 +12,8 @@ export const ecoBrunch : EventListType = {
     eventAddressLink : '',
     eventAddress : 'Epicenter, 150 Peabody Place',
     eventName : 'Ecosystem Brunch',
+    eventCaption : '',
+    eventHostName : '',
     eventLongDescription: ``,
     eventPastDescription: "",
     eventPastBlog: ``,

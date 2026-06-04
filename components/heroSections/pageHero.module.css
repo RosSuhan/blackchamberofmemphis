@@ -25,6 +25,19 @@
     padding: 5rem 0;
 }
 
+.eventHostRow {
+    width: 90%;
+}
+
+.eventHostName {
+    width: fit-content;
+    color: var(--darkGold);
+    border: solid var(--darkGold) 1px;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
 .pageHeroSearchBar {
     width: 90%;
     padding: 1rem 0;
@@ -78,6 +91,9 @@
     
     .pageHeroHalfCtaButtonRow {
         width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 }
 

@@ -15,6 +15,7 @@ type ctaButtonProps = {
 }[]
 
 type pageHeroProps = {
+    eventHost? : string
     mainHeading : string
     subHeading : string
     searchbar : boolean
@@ -27,6 +28,7 @@ type pageHeroProps = {
 }
 
 export default function PageHeroSection({
+    eventHost,
     mainHeading,
     subHeading,
     searchbar,
@@ -68,6 +70,18 @@ export default function PageHeroSection({
             <div
                 className={style.pageHeroOverlay}
             >
+                {eventHost ? 
+                    <div
+                        className={style.eventHostRow}
+                    >
+                        <p
+                            className={style.eventHostName}
+                        >
+                            {eventHost}
+                        </p>
+                    </div> 
+                : null}
+                
                 <h1
                     className='globalMainHeading'
                 >

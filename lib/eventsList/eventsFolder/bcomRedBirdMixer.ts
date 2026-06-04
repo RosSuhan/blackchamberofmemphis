@@ -5,6 +5,7 @@ export const bcomRedBirdMixer : EventListType = {
     id : "bcom-redbird-mixer",
     path: 'bcom-redbird-mixer',
     type: 'event',
+    eventHostName: 'black chamber of memphis',
     eventImage : "/events/bcom-redbird-quarterly-mixer.webp",
     eventImageAlt : "BCoM Networking Mixer + Annual Family Night at AutoZone Park",
     eventDate : "June 19, 2026",
@@ -13,7 +14,7 @@ export const bcomRedBirdMixer : EventListType = {
     eventAddressLink : "https://maps.app.goo.gl/BefQam1ESb4DPiMG8",
     eventAddress : "AutoZone Park, 200 Union Ave, Memphis, TN 38103 United States",
     eventName : "BCoM Networking Mixer",
-
+    eventCaption : 'Annual Family Night at AutoZone Park',
     eventDescription : "Join us for an evening of connection, culture, and community at AutoZone Park as the Memphis Redbirds commemorate the historic legacy of the Memphis Red Sox Negro League.",
     eventLongDescription: `
         <p>Join us for an evening of connection, culture, and community at AutoZone Park as the Memphis Redbirds commemorate the historic legacy of the Memphis Red Sox Negro League.</p>

@@ -13,6 +13,8 @@ export const bcomFamilyNight : EventListType = {
     eventAddressLink : "",
     eventAddress : "",
     eventName : "BCoM Annual Family & Friends Night at Autozone Park",
+    eventCaption : '',
+    eventHostName : '',
     eventDescription : "Network with the Memphis business community during the Memphis Red Birds’ annual commemoration of the Memphis Red Sox Negro League. Learn more about BCoM and Boomin University programs in a relaxed, community-focused setting.",
     eventLongDescription : `
         <p>Join the Black Chamber of Memphis for a fun night at the ballpark! Our quarterly networking mixer will be at the Memphis Redbirds game on Thursday, June 19, 2026 and we’d love for our Black Chamber members, friends, and families to join us.</p>

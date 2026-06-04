@@ -1,12 +1,8 @@
 'use client'
-import Image from "next/image";
-import style from '@/styles/eventSingle.module.css'
-import { BaselineCalendarMonth } from "@/components/icons/Calendar";
-import { Clock } from "@/components/icons/Clock";
-import { BaselineLocationOn } from "@/components/icons/Location";
-
 import { eventIndex } from "@/lib/eventsList/eventIndex";
 import { useParams } from "next/navigation";
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
+import OneColumn from "@/components/WordImageBlocks/OneColumn";
 
 export default function EventSingle(){
     const params = useParams();
@@ -15,76 +11,40 @@ export default function EventSingle(){
     if(!id) return null;
 
     const selectedEvent = eventIndex.find(c => c.id === id)
+
+    const registrationLinks = [
+        {
+            name : selectedEvent?.registrationButtonText || "",
+            path : selectedEvent?.registrationButtonLink || "",
+            type : 'globalGoldButton'
+        }
+    ]
     return(
-        <article
-            className={style.eventSinglePage}
-        >
-            <Image
-                src={selectedEvent?.eventImage || ""}
-                alt={selectedEvent?.eventName || ""}
-                width={1300}
-                height={800}
-                className={style.singleEventImage}
+        <section>
+            <PageHeroSection
+                eventHost = {selectedEvent?.eventHostName}
+                mainHeading = {selectedEvent?.eventName || ''}
+                subHeading = {''}
+                searchbar = {false}
+                ctaButtons = {registrationLinks}
+                placeholder = {''}
+                eventDate = {selectedEvent?.eventDate}
+                eventTime = {selectedEvent?.eventTime}
+                eventAddress = {selectedEvent?.eventAddress}
             />
 
-            <div
-                className={style.eventSchedule}
-            >
-                <span
-                    className={style.eventScheduleItem}
-                >
-                    <BaselineCalendarMonth
-                        className={style.eventSingleIcon}
-                    />
-                    {selectedEvent?.eventDate}
-                </span>
-                <span
-                    className={style.eventScheduleItem}
-                >
-                    <Clock
-                        className={style.eventSingleIcon}
-                    />
-                    {selectedEvent?.eventTime}
-                </span>
-                <span
-                    className={style.eventScheduleItem}
-                >
-                    {selectedEvent?.eventAddressLink ? 
-                        <>
-                            <a href={selectedEvent?.eventAddressLink}>
-                                <BaselineLocationOn
-                                    className={style.eventSingleIcon}
-                                />
-                                {selectedEvent?.eventAddress}
-                            </a>
-                        </>
-                    : 
-                        <>
-                            <BaselineLocationOn
-                                className={style.eventSingleIcon}
-                            />
-                            {selectedEvent?.eventAddress}
-                        </>}
-                </span>
-            </div>
-
-            <div
-                className={style.singleEventBio}
-                dangerouslySetInnerHTML={{__html: selectedEvent?.eventLongDescription || ""}}
+            <OneColumn
+                backgroundColor = {'var(--white)'}
+                textColor = {'var(--black)'}
+                headingIntro = {''}
+                headingTextColor = {''}
+                blockHeading = {''}
+                subHeading = {''}
+                paragraph = {selectedEvent?.eventLongDescription || ""}
+                multiWeekProgram = {false}
+                multiEvents = {[]}
+                paragraphTwo = {''}
             />
-
-            {selectedEvent?.registrationButtonLink ? 
-                <div
-                    className={style.singleRegisterRow}
-                >
-                    <a 
-                        href={selectedEvent?.registrationButtonLink}
-                        className={style.singleRegistrationButton}
-                    >
-                        {selectedEvent?.registrationButtonText}
-                    </a>
-                </div>
-            : null}
-        </article>
+        </section>
     )
 }

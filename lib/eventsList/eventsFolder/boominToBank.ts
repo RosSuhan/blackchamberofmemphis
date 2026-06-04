@@ -13,6 +13,8 @@ export const boominToBank : EventListType = {
     eventAddressLink : "",
     eventAddress : "",
     eventName : "Boomin to the Bank",
+    eventCaption : '',
+    eventHostName : '',
     eventDescription : "Master the financial reports that banks and investors look for, develop better organizational habits, and learn to make data-driven decisions that position your business to secure future funding.",
     eventLongDescription : "",
     eventPastDescription: "",

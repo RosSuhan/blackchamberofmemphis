@@ -12,6 +12,8 @@ export const firstQuarterlyNetwork : EventListType = {
     eventAddressLink : "https://share.google/P6Y7znprTRNXOW3fW",
     eventAddress : "150 Peabody Place, Memphis, TN 38103",
     eventName : "Black Chamber of Memphis 2026 Quarterly Networking Event",
+    eventCaption : '',
+    eventHostName : '',
     eventDescription : "",
     eventLongDescription : `
         <h3>Join Us for the BCOM 2026 Quarterly Networking Event!</h3>

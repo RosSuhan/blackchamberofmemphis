@@ -12,6 +12,8 @@ export const succSolFeb : EventListType = {
     eventAddressLink : '/https://maps.app.goo.gl/34sRfp1ADxjxGenw7',
     eventAddress : 'Epicenter, 150 Peabody PI, Memphis, TN, 38103',
     eventName : 'Succession Solutions presents - Acquiring Wealth by Acquisition: "The Legal Perspective"',
+    eventCaption : '',
+    eventHostName : '',
     eventLongDescription: `
         <p>The <span style="font-style: italic, font-weight: 900">Acquiring Wealth by Acquisition: "A Legal Perspective"</span> workshop offers participants a thorough overview of the legal concepts, approaches, and challenges associated with growing wealth through acquiring businesses and assets. This engaging session is perfect for entrepreneurs, investors, business owners, and professionals who want to broaden their portfolios and reduce legal risks.</p>
         <h3>Who Should Attend?</h3>
