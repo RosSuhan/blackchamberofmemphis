@@ -28,8 +28,8 @@
     width: 96%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem;
-    padding: .3rem;
+    gap: 0.3rem;
+    padding: .2rem;
 }
 
 .dayName {
@@ -37,6 +37,7 @@
     font-weight: 600;
     text-align: center;
     color: #555555;
+    font-size: .8rem;
 }
 
 .dayCell {
@@ -44,4 +45,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: .8rem;
 }

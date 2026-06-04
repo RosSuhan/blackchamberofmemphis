@@ -1,27 +1,24 @@
-import { businessList } from '@/lib/members'
 import style from './sandbox.module.css'
 import PageHeroSection from '@/components/heroSections/pageHeroSection'
 
-type Props = {
-    params: Promise<{id: string}>
-}
 
-export default async function Sandbox({params} : Props){
-    const { id } = await params
-    const selectedMember = businessList.find(a => a.id === id)
-
-    if(!selectedMember) {
-        return <main>Member not found</main>
-    }
+export default async function Sandbox(){
+    const resourcesCTAbuttons = [
+        {
+            name: 'Insights',
+            path: '/',
+            type: 'globalGoldButton'
+        }
+    ]
 
     return(
         <main
             className={style.pageHeroSection}
         >
             <PageHeroSection
-                mainHeading = {''}
-                subHeading = {''} 
-                searchbar = {false}
+                mainHeading = {'Insights, Stories & Community Impact'}
+                subHeading = {"Explore resources to grow your business, discover community stories, and stay connected with what's happening across Memphis"} 
+                searchbar = {true}
                 ctaButtons ={[]} 
                 placeholder = {''} 
                 initialSearchTerm = {''} 

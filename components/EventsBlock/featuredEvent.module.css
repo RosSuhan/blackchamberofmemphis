@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-evenly;
     background: var(--white);
-    box-shadow: 10px 10px 20px #000000;
+    box-shadow: 0px 0px 30px #000000;
 }
 
 .featuredEventImage {
@@ -38,9 +38,10 @@
 .featuredEventTimeItem {
     display: flex;
     align-items: center;
-    padding: .5rem 0;
+    padding: .1rem 0;
     column-gap: 2%;
-    font-size: 1rem;
+    font-size: .9rem;
+    font-weight: 800;
 }
 
 .featuredEventIcon {
@@ -81,8 +82,15 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width:600px) {
     .featuredEventBlock {
+        width: 80%;
+    }
+}
+
+@media (min-width: 700px) {
+    .featuredEventBlock {
+        width: 90%;
         align-items: flex-start;
         justify-content: center;
     }
@@ -118,14 +126,37 @@
 }
 
 @media (min-width: 800px) {
+    .featuredEventBlock {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
     .featuredEventImage {
         height: 330px;
     }
 }
 
+@media (min-width:900px) {
+    .featuredEventImage {
+        width: 30%;
+        height: 250px;
+    }
+
+    .featuredEventDescBlock {
+        width: 60%;
+    }
+
+    .featuredEventNameLink {
+        text-decoration: none;
+        color: var(--darkGold);
+        text-align: center;
+        line-height: 1.7rem;
+    }
+}
+
 @media (min-width: 1000px) {
     .featuredEventImage {
-        height: 280px;
+        height: 230px;
     }
 
     .featuredEventNameLink {

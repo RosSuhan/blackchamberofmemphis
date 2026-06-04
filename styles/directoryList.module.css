@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-evenly;
     background: var(--offWhite);
     padding: 2rem 0 3rem 0;

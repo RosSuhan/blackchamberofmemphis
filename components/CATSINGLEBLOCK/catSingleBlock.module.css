@@ -1,11 +1,12 @@
 .catBlock {
     background: var(--white);
-    width: 200px;
+    width: 80%;
     height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: stretch;
     padding: 1rem 0 2rem 0;
     border: solid 2px var(--darkGold);
     border-radius: 10px;
@@ -19,7 +20,7 @@
 
 .catLogo {
     width: 80%;
-    max-height: 180px;
+    max-height: 150px;
     height: auto;
     object-fit: contain;
 }
@@ -28,9 +29,10 @@
     width: 90%;
     text-align: center;
     display: flex;
+    flex: 1 1 80px;
     align-items: center;
     justify-content: center;
-    margin: .5rem 0;
+    margin: .2rem 0;
 }
 
 .catText {
@@ -67,20 +69,34 @@
     margin-bottom: 1rem;
 }
 
-@media (min-width:310px) {
+@media (min-width:600px) {
     .catBlock {
-        width: 300px;
+        width: 90%;
     }
 }
 
-@media (min-width:380px) {
+@media (min-width:700px) {
     .catBlock {
-        width: 350px;
+        width: 48%;
     }
 }
 
 @media (min-width:800px) {
+    .catBlock {
+        width: 330px;
+    }
+
     .catName {
-        height: 80px;
+        height: fit-content;
+    }
+}
+
+@media (min-width:900px) {
+    .catName {
+        line-height: 1.7rem;
+    }
+
+    .catItem {
+        padding: .1rem 0;
     }
 }

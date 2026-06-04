@@ -1,11 +1,13 @@
+.ourTeamPage {
+    padding: 7rem 0;
+}
+
 .teamRow {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 2rem;
     column-gap: 5%;
-    /* position: relative; */
 }
 
 .ourTeamHeading {

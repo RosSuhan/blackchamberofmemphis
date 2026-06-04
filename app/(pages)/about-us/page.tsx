@@ -66,10 +66,10 @@ export default function AboutUs(){
 
             <TwoColumnTextImage
                 rowDirection = {true}
-                imageLink = {"/assets/aboutusimage1.webp"}
+                imageLink = {"/assets/aboutusimage-ourMission.webp"}
                 imageAlt = {""}
                 imageWidth = {960} //960 × 1200
-                imageHeight = {1200}
+                imageHeight = {600}
                 blockHeading = {"Our Mission"}
                 blockText = {`<p>The Black Chamber of Memphis (BCOM) is dedicated to building a thriving community of entrepreneurs and business owners through meaningful connections, resources, and advocacy. We walk alongside our members at every stage of their business journey — from startup to succession — equipping them with the tools they need to grow and sustain generational wealth. Rooted in Memphis and committed to our community, we champion economic empowerment that uplifts families, strengthens neighborhoods, and shapes a more prosperous future for all.</p>`}
                 ctaLink = {""}
@@ -78,10 +78,10 @@ export default function AboutUs(){
 
             <TwoColumnTextImage
                 rowDirection = {false}
-                imageLink = {"/assets/aboutusimage2.webp"}
+                imageLink = {"/assets/aboutusimage2-ourVision.webp"}
                 imageAlt = {""}
                 imageWidth = {960}
-                imageHeight = {1200}
+                imageHeight = {600}
                 blockHeading = {"Our Vision"}
                 blockText = {`<p>The Black Chamber of Memphis envisions a Memphis where every entrepreneur has an equal opportunity to build, grow, and leave a lasting legacy. We see a future where thriving businesses anchor strong communities, and where economic equity is not just a goal — it is our shared reality. Through collaboration, education, and unwavering support, BCOM strives to be the heartbeat of business excellence and community prosperity in Memphis and beyond.</p>`}
                 ctaLink = {""}
@@ -103,7 +103,7 @@ export default function AboutUs(){
             />
 
             <OneColumn
-                backgroundColor = {"var(--white)"}
+                backgroundColor = {"var(--grey)"}
                 textColor = {"var(--black)"}
                 headingIntro=""
                 headingTextColor=""
@@ -122,8 +122,8 @@ export default function AboutUs(){
             <OurTeam/>
 
             <MultiCtaButtonRow
-                sectionBackground = {'var(--darkGrey'} 
-                sectionTextColor = {'var(--white)'}
+                sectionBackground = {'var(--darkGrey)'} 
+                sectionTextColor = {'#ffffff'}
                 sectionHeading = {'Ready to grow with us? Become a BCoM Member today.'}
                 sectionText = {'Partner with the Black Chamber of Memphis to expand your reach, connect with decision-makers, and play a role in shaping the local business ecosystem.'}
                 sectionButtons = {ctaRowButtons}
