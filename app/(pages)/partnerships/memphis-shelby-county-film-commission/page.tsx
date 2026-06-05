@@ -57,10 +57,10 @@ export default function MemphisShelbyCountyFilmComission(){
 
             <TwoColumnTextImage
                 rowDirection = {true}
-                imageLink = {''}
+                imageLink = {'/members/memphis-shelby-film-commission/image7.webp'}
                 imageAlt = {''}
-                imageWidth = {100}
-                imageHeight = {100}
+                imageWidth = {1200}
+                imageHeight = {1200}
                 blockHeading = {'Who Is the Film & Television Commission Foundation?'}
                 blockText = {`
                     <p>Founded in 1985 by joint City/County resolution, the Memphis & Shelby County Film and Television Commission is the official City/County economic development agency for film and television. This is not an arts organization — it is an economic engine. The Commission works primarily to assist and recruit funded productions that will economically impact multiple sectors of the local community, including local hires and local vendors.</p>
@@ -72,10 +72,10 @@ export default function MemphisShelbyCountyFilmComission(){
 
             <TwoColumnTextImage
                 rowDirection = {false}
-                imageLink = {''}
+                imageLink = {'/members/memphis-shelby-film-commission/movie-scene-2.webp'}
                 imageAlt = {''}
-                imageWidth = {100}
-                imageHeight = {100}
+                imageWidth = {1042}
+                imageHeight = {1286}
                 blockHeading = {'The Numbers Tell the Story'}
                 blockText = {`
                     <p>The film industry's impact on Memphis/Shelby County is real and tangible. Film Commissioner Linn Sitler has said: "There are very few areas of the local economy that aren't touched by a production." A single television series can transform the local economy — even one cancelled season of <span style="font-style:italic">Bluff City Law</span> generated an estimated $35 million to the state and local community. Productions bring jobs for truck drivers, carpenters, grip crews, and service providers — and sometimes the largest expense on a production is hotels.<p>
