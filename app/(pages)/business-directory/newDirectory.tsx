@@ -3,12 +3,14 @@ import { useSearchParams } from "next/navigation";
 import NewDirectoryList from "@/components/directoryComponents/newDirectoryList";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import CategoryFilter from "@/components/directoryComponents/CategoryFilters";
+import { useState } from "react";
 
 export default function NewDirectory(){
     const searchParams = useSearchParams();
 
     const searchTerm = searchParams.get('q') || '';
     const selectedCategory = searchParams.get('category') || 'all'
+    const [ filterTerm, setFilterTerm ] = useState('all')
     
 
     return (
@@ -24,6 +26,7 @@ export default function NewDirectory(){
 
             {/* <CategoryFilter
                 filterTerm = {filterTerm}
+                setFilterTerm = {setFilterTerm}
             /> */}
 
             <NewDirectoryList

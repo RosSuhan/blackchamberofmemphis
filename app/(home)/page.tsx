@@ -66,15 +66,15 @@ export default function Home() {
   return (
     <section>
       <Popup
-        imageSrc={'/pop-up/bcom-kiva.png'}
-        imageAlt={'BCoM and Boomin U - Ready to build a stronger business?'}
+        imageSrc={'/events/bcom-redbird-quarterly-mixer.webp'}
+        imageAlt={'BCoM Quarterly Network Mixer at the Redbird Game'}
         imageWidth={4500}
         imageHeight={4500}
-        title={"Get a 0% Interest Loan for Your Business"}
-        description={"Join us June 9 for Fund U — learn how to access Kiva's interest-free small business loans. Free. Virtual. Real funding."}
+        title={"BCoM Networking Mixer"}
+        description={"Join us for an evening of connection, culture, and community at AutoZone Park as the Memphis Redbirds commemorate the historic legacy of the Memphis Red Sox Negro League."}
         ctaText={'Read More'}
-        ctaLink={"/events/boomin"}
-        storageKey="kiva-program"
+        ctaLink={"/events/bcom-redbird-mixer"}
+        storageKey="redbird-event"
       />
 
       <PageHeroSection

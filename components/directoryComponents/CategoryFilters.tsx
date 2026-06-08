@@ -1,17 +1,29 @@
 'use client'
-import { useState } from "react"
 import style from './categoryFilters.module.css'
+
 
 type CategoryFilterProp = {
     filterTerm : string
+    setFilterTerm : React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function CategoryFilter({} : CategoryFilterProp){   
-    const [ filterTerm, setFilterTerm ] = useState('all')
-
+export default function CategoryFilter({filterTerm, setFilterTerm} : CategoryFilterProp){   
     const handleFilterButton = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFilterTerm(filterTerm)
     }
+
+    const mainFilters = [
+        {
+            name : "All",
+            termName : 'all'
+        },{
+            name : "Agriculture",
+            termName : 'agriculture'
+        },{
+            name : "Arts & Culture",
+            termName : 'arts-culture-media-entertainment'
+        },
+    ]
     return(
         <section
             className={style.categoryFilterSection}
@@ -19,30 +31,23 @@ export default function CategoryFilter({} : CategoryFilterProp){
             <form
                 className={style.categoryFilterForm}
             >
-                <div
-                    className={style.categoryButton}
-                >
-                    <input 
-                        type="radio" 
-                        name="serveCustomer" 
-                        onChange={(e) => handleFilterButton(e)}
-                        value={"All"}
-                        checked={filterTerm === "all"}
-                        className={style.categoryRadio}
-                    />
-                    <label >All</label>
-                </div>
-
-                <div>
-                    <input 
-                        type="radio" 
-                        name="serveCustomer" 
-                        onChange={(e) => handleFilterButton(e)}
-                        value={"restaurant"}
-                        checked={filterTerm === "restaurant"}
-                    />
-                    <label htmlFor="">Restaurant</label>
-                </div>
+                {mainFilters.map(({name, termName}, index) => (
+                    <div
+                        // className={clsx(style.categoryButton, filterTerm === termName && style.categoryActiveButton)}
+                        className={style.categoryButton}
+                        key={index}
+                    >
+                        <input 
+                            type="radio" 
+                            name="serveCustomer" 
+                            onChange={(e) => handleFilterButton(e)}
+                            value={termName}
+                            checked={filterTerm === termName}
+                            className={style.categoryRadio}
+                        />
+                        <label >{name}</label>
+                    </div>
+                ))}
             </form>
         </section>
     )
