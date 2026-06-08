@@ -22,7 +22,7 @@ export default function MemphisShelbyCountyFilmComission(){
             buttonName : "List Your Business on the BCoM Member Directory"
         },
         {
-            buttonLink : '/https://tn.reel-scout.com/crew_registration.aspx?g=memphis', 
+            buttonLink : 'https://tn.reel-scout.com/crew_registration.aspx?g=memphis', 
             buttonName : "Join the Film Commission's Production Directory"
         }
     ]

@@ -5,8 +5,8 @@ export const brandName : MembersListType = {
     id : "brand-name",
     businessName : "Brand Name",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
-    profileDescription : "Brand Name Marketing is a leading promotional marketing and branded merchandise company that helps organizations strengthen their brand presence through custom apparel, promotional products, online stores, and fulfillment solutions. The company provides end-to-end branding, sourcing, warehousing, and distribution services for businesses across South Africa and beyond.",
+    profileLogo : "brandname",
+    profileDescription : "High-quality, sustainable and ethical clothing/shoes made only of natural fibers, custom bespoke pieces, and conceptual wearable art pieces.",
     profileCategory : [
         "arts-culture-media-entertainment",
         "marketing-advertising-digital-services",
