@@ -1,5 +1,4 @@
 .categoryFilterSection {
-    /* background: green; */
     width: 99.5%;
     padding: 1rem 0;
     display: flex;
@@ -10,18 +9,17 @@
 
 .categoryFilterForm {
     width: 90%;
-    /* background-color: pink; */
     display: flex;
     align-items: center;
     column-gap: 20px;
-    overflow-x: scroll;
-    /* justify-content: space-evenly; */
+    overflow-x: auto;
 }
 
 .categoryButton {
     min-width: fit-content;
     border: solid 1px var(--darkGold);
     padding: .5rem 1rem;
+    margin-bottom: .5rem;
     border-radius: 8px;
 }
 
