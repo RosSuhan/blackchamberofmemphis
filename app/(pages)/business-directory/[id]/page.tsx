@@ -147,6 +147,7 @@ export default async function NewMemberPage({ params }: Props){
             : null}
 
             {/* <MoreBusinessRow
+                showMoreBusHeading = {"Businesses in the same Category"}
                 showMoreBus = {showMoreBusinesses}
                 searchTerm = {''}
                 selectedCategory = {''}
