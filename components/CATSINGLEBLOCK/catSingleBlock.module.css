@@ -53,20 +53,18 @@
 
 .catItem {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: .5rem 0;
+    margin: .4rem 0;
     font-size: 1rem;
     font-weight: 900;
     column-gap: 2%;
 }
 
 .catIcon {
-    width: 30px;
-    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
 }
 
 @media (min-width:600px) {

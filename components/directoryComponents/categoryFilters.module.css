@@ -14,10 +14,12 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
+    overflow-x: scroll;
     /* justify-content: space-evenly; */
 }
 
 .categoryButton {
+    min-width: fit-content;
     border: solid 1px var(--darkGold);
     padding: .5rem 1rem;
     border-radius: 8px;
@@ -30,5 +32,5 @@
 }
 
 .categoryRadio {
-    display: none;
+    display: none; 
 }

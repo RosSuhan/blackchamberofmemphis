@@ -65,6 +65,8 @@ export default function CATsingleBlock({
                         >
                             <BaselineCalendarMonth
                                 className={style.catIcon}
+                                width={30}
+                                height={30}
                             />
 
                             {featureDate}
@@ -74,7 +76,7 @@ export default function CATsingleBlock({
                                 className={style.catItem}
                             >
                                 <div
-                                    style={{fontSize:"1.2rem", fontWeight:"800"}}
+                                    style={{fontSize:"1.6rem", fontWeight:"800", width:"30px", height:"30px"}}
                                     className={style.catIcon}
                                 >
                                     $
@@ -88,6 +90,8 @@ export default function CATsingleBlock({
                         >
                             <BaselineLocationOn
                                 className={style.catIcon}
+                                width={50}
+                                height={40}
                             />
                             {featureLocation}
                         </li>

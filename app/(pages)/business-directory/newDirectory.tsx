@@ -24,16 +24,16 @@ export default function NewDirectory(){
                 initialSearchTerm={searchTerm}
             />
 
-            {/* <CategoryFilter
+            <CategoryFilter
                 filterTerm = {filterTerm}
                 setFilterTerm = {setFilterTerm}
-            /> */}
+            />
 
             <NewDirectoryList
                 showMoreBus = {""}
                 searchTerm = {searchTerm}
                 selectedCategory = {selectedCategory}
-                // filterTerm = {filterTerm}
+                filterTerm = {filterTerm}
             />
         </>
     )

@@ -30,6 +30,7 @@ export default function EventSingle(){
                 placeholder = {''}
                 eventDate = {selectedEvent?.eventDate}
                 eventTime = {selectedEvent?.eventTime}
+                eventPrice = {selectedEvent?.eventTicketPrice}
                 eventAddress = {selectedEvent?.eventAddress}
             />
 

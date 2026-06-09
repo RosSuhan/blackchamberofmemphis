@@ -24,6 +24,7 @@ type pageHeroProps = {
     initialSearchTerm? : string
     eventDate? : string
     eventTime? : string
+    eventPrice? : string
     eventAddress? : string
 }
 
@@ -37,6 +38,7 @@ export default function PageHeroSection({
     initialSearchTerm,
     eventDate,
     eventTime,
+    eventPrice,
     eventAddress
 }: pageHeroProps){
 
@@ -116,7 +118,7 @@ export default function PageHeroSection({
                     >
                         <span>{eventDate}</span>
                         {eventTime ? <><span>@</span><span>{eventTime}</span></>: null}
-                        
+                        {eventPrice ? <span>Ticket Price: ${eventPrice}</span> : null}
                         {eventAddress ? <span>{eventAddress}</span> : null}
                     </div>
                 : null}

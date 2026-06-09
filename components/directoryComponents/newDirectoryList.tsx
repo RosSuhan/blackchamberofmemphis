@@ -8,12 +8,14 @@ type NewDirectoryListProps = {
     showMoreBus : string,
     searchTerm : string,
     selectedCategory : string
+    filterTerm : string
 }
 
 export default function NewDirectoryList({
     showMoreBus,
     searchTerm,
-    selectedCategory
+    selectedCategory,
+    filterTerm
 } : NewDirectoryListProps){
 
     const [ visibleCount, setVisibleCount ] = useState(12);
@@ -31,7 +33,7 @@ export default function NewDirectoryList({
 
     const words = q.split(" ")
 
-    const noFilters = searchTerm.trim() === "" && selectedCategory === "all";
+    const noFilters = searchTerm.trim() === "" && selectedCategory === "all" && filterTerm === "all";
 
     const filtered = businessList.filter((biz) => {
 
@@ -51,6 +53,16 @@ export default function NewDirectoryList({
                 )
             : false;
 
+        const filterMatch = 
+                filterTerm === "all"
+                    ? true
+                    : Array.isArray(biz.profileCategory)
+                        ? biz.profileCategory.some(
+                            (cat: string) =>
+                                cat.toLowerCase() === filterTerm.toLowerCase()
+                        )
+                        : false;
+
         const tagMatch = Array.isArray(biz.categoryTag)
             ? biz.categoryTag.some((tag: string) =>
                 words.every(word => tag.toLowerCase().includes(word))
@@ -66,9 +78,9 @@ export default function NewDirectoryList({
 
         const searchMatch = !q
             ? true
-            : nameMatch || categoryMatch || subCategoryMatch || tagMatch;
+            : nameMatch || categoryMatch || subCategoryMatch || tagMatch || filterMatch;
 
-        return searchMatch && dropdownCatMatch
+        return searchMatch && dropdownCatMatch && filterMatch
     });
 
     const finalList = noFilters ? initialRandomOrder : filtered

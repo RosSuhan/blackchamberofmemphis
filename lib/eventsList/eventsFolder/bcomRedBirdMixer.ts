@@ -11,6 +11,7 @@ export const bcomRedBirdMixer : EventListType = {
     eventDate : "June 19, 2026",
     sortDate : "2026-06-19",
     eventTime : "7pm - 10pm",
+    eventTicketPrice : "50",
     eventAddressLink : "https://maps.app.goo.gl/BefQam1ESb4DPiMG8",
     eventAddress : "AutoZone Park, 200 Union Ave, Memphis, TN 38103 United States",
     eventName : "BCoM Networking Mixer",

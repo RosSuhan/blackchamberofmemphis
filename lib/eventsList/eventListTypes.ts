@@ -11,6 +11,7 @@ export interface EventListType {
     eventTime : string,
     eventAddressLink : string,
     eventAddress : string,
+    eventTicketPrice? : string,
     eventName : string,
     eventCaption : string,
     eventDescription : string,

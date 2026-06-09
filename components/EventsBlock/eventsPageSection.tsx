@@ -60,7 +60,7 @@ export default function EventsPageSection(){
                                 featureTextLimit = {15}
                                 featureLink = {`/events/${event.path}`}
                                 featureDate = {`${event.eventDate} ${event.eventTime}`}
-                                featurePrice = {''}
+                                featurePrice = {event.eventTicketPrice}
                                 featureLocation = {event.eventAddress}
                                 featureLinkText = {'Read More'}
                             />
