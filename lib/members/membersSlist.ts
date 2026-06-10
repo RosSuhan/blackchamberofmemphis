@@ -17,8 +17,10 @@ import { sassySpiritzMobileBartending } from './(s)/sassySpiritzMobileBartending
 import { selfSolutions } from './(s)/selfSolutions'
 import { sincereSalads } from './(s)/sincereSalads'
 import { southernBancorpMortgage } from './(s)/southernBancorpMortgage'
+import { southernShieldPestControl } from './(s)/southernShieldPestControl'
 
 export const membersSlist = [
+    southernShieldPestControl,
     southernBancorpMortgage,
     sincereSalads,
     sheGotGameLeague,
