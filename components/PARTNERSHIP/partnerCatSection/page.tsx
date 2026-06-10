@@ -18,6 +18,14 @@ export default function PartnerCatSection(){
             featureName : 'Remoting.work',
             featureText : "Growing a business shouldn't mean doing everything yourself. Through our partnership with remoting.work, BCoM members can access vetted, full-time or fractional back-office professionals — covering admin, marketing, operations, customer support, and more — for as low as $6 an hour, with payroll, compliance, and management fully handled. Less time in the back office means more time focused on growth.",
             featureLink : 'https://blackchamberofmemphis.org/memphis-ten/back-office-support',
+        },
+        {
+            key : "boominU",
+            star : false,
+            featureImage : '/members/boomin-u.webp',
+            featureName : "Boomin Universaty",
+            featureText : "Boomin University is an entrepreneurial development organization that helps small business owners access capital, business coaching, marketing support, and growth programs designed to scale sustainable businesses.",
+            featureLink : 'https://blackchamberofmemphis.org/events/boomin'
         }
     ]
 
