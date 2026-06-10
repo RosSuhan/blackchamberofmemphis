@@ -7,8 +7,8 @@ export default function MembershipTiers(){
         {
             id : 'rising-ent',
             tierName : 'Rising Entrepreneur',
-            tierPrice : '37.50',
-            tierTerm : 'Semi-Annual',
+            tierPrice : '150',
+            tierTerm : 'Annually',
             tierIntroHeading : 'Emerging founders (18-25) ready to start strong',
             tierIntroText : 'Build your foundation, gain exposure, and connect with real opportunities in the Memphis business Community.',
             tierListItem : [
@@ -26,7 +26,7 @@ export default function MembershipTiers(){
         {
             id : 'micro-bus',
             tierName : 'Micro Business',
-            tierPrice : '62.50',
+            tierPrice : '125 +',
             tierTerm : 'Semi-Annual',
             tierIntroHeading : 'Solo business owners ready to grow visibility',
             tierIntroText : 'Establish your presence, access new opportunities, and start positioning your business for consistent growth.',
@@ -48,7 +48,7 @@ export default function MembershipTiers(){
         {
             id : 'small-bus',
             tierName : 'Small Business',
-            tierPrice : '125',
+            tierPrice : '250 +',
             tierTerm : 'Semi-Annual',
             tierIntroHeading : 'For growing businesses ready to scale',
             tierIntroText : 'Unlock more consistent opportunities, increase your visibility, and actively grow your business through the Chamber network.',
@@ -70,7 +70,7 @@ export default function MembershipTiers(){
         {
             id : 'pres-council',
             tierName : "President's Council",
-            tierPrice : '625',
+            tierPrice : '1250 +',
             tierTerm : 'Semi-Annual',
             tierIntroHeading : 'For established businesses ready to expand influence',
             tierIntroText : 'Join one of the most influential networks of Black business leaders in Memphis. Collaborate with peers, contribute to strategic conversations, and position your business at the center of opportunity.',
@@ -90,7 +90,7 @@ export default function MembershipTiers(){
         {
             id : 'corporate',
             tierName : 'Corporate',
-            tierPrice : '1250',
+            tierPrice : '2500 +',
             tierTerm : 'Semi-Annual',
             tierIntroHeading : 'For organisations leading at scale',
             tierIntroText : 'Position your company as a key driver of economic growth in Memphis while gaining direct access to high-value opportunities, partnerships, and visibility.',
