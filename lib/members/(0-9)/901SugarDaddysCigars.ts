@@ -5,7 +5,7 @@ export const nineOoneSugarDaddysCigars : MembersListType = {
     id : "901-sugar-daddys-cigards",
     businessName : "901 Sugar Daddys Cigars ",
     bannerImage : "",
-    profileLogo : "",
+    profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "This small cigar business serves Memphis and Mississippi, offering premium and super-premium cigars curated for enthusiasts who appreciate quality craftsmanship and a refined smoking experience.",
     profileCategory : [
         "retail-shopping-specialty-stores",
