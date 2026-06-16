@@ -134,6 +134,7 @@ export default function Programs(){
                 searchbar = {false}
                 ctaButtons={[]}
                 placeholder = ''
+                stateButtons={[]}
             />
 
             {programsList.map(({id, pImage, pImageHeight, pImageWidth, gText, pHeading, pText, direction, pButtonText, pButtonCaption, pButtonLink, pDetails})=> (

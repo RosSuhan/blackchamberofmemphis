@@ -49,6 +49,7 @@ export default function GetListedPage(){
                 searchbar = {false}
                 ctaButtons={[]}
                 placeholder=""
+                stateButtons={[]}
             />
 
             <TwoColumnText

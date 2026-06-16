@@ -1,0 +1,89 @@
+.resourcesBodySection {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.resourcesTopFilterRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0 .9rem .5rem;
+    column-gap: 20px;
+    border: solid 8px var(--darkGold);
+    overflow-x: scroll;
+    /* overflow-y: visible; */
+    position: relative;
+}
+
+.resourcesMainCatButton {
+    border: solid var(--darkGold) 2px;
+    background: none;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.resourcesSubCatBlock {
+    width: 250px;
+    /* top: 85px; */
+    top: 0;
+    /* height: fit-content; */
+    background: var(--darkGrey);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    z-index: 999;
+    display: none;
+}
+
+.resourcesSideBar { 
+    /* width: 150px; */
+    background: var(--darkGrey);
+    /* background: purple; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.hide {
+    display: none;
+}
+
+
+.subCatBlock{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    row-gap: 1rem;
+    border: var(--darkGold) solid 1px;
+    border-radius: 10px;
+}
+
+.subCatBtn {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    /* border-bottom: var(--white) solid 1px; */
+    /* text-decoration: underline; */
+}
+
+.resourcesInformationBlock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+

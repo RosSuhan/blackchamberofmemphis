@@ -43,6 +43,7 @@ export default function Events(){
                 searchbar = {false}
                 ctaButtons = {[]}
                 placeholder = ""
+                stateButtons={[]}
             />
 
             <EventsPageSection/>

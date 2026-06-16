@@ -22,6 +22,7 @@ export default function NewDirectory(){
                 ctaButtons={[]}
                 placeholder="Search for services, business or keywords..."
                 initialSearchTerm={searchTerm}
+                stateButtons={[]}
             />
 
             <CategoryFilter
@@ -30,7 +31,6 @@ export default function NewDirectory(){
             />
 
             <NewDirectoryList
-                showMoreBus = {""}
                 searchTerm = {searchTerm}
                 selectedCategory = {selectedCategory}
                 filterTerm = {filterTerm}

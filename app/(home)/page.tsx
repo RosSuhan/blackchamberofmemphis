@@ -71,7 +71,7 @@ export default function Home() {
         imageWidth={4500}
         imageHeight={4500}
         title={"BCoM Networking Mixer"}
-        description={"Join us for an evening of connection, culture, and community at AutoZone Park as the Memphis Redbirds commemorate the historic legacy of the Memphis Red Sox Negro League."}
+        description={"Join us on June 19, 2026 @ 7pm - 10pm for an evening of connection, culture, and community at AutoZone Park as the Memphis Redbirds commemorate the historic legacy of the Memphis Red Sox Negro League."}
         ctaText={'Read More'}
         ctaLink={"/events/bcom-redbird-mixer"}
         storageKey="redbird-event"
@@ -83,6 +83,7 @@ export default function Home() {
         searchbar = {true}
         ctaButtons = {heroCTAbuttons}
         placeholder = {"Search for services, businesses or keywords..."}
+        stateButtons={[]}
       />
 
       <TwoColumnTextImage

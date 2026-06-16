@@ -100,6 +100,7 @@ export default function Boomin(){
                 eventDate = {'June - September, 2026'}
                 eventTime = {''}
                 eventAddress={''}
+                stateButtons={[]}
             />
 
             {/* <OneColumn

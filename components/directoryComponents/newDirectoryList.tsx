@@ -5,14 +5,12 @@ import { businessList } from '@/lib/members'
 import CATsingleBlock from '../CATSINGLEBLOCK/page'
 
 type NewDirectoryListProps = {
-    showMoreBus : string,
     searchTerm : string,
     selectedCategory : string
     filterTerm : string
 }
 
 export default function NewDirectoryList({
-    showMoreBus,
     searchTerm,
     selectedCategory,
     filterTerm

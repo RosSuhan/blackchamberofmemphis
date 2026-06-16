@@ -15,6 +15,7 @@ export default function BecomePartner(){
                 eventDate = {''}
                 eventTime = {''}
                 eventAddress = {''}
+                stateButtons={[]}
             />
 
             <BecomePartnerForm/>

@@ -18,6 +18,7 @@ export default function BoominPartnershipBlog(){
                 eventDate = {'May 14, 2026'} 
                 eventTime = {''} 
                 eventAddress = {''}
+                stateButtons={[]}
             />
 
             <OneColumn

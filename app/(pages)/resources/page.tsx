@@ -64,6 +64,7 @@ export default function Resources(){
                 searchbar = {false}
                 ctaButtons={[]}
                 placeholder = ""
+                stateButtons={[]}
             />
 
             <section

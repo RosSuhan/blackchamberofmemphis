@@ -12,6 +12,7 @@ export default function GetListedForm(){
                 searchbar = {false}
                 ctaButtons = {[]}
                 placeholder = {""}
+                stateButtons={[]}
             />
 
             <ListingFormComponent/>

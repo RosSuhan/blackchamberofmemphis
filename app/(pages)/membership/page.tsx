@@ -66,6 +66,7 @@ export default function Membership(){
                 eventDate = {''}
                 eventTime = {''}
                 eventAddress = {''}
+                stateButtons={[]}
             />
 
             <TwoColumnTextImage

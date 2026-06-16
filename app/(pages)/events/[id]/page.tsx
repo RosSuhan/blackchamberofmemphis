@@ -32,6 +32,7 @@ export default function EventSingle(){
                 eventTime = {selectedEvent?.eventTime}
                 eventPrice = {selectedEvent?.eventTicketPrice}
                 eventAddress = {selectedEvent?.eventAddress}
+                stateButtons={[]}
             />
 
             <OneColumn

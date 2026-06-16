@@ -14,6 +14,11 @@ type ctaButtonProps = {
     type: string
 }[]
 
+type stateButtonsProp = {
+    name : string,
+    key : string
+}[]
+
 type pageHeroProps = {
     eventHost? : string
     mainHeading : string
@@ -26,6 +31,7 @@ type pageHeroProps = {
     eventTime? : string
     eventPrice? : string
     eventAddress? : string
+    stateButtons : stateButtonsProp
 }
 
 export default function PageHeroSection({
@@ -39,7 +45,8 @@ export default function PageHeroSection({
     eventDate,
     eventTime,
     eventPrice,
-    eventAddress
+    eventAddress,
+    stateButtons
 }: pageHeroProps){
 
     const backgroundImage = "/assets/pageHeroImage.jpg"
@@ -57,6 +64,8 @@ export default function PageHeroSection({
 
         router.push(`/business-directory?q=${encodeURIComponent(searchTerm)}`)
     }
+
+    const [ stateButtonOpen, setStateButtonOpen ] = useState<string | null>(null)
 
     return(
         <section
@@ -138,6 +147,23 @@ export default function PageHeroSection({
                 ))}
                     </div>
                 : null}
+
+                {/* {stateButtons ?  */}
+                    <div
+                        className={style.pageHeroButtonRow}
+                    >
+                        {stateButtons.map((stateButton) => (
+                            <button 
+                                type="button"
+                                key={stateButton.key}    
+                                // className={clsx()}
+                                className='globalGoldButton'
+                            >
+                                {stateButton.name}
+                            </button>
+                        ))}
+                    </div>
+                {/* : null} */}
             </div>
         </section>
     )

@@ -39,6 +39,7 @@ export default function PastEventsPage(){
                 searchbar = {false}
                 ctaButtons={[]}
                 placeholder = ""
+                stateButtons={[]}
             />
             
             <PastEvents/>
