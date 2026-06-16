@@ -25,6 +25,7 @@ export default async function Sandbox(){
                 eventDate = {''} 
                 eventTime = {''} 
                 eventAddress = {''}
+                stateButtons={[]}
             />
         </main>
     )
