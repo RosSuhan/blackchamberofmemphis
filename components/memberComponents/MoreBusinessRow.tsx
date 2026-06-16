@@ -21,12 +21,12 @@ export default function MoreBusinessRow({showMoreBusHeading, showMoreBus, search
                 {showMoreBusHeading}
             </h3>
 
-            <NewDirectoryList
+            {/* <NewDirectoryList
                 showMoreBus = {showMoreBus}
                 searchTerm = {searchTerm}
                 selectedCategory = {selectedCategory}
                 filterTerm = {filterTerm}
-            />
+            /> */}
         </div>
     )
 }
