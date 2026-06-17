@@ -32,6 +32,8 @@ type pageHeroProps = {
     eventPrice? : string
     eventAddress? : string
     stateButtons : stateButtonsProp
+    selectedState? : string
+    setSelectedState? : (value: string) => void
 }
 
 export default function PageHeroSection({
@@ -46,7 +48,9 @@ export default function PageHeroSection({
     eventTime,
     eventPrice,
     eventAddress,
-    stateButtons
+    stateButtons,
+    selectedState,
+    setSelectedState,
 }: pageHeroProps){
 
     const backgroundImage = "/assets/pageHeroImage.jpg"
@@ -64,8 +68,6 @@ export default function PageHeroSection({
 
         router.push(`/business-directory?q=${encodeURIComponent(searchTerm)}`)
     }
-
-    const [ stateButtonOpen, setStateButtonOpen ] = useState<string | null>(null)
 
     return(
         <section
@@ -148,22 +150,23 @@ export default function PageHeroSection({
                     </div>
                 : null}
 
-                {/* {stateButtons ?  */}
+                {stateButtons ? 
                     <div
                         className={style.pageHeroButtonRow}
                     >
-                        {stateButtons.map((stateButton) => (
+                        {stateButtons?.map((stateButton) => (
                             <button 
                                 type="button"
                                 key={stateButton.key}    
+                                onClick={() => setSelectedState?.(stateButton.key)}
                                 // className={clsx()}
-                                className='globalGoldButton'
+                                className = { selectedState === stateButton.key ? 'globalGoldButton' : 'globalDarkButton'}
                             >
                                 {stateButton.name}
                             </button>
                         ))}
                     </div>
-                {/* : null} */}
+                : null} 
             </div>
         </section>
     )

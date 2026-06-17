@@ -1,10 +1,10 @@
 'use client'
 import style from '@/styles/resourcesPage.module.css'
 import PageHeroSection from "@/components/heroSections/pageHeroSection"
-import { useState } from "react"
-import clsx from 'clsx'
 import ResourcesCatBlock from '@/components/CATSINGLEBLOCK/RESOURCESCATBLOCK'
 import { allResources } from '@/lib/resources/allResources'
+import { useState } from 'react'
+import { resourceCategoriesList } from '@/lib/resources/resourcesCategoriesList'
 
 export default function ResourcesPage(){
     const resourcesStateButtons = [
@@ -20,8 +20,26 @@ export default function ResourcesPage(){
         }
     ]
 
-    const [ subCatFloatBlock, setSubCatFloatBlock ] = useState(false)
+    const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
+    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('')
+    const [ selectedSubCategory, setSelectedSubCategory ] = useState('')
 
+    const handleMainCategoryChange = (category: string) => {
+        setSelectedMainCategory(category)
+        setSelectedFilterCategory('')
+        setSelectedSubCategory('')
+    }
+
+    console.log(selectedMainCategory)
+
+    const filteredArticles = allResources.filter(
+        article => article.mainCategory === selectedMainCategory
+    )
+
+    const activeResourcesCategory = resourceCategoriesList.find(cat => cat.key === selectedMainCategory) // to get to insights
+    const activeFilterCategory = activeResourcesCategory?.filter.find(filter => filter.key === selectedFilterCategory) // to get to funding, training ......
+    const activeSubCategory = activeFilterCategory?.subCatList.find( subCatList => subCatList.key === selectedSubCategory)
+    
     return(
         <main>
             <PageHeroSection
@@ -32,6 +50,8 @@ export default function ResourcesPage(){
                 placeholder="Search Articles by Category or Topic"
                 initialSearchTerm=""
                 stateButtons = {resourcesStateButtons}
+                selectedState = {selectedMainCategory}
+                setSelectedState = {handleMainCategoryChange}
             />
             <section
                 className = {style.resourcesBodySection}
@@ -39,93 +59,41 @@ export default function ResourcesPage(){
                 <div
                     className={style.resourcesTopFilterRow}
                 >
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Funding
-                    </button>
-
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Mentorship
-                    </button>
-
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Training
-                    </button>
-
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Certification
-                    </button>
-
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Marketing
-                    </button>
-
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Legal
-                    </button>
-
-                    <button 
-                        type="button"
-                        className={style.resourcesMainCatButton}
-                    >
-                        Procurement
-                    </button>
+                    {activeResourcesCategory?.filter.map((filter) => (
+                        <button  
+                            type="button"
+                            key={filter.key}
+                            className={style.resourcesMainCatButton}
+                            onClick={() => setSelectedFilterCategory?.(filter.key)}
+                        >
+                            {filter.filterCat}
+                        </button>
+                    ))}
                 </div>
                 <div
-                    // className={clsx(subCatFloatBlock ? style.resourcesSideBar : style.hide)}
                     className={style.resourcesSideBar}
                 >
                     <div
                         className={style.subCatBlock}
                     >
-                        <button 
-                            type="button"
-                            className={style.subCatBtn}
-                        >
-                            Loans
-                        </button>
-                        <button 
-                            type="button"
-                            className={style.subCatBtn}
-                        >
-                            Grants
-                        </button>
-                        <button 
-                            type="button"
-                            className={style.subCatBtn}
-                        >
-                            Investors
-                        </button>
-                        <button 
-                            type="button"
-                            className={style.subCatBtn}
-                        >
-                            CDFIs
-                        </button>
+                        {activeFilterCategory?.subCatList.map((subCat) => (
+                            <button 
+                                key={subCat.key}
+                                type="button"
+                                className={style.subCatBtn}
+                                onClick={() => setSelectedSubCategory(subCat.key)}
+                            >
+                                {subCat.subCat}
+                            </button>
+                        ))}
+                        
                     </div>
                 </div>
 
                 <div
                     className={style.resourcesInformationBlock}
                 >
-                    {allResources.map((article) =>(
+                    {filteredArticles.map((article) =>(
                         <ResourcesCatBlock
                             key={article.id}
                             articleImage = {article.mainImage}

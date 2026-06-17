@@ -20,6 +20,7 @@ export const Article : ResourcesType = {
         },
     ],
     serveStage : ['Ideation', 'Start', 'Stabilize', 'Growth', 'Scale'],
-    mainCategory : 'funding',
-    subCategory : 'grants'
+    mainCategory : 'insights',
+    filterCategory : ['funding'],
+    subCategory : ['grants']
 }

@@ -14,5 +14,6 @@ export interface ResourcesType {
     offerings : offeringProp[],
     serveStage : string[],
     mainCategory : string,
-    subCategory : string
+    filterCategory : string[],
+    subCategory : string[]
 }
