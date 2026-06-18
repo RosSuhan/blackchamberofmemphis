@@ -14,7 +14,6 @@
     column-gap: 20px;
     border: solid 8px var(--darkGold);
     overflow-x: scroll;
-    /* overflow-y: visible; */
     position: relative;
 }
 
@@ -28,9 +27,7 @@
 
 .resourcesSubCatBlock {
     width: 250px;
-    /* top: 85px; */
     top: 0;
-    /* height: fit-content; */
     background: var(--darkGrey);
     position: absolute;
     display: flex;
@@ -41,9 +38,7 @@
 }
 
 .resourcesSideBar { 
-    /* width: 150px; */
     background: var(--darkGrey);
-    /* background: purple; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -74,8 +69,10 @@
     color: var(--white);
     font-weight: 700;
     cursor: pointer;
-    /* border-bottom: var(--white) solid 1px; */
-    /* text-decoration: underline; */
+}
+
+.extraTopicButtonsBlock {
+    display: none;
 }
 
 .resourcesInformationBlock {
@@ -87,3 +84,105 @@
     padding: 1rem 0;
 }
 
+@media (min-width:400px) {
+    .resourcesSideBar { 
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    
+    .subCatBlock{
+        width: 30%;
+    }
+
+    .extraTopicButtonsBlock {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        row-gap: .5rem;
+    }
+
+    .extraTopicDetail {
+        background: #eeeeee;
+        border-radius: 8px;
+    }
+
+    .extraTopicSummary {
+        background: var(--darkGrey);
+        color: var(--white);
+        list-style: none;
+        border: solid var(--darkGold) 2px;
+        border-radius: 5px;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
+    .extraTopicTextBlock {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        padding: .5rem 0;
+    }
+
+    .extraTopicButton {
+        background: none;
+        border: none;
+        width: fit-content;
+    }
+}
+
+@media (min-width:600px) {
+    .extraTopicButtonsBlock {
+        width: 40%;
+    }
+}
+
+@media (min-width:700px) {
+    .extraTopicButtonsBlock {
+        width: 30%;
+    }
+}
+
+@media (min-width:900px) {
+    .resourcesBodySection {
+        background: var(--darkGrey);
+    }
+    
+    .resourcesTopFilterRow {
+        background: var(--white);
+    }
+    
+    .resourcesSideBar { 
+        width: 150px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        padding: 1.5rem 0;
+    }
+    
+    .subCatBlock{
+        width: 80%;
+    }
+    
+    .extraTopicButtonsBlock {
+        width: 80%;
+        row-gap: 1rem;
+    }
+
+    .resourcesInformationBlock {
+        width: calc(100dvw - 150px);
+        background: var(--white);
+        padding: 1.5rem 0;
+    }
+}
+
+@media (min-width:1000px) {
+    .resourcesSideBar { 
+        width: 25%;
+    }
+    
+    .resourcesInformationBlock {
+        width: 75%;
+    }
+}

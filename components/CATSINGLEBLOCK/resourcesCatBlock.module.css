@@ -1,10 +1,9 @@
 .resourceContentBlock {
     width: 90%;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     border-radius: 10px;
     border: var(--darkGold) 2px solid;
 }
@@ -18,12 +17,9 @@
 .offeringBlock {
     width: 90%;
     padding: 0 0 .5rem 0;
-    /* background: purple; */
 }
 
 .offer {
-    /* width: 100%; */
-    /* background: pink; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +32,6 @@
 .offerTag {
     padding: .2rem .5rem;
     border-radius: 5px;
-    background: blue;
     color: #ffffff;
 }
 
@@ -46,7 +41,6 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
-    /* background-color: green; */
 }
 
 .serveItem {
@@ -56,13 +50,11 @@
 }
 
 .readButtonRow {
-    /* background: green; */
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: .5rem 0; */
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .readButton {
@@ -71,4 +63,30 @@
     border-radius: 5px;
     color: var(--white);
     text-decoration: none;
+}
+
+@media (min-width:600px) {
+    .resourceContentBlock {
+        width: 280px;
+    }
+    
+    .serveBlock {
+        margin-bottom: 1rem;
+    }
+    
+    .readButtonRow {
+        margin-top: auto;
+    }
+}
+
+@media (min-width:700px) {
+    .resourceContentBlock {
+        width: 320px;
+    }
+}
+
+@media (min-width:800px) {
+    .resourceContentBlock {
+        width: 350px;
+    }
 }

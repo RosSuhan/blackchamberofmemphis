@@ -134,7 +134,7 @@ export default function PageHeroSection({
                     </div>
                 : null}
 
-                {ctaButtons?
+                {ctaButtons?.length > 0 &&
                     <div
                         className={clsx(eventDate ? style.pageHeroHalfCtaButtonRow : style.pageHeroButtonRow)}
                     >
@@ -148,7 +148,7 @@ export default function PageHeroSection({
                             </Link>
                 ))}
                     </div>
-                : null}
+                }
 
                 {stateButtons ? 
                     <div

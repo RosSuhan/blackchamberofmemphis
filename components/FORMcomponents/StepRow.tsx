@@ -28,7 +28,7 @@ export default function StepRow({stepNumber, stepName, stepLeftButton, stepRight
             <div
                 className={style.stepRowStepsIndicator}
             >
-                Step {stepNumber} of 3 - {stepName}
+                Step {stepNumber} of 4 - {stepName}
             </div>
 
             <div

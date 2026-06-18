@@ -21,7 +21,7 @@ export default function ResourcesPage(){
     ]
 
     const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
-    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('')
+    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('funding')
     const [ selectedSubCategory, setSelectedSubCategory ] = useState('')
 
     const handleMainCategoryChange = (category: string) => {
@@ -86,7 +86,125 @@ export default function ResourcesPage(){
                                 {subCat.subCat}
                             </button>
                         ))}
+                    </div>
+
+                    <div
+                        className={style.extraTopicButtonsBlock}
+                    >
+                        <details
+                            className={style.extraTopicDetail}
+                            open
+                        >
+                            <summary
+                                className = {style.extraTopicSummary}
+                            >
+                                Starting a Business
+                            </summary>
+                            <div
+                                className = {style.extraTopicTextBlock}
+                            >
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Business Registration
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Planning Mentorship
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Training Funding Basics
+                                </button>
+                            </div>
+                        </details>
                         
+                        <details
+                            className={style.extraTopicDetail}
+                        >
+                            <summary
+                                className = {style.extraTopicSummary}
+                            >
+                                Growing Your Business
+                            </summary>
+                            <div
+                                className = {style.extraTopicTextBlock}
+                            >
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Marketing
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Operations
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Hiring
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Networking
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Scaling systems
+                                </button>
+                            </div>
+                        </details>
+
+                        <details
+                            className={style.extraTopicDetail}
+                        >
+                            <summary
+                                className = {style.extraTopicSummary}
+                            >
+                                Funding & Opportunities
+                            </summary>
+                            <div
+                                className = {style.extraTopicTextBlock}
+                            >
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Contracts Certifications
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Government Opportunities
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Supplier Diversity
+                                </button>
+                                <button 
+                                    type="button"
+                                    className = {style.extraTopicButton}
+                                >
+                                    Funding Growth
+                                </button>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
