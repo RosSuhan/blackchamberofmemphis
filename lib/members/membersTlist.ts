@@ -47,8 +47,10 @@ import { tabernacleOfPraise } from './(t)/tabernacleOfPraise'
 import { templeOfDeliveranceChurch } from './(t)/templeOfDeliveranceChurch'
 import { theLifeChurch } from './(t)/theLifeChurch'
 import { tennesseeHospTourism } from './(t)/tennesseeHospTourism'
+import { taylorMadeGlobalConsulting } from './(t)/taylorMadeGlobalConsulting'
 
 export const membersTlist = [
+    taylorMadeGlobalConsulting,
     tabicanTechSol,
     tailoredCommunications,
     techfit,

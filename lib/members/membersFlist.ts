@@ -7,8 +7,10 @@ import { faithBusSol } from './(f)/faithBusSol'
 import { firstBaptistChurch } from './(f)/firstBaptistChurch'
 import { fordChapelAME } from './(f)/fordChapelAME'
 import { focusOnYou } from './(f)/focusOnYou'
+import { flavorfulLivingBrand } from './(f)/flavorfulLivingBrand'
 
 export const membersFlist = [
+    flavorfulLivingBrand,
     functionallyBalancedHealth,
     fairHousing,
     frogTutoting,
