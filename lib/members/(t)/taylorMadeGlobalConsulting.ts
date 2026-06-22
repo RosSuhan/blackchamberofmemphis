@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const taylorMadeGlobalConsulting : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "taylor-made-global-consulting",
     businessName : "Taylor Made Global Consulting",
     bannerImage : "",
@@ -50,16 +50,16 @@ export const taylorMadeGlobalConsulting : MembersListType = {
     offering : `
         <ul style="text-align: left">
             <li>Organizational Development & Transformation</li>
-            <li>Leadership Development Programs</li>
-            <li>Executive Coaching & Advisory Services</li>
             <li>Workforce Strategy & Talent Optimization</li>
             <li>Organizational Diagnostics & Assessments</li>
             <li>Change Management & Culture Transformation</li>
             <li>Fractional CHRO & Strategic HR Consulting</li>
+            <li>Leadership Development Workshops</li>
+            <li>Human Resources Strategic Capability Workshops</li>
         </ul>`,
     busBullets : `
         <ul style="text-align: left">
-            <li>Proven expertise in leadership, workforce, and organizational strategy</li>
+            <li>Proven expertise in leadership, Human Resources, and organizational strategy</li>
             <li>Human Systems Design™ framework focused on sustainable results</li>
             <li>Customized solutions tailored to each organization's goals</li>
             <li>Experience supporting businesses through growth and transformation</li>
