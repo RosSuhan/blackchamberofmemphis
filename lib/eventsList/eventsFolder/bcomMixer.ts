@@ -4,6 +4,7 @@ export const bcomMixer : EventListType = {
     holidayStatus: false,
     id : "bcom-holiday-mixer",
     type: 'event',
+    eventType : 'quarterly-mixer',
     eventImage : "/events/holiday-party.webp",
     eventImageAlt : "BCom Holiday Mixer",
     eventDate : "December 19, 2025",

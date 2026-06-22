@@ -38,53 +38,58 @@ export default function ResourcesCatBlock({
                 className='globalText'
                 dangerouslySetInnerHTML={{__html : articleDescription}}
             />
-            <div
-                className={style.offeringBlock}
-            >
-                <h3
-                    className='globalSmallText'
-                    style={{marginBottom: ".2rem"}}
-                >
-                    OFFERING
-                </h3>
 
-                {articleOffering.map(({offerName, offerType, offerColor}, index) => (
-                    <div
-                        className={style.offer}
-                        key={index}
+            {articleOffering?.length > 0 && (
+                <div
+                    className={style.offeringBlock}
+                >
+                    <h3
+                        className='globalSmallText'
+                        style={{marginBottom: ".2rem"}}
                     >
-                        <span>
-                            {offerName}
-                        </span>
-                        <span
-                            className={style.offerTag}
-                            style={{background:offerColor}}
+                        OFFERING
+                    </h3>
+
+                    {articleOffering.map(({offerName, offerType, offerColor}, index) => (
+                        <div
+                            className={style.offer}
+                            key={index}
                         >
-                            {offerType}
-                        </span>
-                    </div>
-                ))}
-            </div>
+                            <span>
+                                {offerName}
+                            </span>
+                            <span
+                                className={style.offerTag}
+                                style={{background:offerColor}}
+                            >
+                                {offerType}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            )}
 
-            <div
-                className={style.serveBlock}
-            >
-                <h3
-                    className='globalSmallText'
-                    style={{marginBottom: ".2rem"}}
+            {articleServeStage?.length > 0 && (
+                <div
+                    className={style.serveBlock}
                 >
-                    STAGES SERVED
-                </h3>
-
-                {articleServeStage.map((item, index) => (
-                    <div
-                        className={style.serveItem}
-                        key={index}
+                    <h3
+                        className='globalSmallText'
+                        style={{marginBottom: ".2rem"}}
                     >
-                        {item}
-                    </div>
-                ))}
-            </div>
+                        STAGES SERVED
+                    </h3>
+
+                    {articleServeStage.map((item, index) => (
+                        <div
+                            className={style.serveItem}
+                            key={index}
+                        >
+                            {item}
+                        </div>
+                    ))}
+                </div>
+            )}
 
             <div
                 className={style.readButtonRow}

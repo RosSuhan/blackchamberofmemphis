@@ -4,6 +4,7 @@ export const janBcomNewMember : EventListType = {
     holidayStatus: false,
     id : "january-new-member-orientation",
     type: 'event',
+    eventType : "member-orientation",
     eventImage : "/events/new-member/janbcom-newmemberorientation.webp",
     eventImageAlt : "January 2026 New Member Orientation",
     eventDate : "Friday, January 9, 2026",

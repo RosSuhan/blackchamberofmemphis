@@ -5,6 +5,7 @@ export const econEmpowerment : EventListType = {
     id : "economic-empowerment-building-black-wealth",
     path : 'economic-empowerment-building-black-wealth',
     type: 'event',
+    eventType : 'panel-discussion',
     eventImage : "/events/economic-emp-series.jpg",
     eventImageAlt : "NBMBAA Memphis - Economic Empowerment: Building Black Wealth",
     eventDate : "June 11, 2026",

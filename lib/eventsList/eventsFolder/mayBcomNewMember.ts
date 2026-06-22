@@ -4,6 +4,7 @@ export const mayBcomNewMember : EventListType = {
     holidayStatus: false,
     id : "may-member-orientation",
     type: 'event',
+    eventType : 'member-orientation',
     eventImage : "/events/new-member/maymemberorientation.webp",
     eventImageAlt : "May 2026 New and Returning Member Orientation",
     eventDate : "Friday, May 8, 2026",

@@ -4,6 +4,7 @@ export const mrtBcomNewMember : EventListType = {
     holidayStatus: false,
     id : "march-new-member-orientation",
     type: 'event',
+    eventType : 'member-orientation',
     eventImage : "/events/new-member/mrtbcom-newmemberorientation.webp",
     eventImageAlt : "March 2026 New Member Orientation",
     eventDate : "Friday, March 6, 2026",

@@ -4,6 +4,7 @@ export const remotingWorkshop1 : EventListType = {
     holidayStatus: false,
     id : "be-staffed-for-growth",
     type: 'event',
+    eventType : 'workshop',
     eventImage : "/events/remoting.work_workshop_1.webp",
     eventImageAlt : "remoting.work invitation to online workshop",
     eventDate : "Wednesday, April 15, 2026",

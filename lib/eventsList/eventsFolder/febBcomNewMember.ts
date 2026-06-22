@@ -4,6 +4,7 @@ export const febBcomNewMember : EventListType = {
     holidayStatus: false,
     id : "february-new-member-orientation",
     type: 'event',
+    eventType : "member-orientation",
     eventImage : "/events/new-member/febbcom-newmemberorientation.webp",
     eventImageAlt : "February 2026 New Member Orientation",
     eventDate : "Friday, February 6, 2026",

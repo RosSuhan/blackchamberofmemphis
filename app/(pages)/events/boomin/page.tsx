@@ -56,7 +56,7 @@ export default function Boomin(){
             eventAddressLink : '',
             eventAddress : "In-person Orientation + Virtual",
             eventCtaButton : 'Register',
-            eventCtaLink : 'https://boominu.org/2026-boomin-marketing-onboarding/?cohort=July%202026%20Cohort&referral_source=BCOM&organization_referral=Black%20Chamber%20of%20Memphis',
+            eventCtaLink : 'https://boominu.org/julybcom/',
             eventDetails : `<p>Build your brand’s online presence with training in AI-powered marketing, SEO, website optimization, and media readiness. Designed for small business owners ready to attract more customers and stand out in a crowded market.</p>`
             // eventDetails : `<p>Clarify Your Message. Strengthen Your Marketing. Attract the Right Customers.<p>
             //                 <p>This program is for you if you want to communicate your value more clearly, market with confidence, and attract the right customers — consistently.</p>
@@ -91,6 +91,7 @@ export default function Boomin(){
     return(
         <main>
             <PageHeroSection
+                eventHost="Boomin University"
                 mainHeading = 'Boomin U 2026 Programs for Small Business Owners'
                 subHeading = ''
                 // ctaButtons = {eventActionBtn}

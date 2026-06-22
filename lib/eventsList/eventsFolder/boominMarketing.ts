@@ -5,6 +5,7 @@ export const boominMarketing : EventListType = {
     id : "boomin-marketing-program",
     path : 'boomin',
     type: 'event',
+    eventType : 'workshop',
     eventImage : "/events/boominU/bcom-boomin-marketing.webp",
     eventImageAlt : "Invitaiton to Boomin Marketing Program",
     eventDate : "June 30, 2026",
@@ -21,7 +22,7 @@ export const boominMarketing : EventListType = {
     eventPastBlog: ``,
     eventCTAbuttonLink : "",
     eventCTAbuttonText : "",
-    registrationButtonText : '',
-    registrationButtonLink : '',
+    registrationButtonText : 'Enroll Now',
+    registrationButtonLink : 'https://boominu.org/julybcom/',
     eventGallery: [{src: "", alt: ""}]
 }

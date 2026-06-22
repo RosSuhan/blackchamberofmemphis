@@ -6,7 +6,7 @@ import { mrtBcomNewMember } from "./eventsFolder/mrtBcomNewMember";
 import { leveledUp2 } from "./eventsFolder/leveledUp2";
 import { leveledUp3 } from "./eventsFolder/leveledUp3";
 import { leveledUp4 } from "./eventsFolder/leveledUp4";
-import { succSolFeb } from "./eventsFolder/succSolFeb";
+// import { succSolFeb } from "./eventsFolder/succSolFeb";
 import { theStudioKaraokeRibbonCut } from "./eventsFolder/theStudioKaraokeRibbonCut";
 import { firstQuarterlyNetwork } from "./eventsFolder/firstQuarterlyNetwork";
 import { aprilBcomNewMember } from "./eventsFolder/aprilBcomNewMember";
@@ -34,7 +34,7 @@ export const eventIndex = [
     leveledUp2,
     leveledUp3,
     leveledUp4,
-    succSolFeb,
+    // succSolFeb,
     theStudioKaraokeRibbonCut,
     firstQuarterlyNetwork,
     aprilBcomNewMember,

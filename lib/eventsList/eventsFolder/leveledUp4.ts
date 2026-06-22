@@ -4,6 +4,7 @@ export const leveledUp4 : EventListType = {
     holidayStatus: false,
     id : "leveled-up",
     type: 'event',
+    eventType : 'workshop',
     eventImage : '/events/leveledUp/leveledup-money.webp',
     eventImageAlt : 'LeveledUp Money Workshop',
     eventDate : 'March 4, 2026',

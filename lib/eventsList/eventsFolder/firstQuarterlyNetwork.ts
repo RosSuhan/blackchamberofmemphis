@@ -4,6 +4,7 @@ export const firstQuarterlyNetwork : EventListType = {
     holidayStatus: false,
     id : "first-quarterly-networking-event",
     type: 'event',
+    eventType : 'quarterly-mixer',
     eventImage : "/events/black-chamber-of-memphis-quarterly-netwoking-event-march-invitation.webp",
     eventImageAlt : "Black Chamber of Memphis March Quaterly Netwoking Event",
     eventDate : "March 19, 2026",

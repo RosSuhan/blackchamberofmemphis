@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const africaInAprilFestival : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "africa-in-april-festival",
     businessName : "Africa In April Festival",
     bannerImage : "",

@@ -5,6 +5,7 @@ export const bcomRedBirdMixer : EventListType = {
     id : "bcom-redbird-mixer",
     path: 'bcom-redbird-mixer',
     type: 'event',
+    eventType : 'quarterly-mixer',
     eventHostName: 'black chamber of memphis',
     eventImage : "/events/bcom-redbird-quarterly-mixer.webp",
     eventImageAlt : "BCoM Networking Mixer + Annual Family Night at AutoZone Park",

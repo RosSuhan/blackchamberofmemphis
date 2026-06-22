@@ -82,6 +82,8 @@
     align-items: stretch;
     justify-content: space-evenly;
     padding: 1rem 0;
+    gap: 5px;
+    row-gap: 1rem;
 }
 
 @media (min-width:400px) {

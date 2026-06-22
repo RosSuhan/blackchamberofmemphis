@@ -4,6 +4,7 @@ export const aprilBcomNewMember : EventListType = {
     holidayStatus: false,
     id : "april-new-member-orientation",
     type: 'event',
+    eventType : 'member-orientation',
     eventImage : "/events/new-member/aprilnewmemberorientation.webp",
     eventImageAlt : "April 2026 New Member Orientation",
     eventDate : "Friday, April 10, 2026",

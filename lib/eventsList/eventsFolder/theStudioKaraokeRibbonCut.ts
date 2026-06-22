@@ -4,6 +4,7 @@ export const theStudioKaraokeRibbonCut : EventListType = {
     holidayStatus: false,
     id : 'the-studio-karaoke-grand-opening',
     type: 'event',
+    eventType : 'ribbon-cutting',
     eventImage : '/members/the-studio-karaoke/the-studio-karaoke-ribbon.webp',
     eventImageAlt : 'Grand Opening of The Studio Karaoke',
     eventDate : "February 28, 2026",

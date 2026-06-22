@@ -5,6 +5,7 @@ export const bcomFamilyNight : EventListType = {
     id : "bcom-annual-family-friends-night-at-autozone-park",
     path : '/boomin',
     type: 'event',
+    eventType : 'quarterly-mixer',
     eventImage : "/events/",
     eventImageAlt : "Invitation to network with BCoM during the Memphis Red Sox Negro League.",
     eventDate : "June 19, 2026",

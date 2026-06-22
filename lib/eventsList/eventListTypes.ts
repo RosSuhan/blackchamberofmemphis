@@ -3,6 +3,7 @@ export interface EventListType {
     id : string,
     path? : string,
     type: string,
+    eventType? : string,
     eventHostName : string,
     eventImage : string,
     eventImageAlt : string,

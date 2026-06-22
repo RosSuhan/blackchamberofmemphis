@@ -5,6 +5,7 @@ export const boominToBank : EventListType = {
     id : "boomin-to-the-bank",
     path : 'boomin',
     type: 'event',
+    eventType : 'workshop',
     eventImage : "/events/boominU/bcom-boomin-to-the-bank.webp",
     eventImageAlt : "Invitation to Boomin to the Bank program",
     eventDate : "August 25, 2026",

@@ -108,6 +108,11 @@ export default function PageHeroSection({
                         {subHeading}
                     </h2>
                 : null}
+                <div
+                    className={style.spacer}
+                >
+
+                </div>
 
                 {searchbar ? 
                     <div

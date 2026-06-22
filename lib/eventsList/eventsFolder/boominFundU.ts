@@ -5,6 +5,7 @@ export const boominFundU : EventListType = {
     id : "boomin-fund-u",
     path : 'boomin',
     type: 'event',
+    eventType : 'workshop',
     eventImage : "/events/boominU/bcom-fund-u.webp",
     eventImageAlt : "Invitation to Boomin Fund U: Interest-Free Capital Match with Kiva",
     eventDate : "June 9, 2026",
