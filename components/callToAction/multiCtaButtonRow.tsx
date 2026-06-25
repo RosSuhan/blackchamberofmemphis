@@ -27,12 +27,11 @@ export default function MultiCtaButtonRow({
             >
                 {sectionHeading}
             </h2>
-            <p
+            <div
                 className='globalText'
                 style={{textAlign:'center'}}
-            >
-                {sectionText}
-            </p>
+                dangerouslySetInnerHTML={{__html: sectionText}}
+            />
 
             <div
                 className={style.ctaButtonRow}

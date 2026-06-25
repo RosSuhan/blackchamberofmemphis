@@ -43,6 +43,8 @@ export default function MemberHighlightsPage(){
                     <ResourcesCatBlock
                         key = {blog.id}
                         articleImage = {blog.blogImage}
+                        articleImageWidth = {1300}
+                        articleImageHeight={800}
                         articleTitle = {blog.blogName}
                         articleDescription = {blog.blogDescription}
                         articleOffering={[]}

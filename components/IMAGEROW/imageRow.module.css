@@ -1,0 +1,28 @@
+.imageRowSection {
+    /* background-color: green; */
+    /* padding: 3rem 0; */
+    display: flex;
+    align-items: center;
+}
+
+.imageOne,
+.imageTwo {
+    object-fit: contain;
+    width: 50%;
+    height: auto;
+}
+
+.imageThree {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .imageOne,
+    .imageTwo,
+    .imageThree {
+        display: initial;
+        object-fit: contain;
+        width: 33.333%;
+        height: auto;
+    }
+}

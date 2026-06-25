@@ -1,3 +1,4 @@
+import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import MLKHero from "@/components/mlkComponents/mlkHero";
 import MLKLedger from "@/components/mlkComponents/mlkLedger";
 import MLKOurAction from "@/components/mlkComponents/mlkOurAction";
@@ -48,7 +49,16 @@ export default function MLK(){
         <main
             style={{padding:"2rem 0 0 0"}}
         >
-            <MLKHero/>
+            {/* <MLKHero/> */}
+            <PageHeroSection
+                eventHost = {''}
+                mainHeading = {'Honoring the Life and Legacy of Dr. Martin Luther King, Jr.'}
+                subHeading = {'The Black Ledger: Invest in US'}
+                searchbar = {false}
+                ctaButtons = {[]}
+                placeholder = {''}
+                stateButtons = {[]}
+            />
 
             <MLKLedger/>
 

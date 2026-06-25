@@ -9,7 +9,7 @@ type InsightsPageProps = {
     activeResourcesCategory? : ResourcesCatPropType
     setSelectedFilterCategory : (value: string) => void
     setSelectedSubCategory : (value: string) => void
-    activeFilterCategory? : {filterCat: string; key: string; path: string; subCatList: { subCat: string; key: string; path: string; }[]}
+    activeFilterCategory? : {filterCat: string; key: string; subCatList: { subCat: string; key: string; }[]}
     filteredArticles? : ResourcesType[]
 }
 
@@ -186,7 +186,9 @@ export default function InsightsPage({
                     {filteredArticles?.map((article) =>(
                         <ResourcesCatBlock
                             key={article.id}
-                            articleImage = {article.mainImage}
+                            articleImage = {article.logo}
+                            articleImageWidth = {article.logoWidth}
+                            articleImageHeight = {article.logoHeight}
                             articleTitle = {article.articleTitle}
                             articleDescription = {article.description}
                             articleOffering = {article.offerings}

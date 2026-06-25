@@ -22,8 +22,8 @@ export default function ResourcesPage(){
         }
     ]
 
-    // const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
-    const [ selectedMainCategory, setSelectedMainCategory ] = useState('eventHighlights')
+    const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
+    // const [ selectedMainCategory, setSelectedMainCategory ] = useState('eventHighlights')
     const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('funding')
     const [ selectedSubCategory, setSelectedSubCategory ] = useState('')
 

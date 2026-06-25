@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 type ResourcesCatBlockProp = {
     articleImage : string
+    articleImageWidth : number
+    articleImageHeight : number
     articleTitle : string
     articleDescription : string
     articleOffering : {offerName : string, offerType: string, offerColor: string}[]
@@ -12,6 +14,8 @@ type ResourcesCatBlockProp = {
 }
 export default function ResourcesCatBlock({
     articleImage,
+    articleImageWidth,
+    articleImageHeight,
     articleTitle,
     articleDescription,
     articleOffering,
@@ -25,8 +29,8 @@ export default function ResourcesCatBlock({
             <Image
                 src={articleImage}
                 alt=''
-                width={1300}
-                height={800}
+                width={articleImageWidth}
+                height={articleImageHeight}
                 className={style.resourceContentBlockImage}
             />
             <h2

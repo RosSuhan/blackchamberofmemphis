@@ -1,7 +1,7 @@
-import { Article } from "./insights/article";
-import { BArticle } from "./insights/bArticle";
+import { aglaunch365 } from "./insights/aglaunch365";
+import { dmc } from "./insights/dmc";
 
 export const allResources = [
-    Article,
-    BArticle
+    aglaunch365,
+    dmc,
 ]

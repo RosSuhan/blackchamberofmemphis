@@ -7,8 +7,10 @@ import { davinchiRestLounge } from './(d)/davinchiRestLounge'
 import { devyneBusCon } from './(d)/devyneBusCon'
 import { dawgTeamApparel } from './(d)/dawgTeamApparel'
 import { doreTouchEventCenter } from './(d)/doreTouchEventCenter'
+import { dj1luvEntertainment } from './(d)/dj1luvEntertainment'
 
 export const membersDlist = [
+        dj1luvEntertainment,
         doreTouchEventCenter,
         dbkStudios,
         dbosElvisPresley,

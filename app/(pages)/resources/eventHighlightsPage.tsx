@@ -71,6 +71,8 @@ export default function EventHighlightsPage(){
                     <ResourcesCatBlock
                         key = {index}
                         articleImage = {event.eventImage}
+                        articleImageWidth = {1300}
+                        articleImageHeight = {800}
                         articleTitle = {event.eventName}
                         articleDescription = {event.eventPastDescription}
                         articleOffering = {[]}
