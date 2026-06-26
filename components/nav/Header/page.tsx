@@ -8,12 +8,38 @@ import { MenuClose } from '@/components/icons/menuClose'
 import { menuList } from '@/lib/menuList'
 import Link from 'next/link'
 import { ChevronDown } from '@/components/icons/ChevronDown'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ChevronUp12 } from '@/components/icons/ChevronUp'
 
 export default function Header(){
     const [ menuOpen, setMenuOpen ] = useState(false)
     const [ subMenuOpen, setSubMenuOpen ] = useState<string | null>(null)
+    const navRef = useRef<HTMLElement>(null)
+    const menuBtnRef = useRef<HTMLButtonElement>(null)
+
+
+    useEffect(() => {
+        const handleClickOutside = (event : MouseEvent) => {
+            const target = event.target as Node
+
+            const clickedInsideNav = navRef.current?.contains(target)
+
+            const clickedMenuButton = menuBtnRef.current?.contains(target)
+
+            if (
+                !clickedInsideNav && !clickedMenuButton
+            ) {
+                setMenuOpen(false)
+                setSubMenuOpen(null)
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside)
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [])
 
     const handleSubMenuToggle = (menuName: string) => {
         setSubMenuOpen((prev) => (prev === menuName ? null : menuName ))
@@ -38,6 +64,7 @@ export default function Header(){
             </Link>
 
             <nav
+                ref={navRef}
                 className={clsx(style.navClose, menuOpen && style.nav)}
             >
                 <ul
@@ -125,6 +152,10 @@ export default function Header(){
                             target="_blank" 
                             rel="noopener noreferrer"
                             className={style.navCTALink}
+                            onClick={() => {
+                                setMenuOpen(false)
+                                setSubMenuOpen(null)
+                            }}
                         >
                             JOIN BCOM
                         </a>
@@ -134,7 +165,8 @@ export default function Header(){
 
             <button
                 className={style.menuBtn}
-                onClick={() => setMenuOpen(!menuOpen)}
+                ref={menuBtnRef}
+                onClick={() => setMenuOpen(prev => !prev)}
             >
                 <MenuHamburger
                     width="1.4rem"

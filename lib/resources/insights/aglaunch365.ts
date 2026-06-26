@@ -5,7 +5,7 @@ export const aglaunch365 : ResourcesType = {
     mainImage : '/resources/Farm-Trials-Picture.jpg',
     mainImageWidth : 831,
     mainImageHeight : 440,
-    logo : '/resources/header-logo.png',
+    logo : '/resources/ag-launch.png',
     logoWidth : 300,
     logoHeight : 244,
     articleTitle : 'AgLaunch',

@@ -5,7 +5,7 @@ export const dmc : ResourcesType = {
     mainImage : '/resources/',
     mainImageWidth : 831,
     mainImageHeight : 440,
-    logo : '/resources/',
+    logo : '/resources/downtown-memphis-commission.png',
     logoWidth : 300,
     logoHeight : 244,
     articleTitle : 'Downtown Memphis Commission',

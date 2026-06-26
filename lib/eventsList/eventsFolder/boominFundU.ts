@@ -24,5 +24,6 @@ export const boominFundU : EventListType = {
     eventCTAbuttonText : "",
     registrationButtonText : '',
     registrationButtonLink : '',
-    eventGallery: [{src: "", alt: ""}]
+    eventGallery: [{src: "", alt: ""}],
+    blogPostReadLink: '/blog/fund-u-interest-free-with-kiva'
 }

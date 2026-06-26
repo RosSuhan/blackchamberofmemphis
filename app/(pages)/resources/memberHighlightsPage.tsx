@@ -2,44 +2,43 @@
 import style from '@/styles/resourcesPage.module.css'
 import { blogList } from '@/lib/blogList'
 import ResourcesCatBlock from '@/components/CATSINGLEBLOCK/RESOURCESCATBLOCK'
-import Link from 'next/link'
+// import Link from 'next/link'
 // import { useState } from 'react'
 
-export default function MemberHighlightsPage(){
-    // const [selectedBlogArticle, setSelectedBlogArticle] = useState('')
+type MemberHighlightsPageProp = {
+    filterBlogArticles : {id?: string; blogName: string; blogImage: string; blogDescription : string; blogTitleColor: string; blogArticleDate: string; blogReadLink: string;}[]
+    setSelectedBlogArticle : (value: string) => void
+}
 
-    // const filterBlogArticles = blogList.find(blog => blog.id === selectedBlogArticle)
+export default function MemberHighlightsPage({
+    filterBlogArticles,
+    setSelectedBlogArticle
+}: MemberHighlightsPageProp){
+
 
     return(
         <section
             className = {style.resourcesBodySection}
         >
-            {/* <div
+            <div
                 className={style.resourcesSideBar}
-            > */}
-                {/* {blogList.map((blog, index) => (
-                    <Link
-                        href={blog.blogReadLink}
-                        key={index}
-                        className={style.subCatBtn}
-                        style={{textDecoration:'none'}}
-                    >
-                        {blog.blogName}
-                    </Link>
+            > 
+                {blogList.map((blog) => (
                     <button
                         key={blog.id}
                         type='button'
                         className={style.subCatBtn}
+                        onClick={() =>setSelectedBlogArticle(blog.id)}
                     >
                         {blog.blogName}
                     </button>
-                ))} */}
-            {/* </div> */}
+                ))}
+            </div>
             <div
                 className={style.resourcesInformationBlock}
                 style={{width:'100%'}}
             >
-                {blogList?.map((blog) => (
+                {filterBlogArticles?.map((blog) => (
                     <ResourcesCatBlock
                         key = {blog.id}
                         articleImage = {blog.blogImage}

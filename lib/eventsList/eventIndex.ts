@@ -20,7 +20,7 @@ import { econEmpowerment } from "./eventsFolder/econEmpowerment";
 
 export const eventIndex = [
     // econEmpowerment,
-    // bcomRedBirdMixer,
+    bcomRedBirdMixer,
     // boominFundU,
     boominMarketing,
     boominToBank,

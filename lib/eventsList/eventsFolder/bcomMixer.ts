@@ -123,5 +123,6 @@ export const bcomMixer : EventListType = {
             src: "/events/holidayMixer2025/DSC05781.jpg",
             alt: "A&R BBQ #2 - Business Booster Program"
         }
-    ]
+    ],
+    blogPostReadLink : '/past-events/bcom-holiday-mixer'
 }

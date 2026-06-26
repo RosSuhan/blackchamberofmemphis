@@ -1,6 +1,8 @@
 'use client'
 import PageHeroSection from "@/components/heroSections/pageHeroSection"
 import { allResources } from '@/lib/resources/allResources'
+import { eventIndex } from '@/lib/eventsList/eventIndex'
+import { blogList } from '@/lib/blogList'
 import { useState } from 'react'
 import { resourceCategoriesList } from '@/lib/resources/resourcesCategoriesList'
 import InsightsPage from './insightsPage'
@@ -22,10 +24,39 @@ export default function ResourcesPage(){
         }
     ]
 
+    const eventCategoryList = [
+        {
+            name : "All Past Events",
+            key : ''
+        },{
+            name : "Ribbon Cutting",
+            key : 'ribbon-cutting'
+        },{
+            name : 'Workshop',
+            key : 'workshop'
+        },{
+            name : 'Member Orientation',
+            key : 'member-orientation'
+        },{
+            name : 'Quarterly Mixer',
+            key : 'quarterly-mixer'
+        }
+    ]
+
     const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
     // const [ selectedMainCategory, setSelectedMainCategory ] = useState('eventHighlights')
-    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('funding')
+    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('training')
     const [ selectedSubCategory, setSelectedSubCategory ] = useState('')
+    const activeResourcesCategory = resourceCategoriesList.find(cat => cat.key === selectedMainCategory) // to get to insights
+    const activeFilterCategory = activeResourcesCategory?.filter.find(filter => filter.key === selectedFilterCategory) // to get to funding, training ......
+    const activeSubCategory = activeFilterCategory?.subCatList.find( subCatList => subCatList.key === selectedSubCategory)
+    
+    // This is for the events Filtering 
+    const [eventTypeSelector, setEventTypeSelector] = useState('')
+
+    // for blog articles
+    const [selectedBlogArticle, setSelectedBlogArticle] = useState('')
+        
 
     const handleMainCategoryChange = (category: string) => {
         setSelectedMainCategory(category)
@@ -37,17 +68,35 @@ export default function ResourcesPage(){
         setSelectedSubCategory('')
     }
 
-    const filteredArticles = allResources.filter(
-        article => article.mainCategory === selectedMainCategory
-    )
+    const filteredArticles = allResources.filter(article => {
+        const matchesMain = article.mainCategory === selectedMainCategory
 
-    const activeResourcesCategory = resourceCategoriesList.find(cat => cat.key === selectedMainCategory) // to get to insights
-    const activeFilterCategory = activeResourcesCategory?.filter.find(filter => filter.key === selectedFilterCategory) // to get to funding, training ......
-    const activeSubCategory = activeFilterCategory?.subCatList.find( subCatList => subCatList.key === selectedSubCategory)
-    
-    // This is for the events Filtering 
-    
+        const matchesFilter = !selectedFilterCategory || article.filterCategory.includes(selectedFilterCategory)
 
+        const matchesSub = !selectedSubCategory || article.subCategory.includes(selectedSubCategory)
+
+        return(
+            matchesMain &&
+            matchesFilter &&
+            matchesSub
+        )
+    })
+
+    const today = new Date();
+    today.setHours(0,0,0,0);
+
+    const filteredEvents = eventIndex.filter(event => {
+        const eventDate = new Date(event.sortDate);
+        eventDate.setHours(0,0,0,0);
+
+        const isPastEvent = eventDate < today;
+
+        const matchesType = !eventTypeSelector || event.eventType === eventTypeSelector
+
+        return isPastEvent && matchesType
+    }).sort((a,b) => new Date(b.sortDate).getTime() - new Date(a.sortDate).getTime())
+
+    const filterBlogArticles = !selectedBlogArticle ? blogList : blogList.filter(blog => blog.id === selectedBlogArticle)
 
     return(
         <main>
@@ -75,12 +124,18 @@ export default function ResourcesPage(){
 
             {selectedMainCategory === "eventHighlights" && (
                 <EventHighlightsPage
-                    // filteredEvents = {filteredEvents}
+                    eventCategoryList={eventCategoryList || []}
+                    setEventTypeSelector={setEventTypeSelector}
+                    filteredEvents = {filteredEvents}
                 />
             )}
 
             {selectedMainCategory === 'memberHighlights' && (
-                <MemberHighlightsPage/>
+                <MemberHighlightsPage
+                    // blogList = {blogList}
+                    setSelectedBlogArticle = {setSelectedBlogArticle}
+                    filterBlogArticles = {filterBlogArticles}
+                />
             )}
         </main>
     )

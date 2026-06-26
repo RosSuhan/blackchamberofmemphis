@@ -26,7 +26,8 @@ export const bcomRedBirdMixer : EventListType = {
     eventCTAbuttonText : "Register today",
     registrationButtonText : "Register Today",
     registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/bcom-networking-mixer-annual-family-night-at-autozone-park-1735311?sourceTypeId=EmailInvitation',
-    eventPastDescription: "",
+    eventPastDescription: "On June 19, the Black Chamber of Memphis welcomed members, partners, supporters, and friends to our Annual Night at AutoZone Park for an evening of connection, celebration, and baseball in honor of Juneteenth.",
     eventPastBlog: ``,
-    eventGallery: []
+    eventGallery: [],
+    blogPostReadLink: '/blog/night-at-autozone-park'
 }

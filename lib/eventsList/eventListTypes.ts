@@ -24,6 +24,7 @@ export interface EventListType {
     registrationButtonText : string,
     registrationButtonLink : string,
     eventGallery? : {src: string, alt: string,}[],
+    blogPostReadLink? : string
 }
 
 // holidayStatus: "",

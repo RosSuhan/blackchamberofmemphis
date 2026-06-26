@@ -1,49 +1,21 @@
 'use client'
 import ResourcesCatBlock from '@/components/CATSINGLEBLOCK/RESOURCESCATBLOCK'
-import { eventIndex } from '@/lib/eventsList/eventIndex'
+import { EventListType } from '@/lib/eventsList/eventListTypes'
 import style from '@/styles/resourcesPage.module.css'
-import { useState } from 'react'
+// import { useState } from 'react'
+
+type EventHighlightsPageProps = {
+    eventCategoryList: {name:string, key:string}[]
+    setEventTypeSelector : (value: string) => void
+    filteredEvents : EventListType[]
+}
 
 
-export default function EventHighlightsPage(){
-    const eventCategoryList = [
-        {
-            name : "All Past Events",
-            key : ''
-        },{
-            name : "Ribbon Cutting",
-            key : 'ribbon-cutting'
-        },{
-            name : 'Workshop',
-            key : 'workshop'
-        },{
-            name : 'Member Orientation',
-            key : 'member-orientation'
-        },{
-            name : 'Quarterly Mixer',
-            key : 'quarterly-mixer'
-        }
-    ]
-
-    const [eventTypeSelector, setEventTypeSelector] = useState('')
-
-    const today = new Date();
-        today.setHours(0,0,0,0);
-    
-        const filteredEvents = eventIndex.filter(event => {
-            const eventDate = new Date(event.sortDate);
-            eventDate.setHours(0,0,0,0);
-    
-            const isPastEvent = eventDate < today;
-    
-            const matchesType = !eventTypeSelector || event.eventType === eventTypeSelector
-
-            return isPastEvent && matchesType
-        }).sort((a,b) => new Date(b.sortDate).getTime() - new Date(a.sortDate).getTime())
-
-    console.log(eventTypeSelector)
-
-    
+export default function EventHighlightsPage({
+    eventCategoryList,
+    setEventTypeSelector,
+    filteredEvents
+}: EventHighlightsPageProps){
 
     return (
         <section
@@ -77,7 +49,7 @@ export default function EventHighlightsPage(){
                         articleDescription = {event.eventPastDescription}
                         articleOffering = {[]}
                         articleServeStage={[]}
-                        articleReadPath = {`/past-events/${event.id}`}
+                        articleReadPath = {`${event.blogPostReadLink}`}
                     />
                 ))}
             </div>
