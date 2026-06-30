@@ -2,7 +2,7 @@ import MultiCtaButtonRow from "@/components/callToAction/multiCtaButtonRow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import OneColumn from "@/components/WordImageBlocks/OneColumn";
 import TwoColumnText from "@/components/WordImageBlocks/TwoColumnText";
-import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
+import TwoColumnTextVideo from "@/components/WordImageBlocks/TwoColumnTextVideo";
 
 export default function KivaBlog(){
     const kivaCtaButtons = [
@@ -46,12 +46,9 @@ export default function KivaBlog(){
                 multiWeekProgram = {false}
             />
 
-            <TwoColumnTextImage
+            <TwoColumnTextVideo
                 rowDirection = {true}
-                imageLink=""
-                imageAlt=""
-                imageWidth={1300}
-                imageHeight={300}
+                sectionVideoLink= { "https://www.youtube.com/embed/_2L-woKk5sw?si=qUCszPFVwNocnpwa" }
                 blockHeading="What Is Kiva?"
                 blockText = {`
                     <p>Founded in 2005, Kiva is the world's first personal micro-lending platform. Rather than borrowing from a bank, borrowers receive funding from a global community of everyday people who pool small contributions to support entrepreneurs who have been shut out of traditional lending. Because lenders are driven by impact rather than profit, they expect repayment — but charge absolutely no interest.</p>
@@ -104,12 +101,9 @@ export default function KivaBlog(){
             />
 
 
-            <TwoColumnTextImage
+            <TwoColumnTextVideo
                 rowDirection = {true}
-                imageLink=""
-                imageAlt=""
-                imageWidth={1300}
-                imageHeight={300}
+                sectionVideoLink={'https://www.youtube.com/embed/mw_0auM12Ek?si=tavvLlEuWjyoJI-M'}
                 blockHeading="Do You Qualify?"
                 blockText = {`
                     <p>Eligibility requirements are straightforward. To apply, you must:</p>
@@ -146,12 +140,9 @@ export default function KivaBlog(){
                 multiWeekProgram = {false}
             />
 
-            <TwoColumnTextImage
+            <TwoColumnTextVideo
                 rowDirection = {true}
-                imageLink=""
-                imageAlt=""
-                imageWidth={1300}
-                imageHeight={300}
+                sectionVideoLink={"https://www.youtube.com/embed/j-yQuCx-wjI?si=jtyReifJ-G9_fjXO"}
                 blockHeading="What Can You Use the Loan For?"
                 blockText = {`
                     <p>A Kiva loan can be used for a wide range of legitimate business needs, including:</p>

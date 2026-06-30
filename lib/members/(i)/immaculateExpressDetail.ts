@@ -29,17 +29,14 @@ export const immaculateExpressDetail : MembersListType = {
         'fleet vehicle detailing',
         'ceramic coating preparation',
     ],
-    profileBusinessDescription : ``,
-    gallery : [{image : "", alt : "", width : 100, height: 100}],
-    businessHours : [
-        { day : "Monday", hours : ''},
-        { day : "Tuesday", hours : ''},
-        { day : "Wednesday", hours : ''},
-        { day : "Thursday", hours : ''},
-        { day : "Friday", hours : ''},
-        { day : "Saturday", hours : ''},
-        { day : "Sunday", hours : ''},
-    ],
+    profileBusinessDescription : `
+        <p>Immaculate Express Detail is a professional mobile auto detailing company serving Memphis, Tennessee, and the surrounding Shelby County area. Dedicated to restoring and maintaining the appearance of every vehicle, the company brings high-quality detailing services directly to its customers, offering a convenient alternative to traditional car wash and detailing facilities.</p>
+        <p>Built around the needs of busy professionals, families, and vehicle owners, Immaculate Express Detail provides fully mobile services that eliminate the hassle of driving to a detailing shop. Customers can schedule appointments at their home, workplace, or another preferred location, allowing their vehicles to receive professional care while they continue with their day.</p>
+        <p>The company offers a variety of detailing packages designed to accommodate different vehicle conditions, maintenance schedules, and budgets. Services include exterior washing, waxing, paint enhancement, interior vacuuming, upholstery and carpet cleaning, window cleaning, wheel and tire care, and comprehensive interior and exterior detailing. Every service is performed using premium products, professional-grade equipment, and proven detailing techniques to help restore a vehicle's appearance while protecting its finish.</p>
+        <p>Customer satisfaction is at the heart of Immaculate Express Detail's business philosophy. The company is committed to providing transparent pricing, honest recommendations, and dependable service from the initial quote through project completion. By focusing on quality workmanship and personalized customer care, Immaculate Express Detail strives to exceed expectations with every appointment.</p>
+        <p>Whether preparing a vehicle for daily driving, resale, a special event, or routine maintenance, Immaculate Express Detail delivers customized detailing solutions designed to keep vehicles looking their best. Through convenience, professionalism, and meticulous attention to detail, the company has become a trusted choice for mobile auto detailing services throughout the Memphis area.</p>`,
+    gallery : [],
+    businessHours : [],
     addressLink : "https://maps.app.goo.gl/ZnsjReMYHLABgTx99",
     address : "875 Sumter St Memphis Tennessee 38122",
     email : "fthompson@immaculateexpress.net",

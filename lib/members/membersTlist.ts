@@ -49,8 +49,10 @@ import { theLifeChurch } from './(t)/theLifeChurch'
 import { tennesseeHospTourism } from './(t)/tennesseeHospTourism'
 import { taylorMadeGlobalConsulting } from './(t)/taylorMadeGlobalConsulting'
 import { theBodyTekWellnessMassage } from './(t)/theBodyTekWellnessMassage'
+import { tdRealLogistics } from './(t)/tdRealLogistics'
 
 export const membersTlist = [
+    tdRealLogistics,
     theBodyTekWellnessMassage,
     taylorMadeGlobalConsulting,
     tabicanTechSol,

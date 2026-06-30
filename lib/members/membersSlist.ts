@@ -18,8 +18,10 @@ import { selfSolutions } from './(s)/selfSolutions'
 import { sincereSalads } from './(s)/sincereSalads'
 import { southernBancorpMortgage } from './(s)/southernBancorpMortgage'
 import { southernShieldPestControl } from './(s)/southernShieldPestControl'
+import { sionSolutions } from './(s)/sionSolutionsCorp'
 
 export const membersSlist = [
+    sionSolutions,
     southernShieldPestControl,
     southernBancorpMortgage,
     sincereSalads,

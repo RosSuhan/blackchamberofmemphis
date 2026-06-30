@@ -78,18 +78,21 @@ export default function InsightsPage({
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedSubCategory('compliance')}
                                 >
                                     Business Registration
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedSubCategory('mentorship')}
                                 >
                                     Planning Mentorship
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedSubCategory('funding')}
                                 >
                                     Training Funding Basics
                                 </button>
@@ -110,30 +113,35 @@ export default function InsightsPage({
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('marketing')}
                                 >
                                     Marketing
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('procuremtent')}
                                 >
                                     Operations
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('compliance')}
                                 >
                                     Hiring
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('marketing')}
                                 >
                                     Networking
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('procurement')}
                                 >
                                     Scaling systems
                                 </button>
@@ -154,24 +162,28 @@ export default function InsightsPage({
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('compliance')}
                                 >
                                     Contracts Certifications
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('procurement')}
                                 >
                                     Government Opportunities
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('procurement')}
                                 >
                                     Supplier Diversity
                                 </button>
                                 <button 
                                     type="button"
                                     className = {style.extraTopicButton}
+                                    onClick={() => setSelectedFilterCategory('funding')}
                                 >
                                     Funding Growth
                                 </button>

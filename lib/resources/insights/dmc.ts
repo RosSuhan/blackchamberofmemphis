@@ -2,12 +2,12 @@ import { ResourcesType } from "../resourcesType";
 
 export const dmc : ResourcesType = {
     id : 'downtown-memphis-commission',
-    mainImage : '/resources/',
+    mainImage : '/resources/downtown-memphis-commission.png',
     mainImageWidth : 831,
     mainImageHeight : 440,
     logo : '/resources/downtown-memphis-commission.png',
-    logoWidth : 300,
-    logoHeight : 244,
+    logoWidth : 831,
+    logoHeight : 440,
     articleTitle : 'Downtown Memphis Commission',
     blogTitle : 'Downtown Memphis Commission — Your Partner in Building a Business Downtown',
     readPath : '/resources/downtown-memphis-commission',
@@ -29,8 +29,8 @@ export const dmc : ResourcesType = {
     ],
     serveStage : ['Small Business'],
     mainCategory : 'insights',
-    filterCategory : ['training', 'mentorship'],
-    subCategory : ['workshops', 'programs', 'business-advisors', 'mentor-programs', 'peer-groups',],
+    filterCategory : ['funding', 'training', 'mentorship', 'marketing',],
+    subCategory : ['grants', 'workshops', 'programs', 'business-advisors', 'mentor-programs', 'peer-groups', 'brand-strategy',],
     // blog section
     introHeading : 'Who They Are',
     introParagraph : `<p>The Downtown Memphis Commission (DMC) drives Downtown's role as the economic, cultural, and governmental core of the city and county. But beyond being a civic organization, the DMC is one of the most practical and entrepreneur-friendly resources available to anyone looking to open or grow a business in the heart of Memphis.</p>

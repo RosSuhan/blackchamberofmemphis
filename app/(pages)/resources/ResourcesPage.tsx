@@ -45,7 +45,7 @@ export default function ResourcesPage(){
 
     const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
     // const [ selectedMainCategory, setSelectedMainCategory ] = useState('eventHighlights')
-    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('training')
+    const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('funding')
     const [ selectedSubCategory, setSelectedSubCategory ] = useState('')
     const activeResourcesCategory = resourceCategoriesList.find(cat => cat.key === selectedMainCategory) // to get to insights
     const activeFilterCategory = activeResourcesCategory?.filter.find(filter => filter.key === selectedFilterCategory) // to get to funding, training ......

@@ -65,7 +65,7 @@ export default function Home() {
 
   return (
     <section>
-      <Popup
+      {/* <Popup
         imageSrc={'/events/bcom-redbird-quarterly-mixer.webp'}
         imageAlt={'BCoM Quarterly Network Mixer at the Redbird Game'}
         imageWidth={4500}
@@ -75,7 +75,7 @@ export default function Home() {
         ctaText={'Read More'}
         ctaLink={"/events/bcom-redbird-mixer"}
         storageKey="redbird-event"
-      />
+      /> */}
 
       <PageHeroSection
         mainHeading = "Grow your business beyond visibility"

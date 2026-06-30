@@ -21,7 +21,7 @@ export const aglaunch365 : ResourcesType = {
     ],
     serveStage : ['Stabilize'],
     mainCategory : 'insights',
-    filterCategory : ['Funding', 'training', 'mentorship'],
+    filterCategory : ['funding', 'training', 'mentorship'],
     subCategory : ['investors', 'workshops', 'programs', 'bootcamps', 'business-advisors', 'mentor-programs', 'peer-groups',],
     // blog section
     introHeading : 'Who They Are',

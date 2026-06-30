@@ -21,7 +21,7 @@ export const resourceCategoriesList = [
                     },
                     {
                         subCat : 'CDFIs',
-                        key : 'cdfis',
+                        key : 'cdfis', //Community Development Financial Institution
                     }
                 ]
             },
@@ -37,10 +37,11 @@ export const resourceCategoriesList = [
                         subCat : 'Programs',
                         key : 'programs',
                     },
+                    // {
+                    //     subCat : 'Certifications',
+                    //     key : 'certifications',
+                    // },
                     {
-                        subCat : 'Certifications',
-                        key : 'certifications',
-                    },{
                         subCat : "Bootcamps",
                         key : 'bootcamps'
                     }
@@ -64,54 +65,54 @@ export const resourceCategoriesList = [
                     }
                 ]
             },
-            {
-                filterCat : 'Compliance',
-                key : 'compliance',
-                subCatList : [
-                    {
-                        subCat : 'Licensing',
-                        key : 'licensing',
-                    },
-                    {
-                        subCat : 'Legal',
-                        key : 'legal',
-                    },
-                    {
-                        subCat : 'Accounting',
-                        key : 'accounting',
-                    },
-                    {
-                        subCat : 'Insurance',
-                        key : 'insurance',
-                    }
-                ]
-            },
-            {
-                filterCat : 'Procurement',
-                key : 'procurement',
-                subCatList : [
-                    {
-                        subCat : 'Supplier Readiness',
-                        key : 'supplier-readiness',
-                    },
-                    {
-                        subCat : 'Bid Opportunities',
-                        key : 'bid-opportunities',
-                    },
-                    {
-                        subCat : 'Government Contracts',
-                        key : 'government-contracts',
-                    }
-                ]
-            },
+            // {
+            //     filterCat : 'Compliance',
+            //     key : 'compliance',
+            //     subCatList : [
+            //         {
+            //             subCat : 'Licensing',
+            //             key : 'licensing',
+            //         },
+            //         {
+            //             subCat : 'Legal',
+            //             key : 'legal',
+            //         },
+            //         {
+            //             subCat : 'Accounting',
+            //             key : 'accounting',
+            //         },
+            //         {
+            //             subCat : 'Insurance',
+            //             key : 'insurance',
+            //         }
+            //     ]
+            // },
+            // {
+            //     filterCat : 'Procurement',
+            //     key : 'procurement',
+            //     subCatList : [
+            //         {
+            //             subCat : 'Supplier Readiness',
+            //             key : 'supplier-readiness',
+            //         },
+            //         {
+            //             subCat : 'Bid Opportunities',
+            //             key : 'bid-opportunities',
+            //         },
+            //         {
+            //             subCat : 'Government Contracts',
+            //             key : 'government-contracts',
+            //         }
+            //     ]
+            // },
             {
                 filterCat : 'Marketing',
                 key : 'marketing',
                 subCatList : [
-                    {
-                        subCat : 'Websites',
-                        key : 'websites',
-                    },
+                    // {
+                    //     subCat : 'Websites',
+                    //     key : 'websites',
+                    // },
                     {
                         subCat : 'Social Media',
                         key : 'social-media',
