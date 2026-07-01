@@ -22,6 +22,7 @@ import { ajThomasAssociates } from './(a)/ajThomasAssociates'
 import { artichokeh2o } from './(a)/artichoke-h2o'
 import { alphaExpressTrans } from './(a)/alphaExpressTrans'
 import { angelsAroundTheClockHomecare } from './(a)/angelsAroundTheClockHomecare'
+import { accessMedStaffingSolHealth } from './(a)/accessMedStaffingSolHealth'
 
 export const membersAlist = [
     aOneStaffing,
@@ -48,4 +49,5 @@ export const membersAlist = [
         artichokeh2o,
         alphaExpressTrans,
         angelsAroundTheClockHomecare,
+        accessMedStaffingSolHealth
 ]
