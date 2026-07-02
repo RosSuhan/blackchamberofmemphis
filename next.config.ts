@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
         source: "/business-directory/get-listed",
         destination: "/get-listed",
         permanent: true
+      },
+      {
+        source: "/blog",
+        destination: "/resources",
+        permanent: true
       }
     ]
   }

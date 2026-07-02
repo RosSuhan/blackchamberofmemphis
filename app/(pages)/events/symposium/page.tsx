@@ -46,13 +46,13 @@ export default function Symposium(){
                     <ul style="list-style: none; padding:0; margin: 0; text-align: left">
                         <li>
                             <span>Date:</span>
-                            Friday, August 28, 2026
+                            Friday, October 2, 2026
                         </li>
                         <li>
                             <span>
                                 Symposium Location:
                             </span>
-                            Epicenter, 150 Peabody Place
+                            To Be Confirmed
                         </li>
                         <li>
                             <span>Theme:</span>

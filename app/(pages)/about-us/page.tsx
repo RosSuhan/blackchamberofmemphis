@@ -4,6 +4,8 @@ import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage"
 import type { Metadata } from 'next';
 import OurTeam from "../our-team/page";
 import MultiCtaButtonRow from "@/components/callToAction/multiCtaButtonRow";
+import Header from "@/components/nav/Header/page";
+import Footer from "@/components/nav/Footer/page";
 
 export const metadata: Metadata = {
     title: 'Black Chamber of Memphis | Empowering Local Businesses in Memphis',
@@ -55,7 +57,9 @@ export default function AboutUs(){
         }
     ]
     return(
-        <main>
+        <>
+            <Header/>
+
             <PageHeroSection
                 mainHeading="Building Legacy. Strengthening Memphis."
                 subHeading=""
@@ -129,6 +133,8 @@ export default function AboutUs(){
                 sectionText = {'Partner with the Black Chamber of Memphis to expand your reach, connect with decision-makers, and play a role in shaping the local business ecosystem.'}
                 sectionButtons = {ctaRowButtons}
             />
-        </main>
+
+            <Footer/>
+        </>
     )
 }

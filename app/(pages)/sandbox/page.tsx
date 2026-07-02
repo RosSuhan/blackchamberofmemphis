@@ -1,4 +1,4 @@
-import ResourcesPage from '../resources/ResourcesPage'
+import BcProfileHeader from '@/components/BUSprofileComponents/BcProfileHeader'
 import style from './sandbox.module.css'
 
 
@@ -7,7 +7,7 @@ export default async function Sandbox(){
         <main
             className={style.pageHeroSection}
         >
-            <ResourcesPage/>
+            <BcProfileHeader/>
         </main>
     )
 }

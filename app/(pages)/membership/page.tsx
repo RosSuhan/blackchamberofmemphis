@@ -2,6 +2,8 @@ import PageHeroSection from "@/components/heroSections/pageHeroSection";
 import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
 import MembershipTiers from "@/components/PRICETIERS/membershipTiers";
 import { Metadata } from "next";
+import Header from "@/components/nav/Header/page";
+import Footer from "@/components/nav/Footer/page";
 
 export const metadata: Metadata = {
     title: 'Membership | Join the Black Chamber of Memphis & Grow Your Business',
@@ -55,7 +57,8 @@ export default function Membership(){
         }
     ]
     return(
-        <main>
+        <>
+            <Header/>
             <PageHeroSection
                 mainHeading = {'Grow Your Business with the Black Chamber of Memphis'}
                 subHeading = {'From visibility and connections to procurement opportunities and leadership access—our membership is designed to help Memphis businesses thrive at every stage.'}
@@ -118,6 +121,7 @@ export default function Membership(){
             />
 
             <MembershipTiers/>
-        </main>
+            <Footer/>
+        </>
     )
 }

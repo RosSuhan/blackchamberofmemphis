@@ -7,6 +7,8 @@ import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
+import Footer from "@/components/nav/Footer/page";
+import Header from "@/components/nav/Header/page";
 // import type { Metadata } from 'next';
 
 // export const metadata: Metadata = {
@@ -57,6 +59,8 @@ export default function OurTeam(){
     console.log("team data:", team)
 
     return(
+        <>
+
         <div
             className={style.ourTeamPage}
             style={{position:"relative"}}
@@ -187,5 +191,7 @@ export default function OurTeam(){
                 ))}
             </section>
         </div>
+
+        </>
     )
 }

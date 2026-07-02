@@ -6,6 +6,8 @@ import type { Metadata } from "next";
 import HomePageCategorySection from "./homePageCategorySection";
 import OneCtaButtonRow from "@/components/callToAction/OneCtaButtonRow";
 import PartnerLogoSection from "@/components/PartnerLogoSection/page";
+import Header from "@/components/nav/Header/page";
+import Footer from "@/components/nav/Footer/page";
 
 
 export const metadata: Metadata = {
@@ -64,7 +66,8 @@ export default function Home() {
   ]
 
   return (
-    <section>
+    <>
+      <Header/>
       {/* <Popup
         imageSrc={'/events/bcom-redbird-quarterly-mixer.webp'}
         imageAlt={'BCoM Quarterly Network Mixer at the Redbird Game'}
@@ -123,6 +126,8 @@ export default function Home() {
       />
 
       <PartnerLogoSection/>
-    </section>
+
+      <Footer/>
+    </>
   );
 }

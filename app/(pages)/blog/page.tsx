@@ -41,20 +41,6 @@ export const metadata: Metadata = {
 export default function Blog(){
     return(
         <main>
-            <PageHeroSection
-                mainHeading='Blog'
-                subHeading=''
-                searchbar = {false}
-                ctaButtons={[]}
-                placeholder=""
-                stateButtons={[]}
-            />
-
-            <section
-                style={{width:"100%", minHeight:"50svh", display:"flex", flexWrap:"wrap", alignItems:"flex-start", justifyContent:"space-evenly", padding:"3rem 0", rowGap:"2rem"}}
-            >
-                <BlogThumbNail/>
-            </section>
             
         </main>
     )

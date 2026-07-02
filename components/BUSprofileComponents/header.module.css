@@ -1,0 +1,28 @@
+.bcProfileHeader {
+    background: blue;
+
+}
+
+.bcBannerImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bcNameRow {
+    background: pink;
+    width: 100%;
+    
+}
+
+.bcProfileLogoImageBlock {
+    background: purple;
+}
+
+.bcProfileImage {
+    background-color: green;
+}
+
+.bcLogoImage {
+    background: orange;
+}

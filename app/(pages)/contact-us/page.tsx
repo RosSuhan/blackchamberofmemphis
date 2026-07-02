@@ -3,6 +3,8 @@ import style from '@/styles/contactUs.module.css'
 import { BaselineMail } from "@/components/icons/MailIcon";
 import { Phone } from "@/components/icons/Phone";
 import { useState } from 'react';
+import Header from '@/components/nav/Header/page';
+import Footer from '@/components/nav/Footer/page';
 // import { Metadata } from 'next';
 
 // export const metadata: Metadata = {
@@ -105,130 +107,134 @@ export default function ContactUs(){
     }
 
     return(
-        <main
-            className={style.contactUsMain}
-        >
-            <div
-                className={style.contactUsOverlay}
+        <>
+            <Header/>
+            <main
+                className={style.contactUsMain}
             >
-                <h1
-                    className={style.contactUsHeading}
-                >
-                    CONTACT US
-                </h1>
-                <h2
-                    className={style.contactUsSubHeading}
-                >
-                    Serving Black Businesses
-                </h2>
-
                 <div
-                    className={style.contactUsLinkRow}
+                    className={style.contactUsOverlay}
                 >
-                    <a 
-                        href="mailto:info@bbamemphis.com"
-                        className={style.contactUsLink}
+                    <h1
+                        className={style.contactUsHeading}
                     >
-                        <BaselineMail
-                            className={style.contactUsIcon}
-                        />
-                        <span
-                            className={style.contactUsWhiteText}
-                        >
-                            Email Us
-                        </span>
-                        <span
-                            className={style.contactUsGoldText}
-                        >
-                            info@bbamemphis.com
-                        </span>
-                    </a>
+                        CONTACT US
+                    </h1>
+                    <h2
+                        className={style.contactUsSubHeading}
+                    >
+                        Serving Black Businesses
+                    </h2>
 
-                    <a 
-                        href="tel:+19016369300"
-                        className={style.contactUsLink}
+                    <div
+                        className={style.contactUsLinkRow}
                     >
-                        <Phone
-                            className={style.contactUsIcon}
+                        <a 
+                            href="mailto:info@bbamemphis.com"
+                            className={style.contactUsLink}
+                        >
+                            <BaselineMail
+                                className={style.contactUsIcon}
+                            />
+                            <span
+                                className={style.contactUsWhiteText}
+                            >
+                                Email Us
+                            </span>
+                            <span
+                                className={style.contactUsGoldText}
+                            >
+                                info@bbamemphis.com
+                            </span>
+                        </a>
+
+                        <a 
+                            href="tel:+19016369300"
+                            className={style.contactUsLink}
+                        >
+                            <Phone
+                                className={style.contactUsIcon}
+                            />
+                            <span
+                                className={style.contactUsWhiteText}
+                            >
+                                Call Us
+                            </span>
+                            <span
+                                className={style.contactUsGoldText}
+                            >
+                                901-636-9300
+                            </span>
+                        </a>
+                    </div>
+
+                    <form 
+                        onSubmit={handleSubmit}
+                        className={style.contactUsForm}
+                    >
+                        {frontMessage && (
+                            <p>{frontMessage}</p>
+                        )}
+                        <input 
+                            placeholder="First Name" 
+                            type="text"
+                            className={style.contactUsFormShortInput}
+                            onChange={(e) => setFirstName(e.target.value)}
+                            minLength={2}
+                            pattern="[A-Za-z\s]+"
+                            value={firstName}
                         />
-                        <span
-                            className={style.contactUsWhiteText}
+
+                        <input 
+                            placeholder="Last Name" 
+                            type="text"
+                            className={style.contactUsFormShortInput}
+                            onChange={(e) => setLastName(e.target.value)}
+                            minLength={2}
+                            pattern='[A-Za-z\s]+'
+                            value={lastName}
+                        />
+
+                        <input 
+                            placeholder="Email" 
+                            type="email"
+                            className={style.contactUsFormLongInput}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                            value={email}
+                        />
+
+                        <input 
+                            placeholder="Subject" 
+                            type="text"
+                            className={style.contactUsFormLongInput}
+                            onChange={(e) => setSubject(e.target.value)}
+                            required
+                            value={subject}
+                        />
+
+                        <textarea 
+                            placeholder="Message"
+                            rows={6}
+                            className={style.contactUsFormLongInput}
+                            onChange={(e) => setClientMessage(e.target.value)}
+                            value={clientMessage}
+                        />
+
+                        <button 
+                            type="submit"
+                            className={style.contactUsFormSubmit}
                         >
-                            Call Us
-                        </span>
-                        <span
-                            className={style.contactUsGoldText}
-                        >
-                            901-636-9300
-                        </span>
-                    </a>
+                            {loading ? "Sending Message..." : "Submit"}
+                        </button>
+
+                        {submitMessage && (
+                            <p>{submitMessage}</p>
+                        )}
+                    </form>
                 </div>
-
-                <form 
-                    onSubmit={handleSubmit}
-                    className={style.contactUsForm}
-                >
-                    {frontMessage && (
-                        <p>{frontMessage}</p>
-                    )}
-                    <input 
-                        placeholder="First Name" 
-                        type="text"
-                        className={style.contactUsFormShortInput}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        minLength={2}
-                        pattern="[A-Za-z\s]+"
-                        value={firstName}
-                    />
-
-                    <input 
-                        placeholder="Last Name" 
-                        type="text"
-                        className={style.contactUsFormShortInput}
-                        onChange={(e) => setLastName(e.target.value)}
-                        minLength={2}
-                        pattern='[A-Za-z\s]+'
-                        value={lastName}
-                    />
-
-                    <input 
-                        placeholder="Email" 
-                        type="email"
-                        className={style.contactUsFormLongInput}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        value={email}
-                    />
-
-                    <input 
-                        placeholder="Subject" 
-                        type="text"
-                        className={style.contactUsFormLongInput}
-                        onChange={(e) => setSubject(e.target.value)}
-                        required
-                        value={subject}
-                    />
-
-                    <textarea 
-                        placeholder="Message"
-                        rows={6}
-                        className={style.contactUsFormLongInput}
-                        onChange={(e) => setClientMessage(e.target.value)}
-                        value={clientMessage}
-                    />
-
-                    <button 
-                        type="submit"
-                        className={style.contactUsFormSubmit}
-                    >
-                        {loading ? "Sending Message..." : "Submit"}
-                    </button>
-
-                    {submitMessage && (
-                        <p>{submitMessage}</p>
-                    )}
-                </form>
-            </div>
-        </main>
+            </main>
+            <Footer/>
+        </>
     )
 }

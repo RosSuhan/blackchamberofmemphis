@@ -1,5 +1,7 @@
 import OneCtaButtonRow from "@/components/callToAction/OneCtaButtonRow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
+import Footer from "@/components/nav/Footer/page";
+import Header from "@/components/nav/Header/page";
 import TwoColumnText from "@/components/WordImageBlocks/TwoColumnText";
 import { Metadata } from "next";
 
@@ -42,7 +44,8 @@ export const metadata: Metadata = {
 
 export default function GetListedPage(){
     return(
-        <main>
+        <>
+            <Header/>
             <PageHeroSection
                 mainHeading="Get Your Business Listed"
                 subHeading="Share your business with the community - we'll help you refine and present it professionally so it stands out and gets discovered."
@@ -84,6 +87,7 @@ export default function GetListedPage(){
                 ctaLink = {"/get-listed/form"}
                 ctaButton = {"Get Started"}
             />
-        </main>
+            <Footer/>
+        </>
     )
 }

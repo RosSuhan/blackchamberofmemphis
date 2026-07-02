@@ -180,9 +180,9 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
-        <Header/>
+        {/* <Header/> */}
         {children}
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
   );
