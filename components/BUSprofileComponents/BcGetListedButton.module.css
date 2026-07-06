@@ -1,0 +1,19 @@
+.bcGetListedButton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 3rem 0;
+}
+
+.hide {
+    display: none;
+}
+
+.bcGetListedFormBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: green;
+}

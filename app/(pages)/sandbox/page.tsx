@@ -7,7 +7,7 @@ export default async function Sandbox(){
         <main
             className={style.pageHeroSection}
         >
-            <BcProfileHeader/>
+            {/* <BcProfileHeader/> */}
         </main>
     )
 }

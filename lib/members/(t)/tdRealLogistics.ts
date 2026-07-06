@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const tdRealLogistics : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "td-real-logistics",
     businessName : "TD Real Logistics",
     bannerImage : "",
@@ -23,8 +23,15 @@ export const tdRealLogistics : MembersListType = {
         'supply logistics',
         'logistics consulting',
     ],
-    profileBusinessDescription : ``,
-    gallery : [],
+    profileBusinessDescription : `
+        <p>TD Real Logistics is a Memphis-based transportation and logistics company committed to delivering dependable freight solutions for businesses across local, regional, and long-distance routes. With a focus on safety, reliability, and customer satisfaction, the company provides professional trucking services designed to help businesses move freight efficiently while maintaining clear communication throughout every shipment.</p>
+        <p>Serving a wide range of commercial transportation needs, TD Real Logistics offers dedicated freight services, local deliveries, regional transportation, and over-the-road (OTR) hauling. Every shipment is handled with careful planning and a commitment to punctuality, ensuring customers receive dependable transportation solutions that support their business operations and supply chain requirements. The company emphasizes professional service, transparent communication, and consistent performance from pickup through delivery.</p>
+        <p>Beyond transportation services, TD Real Logistics is dedicated to helping individuals build successful careers within the logistics industry. Through its mentorship program, the company provides practical guidance for those interested in becoming professional freight dispatchers or launching their own logistics businesses. Participants receive industry knowledge, business insights, and ongoing support designed to prepare them for long-term success in the transportation sector.</p>
+        <p>TD Real Logistics believes that success is built on strong relationships, dependable service, and continuous growth. Whether serving commercial clients with freight transportation or mentoring the next generation of logistics professionals, the company is committed to delivering value through professionalism, integrity, and industry expertise.</p>
+        <p>By combining reliable freight services with workforce development and education, TD Real Logistics continues to support both businesses and aspiring logistics professionals throughout Memphis and beyond.</p>`,
+    gallery : [
+        {image : "/members/tdRealLogistics/tdRealLogistics.jpeg", alt : "TD Real Logistics", width : 1024, height: 845}
+    ],
     businessHours : [
         { day : "Monday", hours : '8am - 6pm'},
         { day : "Tuesday", hours : '8am - 6pm'},

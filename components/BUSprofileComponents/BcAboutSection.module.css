@@ -1,0 +1,175 @@
+.aboutSection {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aboutColumnBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.bcAboutSectionBlockHeading,
+.bcQRBlock {
+    display: none;
+}
+
+.aboutBlock,
+.bcAddress {
+    width: 80%;
+    background: var(--overlayLight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.aboutBlock {
+    flex-wrap: wrap;
+}
+
+.bcAddress {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.bcAddressIcon {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.bcSocialLinksBlock {
+    color: var(--black);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    row-gap: 1rem;
+    gap: 40px;
+}
+
+.bcSocialLink {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--overlayLight);
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.bcSocialLinkIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (min-width:350px) {
+    .bcSocialLinksBlock {
+        gap: 10px;
+    }
+    
+}
+
+@media (min-width:600px) {
+    .aboutColumnBlock {
+        width: 50%;
+    }
+
+    .bcAboutSectionBlockHeading {
+        display: initial;
+        width: 85%;
+    }
+    
+    .bcQRBlock {
+        display: initial;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .bcAboutQR {
+        object-fit: contain;
+        width: 90%;
+        height: auto;
+    }
+
+    .bcMemberBanner {
+        background-color: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        width: 90%;
+        border-radius: 10px;
+        row-gap: .5rem;
+    }
+
+    .bcMemberSpan {
+        color: var(--darkGold);
+        font-weight: 800;
+    }
+
+    .bcMemberWhiteSpan {
+        color: var(--white);
+        font-weight: 600;
+    }
+    
+}
+
+@media (min-width:700px) {
+    .bcAboutQR {
+        width: 80%;
+    }
+
+    .bcMemberBanner {
+        width: 80%;
+    }
+    
+}
+
+@media (min-width:800px) {
+    .bcAboutQR {
+        width: 70%;
+    }
+
+    .bcMemberBanner {
+        width: 70%;
+    }
+    
+}
+
+@media (min-width:850px) {
+    .bcAboutQR {
+        width: 60%;
+    }
+
+    .bcMemberBanner {
+        width: 60%;
+    }
+    
+}
+
+@media (min-width:1000px) {
+    .aboutSection {
+        padding: 3rem 0;
+    }
+    
+}
+
+@media (min-width:1100px) {
+    .bcAboutQR,
+    .bcMemberBanner {
+        width: 50%;
+    }
+    
+}

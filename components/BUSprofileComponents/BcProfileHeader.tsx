@@ -1,13 +1,29 @@
 import style from './header.module.css'
 import Image from "next/image";
 
-export default function BcProfileHeader(){
+type BcProfileHeaderProp = {
+    bannerImage : string
+    profileImage : string
+    logoImage : string
+    profileName : string
+    profileTitle : string
+    profileCompany : string
+}
+
+export default function BcProfileHeader({
+    bannerImage,
+    profileImage,
+    logoImage,
+    profileName,
+    profileTitle,
+    profileCompany
+}: BcProfileHeaderProp){
     return(
         <section
             className={style.bcProfileHeader}
         >
             <Image
-                src={'/assets/BCM-Logo_Black-Pattern.webp'}
+                src={bannerImage}
                 alt=""
                 width={9970}
                 height={5679}
@@ -21,19 +37,31 @@ export default function BcProfileHeader(){
                     className={style.bcProfileLogoImageBlock}
                 >
                     <Image
-                        src={'/our-team/Alan.png'}
+                        src={profileImage}
                         alt=""
                         width={360}
                         height={359}
                         className={style.bcProfileImage}
                     />
                     <Image
-                        src={'/assets/BCM-Logo_Full-Color-Black-Text.webp'}
+                        src={logoImage}
                         alt=""
                         width={2501}
                         height={1059}
                         className={style.bcLogoImage}
                     />
+                </div>
+                <div
+                    className={style.bcNameBlock}
+                >
+                    <h1
+                        className={style.bcPersonName}
+                    >{profileName}</h1>
+                    <h2
+                        className={style.bcPersonTitle}
+                    >
+                        <span>{profileTitle}</span><span> * {profileCompany}</span>
+                    </h2>
                 </div>
             </div>
         </section>

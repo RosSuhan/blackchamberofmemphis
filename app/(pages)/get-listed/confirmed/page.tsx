@@ -1,5 +1,7 @@
 'use client'
 import ConfirmationSection from "@/components/forms/Confirmed";
+import Footer from "@/components/nav/Footer/page";
+import Header from "@/components/nav/Header/page";
 
 export default function Confirmed(){
     const ctaButtons = [
@@ -21,6 +23,7 @@ export default function Confirmed(){
     ]
     return(
         <>
+            <Header/>
             <ConfirmationSection
                 pageHeading = {'Your Business Has Been Submitted'}
                 pageSecondHeading = {'What Happens Next'}
@@ -28,6 +31,7 @@ export default function Confirmed(){
                     <p>Our team will review your listing.<br/>You will receive confirmation once it's live</p>`}
                 ctaButtons={ctaButtons}
             />
+            <Footer/>
         </>
     )
 }

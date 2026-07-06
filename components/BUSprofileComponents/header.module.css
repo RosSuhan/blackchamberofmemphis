@@ -1,28 +1,107 @@
-.bcProfileHeader {
-    background: blue;
-
-}
-
 .bcBannerImage {
-    width: 100%;
-    height: 200px;
+    width: 100dvw;
+    height: 150px;
     object-fit: cover;
 }
 
 .bcNameRow {
-    background: pink;
     width: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .bcProfileLogoImageBlock {
-    background: purple;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-100px);
 }
 
 .bcProfileImage {
-    background-color: green;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 200px;
+    border: solid #ffffff 5px;
 }
 
 .bcLogoImage {
-    background: orange;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 80px;
+    border: solid #ffffff 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+.bcNameBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.bcPersonName {
+    margin: 0;
+}
+
+.bcPersonTitle {
+    margin: .5rem 0;
+    font-size: .81rem;
+    display: flex;
+    gap: .2rem;
+}
+
+@media (min-width: 500px) {
+    .bcNameRow {
+        justify-content: flex-start;
+        height: 130px;
+    }
+    
+    .bcNameBlock {
+        width: auto;
+        margin-left: 1rem;
+        align-items: flex-start;
+    }
+    
+    .bcPersonTitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .bcNameRow {
+        /* justify-content: flex-start; */
+        /* height: 130px; */
+    }
+    
+    .bcNameBlock {
+        /* width: auto; */
+        /* margin-left: 1rem; */
+        /* align-items: flex-start; */
+    }
+    
+    .bcPersonTitle {
+        /* font-size: 1rem; */
+    }
+}
+
+@media (min-width: 850px) {
+    .bcProfileHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bcNameRow {
+        width: 90%;
+    }
 }
