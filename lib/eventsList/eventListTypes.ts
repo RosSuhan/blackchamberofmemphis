@@ -29,6 +29,7 @@ export interface EventListType {
 
 // holidayStatus: "",
 // id : "",
+// path : '',
 // type: '',
 // eventImage : "",
 // eventImageAlt : "",
@@ -49,3 +50,4 @@ export interface EventListType {
 // eventGallery: [{src: "", alt: ""}],
 // registrationButtonLink : '',
 // registrationButtonText :''
+// blogPostReadLink? : string

@@ -74,7 +74,7 @@ export default function Symposium(){
                             <span>
                                 Price:
                             </span><br>
-                            Members - $50; <br> Non-Members - $75
+                            <strong>Members</strong> - $50; <br> Non-Members - $75 <br> AIM After Hours  Only Ticket - $52
                         </li>
                     </ul>
                 `}
@@ -110,9 +110,6 @@ export default function Symposium(){
                 <PartnerLogoSlider
                     partners={symposiumPartners}
                 />
-                {/* <LogoSlider
-                    partners={symposiumPartners}
-                /> */}
             </section>
 
             <LastCtaSection

@@ -12,6 +12,8 @@ export default function EventSingle(){
 
     const selectedEvent = eventIndex.find(c => c.id === id)
 
+    console.log(selectedEvent)
+
     const registrationLinks = [
         {
             name : selectedEvent?.registrationButtonText || "",

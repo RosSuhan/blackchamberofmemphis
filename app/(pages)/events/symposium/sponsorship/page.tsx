@@ -13,6 +13,7 @@ import { secondPresentingSponsorTiers } from '@/lib/symposiumUtils/secondPresent
 import { supportingSponsorTiers } from '@/lib/symposiumUtils/supportingSponsorTiers'
 import { activationSponsorTiers } from '@/lib/symposiumUtils/activationSponsorTiers'
 import { aimLaneSponsorshipTiers } from '@/lib/symposiumUtils/aimLaneSponsorshipTiers'
+import PartnerLogoSlider from '@/components/symposiumComps/PartnerLogoSlider/page'
 
 export default function Sponsorship(){
     const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/2JFz3kqIqFNCz"
@@ -50,6 +51,16 @@ export default function Sponsorship(){
             qIndex : "expand-access",
             question : "Expand Access & Opportunity",
             answer : `<p>Your support helps lower ticket costs and creates opportunities to sponsor attendance for local college students and emerging entrepreneurs—broadening participation and strengthening the business community.</p>`
+        },
+    ]
+
+    const symposium2026Partners = [
+        {
+            name: "Convergence Memphis",
+            image: "/events/symposium/2025-sponsors/CONVERGENCEMemphis.webp",
+            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Convergence Memphis',
+            width: 400,
+            height: 145,
         },
     ]
     
@@ -152,10 +163,25 @@ export default function Sponsorship(){
             />
 
             <GallerySection
-                sectionBackground='#D8BCA5'
-                galleryHeadingText={"Our 2025 Partners"}
-                galleryImages={symposiumPartners}
+                sectionBackground='#a1995f'
+                galleryHeadingText={"Our 2026 Partners"}
+                galleryImages={symposium2026Partners}
             />
+
+            <section
+                style={{background:'#D8BCA5', padding:"3rem 0 5rem 0", width:"100%", display:"flex", flexDirection:"column", alignItems:"center"}}
+            >
+                <h2
+                    // className='globalSecondHeading'
+                    style={{fontSize:"1.802rem", width:"90%", textAlign:"center", textWrap:"balance"}}
+                >
+                    Our 2025 Partners
+                </h2>
+
+                <PartnerLogoSlider
+                    partners={symposiumPartners}
+                />
+            </section>
             <SymFooter/>
         </main>
     )

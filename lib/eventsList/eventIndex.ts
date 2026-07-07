@@ -17,8 +17,12 @@ import { boominMarketing } from "./eventsFolder/boominMarketing";
 import { boominFundU } from "./eventsFolder/boominFundU";
 import { bcomRedBirdMixer } from './eventsFolder/bcomRedBirdMixer';
 import { econEmpowerment } from "./eventsFolder/econEmpowerment";
+import { remotingWorkshop2 } from "./eventsFolder/remotingWorkshop2";
+import { remotingWorkshop3 } from "./eventsFolder/remotingWorkshop3";
 
 export const eventIndex = [
+    remotingWorkshop2,
+    remotingWorkshop3,
     // econEmpowerment,
     bcomRedBirdMixer,
     // boominFundU,
