@@ -5,18 +5,70 @@ import { BaselineMail } from "../icons/MailIcon";
 import { Phone } from "../icons/Phone";
 import { DownloadIcon } from '../icons/DownloadIcon';
 import { ShareIcon } from '../icons/ShareIcon';
+import { downloadVCard } from '@/lib/vcard';
+import { useState } from 'react';
 
 type BcContactButtonSectionProp = {
     phoneNumber : string
     emailLink : string
     websiteLink : string
+    name : string,
+    org : string,
+    title : string,
+    address : string,
 }
 
 export default function BcContactButtonSection({
     phoneNumber,
     emailLink,
-    websiteLink
+    websiteLink,
+    name,
+    org,
+    title,
+    address
 }:BcContactButtonSectionProp){
+    const [ shareStatus, setShareStatus ] = useState<'idle' | 'copied'>('idle')
+
+    const handleSaveContact = () => {
+        downloadVCard({
+            name,
+            org,
+            title,
+            phone: phoneNumber,
+            email: emailLink.replace('mailto:', ''),
+            url: websiteLink,
+            address,
+        });
+        //lets BcPopup know a contact was saved, so it can trigger the share-details ask
+        window.dispatchEvent(new Event('bcm:contact-saved'));
+    };
+
+    const handleShare = async() => {
+        const shareData = {
+            title: `${name} - ${org}`,
+            text: `${name}'s digital business card`,
+            url : window.location.href,
+        }
+
+        if(navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch {
+                //user cancelled the share sheet - nothing to do
+            }
+            return;
+        }
+
+        //fallback for browsers without the web share API
+        try {
+            await navigator.clipboard.writeText(shareData.url);
+            setShareStatus('copied');
+            setTimeout(() => setShareStatus('idle'), 2000);
+        } catch {
+            //Clipboard blocked - worst case, they can copy the url manually
+        }
+    }
+
     return(
         <section
             className={style.bcContactButtonSection}
@@ -62,6 +114,7 @@ export default function BcContactButtonSection({
 
             <button
                 className={style.bcSaveButton}
+                onClick={handleSaveContact}
             >
                 <DownloadIcon
                     className={style.bcContactButtonIcon}
@@ -75,6 +128,7 @@ export default function BcContactButtonSection({
 
             <button
                 className={style.bcShareButton}
+                onClick={handleShare}
             >
                 <ShareIcon
                     className={style.bcContactButtonIcon}
@@ -82,7 +136,7 @@ export default function BcContactButtonSection({
                 <span
                     className={style.bcContactButtonText}
                 >
-                    Share
+                    {shareStatus === 'copied' ? 'Link Copied' : 'Share'}
                 </span>
             </button>
         </section>

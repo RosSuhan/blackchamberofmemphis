@@ -26,6 +26,10 @@ export default function BusinessCardPage(){
                 phoneNumber="9016369300"
                 emailLink="alan@bbamemphis.com"
                 websiteLink="blackchamberofmemphis.org"
+                name={"Alan Gumble"}
+                org="Black Chamber of Memphis"
+                title="Chief Of Opperations"
+                address="Memphis"
             />
             <BcAboutSection
                 bioBlock = {`<p>Alan Gumbel became the Chief Operating Officer of the Black Business Association of Memphis (BBA Memphis) in January 2023. Alan brings years of executive and senior leadership to his role; having served as Executive Director of the Memphis Academy of Health Sciences, the Greater Memphis Alliance for a Competitive Workforce, and Deputy Director of Programs of the City of Memphis Workforce Investment Network.</p>`}
