@@ -1,3 +1,4 @@
+'use client'
 import style from './BcContactButton.module.css'
 import { GlobeOutline } from "../icons/Globe";
 import { BaselineMail } from "../icons/MailIcon";

@@ -29,7 +29,7 @@ export default function PartnerWithUs(){
             <p
                 className={style.partnerSectionParagraph}
             >
-                The Symposium is a signature initiative of MemphisTEN, BCoM’s economic development framework, designed to:
+                The Symposium is a signature initiative of the Black Chamber of Memphis&apos;s economic development framework, designed to:
             </p>
 
             {partnershipOptions.map(({title, intro, buttonName, path}, index) => (

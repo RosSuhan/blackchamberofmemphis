@@ -10,12 +10,14 @@ const publicPartners = [
         alt: "remoting.work",
         logoWidth: 13828,
         logoHeight: 2665
-    },{
+    },
+    {
         logo: "public-partner-100blackmen",
         alt: "100 Black Men of Memphis, Inc",
         logoWidth: 300,
         logoHeight: 300
-    },{
+    },
+    {
         logo: "public-partner-city-of-memphis",
         alt: "City of Memphis",
         logoWidth: 300,
@@ -53,11 +55,6 @@ const publicPartners = [
     },{
         logo: "public-partner-nawbo",
         alt: "NAWBO Memphis",
-        logoWidth: 300,
-        logoHeight: 300
-    },{
-        logo: "city_of_memphis_contract_compliance",
-        alt: "City Of Memphis Contract Compliance",
         logoWidth: 300,
         logoHeight: 300
     },{
@@ -105,16 +102,29 @@ const strategicPartners = [
         logoWidth: 13828,
         logoHeight: 2665
     },{
-        logo: "stratigic-partner-small-business-association",
-        alt: "Small Business Association",
+        logo: "corporate-partner-seal-of-shelby-county",
+        alt: "Seal of Shelby County",
         logoWidth: 300,
         logoHeight: 300
-    },{
-        logo: "city_of_memphis_contract_compliance",
-        alt: "City Of Memphis Contract Compliance",
+    },    {
+        logo: "public-partner-city-of-memphis",
+        alt: "City of Memphis",
         logoWidth: 300,
         logoHeight: 300
-    }
+    },
+    // {
+    //     logo: "stratigic-partner-small-business-association",
+    //     alt: "Small Business Association",
+    //     logoWidth: 300,
+    //     logoHeight: 300
+    // }, part of federal partners
+    // {
+    //     logo: "city_of_memphis_contract_compliance",
+    //     alt: "City Of Memphis Contract Compliance",
+    //     logoWidth: 300,
+    //     logoHeight: 300
+    // }
+    // missing 
 ]
 
 const corporatePartners = [
@@ -123,22 +133,25 @@ const corporatePartners = [
         alt: "remoting.work",
         logoWidth: 13828,
         logoHeight: 2665
-    },{
-        logo: "corporate-partner-tva",
-        alt: "Tennessee Valey Authority",
-        logoWidth: 300,
-        logoHeight: 300
-    },{
-        logo: "corporate_partner-autozone",
-        alt: "AutoZone",
-        logoWidth: 100,
-        logoHeight: 100
-    },{
-        logo: "corporate_partner-fedex",
-        alt: "FedEx",
-        logoWidth: 300,
-        logoHeight: 300
-    },{
+    },
+    // {
+    //     logo: "corporate-partner-tva",
+    //     alt: "Tennessee Valey Authority",
+    //     logoWidth: 300,
+    //     logoHeight: 300
+    // },
+    // {
+    //     logo: "corporate_partner-autozone",
+    //     alt: "AutoZone",
+    //     logoWidth: 100,
+    //     logoHeight: 100
+    // },{
+    //     logo: "corporate_partner-fedex",
+    //     alt: "FedEx",
+    //     logoWidth: 300,
+    //     logoHeight: 300
+    // },
+    {
         logo: "corporate_partner-nike",
         alt: "Nike",
         logoWidth: 300,
@@ -153,7 +166,8 @@ const corporatePartners = [
         alt: "Pinnale Financial Partners",
         logoWidth: 300,
         logoHeight: 300
-    },{
+    },
+    {
         logo: "corporate-partner-seal-of-shelby-county",
         alt: "Seal of Shelby County",
         logoWidth: 300,

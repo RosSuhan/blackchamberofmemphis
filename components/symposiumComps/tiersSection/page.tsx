@@ -41,6 +41,7 @@ export default function TierSection({
 
             <div
                 className={style.tierRowBlock}
+                style={{position:"relative"}}
             >
                 <SingleTier
                     tiersToShow = {tiersToShow}

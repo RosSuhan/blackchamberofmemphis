@@ -15,7 +15,7 @@ import { activationSponsorTiers } from '@/lib/symposiumUtils/activationSponsorTi
 import { aimLaneSponsorshipTiers } from '@/lib/symposiumUtils/aimLaneSponsorshipTiers'
 
 export default function Sponsorship(){
-    const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/J5F6AqzFJCzC3"
+    const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/2JFz3kqIqFNCz"
 
     const sponsorCtaButtons = [
         {
@@ -86,27 +86,27 @@ export default function Sponsorship(){
             <TierSection
                 sectionBackground = {"#a1995f"}
                 // sectionBackground={"#ffffff"}
-                sectionTitle={"Presenting Sponsors:"}
+                sectionTitle={"Premier Sponsors:"}
                 tiersToShow = {secondPresentingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
                 sponsorshipApplicationLink = {applySponsorshipLink}
             />
-
+{/* 
             <TierSection
                 sectionBackground=''
                 sectionTitle = {'AIM Lane Sponsorships'}
                 tiersToShow = {aimLaneSponsorshipTiers}
                 sponsorTitleBackground = {''}
                 sponsorshipApplicationLink = {applySponsorshipLink}
-            />
+            /> */}
 
-            <TierSection
+            {/* <TierSection
                 sectionBackground = {'#a1995f'}
                 sectionTitle = {"Activation Sponsorships"}
                 tiersToShow={activationSponsorTiers}
                 sponsorTitleBackground = {'#d8bca5'}
                 sponsorshipApplicationLink = {applySponsorshipLink}
-            />
+            /> */}
 
             <TierSection
                 // sectionBackground = {"#f1dbb9"}

@@ -63,6 +63,8 @@ export default function TwoButtonRow({buttonsInfo}: TwoButtonRowProp){
                             key={index}
                             className={style.symposiumCta}
                             title={`path to ${buttonName}`}
+                            target='_blank'
+                            rel='noopener noreferrer'
                         >
                             {buttonName}
                         </a>

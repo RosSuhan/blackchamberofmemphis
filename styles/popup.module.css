@@ -53,6 +53,20 @@
     text-align: center;
 }
 
+.popupContactRequestForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.popupFormInput {
+    width: 90%;
+    padding: .5rem;
+    color: var(--black);
+}
+
 .popupCtaLink {
     background: var(--gold);
     padding: .5rem 0;

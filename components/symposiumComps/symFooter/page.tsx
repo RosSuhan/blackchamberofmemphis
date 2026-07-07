@@ -17,7 +17,7 @@ export default function SymFooter(){
                 className={style.symFooterLinkRow}
             >
                 <a 
-                    href="mailto:jasmine@bbamemphis.com"
+                    href="mailto:memberservices@bbamemphis.com "
                     className={style.symFooterLink}
                 >
                     <BaselineMail
@@ -26,10 +26,10 @@ export default function SymFooter(){
                     <span
                         className={style.symFooterLinkText}
                     >
-                        jasmine@bbamemphis.com
+                        memberservices@bbamemphis.com 
                     </span>
                 </a>
-                <a 
+                {/* <a 
                     href="tel:+19018008041"
                     className={style.symFooterLink}
                 >
@@ -41,7 +41,7 @@ export default function SymFooter(){
                     >
                         901-800-8041
                     </span>
-                </a>
+                </a> */}
             </div>
         </section>
     )

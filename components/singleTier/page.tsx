@@ -93,7 +93,20 @@ export default function SingleTier({
                             className={style.tierList}
                             style={{color:`${tierTextColor}`}}
                         >
-                            {featureBenefits.map((benefit, index) => (
+                            {sponsorBenefits.map((benefit, index) => (
+                                    <li
+                                        key={index}
+                                        className={style.popUpTierItem}
+                                    >
+                                        <span
+                                            className={style.tierIcon}
+                                        >
+                                            &#10003;
+                                        </span>
+                                        {benefit}
+                                    </li>
+                                ))}
+                            {/* {featureBenefits.map((benefit, index) => (
                                 <li
                                     key={index}
                                     className={style.tierItem}
@@ -105,16 +118,24 @@ export default function SingleTier({
                                     </span>
                                     {benefit}
                                 </li>
-                            ))}
+                            ))} */}
                         </ul>
 
-                        <button 
+                        <a
+                            href={sponsorshipApplicationLink}
+                            className={style.applicationLink}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Apply for this Sponsorship
+                        </a>
+                        {/* <button 
                             type="button"
                             className={style.tierCTAButton}
                             onClick={() => setShowDetails(tIndex)}
                         >
                             View more
-                        </button>
+                        </button> */}
                     </div>
                     <div
                         className={clsx(style.inKindSponsorPopUpBlock, showDetails === tIndex && style.popUpOverlay)}

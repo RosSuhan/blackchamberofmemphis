@@ -3,12 +3,17 @@ import BcContactButtonSection from "@/components/BUSprofileComponents/BcContactB
 import BcGetListedButton from "@/components/BUSprofileComponents/BcGetListedButton"
 import BCPartnersRow from "@/components/BUSprofileComponents/BcPartnersRow"
 import BcProfileHeader from "@/components/BUSprofileComponents/BcProfileHeader"
+import PartnerLogoSection from "@/components/PartnerLogoSection/page"
+import BcPopup from "@/components/Popup/BcPopup"
 
 export default function BusinessCardPage(){
     return(
         <main
             style={{width:"100dvw", display:'flex', flexDirection:"column", alignItems:"center"}}
         >
+            <BcPopup
+                storageKey="alanGumble"
+            />
             <BcProfileHeader
                 bannerImage = {'/assets/BCM-Logo_Black-Pattern.webp'}
                 profileImage = {'/our-team/Alan.png'}
@@ -33,10 +38,11 @@ export default function BusinessCardPage(){
                 youTubeLink={"https://www.youtube.com/@BlackChamberofMemphis"}
             />
 
-            <BcGetListedButton
-            />
+            <BcGetListedButton/>
 
-            <BCPartnersRow/>
+            {/* <BCPartnersRow/> */}
+
+            <PartnerLogoSection/>
         </main>
     )
 }
