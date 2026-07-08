@@ -28,6 +28,7 @@ export default function BcProfileHeader({
                 width={9970}
                 height={5679}
                 className={style.bcBannerImage}
+                loading='eager'
             />
 
             <div

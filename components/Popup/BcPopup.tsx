@@ -12,7 +12,14 @@ export default function BcPopup({
     delay = 900,
 }:BcPopupProps){
 
-    const [isOpen, setIsOpen ] = useState(false)
+    const [ isOpen, setIsOpen ] = useState(false)
+    const [ loading, setLoading ] = useState(false)
+    const [ submitMessage, setSubmitMessage ] = useState("")
+    const [ formData, setFormData ] = useState({
+        name: '',
+        email: '',
+        tel: ''
+    })
 
     useEffect(() => {
         const handleSaveContact = () => {
@@ -35,6 +42,48 @@ export default function BcPopup({
         };
     
         if(!isOpen) return null;
+
+    const BUSCARD_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbxKiotiSQXDXKbocX9jdmNUMRtlD7eUlLRkS46i7i8-27KEny1sUpQv94sZzPEBUaaEiA/exec";
+
+    const handleOnChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+
+    async function busCardFormSubmittion(e:React.FormEvent) {
+        e.preventDefault();
+        setLoading(true);
+        setSubmitMessage("")
+
+        try {
+            await fetch(BUSCARD_GOOGLE_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData)
+            })
+
+            console.log(formData)
+
+            setSubmitMessage("Thank you for sharing your details. We will keep in touch with you.")
+            setLoading(false)
+
+            setTimeout(() => {
+                setSubmitMessage("");
+                closeModal()
+            }, 5000);
+        } catch (err) {
+            console.error(err);
+            setSubmitMessage("Something went wrong. Please try again.")
+            setLoading(false);
+        }
+    }
+
+    
     return(
         <div
             className={style.popupOverlay}
@@ -70,34 +119,46 @@ export default function BcPopup({
                 >
                     <input 
                         type="text" 
-                        name="" 
-                        id="" 
+                        name="name" 
                         placeholder='Name'
                         className={style.popupFormInput}
+                        onChange={handleOnChange}
+                        value={formData.name}
                     />
 
                     <input 
                         type="email" 
-                        name="" 
-                        id="" 
+                        name="email" 
                         placeholder='Email'
                         className={style.popupFormInput}
+                        onChange = {handleOnChange}
+                        value={formData.email}
                     />
 
                     <input 
                         type="tel" 
-                        name="" 
-                        id="" 
+                        name="tel"
                         placeholder='Contact Number'
                         className={style.popupFormInput}
+                        onChange = {handleOnChange}
+                        value={formData.tel}
                     />
 
                     <button 
                         type="submit"
                         className='globalGoldButton'
+                        onClick={busCardFormSubmittion}
                     >
-                        Add my details
+                        {loading ? "Sending your Data" : "Add my details"}
                     </button>
+
+                    {submitMessage ? 
+                        <p
+                            className="globalText"
+                        >
+                            {submitMessage}
+                        </p>
+                    : null }
                 </form>
                 <cite
                     className={style.popupDescription}
