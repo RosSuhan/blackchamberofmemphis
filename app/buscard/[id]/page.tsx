@@ -38,7 +38,7 @@ export async function generateMetadata({params}: BusinessCardProp): Promise<Meta
         alternates: { canonical: url },
         openGraph: {
             title: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} | Black Chamber of Memphis Directory`,
-            description: selectedTeamMember.bio,
+            description: selectedTeamMember.vCardBioSection,
             url: url,
             siteName: 'Black Chamber of Memphis',
             type: 'website',
@@ -63,7 +63,7 @@ export async function generateMetadata({params}: BusinessCardProp): Promise<Meta
         twitter: {
             card: 'summary_large_image',
             title: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} | Black Chamber of Memphis Directory`,
-            description: selectedTeamMember.bio,
+            description: selectedTeamMember.vCardBioSection,
             images: selectedTeamMember.image
             ? [`https://blackchamberofmemphis.org/${selectedTeamMember.image}`]
             : ['/images/og-default.jpg'],
