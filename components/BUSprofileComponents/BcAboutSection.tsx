@@ -16,6 +16,9 @@ type BcAboutSectionProps = {
     twitterLink : string
     linkedInLink : string
     youTubeLink : string
+    qrCodeImage : string
+    memberBtn : string
+    memberSince : string
 }
 
 
@@ -27,7 +30,10 @@ export default function BcAboutSection({
     facebookLink,
     twitterLink,
     linkedInLink,
-    youTubeLink
+    youTubeLink,
+    qrCodeImage,
+    memberBtn,
+    memberSince
 }: BcAboutSectionProps){
     return(
         <section
@@ -114,7 +120,7 @@ export default function BcAboutSection({
                 className={style.bcQRBlock}
             >
                 <Image
-                    src={'/buscard/alan-gumble-busqr.webp'}
+                    src={qrCodeImage}
                     alt=''
                     width={1000}
                     height={1000}
@@ -127,13 +133,15 @@ export default function BcAboutSection({
                     <span
                         className={style.bcMemberSpan}
                     >
-                        Member
+                        {memberBtn} 
                     </span>
+                    {memberSince ? 
                     <span
                         className={style.bcMemberWhiteSpan}
                     >
-                        Since 2024
+                        {memberSince}
                     </span>
+                    : null}
                 </div>
             </div>
         </section>

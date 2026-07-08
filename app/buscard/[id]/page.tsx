@@ -4,7 +4,7 @@ import BcGetListedButton from "@/components/BUSprofileComponents/BcGetListedButt
 import BcProfileHeader from "@/components/BUSprofileComponents/BcProfileHeader"
 import PartnerLogoSection from "@/components/PartnerLogoSection/page"
 import BcPopup from "@/components/Popup/BcPopup"
-import { team } from "@/lib/teamList"
+import { vCardProfileData } from "@/lib/vCardProfileData"
 
 type BusinessCardProp = {
     params : {
@@ -16,7 +16,7 @@ export default async function BusinessCardPage({
     params
 } : BusinessCardProp){
     const { id } = await params
-    const selectedTeamMember = team.find(team => team.slug === id);
+    const selectedTeamMember = vCardProfileData.find(team => team.slug === id);
 
     console.log('selected Member', selectedTeamMember)
 
@@ -53,6 +53,9 @@ export default async function BusinessCardPage({
                 twitterLink={"https://twitter.com/BBAMemphis"}
                 linkedInLink={"https://www.linkedin.com/company/bcomemphis/"}
                 youTubeLink={"https://www.youtube.com/@BlackChamberofMemphis"}
+                qrCodeImage = {`${selectedTeamMember?.qrCode}`}
+                memberBtn={`${selectedTeamMember?.memberBtn}`}
+                memberSince={`${selectedTeamMember?.memberSince}`}
             />
 
             <BcGetListedButton/>
