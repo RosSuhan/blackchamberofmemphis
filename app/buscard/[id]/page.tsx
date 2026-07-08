@@ -29,7 +29,7 @@ export async function generateMetadata({params}: BusinessCardProp): Promise<Meta
 
     return {
         title: `${selectedTeamMember?.first_name} ${selectedTeamMember?.last_name} | Black Chamber of Memphis Directory`,
-        description: selectedTeamMember.bio,
+        description: selectedTeamMember.vCardBioSection,
         keywords: [
             `${selectedTeamMember.first_name} ${selectedTeamMember.last_name}`,
             'Black Chamber of Memphis member',
