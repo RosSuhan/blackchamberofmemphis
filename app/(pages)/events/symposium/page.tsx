@@ -33,6 +33,12 @@ export default function Symposium(){
             alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Convergence Memphis',
             width: 400,
             height: 145,
+        },    {
+            name: "Pathway Lending",
+            image: "/events/symposium/2025-sponsors/pathway-lending.webp",
+            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
+            width: 2835,
+            height: 418,
         },
     ]
 
@@ -50,10 +56,10 @@ export default function Symposium(){
             <WideTextSection
                 wideTextSectionHeading={"Building Wealth In Our Community Symposium"}
                 wideTextSectionText = {`
-                    <p>The 2026 Building Wealth in Our Community Symposium is anchored in Building Entrepreneur City: Access, Investment, Mobility - a bold vision aligned with the City of Memphis’ commitment to positioning entrepreneurship as a key driver of economic growth. This approach recognizes that the strength of our city is directly tied to the success, sustainability, and scalability of its businesses.</p>
-                    <p>This year’s Symposium will be an intentionally curated, limited-capacity convening for entrepreneurs, investors, corporate leaders, public-sector partners, and business infrastructure providers. Hosted at Epicenter, the experience focuses on the capital, relationships, technology, procurement pathways, and advisory support needed to help growth-ready businesses move forward.</p>
-                    <p>With a strong emphasis on collaboration, the experience is designed to break down silos across sectors, elevate local voices, and highlight the real impact individual businesses have on shaping the city’s future. </p>
-                    <p>More than a theme, Building Entrepreneur City is a call to align vision with action-challenging each participant to see their business not only as an individual venture, but as a critical part of Memphis’s long-term economic ecosystem.</p>
+                    <p>The 2026 Building Wealth in Our Community Symposium is the Black Chamber of Memphis' signature business mobility experience, convening entrepreneurs, investors, corporate leaders, public-sector partners, and business advisors for a day of practical strategies, meaningful connections, and actionable insights that help businesses access capital, secure contracts, leverage innovation, and accelerate growth.</p>
+                    <p>Guided by this year's theme, <strong>Building Entrepreneur City: Access. Investment. Mobility.</strong>, the Symposium is designed to help growth-ready businesses move from opportunity to execution. Through engaging discussions, strategic networking, and expert guidance, participants will gain greater access to capital, procurement opportunities, technology, partnerships, and the resources needed to grow and compete.</p>
+                    <p>The day concludes with <strong>AIM After Hours</strong>, an extended networking experience on site where attendees can continue building relationships and exploring new opportunities in a more relaxed setting.</p>
+                    <p>Whether you are scaling your business, seeking investment, pursuing major contracts, or expanding your professional network, the Building Wealth in Our Community Symposium is where entrepreneurs and decision-makers come together to advance business mobility and strengthen Memphis through entrepreneurship.</p>
 
                     <ul style="list-style: none; padding:0; margin: 0; text-align: left">
                         <li>
@@ -64,7 +70,7 @@ export default function Symposium(){
                             <span>
                                 Symposium Location:
                             </span>
-                            To Be Confirmed
+                            Reign Event Venue
                         </li>
                         <li>
                             <span>Theme:</span>
@@ -74,7 +80,7 @@ export default function Symposium(){
                             <span>
                                 Price:
                             </span><br>
-                            <strong>Members</strong> - $50; <br> Non-Members - $75 <br> AIM After Hours  Only Ticket - $52
+                            <strong>Black Chamber Members:</strong> $50; <br> <strong>Non-Members:</strong> $75 <br> <strong>AIM After Hours Only:</strong> $52
                         </li>
                     </ul>
                 `}

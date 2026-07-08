@@ -139,6 +139,33 @@ export default function BcContactButtonSection({
                     {shareStatus === 'copied' ? 'Link Copied' : 'Share'}
                 </span>
             </button>
+
+            <div
+                className={style.mobileFooterButtons}
+            >
+                <button
+                    className={style.bcFooterSaveButton}
+                    onClick={handleSaveContact}
+                >
+                    <DownloadIcon
+                        className={style.bcContactButtonIcon}
+                    />
+                    <span
+                        className={style.bcFooterButtonText}
+                    >
+                        Save Contact
+                    </span>
+                </button>
+
+                <button
+                    className={style.bcFooterShareButton}
+                    onClick={handleShare}
+                >
+                    <ShareIcon
+                        className={style.bcContactButtonIcon}
+                    />
+                </button>
+            </div>
         </section>
     )
 }

@@ -1,38 +1,51 @@
 import BcAboutSection from "@/components/BUSprofileComponents/BcAboutSection"
 import BcContactButtonSection from "@/components/BUSprofileComponents/BcContactButtonSection"
 import BcGetListedButton from "@/components/BUSprofileComponents/BcGetListedButton"
-import BCPartnersRow from "@/components/BUSprofileComponents/BcPartnersRow"
 import BcProfileHeader from "@/components/BUSprofileComponents/BcProfileHeader"
 import PartnerLogoSection from "@/components/PartnerLogoSection/page"
 import BcPopup from "@/components/Popup/BcPopup"
+import { team } from "@/lib/teamList"
 
-export default function BusinessCardPage(){
+type BusinessCardProp = {
+    params : {
+        id: string
+    }
+}
+
+export default async function BusinessCardPage({
+    params
+} : BusinessCardProp){
+    const { id } = await params
+    const selectedTeamMember = team.find(team => team.slug === id);
+
+    console.log('selected Member', selectedTeamMember)
+
     return(
         <main
             style={{width:"100dvw", display:'flex', flexDirection:"column", alignItems:"center"}}
         >
             <BcPopup
-                storageKey="alanGumble"
+                storageKey={`${selectedTeamMember?.first_name}`}
             />
             <BcProfileHeader
                 bannerImage = {'/assets/BCM-Logo_Black-Pattern.webp'}
-                profileImage = {'/our-team/Alan.png'}
+                profileImage = {`${selectedTeamMember?.image}`}
                 logoImage = {'/assets/BCM-Logo_Full-Color-Black-Text.webp'}
-                profileName = {'Alan Gumbel'}
-                profileTitle = {'COO'}
+                profileName = {`${selectedTeamMember?.first_name} ${selectedTeamMember?.last_name}`}
+                profileTitle = {`${selectedTeamMember?.title}`}
                 profileCompany = {'Black Chamber of Memphis'}
             />
             <BcContactButtonSection
                 phoneNumber="9016369300"
-                emailLink="alan@bbamemphis.com"
+                emailLink={`${selectedTeamMember?.email}`}
                 websiteLink="blackchamberofmemphis.org"
-                name={"Alan Gumble"}
+                name={`${selectedTeamMember?.first_name} ${selectedTeamMember?.last_name}`}
                 org="Black Chamber of Memphis"
-                title="Chief Of Opperations"
+                title={`${selectedTeamMember?.title}`}
                 address="Memphis"
             />
             <BcAboutSection
-                bioBlock = {`<p>Alan Gumbel became the Chief Operating Officer of the Black Business Association of Memphis (BBA Memphis) in January 2023. Alan brings years of executive and senior leadership to his role; having served as Executive Director of the Memphis Academy of Health Sciences, the Greater Memphis Alliance for a Competitive Workforce, and Deputy Director of Programs of the City of Memphis Workforce Investment Network.</p>`}
+                bioBlock = {`${selectedTeamMember?.vCardBioSection}`}
                 addressLink={"https://share.google/Ke6xh3QEPcvI06W2F"}
                 addressText={"480 Doctor M.L.K. Jr Ave #101, Memphis, TN 38126, United States"}
                 instagramLink={"https://www.instagram.com/bcomemphis/"}
@@ -43,8 +56,6 @@ export default function BusinessCardPage(){
             />
 
             <BcGetListedButton/>
-
-            {/* <BCPartnersRow/> */}
 
             <PartnerLogoSection/>
         </main>

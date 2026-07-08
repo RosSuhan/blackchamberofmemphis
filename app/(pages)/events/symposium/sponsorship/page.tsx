@@ -61,6 +61,12 @@ export default function Sponsorship(){
             alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Convergence Memphis',
             width: 400,
             height: 145,
+        },{
+            name: "Pathway Lending",
+            image: "/events/symposium/2025-sponsors/pathway-lending.webp",
+            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
+            width: 2835,
+            height: 418,
         },
     ]
     

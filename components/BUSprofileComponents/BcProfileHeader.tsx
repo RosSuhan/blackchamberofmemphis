@@ -57,11 +57,18 @@ export default function BcProfileHeader({
                     <h1
                         className={style.bcPersonName}
                     >{profileName}</h1>
-                    <h2
+                    <p
                         className={style.bcPersonTitle}
+                        style={{margin:"0", fontWeight:"900"}}
                     >
-                        <span>{profileTitle}</span><span> * {profileCompany}</span>
-                    </h2>
+                        {profileTitle}
+                    </p>
+                    <p
+                        className={style.bcPersonTitle}
+                        style={{marginTop:"0", fontWeight:"500"}}
+                    >
+                        {profileCompany}
+                    </p>
                 </div>
             </div>
         </section>

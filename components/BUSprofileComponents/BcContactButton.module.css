@@ -26,11 +26,43 @@
     height: 1.2rem;
 }
 
+.mobileFooterButtons {
+    background: var(--white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5rem 0;
+}
+
+.bcFooterSaveButton {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background: var(--black);
+    color: var(--white);
+    padding: .5rem 0;
+    border-radius: 10px;
+    border: solid 1px var(--black);
+}
+
+.bcFooterShareButton {
+    width: 20%;
+    padding: .5rem 0;
+    border-radius: 10px;
+}
+
+
 @media (min-width:500px) {
+    .mobileFooterButtons {
+        display: none;
+    }
+
     .bcContactButtonSection {
-        /* background-color: purple; */
-        /* display: flex; */
-        /* align-items: center; */
         width: 90%;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -53,10 +85,6 @@
         border: solid 1px var(--black);
         padding: .5rem 1rem;
         border-radius: 100px;
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* color: var(--black); */
     }
     
     .bcSaveButton {
@@ -68,53 +96,11 @@
         border-color: var(--darkGold);
         color: var(--darkGold);
     }
-    
-    .bcContactButtonIcon {
-        /* width: 1.2rem; */
-        /* height: 1.2rem; */
-        /* background-color: purple; */
-    }
 }
 
 @media (min-width:600px) {
     .bcContactButtonSection {
-        /* width: 90%; */
         justify-content: flex-start;
-        /* flex-wrap: wrap; */
         gap: 1.2rem;
-        /* row-gap: 1.5rem; */
-    }
-
-    .bcContactButtonText {
-        /* display: initial; */
-    }
-    
-    .bcContactLink,
-    .bcSaveButton,
-    .bcShareButton {
-        /* display: flex; */
-        /* align-items: center; */
-        /* gap: 10px; */
-        /* text-decoration: none; */
-        /* background: transparent; */
-        /* border: solid 1px var(--black); */
-        /* padding: .5rem 1rem; */
-        /* border-radius: 100px; */
-    }
-    
-    .bcSaveButton {
-        /* background: var(--darkGold); */
-        /* border-color: var(--darkGold); */
-        /* color: var(--black); */
-    }
-    .bcShareButton {
-        /* border-color: var(--darkGold); */
-        /* color: var(--darkGold); */
-    }
-    
-    .bcContactButtonIcon {
-        /* width: 1.2rem; */
-        /* height: 1.2rem; */
-        /* background-color: purple; */
     }
 }
