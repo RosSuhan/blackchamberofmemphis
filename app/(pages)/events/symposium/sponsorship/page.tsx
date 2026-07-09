@@ -25,7 +25,7 @@ export default function Sponsorship(){
             type : "external"
         },
         {   
-            path: "/events/symposium/Symposium_Sponsorship_Deck_2026.pdf",
+            path: "/events/symposium/BCOM_Symposium_Package_070226.pdf",
             buttonName: "Download Sponsorship Deck",
             type : "download"
         },
