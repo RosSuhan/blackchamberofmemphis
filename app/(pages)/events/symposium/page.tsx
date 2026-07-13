@@ -29,17 +29,24 @@ export default function Symposium(){
     const symposium2026Partners = [
         {
             name: "Convergence Memphis",
-            image: "/events/symposium/2025-sponsors/CONVERGENCEMemphis.webp",
-            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Convergence Memphis',
-            width: 400,
-            height: 145,
+            image: "/events/symposium/2026-sponsors/convergence-logo.webp",
+            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Convergence Memphis',
+            width: 1230,
+            height: 220,
         },    {
             name: "Pathway Lending",
-            image: "/events/symposium/2025-sponsors/pathway-lending.webp",
+            image: "/events/symposium/2026-sponsors/Pathway-Lending.png",
             alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
             width: 2835,
             height: 418,
         },
+        {
+            name: "Reign Venue",
+            image: "/events/symposium/2026-sponsors/Reign-Logo.png",
+            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
+            width: 500,
+            height: 500
+        }
     ]
 
     return (
