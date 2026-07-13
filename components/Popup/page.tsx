@@ -59,14 +59,18 @@ export default function Popup({
                     </button>
                 </div>
                 
-
-                <Image
-                    src={imageSrc}
-                    alt={imageAlt}
-                    width={imageWidth}
-                    height={imageHeight}
-                    className={style.popupImage}
-                />
+                <Link
+                    href={ctaLink}
+                    className={style.popupClickImage}
+                >
+                    <Image
+                        src={imageSrc}
+                        alt={imageAlt}
+                        width={imageWidth}
+                        height={imageHeight}
+                        className={style.popupImage}
+                    />
+                </Link>
 
                 {title ? 
                     <h2
@@ -85,7 +89,7 @@ export default function Popup({
                 : null}
                 
 
-                {ctaLink ?
+                {/* {ctaLink ?
                     <Link
                         href={ctaLink}
                         className={style.popupCtaLink}
@@ -93,7 +97,7 @@ export default function Popup({
                     >
                         {ctaText}
                     </Link>
-                : null}
+                : null} */}
             </div>
         </div>
     )

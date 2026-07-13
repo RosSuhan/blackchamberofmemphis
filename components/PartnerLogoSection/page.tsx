@@ -1,5 +1,4 @@
 import LogoScrollRow from './LogoScrollRow'
-import LogoSliderRow from './LogoScrollRow'
 import LogoSlider from './LogoSliderRow'
 import LogoStaticRow from './LogoStaticRow'
 import style from './partnerLogoSection.module.css'

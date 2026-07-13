@@ -8,6 +8,7 @@ import { firstBaptistChurch } from './(f)/firstBaptistChurch'
 import { fordChapelAME } from './(f)/fordChapelAME'
 import { focusOnYou } from './(f)/focusOnYou'
 import { flavorfulLivingBrand } from './(f)/flavorfulLivingBrand'
+import { flawlessCleaning } from './(f)/flawlessCleaning'
 
 export const membersFlist = [
     flavorfulLivingBrand,
@@ -20,4 +21,5 @@ export const membersFlist = [
     firstBaptistChurch,
     fordChapelAME,
     focusOnYou,
+    flawlessCleaning,
 ]

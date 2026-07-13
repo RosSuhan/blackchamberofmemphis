@@ -68,17 +68,17 @@ export default function Home() {
   return (
     <>
       <Header/>
-      {/* <Popup
-        imageSrc={'/events/bcom-redbird-quarterly-mixer.webp'}
-        imageAlt={'BCoM Quarterly Network Mixer at the Redbird Game'}
-        imageWidth={4500}
-        imageHeight={4500}
-        title={"BCoM Networking Mixer"}
-        description={"Join us on June 19, 2026 @ 7pm - 10pm for an evening of connection, culture, and community at AutoZone Park as the Memphis Redbirds commemorate the historic legacy of the Memphis Red Sox Negro League."}
+      <Popup
+        imageSrc={'/pop-up/BCoM-Building-Wealth-in-Our-Community-Symposium-200x300.jpg'}
+        imageAlt={'BCoM Building Wealth in Our Community Symposium 2026'}
+        imageWidth={200}
+        imageHeight={300}
+        title={"BCoM Building Wealth in Our Community Symposium 2026"}
+        description={"Be part of the experience everyone will be talking about! Tickets are now available for our upcoming event, bringing together inspiring speakers, powerful conversations, and unmatched networking opportunities. Register today and secure your seat."}
         ctaText={'Read More'}
-        ctaLink={"/events/bcom-redbird-mixer"}
-        storageKey="redbird-event"
-      /> */}
+        ctaLink={"/events/symposium"}
+        storageKey="symposium"
+      /> 
 
       <PageHeroSection
         mainHeading = "Grow your business beyond visibility"

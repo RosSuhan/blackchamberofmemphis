@@ -23,6 +23,7 @@
     padding: 1rem 0;
 }
 
+
 .closeButtonRow {
     width: 90%;
     display: flex;
@@ -34,8 +35,16 @@
     padding: .5rem 1rem;
 }
 
-.popupImage {
+
+.popupClickImage {
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupImage {
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
@@ -79,18 +88,38 @@
 }
 
 @media (min-width:400px) {
-    .popup {
+    .popupClickImage {
         width: 360px;
     }
 }
 
 @media (min-width:600px) {
-    .popup {
+    .popupClickImage {
         width: 500px;
         height: 90%;
     }
     
     .popupImage {
         width: 60%;
+    }
+}
+
+@media (min-width:700px) {
+    .popup {
+        width: 600px;
+    }
+    
+    .popupImage {
+        width: 40%;
+    }
+}
+
+@media (min-width:800px) {
+    .popup {
+        width: 700px;
+    }
+    
+    .popupImage {
+        width: 35%;
     }
 }
