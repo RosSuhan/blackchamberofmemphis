@@ -97,6 +97,11 @@ const publicPartners = [
 
 const strategicPartners = [
     {
+        logo: "boomin-u",
+        alt: "Boomin University",
+        logoWidth: 1300,
+        logoHeight: 800
+    },{
         logo: "remoting.work_bright_green",
         alt: "remoting.work",
         logoWidth: 13828,
