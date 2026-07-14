@@ -6,7 +6,7 @@ export const vitalCareServices : MembersListType = {
     businessName : "Vital Care Services",
     bannerImage : "",
     profileLogo : "vital-care-services",
-    profileDescription : "Vital Care Services Inc. is a Memphis-based healthcare training provider offering CPR, Basic Life Support (BLS), and First Aid certification courses for healthcare professionals, businesses, and the community. The company is dedicated to promoting health, safety, and emergency preparedness through hands-on, instructor-led training.",
+    profileDescription : "Vital Care Services Inc. is a Memphis-based maternal and family health education provider offering birth doula services, childbirth education, postpartum support, CPR/BLS certification, and healthcare consulting. The company empowers individuals and families with the knowledge, skills, and support needed for healthy pregnancies, safe births, and confident parenting.",
     profileCategory : [
         "professional-legal-financial-services",
     ],
@@ -22,6 +22,7 @@ export const vitalCareServices : MembersListType = {
         'cpr certification',
         'bls certification',
         'workplace safety training'
+
     ],
     profileBusinessDescription : ``,
     gallery : [
@@ -41,32 +42,33 @@ export const vitalCareServices : MembersListType = {
     email : "Octavia@myvitalcare24.com",
     website : "https://myvitalcare24.com",
     telNumber : "9012169356",
-    facebook : "",
+    facebook : "https://www.facebook.com/profile.php?id=61560457934247",
     instagram : "",
     youtube : "",
-    linkedIn : "",
+    linkedIn : "https://www.linkedin.com/in/octavia-quarles-03b540103/",
     linktree : "",
     twitter: "",
     tiktok : "",
     pinterest : "",
     offering : `
         <ul style="text-align: left">
-            <li>CPR Certification Classes</li>
-            <li>Basic Life Support (BLS) Certification</li>
+            <li>Birth Doula Support</li>
+            <li>Childbirth Education Classes</li>
+            <li>Postpartum Support Services</li>
+            <li>Infant Safety Education</li>
+            <li>CPR & Basic Life Support (BLS) Certification</li>
             <li>First Aid Training</li>
-            <li>Group Training for Businesses</li>
-            <li>On-Site CPR & BLS Training</li>
-            <li>Healthcare Provider Certification</li>
-            <li>Community Emergency Preparedness Training</li>
+            <li>Healthcare Consulting & Community Health Education
+</li>
         </ul>`,
     busBullets : `
         <ul style="text-align: left">
-            <li>Certified instructors delivering hands-on, practical training</li>
-            <li>Affordable CPR, BLS, and First Aid certification courses</li>
-            <li>Flexible on-site training for businesses and organizations</li>
-            <li>Engaging learning environment focused on real-world emergency response</li>
-            <li>Courses designed for healthcare professionals and community members alike</li>
-            <li>Commitment to promoting health, safety, and emergency preparedness</li>
-            <li>Trusted local provider serving the Memphis community</li>
+            <li>Compassionate support for expectant parents and growing families</li>
+            <li>Comprehensive maternal, newborn, and family health education</li>
+            <li>Certified instructors providing hands-on CPR, BLS, and First Aid training</li>
+            <li>Personalized guidance through pregnancy, childbirth, and postpartum recovery</li>
+            <li>Flexible group and on-site training for businesses and community organizations</li>
+            <li>Healthcare consulting backed by education and practical experience</li>
+            <li>Dedicated to empowering healthier families and stronger communities through education</li>
         </ul>`,
 }
