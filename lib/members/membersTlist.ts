@@ -50,8 +50,10 @@ import { tennesseeHospTourism } from './(t)/tennesseeHospTourism'
 import { taylorMadeGlobalConsulting } from './(t)/taylorMadeGlobalConsulting'
 import { theBodyTekWellnessMassage } from './(t)/theBodyTekWellnessMassage'
 import { tdRealLogistics } from './(t)/tdRealLogistics'
+import { theMemphisChallenge } from './(t)/theMemphisChallenge'
 
 export const membersTlist = [
+    theMemphisChallenge,
     tdRealLogistics,
     theBodyTekWellnessMassage,
     taylorMadeGlobalConsulting,
