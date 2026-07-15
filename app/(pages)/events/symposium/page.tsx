@@ -10,16 +10,32 @@ import VideoBlock from '@/components/VIDEO/page'
 import { symposiumPartners } from '@/lib/symposium'
 import { Metadata } from 'next'
 
-export const metadate: Metadata = {
-    title: 'Building Entrepreneur City Symposium | Register Today | Black Chamber of Memphis',
-    description: "Join us for an inspiring event featuring networking, expert speakers, and opportunities to connect with business leaders. Register today to secure your spot!",
-    keywords: [],
+export const metadata: Metadata = {
+    title: '2026 Memphis Business Symposium | Building Wealth in Our Community',
+    description: "Join the 2026 Building Wealth in Our Community Symposium in Memphis. Connect with entrepreneurs, investors, business leaders, and partners driving access, investment, and economic mobility. Register today.",
+    keywords: [
+        'Memphis Business Symposium',
+        'Memphis Business Conference',
+        'Black Chamber of Memphis',
+        'Building Wealth in Our Community Symposium',
+        'Entrepreneurship Conference',
+        'Business Networking Memphis',
+        'Economic Development',
+        'Small Business',
+        'Minority Business',
+        'Black-Owned Businesses',
+        'Business Growth',
+        'Procurement',
+        'Access to Capital'
+    ],
     alternates: { canonical: 'https://blackchamberofmemphis.org/events/symposium'},
     openGraph: {
-        title: 'Building Entrepreneur City Symposium',
-        description: 'Join us for an inspiring event featuring networking, expert speakers, and opportunities to connect with business leaders. Register today to secure your spot!',
+        title: 'Building Wealth in Our Community Symposium 2026',
+        description: 'Experience a premier business symposium designed to help entrepreneurs and business leaders build stronger companies through access to capital, investment opportunities, procurement, technology, and meaningful connections. Registration is now open.',
         url: 'https://blackchamberofmemphis.org/events/symposium',
         siteName: 'Black Chamber of Memphis',
+        type: 'website',
+        locale: 'en_US',
         images: [
             {
                 url: '/events/symposium/BCoM-Building-Wealth-in-Our-Community-Symposium.jpg',
@@ -31,10 +47,18 @@ export const metadate: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Building Entrepreneur City Symposium',
-        description: 'Join us for an inspiring event featuring networking, expert speakers, and opportunities to connect with business leaders. Register today to secure your spot!',
+        title: 'Building Wealth in Our Community Symposium 2026',
+        description: "Join Memphis' premier business symposium focused on entrepreneurship, access to capital, investment, and economic mobility. Registration is now open.",
         images: ['/events/symposium/BCoM-Building-Wealth-in-Our-Community-Symposium.jpg']
-    }
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+    authors: [
+        { name: 'Black Chamber of Memphis' }
+    ],
+    category: 'Business Conference',
 }
 
 export default function Symposium(){
