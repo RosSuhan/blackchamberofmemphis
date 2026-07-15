@@ -8,6 +8,34 @@ import SymFooter from '@/components/symposiumComps/symFooter/page'
 import WideTextSection from '@/components/symposiumComps/wideTextSection/page'
 import VideoBlock from '@/components/VIDEO/page'
 import { symposiumPartners } from '@/lib/symposium'
+import { Metadata } from 'next'
+
+export const metadate: Metadata = {
+    title: 'Building Entrepreneur City Symposium | Register Today | Black Chamber of Memphis',
+    description: "Join us for an inspiring event featuring networking, expert speakers, and opportunities to connect with business leaders. Register today to secure your spot!",
+    keywords: [],
+    alternates: { canonical: 'https://blackchamberofmemphis.org/events/symposium'},
+    openGraph: {
+        title: 'Building Entrepreneur City Symposium',
+        description: 'Join us for an inspiring event featuring networking, expert speakers, and opportunities to connect with business leaders. Register today to secure your spot!',
+        url: 'https://blackchamberofmemphis.org/events/symposium',
+        siteName: 'Black Chamber of Memphis',
+        images: [
+            {
+                url: '/events/symposium/BCoM-Building-Wealth-in-Our-Community-Symposium.jpg',
+                width: 1200,
+                height: 630,
+                alt: "BCoM Building Wealth in Our Community Symposium 2026"
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Building Entrepreneur City Symposium',
+        description: 'Join us for an inspiring event featuring networking, expert speakers, and opportunities to connect with business leaders. Register today to secure your spot!',
+        images: ['/events/symposium/BCoM-Building-Wealth-in-Our-Community-Symposium.jpg']
+    }
+}
 
 export default function Symposium(){
     const ctaButtons = [
