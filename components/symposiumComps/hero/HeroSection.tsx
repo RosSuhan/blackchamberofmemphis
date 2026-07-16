@@ -41,11 +41,18 @@ export default function SymposiumHero({showButtons, ctaButtons}: SymposiumHeroPr
                     : null}
                 </div>
                 <Image
-                    src={'/events/symposium/BCOM_Symposium_2025_Day2-16.jpg'}
+                    src={'/events/symposium/symposium-2026-hero.webp'}
+                    alt=''
+                    width={750}
+                    height={900}
+                    className={style.symposiumHeroBackgroundImageMobile}
+                />
+                <Image
+                    src={'/events/symposium/bcom-symposium-2025.webp'}
                     alt=''
                     width={2048}
                     height={1363}
-                    className={style.symposiumHeroBackgroundImage}
+                    className={style.symposiumHeroBackgroundImageDesktop}
                 />
             </section>
     )

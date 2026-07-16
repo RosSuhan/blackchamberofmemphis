@@ -3,12 +3,16 @@
     position: relative;
 }
 
-.symposiumHeroBackgroundImage {
+.symposiumHeroBackgroundImageMobile {
     position: absolute;
     z-index: 0;
     width: 100%;
     height: 100%;
     top: 0;
+}
+
+.symposiumHeroBackgroundImageDesktop {
+    display: none;
 }
 
 .symposiumHeroOverlay {
@@ -84,5 +88,18 @@
     .symposiumHeroOverlay {
         padding: 4rem 0;
         row-gap: 1rem;
+    }
+
+    .symposiumHeroBackgroundImageMobile {
+        display: none;
+    }
+
+    .symposiumHeroBackgroundImageDesktop {
+        display: initial;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
     }
 }
