@@ -45,6 +45,7 @@ export default function SymposiumHero({showButtons, ctaButtons}: SymposiumHeroPr
                     alt=''
                     width={750}
                     height={900}
+                    priority
                     className={style.symposiumHeroBackgroundImageMobile}
                 />
                 <Image
@@ -52,6 +53,7 @@ export default function SymposiumHero({showButtons, ctaButtons}: SymposiumHeroPr
                     alt=''
                     width={2048}
                     height={1363}
+                    priority
                     className={style.symposiumHeroBackgroundImageDesktop}
                 />
             </section>

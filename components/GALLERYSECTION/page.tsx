@@ -40,6 +40,7 @@ export default function GallerySection({
                             alt={image.alt}
                             width={image.width}
                             height={image.height}
+                            loading='lazy'
                             className={style.galleryImage} //memberGalleryImage
                         />
                     </div>
