@@ -47,6 +47,8 @@ export default function SymposiumHero({showButtons, ctaButtons}: SymposiumHeroPr
                     width={2048}
                     height={1363}
                     sizes='100dvw'
+                    priority
+                    fetchPriority='high'
                     className={style.symposiumHeroBackgroundImage}
                 />
             </section>
