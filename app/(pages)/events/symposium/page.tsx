@@ -7,6 +7,8 @@ import PartnerWithUs from '@/components/symposiumComps/partnerWithUs/page'
 import SymFooter from '@/components/symposiumComps/symFooter/page'
 import WideTextSection from '@/components/symposiumComps/wideTextSection/page'
 import VideoBlock from '@/components/VIDEO/page'
+import EventSchema from '@/components/Schema/EventSchema'
+import { CreateEventSchema } from '@/lib/schema/eventSchema'
 import { symposiumPartners } from '@/lib/symposium'
 import { Metadata } from 'next'
 
@@ -62,6 +64,47 @@ export const metadata: Metadata = {
 }
 
 export default function Symposium(){
+    const schema = CreateEventSchema({
+        name : "Building Weath In Our Community Symposium: Building Entrepreneur City",
+        description : "Join Memphis' premier business symposium focused on entrepreneurship, access to capital, investment, and economic mobility. Registration is now open.",
+        image : '/events/symposium/BCoM-Building-Wealth-in-Our-Community-Symposium.jpg',
+        url : 'https://blackchamberofmemphis.org/events/symposium',
+        eventAttendanceMode : 'https://schema.org/OfflineEventAttendanceMode',
+        startDate : '2026-10-02T08:30:00-05:00',
+        endDate : '2026-10-02T16:00:00-05:00',
+        location : {
+            venue : "Reign Event Venue",
+            streetAddress : '3243 Players Club Cir',
+            postalCode : '38125',
+        },
+        organizer : {
+            name : "Black Chamber of Memphis",
+            url : 'https://blackchamberofmemphis.org',
+            logo : 'https://blackchamberofmemphis.org/assets/BCM-Logo_Full-Color-Black-Text.webp',
+        },
+        offers : [
+            {
+                url : 'https://blackchamberofmemphis.org/events/symposium',
+                name : "Member Ticket",
+                availability : 'https://schema.org/InStock',
+                price : 50,
+                validFrom : '2026-07-15'
+            },{
+                url : 'https://blackchamberofmemphis.org/events/symposium',
+                name : "Non-Member Ticket",
+                availability : 'https://schema.org/InStock',
+                price : 75,
+                validFrom : '2026-07-15'
+            },{
+                url : 'https://blackchamberofmemphis.org/events/symposium',
+                name : "AIM After Hours",
+                availability : 'https://schema.org/InStock',
+                price : 52,
+                validFrom : '2026-07-15'
+            }
+        ],
+    })
+
     const ctaButtons = [
         {
             path: "/events/symposium/sponsorship",
@@ -100,12 +143,12 @@ export default function Symposium(){
 
     return (
         <main>
+            <EventSchema schema={schema}/>
+
             <SymposiumHero
                 showButtons={true}
                 ctaButtons={ctaButtons || []}
             />
-
-            {/* <ThreeBlockRow/> */}
 
             <VideoBlock/>
 
