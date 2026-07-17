@@ -15,25 +15,25 @@
   --darkGold: #b59c2c;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Arboria";
   src: url(/font/Arboria/Arboria_Black.otf);
 }
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url(/public/font/Roboto/static/Roboto-Bold.ttf);
+  src: url(/font/Roboto/static/Roboto-Bold.ttf);
 }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url(/public/font/Roboto/static/Roboto-Medium.ttf);
+  src: url(/font/Roboto/static/Roboto-Medium.ttf);
 }
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url(/public/font/Roboto/static/Roboto-Regular.ttf);
-}
+  src: url(/font/Roboto/static/Roboto-Regular.ttf);
+} */
 
 html {
   max-width: 100dvw;
@@ -46,14 +46,14 @@ body {
   padding: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .globalMainHeading {
   font-size: 2.027rem;
-  font-family: "Arboria";
+  font-family: var(--font-manrope);
   width: 90%;
   text-transform: capitalize;
   margin: 0;
@@ -62,7 +62,7 @@ body {
 
 .globalSecondHeading {
   font-size: 1.802rem;
-  font-family: "Arboria";
+  font-family: var(--font-manrope);
   margin: .5rem 0 1rem 0;
   width: 90%;
   text-align: center;
@@ -71,7 +71,6 @@ body {
 .globalThirdHeading {
   font-size: 1.402rem;
   margin: .5rem 0;
-  font-family: "Roboto-Medium";
   width: 90%;
   text-align: center;
 }
@@ -79,7 +78,6 @@ body {
 .globalText {
   width: 90%;
   font-size: 1.1rem;
-  font-family: "Roboto-Regular";
   letter-spacing: .02rem;
   line-height: 1.1;
   margin: .5rem 0;
@@ -88,13 +86,11 @@ body {
 
 .globalSmallText {
   width: 90%;
-  font-family: "Roboto-Regular";
   font-size: 1rem;
   letter-spacing: 0.02rem;
 }
 
 .globalXsmallText {
-  font-family: "Roboto-Regular";
   font-size: 0.9rem;
   letter-spacing: 0.02rem;
 }
@@ -109,7 +105,8 @@ body {
   justify-content: center;
   border-radius: 10px;
   font-size: 1.1rem;
-  font-family: "Roboto-Bold";
+  font-family: var(--font-roboto);
+  font-weight: 700;
   text-decoration: none;
   border: var(--lightGold) 2px solid;
 }
@@ -128,7 +125,8 @@ body {
 .globalBlackButton {
   background: var(--black);
   color: var(--white);
-  font-family: "Roboto-Bold";
+  font-family: var(--font-roboto);
+  font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 1.1;
   text-decoration: none;

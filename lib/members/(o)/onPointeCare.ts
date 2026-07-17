@@ -26,7 +26,13 @@ export const onPointeCare : MembersListType = {
         'hypertension management',
         
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>OnPointe Care is a locally owned healthcare clinic serving Bartlett, Memphis, Cordova, Germantown, Lakeland, and surrounding communities with comprehensive primary care, urgent care, and preventive health services. Led by Dr. Mohammed Bah, the clinic is dedicated to providing compassionate, patient-centered healthcare that is both accessible and affordable for individuals and families of all ages.</p>
+        <p>The clinic offers a wide range of medical services designed to meet the everyday healthcare needs of the community. From routine wellness exams and annual physicals to same-day urgent care and walk-in visits, OnPointe Care makes it easy for patients to receive timely medical attention without unnecessary delays. The practice also provides preventive screenings, chronic disease management, and ongoing wellness services that help patients take a proactive approach to their long-term health.</p>
+        <p>Recognizing that quality healthcare should be available to everyone, OnPointe Care is committed to delivering affordable healthcare solutions, including its Health Ease Solutions program, which provides accessible care options for individuals seeking quality medical services at transparent prices. By focusing on convenience, affordability, and personalized treatment, the clinic helps patients receive the care they need with confidence and peace of mind.</p>
+        <p>The experienced healthcare team believes in building lasting relationships with patients through attentive listening, clear communication, and individualized care plans. Whether treating acute illnesses, managing chronic conditions such as diabetes or hypertension, or supporting preventive wellness goals, every patient receives care tailored to their unique health needs.</p>
+        <p>OnPointe Care is committed to improving the health of the communities it serves by combining modern medical care with a compassionate approach. Through convenient access, comprehensive services, and a dedication to exceptional patient experiences, the clinic continues to be a trusted healthcare provider for families and individuals throughout the Greater Memphis area.</p>
+`,
     gallery : [
         // {image : "", alt : "", width : 100, height: 100}
     ],

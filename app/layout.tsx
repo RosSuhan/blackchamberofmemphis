@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
-import Header from "@/components/nav/Header/page";
-import Footer from "@/components/nav/Footer/page";
+import { manrope, roboto } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL ('https://blackchamberofmemphis.org/'),
@@ -29,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${manrope.variable} ${roboto.variable}`}>
       <head>
         {/* ⭐ Google Tag Manager – HEAD Script */}
         <Script
