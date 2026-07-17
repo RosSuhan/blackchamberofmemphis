@@ -1,48 +1,85 @@
-.videoBlock {
+.videoBlock,
+.thumbnailBlock {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem 0 0 0;
+    position: relative;
+}
 
+.thumbnailBlock {
+    margin-top: 3rem;
+}
+
+.thumbnail {
+    width: 180px;
+    aspect-ratio: 5 / 4;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    background: transparent;
 }
 
 .video {
-    width: 200px;
-    height: 112.5px;
+    width: min(100%, 280px);
+    aspect-ratio: 16 / 9;
 }
 
 @media (min-width:300px) {
+    .thumbnail {
+        width: min(100%, 300px);
+    }
+
     .video {
-        width: 300px;
-        height: 168px;
+        width: min(100%, 300px);
     }
 }
 
 @media (min-width:400px) {
+    .thumbnail {
+        width: min(100%, 450px);
+    }
+
     .video {
-        width: 400px;
-        height: 225px;
+        width: min(100%, 450px);
     }
 }
 
 @media (min-width:500px) {
+    .thumbnailBlock,
+    .videoBlock {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .thumbnail {
+        width: min(100%, 500px);
+        aspect-ratio: 16 / 9;
+    }
+
     .video {
-        width: 500px;
-        height: 281px;
+        width: min(100%, 500px);
     }
 }
 
 @media (min-width:700px) {
-    .video {
-        width: 600px;
-        height: 338px;
+    .thumbnailBlock,
+    .videoBlock {
+        width: 70%;
     }
 }
 
 @media (min-width:1000px) {
+    .thumbnailBlock {
+        width: 50%;
+    }
+    .videoBlock {
+        width: 90%;
+    }
+
     .video {
-        width: 1000px;
-        height: 563px;
+        width: min(100%, 700px);
     }
 }

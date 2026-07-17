@@ -150,7 +150,10 @@ export default function Symposium(){
                 ctaButtons={ctaButtons || []}
             />
 
-            <VideoBlock/>
+            <VideoBlock
+                videoID='ThCocbBHMM8'
+                title='Building Wealth in Our Community Symposium'
+            />
 
             <WideTextSection
                 wideTextSectionHeading={"Building Wealth In Our Community Symposium"}

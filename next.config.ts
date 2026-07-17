@@ -14,8 +14,18 @@ const nextConfig: NextConfig = {
         permanent: true
       }
     ]
-  }
+  },
   /* config options here */
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        pathname: "/vi/**",
+      }
+    ]
+  }
 };
 
 export default nextConfig;
