@@ -5,7 +5,7 @@ type LogoSliderRowProp = {
     partners : {image : string, alt : string, width: number, height : number}[]
 }
 export default function PartnerLogoSlider({partners}: LogoSliderRowProp){
-    const duplicatedPartners = [...partners, ...partners]
+    const duplicatedPartners = [...partners, ...partners.slice(0.5)]
 
     return(
         <div
@@ -20,11 +20,12 @@ export default function PartnerLogoSlider({partners}: LogoSliderRowProp){
                         className={style.logoWrapper}
                     >
                         <Image
-                            key={z}
+                            key={`${image}-${z}`}
                             src={image}
                             alt={alt}
                             width={width}
                             height={height}
+                            sizes='(max-width:768px) 120px, 180px'
                             className={style.partnersLogo}
                         />
                     </div>

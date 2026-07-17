@@ -45,7 +45,7 @@ export default function TwoButtonRow({buttonsInfo}: TwoButtonRowProp){
                     return(
                         <a 
                             href={path}
-                            key={index}
+                            key={`${type}-${path}`}
                             download
                             className={style.symposiumCta}
                             title={`download document ${buttonName}`}
@@ -60,7 +60,7 @@ export default function TwoButtonRow({buttonsInfo}: TwoButtonRowProp){
                     return (
                         <a 
                             href={path}
-                            key={index}
+                            key={`${type}-${path}`}
                             className={style.symposiumCta}
                             title={`path to ${buttonName}`}
                             target='_blank'
@@ -75,7 +75,7 @@ export default function TwoButtonRow({buttonsInfo}: TwoButtonRowProp){
                 if( type === "internal") {
                     return (
                         <Link
-                            key={index}
+                            key={`${type}-${path}`}
                             href={path}
                             className={style.symposiumCta}
                             title={`path to ${buttonName}`}
@@ -88,7 +88,7 @@ export default function TwoButtonRow({buttonsInfo}: TwoButtonRowProp){
                 //Anchor (default)
                 return (
                     <Link
-                        key={index}
+                        key={`${type}-${path}`}
                         href={path}
                         className={style.symposiumCta}
                         onClick={(e) => handleAnchorClick(e, path)}
