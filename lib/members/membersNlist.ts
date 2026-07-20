@@ -9,8 +9,10 @@ import { newHopeBaptistChurchMemphis } from './(n)/newHopeBaptistChurchMemphis'
 import { newSalemMissionaryBaptist } from './(n)/newSalemMissionaryBaptist'
 import { neatNtidy } from './(n)/neatNtidy'
 import { nextMoveNationConsulting } from './(n)/nextMoveNationConsulting'
+import { noblePointManagementAccounting } from './(n)/noblePointManagementAccounting'
 
 export const membersNlist = [
+    noblePointManagementAccounting,
     nextMoveNationConsulting,
     neatNtidy,
     nailsByNicole,
