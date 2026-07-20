@@ -121,7 +121,7 @@ export default function Symposium(){
     const symposium2026Partners = [
         {
             name: "Convergence Memphis",
-            image: "/events/symposium/2026-sponsors/convergence-logo.webp",
+            image: "/events/symposium/2026-sponsors/convergence-logo.png",
             alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Convergence Memphis',
             width: 1230,
             height: 220,
@@ -134,7 +134,7 @@ export default function Symposium(){
         },
         {
             name: "Reign Venue",
-            image: "/events/symposium/2026-sponsors/Reign-Logo.png",
+            image: "/events/symposium/2026-sponsors/reign-logo.png",
             alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
             width: 500,
             height: 500

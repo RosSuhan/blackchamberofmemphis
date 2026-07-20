@@ -31,6 +31,8 @@
     height: auto;
     border-radius: 12px;
     display: block;
+    background: #ffffff;
+    padding: 1rem;
 }
 
 @media (min-width:400px) {
