@@ -70,7 +70,7 @@ export default function Sponsorship(){
         },
         {
             name: "Reign Venue",
-            image: "/events/symposium/2026-sponsors/reign-logo.png",
+            image: "/events/symposium/2026-sponsors/reign-logo-new.png",
             alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
             width: 500,
             height: 500
