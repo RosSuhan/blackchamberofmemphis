@@ -24,8 +24,10 @@ import { alphaExpressTrans } from './(a)/alphaExpressTrans'
 import { angelsAroundTheClockHomecare } from './(a)/angelsAroundTheClockHomecare'
 import { accessMedStaffingSolHealth } from './(a)/accessMedStaffingSolHealth'
 import { affluentBooks } from './(a)/affluentBooks'
+import { aBetterChoiceChildcare } from './(a)/aBetterChoiceChildcare'
 
 export const membersAlist = [
+    aBetterChoiceChildcare,
     affluentBooks,
     aOneStaffing,
     aaronPatrickArch,
