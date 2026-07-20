@@ -107,7 +107,8 @@ export default function Symposium(){
 
     const ctaButtons = [
         {
-            path: "/events/symposium/sponsorship",
+            // path: "/events/symposium/sponsorship",
+            path: '#sponsorship',
             buttonName: "Become a Sponsor",
             type : "internal" 
         },

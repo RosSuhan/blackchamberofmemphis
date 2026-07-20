@@ -9,12 +9,12 @@ export default function PartnerWithUs(){
             buttonName: "Explore Corporate Sponsorship",
             path: '/events/symposium/sponsorship'
         },
-        // {
-        //     title: "Creative & In-Kind Sponsorship",
-        //     intro: " Showcase your services, contribute to the experience, and connect with new opportunities.",
-        //     buttonName: "Become a Creative Partner",
-        //     path: "/events/symposium/creative-production-sponsorship"
-        // }
+        {
+            title: "Creative & In-Kind Sponsorship",
+            intro: " Showcase your services, contribute to the experience, and connect with new opportunities.",
+            buttonName: "Become a Creative Partner",
+            path: "/events/symposium/creative-production-sponsorship"
+        }
     ]
 
     return(

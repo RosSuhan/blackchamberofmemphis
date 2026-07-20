@@ -30,7 +30,12 @@ export const noblePointManagementAccounting : MembersListType = {
         'quickbooks consulting',
 
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Noble Point Management & Accounting is a full-service back-office support and accounting firm dedicated to helping businesses, nonprofit organizations, and government contractors operate more efficiently through comprehensive financial, administrative, and operational solutions. Acting as an extension of each client's team, the firm provides scalable support that allows business owners and organizational leaders to focus on growth while leaving critical back-office functions in experienced hands.</p>
+        <p>The firm's accounting and financial management services include bookkeeping, payroll processing, financial statement preparation, tax planning, budgeting, cash flow management, financial reporting, controller services, and Fractional CFO support. By delivering accurate financial data and strategic insights, Noble Point empowers clients to make informed business decisions, maintain compliance, and build long-term financial stability.</p>
+        <p>Beyond accounting, Noble Point offers comprehensive back-office management services designed to improve organizational efficiency. The firm's expertise includes human resources administration, employee onboarding, recruiting support, policy development, compliance management, workflow optimization, document management, vendor coordination, and operational process improvement. These services help organizations establish stronger internal systems while reducing administrative burdens and operational risks.</p>
+        <p>Noble Point also supports business growth through executive administrative assistance, project coordination, CRM management, office operations, and business consulting. In addition, the firm provides marketing support services such as website development, branding consultation, social media management, content strategy, and digital business optimization, giving clients access to a well-rounded business support partner under one roof.</p>
+        <p>Whether a client requires day-to-day bookkeeping, executive-level financial leadership, human resources support, operational consulting, or fully outsourced back-office management, Noble Point Management & Accounting delivers customized solutions tailored to each organization's unique goals. Through professionalism, accuracy, and strategic partnership, the firm helps businesses operate more efficiently, strengthen compliance, improve financial performance, and position themselves for sustainable long-term success.</p>`,
     gallery : [
         // {image : "", alt : "", width : 100, height: 100}
     ],

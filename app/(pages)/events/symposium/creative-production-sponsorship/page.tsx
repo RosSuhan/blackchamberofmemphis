@@ -3,6 +3,7 @@ import FAQSection from "@/components/symposiumComps/faqSection/page";
 import SymposiumHero from "@/components/symposiumComps/hero/HeroSection";
 import InKindSponsorOptions from "@/components/symposiumComps/inKindSponsorOptions/page";
 import LastCtaSection from "@/components/symposiumComps/lastCTASection/page";
+import PartnerLogoSlider from "@/components/symposiumComps/PartnerLogoSlider/page";
 import SymFooter from "@/components/symposiumComps/symFooter/page";
 import ThreeBlockRow from "@/components/symposiumComps/threeBlockRow/page";
 import TierSection from "@/components/symposiumComps/tiersSection/page";
@@ -33,21 +34,17 @@ export default function CreativeProdSponsor(){
             tierBlockBackground : "#D8BCA5",
             tierPriceColor : "#000000",
             tierTextColor : "#000000",
-            amount : "15,000",
+            amount : "5,000",
             sponsorTitle : "",
             sponsorDate : "",
             sponsorBenefits : [
-                "Optional: Limited 3-day Digital Billboard Rotation",
-                "Up to 60 second Promo Video During Main Stage Transition",
+                "Optional: Limited 7-day Digital Billboard Rotation",
                 "Logo Displayed on Printed & Digital Material",
                 "1 Dedicated Sponsor Spotlight Post across BCoM platforms",
+                "On-stage Verbal Recognition Throughout the Symposium",
                 "1 Post-event Spotlight Promo (video or reel shared within 60 days)",
-                "On-stage Verbal Recognition During Main Program",
-                "6 Symposium Tickets",
-                "6 Momentum Mixer Tickets",
-                "2 Speaker Meet & Greet Tickets",
-                "1 President's Power Breakfast Tickets",
-                "1 Item Included in Attendee Bags"
+                "4 Symposium Tickets",
+                "2 Chairman's Council Reception Tickets",
             ],
             featureBenefits : [
                 "Multi-channel brand visibility across event platforms",
@@ -64,22 +61,18 @@ export default function CreativeProdSponsor(){
             tierBlockBackground : "#a1995f",
             tierPriceColor : "#ffffff",
             tierTextColor : "#ffffff",
-            amount : "20,000",
+            amount : "10,000",
             sponsorTitle : "",
             sponsorDate : "",
             sponsorBenefits : [
-                "Optional: Limited 7-day Digital Billboard Rotation",
-                "1 Moderator or Panelist Spot (Subject to Availability)",
+                "Optional: Limited 14-day Digital Billboard Rotation",
                 "Up to 60 second Promo Video During Main Stage Transition",
                 "Logo Displayed on Printed & Digital Material",
-                "2 Dedicated Sponsor Spotlight Post across BCoM platforms",
+                "1 Dedicated Sponsor Spotlight Post across BCoM platforms",
                 "1 Post-event Spotlight Promo (1 shared within 60 days)",
                 "On-stage Verbal Recognition During Main Program",
-                "On-site Activation",
-                "10 Symposium Tickets",
-                "10 Momentum Mixer Tickets",
-                "2 Speaker Meet & Greet Tickets",
-                "1 President's Power Breakfast Tickets",
+                "5 Symposium Tickets",
+                "3 Chairman's Council Reception Tickets",
                 "1 Item Included in Attendee Bags"
             ],
             featureBenefits : [
@@ -97,20 +90,15 @@ export default function CreativeProdSponsor(){
             tierBlockBackground : "#D8BCA5",
             tierPriceColor : "#000000",
             tierTextColor : "#000000",
-            amount : "10,000",
+            amount : "2,500",
             sponsorTitle : "",
             sponsorDate : "",
             sponsorBenefits : [
-                "Optional: Limited 3-day Digital Billboard Rotation",
-                "Up to 60 second Promo Video During Main Stage Transition",
                 "Logo Displayed on Printed & Digital Material",
                 "1 Dedicated Sponsor Spotlight Post across BCoM platforms",
-                "1 Post-event Spotlight Promo (video or reel shared within 60 days)",
+                "Inclusion in Post-Event Thank-You Graphic and Email",
                 "On-stage Verbal Recognition During Main Program",
                 "4 Symposium Tickets",
-                "4 Momentum Mixer Tickets",
-                "2 Speaker Meet & Greet Tickets",
-                "1 Item Included in Attendee Bags"
             ],
             featureBenefits : [
                 "Brand visibility across digital and on-site event channels",
@@ -129,15 +117,14 @@ export default function CreativeProdSponsor(){
             tierBlockBackground : "#D8BCA5",
             tierPriceColor : "#000000",
             tierTextColor : "#000000",
-            amount : "2,500",
+            amount : "1,000",
             sponsorTitle : "",
             sponsorDate : "",
             sponsorBenefits : [
-                "Logo Displayed on Digital Material",
-                "Inclusion in Post-event group sponsor thank-you Graphic & Email",
                 "On-stage Verbal Recognition During Main Program",
+                "1 Shared Sponsor Spotlight Post across BCoM platforms",
+                "Inclusion in Post-event group sponsor thank-you Graphic & Email",
                 "2 Symposium Tickets",
-                "2 Momentum Mixer Tickets"
             ],
             featureBenefits : [
                 "Brand visibility across digital event materials",
@@ -148,47 +135,46 @@ export default function CreativeProdSponsor(){
             // featureHighlight : "Be recognised as a contributing partner to the event experience"
             featureHighlight : ""
         },
-        {
-            tIndex : "creativeSponsorOne",
-            tierBlockBackground : "#121523",
-            tierPriceColor : "#ffffff",
-            tierTextColor : "#ffffff",
-            amount : "5,000",
-            sponsorTitle : "",
-            sponsorDate : "",
-            sponsorBenefits : [
-                "Logo Displayed on Printed & Digital Material",
-                "1 Dedicated Sponsor Spotlight Post across BCoM Platforms",
-                "On-stage Verbal Recognition During Main Program",
-                "1 Post-event Spotlight Promo (Video or reel shared within 60 days)",
-                "1 Vendor Table",
-                "2 Symposium Tickets",
-                "2 Momentum Mixer Tickets",
-                "1 Speaker Meet & Greet Ticket"
-            ],
-            featureBenefits : [
-                "On-site activation to engage attendees directly",
-                "Brand visibility across event materials and platforms",
-                "Featured sponsor spotlight content",
-                "Verbal recognition during the event",
-                "Access to event and networking experiences"
-            ],
-            // featureHighlight : "Connect with attendees through on-site presence and promotion"
-            featureHighlight : ""
-        },
+        // {
+        //     tIndex : "creativeSponsorOne",
+        //     tierBlockBackground : "#121523",
+        //     tierPriceColor : "#ffffff",
+        //     tierTextColor : "#ffffff",
+        //     amount : "5,000",
+        //     sponsorTitle : "",
+        //     sponsorDate : "",
+        //     sponsorBenefits : [
+        //         "Logo Displayed on Printed & Digital Material",
+        //         "1 Dedicated Sponsor Spotlight Post across BCoM Platforms",
+        //         "On-stage Verbal Recognition During Main Program",
+        //         "1 Post-event Spotlight Promo (Video or reel shared within 60 days)",
+        //         "1 Vendor Table",
+        //         "2 Symposium Tickets",
+        //         "2 Momentum Mixer Tickets",
+        //         "1 Speaker Meet & Greet Ticket"
+        //     ],
+        //     featureBenefits : [
+        //         "On-site activation to engage attendees directly",
+        //         "Brand visibility across event materials and platforms",
+        //         "Featured sponsor spotlight content",
+        //         "Verbal recognition during the event",
+        //         "Access to event and networking experiences"
+        //     ],
+        //     // featureHighlight : "Connect with attendees through on-site presence and promotion"
+        //     featureHighlight : ""
+        // },
         {
             tIndex : "creativeSponsorThree",
             tierBlockBackground : "#D8BCA5",
             tierPriceColor : "#000000",
             tierTextColor : "#000000",
-            amount : "500",
+            amount : "Under $1,000",
             sponsorTitle : "",
             sponsorDate : "",
             sponsorBenefits : [
-                "On-stage Verbal Recognition During Main Program",
-                "Inclusion in Post-event group sponsor thank-you Graphic & Email",
+                "1 On-stage Verbal Recognition During Main Program",
+                "Inclusion in Post-event Thank-you Graphic & Email",
                 "1 Symposium Tickets",
-                "1 Momentum Mixer Tickets"
             ],
             featureBenefits : [
                 "Recognition during the event programme",
@@ -258,6 +244,29 @@ export default function CreativeProdSponsor(){
         },
     ]
 
+    const symposium2026Partners = [
+        {
+            name: "Convergence Memphis",
+            image: "/events/symposium/2026-sponsors/convergence-logo.png",
+            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Convergence Memphis',
+            width: 1230,
+            height: 220,
+        },    {
+            name: "Pathway Lending",
+            image: "/events/symposium/2026-sponsors/Pathway-Lending.png",
+            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
+            width: 2835,
+            height: 418,
+        },
+        {
+            name: "Reign Venue",
+            image: "/events/symposium/2026-sponsors/reign-logo.png",
+            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
+            width: 500,
+            height: 500
+        }
+    ]
+
     return (
         <main>
             <SymposiumHero
@@ -281,8 +290,8 @@ export default function CreativeProdSponsor(){
             <InKindSponsorOptions/>
 
             <TierSection
-                // sectionBackground = {"#f1dbb9"}
-                sectionBackground = {"#fffffff"}
+                sectionBackground = {"#977A66"}
+                // sectionBackground = {"#fffffff"}
                 sectionTitle={"Creative Sponsors levels:"}
                 tiersToShow = {supportingSponsorTiers}
                 sponsorTitleBackground = {"#d8bca5"}
@@ -314,11 +323,25 @@ export default function CreativeProdSponsor(){
             />
 
             <GallerySection
-                sectionBackground='#D8BCA5'
-                galleryHeadingText={"Our 2025 Partners"}
-                galleryImages={symposiumPartners}
+                sectionBackground='#a1995f'
+                galleryHeadingText={"Our 2026 Partners"}
+                galleryImages={symposium2026Partners}
             />
 
+            <section
+                style={{background:'#D8BCA5', padding:"3rem 0 5rem 0", width:"100%", display:"flex", flexDirection:"column", alignItems:"center"}}
+            >
+                <h2
+                    // className='globalSecondHeading'
+                    style={{fontSize:"1.802rem", width:"90%", textAlign:"center", textWrap:"balance"}}
+                >
+                    Our 2025 Partners
+                </h2>
+
+                <PartnerLogoSlider
+                    partners={symposiumPartners}
+                />
+            </section>
             <SymFooter/>
         </main>
     )
