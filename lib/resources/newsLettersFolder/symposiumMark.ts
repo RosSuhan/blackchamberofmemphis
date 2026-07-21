@@ -8,7 +8,7 @@ export const symposiumMark = {
     publishDate : '21 July 2026',
     sortDate : '2026-07-21',
     description: 'The Black Chamber of Memphis has announced the new date and location for the 2026 Building Wealth in Our Community Symposium. Join entrepreneurs, investors, corporate leaders, and community partners on Friday, October 2 at Reign Event Venue for a day focused on access, investment, and business mobility, followed by AIM After Hours networking.', 
-    readlink : '/news-letters/2026-symposium-october-2',
+    readlink : '/news-letters/2026-symposium-news-letter',
     fullArticle : `
         <p class="globalText">As Interim President & CEO, I am honored to help guide The Black Chamber of Memphis through this important season of transition and renewed focus.</p>
         <p class="globalText">This year's <a href="/events/symposium">Building Wealth in Our Community Symposium</a> reflects where we are headed as an organization: more intentional, more aligned, and more focused on helping businesses access the relationships, resources, and infrastructure they need to grow. Our theme, <strong>Building Entrepreneur City: Access. Investment. Mobility.</strong>, connects directly to the momentum happening across Memphis while keeping our focus on the businesses and entrepreneurs we serve.</p>
