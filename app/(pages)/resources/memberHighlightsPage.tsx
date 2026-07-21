@@ -36,7 +36,6 @@ export default function MemberHighlightsPage({
             </div>
             <div
                 className={style.resourcesInformationBlock}
-                style={{width:'100%'}}
             >
                 {filterBlogArticles?.map((blog) => (
                     <ResourcesCatBlock

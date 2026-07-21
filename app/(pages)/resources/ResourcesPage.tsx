@@ -1,6 +1,7 @@
 'use client'
 import PageHeroSection from "@/components/heroSections/pageHeroSection"
 import { allResources } from '@/lib/resources/allResources'
+import { allNewsLetters } from '@/lib/resources/allNewsLetters'
 import { eventIndex } from '@/lib/eventsList/eventIndex'
 import { blogList } from '@/lib/blogList'
 import { useState } from 'react'
@@ -8,6 +9,7 @@ import { resourceCategoriesList } from '@/lib/resources/resourcesCategoriesList'
 import InsightsPage from './insightsPage'
 import EventHighlightsPage from './eventHighlightsPage'
 import MemberHighlightsPage from "./memberHighlightsPage"
+import NewsHighlightsPage from "./newsHighlightsPage"
 
 
 export default function ResourcesPage(){
@@ -21,6 +23,9 @@ export default function ResourcesPage(){
         },{
             name : 'Member Highlights',
             key : 'memberHighlights'
+        },{
+            name : 'News Highlights',
+            key : 'newsHighlights'
         }
     ]
 
@@ -57,6 +62,8 @@ export default function ResourcesPage(){
     // for blog articles
     const [selectedBlogArticle, setSelectedBlogArticle] = useState('')
         
+
+    const [ selectedNewsArticle, setSelectedNewsArticle ] = useState('')
 
     const handleMainCategoryChange = (category: string) => {
         setSelectedMainCategory(category)
@@ -98,6 +105,14 @@ export default function ResourcesPage(){
 
     const filterBlogArticles = !selectedBlogArticle ? blogList : blogList.filter(blog => blog.id === selectedBlogArticle)
 
+    const filteredNewsArticle = allNewsLetters.filter(news => {
+        const matchNewsFilter = !selectedNewsArticle || news.id === selectedNewsArticle
+
+        return(
+            matchNewsFilter
+        )
+    })
+
     return(
         <main>
             <PageHeroSection
@@ -135,6 +150,13 @@ export default function ResourcesPage(){
                     // blogList = {blogList}
                     setSelectedBlogArticle = {setSelectedBlogArticle}
                     filterBlogArticles = {filterBlogArticles}
+                />
+            )}
+
+            {selectedMainCategory === 'newsHighlights' && (
+                <NewsHighlightsPage
+                    filteredNewsArticle={filteredNewsArticle || []}
+                    setSelectedNewsArticle={setSelectedNewsArticle}
                 />
             )}
         </main>

@@ -154,8 +154,6 @@ export default async function ResourceBlogPage(
                     ctaLink = {selectedBlog.ctaTwoLink}
                 />
             : null}
-
-            
         </main>
     )
 }

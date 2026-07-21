@@ -39,6 +39,7 @@
 
 .resourcesSideBar { 
     background: var(--darkGrey);
+    /* background: purple; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -69,6 +70,8 @@
     color: var(--white);
     font-weight: 700;
     cursor: pointer;
+    width: 150px;
+    line-height: 1.5;
 }
 
 .extraTopicButtonsBlock {
@@ -156,7 +159,7 @@
     }
     
     .resourcesSideBar { 
-        width: 150px;
+        width: 20%;
         flex-direction: column;
         align-items: center;
         row-gap: 2rem;
@@ -164,7 +167,7 @@
     }
     
     .subCatBlock{
-        width: 80%;
+        width: 150px;
     }
     
     .extraTopicButtonsBlock {
@@ -173,7 +176,7 @@
     }
 
     .resourcesInformationBlock {
-        width: calc(100dvw - 150px);
+        width: auto;
         background: var(--white);
         padding: 1.5rem 0;
     }
@@ -181,10 +184,10 @@
 
 @media (min-width:1000px) {
     .resourcesSideBar { 
-        width: 25%;
+        width: 15%;
     }
     
     .resourcesInformationBlock {
-        width: 75%;
+        width: 85%;
     }
 }

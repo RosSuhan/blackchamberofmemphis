@@ -82,10 +82,6 @@
 }
 
 @media (min-width:600px) {
-    .dateTimeAddress {
-        width: 45%;
-    }
-
     .pageHeroButtonRow {
         flex-direction: row;
         flex-wrap: wrap;

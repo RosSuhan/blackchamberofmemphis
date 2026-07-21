@@ -142,7 +142,7 @@ body {
 @media (min-width:300px) {
   .globalGoldButton,
   .globalDarkButton {
-    width: 280px;
+    width: 200px;
   }
 }
 

@@ -67,7 +67,7 @@
 
 @media (min-width:600px) {
     .resourceContentBlock {
-        width: 280px;
+        max-width: 280px;
     }
     
     .serveBlock {
@@ -81,12 +81,12 @@
 
 @media (min-width:700px) {
     .resourceContentBlock {
-        width: 320px;
+        max-width: 320px;
     }
 }
 
 @media (min-width:800px) {
     .resourceContentBlock {
-        width: 350px;
+        max-width: 350px;
     }
 }

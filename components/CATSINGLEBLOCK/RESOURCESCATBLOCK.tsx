@@ -7,6 +7,7 @@ type ResourcesCatBlockProp = {
     articleImageWidth : number
     articleImageHeight : number
     articleTitle : string
+    articleDate? : string
     articleDescription : string
     articleOffering : {offerName : string, offerType: string, offerColor: string}[]
     articleServeStage : string[],
@@ -17,6 +18,7 @@ export default function ResourcesCatBlock({
     articleImageWidth,
     articleImageHeight,
     articleTitle,
+    articleDate,
     articleDescription,
     articleOffering,
     articleServeStage,
@@ -33,6 +35,16 @@ export default function ResourcesCatBlock({
                 height={articleImageHeight}
                 className={style.resourceContentBlockImage}
             />
+
+            {articleDate ? 
+                <span
+                    className='globalXsmallText'
+                    style={{width: "90%", padding:'.5rem 0', fontStyle:"italic"}}
+                >
+                    {articleDate}
+                </span> 
+            : null}
+
             <h2
                 className='globalThirdHeading'
             >
