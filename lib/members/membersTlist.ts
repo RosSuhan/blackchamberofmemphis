@@ -51,8 +51,10 @@ import { taylorMadeGlobalConsulting } from './(t)/taylorMadeGlobalConsulting'
 import { theBodyTekWellnessMassage } from './(t)/theBodyTekWellnessMassage'
 import { tdRealLogistics } from './(t)/tdRealLogistics'
 import { theMemphisChallenge } from './(t)/theMemphisChallenge'
+import { terraFirmaConsulting } from './(t)/terraFirmaConsulting'
 
 export const membersTlist = [
+    terraFirmaConsulting,
     theMemphisChallenge,
     tdRealLogistics,
     theBodyTekWellnessMassage,
