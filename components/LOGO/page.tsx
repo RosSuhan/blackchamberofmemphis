@@ -2,9 +2,9 @@ import Image from 'next/image'
 import style from './logo.module.css'
 
 type LogoProp = {
-    whiteGoldLogo : boolean
-    blackGoldLogo : boolean
-    whiteWhiteLogo : boolean
+    whiteGoldLogo? : boolean
+    blackGoldLogo? : boolean
+    whiteWhiteLogo? : boolean
 }
 
 export default function Logo({whiteGoldLogo, blackGoldLogo, whiteWhiteLogo}: LogoProp){
@@ -19,6 +19,7 @@ export default function Logo({whiteGoldLogo, blackGoldLogo, whiteWhiteLogo}: Log
                     alt='Black Chamber of Memphis Logo'
                     width={2500}
                     height={1060}
+                    loading='eager'
                     className={style.logo}
                 />
             : null}
@@ -29,6 +30,7 @@ export default function Logo({whiteGoldLogo, blackGoldLogo, whiteWhiteLogo}: Log
                     alt='Black Chamber of Memphis Logo'
                     width={2500}
                     height={1060}
+                    loading='eager'
                     className={style.logo}
                 />
             : null}
@@ -39,6 +41,7 @@ export default function Logo({whiteGoldLogo, blackGoldLogo, whiteWhiteLogo}: Log
                     alt='Black Chamber of Memphis Logo'
                     width={2500}
                     height={1060}
+                    loading='eager'
                     className={style.logo}
                 />
             : null}

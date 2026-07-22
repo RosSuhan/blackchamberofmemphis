@@ -1,45 +1,18 @@
 'use client'
-import Image from 'next/image'
 import style from './header.module.css'
 import { clsx } from 'clsx'
-import headerLogo from '@/public/assets/BCM-Logo_Full-Color-Black-Text.webp'
 import { MenuHamburger } from '@/components/icons/menuHamburger'
 import { MenuClose } from '@/components/icons/menuClose'
 import { menuList } from '@/lib/menuList'
 import Link from 'next/link'
 import { ChevronDown } from '@/components/icons/ChevronDown'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import { ChevronUp12 } from '@/components/icons/ChevronUp'
+import Logo from '@/components/LOGO/page'
 
 export default function Header(){
     const [ menuOpen, setMenuOpen ] = useState(false)
     const [ subMenuOpen, setSubMenuOpen ] = useState<string | null>(null)
-    const navRef = useRef<HTMLElement>(null)
-    const menuBtnRef = useRef<HTMLButtonElement>(null)
-
-
-    useEffect(() => {
-        const handleClickOutside = (event : MouseEvent) => {
-            const target = event.target as Node
-
-            const clickedInsideNav = navRef.current?.contains(target)
-
-            const clickedMenuButton = menuBtnRef.current?.contains(target)
-
-            if (
-                !clickedInsideNav && !clickedMenuButton
-            ) {
-                setMenuOpen(false)
-                setSubMenuOpen(null)
-            }
-        }
-
-        document.addEventListener('mousedown', handleClickOutside)
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
-    }, [])
 
     const handleSubMenuToggle = (menuName: string) => {
         setSubMenuOpen((prev) => (prev === menuName ? null : menuName ))
@@ -47,138 +20,94 @@ export default function Header(){
 
     return(
         <header
-            className={style.header}
-        >
-            <Link
-                href={'/'}
-                className={style.headerLogoLink}
+                className={style.header}
             >
-                <Image
-                    src={headerLogo}
-                    alt='Black Chamber of Memphis'
-                    width={100}
-                    height={50}
+                <Link
+                    href={'/'}
                     className={style.headerLogo}
-                    loading={'eager'}
-                />
-            </Link>
-
-            <nav
-                ref={navRef}
-                className={clsx(style.navClose, menuOpen && style.nav)}
-            >
-                <ul
-                    className={style.navList}
                 >
-                    {menuList.map((menuItem) => (
-                        <li
-                            key={menuItem.name}
-                            className={style.navItem}
-                        >
-                            <Link
-                                href={menuItem.path}
-                                className={style.navLink}
-                                onClick={() => setMenuOpen(false)}
+                    <Logo
+                        blackGoldLogo={true}
+                    />
+                </Link>
+
+                <nav
+                    className={clsx(menuOpen ? style.headerMobileNav : style.headerNav)}
+                >
+                    <ul
+                        className={style.navList}
+                    >
+                        {menuList.map((menuItem) => (
+                            <li
+                                key={menuItem.name}
+                                className={style.navItem}
+                                onClick={() => {
+                                    handleSubMenuToggle(menuItem.name)
+                                }}
                             >
-                                {menuItem.name}
-                            </Link>
+                                <Link
+                                    href={menuItem.path}
+                                    className={style.navLink}
+                                >
+                                    {menuItem.name}
+                                </Link>
 
-                            {menuItem.subLink && (
-                                <>
-                                    <ChevronDown
-                                        className={clsx(style.navIcon, subMenuOpen === menuItem.name && style.close)}
-                                        onClick={() => handleSubMenuToggle(menuItem.name)}
-                                    />
-                                    <ChevronUp12
-                                        className={clsx(style.navIcon, subMenuOpen !== menuItem.name && style.close)}
-                                        onClick={() => handleSubMenuToggle(menuItem.name)}
-                                    />
-                                    <ul
-                                        className={clsx(style.subNav, subMenuOpen === menuItem.name ? style.subNavList : style.close)}
-                                    >
-                                        {menuItem.subLink.map((sub) => (
-                                            <li
-                                                key={sub.name}
-                                                className={style.subNavItem}
-                                            >
-                                                <Link
-                                                    href={sub.path}
-                                                    className={style.navLink}
-                                                    onClick={() => {
-                                                        handleSubMenuToggle(menuItem.name)
-                                                        setMenuOpen(false)
-                                                    }}
+                                {menuItem.subLink && (
+                                    <>
+                                        {subMenuOpen === menuItem.name ?  <ChevronUp12/> : <ChevronDown/>}
+
+                                        <ul
+                                            className={clsx( subMenuOpen === menuItem.name? style.navSubList : style.hide)}
+                                        >
+                                            {menuItem.subLink.map((sub) => (
+                                                <li
+                                                    key={sub.name}
                                                 >
-                                                    {sub.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </>
-                            )
-                            }
-                        </li>
-                    ))}
+                                                    <Link
+                                                        href={sub.path}
+                                                        className={style.navLink}
+                                                    >
+                                                        {sub.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
 
-                    {/* <li
-                        className={style.navItem}
+                    <a 
+                        href=""
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className={style.headerGoldButton}
                     >
-                        <Link 
-                            href="/memphis-ten"
-                            className={style.navCTALink}
-                            onClick={() => {
-                                setSubMenuOpen(null)
-                                setMenuOpen(false)
-                            }}
-                        >
-                            MemphisTEN
-                        </Link>
-                    </li>            */}
+                        JOIN BCoM
+                    </a>
+                </nav>
 
-                    {/* <li>
-                        <a 
-                            href="/case-support"
-                            className={style.navCTALink}
-                        >
-                            Become a Partner
-                        </a>
-                    </li> */}
-
-                    <li
-                        className={style.navItem}
-                    >
-                        <a 
-                            href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className={style.navCTALink}
-                            onClick={() => {
-                                setMenuOpen(false)
-                                setSubMenuOpen(null)
-                            }}
-                        >
-                            JOIN BCOM
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <button
-                className={style.menuBtn}
-                ref={menuBtnRef}
-                onClick={() => setMenuOpen(prev => !prev)}
-            >
-                <MenuHamburger
-                    width="1.4rem"
-                    height="1.4rem"
-                    className={clsx(style.menuBtnIcon, menuOpen && style.close)}
-                />
-                <MenuClose
-                    width="1.4rem"
-                    height="1.4rem"
-                    className={clsx(style.menuBtnIcon, !menuOpen && style.close)}
-                />
-            </button>
-        </header>
+                <button 
+                    type="button"
+                    className={style.mobileNavMenuButton}
+                    onClick={() => {
+                        setMenuOpen(!menuOpen)
+                        setSubMenuOpen(null)
+                    }}    
+                >
+                    {menuOpen ? 
+                        <MenuClose
+                            width="1.6rem"
+                            height="1.6rem"
+                        /> 
+                        :
+                        <MenuHamburger
+                            width="1.6rem"
+                            height="1.6rem"
+                        />
+                    }
+                </button>
+            </header>
     )
 }
