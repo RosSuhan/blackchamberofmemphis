@@ -163,7 +163,10 @@ export default function PageHeroSection({
                             <button 
                                 type="button"
                                 key={stateButton.key}    
-                                onClick={() => setSelectedState?.(stateButton.key)}
+                                onClick={() => {
+                                    setSelectedState?.(stateButton.key)
+                                    router.push(`/resources?tab=${stateButton.key}`)
+                                }}
                                 // className={clsx()}
                                 className = { selectedState === stateButton.key ? 'globalGoldButton' : 'globalDarkButton'}
                             >

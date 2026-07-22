@@ -4,15 +4,20 @@ import { allResources } from '@/lib/resources/allResources'
 import { allNewsLetters } from '@/lib/resources/allNewsLetters'
 import { eventIndex } from '@/lib/eventsList/eventIndex'
 import { blogList } from '@/lib/blogList'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { resourceCategoriesList } from '@/lib/resources/resourcesCategoriesList'
 import InsightsPage from './insightsPage'
 import EventHighlightsPage from './eventHighlightsPage'
 import MemberHighlightsPage from "./memberHighlightsPage"
 import NewsHighlightsPage from "./newsHighlightsPage"
+import { useSearchParams } from "next/navigation"
 
 
 export default function ResourcesPage(){
+    const searchParams = useSearchParams()
+
+    const initialTab = searchParams.get('tab') ?? 'insights'
+
     const resourcesStateButtons = [
         {
             name : 'Insights',
@@ -21,8 +26,8 @@ export default function ResourcesPage(){
             name : "Event Highlights",
             key : 'eventHighlights',
         },{
-            name : 'Member Highlights',
-            key : 'memberHighlights'
+            name : 'Community Highlights',
+            key : 'communityHighlights'
         },{
             name : 'News Highlights',
             key : 'newsHighlights'
@@ -48,13 +53,12 @@ export default function ResourcesPage(){
         }
     ]
 
-    const [ selectedMainCategory, setSelectedMainCategory ] = useState('insights')
+    const [ selectedMainCategory, setSelectedMainCategory ] = useState(initialTab)
     // const [ selectedMainCategory, setSelectedMainCategory ] = useState('eventHighlights')
     const [ selectedFilterCategory, setSelectedFilterCategory ] = useState('funding')
     const [ selectedSubCategory, setSelectedSubCategory ] = useState('')
     const activeResourcesCategory = resourceCategoriesList.find(cat => cat.key === selectedMainCategory) // to get to insights
     const activeFilterCategory = activeResourcesCategory?.filter.find(filter => filter.key === selectedFilterCategory) // to get to funding, training ......
-    const activeSubCategory = activeFilterCategory?.subCatList.find( subCatList => subCatList.key === selectedSubCategory)
     
     // This is for the events Filtering 
     const [eventTypeSelector, setEventTypeSelector] = useState('')
@@ -145,7 +149,7 @@ export default function ResourcesPage(){
                 />
             )}
 
-            {selectedMainCategory === 'memberHighlights' && (
+            {selectedMainCategory === 'communityHighlights' && (
                 <MemberHighlightsPage
                     // blogList = {blogList}
                     setSelectedBlogArticle = {setSelectedBlogArticle}
