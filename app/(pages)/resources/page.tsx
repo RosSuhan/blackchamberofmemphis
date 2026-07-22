@@ -1,10 +1,19 @@
 import ResourcesPage from "./ResourcesPage";
 
+type ResourcesProps = {
+    searchParams: Promise<{tab?: string}>
+}
 
-export default function Resources(){
+
+export default async function Resources({
+    searchParams,
+} : ResourcesProps ){
+    const { tab } = await searchParams
     return(
         <>
-            <ResourcesPage/>
+            <ResourcesPage
+                initialTab = { tab ?? 'insights' }
+            />
         </>
     )
 }

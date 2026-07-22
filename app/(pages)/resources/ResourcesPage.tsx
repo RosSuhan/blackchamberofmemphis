@@ -4,20 +4,20 @@ import { allResources } from '@/lib/resources/allResources'
 import { allNewsLetters } from '@/lib/resources/allNewsLetters'
 import { eventIndex } from '@/lib/eventsList/eventIndex'
 import { blogList } from '@/lib/blogList'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { resourceCategoriesList } from '@/lib/resources/resourcesCategoriesList'
 import InsightsPage from './insightsPage'
 import EventHighlightsPage from './eventHighlightsPage'
 import MemberHighlightsPage from "./memberHighlightsPage"
 import NewsHighlightsPage from "./newsHighlightsPage"
-import { useSearchParams } from "next/navigation"
 
+type ResourcesPageProps = {
+    initialTab: string
+}
 
-export default function ResourcesPage(){
-    const searchParams = useSearchParams()
-
-    const initialTab = searchParams.get('tab') ?? 'insights'
-
+export default function ResourcesPage({
+    initialTab,
+}: ResourcesPageProps ){
     const resourcesStateButtons = [
         {
             name : 'Insights',
