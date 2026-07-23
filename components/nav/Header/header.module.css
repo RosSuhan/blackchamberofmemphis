@@ -121,7 +121,10 @@
     }
     
     .navSubList {
+        width: 180px;
         position: absolute;
         top: 25px;
+        z-index: 999;
+        background: var(--white);
     }
 }
