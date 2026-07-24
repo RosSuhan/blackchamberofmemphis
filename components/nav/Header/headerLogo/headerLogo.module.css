@@ -1,0 +1,22 @@
+.headerLogo {
+    width: 30%;
+}
+
+@media (min-width:500px) {
+    .headerLogo {
+        width: 20%;
+        margin-left: .5rem;
+    }
+}
+
+@media (min-width:700px) {
+    .headerLogo {
+        width: 15%;
+    }
+}
+
+@media (min-width:900px) {
+    .headerLogo {
+        width: 10%;
+    }
+}

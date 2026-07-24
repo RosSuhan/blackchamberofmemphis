@@ -20,11 +20,14 @@ export default function Footer(){
             <div
                 className={style.footerLeftBlock}
             >
-                <Logo
-                    whiteGoldLogo={true}
-                    blackGoldLogo={false}
-                    whiteWhiteLogo={false}
-                />
+                <div
+                    className={style.footerLogoBlock}
+                >
+                    <Logo
+                        colorScheme='whiteGold'
+                    />
+                </div>
+                
 
                 <div
                     className={style.footerContactRow}

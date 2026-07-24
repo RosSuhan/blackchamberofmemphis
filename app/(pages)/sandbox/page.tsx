@@ -9,6 +9,7 @@ import { menuList } from '@/lib/menuList'
 import Link from 'next/link'
 import { ChevronDown } from '@/components/icons/ChevronDown'
 import { ChevronUp12 } from '@/components/icons/ChevronUp'
+import Navigation from '@/components/nav/Header/navigation/page'
 
 
 export default function Sandbox(){
@@ -31,66 +32,11 @@ export default function Sandbox(){
                     className={style.headerLogo}
                 >
                     <Logo
-                        blackGoldLogo={true}
+                        colorScheme={'blackGold'}
                     />
                 </Link>
 
-                <nav
-                    className={clsx(menuOpen ? style.headerMobileNav : style.headerNav)}
-                >
-                    <ul
-                        className={style.navList}
-                    >
-                        {menuList.map((menuItem) => (
-                            <li
-                                key={menuItem.name}
-                                className={style.navItem}
-                                onClick={() => {
-                                    handleSubMenuToggle(menuItem.name)
-                                }}
-                            >
-                                <Link
-                                    href={menuItem.path}
-                                    className={style.navLink}
-                                >
-                                    {menuItem.name}
-                                </Link>
-
-                                {menuItem.subLink && (
-                                    <>
-                                        {subMenuOpen === menuItem.name ?  <ChevronUp12/> : <ChevronDown/>}
-
-                                        <ul
-                                            className={clsx( subMenuOpen === menuItem.name? style.navSubList : style.hide)}
-                                        >
-                                            {menuItem.subLink.map((sub) => (
-                                                <li
-                                                    key={sub.name}
-                                                >
-                                                    <Link
-                                                        href={sub.path}
-                                                        className={style.navLink}
-                                                    >
-                                                        {sub.name}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-
-                    <a 
-                        href=""
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className={style.headerGoldButton}
-                    >
-                        JOIN BCoM
-                    </a>
-                </nav>
+                <Navigation/>
 
                 <button 
                     type="button"

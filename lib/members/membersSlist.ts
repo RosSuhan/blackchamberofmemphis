@@ -19,8 +19,10 @@ import { sincereSalads } from './(s)/sincereSalads'
 import { southernBancorpMortgage } from './(s)/southernBancorpMortgage'
 import { southernShieldPestControl } from './(s)/southernShieldPestControl'
 import { sionSolutions } from './(s)/sionSolutionsCorp'
+import { sharProfessionalServices } from './(s)/sharProfessionalServices'
 
 export const membersSlist = [
+    sharProfessionalServices,
     sionSolutions,
     southernShieldPestControl,
     southernBancorpMortgage,

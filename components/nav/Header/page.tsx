@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { ChevronDown } from '@/components/icons/ChevronDown'
 import { useState } from 'react'
 import { ChevronUp12 } from '@/components/icons/ChevronUp'
-import Logo from '@/components/LOGO/page'
+import HeaderLogo from './headerLogo/page'
 
 export default function Header(){
     const [ menuOpen, setMenuOpen ] = useState(false)
@@ -22,14 +22,9 @@ export default function Header(){
         <header
                 className={style.header}
             >
-                <Link
-                    href={'/'}
-                    className={style.headerLogo}
-                >
-                    <Logo
-                        blackGoldLogo={true}
-                    />
-                </Link>
+                <HeaderLogo
+                    colorScheme='blackGold'
+                />
 
                 <nav
                     className={clsx(menuOpen ? style.headerMobileNav : style.headerNav)}

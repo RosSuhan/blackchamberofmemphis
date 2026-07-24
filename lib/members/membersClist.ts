@@ -14,8 +14,10 @@ import { crossroadsBaptistChurch } from './(c)/crossroadsBaptistChurch'
 import { chalmersPoolePC } from './(c)/chalmersPoolePC'
 import { cushionEmployerServices } from './(c)/cushionEmployerServices'
 import { carlisleWidePlankFloor } from './(c)/carlisleWidePlankFloor'
+import { clrMindPsychiatry } from './(c)/clrMindPsychiatry'
 
 export const membersClist = [
+    clrMindPsychiatry,
     carlisleWidePlankFloor,
     capturingMemories,
     carisCloset,

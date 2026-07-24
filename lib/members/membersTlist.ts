@@ -52,8 +52,10 @@ import { theBodyTekWellnessMassage } from './(t)/theBodyTekWellnessMassage'
 import { tdRealLogistics } from './(t)/tdRealLogistics'
 import { theMemphisChallenge } from './(t)/theMemphisChallenge'
 import { terraFirmaConsulting } from './(t)/terraFirmaConsulting'
+import { theTubExpert } from './(t)/theTubExpert'
 
 export const membersTlist = [
+    theTubExpert,
     terraFirmaConsulting,
     theMemphisChallenge,
     tdRealLogistics,
