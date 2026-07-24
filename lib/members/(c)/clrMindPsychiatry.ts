@@ -5,7 +5,7 @@ export const clrMindPsychiatry : MembersListType = {
     id : "clr-mind-psychiatry",
     businessName : "CLR Mind Psychiatry",
     bannerImage : "",
-    profileLogo : "clr-mind",
+    profileLogo : "clr-mind-pshyciatry",
     profileDescription : "CLR Mind Psychiatry is a Memphis-based mental health practice providing personalized psychiatric evaluations, medication management, supportive therapy, and telepsychiatry services for adolescents and adults. The practice delivers compassionate, evidence-based care tailored to each individual's mental health journey.",
     profileCategory : [
         "health-medical-wellness-services",
@@ -30,9 +30,14 @@ export const clrMindPsychiatry : MembersListType = {
         'psychiatric evaluations',
         'veterans mental health services'
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>CLR Mind Psychiatry is a Memphis-based psychiatric practice dedicated to providing compassionate, personalized, and evidence-based mental healthcare for adolescents and adults. Through a patient-centered approach, the practice helps individuals navigate life's emotional and mental health challenges while developing treatment plans tailored to their unique needs, goals, and experiences.</p>
+        <p>Every patient's journey begins with a comprehensive psychiatric evaluation that explores mental health history, medical background, lifestyle factors, and personal experiences. Using this information, the providers develop individualized treatment plans that may include medication management, supportive therapy, lifestyle recommendations, and referrals to additional specialists when appropriate. The practice believes that effective mental healthcare should address the whole person—not simply a diagnosis.</p>
+        <p>CLR Mind Psychiatry treats a wide range of mental health conditions, including anxiety, depression, bipolar disorder, post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), schizophrenia, sleep disorders, grief, trauma, dementia, eating disorders, and other psychiatric conditions. The practice also provides specialized care for adolescents (ages 12 and older), older adults, veterans, and individuals with complex mental health needs.</p>
+        <p>To improve accessibility, CLR Mind Psychiatry offers both in-person appointments and secure telepsychiatry services, allowing established patients to receive quality psychiatric care from the comfort of their homes. Follow-up visits focus on monitoring progress, adjusting treatment plans, reviewing medications, and providing ongoing support to help patients achieve meaningful, lasting improvements in their mental health and overall well-being.</p>
+        <p>Guided by values of authenticity, compassion, and clinical excellence, CLR Mind Psychiatry is committed to creating a welcoming environment where every patient feels heard, respected, and empowered. By combining modern psychiatric care with individualized attention, the practice helps people build resilience, improve emotional wellness, and move toward healthier, more fulfilling lives.</p>`,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/clr-mind-psychiatry/clr-mind-psychiatry-dr-marqueta-abraham-dnp-apn-pmhnp.webp", alt : "", width : 1414, height: 2000}
     ],
     businessHours : [
         { day : "Monday", hours : '8am - 4:30pm'},

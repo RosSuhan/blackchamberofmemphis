@@ -22,7 +22,12 @@ export const theTubExpert : MembersListType = {
         'residential remodeling',
         'property maintenance'
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>The Tub Expert is a professional bathtub and shower resurfacing company dedicated to helping homeowners, property managers, apartment communities, and real estate investors restore the beauty and functionality of their bathrooms without the expense of full replacement. By specializing in refinishing and resurfacing solutions, the company provides a cost-effective alternative that extends the life of existing fixtures while improving their appearance.</p>
+        <p>Over time, bathtubs and showers can become stained, chipped, scratched, faded, or outdated due to everyday use. Rather than replacing these fixtures—which can be costly, time-consuming, and disruptive—The Tub Expert restores existing surfaces using professional resurfacing techniques that leave them looking clean, refreshed, and like new. This approach helps clients enhance the value and appearance of their properties while reducing renovation costs.</p>
+        <p>The company serves a wide range of clients, including individual homeowners seeking to update their bathrooms, property managers maintaining rental properties, apartment complexes preparing units for new tenants, and real estate investors renovating homes for resale or rental. Every project is completed with attention to detail, quality workmanship, and a commitment to delivering long-lasting results.</p>
+        <p>The Tub Expert understands the importance of providing efficient service that minimizes downtime and inconvenience. By offering affordable resurfacing solutions, the company enables clients to improve the appearance of their bathrooms quickly and economically while avoiding the expense and disruption associated with demolition and replacement.</p>
+        <p>Committed to professionalism, reliability, and customer satisfaction, The Tub Expert takes pride in helping clients restore their bathroom surfaces with high-quality refinishing services that improve both aesthetics and functionality. Whether updating a single bathtub or resurfacing fixtures across multiple properties, the company delivers dependable solutions designed to extend the life of existing bathroom surfaces and enhance property value.</p>`,
     gallery : [
         // {image : "", alt : "", width : 100, height: 100}
     ],
