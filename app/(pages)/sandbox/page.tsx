@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { ChevronDown } from '@/components/icons/ChevronDown'
 import { ChevronUp12 } from '@/components/icons/ChevronUp'
 import Navigation from '@/components/nav/Header/navigation/page'
+import SpeakerSection from '@/components/symposiumComps/speakerSection/page'
 
 
 export default function Sandbox(){
@@ -59,6 +60,8 @@ export default function Sandbox(){
                     }
                 </button>
             </header>
+
+            <SpeakerSection/>
         </main>
     )
 }
