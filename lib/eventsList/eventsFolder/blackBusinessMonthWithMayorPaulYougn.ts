@@ -3,7 +3,7 @@ import { EventListType } from "../eventListTypes";
 export const blackBusinessMonthWithMayorPaulYoung : EventListType = {
     holidayStatus: false,
     id : "black-business-month-with-mayor-paul-young",
-    path : '/black-business-month-with-mayor-paul-young',
+    path : 'black-business-month-with-mayor-paul-young',
     type: 'event',
     eventImage : "/events/network-with-mayor-young.webp",
     eventImageAlt : "Black Chamber of Memphis Black Business Month Network with Mayor Young",
