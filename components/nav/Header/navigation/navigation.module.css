@@ -2,5 +2,17 @@
     width: 80%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background: purple;
+}
+
+.navigationMobileBlock {
+    background-color: blue;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    width: 100dvw;
+    top: 60px;
+    padding: 1rem 0;
 }

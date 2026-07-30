@@ -1,5 +1,8 @@
 .navigationSubListBlock {
-    list-style: none;
-    padding: 0;
-    
+    /* list-style: none;
+    padding: .5rem .8rem;
+    position: absolute;
+    background: var(--white); */
+    display: none;
 }
+

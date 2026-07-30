@@ -19,8 +19,10 @@ import { bcomRedBirdMixer } from './eventsFolder/bcomRedBirdMixer';
 import { econEmpowerment } from "./eventsFolder/econEmpowerment";
 import { remotingWorkshop2 } from "./eventsFolder/remotingWorkshop2";
 import { remotingWorkshop3 } from "./eventsFolder/remotingWorkshop3";
+import { blackBusinessMonthWithMayorPaulYoung } from "./eventsFolder/blackBusinessMonthWithMayorPaulYougn";
 
 export const eventIndex = [
+    blackBusinessMonthWithMayorPaulYoung,
     remotingWorkshop2,
     remotingWorkshop3,
     // econEmpowerment,

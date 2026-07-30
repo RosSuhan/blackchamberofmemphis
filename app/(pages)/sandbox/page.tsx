@@ -14,7 +14,7 @@ import SpeakerSection from '@/components/symposiumComps/speakerSection/page'
 
 
 export default function Sandbox(){
-    const [ menuOpen, setMenuOpen ] = useState(false)
+    const [ menuOpen, setMenuOpen ] = useState(true)
     const [ subMenuOpen, setSubMenuOpen ] = useState<string | null>(null)
 
     const handleSubMenuToggle = (menuName: string) => {
@@ -27,6 +27,7 @@ export default function Sandbox(){
         >
             <header
                 className={style.header}
+                style={{position:"relative"}}
             >
                 <Link
                     href={'/'}
@@ -37,7 +38,9 @@ export default function Sandbox(){
                     />
                 </Link>
 
-                <Navigation/>
+                <Navigation
+                    menuOpen = {menuOpen}
+                />
 
                 <button 
                     type="button"
