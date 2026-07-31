@@ -9,8 +9,10 @@ import { fordChapelAME } from './(f)/fordChapelAME'
 import { focusOnYou } from './(f)/focusOnYou'
 import { flavorfulLivingBrand } from './(f)/flavorfulLivingBrand'
 import { flawlessCleaning } from './(f)/flawlessCleaning'
+import { fspEnterprises } from './(f)/fspEnterprises'
 
 export const membersFlist = [
+    fspEnterprises,
     flavorfulLivingBrand,
     functionallyBalancedHealth,
     fairHousing,
