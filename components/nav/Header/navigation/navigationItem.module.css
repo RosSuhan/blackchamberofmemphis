@@ -1,5 +1,41 @@
 .navigationItem {
-    background: pink;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--black);
+    width: 50%;
+    padding: .5rem 0;
+}
+
+.chevronBtn {
+    width: 45%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: transparent;
+    padding: .5rem 0;
+}
+
+@media (min-width:600px) {
+    .navigationItem {
+        width: fit-content;
+        gap: 2px;
+    }
+    
+    .navLink {
+        width: fit-content;
+    }
+    
+    .chevronBtn {
+        width: fit-content;
+        padding: .2rem;
+    }
 }

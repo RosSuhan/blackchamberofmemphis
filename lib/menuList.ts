@@ -1,5 +1,8 @@
-export const menuList = [
+import { NavigationMenuItem } from './navigationTypes'
+
+export const menuList : NavigationMenuItem[] = [
     {
+        priority: 1,
         name: 'Membership',
         path: '/membership',
         subLink : [
@@ -9,6 +12,7 @@ export const menuList = [
             }
         ]
     },{
+        priority: 2,
         name: 'Directory',
         path: '/business-directory',
         subLink: [
@@ -21,6 +25,7 @@ export const menuList = [
             }
         ]
     },{
+        priority: 3,
         name: 'Events',
         path: '/events',
         subLink: [
@@ -37,6 +42,7 @@ export const menuList = [
             }
         ]
     },{
+        priority: 4,
         name: 'Resources',
         path: '/resources',
         subLink: [
@@ -55,6 +61,7 @@ export const menuList = [
             }
         ]
     },{
+        priority: 5,
         name: 'Programs',
         path: '',
         subLink: [
@@ -68,6 +75,7 @@ export const menuList = [
             }
         ]
     },{
+        priority: 7,
         name : 'Partnerships',
         path : '/partnerships',
         subLink : [
@@ -81,6 +89,7 @@ export const menuList = [
             }
         ]
     },{
+        priority: 6,
         name: 'About Us',
         path: '/about-us',
         subLink : [

@@ -14,12 +14,7 @@ import SpeakerSection from '@/components/symposiumComps/speakerSection/page'
 
 
 export default function Sandbox(){
-    const [ menuOpen, setMenuOpen ] = useState(true)
-    const [ subMenuOpen, setSubMenuOpen ] = useState<string | null>(null)
-
-    const handleSubMenuToggle = (menuName: string) => {
-        setSubMenuOpen((prev) => (prev === menuName ? null : menuName ))
-    }
+    const [ menuOpen, setMenuOpen ] = useState(false)
 
     return(
         <main
@@ -47,7 +42,6 @@ export default function Sandbox(){
                     className={style.mobileNavMenuButton}
                     onClick={() => {
                         setMenuOpen(!menuOpen)
-                        setSubMenuOpen(null)
                     }}    
                 >
                     {menuOpen ? 
