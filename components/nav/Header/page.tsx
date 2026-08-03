@@ -74,7 +74,7 @@ export default function Header(){
                     </ul>
 
                     <a 
-                        href=""
+                        href="https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className={style.headerGoldButton}
