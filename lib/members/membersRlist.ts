@@ -6,8 +6,10 @@ import { reformationMemphis } from "./(r)/reformationMemphis";
 import { riversideMissionaryBaptistChurch } from "./(r)/riversideMissionaryBaptistChurch";
 import { redlee } from "./(r)/redlee";
 import { rowManagementGroup } from "./(r)/rowManagementGroup";
+import { rootsRiverWellness } from "./(r)/rootsRiverWellness";
 
 export const membersRlist = [
+    rootsRiverWellness,
     rowManagementGroup,
     ritzeeFlorist,
     rugsAllDay,
