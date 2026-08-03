@@ -74,7 +74,7 @@ export default function Boomin(){
             eventAddressLink : '',
             eventAddress : "Virtual",
             eventCtaButton : 'Register',
-            eventCtaLink : 'https://boominu.org/2026-boomin-to-the-bank-onboarding-form/?cohort=September%202026%20Cohort',
+            eventCtaLink : 'https://boominu.org/2026-boomin-to-the-bank-onboarding-form/?cohort=September%202026%20Cohort&referral_source=bcom',
             eventDetails : `<p>Master the financial reports that banks and investors look for, develop better organizational habits, and learn to make data-driven decisions that position your business to secure future funding.</p>`
             // eventDetails : `<p>Strengthen Your Financials. Build Confidence. Prepare for What's Next.</p>
             //                 <p>This program is for you if you want to better understand your finances, get organized, and build the financial readiness that lenders and investors look for.</p>
