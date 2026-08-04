@@ -23,7 +23,47 @@ export const blackBusinessMonthWithMayorPaulYoung : EventListType = {
         <ul>
             <li><strong>Member Price:</strong> $0</li>
             <li><strong>Nonmember Price:</strong> $25.00</li>
-        </ul>`,
+        </ul>
+        <div
+            style="margin: 4rem 0 0 0; display:flex; flex-wrap:wrap; align-items: center; justify-content: space-evenly;"
+        >
+            <h2 class="globalThirdHeading">Meet the team members:</h2>
+            <div
+                style="min-width:200px; max-width: 300px"
+            >
+                <img src="/events/Mayor-Young-Panel/Art-Davis.webp" alt="Art Davis - City of Memphis Chief Financial Officer" style="width:100%; heigth:auto; object-fit:contain;"/>
+                <h3 style="margin: 0">
+                    Art Davis
+                </h3>
+                <p style="margin: .2rem 0">
+                    Chief Financial Officer
+                </p>
+            </div>
+
+            <div
+                style="min-width:200px; max-width: 300px"
+            >
+                <img src="/events/Mayor-Young-Panel/chris-winton.webp" alt="Chris Winton - City of Memphis Chief Operating Office" style="width:100%; heigth:auto; object-fit:contain;"/>
+                <h3 style="margin: 0">
+                    Chris Winton
+                </h3>
+                <p style="margin: .2rem 0">
+                    Chief Operating Officer
+                </p>
+            </div>
+
+            <div
+                style="min-width:200px; max-width: 300px"
+            >
+                <img src="/events/Mayor-Young-Panel/greg-dotson.webp" alt="Greg Dotson - City of Memphis Interim City Engineer" style="width:100%; heigth:auto; object-fit:contain;"/>
+                <h3 style="margin: 0">
+                    Greg Dotson
+                </h3>
+                <p style="margin: .2rem 0">
+                    Interim City Engineer
+                </p>
+            </div>
+        </div>`,
     eventPastDescription: "",
     eventPastBlog: ``,
     eventCTAbuttonLink : "",
