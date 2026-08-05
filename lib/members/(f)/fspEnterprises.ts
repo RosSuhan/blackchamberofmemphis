@@ -29,7 +29,12 @@ export const fspEnterprises : MembersListType = {
         'team development',
         'organizational development'
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>FSP Enterprises is a professional coaching and consulting firm dedicated to helping individuals, entrepreneurs, business owners, and organizational leaders unlock their full potential through leadership development, business coaching, life coaching, and soft skills training. The company believes that lasting success is built not only on technical expertise but also on the interpersonal and leadership skills that enable people to communicate effectively, inspire others, and make confident decisions.</p>
+        <p>At the heart of FSP Enterprises' approach is soft skills development—the essential abilities that drive personal growth, professional advancement, and organizational success. Through personalized coaching and practical strategies, clients are equipped to strengthen communication, leadership, emotional intelligence, problem-solving, adaptability, and decision-making skills that support success in today's rapidly changing business environment.</p>
+        <p>The company offers leadership coaching for current and aspiring leaders seeking to improve team performance, increase confidence, and develop effective leadership practices. Business and entrepreneurship coaching helps entrepreneurs and business owners navigate challenges, clarify goals, develop sustainable growth strategies, and strengthen the skills needed to lead successful organizations. In addition, life coaching services provide individuals with the guidance, accountability, and encouragement needed to overcome obstacles, achieve personal goals, and create meaningful, lasting change.</p>
+        <p>FSP Enterprises is committed to delivering customized coaching experiences tailored to the unique goals and aspirations of every client. By combining practical guidance with a supportive coaching approach, the company helps individuals and organizations build stronger leaders, more resilient teams, and greater confidence in every stage of personal and professional development.</p>
+        <p>Whether supporting emerging entrepreneurs, experienced executives, or individuals pursuing personal growth, FSP Enterprises empowers clients with the knowledge, mindset, and leadership skills needed to achieve lasting success in business and in life.</p>`,
     gallery : [
         // {image : "", alt : "", width : 100, height: 100}
     ],
@@ -50,8 +55,9 @@ export const fspEnterprises : MembersListType = {
     facebook : "https://www.facebook.com/fspenterprise",
     instagram : "",
     youtube : "https://www.youtube.com/channel/UCabHP2zWg0I9jXcOk_ICN4Q",
-    linkedIn : "",
+    linkedIn : "https://www.linkedin.com/in/dawn-sarita-price/",
     linktree : "https://linktr.ee/fromsaritaspen",
+    //blinq : "https://blinq.me/Zf8kMcqTausB6jTag9YE?bs=icl&s=s"
     twitter: "",
     tiktok : "",
     pinterest : "",

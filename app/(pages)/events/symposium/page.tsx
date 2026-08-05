@@ -11,6 +11,7 @@ import EventSchema from '@/components/Schema/EventSchema'
 import { CreateEventSchema } from '@/lib/schema/eventSchema'
 import { symposiumPartners } from '@/lib/symposium'
 import { Metadata } from 'next'
+import SpeakerSection from '@/components/symposiumComps/speakerSection/page'
 
 export const metadata: Metadata = {
     title: '2026 Memphis Business Symposium | Building Wealth in Our Community',
@@ -193,6 +194,8 @@ export default function Symposium(){
             {/* <CtaSection/> */}
 
             <BusinessSession/>
+
+            <SpeakerSection/>
             
             <div
                 id='sponsorship'
