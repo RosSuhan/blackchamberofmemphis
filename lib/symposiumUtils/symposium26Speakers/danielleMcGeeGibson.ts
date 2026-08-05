@@ -2,8 +2,9 @@ import { SpeakerProps } from "./speakerProps"
 
 export const danielleMcGeeGibson : SpeakerProps = {
     id : 'danielle-mcgee-gibson',
-    reverse : true,
-    image : '/events/symposium/2026-speakers/Danielle-Gibson.png',
+    speakerTopic: 'capitalStack',
+    // reverse : true,
+    image : '/events/symposium/2026-speakers/danielle-gibson-2026-symposium-speaker.webp',
     name : 'Danielle McGee Gibson',
     bio : `<p>Danielle McGee Gibson is a powerhouse at the intersection of entrepreneurship, equity, and economic justice. She is the founder of Black Business Boom and Executive Director of Boomin University.</p>
             <p>Danielle is where strategy meets soul—a builder of ecosystems, and champion for Black entrepreneurs. She doesn’t just dream of change—she blueprints it, funds it, launches it, and makes it sustainable.</p>

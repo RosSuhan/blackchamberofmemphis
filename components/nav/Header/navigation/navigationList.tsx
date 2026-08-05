@@ -25,9 +25,9 @@ export default function NavigationList({navigationItems, overflowItems, menuOpen
                 />
             )))}
 
-            <NavigationMoreButton
+            {/* <NavigationMoreButton
                 overflowItems = {overflowItems}
-            />
+            /> */}
         </ul>
     )
 }

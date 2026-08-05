@@ -1,41 +1,28 @@
-import Image from "next/image";
 import style from './speakerSection.module.css'
+import SpeakerBlock from "./speakerBlock";
 import { symposium26Speakers } from "@/lib/symposiumUtils/symposium26Speakers";
-import clsx from "clsx";
-
 
 export default function SpeakerSection(){
+    const buildingCapacitySpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'buildingCapacity')
+
+    const capitalStackSpeakers = symposium26Speakers.filter(topic => topic.speakerTopic === 'capitalStack')
+
     return(
         <section
             className={style.speakerSection}
         >
             <h2 className="globalSecondHeading" style={{color:"var(--white)"}}>Our Speakers for 2026:</h2>
+
             
-            {symposium26Speakers.map((speaker, index) => (
-                <div
-                    key={`${index}-${speaker.id}`}
-                    className={clsx(speaker.reverse ? style.speakerRowReverse : style.speakerRow)}
-                >
-                    <div
-                        className={style.speakerImageBlock}
-                    >
-                        <Image
-                            src={speaker.image}
-                            alt={''}
-                            width={1080}
-                            height={1350}
-                            className={style.speakerImage}
-                        />
-                    </div>
-                    <div
-                        className={style.speakerInfoTextBlock}
-                    >
-                        <h3 className="globalThirdHeading">{speaker.name}</h3>
-                        <div className="globalText" dangerouslySetInnerHTML={{__html: speaker.bio}} />
-                    </div>
-                </div>
-            ))}
+            <SpeakerBlock
+                blockHeading={"Building Capacity To Secure and Deliver Major Contracts"}
+                speakerList={buildingCapacitySpeakers}
+            />
             
+            <SpeakerBlock
+                blockHeading={"Misogi: The Mindset Shift"}
+                speakerList={capitalStackSpeakers}
+            />
         </section>
     )
 }
