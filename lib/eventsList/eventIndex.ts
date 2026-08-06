@@ -20,8 +20,10 @@ import { econEmpowerment } from "./eventsFolder/econEmpowerment";
 import { remotingWorkshop2 } from "./eventsFolder/remotingWorkshop2";
 import { remotingWorkshop3 } from "./eventsFolder/remotingWorkshop3";
 import { blackBusinessMonthWithMayorPaulYoung } from "./eventsFolder/blackBusinessMonthWithMayorPaulYougn";
+import { ceoCeoFamilyBus } from "./eventsFolder/ceoCeoFamilyBus";
 
 export const eventIndex = [
+    ceoCeoFamilyBus,
     blackBusinessMonthWithMayorPaulYoung,
     remotingWorkshop2,
     remotingWorkshop3,
