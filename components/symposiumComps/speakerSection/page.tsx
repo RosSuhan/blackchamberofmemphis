@@ -20,7 +20,7 @@ export default function SpeakerSection(){
             />
             
             <SpeakerBlock
-                blockHeading={"Misogi: The Mindset Shift"}
+                blockHeading={"The Capital Stack: Aligning Capital with Busienss Strategy"}
                 speakerList={capitalStackSpeakers}
             />
         </section>
