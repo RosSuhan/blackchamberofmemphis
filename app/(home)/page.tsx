@@ -1,6 +1,4 @@
-import MultiCtaButtonRow from "@/components/callToAction/multiCtaButtonRow";
 import PageHeroSection from "@/components/heroSections/pageHeroSection";
-import Popup from "@/components/Popup/page";
 import TwoColumnTextImage from "@/components/WordImageBlocks/TwoColumnTextImage";
 import type { Metadata } from "next";
 import HomePageCategorySection from "./homePageCategorySection";
@@ -68,17 +66,6 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <Popup
-        imageSrc={'/pop-up/BCoM-Building-Wealth-in-Our-Community-Symposium-200x300.jpg'}
-        imageAlt={'BCoM Building Wealth in Our Community Symposium 2026'}
-        imageWidth={200}
-        imageHeight={300}
-        title={"BCoM Building Wealth in Our Community Symposium 2026"}
-        description={"Be part of the experience everyone will be talking about! Tickets are now available for our upcoming event, bringing together inspiring speakers, powerful conversations, and unmatched networking opportunities. Register today and secure your seat."}
-        ctaText={'Read More'}
-        ctaLink={"/events/symposium"}
-        storageKey="symposium"
-      /> 
 
       <PageHeroSection
         mainHeading = "Grow your business beyond visibility"

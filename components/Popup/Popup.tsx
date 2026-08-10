@@ -1,5 +1,4 @@
 'use client'
-import { useState } from "react";
 import style from "@/styles/popup.module.css"
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +12,7 @@ type PopupProps = {
     description: string;
     ctaText: string;
     ctaLink: string;
-    storageKey: string;
+    onClose : () => void;
 };
 
 export default function Popup({
@@ -25,34 +24,15 @@ export default function Popup({
     description,
     ctaText,
     ctaLink,
-    storageKey,
+    onClose,
 }: PopupProps){
-
-    const [isOpen, setIsOpen ] = useState<boolean>(() => {
-        if (typeof window === "undefined") return false;
-        return !localStorage.getItem(storageKey);
-    });
-
-    const closeModal = () => {
-        localStorage.setItem(storageKey, "true");
-        setIsOpen(false);
-    };
-
-    if(!isOpen) return null;
-
     return (
-        <div
-            className={style.popupOverlay}
-        >
-            <div
-                className={style.popup}
-            >
-                <div
-                    className={style.closeButtonRow}
-                >
+        <div className={style.popupOverlay} >
+            <div className={style.popup} >
+                <div className={style.closeButtonRow} >
                     <button
                         className={style.popupCloseBtn}
-                        onClick={closeModal}
+                        onClick={onClose}
                         aria-label="Close announcement"
                     >
                         X
@@ -62,6 +42,7 @@ export default function Popup({
                 <Link
                     href={ctaLink}
                     className={style.popupClickImage}
+                    onClick={onClose}
                 >
                     <Image
                         src={imageSrc}
@@ -89,15 +70,15 @@ export default function Popup({
                 : null}
                 
 
-                {/* {ctaLink ?
+                {ctaText ?
                     <Link
                         href={ctaLink}
                         className={style.popupCtaLink}
-                        onClick={closeModal}
+                        onClick={onClose}
                     >
                         {ctaText}
                     </Link>
-                : null} */}
+                : null}
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import { manrope, roboto } from "@/lib/fonts";
+import PopupManager from "@/components/Popup/PopupManager";
 
 export const metadata: Metadata = {
   metadataBase: new URL ('https://blackchamberofmemphis.org/'),
@@ -180,6 +181,7 @@ export default function RootLayout({
         </noscript>
 
         {/* <Header/> */}
+        <PopupManager/>
         {children}
         {/* <Footer/> */}
       </body>
