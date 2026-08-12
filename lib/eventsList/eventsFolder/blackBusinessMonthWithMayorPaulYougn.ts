@@ -64,12 +64,12 @@ export const blackBusinessMonthWithMayorPaulYoung : EventListType = {
                 </p>
             </div>
         </div>`,
-    eventPastDescription: "",
+    eventPastDescription: "On Thursday, August 6, the Black Chamber of Memphis welcomed Mayor Paul Young and members of his newly appointed executive leadership team for a Meet & Greet with over 40 BCoM members and local business owners.",
     eventPastBlog: ``,
     eventCTAbuttonLink : "",
     eventCTAbuttonText : "",
     eventGallery: [{src: "", alt: ""}],
     registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/meet-mayor-young-s-new-leadership-team-at-epicenter-memphis-1873836?sourceTypeId=Hub',
     registrationButtonText :'Register',
-    blogPostReadLink : 'string'
+    blogPostReadLink : '/blog/business-leaders-meet-with-mayor-youngs-new-executive-team'
 }

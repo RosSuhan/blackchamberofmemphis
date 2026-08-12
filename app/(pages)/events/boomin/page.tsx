@@ -14,12 +14,32 @@ export default function Boomin(){
 
     const events = [
         {
-            eventTopic : "Fund U - Interest-Free Capital Match with Kiva",
-            eventDateTime : "June 9, 2026 | 6:30 - 7:30 PM CST",
+            eventTopic : "Boomin to the Bank",
+            eventDateTime : "August 25, 2026 | 6:30 PM CST",
             eventAddressLink : '',
             eventAddress : "Virtual",
             eventCtaButton : 'Register',
-            eventCtaLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/zBFA24OCgCACR',
+            eventCtaLink : 'https://boominu.org/2026-boomin-to-the-bank-onboarding-form/?cohort=September%202026%20Cohort&referral_source=bcom',
+            eventDetails : `<p>Master the financial reports that banks and investors look for, develop better organizational habits, and learn to make data-driven decisions that position your business to secure future funding.</p>`
+            // eventDetails : `<p>Strengthen Your Financials. Build Confidence. Prepare for What's Next.</p>
+            //                 <p>This program is for you if you want to better understand your finances, get organized, and build the financial readiness that lenders and investors look for.</p>
+            //                 <h4>What You'll Work On:</h4>
+            //                 <ul>
+            //                     <li>Understanding your personal and business financials</li>
+            //                     <li>Improving financial organization and decision-making</li>
+            //                     <li>Learning what lenders look for when evaluating businesses</li>
+            //                     <li>Building a step-by-step plan to strengthen your financial position</li>
+            //                 </ul>`
+        },
+        {
+            eventTopic : "Fund U - Interest-Free Capital Match with Kiva",
+            eventDateTime : "To Be Confirmed",
+            eventAddressLink : '',
+            eventAddress : "Virtual",
+            // eventCtaButton : 'Register',
+            eventCtButton : '',
+            eventCtaLink : '',
+            // eventCtaLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/zBFA24OCgCACR',
             // eventDetails : `<p>Access Up to $15,000 in 0% Interest Capital. No Minimum Credit Score Required.</p>
             //                 <p>Need funding but don't want to deal with traditional banks? Through Boomin University's Kiva partnership, you can access loans between $1,000 and $15,000 at zero percent interest — with full support from start to funded.</p>
             //                 <p>Boomin University is an official Kiva Platform Partner, Trustee, and Managed Lending Partner, which means they walk with you through every step of the process. 100% of their borrowers have been fully funded.</p>
@@ -37,8 +57,10 @@ export default function Boomin(){
             eventDateTime : "June 19, 2026 | 7 PM",
             eventAddressLink : '/',
             eventAddress : "In-Person - AutoZone Park, Memphis",
-            eventCtaButton : 'Read More',
-            eventCtaLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/bcom-networking-mixer-annual-family-night-at-autozone-park-1735311?sourceTypeId=Hub',
+            eventCtButton : '',
+            eventCtaLink : '',
+            // eventCtaButton : 'Read More',
+            // eventCtaLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/bcom-networking-mixer-annual-family-night-at-autozone-park-1735311?sourceTypeId=Hub',
             // eventDetails : `<p>Personalized Support Built Around Your Business.</p>
             //                 <p>This is Boomin University's most comprehensive offering. If you're an established entrepreneur who needs hands-on, customized support — not a one-size-fits-all program — Build to Boom is for you.</p>
             //                 <h4>What's Included:</h4>
@@ -55,8 +77,10 @@ export default function Boomin(){
             eventDateTime : "June 30, 2026 | 5:30 - 7:30 PM CST",
             eventAddressLink : '',
             eventAddress : "In-person Orientation + Virtual",
-            eventCtaButton : 'Register',
-            eventCtaLink : 'https://boominu.org/julybcom/',
+            eventCtButton : '',
+            eventCtaLink : '',
+            // eventCtaButton : 'Register',
+            // eventCtaLink : 'https://boominu.org/julybcom/',
             eventDetails : `<p>Build your brand’s online presence with training in AI-powered marketing, SEO, website optimization, and media readiness. Designed for small business owners ready to attract more customers and stand out in a crowded market.</p>`
             // eventDetails : `<p>Clarify Your Message. Strengthen Your Marketing. Attract the Right Customers.<p>
             //                 <p>This program is for you if you want to communicate your value more clearly, market with confidence, and attract the right customers — consistently.</p>
@@ -68,24 +92,7 @@ export default function Boomin(){
             //                     <li>Showing up consistently and confidently in your marketing</li>
             //                 </ul>`
         },
-        {
-            eventTopic : "Boomin to the Bank",
-            eventDateTime : "August 25, 2026 | 6:30 PM CST",
-            eventAddressLink : '',
-            eventAddress : "Virtual",
-            eventCtaButton : 'Register',
-            eventCtaLink : 'https://boominu.org/2026-boomin-to-the-bank-onboarding-form/?cohort=September%202026%20Cohort&referral_source=bcom',
-            eventDetails : `<p>Master the financial reports that banks and investors look for, develop better organizational habits, and learn to make data-driven decisions that position your business to secure future funding.</p>`
-            // eventDetails : `<p>Strengthen Your Financials. Build Confidence. Prepare for What's Next.</p>
-            //                 <p>This program is for you if you want to better understand your finances, get organized, and build the financial readiness that lenders and investors look for.</p>
-            //                 <h4>What You'll Work On:</h4>
-            //                 <ul>
-            //                     <li>Understanding your personal and business financials</li>
-            //                     <li>Improving financial organization and decision-making</li>
-            //                     <li>Learning what lenders look for when evaluating businesses</li>
-            //                     <li>Building a step-by-step plan to strengthen your financial position</li>
-            //                 </ul>`
-        }
+
     ]
     
     return(
