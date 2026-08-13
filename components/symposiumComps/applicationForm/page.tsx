@@ -31,6 +31,7 @@ export default function SymposiumApplication(){
     const [ loading, setLoading ] = useState(false)
     const [ submitMessage, setSubmitMessage ] = useState("")
     const submittingRef = useRef(false)
+    const [sponsorLogo, setSponsorLogo] = useState<File | null>(null)
 
     const [ symposiumFormData, setSymposiumFormData ] = useState({
         businessName : '',
@@ -56,6 +57,47 @@ export default function SymposiumApplication(){
         agreementTwo: false,
         agreementThree: false,
     })
+
+    const handleLogoChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.currentTarget.files?.[0] ?? null;
+
+        if(!file){
+            setSponsorLogo(null)
+            return
+        }
+
+        const allowedTypes = [
+            'image/png',
+            'image/jpeg',
+            'image/svg+xml'
+        ]
+
+        const maxFileSize = 5 * 1024 * 1024 // 5MB
+
+        if(!allowedTypes.includes(file.type)) {
+            setSubmitMessage(
+                "Please upload a PNG, JPG, JPEG, or SVG logo."
+            )
+
+            e.currentTarget.value = ""
+            setSponsorLogo(null)
+
+            return
+        }
+
+        if (file.size > maxFileSize) {
+            setSubmitMessage(
+                "Your logo is too large. Please upload a logo smaller than 5 MB."
+            )
+
+            e.currentTarget.value = ''
+            setSponsorLogo(null)
+
+            return
+        }
+        setSponsorLogo(file)
+        setSubmitMessage('')
+    };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.currentTarget;
@@ -95,7 +137,30 @@ export default function SymposiumApplication(){
         }))
     }
 
-    const SYMPOSIUM_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwPnXcexd7mSCz2lp6jvmjMrUAm32vaAnuQFJGFV8J3Hl-O8u3kH3Sv9fAIMIT5ZrSSvg/exec"
+    const SYMPOSIUM_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwAmYtpbPDeoSLsWm7v8JBL3i-5iN3MQYj0M8hYzdoslxxqBexjYq1_zXsWTRrbyfp5Zg/exec"
+
+    const fileToBase64 = (file: File): Promise<string> => {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader()
+
+            reader.onload = () => {
+                if (typeof reader.result !== 'string'){
+                    reject(new Error("Unable to read the logo file."))
+                    return
+                }
+
+                //Remove the "data:image/png;base64," portion
+                const base64Data = reader.result.split(",")[1]
+
+                resolve(base64Data)
+            }
+            reader.onerror = () => {
+                reject(new Error("Unable to read the logo file."))
+            }
+
+            reader.readAsDataURL(file)
+        })
+    }
 
     async function handleSubmit(e: React.FormEvent){
         e.preventDefault();
@@ -105,18 +170,37 @@ export default function SymposiumApplication(){
         submittingRef.current = true
 
         setLoading(true)
+        setSubmitMessage('')
 
         try {
+            let logoData = null
+
+            if(sponsorLogo){
+                const base64Data = await fileToBase64(sponsorLogo)
+
+                logoData = {
+                    name: sponsorLogo.name,
+                    type: sponsorLogo.type,
+                    data: base64Data
+                }
+            }
+
+            const submissionData = {
+                ...symposiumFormData,
+                sponsorLogo: logoData
+            }
+
             await fetch(SYMPOSIUM_GOOGLE_URL, {
                 method: "POST",
                 mode: "no-cors",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(symposiumFormData)
+                body: JSON.stringify(submissionData)
             })
 
-            setSubmitMessage("")
-            setLoading(false)
-            console.log(symposiumFormData)
+            console.log(submissionData)
+
+            setSubmitMessage("Thank you! Your application has been submitted successfully.")
+            setSponsorLogo(null)
 
             setTimeout(() => {
             //     resetLeveledUpApplicationForm();
@@ -126,6 +210,9 @@ export default function SymposiumApplication(){
             console.error(err);
             setSubmitMessage("Something went wrong. Please try again later.")
             setLoading(false)
+        } finally {
+            setLoading(false)
+            submittingRef.current = false
         }
     }
 
@@ -158,6 +245,33 @@ export default function SymposiumApplication(){
                         onChange={handleChange}
                         className={style.symFormInput}
                     />
+                </fieldset>
+                <fieldset className={style.symFormFieldset}>
+                    <legend className={style.symFormLegend}>
+                        Sponsor Logo
+                    </legend>
+
+                    <span className={style.symFormcaption}>
+                        Please upload your business or organization logo.
+                        PNG, JPG, JPEG, or SVG preferred.
+                    </span>
+
+                    <input
+                        type="file"
+                        required
+                        name="sponsorLogo"
+                        accept="image/png,image/jpeg,image/svg+xml"
+                        onChange={handleLogoChange}
+                        className={style.symFileInput}
+                    />
+
+                    {/* {sponsorLogo && (
+                        <p
+                            className={style.symFormcaption}
+                        >
+                            Selected File: {sponsorLogo.name}
+                        </p>
+                    )} */}
                 </fieldset>
 
                 {/* primary contact */}
@@ -649,7 +763,7 @@ export default function SymposiumApplication(){
                 </fieldset>
 
                 {/* available dates */}
-                <fieldset
+                {/* <fieldset
                     className={style.symFormFieldset}
                 >
                     <legend
@@ -683,7 +797,7 @@ export default function SymposiumApplication(){
                         />
                         August 28, 2026
                     </div>
-                </fieldset>
+                </fieldset> */}
 
                 {/* optional enhancements */}
                 <fieldset

@@ -34,24 +34,23 @@ export default function CreativeProdApplication(){
                         <strong>Estimated completion time: 10–15 minutes.</strong>
                     </p>
                     <p>
-                        Selected partners will be assigned sponsorship recognition based on the verified fair market value of services provided.<br/>
-                        <strong>Submission Deadline: Friday, May 1, 2026</strong>
+                        Proposals will be accepted on a rolling basis; however, the deadline for priority consideration is <strong>11:59 p.m. on Tuesday, August 25, 2026</strong>.
                     </p>
                     <h3 style="margin: 4rem 0 0 0;">
-                        <strong>Momentum: BCoM's Official Cocktail Party</strong>
+                        <strong>Chairman's Council Reception</strong>
                     </h3>
                     <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; align-items: flex-start;">
-                        <li><strong>Date: </strong> Thursday, August 27, 2026</li>
-                        <li><strong>Time: </strong> To be Confirmed</li>
-                        <li><strong>Location: </strong> To be Confirmed</li>
+                        <li><strong>Date: </strong> Thursday, September 24, 2026</li>
+                        <li><strong>Time: </strong> 5:30pm</li>
+                        <li><strong>Location: </strong> Details provide upon application approval</li>
                     </ul>
                     <h3 style="margin: 3rem 0 0 0;">
                         <strong>2026 Building Wealth in Our Community Symposium</strong>
                     </h3>
                     <ul style="list-style: none; padding: 0; display:flex; flex-direction: column; align-items: flex-start;">
-                        <li><strong>Date: </strong> Friday, August 28, 2026</li>
-                        <li><strong>Time: </strong> 8 AM - 3 PM </li>
-                        <li><strong>Location: </strong> FedEx Event Center</li>
+                        <li><strong>Date: </strong> Friday, October 2, 2026</li>
+                        <li><strong>Time: </strong> 8:30 AM - 5:30 PM </li>
+                        <li><strong>Location: </strong> Reign Event Venue</li>
                     </ul>
                     `
                 }
