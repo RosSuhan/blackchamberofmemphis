@@ -763,7 +763,7 @@ export default function SymposiumApplication(){
                 </fieldset>
 
                 {/* available dates */}
-                {/* <fieldset
+                <fieldset
                     className={style.symFormFieldset}
                 >
                     <legend
@@ -777,12 +777,12 @@ export default function SymposiumApplication(){
                         <input 
                             type="checkbox" 
                             name="availability" 
-                            value={"August 27"}
+                            value={"September 24"}
                             onChange={handleCheckbox} 
                             checked={symposiumFormData.availability.includes("August 27")}
                             className={style.symFormRadio}
                         />
-                        August 27, 2026
+                        September 24, 2026
                     </div>
                     <div
                         className={style.symFormAvailabilityRow}
@@ -795,9 +795,9 @@ export default function SymposiumApplication(){
                             checked={symposiumFormData.availability.includes("August 28")}
                             className={style.symFormRadio}
                         />
-                        August 28, 2026
+                        October 2, 2026
                     </div>
-                </fieldset> */}
+                </fieldset>
 
                 {/* optional enhancements */}
                 <fieldset
