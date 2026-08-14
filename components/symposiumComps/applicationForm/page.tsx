@@ -137,7 +137,7 @@ export default function SymposiumApplication(){
         }))
     }
 
-    const SYMPOSIUM_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwAmYtpbPDeoSLsWm7v8JBL3i-5iN3MQYj0M8hYzdoslxxqBexjYq1_zXsWTRrbyfp5Zg/exec"
+    const SYMPOSIUM_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbxAi3S3ogmXHbbaSCZttpl08otO7_-8a5We8c86y_4KVOsSqP_Ja-34SKorr5caOGWNOg/exec"
 
     const fileToBase64 = (file: File): Promise<string> => {
         return new Promise((resolve, reject) => {
@@ -779,7 +779,7 @@ export default function SymposiumApplication(){
                             name="availability" 
                             value={"September 24"}
                             onChange={handleCheckbox} 
-                            checked={symposiumFormData.availability.includes("August 27")}
+                            checked={symposiumFormData.availability.includes("September 24")}
                             className={style.symFormRadio}
                         />
                         September 24, 2026
@@ -790,9 +790,9 @@ export default function SymposiumApplication(){
                         <input 
                             type="checkbox" 
                             name="availability"
-                            value={"August 28"} 
+                            value={"October 2"} 
                             onChange={handleCheckbox}
-                            checked={symposiumFormData.availability.includes("August 28")}
+                            checked={symposiumFormData.availability.includes("October 2")}
                             className={style.symFormRadio}
                         />
                         October 2, 2026
