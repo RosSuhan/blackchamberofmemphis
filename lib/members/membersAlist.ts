@@ -25,8 +25,10 @@ import { angelsAroundTheClockHomecare } from './(a)/angelsAroundTheClockHomecare
 import { accessMedStaffingSolHealth } from './(a)/accessMedStaffingSolHealth'
 import { affluentBooks } from './(a)/affluentBooks'
 import { aBetterChoiceChildcare } from './(a)/aBetterChoiceChildcare'
+import { ashleythomasconsulting } from './(a)/ashleyThomasConsulting'
 
 export const membersAlist = [
+    ashleythomasconsulting,
     aBetterChoiceChildcare,
     affluentBooks,
     aOneStaffing,

@@ -15,8 +15,10 @@ import { mississippiBoulevardChristianChurch } from './(m)/mississippiBoulevardC
 import { morningStarMissionaryBaptistChurch } from './(m)/morningStarMissionaryBaptistChurch'
 import { mtNeboBaptistChurch } from './(m)/mtNeboBaptistChurch'
 import { memphisShelbyCountyFilm } from './(m)/memphisShelbyCountyFilm'
+import { midSouthEducationBehavior } from './(m)/midSouthEducation&BehaviorSolutions'
 
 export const membersMlist = [
+    midSouthEducationBehavior,
     memphisShelbyCountyFilm,
     magnoliaBusSol,
     mickeyPopcorn,

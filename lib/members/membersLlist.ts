@@ -11,8 +11,10 @@ import { letsBeFrank } from './(l)/letsBeFrank'
 import { lindenwoodChristianChurch } from './(l)/lindenwoodChristianChurch'
 import { lordOfLifeLutheranChurch } from './(l)/lordOfLifeLutheranChurch'
 import { lordsTabernacleHolinessChurch } from './(l)/lordsTabernacleHolinessChurch'
+import { lesureWorkforceBusSol } from './(l)/lesureWorkforceBusSol'
 
 export const membersLlist = [
+    lesureWorkforceBusSol,
     leadingInLifeEnterprise,
     lemdaddyzKitchen,
     lilacImpactServices,

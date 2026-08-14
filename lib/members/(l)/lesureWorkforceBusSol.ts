@@ -1,6 +1,6 @@
 import { MembersListType } from "../membersListType";
 
-export const leisureWorkforceBusSol : MembersListType = {
+export const lesureWorkforceBusSol : MembersListType = {
     memberStatus: false,
     id : 'lesure-workforce-business-solutions',
     businessName : "Lesure Workforce Business Solutions",
