@@ -21,7 +21,8 @@ export const ceoCeoFamilyBus : EventListType = {
                             <p>Featuring CEOs from BCoM’s member network, the inaugural conversation will spotlight family-owned businesses. Our featured speakers will share their experiences building alongside kin, balancing personal relationships with business decisions, planning for succession, and creating brands and legacies that can sustain for generations to come.</p>
                             <h3 class="globalThirdHeading">Featuring:</h3>
                             <p><strong>Janniece Garner & Jay Smith</strong><br>Bluff City Party & Events</p>
-                            <p><strong>Sylvester & Jada Tate</strong><br>Reign Event Venue</p>`,
+                            <p><strong>Sylvester & Jada Tate</strong><br>Reign Event Venue</p>
+                            <p><strong>Calvin & Audrey Morrow</strong><br> Dawg Team</p>`,
     eventPastDescription : '',
     eventPastBlog : '',
     eventCTAbuttonLink : '',
