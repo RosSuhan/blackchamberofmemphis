@@ -32,9 +32,25 @@ export const ashleythomasconsulting : MembersListType = {
         'operations management',
 
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Ashley Thomas Consulting (ATC) is a people-first consulting firm that partners with growing businesses, nonprofit organizations, and entrepreneurs to build stronger teams, streamline operations, and create exceptional employee experiences. By combining talent expertise with strategic operational support, ATC helps organizations address the people and processes that are essential to sustainable growth.</p>
+        <p>The firm provides strategic Talent Acquisition and recruiting support to help organizations hire smarter and build teams aligned with their goals. From improving recruiting operations to strengthening hiring processes, Ashley Thomas Consulting helps clients create more effective approaches to attracting and selecting talent. Its people-first philosophy recognizes that successful organizations are built not only on finding qualified candidates, but also on creating positive experiences for employees throughout the hiring and employment journey.</p>
+        <p>In addition to talent acquisition, ATC provides Project Management support to help organizations plan, coordinate, and execute important initiatives. By bringing structure, organization, and strategic oversight to projects, the firm helps clients improve efficiency, maintain momentum, and move key priorities forward.</p>
+        <p>Ashley Thomas Consulting also supports Business Operations, helping growing organizations strengthen the systems and processes behind their day-to-day work. This operational focus enables business owners, nonprofit leaders, and entrepreneurs to spend less time managing administrative and organizational challenges and more time concentrating on their core mission and growth objectives.</p>
+        <p>Whether an organization needs help improving its recruiting function, managing a critical project, strengthening business operations, or creating a better employee experience, Ashley Thomas Consulting provides customized support based on each client's unique needs. The firm's integrated approach brings together people, processes, and practical strategy to help organizations operate more effectively and grow with confidence.</p>
+        <p>Through thoughtful consulting and a commitment to people-centered solutions, Ashley Thomas Consulting serves as a strategic partner for organizations looking to build stronger teams, improve operational efficiency, and create workplaces where both people and businesses can thrive.</p>
+        <div style="display:flex; flex-direction:row; justify-content:center; margin-top:5rem">
+            <a 
+                href="/members/ashley-thomas-consulting/ATConsulting.pdf"
+                download
+                class="globalGoldButton"
+                style={background:var(--darkGold)}
+                title={Download Ashley Thomas Consulting PDF Flyer}
+            >Download Brochure</a>
+        </div>`,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/ashley-thomas-consulting/Ashley-Thomas-Consulting-Profile.webp", alt : "Ashley Thomas Consulting", width : 1254, height: 1254},
+        {image : '/members/ashley-thomas-consulting/ashley-thomas-consulting-flyer.webp', alt : 'Ashley Thomas CONSULTING Where Strategy & Operations meet Execution Providingtrusted,people-centredconsultingsupport to businesses and organizations navigating growth,transition, and complexity', width : 1412, height : 2000}
     ],
     businessHours : [
         { day : "Monday", hours : '10 am - 4 pm'},
@@ -51,7 +67,7 @@ export const ashleythomasconsulting : MembersListType = {
     website : "",
     telNumber : "9016261553",
     facebook : "https://www.facebook.com/share/1EHvLUSneJ/?mibextid=wwXIfr",
-    instagram : "https://www.facebook.com/share/1EHvLUSneJ/?mibextid=wwXIfr",
+    instagram : "https://www.instagram.com/ashleythomasco?igsh=MXIyZDFrZHd6d2VpZQ%3D%3D&utm_source=qr",
     youtube : "",
     linkedIn : "https://www.linkedin.com/company/ashley-thomas-consulting",
     linktree : "",
@@ -61,11 +77,12 @@ export const ashleythomasconsulting : MembersListType = {
     offering : `
         <ul style="text-align: left">
             <li>Talent Acquisition Strategy & Support</li>
-            <li>Recruiting Operations</li>
+            <li>Human Resources & Recruitment Operations</li>
             <li>Project Management</li>
             <li>Business Operations Support</li>
             <li>Hiring & Recruitment Strategy</li>
             <li>Employee Experience Support</li>
+            <li>Employer Branding</li>
             <li>Organizational & Operational Consulting</li>
         </ul>`,
     busBullets : `

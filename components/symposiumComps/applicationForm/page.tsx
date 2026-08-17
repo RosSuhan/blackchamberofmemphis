@@ -782,7 +782,7 @@ export default function SymposiumApplication(){
                             checked={symposiumFormData.availability.includes("September 24")}
                             className={style.symFormRadio}
                         />
-                        September 24, 2026
+                        Thursday, September 24, 2026
                     </div>
                     <div
                         className={style.symFormAvailabilityRow}
@@ -795,7 +795,7 @@ export default function SymposiumApplication(){
                             checked={symposiumFormData.availability.includes("October 2")}
                             className={style.symFormRadio}
                         />
-                        October 2, 2026
+                        Friday, October 2, 2026
                     </div>
                 </fieldset>
 
