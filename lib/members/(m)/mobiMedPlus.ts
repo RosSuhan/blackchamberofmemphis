@@ -1,6 +1,6 @@
 import { MembersListType } from './../membersListType'
 
-export const template : MembersListType = {
+export const mobiMedPlus : MembersListType = {
     memberStatus: false,
     id : "mobimed-plus",
     businessName : "MobiMed Plus",
@@ -33,8 +33,8 @@ export const template : MembersListType = {
         { day : "Saturday", hours : '4am - 5pm'},
         { day : "Sunday", hours : 'Closed'},
     ],
-    addressLink : "",
-    address : "",
+    addressLink : "https://share.google/hvHxDKnLgynYvibyB",
+    address : "4937 Northaven CV Memphis Tennessee 38127",
     email : "info@mobimedplus.com",
     website : "https://mobimedplus.com/",
     telNumber : "9017790185",
