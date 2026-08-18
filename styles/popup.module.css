@@ -37,10 +37,13 @@
 
 
 .popupClickImage {
-    width: 80%;
+    min-width: 200px;
+    max-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    /* background-color: purple; */
 }
 
 .popupImage {

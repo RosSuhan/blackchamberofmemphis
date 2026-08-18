@@ -47,8 +47,9 @@ export default function Popup({
                     <Image
                         src={imageSrc}
                         alt={imageAlt}
-                        width={imageWidth}
-                        height={imageHeight}
+                        fill
+                        // width={imageWidth}
+                        // height={imageHeight}
                         className={style.popupImage}
                     />
                 </Link>

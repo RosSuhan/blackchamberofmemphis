@@ -5,6 +5,7 @@ import { jarleciaJones } from "./jarleciaJones";
 import { kennethJohnson } from "./kennethJohnson";
 import { khalifJohnson } from "./khalifJohnson";
 import { kimberlyHenry } from "./kimberlyHenry";
+import { laJuannaJones } from "./laJuannaJones";
 import { rashawnRay } from "./rashawnRay";
 
 export const symposium26Speakers = [
@@ -15,5 +16,6 @@ export const symposium26Speakers = [
     kennethJohnson,
     khalifJohnson,
     rashawnRay,
-    jarleciaJones
+    jarleciaJones,
+    laJuannaJones
 ]
