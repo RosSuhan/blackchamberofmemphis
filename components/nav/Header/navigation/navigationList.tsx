@@ -24,10 +24,12 @@ export default function NavigationList({navigationItems, overflowItems, menuOpen
                     item={item}
                 />
             )))}
-
-            {/* <NavigationMoreButton
-                overflowItems = {overflowItems}
-            /> */}
+            
+            {overflowItems.length > 0 && (
+                <NavigationMoreButton
+                    overflowItems = {overflowItems}
+                />
+            )}
         </ul>
     )
 }

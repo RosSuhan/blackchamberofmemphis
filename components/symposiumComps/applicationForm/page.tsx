@@ -203,7 +203,6 @@ export default function SymposiumApplication(){
             setSponsorLogo(null)
 
             setTimeout(() => {
-            //     resetLeveledUpApplicationForm();
                 setSubmitMessage("");
             }, 5000);
         } catch (err) {
@@ -264,14 +263,6 @@ export default function SymposiumApplication(){
                         onChange={handleLogoChange}
                         className={style.symFileInput}
                     />
-
-                    {/* {sponsorLogo && (
-                        <p
-                            className={style.symFormcaption}
-                        >
-                            Selected File: {sponsorLogo.name}
-                        </p>
-                    )} */}
                 </fieldset>
 
                 {/* primary contact */}

@@ -3,10 +3,21 @@ import useMediaQuery from "./useMediaQuery";
 import { navigationBreakpoints, navigationSlots } from "@/lib/navigationConfig";
 
 export default function useNavigationLayout(){
-    const isSmallTablet = useMediaQuery(navigationBreakpoints.smallTablet);
-    const isTablet = useMediaQuery(navigationBreakpoints.tablet);
-    const isLaptop = useMediaQuery(navigationBreakpoints.laptop);
-    const isDesktop = useMediaQuery(navigationBreakpoints.desktop);
+    const isSmallTablet = useMediaQuery(
+        navigationBreakpoints.smallTablet
+    );
+
+    const isTablet = useMediaQuery(
+        navigationBreakpoints.tablet
+    );
+
+    const isLaptop = useMediaQuery(
+        navigationBreakpoints.laptop
+    );
+
+    const isDesktop = useMediaQuery(
+        navigationBreakpoints.desktop
+    );
 
     let visibleSlots = navigationSlots.mobile;
 
@@ -31,7 +42,6 @@ export default function useNavigationLayout(){
     const overflowItems = sortedMenu.slice(visibleSlots);
 
     return{
-        visibleSlots,
         visibleItems,
         overflowItems,
     }

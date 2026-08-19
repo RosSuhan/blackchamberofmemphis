@@ -1,0 +1,55 @@
+.textInputBlock {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textInputLabel {
+    /* background: blue; */
+    /* width: 35%; */
+}
+
+.textInput {
+    width: 100%;
+    margin: .5rem 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    border-radius: .3rem;
+    padding-left: .5rem;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: -0.5rem;
+    text-align: left;
+}
+
+@media (min-width:400px) {
+    .textInput {
+        width: 60%;
+    }
+}
+
+@media (min-width:600px) {
+    .textInputBlock {
+        width: 80%;
+    }
+}
+
+@media (min-width:800px) {
+    .textInputBlock {
+        width: 90%;
+    }
+
+    .textInput {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .textInput {
+        width: 60%
+    }
+}
