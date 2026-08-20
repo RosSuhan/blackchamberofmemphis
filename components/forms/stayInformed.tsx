@@ -13,8 +13,8 @@ export default function StayInformedSection(){
     const [ email, setEmail ] = useState("")
     const [ errors, setErrors ] = useState<Record<string, string>>({})
 
-    // const STAYINFORMED_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwM5ZU63wc4uvezCAonPdS3NAf0ZWIhjvlU9P58d1PfpLvP3OhGXSIpgn_zUd_bXThX/exec"
-    const STAYINFORMED_GOOGLE_URL = ''
+    const STAYINFORMED_GOOGLE_URL = "https://script.google.com/macros/s/AKfycbwM5ZU63wc4uvezCAonPdS3NAf0ZWIhjvlU9P58d1PfpLvP3OhGXSIpgn_zUd_bXThX/exec"
+    // const STAYINFORMED_GOOGLE_URL = ''
 
     async function handleStayInformed(e: React.FormEvent) {
         e.preventDefault();
@@ -126,14 +126,6 @@ export default function StayInformedSection(){
                 onChange = {(e) => setEmail(e.target.value)}
                 error = {errors.email}
             />
-
-            {/* <input 
-                placeholder='Email'
-                type="email" 
-                className={style.stayInformedInput}
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-            /> */}
 
             <button
                 type='submit'
