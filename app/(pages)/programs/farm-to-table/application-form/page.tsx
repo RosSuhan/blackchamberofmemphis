@@ -8,6 +8,7 @@ import PhoneInput from "@/components/forms/fieldsets/PhoneInput";
 import RadioInput from "@/components/forms/fieldsets/RadioInput";
 import { validateBusinessName, validateEmail, validatePersonName, validatePhone, validateRequiredRadioSelection } from "@/lib/forms/validation";
 import CheckInput from "@/components/forms/fieldsets/CheckInput";
+import SelectInput from "@/components/forms/fieldsets/SelectInput";
 
 export default function FarmToCouncilApplication(){
     const [ errors, setErrors ] = useState<Record<string, string>>({})
@@ -28,8 +29,6 @@ export default function FarmToCouncilApplication(){
     const [ weekdays, setWeekdays ] = useState('')
     const [ meetingTime, setMeetingTime ] = useState('')
     const [ meetingTimeOther, setMeetingTimeOther ] = useState('')
-
-    console.log(weekdays)
 
     const FARM_TO_TABLE_APPLICATION_GOOGLE_URL = ""
 
@@ -270,7 +269,7 @@ export default function FarmToCouncilApplication(){
                     />
 
                     {/* how did you hear about the Council - radio */}
-                    <RadioInput
+                    {/* <RadioInput
                         name = {'marketPlatform'}
                         legend = {"How did you hear about the Council?"}
                         value = {marketPlatform}
@@ -285,7 +284,7 @@ export default function FarmToCouncilApplication(){
                         ]}
                         error = {errors.marketPlatform}
                         required
-                    />
+                    /> */}
 
                     <TextInput
                         name = {'referred'}
@@ -295,18 +294,32 @@ export default function FarmToCouncilApplication(){
                         error = {errors.referred}
                     />
 
+                    <SelectInput
+                        name = {'marketPlatform'}
+                        label = {'How did you hear about the Council?'}
+                        value = {marketPlatform}
+                        onChange = {(e) => setMarketPlatform(e.target.value)}
+                        selectOptions = {[
+                            { value : 'Website', label : 'BCoM Website' },
+                            { value : 'Email', label : 'Email' },
+                            { value : 'SocialMedia', label : 'Social Media' },
+                            { value : 'Event', label : 'Event' },
+                            { value : 'Referral', label : 'Referral' },
+                        ]}
+                    />
+
                     <button type="submit">
                         {loading ? "Sending..." : "Submit"}
                     </button>
 
                     {submitMessage ? 
-                    <p
-                        className={style.submitMessage}
-                        
-                    >
-                        {submitMessage}
-                    </p>
-                : null}
+                        <p
+                            className={style.submitMessage}
+                            
+                        >
+                            {submitMessage}
+                        </p>
+                    : null}
                 </form>
             </section>
         </main>
