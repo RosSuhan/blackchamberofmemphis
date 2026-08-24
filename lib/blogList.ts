@@ -15,7 +15,7 @@ export const blogList : BlogListProp[] = [
         blogImage: `/blog/mlk/mlk-hero-desktop.webp`,
         blogDescription: '',
         blogTitleColor: `#ffffff`,
-        blogArticleDate: "19 Jan 2026",
+        blogArticleDate: "Jan 19, 2026",
         blogReadLink: `/blog/honoring-martin-luther-king`
     },
     {
@@ -24,7 +24,7 @@ export const blogList : BlogListProp[] = [
         blogDescription: '',
         blogImage: `/blog/black-ledger-a-tour-of-possibilities.webp`,
         blogTitleColor: `#ffffff`,
-        blogArticleDate: "30 Jan 2026",
+        blogArticleDate: "Jan 30, 2026",
         blogReadLink: `/blog/black-ledger/a-tour-of-possibilities`
     },
     {
@@ -33,7 +33,7 @@ export const blogList : BlogListProp[] = [
         blogDescription: '',
         blogImage: `/blog/black-ledger-kudzukian.webp`,
         blogTitleColor: `#ffffff`,
-        blogArticleDate: "4 Feb 2026",
+        blogArticleDate: "Feb 4, 2026",
         blogReadLink: `/blog/black-ledger/kudzukian`
     },
         {
@@ -42,7 +42,7 @@ export const blogList : BlogListProp[] = [
         blogDescription: '',
         blogImage: `/blog/black-ledger-soulsville-foundation.webp`,
         blogTitleColor: `#ffffff`,
-        blogArticleDate: "12 Feb 2026",
+        blogArticleDate: "Feb 12, 2026",
         blogReadLink: `/blog/black-ledger/the-soulsville-foundation`
     },
     {
@@ -51,7 +51,7 @@ export const blogList : BlogListProp[] = [
         blogDescription: '',
         blogImage: `/blog/black-ledger-the-collective-blueprint.webp`,
         blogTitleColor: `#ffffff`,
-        blogArticleDate: "18 Feb 2026",
+        blogArticleDate: "Feb 18, 2026",
         blogReadLink: `/blog/black-ledger/the-collective-blueprint`
     },
     {
@@ -60,9 +60,17 @@ export const blogList : BlogListProp[] = [
         blogDescription: '',
         blogImage: `/blog/blog-article-kitchen-classroom-to-career-pathways.webp`,
         blogTitleColor: `#ffffff`,
-        blogArticleDate: "30 Mar 2026",
+        blogArticleDate: "Mar 30, 2026",
         blogReadLink: `/blog/kitchen-classroom-to-career-pathways`
-    },
+    },{
+            id: "national-black-business-month-gumbel-legacy",
+            blogName: `National Black Business Month`,
+            blogDescription : "The Gumbel Family's Four-Generation Legacy in Memphis",
+            blogImage: `/assets/pagetitleimage.webp`,
+            blogTitleColor: `#ffffff`,
+            blogArticleDate: "August 20, 2026",
+            blogReadLink: `/blog/national-black-business-month-gumbel-legacy`
+        },
     
         // {
     //     id: "",

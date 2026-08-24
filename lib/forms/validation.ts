@@ -1,3 +1,4 @@
+// Person name and lastname
 export function validatePersonName(value : string): string | undefined {
     const trimmedValue = value.trim()
 
@@ -12,6 +13,7 @@ export function validatePersonName(value : string): string | undefined {
     return undefined
 }
 
+// Business name - including numbers for business eg 100 Black Business Men
 export function validateBusinessName(value: string): string | undefined {
     const trimmedValue = value.trim()
 
@@ -26,6 +28,7 @@ export function validateBusinessName(value: string): string | undefined {
     return undefined
 }
 
+// Email - forcing the @ sign for email.
 export function validateEmail(value : string): string | undefined {
     const trimmedValue = value.trim()
 
@@ -39,5 +42,34 @@ export function validateEmail(value : string): string | undefined {
         return "Please enter a valid email address."
     }
 
+    return undefined
+}
+
+// Phone Regex for America
+export function validatePhone(value: string): string | undefined {
+    const trimmedValue = value.trim()
+
+    if(!trimmedValue) {
+        return "Please enter your phone number."
+    }
+
+    const digitsOnly = trimmedValue.replace(/\D/g, "")
+
+    const normalizedNumber = digitsOnly.length === 11 && digitsOnly.startsWith("1") ? digitsOnly.slice(1) : digitsOnly
+
+    const phoneRegex = /^[2-9]\d{2}[2-9]\d{6}$/
+
+    if(!phoneRegex.test(normalizedNumber)) {
+        return "Please enter a valid phone number."
+    }
+
+    return undefined
+}
+
+// radio selection
+export function validateRequiredRadioSelection(value : string) : string | undefined {
+    if (!value.trim()) {
+        return "Please select an option."
+    }
     return undefined
 }

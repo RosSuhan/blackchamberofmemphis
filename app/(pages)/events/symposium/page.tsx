@@ -140,6 +140,13 @@ export default function Symposium(){
             alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
             width: 500,
             height: 500
+        },
+        {
+            name: "Lilac Impact Services",
+            image: "/members/lilac-impact-services.webp",
+            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Lilac Impact Services',
+            width: 1300,
+            height: 800
         }
     ]
 
