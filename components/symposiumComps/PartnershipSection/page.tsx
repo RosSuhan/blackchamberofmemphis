@@ -32,14 +32,14 @@ export default function PartnershipSection({
                 width: 2835,
                 height: 418,
             },
-            
+            // {
+            //     name: "Lilac Impact Services",
+            //     image: "/members/lilac-impact-services.webp",
+            //     alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Lilac Impact Services',
+            //     width: 1300,
+            //     height: 800
+            // },
             {
-                name: "Lilac Impact Services",
-                image: "/members/lilac-impact-services.webp",
-                alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Lilac Impact Services',
-                width: 1300,
-                height: 800
-            },{
                 name : 'Paragon',
                 image : '/partners/corporate_partner-paragon.webp',
                 alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Paragon",

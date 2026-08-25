@@ -30,6 +30,8 @@ export default function FarmToCouncilApplication(){
     const [ meetingTime, setMeetingTime ] = useState('')
     const [ meetingTimeOther, setMeetingTimeOther ] = useState('')
 
+    console.log(businessType)
+
     function handleCheckBoxChange(e: React.ChangeEvent<HTMLInputElement>){
         const { value, checked } = e.target
         setBusinessType((prev) => {
