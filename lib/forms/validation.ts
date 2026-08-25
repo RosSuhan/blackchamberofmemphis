@@ -66,7 +66,7 @@ export function validatePhone(value: string): string | undefined {
     return undefined
 }
 
-// radio selection
+// radio selection, checkbox and select input
 export function validateRequiredRadioSelection(value : string) : string | undefined {
     if (!value.trim()) {
         return "Please select an option."

@@ -21,7 +21,7 @@ export default function FarmToCouncilApplication(){
     const [ email, setEmail ] = useState('')
     const [ phone, setPhone ] = useState('')
     const [ referred, setReferred ] = useState('')
-    const [ businessType, setBusinessType ] = useState('')
+    const [ businessType, setBusinessType ] = useState<string[]>([])
     const [ businessTypeOther, setBusinessTypeOther ] = useState('')
     const [ businessRole, setBusinessRole ] = useState('')
     const [ businessRoleOther, setBusinessRoleOther ] = useState('')
@@ -29,6 +29,17 @@ export default function FarmToCouncilApplication(){
     const [ weekdays, setWeekdays ] = useState('')
     const [ meetingTime, setMeetingTime ] = useState('')
     const [ meetingTimeOther, setMeetingTimeOther ] = useState('')
+
+    function handleCheckBoxChange(e: React.ChangeEvent<HTMLInputElement>){
+        const { value, checked } = e.target
+        setBusinessType((prev) => {
+            if(checked){
+                return [...prev, value]
+            }
+
+            return prev.filter((item) => item !==value)
+        })
+    }
 
     const FARM_TO_TABLE_APPLICATION_GOOGLE_URL = ""
 
@@ -149,7 +160,7 @@ export default function FarmToCouncilApplication(){
                         name = {'businessType'}
                         legend = {"Based on the days you selected, when are you available to participate in the council's meetings and events?"}
                         value = {businessType}
-                        onChange = {(e) => setBusinessType(e.target.value)}
+                        onChange = {handleCheckBoxChange}
                         options = {[
                             { value : "Restaurant", label : "Restaurant"},
                             { value : "FoodTruck_Trailer_Stand", label : "Food Truck/Trailer/Stand"},
@@ -228,7 +239,7 @@ export default function FarmToCouncilApplication(){
                     />
 
                     {/* days of the week - checkbox */}
-                    <CheckInput
+                    {/* <CheckInput
                         name = {'weekdays'}
                         legend = {"What days of the week are you available to participate in the council's meetings and events?"}
                         value = {weekdays}
@@ -243,10 +254,10 @@ export default function FarmToCouncilApplication(){
                             { value : "Sunday", label : "Sunday"},
                         ]}
                         error = {errors.weekdays}
-                    />
+                    /> */}
 
                     {/* week day times for meeting  - checkbox*/}
-                    <CheckInput
+                    {/* <CheckInput
                         name = {'meetingTime'}
                         legend = {"Based on the days you selected, when are you available to participate in the council's meetings and events?"}
                         value = {meetingTime}
@@ -266,7 +277,7 @@ export default function FarmToCouncilApplication(){
                             inputValue : meetingTimeOther,
                             onInputChange : ((e) => setMeetingTimeOther(e.target.value)),
                         }}
-                    />
+                    /> */}
 
                     {/* how did you hear about the Council - radio */}
                     {/* <RadioInput

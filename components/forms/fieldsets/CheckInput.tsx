@@ -20,7 +20,7 @@ type OtherOption = {
 type CheckInputProp = {
     name : string
     legend : string
-    value : string
+    value : string[]
     options : CheckOption[]
     onChange : (e: ChangeEvent<HTMLInputElement>) => void
     required? : boolean
@@ -70,9 +70,8 @@ export default function CheckInput({
                                 type = "checkbox" 
                                 name = {name}
                                 value = {option.value}
-                                checked = {value === option.value}
+                                checked = {value.includes(option.value)}
                                 onChange = {onChange}
-                                required = {required}
                                 disabled = {disabled}
                             />
 
@@ -83,7 +82,7 @@ export default function CheckInput({
                             </label>
                         </div>
 
-                        {isOther && value === option.value && (
+                        {/* {isOther && value === option.value && (
                             <div
                                 className="otherRow"
                             >
@@ -104,7 +103,7 @@ export default function CheckInput({
                                     className = "otherInputText"
                                 />
                             </div>
-                        )}
+                        )} */}
                     </div>
                 )
             })}

@@ -14,6 +14,7 @@ import { supportingSponsorTiers } from '@/lib/symposiumUtils/supportingSponsorTi
 import { activationSponsorTiers } from '@/lib/symposiumUtils/activationSponsorTiers'
 import { aimLaneSponsorshipTiers } from '@/lib/symposiumUtils/aimLaneSponsorshipTiers'
 import PartnerLogoSlider from '@/components/symposiumComps/PartnerLogoSlider/page'
+import PartnershipSection from '@/components/symposiumComps/PartnershipSection/page'
 
 export default function Sponsorship(){
     const applySponsorshipLink = "https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/2JFz3kqIqFNCz"
@@ -52,35 +53,6 @@ export default function Sponsorship(){
             question : "Expand Access & Opportunity",
             answer : `<p>Your support helps lower ticket costs and creates opportunities to sponsor attendance for local college students and emerging entrepreneurs—broadening participation and strengthening the business community.</p>`
         },
-    ]
-
-    const symposium2026Partners = [
-        {
-            name: "Convergence Memphis",
-            image: "/events/symposium/2026-sponsors/convergence-logo.png",
-            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Convergence Memphis',
-            width: 1230,
-            height: 220,
-        },    {
-            name: "Pathway Lending",
-            image: "/events/symposium/2026-sponsors/Pathway-Lending.png",
-            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
-            width: 2835,
-            height: 418,
-        },
-        {
-            name: "Reign Venue",
-            image: "/events/symposium/2026-sponsors/reign-logo-new.png",
-            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
-            width: 500,
-            height: 500
-        },{
-            name: "Lilac Impact Services",
-            image: "/members/lilac-impact-services.webp",
-            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Lilac Impact Services',
-            width: 1300,
-            height: 800
-        }
     ]
     
     return (
@@ -181,10 +153,9 @@ export default function Sponsorship(){
                 buttonsInfo={sponsorCtaButtons}
             />
 
-            <GallerySection
-                sectionBackground='#a1995f'
-                galleryHeadingText={"Our 2026 Partners"}
-                galleryImages={symposium2026Partners}
+            <PartnershipSection
+                sectionBackground = '#a1995f'
+                sectionHeading = {'Our 2026 Partners'}
             />
 
             <section
