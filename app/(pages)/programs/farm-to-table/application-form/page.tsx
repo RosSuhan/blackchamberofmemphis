@@ -6,9 +6,10 @@ import { useState } from "react";
 import EmailInput from "@/components/forms/fieldsets/EmailInput";
 import PhoneInput from "@/components/forms/fieldsets/PhoneInput";
 import RadioInput from "@/components/forms/fieldsets/RadioInput";
-import { validateBusinessName, validateEmail, validatePersonName, validatePhone, validateRequiredRadioSelection } from "@/lib/forms/validation";
+import { validateBusinessName, validateEmail, validatePersonName, validatePhone, validateRequiredCheckbox, validateRequiredRadioSelection } from "@/lib/forms/validation";
 import CheckInput from "@/components/forms/fieldsets/CheckInput";
 import SelectInput from "@/components/forms/fieldsets/SelectInput";
+import FileInput from "@/components/forms/fieldsets/FileInput";
 
 export default function FarmToCouncilApplication(){
     const [ errors, setErrors ] = useState<Record<string, string>>({})
@@ -29,11 +30,13 @@ export default function FarmToCouncilApplication(){
     const [ weekdays, setWeekdays ] = useState('')
     const [ meetingTime, setMeetingTime ] = useState('')
     const [ meetingTimeOther, setMeetingTimeOther ] = useState('')
+    const [businessLogo, setBusinessLogo] = useState<File | null>(null)
 
     console.log(businessType)
 
     function handleCheckBoxChange(e: React.ChangeEvent<HTMLInputElement>){
         const { value, checked } = e.target
+
         setBusinessType((prev) => {
             if(checked){
                 return [...prev, value]
@@ -41,6 +44,10 @@ export default function FarmToCouncilApplication(){
 
             return prev.filter((item) => item !==value)
         })
+
+        if(value === "Other" && !checked) {
+            setBusinessTypeOther("")
+        }
     }
 
     const FARM_TO_TABLE_APPLICATION_GOOGLE_URL = ""
@@ -60,6 +67,11 @@ export default function FarmToCouncilApplication(){
         const marketPlatformError = validateRequiredRadioSelection(marketPlatform)
         const weekdaysError = validateRequiredRadioSelection(weekdays)
         const meetingTimeError = validateRequiredRadioSelection(meetingTime)
+        const businessTypeError = validateRequiredCheckbox(businessType)
+
+        if(businessTypeError) {
+            validationErrors.businessType = businessTypeError
+        }
 
         if(businessNameError) { validationErrors.businessName = businessNameError }
         if(firstNameError) { validationErrors.firstName = firstNameError } 
@@ -146,6 +158,15 @@ export default function FarmToCouncilApplication(){
                     >
                         Company Information
                     </h3>
+
+                    <FileInput
+                        name="businessLogo"
+                        label="Business Logo"
+                        description="Upload your business logo if available. PNG, JPG, JPEG, or SVG. Maximum 5 MB."
+                        accept=".png,.jpg,.jpeg,.svg"
+                        maxSize={5 * 1024 * 1024}
+                        onChange={(e) => setBusinessLogo(e.target.files?.[0] ?? null)}
+                    />
                     
                     {/* Business Name */}
                     <TextInput

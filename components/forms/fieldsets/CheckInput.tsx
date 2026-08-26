@@ -82,7 +82,7 @@ export default function CheckInput({
                             </label>
                         </div>
 
-                        {/* {isOther && value === option.value && (
+                        {isOther && value.includes(option.value) && (
                             <div
                                 className="otherRow"
                             >
@@ -103,7 +103,7 @@ export default function CheckInput({
                                     className = "otherInputText"
                                 />
                             </div>
-                        )} */}
+                        )}
                     </div>
                 )
             })}

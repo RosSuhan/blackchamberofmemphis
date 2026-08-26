@@ -12,42 +12,46 @@ export default function PartnershipSection({
     sectionHeading,
 } : PartnershipSectionProps){
 
-    const symposium2026Partners = [
+    const symposium2026GoldSponsors = [
+        {
+            name: "Pathway Lending",
+            image: "/events/symposium/2026-sponsors/Pathway-Lending.png",
+            alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
+            width: 2835,
+            height: 418,
+            tier : 'gold'
+        },
+    ]
+
+    const symposium2026SilverSponsors = [
             {
                 name: "Convergence Memphis",
                 image: "/events/symposium/2026-sponsors/convergence-logo.png",
                 alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Convergence Memphis',
                 width: 1230,
                 height: 220,
-            }, {
-                name: "Reign Venue",
-                image: "/events/symposium/2026-sponsors/reign-logo-new.png",
-                alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
-                width: 500,
-                height: 500
-            },   {
-                name: "Pathway Lending",
-                image: "/events/symposium/2026-sponsors/Pathway-Lending.png",
-                alt: 'Black Chamber of Memphis 2025 Symposium Sponsor - Pathway Lending',
-                width: 2835,
-                height: 418,
-            },
-            // {
-            //     name: "Lilac Impact Services",
-            //     image: "/members/lilac-impact-services.webp",
-            //     alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Lilac Impact Services',
-            //     width: 1300,
-            //     height: 800
-            // },
+                tier : 'silver'
+            }, 
             {
                 name : 'Paragon',
                 image : '/partners/corporate_partner-paragon.webp',
                 alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Paragon",
                 width : 300,
-                height : 300
+                height : 300,
+                tier : 'silver'
             }
         ]
 
+    const symposium2026VenuePartner = [
+        {
+            name: "Reign Venue",
+            image: "/events/symposium/2026-sponsors/reign-logo-new.png",
+            alt: 'Black Chamber of Memphis 2026 Symposium Sponsor - Reign Venue',
+            width: 500,
+            height: 500,
+            tier : 'venuePartner'
+        },
+    ]
 
     return(
         <section
@@ -58,8 +62,20 @@ export default function PartnershipSection({
 
             <GallerySection
                 sectionBackground=''
-                galleryHeadingText={''}
-                galleryImages={symposium2026Partners}
+                galleryHeadingText={'Gold'}
+                galleryImages={symposium2026GoldSponsors}
+            />
+
+            <GallerySection
+                sectionBackground=''
+                galleryHeadingText='Silver'
+                galleryImages={symposium2026SilverSponsors}
+            />
+
+            <GallerySection
+                sectionBackground=''
+                galleryHeadingText='Venue Partner'
+                galleryImages={symposium2026VenuePartner}
             />
         </section>
     )
