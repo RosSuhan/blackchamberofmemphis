@@ -1,12 +1,15 @@
 import { brentHooks } from "./brentHooks";
 import { cedricHamilton } from "./cedricHamilton";
+import { christinWebb } from "./christinWebb";
 import { danielleMcGeeGibson } from "./danielleMcGeeGibson";
 import { jarleciaJones } from "./jarleciaJones";
 import { kennethJohnson } from "./kennethJohnson";
+import { kennethParrish } from "./kennethParrish";
 import { khalifJohnson } from "./khalifJohnson";
 import { kimberlyHenry } from "./kimberlyHenry";
 import { laJuannaJones } from "./laJuannaJones";
 import { rashawnRay } from "./rashawnRay";
+import { steveCohen } from "./steveCohen";
 
 export const symposium26Speakers = [
     brentHooks,
@@ -17,5 +20,8 @@ export const symposium26Speakers = [
     khalifJohnson,
     rashawnRay,
     jarleciaJones,
-    laJuannaJones
+    laJuannaJones,
+    christinWebb,
+    kennethParrish,
+    steveCohen,
 ]

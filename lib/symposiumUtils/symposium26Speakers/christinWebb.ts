@@ -1,0 +1,10 @@
+import { SpeakerProps } from "./speakerProps";
+
+export const christinWebb : SpeakerProps = {
+    id : 'christin-webb',
+    speakerTopic: 'buildingCapacity',
+    reverse : false,
+    image : '/events/symposium/2026-speakers/chirstin-webb.webp',
+    name : 'Christin Webb',
+    bio : `<p>Christin L. Webb is a catalyst for building leaders from the inside out. She’s a global speaker, leadership strategist, executive facilitator, author, and nationally recognized procurement professional with more than 20 years of experience leading people, organizations, procurement operations, and transformational initiatives. Throughout her career, Christin has led a $1.1 billion public-sector contracting portfolio representing approximately $1.8 billion in projected purchasing and contract spend and has trained, facilitated, coached, and spoken to leaders and professionals across corporate, government, nonprofit, healthcare, education, and global-development sectors. Her clients and audiences have included the World Bank Group, FedEx Supply Chain, St. Jude, Huntington Ingalls Industries, Memphis Police Department, Shelby County Health Department, KIPP Schools Memphis, Agape Memphis, and the Women in Tech Global Conference, and since 2022 she has trained procurement professionals across the continental United States. Her work as a speaker, moderator, and host has also taken her to notable venues including the Kennedy Center and Georgia World Congress Center, and through Women Leaders Walk the Talk, she has interviewed more than 50 women leaders from diverse personal and professional backgrounds. Christin is the Founder and CEO of Greater You Leadership, international best-selling author, and award-winning screenwriter. She holds an MBA from Webster University, a bachelor’s degree from the University of Memphis, and the NIGP-CPP credential. Her philosophy: <strong>“You cannot stumble upon greatness; you walk up to it and introduce yourself.”</strong></p>`
+}

@@ -5,7 +5,11 @@ import { symposium26Speakers } from "@/lib/symposiumUtils/symposium26Speakers";
 export default function SpeakerSection(){
     const buildingCapacitySpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'buildingCapacity')
 
-    const capitalStackSpeakers = symposium26Speakers.filter(topic => topic.speakerTopic === 'capitalStack')
+    const capitalStackSpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'capitalStack')
+
+    const mindSetShiftSpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'mindSetShift')
+
+    const specialGuestSpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'specialGuest')
 
     return(
         <section
@@ -23,6 +27,20 @@ export default function SpeakerSection(){
                 blockHeading={"The Capital Stack: Aligning Capital with Busienss Strategy"}
                 speakerList={capitalStackSpeakers}
             />
+
+            {mindSetShiftSpeakers.length > 1 && (
+                <SpeakerBlock
+                    blockHeading = 'Misogi: The Mindset Shift'
+                    speakerList = {mindSetShiftSpeakers}
+                />
+            )}
+
+            {specialGuestSpeakers.length > 0 && (
+                <SpeakerBlock
+                    blockHeading='Special Guest Speakers'
+                    speakerList={specialGuestSpeakers}
+                />
+            )}
         </section>
     )
 }
