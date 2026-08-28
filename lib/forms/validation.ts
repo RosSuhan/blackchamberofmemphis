@@ -82,3 +82,41 @@ export function validateRequiredCheckbox(value : string[]) : string | undefined 
 
     return undefined
 }
+
+// url
+export function validateUrl(value : string): string | undefined {
+    if(!value.trim()){
+        return undefined
+    }
+
+    try {
+        const url = new URL(value)
+
+        if(!['http:', 'https:'].includes(url.protocol)) {
+            return "Please enter a valid website URL."
+        }
+
+        return undefined
+    } catch {
+        return "Please enter a valid website URL."
+    }
+}
+
+// if url is required - to be placed with the error calls in handlesubmit function
+// const errors: Record<string, string> = {}
+// if (!website.trim()) {
+//     errors.website = "Please provide your website."
+// } else {
+//     const websiteError = validateUrl(website)
+
+//     if (websiteError) {
+//         errors.website = websiteError
+//     }
+// }
+
+export function validateRequiredAgreements(agreements: boolean[]): string | undefined {
+    if(agreements.some((agreement) => !agreement)) {
+        return "Please read and acknowledge all agreements before submitting."
+    }
+    return undefined
+}

@@ -1,5 +1,4 @@
 'use client'
-import type { ChangeEvent } from "react"
 import './SelectInput.css'
 
 type SelectOptionProp = {
@@ -43,7 +42,7 @@ export default function SelectInput({
             >
                 {label}
                 {required && (
-                    <span aria-hidden="true" >*</span>
+                    <span aria-hidden="true" className='requiredStar'>*</span>
                 )}
             </label>
             <select 

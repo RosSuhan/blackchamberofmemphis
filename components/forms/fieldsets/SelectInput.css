@@ -16,3 +16,8 @@
     padding: .2rem 0 .2rem .5rem;
     font-size: 1.2rem;
 }
+
+.requiredStar {
+    color: red;
+    margin-left: .3rem;
+}

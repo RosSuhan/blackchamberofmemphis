@@ -1,0 +1,46 @@
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.meetingElectedForm {
+    /* background: var(--grey); */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.2rem;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width:500px) {
+    .meetingElectedForm {
+        width: 70%;
+    }
+}
+
+@media (min-width:700px) {
+    .meetingElectedForm {
+        width: 55%;
+    }
+}
+
+@media (min-width:800px) {
+    .meetingElectedForm {
+        width: 50%;
+    }
+}
+
+@media (min-width:1000px) {
+    .meetingElectedForm {
+        width: 40%;
+    }
+}

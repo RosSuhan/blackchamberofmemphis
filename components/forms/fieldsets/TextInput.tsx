@@ -36,7 +36,7 @@ export default function TextInput({
                 className='textInputLabel'
             >
                 {label}
-                {required && <span aria-hidden="true">*</span>}
+                {required && <span aria-hidden="true" className='requiredStar'>*</span>}
             </label>
 
             <input 

@@ -51,7 +51,7 @@ export default function CheckInput({
             <legend>
                 {legend}
                 {required && (
-                    <span aria-hidden="true">*</span>
+                    <span aria-hidden="true" className='requiredStar'>*</span>
                 )}
             </legend>
 
@@ -72,6 +72,7 @@ export default function CheckInput({
                                 value = {option.value}
                                 checked = {value.includes(option.value)}
                                 onChange = {onChange}
+                                required = {required}
                                 disabled = {disabled}
                             />
 

@@ -51,7 +51,7 @@ export default function RadioInput({
             <legend>
                 {legend}
                 {required && (
-                    <span aria-hidden="true">*</span>
+                    <span aria-hidden="true" className='requiredStar'>*</span>
                 )}
             </legend>
 

@@ -1,55 +1,28 @@
 .textInputBlock {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .textInputLabel {
-    /* background: blue; */
-    /* width: 35%; */
+    display: block;
+    margin-bottom: 0.4rem;
 }
 
 .textInput {
     width: 100%;
-    margin: .5rem 0;
-    font-size: 1rem;
-    line-height: 1.8;
-    border-radius: .3rem;
-    padding-left: .5rem;
+    box-sizing: border-box;
+}
+
+.requiredStar {
+    color: red;
+    margin-left: .3rem;
 }
 
 .errorMessage {
     color: red;
     margin-top: -0.5rem;
     text-align: left;
-}
-
-@media (min-width:400px) {
-    .textInput {
-        width: 60%;
-    }
-}
-
-@media (min-width:600px) {
-    .textInputBlock {
-        width: 80%;
-    }
-}
-
-@media (min-width:800px) {
-    .textInputBlock {
-        width: 90%;
-    }
-
-    .textInput {
-        width: 100%;
-    }
-}
-
-@media (min-width: 900px) {
-    .textInput {
-        width: 60%
-    }
 }

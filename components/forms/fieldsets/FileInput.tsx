@@ -40,7 +40,7 @@ export default function FileInput({
                 htmlFor = {fileInputId}
             >
                 {label}
-                {required && <span aria-hidden='true'>*</span>}
+                {required && <span aria-hidden='true' className='requiredStar'>*</span>}
             </label>
 
             {description && (

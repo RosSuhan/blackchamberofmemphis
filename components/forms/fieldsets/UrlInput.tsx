@@ -1,8 +1,8 @@
 'use client'
+import type { ChangeEvent } from "react"
 import './TextInput.css'
-import type { ChangeEvent } from 'react'
 
-type EmailInputProps = {
+type UrlInputProps = {
     name : string
     label : string
     value : string
@@ -13,8 +13,8 @@ type EmailInputProps = {
     disabled? : boolean
 }
 
-export default function EmailInput({
-    name,
+export default function UrlInput({
+    name, 
     label,
     value,
     onChange,
@@ -22,17 +22,17 @@ export default function EmailInput({
     required = false,
     error,
     disabled = false
-} : EmailInputProps){
+} : UrlInputProps){
 
     const inputId = `form-${name}`
 
     return(
         <div
-            className='textInputBlock'
+            className="textInputBlock"
         >
             <label 
                 htmlFor={inputId}
-                className='textInputLabel'
+                className="textInpuLabel"
             >
                 {label}
                 {required && <span aria-hidden="true" className='requiredStar'>*</span>}
@@ -40,8 +40,8 @@ export default function EmailInput({
 
             <input 
                 id = {inputId}
-                type = "email" 
-                name = {name} 
+                type = "url" 
+                name = {name}
                 value = {value}
                 onChange = {onChange}
                 placeholder = {placeholder}

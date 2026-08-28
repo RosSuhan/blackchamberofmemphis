@@ -4,6 +4,7 @@ import type { ChangeEvent } from "react"
 type TextareaInputProps = {
     name : string
     label : string
+    helpText? : string
     value : string 
     onChange : (e: ChangeEvent<HTMLTextAreaElement>) => void
     placeholder? : string
@@ -18,6 +19,7 @@ type TextareaInputProps = {
 export default function TextareaInput({
     name,
     label,
+    helpText,
     value,
     onChange,
     placeholder,
@@ -39,9 +41,15 @@ export default function TextareaInput({
             >
                 {label}
                 {required && (
-                    <span aria-hidden="true">*</span>
+                    <span aria-hidden="true" className='requiredStar'>*</span>
                 )}
             </label>
+
+            {helpText && (
+                <p>
+                    {helpText}
+                </p>
+            )}
 
             <textarea 
                 id = {textareaId}
