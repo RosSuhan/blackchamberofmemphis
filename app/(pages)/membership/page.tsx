@@ -4,11 +4,12 @@ import MembershipTiers from "@/components/PRICETIERS/membershipTiers";
 import { Metadata } from "next";
 import Header from "@/components/nav/Header/page";
 import Footer from "@/components/nav/Footer/page";
+import NewMemberIntro from "./newMemberIntro";
 
 export const metadata: Metadata = {
-    title: 'Membership | Join the Black Chamber of Memphis & Grow Your Business',
+    title: 'Membership | The Front Door to Opportunity',
     description:
-        'Join the Black Chamber of Memphis and unlock networking, procurement opportunities, business visibility, and community influence. Membership plans from $37.50 — built for every stage of business growth in Memphis.',
+        'BCOM membership helps Black business owners grow, access capital, expand their networks, and  influence the future through stronger connections to opportunity.',
     keywords: [
         'join Black Chamber of Memphis',
         'Memphis chamber membership',
@@ -20,14 +21,14 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: 'https://blackchamberofmemphis.org/membership' },
     openGraph: {
-        title: 'Join the Black Chamber of Memphis | Membership Plans & Benefits',
+        title: 'Membership Plans & Benefits | Join the Black Chamber of Memphis',
         description:
-        'From visibility and connections to procurement opportunities and leadership access — membership at the Black Chamber of Memphis is designed to help your business thrive at every stage. Plans from $37.50.',
+        'BCOM membership helps Black business owners grow, access capital, expand their networks, and  influence the future through stronger connections to opportunity.',
         url: 'https://blackchamberofmemphis.org/membership',
         siteName: 'Black Chamber of Memphis',
         images: [
         {
-            url: '/images/og-membership.jpg',
+            url: '/assets/bcom-join-the-movement.png',
             width: 1200,
             height: 630,
             alt: 'Black Chamber of Memphis Membership Plans',
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
         title: 'Join the Black Chamber of Memphis | Membership Plans & Benefits',
         description:
         'Networking, procurement opportunities, business visibility, and community influence — explore membership plans starting at $37.50 and grow your business across Greater Memphis.',
-        images: ['/images/og-membership.jpg'],
+        images: ['bcom-join-the-movement.png'],
     },
 };
 
@@ -60,7 +61,7 @@ export default function Membership(){
         <>
             <Header/>
             <PageHeroSection
-                mainHeading = {'Grow Your Business with the Black Chamber of Memphis'}
+                mainHeading = {'The Front Door to Opportunity'}
                 subHeading = {'From visibility and connections to procurement opportunities and leadership access—our membership is designed to help Memphis businesses thrive at every stage.'}
                 searchbar = {false}
                 ctaButtons = {heroCtaBtn}
@@ -72,7 +73,9 @@ export default function Membership(){
                 stateButtons={[]}
             />
 
-            <TwoColumnTextImage
+            <NewMemberIntro/>
+
+            {/* <TwoColumnTextImage
                 rowDirection = {true}
                 imageLink = {'/assets/members-of-bcom-1.webp'}
                 imageAlt = {''}
@@ -82,9 +85,9 @@ export default function Membership(){
                 blockText = {'Connect with a powerful network of business leaders, decision-makers, and community partners. Gain opportunities to share your voice, shape conversations, and stay informed on initiatives that impact your business and industry.'}
                 ctaLink = {''}
                 buttonText = {''}
-            />
+            /> */}
 
-            <TwoColumnTextImage
+            {/* <TwoColumnTextImage
                 rowDirection = {false}
                 imageLink = {'/assets/members-of-bcom-2.webp'}
                 imageAlt = {''}
@@ -94,9 +97,9 @@ export default function Membership(){
                 blockText = {'Unlock pathways to grow your business through referrals, partnerships, and exclusive opportunities. From events to collaborations, membership opens doors to new clients and meaningful connections.'}
                 ctaLink = {''}
                 buttonText = {''}
-            />
+            /> */}
 
-            <TwoColumnTextImage
+            {/* <TwoColumnTextImage
                 rowDirection = {true}
                 imageLink = {'/assets/members-of-bcom-3.webp'}
                 imageAlt = {''}
@@ -106,9 +109,9 @@ export default function Membership(){
                 blockText = {'Elevate your brand presence and build trust within the community. Showcase your business through our platforms and align with a respected organization that reinforces your credibility.'}
                 ctaLink = {''}
                 buttonText = {''}
-            />
+            /> */}
 
-            <TwoColumnTextImage
+            {/* <TwoColumnTextImage
                 rowDirection = {false}
                 imageLink = {'/assets/members-of-bcom-4.webp'}
                 imageAlt = {''}
@@ -118,7 +121,7 @@ export default function Membership(){
                 blockText = {'Access valuable tools, resources, and member-only benefits designed to support your success. From educational content to special offers, you gain practical advantages that add real value.'}
                 ctaLink = {''}
                 buttonText = {''}
-            />
+            /> */}
 
             <MembershipTiers/>
             <Footer/>

@@ -7,9 +7,9 @@ type PriceTierProp = {
         tierPrice : string
         tierTerm : string
         tierIntroHeading : string
-        tierIntroText : string
+        tierIntroText? : string
         tierListHeading? : string
-        tierListItem : string[]
+        tierListItem? : string[]
         tierActionLink : string
         borderStyle : string
         borderWidth : string
@@ -74,20 +74,22 @@ export default function PriceTier({tiers}: PriceTierProp){
                         {tierIntroHeading}
                     </p>
 
-                    <div
-                        className={style.tierIntro}
-                        dangerouslySetInnerHTML={{__html: tierIntroText}}
-                    />
-
-                    <p
+                    {tierIntroText && (
+                        <div
+                            className={style.tierIntro}
+                            dangerouslySetInnerHTML={{__html: tierIntroText}}
+                        />
+                    )}
+                    
+                    {/* <p
                         className={style.tierListHeading}
                     >
                         {tierListHeading ? tierListHeading : `You'll get:`}
-                    </p>
+                    </p> */}
                     <ul
                         className={style.tierList}
                     >
-                        {tierListItem.map((item, index) => (
+                        {tierListItem?.map((item, index) => (
                             <li
                                 key={index}
                             >

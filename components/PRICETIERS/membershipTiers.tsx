@@ -5,18 +5,18 @@ import PriceTier from './page'
 export default function MembershipTiers(){
     const startingTiers = [
         {
-            id : 'rising-ent',
-            tierName : 'Rising Entrepreneur',
-            tierPrice : '150',
+            id : 'solopreneur',
+            tierName : 'Solopreneur',
+            tierPrice : '500',
             tierTerm : 'Annually',
-            tierIntroHeading : 'Emerging founders (18-25) ready to start strong',
-            tierIntroText : 'Build your foundation, gain exposure, and connect with real opportunities in the Memphis business Community.',
+            tierIntroHeading : 'Independent owners operating without employees or a formal team',
+            tierIntroText : '',
             tierListItem : [
-                'Access to weekly Procurement Opportunities',
-                'Invitations to training programs and events',
-                'Your business listed in the directory',
-                'A professional profile in the Info Hub',
-                '1 free event ticket to start building your network'
+                'Member profile in online directory,',
+                'Procurement opportunity notifications,',
+                'Invitations to select programs and events,',
+                'Member pricing on Quarterly Growth Labs,',
+                'Access to BCoM business resource library'
             ],
             tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
@@ -24,18 +24,19 @@ export default function MembershipTiers(){
             borderColor : 'var(--darkGrey)'
         },
         {
-            id : 'micro-bus',
-            tierName : 'Micro Business',
-            tierPrice : '125 +',
-            tierTerm : 'Semiannual',
-            tierIntroHeading : 'Solo business owners ready to grow visibility',
-            tierIntroText : 'Establish your presence, access new opportunities, and start positioning your business for consistent growth.',
+            id : 'small-bus',
+            tierName : 'Small Business',
+            tierPrice : '1,000',
+            tierTerm : 'Annually',
+            tierIntroHeading : '1-10 employees seeking scalable growth, connections, and resources',
+            // tierIntroText : '',    
             tierListItem : [
-                'Access to procurement opportunities and private event invites',
-                'Directory listing and Info Hub profile',
-                'Quarterly newsletter and business resources',
-                '50% off event tickets and networking opportunities',
-                'Staff consultation to support your next steps'
+                'Complimentary Quarterly Growth Labs,',
+                'Small Business Peer Network opportunity,',
+                'Priority registration for training and workshops,',
+                'Business spotlight and milestone recognition opportunities,',
+                'Affinity partner discounts,',
+                '4 complimentary admissions to select programs and events',
             ],
             tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
@@ -46,18 +47,21 @@ export default function MembershipTiers(){
 
     const featureTier = [
         {
-            id : 'small-bus',
-            tierName : 'Small Business',
-            tierPrice : '250 +',
-            tierTerm : 'Semiannual',
-            tierIntroHeading : 'For growing businesses ready to scale',
-            tierIntroText : 'Unlock more consistent opportunities, increase your visibility, and actively grow your business through the Chamber network.',
-            tierListHeading : 'Everything in Micro, plus:',
+            id : 'exec-bus',
+            tierName : 'Executive Business',
+            tierPrice : '2,500',
+            tierTerm : 'Annually',
+            tierIntroHeading : 'Greater visibility, strategic connections, and leadership engagement',
+            // tierIntroText : '',
+            // tierListHeading : '',
             tierListItem : [
-                'Free access to Chamber events and mixers',
-                'Expanded access to procurement opportunities',
-                'Exclusive invitations to training programs',
-                'Dedicated support and business engagement'
+                'Semi-annual Executive Leadership Roundtables,',
+                'Priority introductions to funders, corporate buyers, and strategic partners,',
+                'Executive member spotlight annually,',
+                'VIP access to procurement and capital-access events,',
+                'Opportunity to participate in Chamber advocacy initiatives,',
+                'Complimentary registration to select sigature events,',
+                'Priority sponsorship opportunities'
             ],
             tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
@@ -68,19 +72,20 @@ export default function MembershipTiers(){
 
     const corporateTiets = [
         {
-            id : 'pres-council',
-            tierName : "President's Council",
-            tierPrice : '1250 +',
-            tierTerm : 'Semiannual',
-            tierIntroHeading : 'For established businesses ready to expand influence',
-            tierIntroText : 'Join one of the most influential networks of Black business leaders in Memphis. Collaborate with peers, contribute to strategic conversations, and position your business at the center of opportunity.',
-            tierListHeading : 'Everything in Small Business, plus:',
+            id : 'corporate',
+            tierName : "Corporate",
+            tierPrice : '5,000',
+            tierTerm : 'Annually',
+            tierIntroHeading : 'Expanding supplier networks and business ecosystem leadership',
+            // tierIntroText : '',
+            // tierListHeading : '',
             tierListItem : [
-                'Invitation to private roundtables',
-                'Opportunities to serve on advisory committees',
-                'Direct access to Chamber leadership',
-                'CEO consultation and strategic engagement',
-                'Recognition as a President’s Council Member'
+                'Seat on Corporate Advisory Councel,',
+                'Corporate spotlight features,',
+                'Curated introductions to member businesses,',
+                'Executive briefings on Black business ecoxyxtem trends,',
+                '4x complimentary registrations at select Chamber events,',
+                'Priority sponsorship opportunities'
             ],
             tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
@@ -88,18 +93,19 @@ export default function MembershipTiers(){
             borderColor : 'var(--darkGrey)'
         },
         {
-            id : 'corporate',
-            tierName : 'Corporate',
-            tierPrice : '2500 +',
-            tierTerm : 'Semiannual',
-            tierIntroHeading : 'For organisations leading at scale',
-            tierIntroText : 'Position your company as a key driver of economic growth in Memphis while gaining direct access to high-value opportunities, partnerships, and visibility.',
+            id : 'nonprofitOrganization',
+            tierName : 'Nonprofit Organization',
+            tierPrice : '1,000',
+            tierTerm : 'Annually',
+            tierIntroHeading : 'Connections, visibility, and community impact through business engagement',
+            // tierIntroText : '',
             tierListItem : [
-                'Hosted vendor fairs for your company',
-                'Direct and ongoing engagement with Chamber leadership',
-                'Premium recognition at all major events',
-                'Priority access to partnerships and procurement opportunities',
-                'Strategic positioning within the Memphis business ecosystem'
+                'Member profile in online directory,',
+                'Networking and partnership opportunities,',
+                'discounts on events and programs,',
+                'Nonprofit spotlight opportunities,',
+                'Access to training and educational programming,',
+                '3x complimentary registrations at select Chamber events.'
             ],
             tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
@@ -110,11 +116,17 @@ export default function MembershipTiers(){
     return(
         <section
             className={style.memberTiersSection}
+            id='membership'
         >
+            <div
+                className={style.preheading}
+            >
+                FIND YOUR LEVEL
+            </div>
             <h2
                 className="globalSecondHeading"
             >
-                Choose the Membership That Fits Your Business Stage
+                Membership built for where you&apos;re going.
             </h2>
 
             <p
@@ -138,6 +150,25 @@ export default function MembershipTiers(){
             <PriceTier
                 tiers={corporateTiets}
             />
+
+            <div
+                className={style.testimonyRow}
+            >
+                <div
+                    className={style.testimonyBlock}
+                >
+                    <p
+                        className={style.testimony}
+                    >
+                        “Opportunity often begins with access—to the right information, the right relationships and the right people in the room. The Black Chamber of Memphis helps business owners build those connections and position their companies for meaningful, sustainable growth.”
+                    </p>
+                    <p
+                        className={style.testimonyPerson}
+                    >
+                        — Michael Hooks, Jr.   CEO, Allworld Project Management | BCoM Board Member
+                    </p>
+                </div>
+            </div>
 
             <div
                 className={style.tierImageRow}

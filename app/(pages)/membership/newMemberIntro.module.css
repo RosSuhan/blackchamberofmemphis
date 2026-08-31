@@ -1,0 +1,172 @@
+.newMemberIntroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whyBcomNowRow,
+.aimRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+    row-gap: 2rem;
+}
+
+.whyLeftBlock,
+.whyRightBlock,
+.aimLeftBlock,
+.aimRightBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whyBulletGreyBlock {
+    background: #666666;
+    padding: 2rem 0;
+    border-radius: 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+    color: var(--white);
+}
+
+.whyBulletItem {
+    width: 70%;
+    font-weight: 700;
+}
+
+.flipboxRow {
+    background: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    row-gap: 3rem;
+}
+
+.flipBox {
+    background: var(--white);
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    border: solid var(--darkGold) 5px;
+}
+
+.flipboxHeading {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.flipboxText {
+    width: 90%;
+    text-align: center;
+}
+
+.aimBlock {
+    background: #666666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    row-gap: 1.5rem;
+}
+
+.aimMeaning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.aimletter{
+    width: 30%;
+    font-size: 6rem;
+    text-align: center;
+    color: var(--darkGold);
+    text-shadow: 5px 5px 10px #3E3301;
+}
+
+.aimDescription {
+    width: 65%;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.aimDescHeading,
+.aimDescText {
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+    .whyBulletItem {
+        width: 40%;
+    }
+    
+    .flipboxRow {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    .flipBox {
+        width: 35%;
+    }
+}
+
+@media (min-width: 600px) {
+    .aimMeaning {
+        width: 90%;
+    }
+    
+    .aimletter{
+        width: 20%;
+    }
+    
+    .aimDescription {
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    .whyLeftBlock,
+    .whyRightBlock,
+    .aimLeftBlock,
+    .aimRightBlock {
+        width: 45%;
+    }
+    
+    .aimletter{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .newMemberIntroSection {
+        padding: 3rem 0;
+        row-gap: 4rem;
+    }
+    
+    .whyLeftBlock,
+    .whyRightBlock,
+    .aimLeftBlock,
+    .aimRightBlock {
+        width: 40%;
+    }
+    
+    .flipBox {
+        width: 20%;
+    }
+}

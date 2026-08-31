@@ -3,7 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: var(--grey);
+    background: var(--white);
+}
+
+.preheading {
+    color: var(--darkGold);
+    width: 90%;
+    font-weight: 800;
 }
 
 .featureTierRow{
@@ -14,6 +20,30 @@
     background-repeat: no-repeat;
     padding: 2rem 0;
     margin: 2rem 0;
+}
+
+.testimonyRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonyBlock {
+    background: var(--grey);
+    width: 70%;
+    margin: 5rem 0 8rem 0;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.testimony {
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonyPerson {
+    text-align: center;
 }
 
 .tierImageRow {
