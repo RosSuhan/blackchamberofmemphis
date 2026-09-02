@@ -1,5 +1,9 @@
 .footer {
     background: var(--black);
+    background-image: url('/assets/footerbackground.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100dvw;
     padding: 4rem 0 1rem 0;
     display: flex;

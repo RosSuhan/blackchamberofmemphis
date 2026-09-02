@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { createMetadata } from "@/lib/metadata"
 import BcAboutSection from "@/components/BUSprofileComponents/BcAboutSection"
 import BcContactButtonSection from "@/components/BUSprofileComponents/BcContactButtonSection"
 import BcGetListedButton from "@/components/BUSprofileComponents/BcGetListedButton"
@@ -13,63 +14,98 @@ type BusinessCardProp = {
     }
 }
 
-export async function generateMetadata({params}: BusinessCardProp): Promise<Metadata>{
+export async function generateMetadata({ params }: BusinessCardProp) : Promise<Metadata> {
     const { id } = await params;
-    const selectedTeamMember = vCardProfileData.find((team) => team.slug === id);
 
-    if(!selectedTeamMember){
-        return {
-            title: 'Digital Business Card | Black Chamber of Memphis',
-            description: 'This business card could not be found. Browse all local businesses in the Black Chamber of Memphis Business Directory.',
-            alternates: { canonical: 'https://blackchamberofmemphis.org/business-directory' },
-        }
+    const selectedTeamMember = vCardProfileData.find(
+        (team) => team.slug === id
+    );
+
+    if (!selectedTeamMember){
+        return createMetadata({
+            title : 'Digital Business Card',
+            description : 'This business card could not be found. Browse all local businesses in the Black Chamber of Memphis Business Directory.',
+            canonical : '/business-directory'
+        });
     }
 
-    const url = `https://blackchamberofmemphis.org/buscard/${id}`
+    const fullName = `${selectedTeamMember.first_name} ${selectedTeamMember.last_name}`;
 
-    return {
-        title: `${selectedTeamMember?.first_name} ${selectedTeamMember?.last_name} | Black Chamber of Memphis Directory`,
-        description: selectedTeamMember.vCardBioSection,
-        keywords: [
-            `${selectedTeamMember.first_name} ${selectedTeamMember.last_name}`,
-            'Black Chamber of Memphis member',
+    return createMetadata({
+        title : `${fullName} | Black Chamber of Memphis Directory`,
+        description : selectedTeamMember.vCardBioSection,
+        canonical : `/buscard/${id}`,
+
+        keywords : [
+            fullName,
+            'Black Chamber of Memphis team member',
             'Memphis local business',
         ],
-        alternates: { canonical: url },
-        openGraph: {
-            title: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} | Black Chamber of Memphis Directory`,
-            description: selectedTeamMember.vCardBioSection,
-            url: url,
-            siteName: 'Black Chamber of Memphis',
-            type: 'website',
-            images: selectedTeamMember.image
-            ? [
-                {
-                    url: `https://blackchamberofmemphis.org/${selectedTeamMember.image}`,
-                    width: 360,
-                    height: 360,
-                    alt: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} — Black Chamber of Memphis Member`,
-                },
-                ]
-            : [
-                {
-                    url: 'https://blackchamberofmemphis.org/${selectedTeamMember.image}',
-                    width: 360,
-                    height: 360,
-                    alt: 'Black Chamber of Memphis Business Directory',
-                },
-                ],
-        },
-        twitter: {
-            card: 'summary_large_image',
-            title: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} | Black Chamber of Memphis Directory`,
-            description: selectedTeamMember.vCardBioSection,
-            images: selectedTeamMember.image
-            ? [`https://blackchamberofmemphis.org/${selectedTeamMember.image}`]
-            : ['/images/og-default.jpg'],
-        },
-    }
+
+        image : selectedTeamMember.image ? `/${selectedTeamMember.image}` : undefined,
+        imageAlt : `${fullName} - Black Chamber of Memphis Team Member`,
+
+        absoluteTitle : true,
+    });
 }
+
+// export async function generateMetadata({params}: BusinessCardProp): Promise<Metadata>{
+//     const { id } = await params;
+//     const selectedTeamMember = vCardProfileData.find((team) => team.slug === id);
+
+//     if(!selectedTeamMember){
+//         return {
+//             title: 'Digital Business Card | Black Chamber of Memphis',
+//             description: 'This business card could not be found. Browse all local businesses in the Black Chamber of Memphis Business Directory.',
+//             alternates: { canonical: 'https://blackchamberofmemphis.org/business-directory' },
+//         }
+//     }
+
+//     const url = `https://blackchamberofmemphis.org/buscard/${id}`
+
+//     return {
+//         title: `${selectedTeamMember?.first_name} ${selectedTeamMember?.last_name} | Black Chamber of Memphis Directory`,
+//         description: selectedTeamMember.vCardBioSection,
+//         keywords: [
+//             `${selectedTeamMember.first_name} ${selectedTeamMember.last_name}`,
+//             'Black Chamber of Memphis member',
+//             'Memphis local business',
+//         ],
+//         alternates: { canonical: url },
+//         openGraph: {
+//             title: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} | Black Chamber of Memphis Directory`,
+//             description: selectedTeamMember.vCardBioSection,
+//             url: url,
+//             siteName: 'Black Chamber of Memphis',
+//             type: 'website',
+//             images: selectedTeamMember.image
+//             ? [
+//                 {
+//                     url: `https://blackchamberofmemphis.org/${selectedTeamMember.image}`,
+//                     width: 360,
+//                     height: 360,
+//                     alt: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} — Black Chamber of Memphis Member`,
+//                 },
+//                 ]
+//             : [
+//                 {
+//                     url: 'https://blackchamberofmemphis.org/${selectedTeamMember.image}',
+//                     width: 360,
+//                     height: 360,
+//                     alt: 'Black Chamber of Memphis Business Directory',
+//                 },
+//                 ],
+//         },
+//         twitter: {
+//             card: 'summary_large_image',
+//             title: `${selectedTeamMember.first_name} ${selectedTeamMember.last_name} | Black Chamber of Memphis Directory`,
+//             description: selectedTeamMember.vCardBioSection,
+//             images: selectedTeamMember.image
+//             ? [`https://blackchamberofmemphis.org/${selectedTeamMember.image}`]
+//             : ['/images/og-default.jpg'],
+//         },
+//     }
+// }
 
 export default async function BusinessCardPage({
     params
