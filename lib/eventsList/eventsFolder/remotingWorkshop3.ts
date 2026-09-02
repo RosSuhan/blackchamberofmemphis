@@ -7,8 +7,8 @@ export const remotingWorkshop3 : EventListType = {
     type: 'event',
     eventImage : "/events/REMOTE-1.webp",
     eventImageAlt : "remoting.work invitation to online workshop",
-    eventDate : "Tuesday, September 8, 2026",
-    sortDate : "2026-09-08",
+    eventDate : "Wednesday, September 16, 2026",
+    sortDate : "2026-09-16",
     eventTime : "",
     eventAddressLink : "",
     eventAddress : "",
@@ -26,7 +26,7 @@ export const remotingWorkshop3 : EventListType = {
     eventCTAbuttonLink : "/events/remoting-workshop",
     eventCTAbuttonText : "Read More",
     eventGallery: [],
-    registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/eventcalendar/Details/bcom-remoting-work-webinar-tue-sep-8-2026-1766711?sourceTypeId=Hub',
+    registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/oXFqEAZT6C2CdJXee',
     registrationButtonText :'Register to Attend',
     blogPostReadLink : ''
 }

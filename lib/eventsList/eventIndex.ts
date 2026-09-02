@@ -23,8 +23,10 @@ import { blackBusinessMonthWithMayorPaulYoung } from "./eventsFolder/blackBusine
 import { ceoCeoFamilyBus } from "./eventsFolder/ceoCeoFamilyBus";
 import { remotingWorkshop4 } from "./eventsFolder/remotingWorkshop4";
 import { hrStrategyRoom } from "./eventsFolder/hrStrategyRoom";
+import { pathwayToCapital } from "./eventsFolder/PathwayToCapital";
 
 export const eventIndex = [
+    pathwayToCapital,
     hrStrategyRoom,
     ceoCeoFamilyBus,
     blackBusinessMonthWithMayorPaulYoung,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
 import { businessList } from "@/lib/members";
 import MemberPageHero from "@/components/heroSections/MemberPageHero";
 import CategoryContactRow from "@/components/memberComponents/CategoryContactRow";
@@ -17,16 +18,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const selectedMember = businessList.find((a) => a.id === id);
 
     if (!selectedMember) {
-        return {
-            title: 'Business Not Found | Black Chamber of Memphis Directory',
-            description: 'This business listing could not be found. Browse all local businesses in the Black Chamber of Memphis Business Directory.',
-            alternates: { canonical: 'https://blackchamberofmemphis.org/business-directory' },
-        };
+        return createMetadata ({
+            title: 'Black Chamber of Memphis Directory',
+            description : 'Explore Black-owned and community-focused businesses throughout Greater Memphis.',
+            canonical : '/business-directory',
+        });
     }
 
-    const url = `https://blackchamberofmemphis.org/business-directory/${id}`;
-
-    return {
+    return createMetadata ({
         title: `${selectedMember.businessName} | Black Chamber of Memphis Directory`,
         description: selectedMember.profileDescription,
         keywords: [
@@ -35,40 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             'Black Chamber of Memphis member',
             'Memphis local business',
         ],
-        alternates: { canonical: url },
-        openGraph: {
-            title: `${selectedMember.businessName} | Black Chamber of Memphis Directory`,
-            description: selectedMember.profileDescription,
-            url: url,
-            siteName: 'Black Chamber of Memphis',
-            type: 'website',
-            images: selectedMember.profileLogo
-            ? [
-                {
-                    url: `https://blackchamberofmemphis.org/members/${selectedMember.profileLogo}.webp`,
-                    width: 1200,
-                    height: 630,
-                    alt: `${selectedMember.businessName} — Black Chamber of Memphis Member`,
-                },
-                ]
-            : [
-                {
-                    url: '/images/og-default.jpg',
-                    width: 1200,
-                    height: 630,
-                    alt: 'Black Chamber of Memphis Business Directory',
-                },
-                ],
-        },
-        twitter: {
-            card: 'summary_large_image',
-            title: `${selectedMember.businessName} | Black Chamber of Memphis Directory`,
-            description: selectedMember.profileDescription,
-            images: selectedMember.profileLogo
-            ? [`https://blackchamberofmemphis.org/members/${selectedMember.profileLogo}.webp`]
-            : ['/images/og-default.jpg'],
-        },
-        };
+        canonical : `${id}`,
+        
+        image : selectedMember.profileLogo ? `${selectedMember.profileLogo}` : undefined,
+        imageAlt : `${selectedMember.businessName} - Black Chamber of Member Directory`
+    });
 }
 
 export default async function NewMemberPage({ params }: Props){

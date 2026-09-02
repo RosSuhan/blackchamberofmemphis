@@ -7,7 +7,7 @@ import { useState } from 'react';
 const days = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
 export default function Calendar(){
-    const [ currentDate, setCurrentDate ] = useState(new Date(2026, 4));
+    const [ currentDate, setCurrentDate ] = useState(new Date(2026, 8));
 
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
