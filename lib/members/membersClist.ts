@@ -15,8 +15,10 @@ import { chalmersPoolePC } from './(c)/chalmersPoolePC'
 import { cushionEmployerServices } from './(c)/cushionEmployerServices'
 import { carlisleWidePlankFloor } from './(c)/carlisleWidePlankFloor'
 import { clrMindPsychiatry } from './(c)/clrMindPsychiatry'
+import { cooCreativeCo } from './(c)/cooCreativeCo'
 
 export const membersClist = [
+    cooCreativeCo,
     clrMindPsychiatry,
     carlisleWidePlankFloor,
     capturingMemories,

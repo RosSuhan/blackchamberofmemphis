@@ -62,15 +62,7 @@ export const blogList : BlogListProp[] = [
         blogTitleColor: `#ffffff`,
         blogArticleDate: "Mar 30, 2026",
         blogReadLink: `/blog/kitchen-classroom-to-career-pathways`
-    },{
-            id: "national-black-business-month-gumbel-legacy",
-            blogName: `National Black Business Month`,
-            blogDescription : "The Gumbel Family's Four-Generation Legacy in Memphis",
-            blogImage: `/assets/pagetitleimage.webp`,
-            blogTitleColor: `#ffffff`,
-            blogArticleDate: "August 20, 2026",
-            blogReadLink: `/blog/national-black-business-month-gumbel-legacy`
-        },
+    }
     
         // {
     //     id: "",

@@ -8,8 +8,10 @@ import { devyneBusCon } from './(d)/devyneBusCon'
 import { dawgTeamApparel } from './(d)/dawgTeamApparel'
 import { doreTouchEventCenter } from './(d)/doreTouchEventCenter'
 import { dj1luvEntertainment } from './(d)/dj1luvEntertainment'
+import { dreamTeamRealtyCo } from './(d)/dreamTeamRealtyCo'
 
 export const membersDlist = [
+        dreamTeamRealtyCo,
         dj1luvEntertainment,
         doreTouchEventCenter,
         dbkStudios,
