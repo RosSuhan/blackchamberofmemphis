@@ -5,7 +5,7 @@ export const enchantedTeaLounge : MembersListType = {
     id : "enchanted-tea-lounge",
     businessName : "Enchanted Tea Lounge",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "enchanted-tea-lounge",
     profileDescription : "Enchanted Tea Lounge is a cozy, elegant Memphis tea lounge offering authentic English-inspired afternoon tea, specialty teas, pastries, and curated tea experiences. Located near Crosstown Concourse, the lounge also provides a welcoming setting for celebrations, private gatherings, and community events.",
     profileCategory : [
         "food-dining-hospitality",

@@ -1,11 +1,11 @@
 import { MembersListType } from './../membersListType'
 
-export const template : MembersListType = {
+export const hrSolutionsConsulting : MembersListType = {
     memberStatus: true,
     id : "hr-solutions-consulting",
     businessName : "HR Solutions & Consulting",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "hr-solutions-consulting",
     profileDescription : "HR Solutions & Consulting helps organizations navigate workplace challenges through strategic, flexible human resources solutions. The firm provides fractional HR leadership, HR strategy, compliance, employee development, talent management, staff augmentation, and leadership training tailored to each organization's needs.",
     profileCategory : [
         "professional-legal-financial-services",

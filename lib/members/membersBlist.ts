@@ -14,8 +14,10 @@ import { backboneTech } from './(b)/backboneTech'
 import { boominU } from './(b)/boominU'
 import { brentHooks } from './(b)/brentHooks'
 import { brandName } from './(b)/brandName'
+import { beyondTheFabric } from './(b)/beyondTheFabric'
 
 export const membersBlist = [
+    beyondTheFabric,
     brandName,
     boominU,
     brentHooks,

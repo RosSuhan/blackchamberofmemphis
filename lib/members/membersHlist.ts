@@ -7,8 +7,10 @@ import { hillChapelMissionaryBaptistChurch } from './(h)/hillChapelMissionaryBap
 import { holyCityChurchOfGod } from './(h)/holyCityChurchOfGod'
 import { hustleHarder } from './(h)/hustleHarder'
 import { hillboyz } from './(h)/hillboyz'
+import { hrSolutionsConsulting } from './(h)/hrSolutionsConsulting'
 
 export const membersHlist = [
+    hrSolutionsConsulting,
     hqDirect,
     hotworxEdgeDistrict,
     h3MobileEntertainment,
