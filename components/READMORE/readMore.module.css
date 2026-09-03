@@ -1,6 +1,11 @@
 .readMoreButton {
     background: transparent;
     border: none;
-    color: red;
+    color: #B91C1C;
     font-size: 1rem;
+}
+
+.readMoreButton:focus-visible {
+    outline: 2px solid #B91C1C;
+    outline-offset: 3px;
 }
