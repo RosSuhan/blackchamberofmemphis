@@ -7,6 +7,7 @@ export function Bricks(props: SVGProps<SVGSVGElement>) {
             width="1em"
             height="1em"
             {...props}
+            aria-hidden='true'
         >
             <path
             fill="currentColor"

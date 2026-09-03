@@ -6,6 +6,7 @@ export function Linkedin2(props: SVGProps<SVGSVGElement>) {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="1 1 15 14"
             {...props}
+            aria-hidden='true'
         >
         <path
             fill="currentColor"

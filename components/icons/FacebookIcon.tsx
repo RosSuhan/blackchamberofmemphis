@@ -6,6 +6,7 @@ export function FacebookFill(props: SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="1 1 20 20"
       {...props}
+      aria-hidden='true'
     >
       <path
         fill="currentColor"

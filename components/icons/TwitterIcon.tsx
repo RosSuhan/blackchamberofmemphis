@@ -6,6 +6,7 @@ export function TwitterStroke12(props: SVGProps<SVGSVGElement>) {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 12 14"
         {...props}
+        aria-hidden='true'
     >
         <path
             fill="currentColor"

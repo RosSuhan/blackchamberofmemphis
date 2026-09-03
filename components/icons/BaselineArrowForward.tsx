@@ -7,6 +7,7 @@ export function BaselineArrowForward(props: SVGProps<SVGSVGElement>) {
         width="1em"
         height="1em"
         {...props}
+        aria-hidden='true'
     >
         <path
         fill="currentColor"

@@ -6,6 +6,7 @@ export function Instagram(props: SVGProps<SVGSVGElement>) {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 25 25"
         {...props}
+        aria-hidden='true'
     >
         <path
         fill="currentColor"

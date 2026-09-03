@@ -43,7 +43,7 @@ export default function Footer(){
                     </a>
 
                     <a 
-                        href=""
+                        href="mailto:info@bbamemphis.com"
                         className={style.footerContactLink}
                     >
                         <BaselineMail
@@ -73,6 +73,7 @@ export default function Footer(){
                     <a 
                         href="https://twitter.com/BBAMemphis"
                         className={style.socialLink}
+                        aria-label='Visit Black Chamber of Memphis on Twitter / X'
                     >
                         <TwitterStroke12
                             width="1rem"
@@ -84,6 +85,7 @@ export default function Footer(){
                     <a 
                         href="https://www.facebook.com/BCOMemphis"
                         className={style.socialLink}
+                        aria-label='Visit Black Chamber of Memphis on Facebook'
                     >
                         <FacebookFill
                             width="1rem"
@@ -95,6 +97,7 @@ export default function Footer(){
                     <a 
                         href="https://www.linkedin.com/company/bcomemphis/"
                         className={style.socialLink}
+                        aria-label='Visit Black Chamber of Memphis on LinkedIn'
                     >
                         <Linkedin2
                             width="1em"
@@ -106,6 +109,7 @@ export default function Footer(){
                     <a 
                         href="https://www.instagram.com/bcomemphis/"
                         className={style.socialLink}
+                        aria-label='Visit Black Chamber of Memphis on Instagram'
                     >
                         <Instagram
                             width="1em"
@@ -117,6 +121,7 @@ export default function Footer(){
                     <a 
                         href="https://www.youtube.com/@BlackChamberofMemphis"
                         className={style.socialLink}
+                        aria-label='Visit Black Chamber of Memphis on Youtube'
                     >
                         <Youtube
                             width="1em"
