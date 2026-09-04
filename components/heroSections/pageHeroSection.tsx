@@ -23,6 +23,7 @@ type pageHeroProps = {
     eventHost? : string
     mainHeading : string
     subHeading : string
+    heroParagraph? : string
     searchbar : boolean
     ctaButtons : ctaButtonProps
     placeholder : string
@@ -40,6 +41,7 @@ export default function PageHeroSection({
     eventHost,
     mainHeading,
     subHeading,
+    heroParagraph,
     searchbar,
     ctaButtons,
     placeholder,
@@ -83,7 +85,7 @@ export default function PageHeroSection({
             <div
                 className={style.pageHeroOverlay}
             >
-                {eventHost ? 
+                {eventHost && (
                     <div
                         className={style.eventHostRow}
                     >
@@ -93,7 +95,7 @@ export default function PageHeroSection({
                             {eventHost}
                         </p>
                     </div> 
-                : null}
+                )}
                 
                 <h1
                     className='globalMainHeading'
@@ -101,13 +103,21 @@ export default function PageHeroSection({
                     {mainHeading}
                 </h1>
 
-                {subHeading ? 
+                {subHeading && (
                     <h2
                         className='globalThirdHeading'
                     >
                         {subHeading}
                     </h2>
-                : null}
+                )}
+
+                {heroParagraph && (
+                    <div 
+                        dangerouslySetInnerHTML={{__html: heroParagraph}}
+                        className='globalText'
+                    />
+                )}
+
                 <div
                     className={style.spacer}
                 >
@@ -151,7 +161,7 @@ export default function PageHeroSection({
                             >
                                 {button.name}
                             </Link>
-                ))}
+                        ))}
                     </div>
                 }
 

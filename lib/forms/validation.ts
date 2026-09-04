@@ -83,6 +83,24 @@ export function validateRequiredCheckbox(value : string[]) : string | undefined 
     return undefined
 }
 
+// The function for the multi checkbox handler to be on form parent page.
+// function handleCheckBoxChange(e: React.ChangeEvent<HTMLInputElement>){
+//     const { value, checked } = e.target
+
+//     setBusinessType((prev) => {
+//         if(checked){
+//             return [...prev, value]
+//         }
+
+//         return prev.filter((item) => item !==value)
+//     })
+
+//     if(value === "Other" && !checked) {
+//         setBusinessTypeOther("")
+//     }
+// }
+
+
 // url
 export function validateUrl(value : string): string | undefined {
     if(!value.trim()){
