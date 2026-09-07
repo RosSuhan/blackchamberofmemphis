@@ -48,7 +48,9 @@ export default function RadioInput({
             aria-describedby = {error ? `${groupId}-error` : undefined}
             className="fieldset"
         >
-            <legend>
+            <legend
+                className="formLegend"
+            >
                 {legend}
                 {required && (
                     <span aria-hidden="true" className='requiredStar'>*</span>

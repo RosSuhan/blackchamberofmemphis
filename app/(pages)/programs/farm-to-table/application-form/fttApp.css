@@ -6,8 +6,8 @@
     padding: 4rem 0;
 }
 
-.meetingElectedForm {
-    /* background: var(--grey); */
+.applicationForm {
+    /* background: blue; */
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -16,34 +16,47 @@
 }
 
 .formRow {
+    width: 90%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
     /* width: 100%; */
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+    /* gap: 1rem; */
 }
 
 @media (min-width:500px) {
-    .meetingElectedForm {
+    .applicationForm {
         width: 70%;
     }
 }
 
 @media (min-width:700px) {
-    .meetingElectedForm {
+    .applicationForm {
         width: 55%;
     }
 
 }
 
 @media (min-width:800px) {
-    .meetingElectedForm {
+    .applicationForm {
         width: 50%;
+        /* background-color: purple; */
     }
 
     .formRow {
+        width: 90%;
+        /* background-color: pink; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* row-gap: 2rem; */
         /* width: 100%; */
         display: grid;
-        grid-template-columns: 2fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem;
     }
 }

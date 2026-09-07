@@ -52,7 +52,7 @@ export default function FarmToTableAppication(){
         })
     }
 
-    const FTT_APP_GOOGLE_URL = '';
+    const FTT_APP_GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbzNmz6K1-ckhM64idYxq6lyIJsl1ve0tVqySnHbtocxAbbGZlsf4Ua3QPm_J7p6jhPqhw/exec';
 
     async function handleFttAppSubmit(e: React.FormEvent){
         e.preventDefault();
@@ -113,6 +113,7 @@ export default function FarmToTableAppication(){
             })
 
             setSubmitMessage("Thank you! We have successfully received your application.")
+            console.log("Formdata submitted", formData)
 
             setTimeout(() => {
                 setSubmitMessage('')
@@ -152,7 +153,7 @@ export default function FarmToTableAppication(){
                 className="formSection"
             >
                 <form
-                    className="meetingElectedForm"
+                    className="applicationForm"
                 >
                     <TextInput
                         name = {'busname'}
@@ -190,9 +191,9 @@ export default function FarmToTableAppication(){
                         }}
                     />
 
-                    {/* <div
+                    <div
                         className="formRow"
-                    > */}
+                    >
                         <TextInput
                             name = {"firstName"}
                             label = {"First Name"}
@@ -210,7 +211,7 @@ export default function FarmToTableAppication(){
                             required = {true}
                             error = {errors.lastName}
                         />
-                    {/* </div> */}
+                    </div>
 
                     <RadioInput
                         name = {"busRole"}
@@ -227,23 +228,27 @@ export default function FarmToTableAppication(){
                         ]}
                     />
 
-                    <EmailInput
-                        name = {"email"}
-                        label = {"Email"}
-                        value = {email}
-                        onChange = {(e) => setEmail(e.target.value)}
-                        required = {true}
-                        error = {errors.email}
-                    />
+                    <div
+                        className="formRow"
+                    >
+                        <EmailInput
+                            name = {"email"}
+                            label = {"Email"}
+                            value = {email}
+                            onChange = {(e) => setEmail(e.target.value)}
+                            required = {true}
+                            error = {errors.email}
+                        />
 
-                    <PhoneInput
-                        name = {"phone"}
-                        label = {"Phone Number"}
-                        value = {phone}
-                        onChange = {(e) => setPhone(e.target.value)}
-                        required = {true}
-                        error = {errors.phone}
-                    />
+                        <PhoneInput
+                            name = {"phone"}
+                            label = {"Phone Number"}
+                            value = {phone}
+                            onChange = {(e) => setPhone(e.target.value)}
+                            required = {true}
+                            error = {errors.phone}
+                        />
+                    </div>
 
                     <CheckInput
                         name = {'availableDays'}
