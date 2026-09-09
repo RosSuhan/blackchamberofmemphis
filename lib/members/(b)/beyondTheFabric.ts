@@ -23,7 +23,13 @@ export const beyondTheFabric : MembersListType = {
         'apparel',
         'accessories',
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Beyond The Fabric is a Black-owned embroidery business based in Memphis, Tennessee, specializing in custom embroidery and personalized products. The business works with individuals, local businesses, and organizations to transform apparel and everyday items into customized pieces that reflect a personal style, brand, event, or special occasion.</p>
+        <p>With a focus on quality craftsmanship and creative expression, Beyond The Fabric provides customized embroidery services designed around each customer's unique needs. Whether adding a business logo to apparel, personalizing clothing with a name or initials, or creating a custom embroidered design, the business focuses on producing pieces that go beyond standard, mass-produced products.</p>
+        <p>Beyond The Fabric can personalize a variety of items, including personal and business apparel, backpacks, purses, tote bags, and towels. Customized embroidered towels can also provide a thoughtful option for special occasions such as weddings, birthdays, graduations, and housewarmings.</p>
+        <p>For businesses and organizations, custom embroidery provides an opportunity to create consistent, personalized apparel and branded items featuring logos or other identifying designs. For individuals, embroidery can add a personal touch to clothing and accessories or create customized gifts for meaningful occasions.</p>
+        <p>The business combines modern embroidery equipment with a strong emphasis on attention to detail, craftsmanship, and customer satisfaction. Its approach is centered on bringing customers' ideas to life through personalized embroidery while creating products that carry a sense of individuality and purpose.</p>
+        <p>As a community-focused Memphis business, Beyond The Fabric is committed to serving a diverse clientele and providing high-quality embroidery services for both personal and business needs. Whether the goal is to showcase a company logo, personalize an item with a name or initials, or create a special embroidered gift, Beyond The Fabric helps customers tell their story one stitch at a time.</p>`,
     gallery : [
         {image : "/members/beyond-the-fabric/image-1.webp", alt : "Beyond the Fabric - embroidered golf shirts", width : 1300, height: 800},
         {image : "/members/beyond-the-fabric/image-2.webp", alt : "Beyond the Fabric image 2", width : 800, height: 1300},
