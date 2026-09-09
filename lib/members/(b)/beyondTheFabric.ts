@@ -5,11 +5,12 @@ export const beyondTheFabric : MembersListType = {
     id : "beyond-the-fabric",
     businessName : "Beyond The Fabric",
     bannerImage : "",
-    profileLogo : "beyond-the-fabric",
+    profileLogo : "beyond-the-fabric-logo",
     profileDescription : "Beyond The Fabric is a Black-owned Memphis embroidery business specializing in custom embroidered pieces and personalized products for individuals, businesses, and organizations. From logos and monograms to custom designs on apparel, bags, and towels, the business combines creative design with attention to detail and craftsmanship.",
     profileCategory : [
         "arts-culture-media-entertainment",
         "retail-shopping-specialty-stores",
+        "marketing-advertising-digital-services",
     ],
     profileSubCategory : [
         "promotional-items",
@@ -24,7 +25,11 @@ export const beyondTheFabric : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/beyond-the-fabric/image-1.webp", alt : "Beyond the Fabric - embroidered golf shirts", width : 1300, height: 800},
+        {image : "/members/beyond-the-fabric/image-2.webp", alt : "Beyond the Fabric image 2", width : 800, height: 1300},
+        {image : "/members/beyond-the-fabric/image-3.webp", alt : "Beyond the Fabric image 3 - happy clients", width : 1290, height: 910},
+        {image : "/members/beyond-the-fabric/image-4.webp", alt : "Beyond the Fabric image 4", width : 2976, height: 4464},
+        {image : "/members/beyond-the-fabric/image-5.webp", alt : "Beyond the Fabrid image 5", width : 4480, height: 6720}
     ],
     businessHours : [
         // { day : "Monday", hours : ''},
@@ -41,7 +46,7 @@ export const beyondTheFabric : MembersListType = {
     website : "https://beyondthefab.com/",
     telNumber : "9012367950",
     facebook : "https://www.facebook.com/beyondthefabric",
-    instagram : "https://www.instagram.com/beyondthefabric/",
+    instagram : "https://www.instagram.com/beyondthefabric?stkn=MWdteXczbWg4OTdxeQ%3D%3D&utm_source=qr",
     youtube : "",
     linkedIn : "",
     linktree : "",
@@ -60,12 +65,12 @@ export const beyondTheFabric : MembersListType = {
         </ul>`,
     busBullets : `
         <ul style="text-align: left">
-            <li><strong>Quality Craftsmanship</strong> — Careful attention to every stitch.</li>
-            <li><strong>Custom Personalization</strong> — Names, initials, logos, and custom designs.</li>
-            <li><strong>Business Branding</strong> — Professional embroidery for branded apparel.</li>
-            <li><strong>Versatile Options</strong> — Apparel, bags, towels, and accessories.</li>
-            <li><strong>Special Occasion Gifts</strong> — Personalized pieces for meaningful celebrations.</li>
-            <li><strong>Customer-Focused Service</strong> — Designs created around each customer's needs.</li>
-            <li><strong>Black-Owned & Community-Focused</strong> — Proudly serving the Memphis community.</li>
+            <li><strong>Custom Craftsmanship</strong> — Each piece is created around the customer's requested personalization or design.</li>
+            <li><strong>Business and personal services</strong> — Serves individuals as well as businesses and organizations.</li>
+            <li><strong>Brand personalization</strong> — Provides embroidery for business logos and branded apparel.</li>
+            <li><strong>Personal expression</strong> — Helps customers turn clothing and everyday items into personalized pieces.</li>
+            <li><strong>Special Occasion Options</strong> — Custom embroidered itmes can be created for weddings, birthdays, graduations, and other milesones.</li>
+            <li><strong>Attention to detail</strong> — The business emphasizes craftsmanship, quality, and getting each stitch right.</li>
+            <li><strong>Community-Focused</strong> — A Black-owned Memphis business committed to serving a diverse clientele.</li>
         </ul>`,
 }

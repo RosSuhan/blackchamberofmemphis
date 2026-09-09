@@ -53,8 +53,10 @@ import { tdRealLogistics } from './(t)/tdRealLogistics'
 import { theMemphisChallenge } from './(t)/theMemphisChallenge'
 import { terraFirmaConsulting } from './(t)/terraFirmaConsulting'
 import { theTubExpert } from './(t)/theTubExpert'
+import { tinyTravelers } from './(t)/tinyTravelers'
 
 export const membersTlist = [
+    tinyTravelers,
     theTubExpert,
     terraFirmaConsulting,
     theMemphisChallenge,
