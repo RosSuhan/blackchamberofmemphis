@@ -6,11 +6,17 @@ type MemberPageHeroProp = {
     profileLogo : string
     businessName : string
     memberStatus : boolean
+    categoryList? : { name : string, id : string }[]
 }
 
 const backgroundImage = "/assets/pageHeroImage.jpg"
 
-export default function MemberPageHero({profileLogo, businessName, memberStatus}: MemberPageHeroProp){
+export default function MemberPageHero({
+    profileLogo, 
+    businessName, 
+    memberStatus,
+    categoryList,
+}: MemberPageHeroProp){
     
     return(
         <section
@@ -56,6 +62,20 @@ export default function MemberPageHero({profileLogo, businessName, memberStatus}
                             Verified BCoM Member
                         </div>
                     : null}
+
+                    <div
+                        className={style.catRowBlock} 
+                    >
+                        {categoryList?.map(({name, id}) => (
+                            <div
+                                key={id}
+                                className='globalXXsmallText'
+                                // style={{color:'var(--darkGold)'}}
+                            >
+                                {name}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

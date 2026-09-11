@@ -26,26 +26,7 @@ export default async function Sandbox({params} : Props){
         <main
             className={style.pageHeroSection}
         >
-            <MemberPageHero
-                profileLogo = {selectedMember.profileLogo}
-                businessName = {selectedMember.businessName}
-                memberStatus = {selectedMember.memberStatus}
-            />
-
-            <CategoryContactRow
-                sharePath = {selectedMember.id}
-                categoryList = {selectedCategories}
-                addressLink = {selectedMember.addressLink}
-                telNumber = {selectedMember.telNumber}
-                mail = {selectedMember.email}
-                website = {selectedMember.website}
-                businessHours = {selectedMember.businessHours}
-            />
-
-            <VerifiedBanner
-                backgroundColor='var(--grey)'
-                textColor='var(--black)'
-            />
+            
         </main>
     )
 }

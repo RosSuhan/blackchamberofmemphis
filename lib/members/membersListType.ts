@@ -13,7 +13,7 @@ export interface MembersListType {
     categoryTag: string[],
     profileBusinessDescription: string;
     gallery?: GalleryImage[];
-    businessHours: BusinessHoursType[];
+    businessHours?: BusinessHoursType[];
     addressLink: string;
     address: string;
     email: string;

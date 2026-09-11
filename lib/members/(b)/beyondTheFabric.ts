@@ -37,7 +37,7 @@ export const beyondTheFabric : MembersListType = {
         {image : "/members/beyond-the-fabric/image-4.webp", alt : "Beyond the Fabric image 4", width : 2976, height: 4464},
         {image : "/members/beyond-the-fabric/image-5.webp", alt : "Beyond the Fabrid image 5", width : 4480, height: 6720}
     ],
-    businessHours : [
+    // businessHours : [
         // { day : "Monday", hours : ''},
         // { day : "Tuesday", hours : ''},
         // { day : "Wednesday", hours : ''},
@@ -45,7 +45,7 @@ export const beyondTheFabric : MembersListType = {
         // { day : "Friday", hours : ''},
         // { day : "Saturday", hours : ''},
         // { day : "Sunday", hours : ''},
-    ],
+    // ],
     addressLink : "https://share.google/AYwSJzx1m3DyVRhXb",
     address : "3579 Kings Arms St, Memphis, TN 38115",
     email : "info@beyondthefab.com",

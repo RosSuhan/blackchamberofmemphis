@@ -8,6 +8,7 @@ import { kennethParrish } from "./kennethParrish";
 import { khalifJohnson } from "./khalifJohnson";
 import { kimberlyHenry } from "./kimberlyHenry";
 import { laJuannaJones } from "./laJuannaJones";
+import { randyNOrsby } from "./randyNOrsby";
 import { rashawnRay } from "./rashawnRay";
 import { steveCohen } from "./steveCohen";
 
@@ -24,4 +25,5 @@ export const symposium26Speakers = [
     christinWebb,
     kennethParrish,
     steveCohen,
+    randyNOrsby,
 ]

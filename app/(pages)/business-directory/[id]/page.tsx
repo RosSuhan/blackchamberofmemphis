@@ -61,16 +61,24 @@ export default async function NewMemberPage({ params }: Props){
                 profileLogo = {selectedMember?.profileLogo}
                 businessName = {selectedMember?.businessName}
                 memberStatus = {selectedMember.memberStatus}
+                categoryList = {selectedCategories}
             />
 
             <CategoryContactRow
+                businessName = {selectedMember?.businessName}
                 sharePath = {selectedMember.id}
-                categoryList = {selectedCategories}
+                // categoryList = {selectedCategories}
                 addressLink = {selectedMember.addressLink}
                 telNumber = {selectedMember.telNumber}
                 mail = {selectedMember.email}
                 website = {selectedMember.website}
                 businessHours = {selectedMember.businessHours}
+                facebook = {selectedMember.facebook}
+                instagram = {selectedMember.instagram}
+                youtube = {selectedMember.youtube}
+                linkedIn = {selectedMember.linkedIn}
+                twitter = {selectedMember.twitter}
+                pinterest = {selectedMember.pinterest}
             />
 
             <OneColumn

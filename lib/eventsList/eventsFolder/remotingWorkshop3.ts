@@ -5,7 +5,7 @@ export const remotingWorkshop3 : EventListType = {
     id : "remoting-workshop-3",
     path : "remoting-workshop",
     type: 'event',
-    eventImage : "/events/REMOTE-1.webp",
+    eventImage : "/events/remotingImage.jpg",
     eventImageAlt : "remoting.work invitation to online workshop",
     eventDate : "Wednesday, September 16, 2026",
     sortDate : "2026-09-16",

@@ -11,14 +11,21 @@
     text-align: center;
 }
 
-.stayInformedInput {
+.formBlock {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .stayInformedInput {
     width: 80%;
     margin: .5rem 0;
     font-size: 1rem;
     line-height: 1.8;
     border-radius: .3rem;
     padding-left: .5rem;
-}
+} */
 
 .stayInformedButton {
     background: var(--lightGold);

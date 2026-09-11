@@ -82,62 +82,68 @@ export default function StayInformedSection(){
     }
 
     return (
-        <form 
-            onSubmit={handleStayInformed}
+        <div
             className={style.stayInformedForm}
         >
             <h2
                 className={"globalSecondHeading"}
+                style={{textAlign:'center'}}
             >
                 Stay Informed
             </h2>
             <p
                 className={"globalText"}
+                style={{textAlign:'center'}}
             >
                 We have many great things to come and we want to make sure you are aware of our new offerings.
             </p>
             <p
                 className={"globalText"}
-                style={{marginBottom:'2rem'}}
+                style={{textAlign:'center'}}
             >
                 Please join to be in the know as we roll out new services, programs, events, and resources.
             </p>
 
-            <TextInput
-                name = {'firstName'}
-                label = {'First Name'}
-                value = {firstName}
-                onChange = {(e) => setFirstName(e.target.value)}
-                error = {errors.firstName}
-            />
-
-            <TextInput
-                name = {'lastName'}
-                label = {"Last Name"}
-                value = {lastName}
-                onChange = {(e) => setLastName(e.target.value)}
-                error = {errors.lastName}
-            />
-
-            <EmailInput
-                name = {'email'}
-                label = {'Email'}
-                value = {email}
-                onChange = {(e) => setEmail(e.target.value)}
-                error = {errors.email}
-            />
-
-            <button
-                type='submit'
-                className={"globalGoldButton"}
-                style={{margin:"1rem 0"}}
+            <form 
+                onSubmit={handleStayInformed}
+                className={style.formBlock}
             >
-                {loading ? "Registering..." : "Subscribe"}
-            </button>
+                <TextInput
+                    name = {'firstName'}
+                    label = {'First Name'}
+                    value = {firstName}
+                    onChange = {(e) => setFirstName(e.target.value)}
+                    error = {errors.firstName}
+                />
 
-            {submitMessage && (
-                <p>{submitMessage}</p>
-            )}
-        </form>
+                <TextInput
+                    name = {'lastName'}
+                    label = {"Last Name"}
+                    value = {lastName}
+                    onChange = {(e) => setLastName(e.target.value)}
+                    error = {errors.lastName}
+                />
+
+                <EmailInput
+                    name = {'email'}
+                    label = {'Email'}
+                    value = {email}
+                    onChange = {(e) => setEmail(e.target.value)}
+                    error = {errors.email}
+                />
+
+                <button
+                    type='submit'
+                    className={"globalGoldButton"}
+                    style={{margin:"1rem 0"}}
+                >
+                    {loading ? "Registering..." : "Subscribe"}
+                </button>
+
+                {submitMessage && (
+                    <p>{submitMessage}</p>
+                )}
+            </form>
+        </div>
     )
 }
