@@ -6,8 +6,10 @@ import { providenceAME } from "./(p)/providenceAME";
 import { pursuitOfGodChurch } from "./(p)/pursuitOfGodChurch";
 import { planNetMarketing } from "./(p)/planNetMarketing";
 import { peteMitchellAssos } from "./(p)/peteMitchellAssos";
+import { preciseFingerpainting } from "./(p)/preciseFingerprinting";
 
 export const membersPlist = [
+    preciseFingerpainting,
     pcss,
     poppz,
     pentecostalTempleChurchOfGod,
