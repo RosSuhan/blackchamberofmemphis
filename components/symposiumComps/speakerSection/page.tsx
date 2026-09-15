@@ -7,7 +7,7 @@ export default function SpeakerSection(){
 
     const capitalStackSpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'capitalStack')
 
-    const mindSetShiftSpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'mindSetShift')
+    const firstKeynoteSpeaker = symposium26Speakers?.filter(topic => topic.speakerTopic === 'firstKeynoteSpeaker')
 
     const specialGuestSpeakers = symposium26Speakers?.filter(topic => topic.speakerTopic === 'specialGuest')
 
@@ -17,30 +17,35 @@ export default function SpeakerSection(){
         >
             <h2 className="globalSecondHeading" style={{color:"var(--white)"}}>Our Speakers for 2026:</h2>
 
-            
+            <SpeakerBlock
+                blockHeading = {'Keynote Speaker'}
+                speakerList = {firstKeynoteSpeaker}
+            />
+
             <SpeakerBlock
                 blockHeading={"Building Capacity To Secure and Deliver Major Contracts"}
                 speakerList={buildingCapacitySpeakers}
             />
-            
-            <SpeakerBlock
-                blockHeading={"The Capital Stack: Aligning Capital with Busienss Strategy"}
-                speakerList={capitalStackSpeakers}
-            />
 
-            {mindSetShiftSpeakers.length > 1 && (
-                <SpeakerBlock
-                    blockHeading = 'Misogi: The Mindset Shift'
-                    speakerList = {mindSetShiftSpeakers}
-                />
-            )}
-
+            {/* Congressman cohen */}
             {specialGuestSpeakers.length > 0 && (
                 <SpeakerBlock
                     blockHeading='Special Guest Speakers'
                     speakerList={specialGuestSpeakers}
                 />
             )}
+
+            <SpeakerBlock
+                blockHeading={"The Capital Stack: Aligning Capital with Busienss Strategy"}
+                speakerList={capitalStackSpeakers}
+            />
+
+            {/* {mindSetShiftSpeakers.length > 1 && (
+                <SpeakerBlock
+                    blockHeading = 'Misogi: The Mindset Shift'
+                    speakerList = {mindSetShiftSpeakers}
+                />
+            )} */}
         </section>
     )
 }

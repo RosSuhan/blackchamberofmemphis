@@ -39,6 +39,13 @@ export default function PartnershipSection({
                 width : 300,
                 height : 300,
                 tier : 'silver'
+            },{
+                name : 'Remoting.work',
+                image : '/partners/remoting.work_bright_green.webp',
+                alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Remoting.work",
+                width : 300,
+                height : 300,
+                tier : 'silver'
             }
         ]
 

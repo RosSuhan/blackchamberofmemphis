@@ -17,7 +17,8 @@ export default function ReadMore({text, limit = 25}: ReadMoreProps){
 
     return (
         <>
-            {displayText}
+            {/* {displayText} */}
+            <div dangerouslySetInnerHTML={{__html: displayText}} />
             {isLongText && (
                 <button
                     onClick={() => setIsExpanded(!isExpanded)}
