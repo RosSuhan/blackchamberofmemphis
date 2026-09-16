@@ -31,7 +31,21 @@ export default function PartnershipSection({
                 width: 1230,
                 height: 220,
                 tier : 'silver'
-            }, 
+            }, {
+                name : 'Remoting.work',
+                image : '/partners/remoting.work_bright_green.webp',
+                alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Remoting.work",
+                width : 300,
+                height : 300,
+                tier : 'silver'
+            },{
+                name : 'Seeding Success',
+                image : '/events/symposium/2026-sponsors/seeding-success.png',
+                alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Seeding Success",
+                width : 738,
+                height : 135,
+                tier : 'silver'
+            },
             {
                 name : 'Paragon',
                 image : '/partners/corporate_partner-paragon.webp',
@@ -40,13 +54,13 @@ export default function PartnershipSection({
                 height : 300,
                 tier : 'silver'
             },{
-                name : 'Remoting.work',
-                image : '/partners/remoting.work_bright_green.webp',
-                alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Remoting.work",
-                width : 300,
-                height : 300,
+                name : 'Mid-South Business Continuum',
+                image : '/events/symposium/2026-sponsors/mid-south-bus-continuum.webp',
+                alt: "Black Chamber of Memphis 2026 Symposium Sponsor - Mid-South Business Continuum",
+                width : 1080,
+                height : 1080,
                 tier : 'silver'
-            }
+            },
         ]
 
     const symposium2026VenuePartner = [
