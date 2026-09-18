@@ -1,7 +1,7 @@
 // 'use client'
 // import { updateCheckboxValues } from '@/lib/forms/updateCheckboxValue'
 // import Logo from '@/components/LOGO/page'
-// import style from './sandbox.module.css'
+import style from './sandbox.module.css'
 // import { useState } from 'react'
 // import { validateBusinessName, validateEmail, validatePersonName, validatePhone, validateRequiredAgreements, validateRequiredCheckbox, validateRequiredRadioSelection } from '@/lib/forms/validation'
 // import TextInput from '@/components/forms/fieldsets/TextInput'
@@ -69,6 +69,12 @@ export default function Sandbox(){
                     }
                 </button>
             </header> */}
+
+            <div
+                className={style.gradientBackgroundbox}
+            >
+                <h2>Testing the gradient background</h2>
+            </div>
         </main>
     )
 }

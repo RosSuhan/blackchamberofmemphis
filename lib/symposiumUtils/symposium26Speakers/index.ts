@@ -1,6 +1,7 @@
 import { brentHooks } from "./brentHooks";
 import { cedricHamilton } from "./cedricHamilton";
 import { christinWebb } from "./christinWebb";
+import { danaPointer } from "./danaPointer";
 import { danielleMcGeeGibson } from "./danielleMcGeeGibson";
 import { jarleciaJones } from "./jarleciaJones";
 import { johnPasmore } from "./johnPasmore";
@@ -28,4 +29,5 @@ export const symposium26Speakers = [
     danielleMcGeeGibson,
     rashawnRay,
     jarleciaJones,
+    danaPointer
 ]
