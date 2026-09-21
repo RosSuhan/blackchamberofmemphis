@@ -8,7 +8,7 @@ export const navigationBreakpoints = {
 export const navigationSlots = {
     mobile : 0,
     smallTablet : 2,
-    tablet : 4,
+    tablet : 3,
     laptop : 5,
     desktop : Infinity
 }

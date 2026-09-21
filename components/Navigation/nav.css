@@ -1,0 +1,15 @@
+.navSection {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: .5rem;
+}
+
+@media (min-width: 1000px) {
+    .navSection {
+        width: 85%;
+    }
+}

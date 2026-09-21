@@ -1,0 +1,9 @@
+.navMoreMenuBtn {
+    border: none;
+    background: transparent;
+    font-size: .9rem;
+    padding: .2rem .5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
