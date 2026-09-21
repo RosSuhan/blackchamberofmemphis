@@ -18,7 +18,7 @@ export default function MembershipTiers(){
                 'Member pricing on Quarterly Growth Labs,',
                 'Access to BCoM business resource library'
             ],
-            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
+            tierActionLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
@@ -38,7 +38,7 @@ export default function MembershipTiers(){
                 'Affinity partner discounts,',
                 '4 complimentary admissions to select programs and events',
             ],
-            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
+            tierActionLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
@@ -63,7 +63,7 @@ export default function MembershipTiers(){
                 'Complimentary registration to select sigature events,',
                 'Priority sponsorship opportunities'
             ],
-            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
+            tierActionLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '4px',
             borderColor : 'var(--darkGold)'
@@ -87,7 +87,7 @@ export default function MembershipTiers(){
                 '4x complimentary registrations at select Chamber events,',
                 'Priority sponsorship opportunities'
             ],
-            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
+            tierActionLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
@@ -107,7 +107,7 @@ export default function MembershipTiers(){
                 'Access to training and educational programming,',
                 '3x complimentary registrations at select Chamber events.'
             ],
-            tierActionLink : '/https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
+            tierActionLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Membership/Application/EPKm4Grw',
             borderStyle : 'solid',
             borderWidth : '1px',
             borderColor : 'var(--darkGrey)'
