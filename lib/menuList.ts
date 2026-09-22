@@ -7,6 +7,9 @@ export const menuList : NavigationMenuItem[] = [
         path: '/membership',
         subLink : [
             {
+                name : 'Membership',
+                path : '/membership'
+            },{
                 name : 'Member Log In',
                 path : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/MIC/Login'
             }
@@ -47,6 +50,9 @@ export const menuList : NavigationMenuItem[] = [
         path: '/resources',
         subLink: [
             {
+                name : 'Resources',
+                path : '/resources'
+            },{
                 name : 'Insights',
                 path: '/resources?tab=insights'
             },{
@@ -80,6 +86,9 @@ export const menuList : NavigationMenuItem[] = [
         path : '/partnerships',
         subLink : [
             {
+                name : 'Partnerships',
+                path : '/partnerships'
+            },{
                 name : 'Memphis-Shelby County Film Commission',
                 path : '/partnerships/memphis-shelby-county-film-commission'
             },
@@ -94,6 +103,9 @@ export const menuList : NavigationMenuItem[] = [
         path: '/about-us',
         subLink : [
             {
+                name : 'About Us',
+                path : '/about-us'
+            },{
                 name: 'Contact Us',
                 path: '/contact-us'
             },
