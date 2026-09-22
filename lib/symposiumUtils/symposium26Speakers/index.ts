@@ -10,6 +10,7 @@ import { kennethParrish } from "./kennethParrish";
 import { khalifJohnson } from "./khalifJohnson";
 import { kimberlyHenry } from "./kimberlyHenry";
 import { laJuannaJones } from "./laJuannaJones";
+import { michalynEasterThomas } from "./michalynEasterThomas";
 import { randyNOrsby } from "./randyNOrsby";
 import { rashawnRay } from "./rashawnRay";
 import { steveCohen } from "./steveCohen";
@@ -29,5 +30,6 @@ export const symposium26Speakers = [
     danielleMcGeeGibson,
     rashawnRay,
     jarleciaJones,
-    danaPointer
+    danaPointer,
+    michalynEasterThomas,
 ]
