@@ -16,8 +16,10 @@ import { cushionEmployerServices } from './(c)/cushionEmployerServices'
 import { carlisleWidePlankFloor } from './(c)/carlisleWidePlankFloor'
 import { clrMindPsychiatry } from './(c)/clrMindPsychiatry'
 import { cooCreativeCo } from './(c)/cooCreativeCo'
+import { cSuitesSolutions } from './(c)/cSuitesSolutions'
 
 export const membersClist = [
+    cSuitesSolutions,
     cooCreativeCo,
     clrMindPsychiatry,
     carlisleWidePlankFloor,
