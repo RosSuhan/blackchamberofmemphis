@@ -42,10 +42,10 @@ export const template : MembersListType = {
     pinterest : "",
     offering : `
         <ul style="text-align: left">
-            <li></li>
+            <li><strong></strong></li>
         </ul>`,
     busBullets : `
         <ul style="text-align: left">
-            <li></li>
+            <li><strong></strong></li>
         </ul>`,
 }
