@@ -3,6 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 import { manrope, roboto } from "@/lib/fonts";
 import PopupManager from "@/components/Popup/PopupManager";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL ('https://blackchamberofmemphis.org/'),
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${manrope.variable} ${roboto.variable}`}>
+      <SpeedInsights/>
       <head>
         {/* ⭐ Google Tag Manager – HEAD Script */}
         <Script
