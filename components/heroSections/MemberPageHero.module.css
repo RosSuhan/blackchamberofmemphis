@@ -141,15 +141,50 @@
 }
 
 @media (min-width:800px) {
+    .memberPageHero {
+        /* width: 100%; */
+        /* position: relative; */
+        /* height: 500px; */
+    }
+
+    .herobackgroundImage {
+        /* width: 100%; */
+        /* height: 500px; */
+        /* object-fit: cover; */
+        /* position: absolute; */
+        /* top: 0; */
+        /* z-index: 0; */
+    }
+
+    .pageHeroOverlay {
+        /* width: 100%; */
+        /* z-index: 100; */
+        /* position: relative; */
+        /* background: var(--overlay); */
+        /* color: var(--white); */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding: 2rem 0; */
+        /* row-gap: 3rem; */
+        min-height: 50svh;
+    }
+
     .pageHeroImageBlock {
-        width: 230px;
+        width: 35%;
     }
     
     .pageHeroNameBlock {
-        width: 65%;
+        width: 60%;
     }
     
     .memberVerification {
         width: 200px;
+    }
+
+    .catRowBlock {
+        justify-content: flex-end;
+        overflow-x: hidden;
     }
 }
