@@ -30,6 +30,7 @@
 @media (min-width:300px) {
     .thumbnail {
         width: min(100%, 300px);
+
     }
 
     .video {
@@ -73,7 +74,7 @@
 
 @media (min-width:1000px) {
     .thumbnailBlock {
-        width: 50%;
+        width: 40%;
     }
     .videoBlock {
         width: 90%;
@@ -81,5 +82,6 @@
 
     .video {
         width: min(100%, 700px);
+        /* height: 1000px; */
     }
 }

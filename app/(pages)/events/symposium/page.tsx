@@ -13,6 +13,7 @@ import { symposiumPartners } from '@/lib/symposium'
 import { Metadata } from 'next'
 import SpeakerSection from '@/components/symposiumComps/speakerSection/page'
 import PartnershipSection from '@/components/symposiumComps/PartnershipSection/page'
+import AgendaBlock from '@/components/symposiumComps/AgendaBlock/page'
 
 export const metadata: Metadata = {
     title: '2026 Memphis Business Symposium | Building Wealth in Our Community',
@@ -131,6 +132,8 @@ export default function Symposium(){
                 showButtons={true}
                 ctaButtons={ctaButtons || []}
             />
+
+            <AgendaBlock/>
 
             <VideoBlock
                 videoID='ThCocbBHMM8'
