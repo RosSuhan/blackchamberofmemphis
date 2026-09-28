@@ -24,7 +24,15 @@ export const cSuitesSolutions : MembersListType = {
         'workforce housing',
 
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>C-Suites Solutions LLC is a Memphis-based corporate housing and housing placement company that helps organizations provide reliable, furnished accommodations for employees, contractors, relocated professionals, traveling healthcare workers, insurance-displaced travelers, and other business travelers.</p>
+        <p>The company serves as an outsourced housing resource for organizations that need to place people in Memphis and the Mid-South without taking on the time and operational burden of sourcing and managing temporary housing.</p>
+        <p>C-Suites Solutions provides managed corporate housing placements and furnished accommodations for stays of 30 days or longer. The company coordinates housing sourcing and placement based on location, budget, dates, and the specific needs of each traveler.</p>
+        <p>Its housing placement services support a variety of organizational needs, including employee relocation, project-based workers, traveling professionals, and displaced travelers. C-Suites Solutions also provides stay coordination, arrival support, extensions, and ongoing communication throughout the housing process.</p>
+        <p>For organizations placing employees or travelers with families or pets, C-Suites Solutions provides family- and pet-friendly housing assistance. The company also serves as a local housing resource for organizations that do not have an established Memphis housing network, helping them navigate temporary housing needs without having to build those resources internally.</p>
+        <p>C-Suites Solutions also develops corporate lease partnerships with furnished housing providers and property owners, creating additional housing resources for organizations with recurring or specialized temporary accommodation needs.</p>
+        <p>By managing the housing sourcing and placement process, C-Suites Solutions helps employers, agencies, relocation professionals, and other organizations provide their people with a comfortable place to land while reducing the administrative work required to arrange temporary housing.</p>
+        <p>Through its combination of corporate housing placement, local housing resources, stay coordination, and ongoing support, C-Suites Solutions provides organizations with a practical outsourced solution for managing temporary furnished housing throughout Memphis and the Mid-South.</p>`,
     gallery : [
         {image : "/members/c-suites-solutions/jae-hubbard.webp", alt : "Jae Hubbard, Owner of C-Suites Solutions", width : 2543, height: 3390}
     ],

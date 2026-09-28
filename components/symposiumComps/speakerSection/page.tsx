@@ -47,10 +47,10 @@ export default function SpeakerSection(){
                 <div
                     className={style.imageBlock}
                 >
-                    <h2 className="globalThirdHeading" style={{color:"var(--white)", textAlign:'center'}}>Our DJ - Dr Mary The K</h2>
+                    <h2 className="globalThirdHeading" style={{color:"var(--white)", textAlign:'center'}}>Our DJ - Dj. Mary The K</h2>
                     <Image
-                        src={'/events/symposium/2026-speakers/mary-the-k.webp'}
-                        alt='Mary The K - DJ at 2026 Black Chamber of Memphis Symposium'
+                        src={'/events/symposium/2026-speakers/dj-mary-the-k.webp'}
+                        alt='DJ Mary The K - DJ at 2026 Black Chamber of Memphis Symposium'
                         width={1080}
                         height={1350}
                         className={style.djMceeImages}
@@ -60,7 +60,7 @@ export default function SpeakerSection(){
                 <div
                     className={style.imageBlock}
                 >
-                    <h2 className="globalThirdHeading" style={{color:"var(--white)", textAlign:'center'}}>Our Mcee - Ena Esco</h2>
+                    <h2 className="globalThirdHeading" style={{color:"var(--white)", textAlign:'center'}}>Our Emcee - Ena Esco</h2>
                     <Image
                         src={'/events/symposium/2026-speakers/ena-esco.webp'}
                         alt='Ena Esco - Emcee for the 2026 Black Chamber of Memphis Symposium'
