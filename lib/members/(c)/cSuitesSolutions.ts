@@ -5,7 +5,7 @@ export const cSuitesSolutions : MembersListType = {
     id : "c-suites-solutions",
     businessName : "C-Suites Solutions",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "c-suites-solutions",
     profileDescription : "C-Suites Solutions LLC provides corporate housing and temporary housing placement services for organizations needing furnished accommodations for employees, contractors, relocated professionals, traveling healthcare workers, and displaced individuals. The company sources and coordinates housing based on location, dates, budget, and individual needs while managing the placement and stay process.",
     profileCategory : [
         "accommodation",
@@ -26,7 +26,7 @@ export const cSuitesSolutions : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/c-suites-solutions/jae-hubbard.webp", alt : "Jae Hubbard, Owner of C-Suites Solutions", width : 2543, height: 3390}
     ],
     businessHours : [
         // { day : "Monday", hours : ''},
