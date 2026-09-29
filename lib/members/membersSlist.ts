@@ -20,6 +20,7 @@ import { southernBancorpMortgage } from './(s)/southernBancorpMortgage'
 import { southernShieldPestControl } from './(s)/southernShieldPestControl'
 import { sionSolutions } from './(s)/sionSolutionsCorp'
 import { sharProfessionalServices } from './(s)/sharProfessionalServices'
+import { slidemeAPP } from './(s)/slidemeAPP'
 
 export const membersSlist = [
     sharProfessionalServices,
@@ -44,4 +45,5 @@ export const membersSlist = [
     stAugustineCatholicChurch,
     sassySpiritzMobileBartending,
     selfSolutions,
+    slidemeAPP,
 ]
