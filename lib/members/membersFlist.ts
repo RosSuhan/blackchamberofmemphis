@@ -10,8 +10,10 @@ import { focusOnYou } from './(f)/focusOnYou'
 import { flavorfulLivingBrand } from './(f)/flavorfulLivingBrand'
 import { flawlessCleaning } from './(f)/flawlessCleaning'
 import { fspEnterprises } from './(f)/fspEnterprises'
+import { fent } from './(f)/fent'
 
 export const membersFlist = [
+    fent,
     fspEnterprises,
     flavorfulLivingBrand,
     functionallyBalancedHealth,

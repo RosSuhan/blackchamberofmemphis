@@ -17,8 +17,11 @@ import { carlisleWidePlankFloor } from './(c)/carlisleWidePlankFloor'
 import { clrMindPsychiatry } from './(c)/clrMindPsychiatry'
 import { cooCreativeCo } from './(c)/cooCreativeCo'
 import { cSuitesSolutions } from './(c)/cSuitesSolutions'
+import { cliivelyDigitalMarketing } from './(c)/cliivelyDigitalMarketing'
+import { cre8ContentStudio } from './(c)/cre8ContentStudio'
 
 export const membersClist = [
+    cliivelyDigitalMarketing,
     cSuitesSolutions,
     cooCreativeCo,
     clrMindPsychiatry,
@@ -38,4 +41,5 @@ export const membersClist = [
     crossroadsBaptistChurch,
     chalmersPoolePC,
     cushionEmployerServices,
+    cre8ContentStudio,
 ]

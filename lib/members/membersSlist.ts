@@ -21,6 +21,8 @@ import { southernShieldPestControl } from './(s)/southernShieldPestControl'
 import { sionSolutions } from './(s)/sionSolutionsCorp'
 import { sharProfessionalServices } from './(s)/sharProfessionalServices'
 import { slidemeAPP } from './(s)/slidemeAPP'
+import { saveMeaPlate } from './(s)/saveMeaPlate'
+import { sherisTable } from './(s)/sherisTable'
 
 export const membersSlist = [
     sharProfessionalServices,
@@ -46,4 +48,6 @@ export const membersSlist = [
     sassySpiritzMobileBartending,
     selfSolutions,
     slidemeAPP,
+    saveMeaPlate,
+    sherisTable,
 ]

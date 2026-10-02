@@ -17,6 +17,7 @@ import { mtNeboBaptistChurch } from './(m)/mtNeboBaptistChurch'
 import { memphisShelbyCountyFilm } from './(m)/memphisShelbyCountyFilm'
 import { midSouthEducationBehavior } from './(m)/midSouthEducation&BehaviorSolutions'
 import { mobiMedPlus } from './(m)/mobiMedPlus'
+import { myPainIsMyPower } from './(m)/myPainIsMyPower'
 
 export const membersMlist = [
     mobiMedPlus,
@@ -38,4 +39,5 @@ export const membersMlist = [
     mississippiBoulevardChristianChurch,
     morningStarMissionaryBaptistChurch,
     mtNeboBaptistChurch,
+    myPainIsMyPower,
 ]
