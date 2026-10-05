@@ -21,9 +21,24 @@ export const otgSerLogistic : MembersListType = {
         'waste removal',
         'property cleanup',
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>OTG Services & Logistics is a locally owned junk removal and demolition company serving Memphis, West Tennessee, North Mississippi, and East Arkansas. Founded in 2026, the company provides residential and commercial cleanup solutions designed to make junk removal, debris hauling, and cleanouts simpler and more convenient for the communities it serves.</p>
+        <p>OTG Services & Logistics handles junk removal for both residential and commercial customers, helping clients clear unwanted items, accumulated debris, and materials from their properties. Whether a property needs a general cleanout or requires cleanup following demolition work, the company provides removal and hauling services designed to help customers reclaim and prepare their spaces.</p>
+        <p>The company also provides demolition cleanup services, helping remove debris and materials left behind during demolition projects. By combining junk removal, debris hauling, and demolition cleanup, OTG Services & Logistics provides customers with a practical resource for projects that require more than simply getting rid of household or commercial items.</p>
+        <p>OTG Services & Logistics serves a broad range of customers throughout its service area, including homeowners, businesses, property owners, contractors, and others who need dependable cleanup and removal support. Its residential and commercial services allow the company to accommodate different types of properties and cleanup needs.</p>
+        <p>A key part of the company's approach is making the process straightforward. OTG Services & Logistics provides upfront quotes so customers have an understanding of the expected cost before moving forward. The company also emphasizes fast and reliable service, helping customers complete cleanup and cleanout projects without unnecessary complications.</p>
+        <p>As a locally owned business established in 2026, OTG Services & Logistics is committed to providing practical cleanup services to the communities it serves. Its combination of junk removal, debris hauling, and demolition cleanup makes it a resource for customers looking to clear, clean, or prepare a property.</p>
+        <p>Whether the need involves residential junk removal, commercial cleanouts, debris hauling, or post-demolition cleanup, OTG Services & Logistics helps make the cleanup process simpler with straightforward service and upfront pricing.</p>`,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/otg/otg-business-card.webp", alt : "OTG Services business card", width : 2000, height: 1389},
+        {image: "/members/otg/otg-removal-load.webp", alt: "OTG Services stapping a load on the bakkie", width: 3072, height: 4096},
+        {image: "/members/otg/otg-room-clean-up-before.webp", alt: "OTG Services, Clutter room before cleaning", width: 2992, height: 2992},
+        {image: "/members/otg/otg-room-clean-up-after.webp", alt: "OTG Services, clutter room after cleaning", width: 2992, height: 2992 },
+        {image: "/members/otg/otg-rubble-clean-up.webp", alt: "OTG Services in working action", width: 1242, height: 914 },
+        {image: "/members/otg/otg-rubble-removal-before.webp", alt: "OTG Services, before rubbish removal", width: 1080, height: 1046 },
+        {image : "/members/otg/otg-rubble-removal-after.webp", alt: "OTG Services, after rubbish removal", width: 1080, height: 789 },
+        {image: "/members/otg/otg-rubble-services.webp", alt: "OTG Services", width: 1640, height: 924},
+        {image: "/members/otg/otg-services.webp", alt: "OTG Services Image Grid", width: 2880, height: 2880}
     ],
     businessHours : [
         { day : "Monday", hours : 'Open 24 hours'},

@@ -5,7 +5,7 @@ export const sherisTable : MembersListType = {
     id : "",
     businessName : "Sheri’s Table, LLC",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "sheris-table",
     profileDescription : "Sheri’s Table is a Memphis-based meal prep and private chef business providing convenient, professionally prepared meals for busy professionals and private clients. The company also partners with private gyms to provide meal-prep solutions for their clients and has experience serving professional athletes, public officials, and other high-profile clientele.",
     profileCategory : [
         "food-dining-hospitality",
@@ -22,7 +22,15 @@ export const sherisTable : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/sheris-table/sheri-table-meal-1.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
+        {image : "/members/sheris-table/sheri-table-meal-2.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
+        {image : "/members/sheris-table/sheri-table-meal-3.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
+        {image : "/members/sheris-table/sheri-table-meal-4.webp", alt : "Sheri's Table, Meal", width : 1284, height: 1343},
+        {image : "/members/sheris-table/sheri-table-meal-5.webp", alt : "Sheri's Table, Meal", width : 1283, height: 1455},
+        {image : "/members/sheris-table/sheri-table-meal-6.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
+        {image : "/members/sheris-table/sheri-table-meal-7.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
+        {image : "/members/sheris-table/sheri-table-meal-8.webp", alt : "Sheri's Table, Meal", width : 1283, height: 1404},
+        {image : "/members/sheris-table/sheri-table-meal-9.webp", alt : "Sheri's Table, Meal", width : 1284, height: 2282}
     ],
     businessHours : [
         // { day : "Monday", hours : ''},

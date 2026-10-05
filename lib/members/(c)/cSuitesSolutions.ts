@@ -34,7 +34,9 @@ export const cSuitesSolutions : MembersListType = {
         <p>By managing the housing sourcing and placement process, C-Suites Solutions helps employers, agencies, relocation professionals, and other organizations provide their people with a comfortable place to land while reducing the administrative work required to arrange temporary housing.</p>
         <p>Through its combination of corporate housing placement, local housing resources, stay coordination, and ongoing support, C-Suites Solutions provides organizations with a practical outsourced solution for managing temporary furnished housing throughout Memphis and the Mid-South.</p>`,
     gallery : [
-        {image : "/members/c-suites-solutions/jae-hubbard.webp", alt : "Jae Hubbard, Owner of C-Suites Solutions", width : 2543, height: 3390}
+        {image : "/members/c-suites-solutions/jae-hubbard.webp", alt : "Jae Hubbard, Owner of C-Suites Solutions", width : 2543, height: 3390},
+        {image : '/members/c-suites-solutions/public/members/c-suites-solutions/c-suites-directory.webp', alt : 'C-Suites Solutions', width : 1536, height: 497},
+        {image : '/members/c-suites-solutions/public/members/c-suites-solutions/c-suites-directory-2.webp', alt : 'C-Suites Solutions', width : 752, height: 504},
     ],
     businessHours : [
         // { day : "Monday", hours : ''},
