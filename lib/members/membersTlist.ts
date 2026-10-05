@@ -54,6 +54,7 @@ import { theMemphisChallenge } from './(t)/theMemphisChallenge'
 import { terraFirmaConsulting } from './(t)/terraFirmaConsulting'
 import { theTubExpert } from './(t)/theTubExpert'
 import { tinyTravelers } from './(t)/tinyTravelers'
+import { trueFellowshipMinisries } from './(t)/trueFellowshipMinistires'
 
 export const membersTlist = [
     tinyTravelers,
@@ -112,4 +113,5 @@ export const membersTlist = [
     templeOfDeliveranceChurch,
     theLifeChurch,
     tennesseeHospTourism,
+    trueFellowshipMinisries,
 ]
