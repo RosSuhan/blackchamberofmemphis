@@ -20,7 +20,13 @@ export const sherisTable : MembersListType = {
         'beverages',
         'professional meal preparation',
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Sheri’s Table is a Memphis-based meal prep and private chef business helping busy professionals enjoy professionally prepared meals without the time and effort required for daily cooking. Through personalized meal preparation and private chef services, the business provides a convenient alternative for clients who value quality food and dependable service while balancing demanding schedules.</p>
+        <p>Meal prep is a central part of Sheri’s Table. The service is particularly suited to business professionals who want to simplify their weekly routines while still having thoughtfully prepared meals available when they need them. By taking meal planning and preparation off the client's schedule, Sheri’s Table helps make everyday dining more convenient and manageable.</p>
+        <p>The company also works with private gyms to provide meal prep for their clients. These partnerships give fitness professionals and their clients access to a food-preparation resource that can complement their established fitness and lifestyle goals. This business-to-business capability distinguishes Sheri’s Table from meal-prep companies focused solely on individual consumers.</p>
+        <p>For clients seeking a more personalized culinary experience, Sheri’s Table provides private chef services. The business has experience serving a diverse clientele that has included Memphis professional basketball players, state political figures, business professionals, and other high-profile clients. This experience has helped establish an approach centered on professionalism, discretion, personalized service, and attention to individual client needs.</p>
+        <p>Whether preparing meals for a busy professional, supporting a private gym's clientele, or providing a personalized private chef experience, Sheri’s Table brings convenience and professional culinary service directly to its clients.</p>
+        <p>With both individual and business partnership opportunities, Sheri’s Table provides flexible food services designed around modern schedules and personalized needs.</p>`,
     gallery : [
         {image : "/members/sheris-table/sheri-table-meal-1.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
         {image : "/members/sheris-table/sheri-table-meal-2.webp", alt : "Sheri's Table, Meal", width : 3024, height: 4032},
