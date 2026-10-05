@@ -183,7 +183,7 @@ export default function RootLayout({
         </noscript>
 
         {/* <Header/> */}
-        <PopupManager/>
+        {/* <PopupManager/> */}
         {children}
         {/* <Footer/> */}
       </body>

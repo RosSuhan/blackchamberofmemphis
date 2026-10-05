@@ -35,10 +35,11 @@ export const menuList : NavigationMenuItem[] = [
             {
                 name : 'Upcoming Events',
                 path : '/events'
-            },{
-                name: 'Symposium',
-                path: '/events/symposium'
             },
+            // {
+            //     name: 'Symposium',
+            //     path: '/events/symposium'
+            // },
             {
                 name: 'Boomin-U',
                 path: '/events/boomin'
