@@ -5,7 +5,7 @@ export const cre8ContentStudio : MembersListType = {
     id : "cre8-content-studio",
     businessName : "Cre8 Content Studio",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "cre8-content-studio",
     profileDescription : "Cre8 Content Studio is a Memphis-based social media management, branding, and content creation agency helping businesses and organizations turn their stories into consistent, strategic digital content. Cre8 also operates a professional content studio offering space for photoshoots, podcasts, content days, workshops, and events.",
     profileCategory : [
         "marketing-advertising-digital-services",
@@ -20,9 +20,16 @@ export const cre8ContentStudio : MembersListType = {
     categoryTag: [
         'digital marketing',
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Cre8 Content Studio is a Memphis-based social media management, branding, and content creation agency helping businesses, nonprofits, schools, and organizations build stronger connections with the audiences they want to reach. By combining strategy, content production, digital marketing, and a professional creative studio, Cre8 provides both the expertise and the space organizations need to show up consistently online.</p>
+        <p>The agency offers done-for-you social media management that brings strategy, filming, editing, posting, and performance reporting together into one coordinated service. Rather than creating content simply for visibility, Cre8 develops messaging and content around specific audiences, their concerns, and the actions organizations want them to take.</p>
+        <p>Cre8 also specializes in enrollment and social media  marketing for schools, nonprofits, workforce organizations, and other mission-driven organizations. Through strategic storytelling and consistent social content, the agency helps clients communicate their value, build audience trust, and turn online attention into meaningful action—whether that means attracting prospective students, reaching new clients, engaging donors, recruiting participants, or strengthening community awareness.</p>
+        <p>Additional services include content strategy, branding, video production and editing, event content creation, and social media coaching for small businesses that want to strengthen their own marketing capabilities.</p>
+        <p>Cre8's physical content studio in downtown Memphis adds another dimension to the business. Creators, entrepreneurs, businesses, podcasters, and organizations can rent professional spaces for photoshoots, video production, podcast recording, content days, workshops, training sessions, and small events. The studio provides multiple creative areas along with access to production equipment and professional content-making resources.</p>
+        <p>By combining marketing strategy with hands-on content creation and a dedicated production space, Cre8 Content Studio helps organizations move from simply having a social media presence to communicating consistently, professionally, and with purpose.</p>`,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/cre8-content-studio/cre8-creation-studio-img-1.webp", alt : "Cre8 Content Studio", width : 2000, height: 1500},
+        {image: "/members/cre8-content-studio/cre8-creation-studio-img-2.webp", alt : "Cre8 Content Studio", width: 2000, height: 1500}
     ],
     businessHours : [
         { day : "Monday", hours : '10am - 6pm'},

@@ -33,7 +33,8 @@ const popupCampaigns: PopupCampaign[] = [
         description: "Be part of the experience everyone will be talking about! Tickets are now available for our upcoming event, bringing together inspiring speakers, powerful conversations, and unmatched networking opportunities. Register today and secure your seat.", 
         ctaText: "Read More", 
         ctaLink: "/events/symposium", 
-    }, { 
+    }, 
+    { 
         id: "remoting", 
         priority: 1, 
         startDate: "2026-08-01", 
