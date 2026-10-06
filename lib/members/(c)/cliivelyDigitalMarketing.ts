@@ -5,7 +5,7 @@ export const cliivelyDigitalMarketing : MembersListType = {
     id : "",
     businessName : "Cliively Digital Marketing",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "cliively",
     profileDescription : "Cliively Digital Marketing builds websites, automated systems, and local search strategies that help businesses turn online traffic into steady paying customers. The agency combines web development, SEO, paid search, and conversion-focused digital marketing to help businesses strengthen their online presence and generate leads.",
     profileCategory : [
         "marketing-advertising-digital-services",
@@ -27,7 +27,12 @@ export const cliivelyDigitalMarketing : MembersListType = {
         'ppc ads',
 
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Cliively Digital Marketing is a Memphis-based digital marketing agency helping small and growing businesses build stronger online systems designed to attract customers, generate leads, and support sustainable growth. Rather than focusing on online visibility alone, Cliively approaches digital marketing with business results in mind—helping companies turn website traffic and search activity into meaningful customer opportunities.</p>
+        <p>The agency provides web design and development, Search Engine Optimization (SEO), local SEO, Search Engine Marketing (SEM), Pay-Per-Click (PPC) advertising, and WordPress development. Its website services focus on creating an effective digital foundation for businesses, while SEO and local search strategies help companies improve how they are discovered by potential customers searching for their products or services.</p>
+        <p>For businesses seeking more immediate visibility, Cliively develops and manages paid advertising campaigns, including Google Ads, with an emphasis on keyword research, audience targeting, conversions, performance tracking, and return on investment. The agency also uses business and marketing data to identify opportunities and make informed improvements rather than relying on guesswork.</p>
+        <p>Local search is an important part of Cliively's approach. With roots firmly established in Memphis, the agency understands the challenges local businesses face when competing for attention online and develops strategies intended to connect businesses with customers actively searching within their markets. Cliively also works with businesses beyond the Memphis area.</p>
+        <p>Whether a company needs a new website, stronger search visibility, automated digital systems, paid advertising, or a more coordinated online marketing strategy, Cliively brings technology and marketing together to create practical systems for business growth. Its goal is straightforward: help businesses get discovered, generate qualified opportunities, and turn their digital presence into a more productive part of their business.</p>`,
     gallery : [
         // {image : "", alt : "", width : 100, height: 100}
     ],
