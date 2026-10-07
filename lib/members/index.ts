@@ -22,6 +22,7 @@ import { membersUlist } from '@/lib/members/membersUlist'
 import { membersVlist } from '@/lib/members/membersVlist'
 import { membersWlist } from '@/lib/members/membersWlist'
 import { membersYlist } from '@/lib/members/membersYlist'
+import { membersZlist } from './membersZlist'
 
 export const businessList = [
     ...membersNumberList,
@@ -47,5 +48,6 @@ export const businessList = [
     ...membersUlist,
     ...membersVlist,
     ...membersWlist,
-    ...membersYlist
+    ...membersYlist,
+    ...membersZlist
 ]
