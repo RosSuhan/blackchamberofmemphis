@@ -24,8 +24,12 @@ import { ceoCeoFamilyBus } from "./eventsFolder/ceoCeoFamilyBus";
 import { remotingWorkshop4 } from "./eventsFolder/remotingWorkshop4";
 import { hrStrategyRoom } from "./eventsFolder/hrStrategyRoom";
 import { pathwayToCapital } from "./eventsFolder/PathwayToCapital";
+import { blackFounderBreakfast } from "./eventsFolder/blackFounderBreakfast";
+import { founderToEmployer } from "./eventsFolder/founderToEmployer";
 
 export const eventIndex = [
+    founderToEmployer,
+    blackFounderBreakfast,
     pathwayToCapital,
     hrStrategyRoom,
     ceoCeoFamilyBus,
