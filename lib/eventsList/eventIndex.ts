@@ -26,8 +26,10 @@ import { hrStrategyRoom } from "./eventsFolder/hrStrategyRoom";
 import { pathwayToCapital } from "./eventsFolder/PathwayToCapital";
 import { blackFounderBreakfast } from "./eventsFolder/blackFounderBreakfast";
 import { founderToEmployer } from "./eventsFolder/founderToEmployer";
+import { icccProgram } from "./eventsFolder/icccProgram";
 
 export const eventIndex = [
+    icccProgram,
     founderToEmployer,
     blackFounderBreakfast,
     pathwayToCapital,
