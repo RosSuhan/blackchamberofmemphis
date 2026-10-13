@@ -144,7 +144,7 @@ export default function Boomin(){
                 blockHeading = {"One Pipeline. Three Pathways. Built For You."}
                 headingTextColor = {"var(--darkGold)"}
                 paragraph = {`
-                    <p>The Black Chamber of Memphis and Boomin University have joined forces to create a real pipeline for small businesses across the Mid-South. No gatekeeping. No runaround. Just practical programs designed to move your business forward — from start-up to scale and beyond. <a href="blog/clearer-path-to-capital-and-training">Learn More →</a></p>
+                    <p>The Black Chamber of Memphis and Boomin University have joined forces to create a real pipeline for small businesses across the Mid-South. No gatekeeping. No runaround. Just practical programs designed to move your business forward — from start-up to scale and beyond. <a href="/blog/clearer-path-to-capital-and-training">Learn More →</a></p>
                     <p>Through this partnership, BCoM members and entrepreneurs across the region now have direct access to Boomin University's full suite of free business resources. The programs are designed to meet you where you are — whether you need to sharpen your marketing, get your finances investor-ready, access zero-interest capital, or get one-on-one coaching to reach the next level.</p>
                     <p>The cohort-based programs allow you to learn alongside fellow entrepreneurs, stay accountable, and walk away with tools you can put to work immediately. These aren't theoretical workshops. This is practical, structured support built to move your business forward.</p>
                 `}

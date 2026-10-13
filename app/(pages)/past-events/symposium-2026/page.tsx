@@ -1,38 +1,14 @@
 import Symposium2026Hero from "@/components/heroSections/Symposium2026Hero";
+import Symp26ThankYouSection from "@/components/symposiumComps/symp26ThankYouSection/page";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Symposium2026(){
     return(
         <main>
             <Symposium2026Hero/>
 
-            <section>
-                
-                <div>
-                    <span>
-                        A DAY OF IDEAS, CONNECTIONS AND OPPORTUNITY
-                    </span>
-                    <h2>
-                        Thank you, Memphis
-                    </h2>
-                    <p>
-                        The 2026 <b>Building Wealth in Our Community Symposium</b> brought together entrepreneurs, business leaders, public officials, and community partners for a powerful day of learning, collaboration and action. Together, we explored how to build an Entrepreneur City through Access, Investment and Mobility - and what it will take to create lasting wealth in our community.
-                    </p>
-                </div>
-                <div>
-                    <div>
-                        <span>500+</span>
-                        <span>attendees</span>
-                    </div>
-                    <div>
-                        <span>16</span>
-                        <span>Speakers</span>
-                    </div>
-                    <div>
-                        <span>Countless</span>
-                        <span>Connections</span>
-                    </div>
-                </div>
-            </section>
+            <Symp26ThankYouSection/>
 
             <section>
                 <div>
@@ -70,6 +46,66 @@ export default function Symposium2026(){
                 <p>
                     Two defining moments from the 2026 Symposium
                 </p>
+
+                <div>
+                    <div>
+                        <div>
+                            <Image
+                                src={''}
+                                alt=""
+                                width={100}
+                                height={100}
+                            />
+                        </div>
+                        <div>
+                            <h3>
+                                Mayor Paul Young Building Entrepreneur City
+                            </h3>
+                            <p>
+                                Mayor Paul Young reinforced the importance of entrepreneurship to Memphis economic future and challenged the public and private sectors to work together.
+                            </p>
+                            <Link
+                                href={''}
+                            >
+                                Read The Full Recap 
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <Image
+                                src={''}
+                                alt=""
+                                width={100}
+                                height={100}
+                            />
+                        </div>
+                        <div>
+                            <h3>
+                                Congressman Steve Cohen Community Champion
+                            </h3>
+                            <p>
+                                The Black Chamber of Memphis recognized Congressman Steve Cohen as the inaugural recipient of the Steve Cohen Community Champion
+                            </p>
+                            <Link
+                                href={''}
+                            >
+                                Read The Full Recap 
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Thank You to Our Sponsors</h2>
+                <p>
+                    Your support helped make this event possible
+                </p>
+                <div>
+                    
+                </div>
             </section>
         </main>
     )

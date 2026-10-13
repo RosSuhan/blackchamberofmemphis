@@ -9,8 +9,10 @@ import { dawgTeamApparel } from './(d)/dawgTeamApparel'
 import { doreTouchEventCenter } from './(d)/doreTouchEventCenter'
 import { dj1luvEntertainment } from './(d)/dj1luvEntertainment'
 import { dreamTeamRealtyCo } from './(d)/dreamTeamRealtyCo'
+import { downtownMemphisCommission } from './(d)/downtownMemphisCommission'
 
 export const membersDlist = [
+        downtownMemphisCommission,
         dreamTeamRealtyCo,
         dj1luvEntertainment,
         doreTouchEventCenter,
