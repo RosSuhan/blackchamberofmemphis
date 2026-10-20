@@ -1,0 +1,259 @@
+.featurePageArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.featureImageBlock {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.featurePageArticleBannerImage {
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    object-fit: cover;
+    object-position: top;
+}
+
+.featurePageDateIndex {
+    width: 90%;
+    margin-top: .5rem;
+}
+
+.featureArticleQuoteRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.featureArticleTextBlock {
+    width: 90%;
+}
+
+.featureQuoteMainBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.featureQuoteBlock {
+    width: 180px;
+    position: relative;
+    margin: 3rem 0;
+    border: var(--darkGold) solid 2px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.featureQuote {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: -15;
+    background: #ffffff;
+    padding: 0 .3rem;
+}
+
+.featureQuoteText {
+    font-size: 1.4rem;
+}
+
+.featureQuoteOwner {
+    padding: .5rem 0 0 0;
+    margin: 1rem 0 0 0;
+    border-top: var(--darkGold) 2px solid;
+}
+
+.featureQuoteArticleImage {
+    display: none;
+}
+
+.sympColorBlock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.sympColorBlockImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.sympColorTextBlock {
+    background: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.sympPrevNextButtons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    margin: 3rem 0 6rem 0;
+    background: var(--grey);
+    padding: 2rem 0;
+}
+
+.sympPrevNextBtn {
+    text-align: center;
+
+}
+
+.sympLastCTAbtnRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.sympCTAblock {
+    border: #d3d3d3 solid 1px;
+    border-radius: 0 0 10px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 1rem 0;
+}
+
+.sympCTAblockImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+}
+
+.sympCTAblockLink {
+    width: 90%;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (min-width: 540px) {
+    .featurePageArticleBannerImage {
+        height: 300px;
+    }
+    
+    .sympColorBlockImage {
+        width: 40%;
+        height: 310px;
+        object-position: -210px;
+        object-fit: cover;
+    }
+    
+    .sympColorTextBlock {
+        width: 60%;
+    }
+
+    .sympColorBlockHeading {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .sympColorBlockImage {
+        width: 50%;
+        object-position: -150px;
+    }
+    
+    .sympColorTextBlock {
+        width: 50%;
+    }
+    
+    .sympPrevNextButtons {
+        justify-content: space-between;
+    
+    }
+
+    .left {
+        margin-left: 2rem;
+    }
+
+    .right {
+        margin-right: 2rem;
+    }
+    
+    .sympLastCTAbtnRow {
+        width: 90%;
+        column-gap: 40px;
+    }
+    
+    .sympCTAblock {
+        width: 28%;
+    }
+}
+
+@media (min-width: 700px) {
+    .featurePageArticleBannerImage {
+        height: 400px;
+    }
+    
+    .featureQuoteArticleImage {
+        display: initial;
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .sympColorBlockImage {
+        object-position: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .featureArticleQuoteRow {
+        align-items: flex-start;
+    }
+    
+    .featureArticleTextBlock {
+        width: 55%;
+    }
+
+    .featureQuoteMainBlock {
+        width: 35%;
+        transform: translateY(-50px);
+        margin-bottom: -10px;
+    }
+    
+    .sympColorBlockImage {
+        width: 40%;
+        height: 225px;
+    }
+    
+    .sympColorTextBlock {
+        width: 60%;
+    }
+}
+
+@media (min-width: 900px) {
+    .sympColorBlock {
+        margin-bottom: 3rem;
+    }
+    
+    .sympColorBlockImage {
+        height: 260px;
+    }
+    
+    .sympColorTextBlock {
+        height: 210px;
+        justify-content: center;
+    }
+}

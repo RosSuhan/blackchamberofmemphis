@@ -32,15 +32,18 @@
 }
 
 .symp2026ThankYouStatsRow {
-    width: 95%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: .5rem 0 .5rem 0;
+    justify-content: space-evenly;
+    padding: 2rem 0 1rem 0;
 }
 
 .symp2026ThankYouStatsBlock {
+    width: 30%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* background: purple; */
 }
 
 .symp2026StatsBoldText {
@@ -64,6 +67,8 @@
 }
 
 @media (min-width: 712px) {
+
+    
     .symp26ThankYouSection {
         flex-direction: row;
         justify-content: center;
