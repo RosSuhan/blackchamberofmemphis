@@ -27,18 +27,20 @@ import { pathwayToCapital } from "./eventsFolder/PathwayToCapital";
 import { blackFounderBreakfast } from "./eventsFolder/blackFounderBreakfast";
 import { founderToEmployer } from "./eventsFolder/founderToEmployer";
 import { icccProgram } from "./eventsFolder/icccProgram";
+import { symposium2026 } from "./eventsFolder/symposium2026";
 
 export const eventIndex = [
-    icccProgram,
+    symposium2026,
+    // icccProgram,
     founderToEmployer,
-    blackFounderBreakfast,
+    // blackFounderBreakfast,
     pathwayToCapital,
     hrStrategyRoom,
     ceoCeoFamilyBus,
     blackBusinessMonthWithMayorPaulYoung,
     // remotingWorkshop2,
-    remotingWorkshop3,
-    remotingWorkshop4,
+    // remotingWorkshop3,
+    // remotingWorkshop4,
     // econEmpowerment,
     bcomRedBirdMixer,
     // boominFundU,

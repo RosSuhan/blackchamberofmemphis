@@ -93,7 +93,6 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
 
             <div
                 className="sympColorBlock"
-                style={{display:'none'}}
             >
                 <Image
                     src={'/events/symposium/2026-event/27-dsc08680.webp'}
@@ -110,12 +109,12 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
                     <h2
                         className="globalSecondHeading sympColorBlockHeading"
                     >
-                        A Shared Responsibility
+                        {selectedArticle.colorBlockHeading}
                     </h2>
                     <p
                         className="globalText"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sunt vero magni. Velit maxime doloribus quaerat hic quae, ea consequuntur aut quia magnam enim explicabo fugiat ab, id provident exercitationem.
+                        {selectedArticle.colorBlockText}
                     </p>
                 </div>
             </div>
@@ -145,7 +144,7 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
 
             <div
                 className="sympLastCTAbtnRow"
-                style={{display:'none'}}
+                // style={{display:'none'}}
             >
                 <h2
                     className="globalSecondHeading"
@@ -165,7 +164,7 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
                     />
 
                     <Link
-                        href={''}
+                        href={'https://blackbusinessassociationofmemp.box.com/s/32h16p5zblr8bjpv7kucrcslqqc5twv8'}
                         className="sympCTAblockLink"
                     >
                         Symposium 2026 Photo Gallery
@@ -176,7 +175,7 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
                     className="sympCTAblock"
                 >
                     <Image
-                        src={'/events/symposium/2026-event/IMG_8247.jpg'}
+                        src={selectedArticle.nextArticleImage}
                         alt=""
                         width={5464}
                         height={8192}
@@ -184,10 +183,10 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
                     />
 
                     <Link
-                        href={''}
+                        href={selectedArticle.nextArticlePath}
                         className="sympCTAblockLink"
                     >
-                        Symposium 2026 Photo Gallery
+                        {selectedArticle.nextArticleHeading}
                     </Link>
                 </div>
 
@@ -203,10 +202,10 @@ export default async function SymposiumKeynoteSpeakers({ params }: Props){
                     />
 
                     <Link
-                        href={''}
+                        href={'/past-events/symposium-2026'}
                         className="sympCTAblockLink"
                     >
-                        Symposium 2026 Photo Gallery
+                        Key Moments and Highlights
                     </Link>
                 </div>
             </div>
