@@ -27,7 +27,7 @@ export interface EventListType {
     blogPostReadLink? : string
 }
 
-// holidayStatus: "",
+// holidayStatus: false,
 // id : "",
 // path : '',
 // type: '',
@@ -49,5 +49,5 @@ export interface EventListType {
 // eventCTAbuttonText : "",
 // eventGallery: [{src: "", alt: ""}],
 // registrationButtonLink : '',
-// registrationButtonText :''
-// blogPostReadLink? : string
+// registrationButtonText :'',
+// blogPostReadLink : ''

@@ -28,15 +28,17 @@ import { blackFounderBreakfast } from "./eventsFolder/blackFounderBreakfast";
 import { founderToEmployer } from "./eventsFolder/founderToEmployer";
 import { icccProgram } from "./eventsFolder/icccProgram";
 import { symposium2026 } from "./eventsFolder/symposium2026";
+import { chairmansReception2026 } from "./eventsFolder/chairmansReception2026";
 
 export const eventIndex = [
+    chairmansReception2026,
     symposium2026,
     // icccProgram,
     founderToEmployer,
     // blackFounderBreakfast,
-    pathwayToCapital,
+    // pathwayToCapital,
     hrStrategyRoom,
-    ceoCeoFamilyBus,
+    // ceoCeoFamilyBus,
     blackBusinessMonthWithMayorPaulYoung,
     // remotingWorkshop2,
     // remotingWorkshop3,
@@ -45,7 +47,7 @@ export const eventIndex = [
     bcomRedBirdMixer,
     // boominFundU,
     // boominMarketing,
-    boominToBank,
+    // boominToBank,
     // mayBcomNewMember,
     // remotingWorkshop1,
     // leveledUp,

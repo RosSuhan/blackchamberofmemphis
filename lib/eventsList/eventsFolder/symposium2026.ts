@@ -16,12 +16,12 @@ export const symposium2026 : EventListType = {
     eventCaption : "",
     eventDescription : "",
     eventLongDescription : "",
-    eventPastDescription: "",
+    eventPastDescription: "The 2026 Building Wealth in Our Community Symposium united Memphis entrepreneurs, business leaders, and community partners to expand opportunities, strengthen local businesses, and advance generational wealth through Access, Investment, and Mobility.",
     eventPastBlog: ``,
     eventCTAbuttonLink : "",
     eventCTAbuttonText : "",
     eventGallery: [{src: "", alt: ""}],
     registrationButtonLink : '',
     registrationButtonText :'',
-    blogPostReadLink : ''
+    blogPostReadLink : '/past-events/symposium-2026'
 }
