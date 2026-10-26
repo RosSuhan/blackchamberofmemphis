@@ -29,8 +29,10 @@ import { founderToEmployer } from "./eventsFolder/founderToEmployer";
 import { icccProgram } from "./eventsFolder/icccProgram";
 import { symposium2026 } from "./eventsFolder/symposium2026";
 import { chairmansReception2026 } from "./eventsFolder/chairmansReception2026";
+import { accessToCapital } from "./eventsFolder/accessToCapital";
 
 export const eventIndex = [
+    accessToCapital,
     chairmansReception2026,
     symposium2026,
     // icccProgram,
