@@ -19,6 +19,7 @@ import { cooCreativeCo } from './(c)/cooCreativeCo'
 import { cSuitesSolutions } from './(c)/cSuitesSolutions'
 import { cliivelyDigitalMarketing } from './(c)/cliivelyDigitalMarketing'
 import { cre8ContentStudio } from './(c)/cre8ContentStudio'
+import { christalAlexandra } from './(c)/christalAlexandra'
 
 export const membersClist = [
     cliivelyDigitalMarketing,
@@ -42,4 +43,5 @@ export const membersClist = [
     chalmersPoolePC,
     cushionEmployerServices,
     cre8ContentStudio,
+    christalAlexandra,
 ]
