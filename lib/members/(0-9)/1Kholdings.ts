@@ -5,7 +5,7 @@ export const OneKHoldings : MembersListType = {
     id : "1k-holdings",
     businessName : "1K Holdings",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "1k-holdings",
     profileDescription : "1K Holdings LLC is a Memphis-based parent company developing interconnected brands across sports, fashion, music, and creative culture. Through Rooh Sports, 1ofaKind Apparel, and 1ofaKind Sound, the company supports athlete development, individual expression, independent music, and opportunities for emerging talent.",
     profileCategory : [
         "marketing-advertising-digital-services",
@@ -24,7 +24,8 @@ export const OneKHoldings : MembersListType = {
     ],
     profileBusinessDescription : ``,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/1k-holdings/MARCUS-HEADSHOT.jpg", alt : "Founder Photo: Marcus Nunnally II, founder of 1K Holdings LLC", width : 400, height: 400}, 
+        {image : '/members/1k-holdings/1K-Holdings-Brand-Ecosystem.png', alt : 'A visual overview of our interconnected business divisions, featuring the official logos of Rooh Sports, 1ofaKind Apparel, and 1ofaKind Sound', width: 1448, height: 1086} //1448 × 1086
     ],
     businessHours : [
         // { day : "Monday", hours : ''},
