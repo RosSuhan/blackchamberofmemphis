@@ -22,7 +22,16 @@ export const OneKHoldings : MembersListType = {
         'brand development',
         'brand management'
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>1K Holdings LLC is a Memphis-based parent company building an interconnected business ecosystem across sports, fashion, music, and creative culture. Through a portfolio of specialized brands, the company connects talent development, creative expression, business ownership, and strategic partnerships to create opportunities for individuals and emerging brands.</p>
+        <p>With a vision extending beyond Memphis, 1K Holdings brings together creative industries under a unified business structure designed to support collaboration, sustainable brand development, and long-term growth.</p>
+        <p>The company's sports division, <strong>Rooh Sports</strong>, focuses on athlete representation, scouting, and development. With an emphasis on putting the individual before the athlete, Rooh Sports seeks to support emerging talent through a people-centered approach to representation and career development.</p>
+        <p>In fashion, <strong>1ofaKind Apparel</strong> is a lifestyle and streetwear brand celebrating individuality, creativity, and self-expression. The brand develops distinctive apparel inspired by culture and personal identity, encouraging individuals to embrace what makes them unique.</p>
+        <p>The company's music division, <strong>1ofaKind Sound</strong>, supports independent artists through music development, releases, promotion, and creative collaboration. By connecting artistic expression with business opportunities, the division aims to help musicians develop their work and reach broader audiences.</p>
+        <p>Together, these divisions reflect 1K Holdings' commitment to creating an ecosystem where sports, fashion, and music can complement one another. The company emphasizes meaningful partnerships, operational structure, creative development, and business ownership as foundations for building sustainable brands.</p>
+        <p>Rooted in Memphis while collaborating beyond the region, 1K Holdings seeks to contribute to the growth of creative industries and provide opportunities for emerging athletes, artists, entrepreneurs, and other talented individuals.</p>
+        <p>Guided by its signature mantra, <strong>“Stand Out. Stay Rare.”</strong>, 1K Holdings LLC brings together creativity, culture, and business strategy to build brands that celebrate individuality and create opportunities for the next generation.</p>
+`,
     gallery : [
         {image : "/members/1k-holdings/MARCUS-HEADSHOT.jpg", alt : "Founder Photo: Marcus Nunnally II, founder of 1K Holdings LLC", width : 400, height: 400}, 
         {image : '/members/1k-holdings/1K-Holdings-Brand-Ecosystem.png', alt : 'A visual overview of our interconnected business divisions, featuring the official logos of Rooh Sports, 1ofaKind Apparel, and 1ofaKind Sound', width: 1448, height: 1086} //1448 × 1086

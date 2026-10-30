@@ -55,6 +55,7 @@ import { terraFirmaConsulting } from './(t)/terraFirmaConsulting'
 import { theTubExpert } from './(t)/theTubExpert'
 import { tinyTravelers } from './(t)/tinyTravelers'
 import { trueFellowshipMinisries } from './(t)/trueFellowshipMinistires'
+import { theAvenueDowntownEventVenue } from './(t)/theAvenueDowntownEventVenue'
 
 export const membersTlist = [
     tinyTravelers,
@@ -114,4 +115,5 @@ export const membersTlist = [
     theLifeChurch,
     tennesseeHospTourism,
     trueFellowshipMinisries,
+    theAvenueDowntownEventVenue,
 ]
