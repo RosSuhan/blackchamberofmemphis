@@ -5,7 +5,7 @@ export const theAvenueDowntownEventVenue : MembersListType = {
     id : "the-avenue-downtown-event-venue",
     businessName : "The Avenue Downtown Event Venue",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "the-avenue-downtown",
     profileDescription : "The Avenue Downtown Event Venue provides a versatile and welcoming setting for weddings, private celebrations, corporate gatherings, and religious events. With event planning assistance, flexible catering options, vendor coordination, and setup support, the venue helps clients create personalized and memorable occasions.",
     profileCategory : [
         "events-weddings",
