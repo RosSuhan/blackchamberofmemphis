@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const downtownMemphisCommission : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "downtown-memphis-commission",
     businessName : "Downtown Memphis Commission",
     bannerImage : "",

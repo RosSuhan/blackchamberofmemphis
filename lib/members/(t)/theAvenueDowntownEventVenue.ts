@@ -23,9 +23,20 @@ export const theAvenueDowntownEventVenue : MembersListType = {
         'meeting venues',
         'conference venues',
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>The Avenue Downtown Event Venue is a versatile event space offering a welcoming setting for weddings, private celebrations, corporate gatherings, religious ceremonies, and other special occasions. With a focus on flexibility, personalized service, and event coordination, the venue provides individuals, families, businesses, and organizations with a space to bring their celebrations and gatherings to life.</p>
+        <p>For couples planning their special day, The Avenue Downtown Event Venue accommodates wedding ceremonies, receptions, and wedding-related celebrations. The venue offers an inviting environment where couples can personalize their experience and work with event professionals to create a celebration that reflects their individual vision.</p>
+        <p>Beyond weddings, the venue welcomes a variety of private events, including birthday parties, anniversaries, baby showers, baptisms, brunches, and milestone celebrations. Whether hosting a family gathering or commemorating an important occasion, clients can work with the venue to coordinate event details and create a meaningful experience for their guests.</p>
+        <p>The Avenue Downtown Event Venue also serves businesses and professional organizations seeking space for corporate meetings, seminars, networking events, and other professional gatherings. Churches and religious organizations can utilize the venue for worship services, consecrations, church celebrations, and special religious ceremonies.</p>
+        <p>A key feature of the venue is its flexible approach to event planning. Clients have the option to bring in outside caterers, decorators, and other event professionals, allowing them to customize services according to their preferences and event requirements. The venue also assists with vendor coordination, event preparation, and logistical details.</p>
+        <p>Through personalized communication, planning guidance, and setup support, The Avenue Downtown Event Venue helps clients navigate the event planning process with greater confidence.</p>
+        <p>From intimate celebrations to professional gatherings and special ceremonies, the venue provides a flexible setting where memorable experiences, meaningful connections, and important milestones can be celebrated.</p>
+    `,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/the-avenue-downtown-memphis/img-1251.webp", alt : "Venue decoration for a party", width : 1500, height: 1110},
+        {image : '/members/the-avenue-downtown-memphis/img-1264.webp', alt : "Venue decoration for panel talk", width : 960, height: 720},
+        {image : '/members/the-avenue-downtown-memphis/img-1265.webp', alt : 'Venue decoration for private function', width: 960, height: 718},
+        {image : '/members/the-avenue-downtown-memphis/img-1267.webp', alt : "Vendor display setup", width: 960, height: 722 }
     ],
     businessHours : [
         // { day : "Monday", hours : ''},

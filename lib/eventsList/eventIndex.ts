@@ -30,8 +30,12 @@ import { icccProgram } from "./eventsFolder/icccProgram";
 import { symposium2026 } from "./eventsFolder/symposium2026";
 import { chairmansReception2026 } from "./eventsFolder/chairmansReception2026";
 import { accessToCapital } from "./eventsFolder/accessToCapital";
+import { LocalSEO } from "./eventsFolder/localSEO";
+import { LinkedInContactToCustomer } from "./eventsFolder/linkedInContactToCustomer";
 
 export const eventIndex = [
+    LinkedInContactToCustomer,
+    LocalSEO,
     accessToCapital,
     chairmansReception2026,
     symposium2026,

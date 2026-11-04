@@ -20,8 +20,10 @@ import { cSuitesSolutions } from './(c)/cSuitesSolutions'
 import { cliivelyDigitalMarketing } from './(c)/cliivelyDigitalMarketing'
 import { cre8ContentStudio } from './(c)/cre8ContentStudio'
 import { christalAlexandra } from './(c)/christalAlexandra'
+import { carpenterPrimaryHealthcare } from './(c)/carpenterPrimaryHealthcare'
 
 export const membersClist = [
+    carpenterPrimaryHealthcare,
     cliivelyDigitalMarketing,
     cSuitesSolutions,
     cooCreativeCo,

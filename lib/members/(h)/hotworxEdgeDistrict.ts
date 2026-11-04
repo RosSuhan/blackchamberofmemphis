@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const hotworxEdgeDistrict : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "hotworx-edge-district",
     businessName : "HOTWORX - Edge District",
     bannerImage : "",

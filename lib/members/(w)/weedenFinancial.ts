@@ -1,7 +1,7 @@
 import { MembersListType } from './../membersListType'
 
 export const weedenFinancial : MembersListType = {
-    memberStatus: false,
+    memberStatus: true,
     id : "weeden-financial",
     businessName : "Weeden Financial",
     bannerImage : "",
