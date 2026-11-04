@@ -39,7 +39,7 @@ export default function Footer(){
                         <Phone
                             className={style.footerContactLinkIcon}
                         /> 
-                        901 636 9300
+                        901 800 8041
                     </a>
 
                     <a 

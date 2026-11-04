@@ -71,7 +71,7 @@ export default async function BusinessCardPage({
                 profileCompany = {'Black Chamber of Memphis'}
             />
             <BcContactButtonSection
-                phoneNumber="9016369300"
+                phoneNumber="9018008041"
                 emailLink={`${selectedTeamMember?.email}`}
                 websiteLink="blackchamberofmemphis.org"
                 name={`${selectedTeamMember?.first_name} ${selectedTeamMember?.last_name}`}

@@ -106,10 +106,11 @@ export const menuList : NavigationMenuItem[] = [
             {
                 name : 'About Us',
                 path : '/about-us'
-            },{
-                name: 'Contact Us',
-                path: '/contact-us'
             },
+            // {
+            //     name: 'Contact Us',
+            //     path: '/contact-us'
+            // },
         ]
     },
 ]
