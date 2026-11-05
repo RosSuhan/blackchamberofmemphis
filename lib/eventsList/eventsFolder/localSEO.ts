@@ -10,6 +10,7 @@ export const LocalSEO : EventListType = {
     eventDate : "November 19, 2026",
     sortDate : "2026-11-19",
     eventTime : "6:30pm - 7:30pm",
+    eventTicketPrice : 'Members - Free, Non-Members - $20',
     eventAddressLink : "",
     eventAddress : "Zoom",
     eventName : "Get Found: Local SEO and AI Search for Memphis Businesses",
