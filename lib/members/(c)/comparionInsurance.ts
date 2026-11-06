@@ -26,7 +26,14 @@ export const comparionInsurance : MembersListType = {
         'financial services',
         'insurance services'
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Comparion Insurance Agency is an independent insurance agency helping individuals, families, and businesses find insurance coverage suited to their needs, priorities, and financial circumstances. Through a network of licensed insurance professionals and partnerships with more than 50 national and regional insurance carriers, Comparion offers customers the ability to explore multiple coverage options through a single agency.</p>
+        <p>Founded in 2022 and backed by Liberty Mutual Group, Comparion combines the resources of a national insurance organization with personalized assistance from agents who understand the communities they serve. The agency maintains a presence throughout the United States, including the Memphis metropolitan area.</p>
+        <p>Comparion provides a broad selection of personal insurance products, including automobile, homeowners, renters, condominium, life, motorcycle, recreational vehicle, watercraft, and pet insurance. Additional options include umbrella liability coverage, flood insurance, and protection for jewelry and other valuable possessions.</p>
+        <p>Rather than representing only one insurance carrier, Comparion agents help customers compare policies from multiple providers. This approach allows individuals and families to evaluate available coverage, premiums, deductibles, and policy features before making insurance decisions.</p>
+        <p>The agency also assists customers with reviewing existing coverage, exploring potential discounts, and adjusting policies as their circumstances change. Whether purchasing a vehicle, moving into a new home, preparing for the future, or protecting valuable assets, clients can receive guidance throughout the insurance selection process.</p>
+        <p>Comparion's licensed agents provide personalized recommendations based on individual circumstances and available insurance products. Customers can begin the quoting process online or connect directly with an agent for assistance.</p>
+        <p>With a focus on insurance education, comparison, and personalized service, Comparion Insurance Agency helps customers make informed decisions about protecting their property, families, and financial well-being.</p>`,
     gallery : [
         // {image : "", alt : "", width : 100, height: 100}
     ],
@@ -42,7 +49,7 @@ export const comparionInsurance : MembersListType = {
     addressLink : "",
     address : "",
     email : "clinton.davis@comparioninsurance.com",
-    website : "https://www.comparioninsurance.com/",
+    website : "https://www.comparioninsurance.com/insurance-agent/tennessee/germantown-0578/clinton-davis",
     telNumber : "8008350894",
     facebook : "https://www.facebook.com/ComparionInsuranceAgency",
     instagram : "https://www.instagram.com/comparioninsuranceagency/",
