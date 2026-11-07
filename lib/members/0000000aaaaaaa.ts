@@ -43,9 +43,21 @@ export const template : MembersListType = {
     offering : `
         <ul style="text-align: left">
             <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
         </ul>`,
     busBullets : `
         <ul style="text-align: left">
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
+            <li><strong></strong></li>
             <li><strong></strong></li>
         </ul>`,
 }

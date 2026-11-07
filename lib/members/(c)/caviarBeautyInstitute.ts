@@ -6,7 +6,7 @@ export const caviarBeautyInstitute : MembersListType = {
     businessName : "Caviar Beauty Institute",
     bannerImage : "",
     profileLogo : "Black-chamber-of-Memphis",
-    profileDescription : "Caviar Beauty Institute is a Collierville/Memphis-area apprenticeship beauty school offering hands-on, mentor-led training for cosmetology, esthetics, nails, natural hair, lashes, and instructor CE certifications.",
+    profileDescription : "Caviar Beauty Institute is a Tennessee-based apprenticeship beauty school providing hands-on, mentor-led education for individuals pursuing careers in the beauty industry. The institute combines structured learning with supervised practical training, continuing education and professional development to help prepare beauty professionals for successful careers.",
     profileCategory : [
         "beauty-personal-care-fitness",
         "community-faith-nonprofit-services"
@@ -34,5 +34,26 @@ export const caviarBeautyInstitute : MembersListType = {
     linktree : "",
     twitter: "",
     tiktok : "",
-    pinterest : ""
+    pinterest : "",
+    offering : `
+        <ul style="text-align: left">
+            <li>Cosmetology apprenticeship training</li>
+            <li>Nail technician apprenticeship training</li>
+            <li>Eyelash apprenticeship training</li>
+            <li>Continuing education for licensed beauty instructors</li>
+            <li>Beauty educator development and training</li>
+            <li>Salon mentor development and apprenticeship guidance</li>
+            <li>Beauty-industry workshops and webinars</li>
+            <li>Business strategy and workforce development consulting</li>
+        </ul>`,
+    busBullets : `
+        <ul style="text-align: left">
+            <li><strong>Apprenticeship-Based Learning: </strong>Combines structured coursework with practical experience</li>
+            <li><strong>Mentor-Led Training: </strong>Connects students with experienced, licensed beauty professionals</li>
+            <li><strong>Multiple Career Pathways: </strong>Offers training across several beauty-industry disciplines</li>
+            <li><strong>Professional Development: </strong>Supports the growth of beauty educators and licensed professionals</li>
+            <li><strong>Industry Knowledge: </strong>Brings beauty education and practical industry expertise together</li>
+            <li><strong>Workforce Development: </strong>Helps create career pathways and opportunities within the beauty industry</li>
+            <li><strong>Business-Focused Approach: </strong>Recognizes the importance of leadership, professional growth and business readiness</li>
+        </ul>`,
 }
