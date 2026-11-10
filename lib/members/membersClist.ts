@@ -21,8 +21,11 @@ import { cliivelyDigitalMarketing } from './(c)/cliivelyDigitalMarketing'
 import { cre8ContentStudio } from './(c)/cre8ContentStudio'
 import { christalAlexandra } from './(c)/christalAlexandra'
 import { carpenterPrimaryHealthcare } from './(c)/carpenterPrimaryHealthcare'
+import { comparionInsurance } from './(c)/comparionInsurance'
 
 export const membersClist = [
+    comparionInsurance,
+    caviarBeautyInstitute,
     carpenterPrimaryHealthcare,
     cliivelyDigitalMarketing,
     cSuitesSolutions,

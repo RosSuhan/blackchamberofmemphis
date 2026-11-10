@@ -19,7 +19,14 @@ export const caviarBeautyInstitute : MembersListType = {
         "nail technician training certification",
         "beauty apprenticeship school"
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>Caviar Beauty Institute is a beauty education and apprenticeship institution serving the Collierville and Greater Memphis area. Founded by LaShun Thompson, the institute develops skilled, knowledgeable, career-ready beauty professionals through an apprenticeship model that combines structured instruction, mentorship, and hands-on experience.</p>
+        <p>The institute's apprenticeship programs connect classroom learning with real-world salon experience. Students complete a combination of hybrid or digital coursework and supervised practical training with licensed beauty professionals. According to the institute, its apprenticeship model includes 50% of course hours through a hybrid or digital platform and 50% through hands-on practical training. Apprenticeship mentors are expected to meet the program’s supervision and experience requirements.</p>
+        <p>Caviar Beauty Institute offers training pathways in several beauty disciplines, including cosmetology, nail technology, aesthetics, eyelash services and natural hair. Its programs help aspiring professionals develop technical skills and prepare for the next steps toward professional licensure. The institute accepts students age 16 and older, subject to program requirements.</p>
+        <p>Beyond initial beauty training, Caviar Beauty Institute supports the continued development of beauty educators and industry professionals. Its offerings include continuing education for licensed cosmetology and barber instructors, professional development, educator training and workshops. The institute also provides guidance for salons interested in mentoring apprentices and participating in workforce development.</p>
+        <p>Drawing on its founder's experience as a beauty-industry educator and subject matter expert, the institute also connects beauty education with business strategy and industry development. Related areas of expertise include apprenticeship planning, mentor development, leadership, educational program development, and workforce-readiness initiatives.</p>
+        <p>Through its focus on mentorship, practical learning and professional excellence, Caviar Beauty Institute aims to create meaningful career opportunities while strengthening the beauty industry and the communities it serves.</p>
+    `,
     gallery : [],
     businessHours : [],
     addressLink : "",
