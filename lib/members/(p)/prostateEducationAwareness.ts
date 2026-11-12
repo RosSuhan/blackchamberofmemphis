@@ -5,7 +5,7 @@ export const prostateEducationAwareness : MembersListType = {
     id : "prostate-education-awareness-council",
     businessName : "Prostate Education Awareness Council",
     bannerImage : "",
-    profileLogo : "Black-chamber-of-Memphis",
+    profileLogo : "prostate-education-awareness-council",
     profileDescription : "The Prostate Education Awareness Council (PEAC) is a nonprofit organization dedicated to increasing prostate cancer awareness, education, and early detection among men. Through community education, PSA screening initiatives, advocacy, and fundraising events, PEAC works to encourage informed health decisions and improve access to prostate cancer screening resources.",
     profileCategory : [
         "health-medical-wellness-services",
@@ -24,9 +24,36 @@ export const prostateEducationAwareness : MembersListType = {
         'health advocacy',
         'prevention health education'
     ],
-    profileBusinessDescription : ``,
+    profileBusinessDescription : `
+        <p>The Prostate Education Awareness Council (PEAC) is a community-focused nonprofit organization dedicated to educating men about prostate health, increasing awareness of prostate cancer, and encouraging early detection through accessible screening opportunities.</p>
+        <p>PEAC works to address common misconceptions and concerns surrounding prostate cancer screening. One of its key educational priorities is helping men understand the Prostate-Specific Antigen (PSA) test, a simple blood test used to measure PSA levels and help identify potential prostate health concerns. Through education and awareness initiatives, the organization encourages men to become informed about prostate cancer risk factors, signs, symptoms, screening options, and available treatment approaches.</p>
+        <p>An important part of PEAC's mission is improving access to screening. Through a partnership with Quest Diagnostics, the organization helps facilitate PSA blood testing opportunities for men aged 40 and above. These initiatives are intended to make preventive health services more accessible and encourage men to take proactive steps toward understanding their prostate health.</p>
+        <p>Community engagement is central to PEAC's approach. The organization advocates for prostate cancer awareness by speaking at local churches, community centers, health events, and other community gatherings. By bringing important health information into familiar community settings, PEAC helps create opportunities for open conversations about men's health and the importance of early testing.</p>
+        <p>The organization also supports awareness and fundraising through special events, including the G.A. Hardaway Sr. Charity Golf Tournament, which brings community members and supporters together around the cause of prostate cancer awareness.</p>
+        <p>Through education, screening partnerships, advocacy, and community involvement, PEAC seeks to reduce barriers to testing and encourage men to take an active role in their health.</p>
+        <p>Guided by its message that <b>early testing saves lives</b>, the Prostate Education Awareness Council remains committed to raising awareness, expanding screening access, and helping families protect the health and well-being of the men they love.</p>`,
     gallery : [
-        // {image : "", alt : "", width : 100, height: 100}
+        {image : "/members/prostate-education-awareness-council/chamber-rollout1.webp", alt : "Prostate Education Awareness Council presentation", width : 2048, height: 1366},
+        {image : "/members/prostate-education-awareness-council/chamber-rollout2.webp", alt : "Prostate Education Awareness Council presentation", width : 2048, height: 1366},
+        {image : "/members/prostate-education-awareness-council/community-partner.webp", alt : "Prostate Education Awareness Council group photo", width : 1546, height: 2048},
+        {image : "/members/prostate-education-awareness-council/community-partner2.webp", alt : "Prostate Education Awareness Council June Men's Health Month", width : 2048, height: 1366},
+        {image : "/members/prostate-education-awareness-council/community-speaker.webp", alt : "Prostate Education Awareness Council group photo", width : 2048, height: 1536},
+        {image : "/members/prostate-education-awareness-council/espn-jay-harris-on-bev-johnson-show.webp", alt : "Prostate Education Awareness Council ESPN Show", width : 545, height: 443},
+        {image : "/members/prostate-education-awareness-council/ga-hardaway-golf-photo1.webp", alt : "Prostate Education Awareness Council GA Hardaway Golf", width : 2048, height: 1366},
+        {image : "/members/prostate-education-awareness-council/ga-hardaway-golf-photo2.webp", alt : "Prostate Education Awareness Council GA Hardaway Golf", width : 2026, height: 1366},
+        {image : "/members/prostate-education-awareness-council/ga-hardaway-golf-photo3.webp", alt : "Prostate Education Awareness Council GA Hardaway Golf", width : 206, height: 206},
+        {image : "/members/prostate-education-awareness-council/ga-hardaway-golf-photo4.webp", alt : "Prostate Education Awareness Council GA Hardaway Golf", width : 206, height: 206},
+        {image : "/members/prostate-education-awareness-council/img-1177.webp", alt : "Prostate Education Awareness Council", width : 6000, height: 4000},
+        {image : "/members/prostate-education-awareness-council/peac-cph-logo.webp", alt : "Prostate Education Awareness Council CPH logo", width : 206, height: 206},
+        {image : "/members/prostate-education-awareness-council/photo-espn-jay-harris-ga-hardaway-ken-carpenter.webp", alt : "Prostate Education Awareness Council News Channel", width : 2048, height: 2048},
+        {image : "/members/prostate-education-awareness-council/rep-hardaway-guest-speaker.webp", alt : "Prostate Education Awareness Council Guest Speaker", width : 2048, height: 1366},
+        {image : "/members/prostate-education-awareness-council/screening-event-photo4.webp", alt : "Prostate Education Awareness Council Screening Event", width : 2048, height: 1522},
+        {image : "/members/prostate-education-awareness-council/screening-event-photo1.webp", alt : "Prostate Education Awareness Council Prostate Cancer Survivor", width : 960, height: 640},
+        {image : "/members/prostate-education-awareness-council/screening-event-photo2.webp", alt : "Prostate Education Awareness Council Screening Event", width : 2048, height: 1800},
+        {image : "/members/prostate-education-awareness-council/speakers-exchange-club.webp", alt : "Prostate Education Awareness Council Exchange Club", width : 2048, height: 1152},
+        {image : "/members/prostate-education-awareness-council/screening-event-photo3.webp", alt : "Prostate Education Awareness Council Screening Event", width : 720, height: 960},
+        {image : "/members/prostate-education-awareness-council/uom-screening-event1.webp", alt : "Prostate Education Awareness Council Screening Event", width : 1366, height: 2048},
+        {image : "/members/prostate-education-awareness-council/uom-screening-event2.webp", alt : "Prostate Education Awareness Council Screening Event", width : 2048, height: 1152},
     ],
     businessHours : [
         // { day : "Monday", hours : ''},
