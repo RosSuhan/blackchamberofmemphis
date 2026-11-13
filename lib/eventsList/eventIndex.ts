@@ -32,8 +32,10 @@ import { chairmansReception2026 } from "./eventsFolder/chairmansReception2026";
 import { accessToCapital } from "./eventsFolder/accessToCapital";
 import { LocalSEO } from "./eventsFolder/localSEO";
 import { LinkedInContactToCustomer } from "./eventsFolder/linkedInContactToCustomer";
+import { bcomMixer26 } from "./eventsFolder/bcomMixer26";
 
 export const eventIndex = [
+    bcomMixer26,
     LinkedInContactToCustomer,
     LocalSEO,
     accessToCapital,
