@@ -15,8 +15,10 @@ import { boominU } from './(b)/boominU'
 import { brentHooks } from './(b)/brentHooks'
 import { brandName } from './(b)/brandName'
 import { beyondTheFabric } from './(b)/beyondTheFabric'
+import { bankOfBartlett } from './(b)/bankOfBartlett'
 
 export const membersBlist = [
+    bankOfBartlett,
     beyondTheFabric,
     brandName,
     boominU,

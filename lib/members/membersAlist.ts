@@ -26,8 +26,10 @@ import { accessMedStaffingSolHealth } from './(a)/accessMedStaffingSolHealth'
 import { affluentBooks } from './(a)/affluentBooks'
 import { aBetterChoiceChildcare } from './(a)/aBetterChoiceChildcare'
 import { ashleythomasconsulting } from './(a)/ashleyThomasConsulting'
+import { ashaun } from './(a)/ashaun'
 
 export const membersAlist = [
+    ashaun,
     ashleythomasconsulting,
     aBetterChoiceChildcare,
     affluentBooks,
