@@ -6,7 +6,7 @@ export const bcomMixer26 : EventListType = {
     type: 'event',
     path : "bcom-holiday-mixer-2026",
     eventType : 'quarterly-mixer',
-    eventImage : "/events/holiday-mixer-2026.png",
+    eventImage : "/events/holiday-mixer-2026.webp",
     eventImageAlt : "NBMBAA Memphis - 2026 Holiday Mixer with The Black Chamber of Memphis",
     eventDate : "December 10, 2026",
     sortDate : "2026-12-10",
@@ -23,7 +23,7 @@ export const bcomMixer26 : EventListType = {
     eventCTAbuttonLink : "/events/bcom-holiday-mixer-2026",
     eventCTAbuttonText : "Register today",
     registrationButtonText : "Register Today",
-    registrationButtonLink : '',
+    registrationButtonLink : 'https://www.eventbrite.com/e/nbmbaa-memphis-2026-holiday-mixer-with-the-black-chamber-of-memphis-tickets-2004432714206?aff=oddtdtcreator',
     eventPastDescription: "The Black Chamber of Memphis, along with its members and partners, came together for an evening of celebration as we reflected on our achievements from 2025. Guests enjoyed holiday treats while mingling and celebrating with entertainment, delicious food, and special messages and highlights. The holiday event was a truly delightful experience for everyone in attendance.",
     eventPastBlog: ``,
     eventGallery: [
