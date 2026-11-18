@@ -10,8 +10,10 @@ import { doreTouchEventCenter } from './(d)/doreTouchEventCenter'
 import { dj1luvEntertainment } from './(d)/dj1luvEntertainment'
 import { dreamTeamRealtyCo } from './(d)/dreamTeamRealtyCo'
 import { downtownMemphisCommission } from './(d)/downtownMemphisCommission'
+import { doorOfHope } from './(d)/doorOfHope'
 
 export const membersDlist = [
+        doorOfHope,
         downtownMemphisCommission,
         dreamTeamRealtyCo,
         dj1luvEntertainment,

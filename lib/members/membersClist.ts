@@ -34,7 +34,7 @@ export const membersClist = [
     carlisleWidePlankFloor,
     capturingMemories,
     carisCloset,
-    caviarBeautyInstitute,
+    // caviarBeautyInstitute,
     certifiedDefendersOfAmerica,
     cherrylPigues,
     christieTaylorConsulting,

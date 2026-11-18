@@ -6,6 +6,7 @@ import { energyHarness } from './(e)/energyHarness'
 import { eliteEliseAcademy } from './(e)/eliteEliseAcademy'
 import { enchantedTeaLounge } from './(e)/enchantedTeaLounge'
 import { earlinesHouse } from './(e)/earlinesHouse'
+import { eagleSolutionPros } from './(e)/eagleSolutionPros'
 
 export const membersElist = [
     enchantedTeaLounge,
@@ -16,4 +17,5 @@ export const membersElist = [
     easthillBaptistChurch,
     ewingMovingService,
     earlinesHouse,
+    eagleSolutionPros,
 ]

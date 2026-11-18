@@ -4,6 +4,7 @@ import { oakGroveMissionaryBaptist } from "./(o)/oakGroveMissionaryBaptist";
 import { onPointeCare } from "./(o)/onPointeCare";
 import { oneStickPhlebotomySchool } from "./(o)/oneStickPhlebotomySchool";
 import { otgSerLogistic } from "./(o)/otgSerLogistic";
+import { oneBull } from "./(o)/oneBul";
 
 export const membersOlist = [
     otgSerLogistic,
@@ -12,4 +13,5 @@ export const membersOlist = [
     otekaTechnologies,
     organizedByKendra,
     oakGroveMissionaryBaptist,
+    oneBull,
 ]
