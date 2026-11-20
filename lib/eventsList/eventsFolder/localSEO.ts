@@ -38,12 +38,12 @@ export const LocalSEO : EventListType = {
             <li>A step-by-step Google Business Profile checklist</li>
             <li>A free Google Maps visibility check for any member who wants one</li>
         <ul>`,
-    eventPastDescription: "",
+    eventPastDescription: 'The Black Chamber of Memphis hosted "Get Found: Local SEO and AI Search for Memphis Businesses," presented by Rey Clemons of Uberwood Agency. The workshop explored how Google Maps, online reviews, business directories and AI-powered search tools influence which businesses customers discover and choose. Attendees learned practical strategies to improve their online visibility and a step-by-step checklist to help their businesses get found by more potential customers.',
     eventPastBlog: ``,
     eventCTAbuttonLink : "/events/get-found-local-seo-and-ai-search-for-memphis-businesses",
     eventCTAbuttonText : "Read More",
     eventGallery: [{src: "", alt: ""}],
     registrationButtonLink : 'https://theblackbusinessassociationofmemphis.growthzoneapp.com/ap/Events/Register/G9FO2KquNCxCK',
     registrationButtonText :'Register Now',
-    blogPostReadLink : ''
+    blogPostReadLink : '/past-events/get-found-local-seo-and-ai-search-for-memphis-businesses'
 }

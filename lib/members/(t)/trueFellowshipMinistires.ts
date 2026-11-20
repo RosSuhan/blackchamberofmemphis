@@ -3,7 +3,7 @@ import { MembersListType } from './../membersListType'
 export const trueFellowshipMinisries : MembersListType = {
     memberStatus: true,
     id : "true-fellowship-ministries",
-    businessName : "",
+    businessName : "True Fellowship Ministries",
     bannerImage : "",
     profileLogo : "Black-chamber-of-Memphis",
     profileDescription : "True Fellowship Ministries is a Memphis-based Christian ministry dedicated to faith, fellowship, servant leadership, and community engagement. Led by Pastor Timothy J. Bowers, Sr., the ministry promotes spiritual growth, meaningful relationships, and community involvement through faith-centered activities and outreach.",
