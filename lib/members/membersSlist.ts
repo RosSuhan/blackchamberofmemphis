@@ -23,8 +23,10 @@ import { sharProfessionalServices } from './(s)/sharProfessionalServices'
 import { slidemeAPP } from './(s)/slidemeAPP'
 import { saveMeaPlate } from './(s)/saveMeaPlate'
 import { sherisTable } from './(s)/sherisTable'
+import { somiConsulting } from './(s)/somiConsulting'
 
 export const membersSlist = [
+    somiConsulting,
     sharProfessionalServices,
     sionSolutions,
     southernShieldPestControl,
