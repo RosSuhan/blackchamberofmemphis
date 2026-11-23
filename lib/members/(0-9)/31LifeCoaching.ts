@@ -6,7 +6,7 @@ export const ThreeOneLifeCoaching : MembersListType = {
     businessName : "3=1 Life Coaching",
     bannerImage : "",
     profileLogo : "31-life-coaching",
-    profileDescription : "3=1 Life Coaching provides holistic coaching for service-based women business professionals, with a primary focus on women age 50 and older. Its approach integrates faith, personal growth, financial guidance, values, mindset, and professional life to help clients make clear and confident decisions.",
+    profileDescription : "3=1 Life Coaching® provides financial coaching and personal development support for women 50+ and women business owners seeking greater clarity and confidence in their financial decisions. Founded by Angela Richardson, the practice uses its Financial Alignment™ approach to bring professional goals, personal well-being and faith together, helping clients make intentional decisions that reflect what matters most to them.",
     profileCategory : [
         "professional-legal-financial-services",
     ],
@@ -20,6 +20,11 @@ export const ThreeOneLifeCoaching : MembersListType = {
         'coaching',
         'consulting',
         'personal growth',
+        'business coaching',
+        'financial education',
+        'faith-based coaching',
+        'career development',
+        'professional development',
     ],
     profileBusinessDescription : `
         <p>3=1 Life Coaching provides holistic life and business coaching for women business professionals, with a primary focus on service-based women ages 50 and older. While this is the company's primary audience, all clients are welcome. The coaching approach recognizes that personal goals, professional decisions, financial considerations, faith, values, and mindset can all influence one another.</p>
@@ -56,20 +61,22 @@ export const ThreeOneLifeCoaching : MembersListType = {
     pinterest : "",
     offering : `
         <ul style="text-align: left">
-            <li>Life Coaching</li>
-            <li>Personal Development Coaching</li>
-            <li>Goal Setting & Accountability</li>
-            <li>Personal Growth Support</li>
-            <li>Life Transition Coaching</li>
-            <li>Consulting Services</li>
+            <li><strong>Personal Financial Wellness:</strong> Building awareness and confidence around everyday financial decisions.</li>
+            <li><strong>Business Financial Wellness:</strong> Helping women business owners better understand business finances and make informed decisions.</li>
+            <li><strong>Financial Alignment™ Coaching:</strong> Connecting financial choices with personal values, professional goals, personal growth and faith.</li>
+            <li><strong>Business & Career Coaching:</strong> Support for navigating business responsibilities, professional development and future goals.</li>
+            <li><strong>Personal Growth & Faith-Based Guidance:</strong> Integrating faith, mindset, values and personal well-being into the coaching experience.</li>
+            <li><strong>Speaking Engagements:</strong> Opportunities for financial wellness conversations, speaking engagements and educational presentations.</li>
+            <li><strong>Community Financial Education & Empowerment:</strong> Planned financial education and wellness programmes for businesses, churches, nonprofits and community organisations.</li>
         </ul>`,
     busBullets : `
         <ul style="text-align: left">
-            <li><strong>Personalized Support</strong> — Coaching centered on the individual.</li>
-            <li><strong>Goal Focused</strong> — Helps clients clarify goals and next steps.</li>
-            <li><strong>Life Balance</strong> — Encourages alignment across different areas of life.</li>
-            <li><strong>Growth Mindset</strong> — Supports intentional personal development.</li>
-            <li><strong>Forward Focused</strong> — Helps clients move from reflection toward action.</li>
-            <li><strong>Individual Attention</strong> — Provides a dedicated space to work through personal goals.</li>
+            <li><strong>30+ Years of Financial Experience:</strong> Founder Angela Richardson brings extensive accounting and finance experience, along with a background in bookkeeping business ownership.</li>
+            <li><strong>A Whole-Person Approach:</strong> Considers professional, personal and faith-based influences when exploring financial decisions.</li>
+            <li><strong>Financial Alignment™ Framework:</strong> Offers a distinctive approach to connecting money decisions with individual values, vision and priorities.</li>
+            <li><strong>Focused on Women 50+:</strong> Supports women navigating financial decisions, personal growth and the opportunities of their next chapter.</li>
+            <li><strong>Business Owner Perspective:</strong> Provides financial wellness support that recognises the responsibilities and considerations of running a business.</li>
+            <li><strong>Faith-Centred Foundation:</strong> Integrates faith, personal growth and practical financial guidance into the coaching philosophy.</li>
+            <li><strong>Practical, Intentional Progress:</strong> Encourages greater financial awareness, confidence and meaningful steps forward.</li>
         </ul>`,
 }
