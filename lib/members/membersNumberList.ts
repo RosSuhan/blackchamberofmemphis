@@ -15,6 +15,7 @@ import { oneSourceAutoGroup } from './(0-9)/1SourceAutoGroup'
 import { threedMarketingConcepts } from './(0-9)/3dMarketingConcepts'
 import { FourOneFourRestoration } from './(0-9)/414Restoration'
 import { OneKHoldings } from './(0-9)/1Kholdings'
+import { ThreeOneLifeCoaching } from './(0-9)/31LifeCoaching'
 
 export const membersNumberList = [
         OneKHoldings,
@@ -34,4 +35,5 @@ export const membersNumberList = [
         iiimadison,
         oneSourceAutoGroup,
         threedMarketingConcepts,
+        ThreeOneLifeCoaching,
 ]
