@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from '@/styles/wordImage.module.css'
 
 type ImageWordBlocksProps = {
-    wordHeaderText: string
+    wordHeaderText?: string
     wordParagraphTexts: string
     blockImage: string
 }
@@ -22,11 +22,13 @@ export default function ImageWordBlocks({wordHeaderText, wordParagraphTexts, blo
             <div
                 className={style.wordInformation}
             >
-                <h2
-                    className={style.wordHeader}
-                >
-                    {wordHeaderText}
-                </h2>
+                {wordHeaderText ? 
+                    <h2
+                        className={style.wordHeader}
+                    >
+                        {wordHeaderText}
+                    </h2> 
+                : null}
                 <div
                     dangerouslySetInnerHTML={{__html: wordParagraphTexts}}
                     className={style.wordParagraph}

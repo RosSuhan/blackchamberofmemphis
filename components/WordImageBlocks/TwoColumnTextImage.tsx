@@ -11,8 +11,8 @@ type TwoColumnProps = {
     imageHeight : number 
     blockHeading : string
     blockText : string
-    ctaLink : string
-    buttonText : string
+    ctaLink? : string
+    buttonText? : string
     columnBackgroundColor? : string
 }
 

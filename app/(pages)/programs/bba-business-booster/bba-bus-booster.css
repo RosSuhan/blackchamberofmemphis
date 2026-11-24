@@ -1,0 +1,33 @@
+.trainingBlockCall {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.darkBlock {
+    background: var(--darkGrey);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.trainingCallHeading {
+    /* color: #ffffff; */
+    font-size: 2rem;
+}
+
+.trainingCallText {
+    width: 70%;
+    text-align: center;
+}
+
+.trainingCallText strong {
+   margin-right: 20px;
+   font-size: 1.5rem;
+}
