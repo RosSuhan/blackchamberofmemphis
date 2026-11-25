@@ -14,9 +14,11 @@ import { williamsInsuranceFinancialServices } from './(w)/williamsInsuranceFinan
 import { wellsRoofingRemodeling } from './(w)/wellsRoofingRemodeling'
 import { wolfOfFitness } from './(w)/wolfOfFitness'
 import { womenOfPower } from './(w)/womenOfPower'
+import { wabtsFinancialTaxAdvisors } from './(w)/wabtsFinancialTaxAdvisors'
 
 
 export const membersWlist = [
+    wabtsFinancialTaxAdvisors,
     weedenFinancial,
     wrightNow,
     walkerWarrenCommunications,
