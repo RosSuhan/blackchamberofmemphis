@@ -27,13 +27,16 @@ export const ThreeOneLifeCoaching : MembersListType = {
         'professional development',
     ],
     profileBusinessDescription : `
-        <p>3=1 Life Coaching provides holistic life and business coaching for women business professionals, with a primary focus on service-based women ages 50 and older. While this is the company's primary audience, all clients are welcome. The coaching approach recognizes that personal goals, professional decisions, financial considerations, faith, values, and mindset can all influence one another.</p>
-        <p>At 3=1 Life Coaching, clients are supported in looking at the whole person rather than addressing one area of life in isolation. The approach blends faith, personal growth, and financial guidance across both personal and business matters, helping clients gain clarity and make confident decisions that align with their values and goals.</p>
-        <p>For women business professionals, particularly those navigating the opportunities and challenges that can come with building, growing, or redefining a service-based business later in their professional journey, having a space to consider both personal and business priorities can be valuable. 3=1 Life Coaching provides coaching support that brings these areas together rather than treating them as completely separate parts of life.</p>
-        <p>Financial guidance is also an important part of the company's approach, encompassing both personal and business financial considerations. Combined with personal growth, mindset, faith, and values, this broader perspective allows clients to examine how their decisions may affect different areas of their lives and businesses.</p>
-        <p>The defining philosophy of 3=1 Life Coaching is its focus on the whole person. Finances, faith, personal growth, values, mindset, and professional life are considered together as clients work toward greater clarity and intentional decision-making.</p>
-        <p>Although the primary focus is on service-based women business professionals age 50 and older, 3=1 Life Coaching welcomes clients from other backgrounds as well. The coaching experience is centered on meeting clients where they are, understanding what matters to them, and helping them move forward with greater confidence and alignment.</p>
-        <p>For individuals looking for coaching that brings together personal development, faith, financial considerations, and professional life, 3=1 Life Coaching offers an integrated approach to navigating life's and business's decisions.</p>`,
+        <p>3=1 Life Coaching® is a financial coaching and personal development practice founded by Angela Richardson, helping women 50+ and women business owners approach their finances, personal growth and next chapter with greater clarity and confidence.</p>
+        <p>At the heart of the practice is the <strong>Financial Alignment™</strong> approach, built around a foundational philosophy: Professional + Personal + Faith = You. This approach recognizes that financial decisions are influenced by more than numbers alone. Personal experiences, professional responsibilities, values, faith, mindset and individual aspirations all play a role in how people think about and manage their money.</p>
+        <p>Through Financial Alignment™, Angela Richardson helps clients look at their financial decisions within the context of their broader lives. The focus is not simply on budgeting, saving or managing debt, but on developing greater awareness of financial choices and understanding how those choices connect with personal values, professional goals and the life they want to build.</p>
+        <p>3=1 Life Coaching® offers several areas of support.</p>
+        <p><strong>Personal Financial Wellness</p> helps individuals develop greater awareness and confidence around everyday money decisions.</p>
+        <p><strong>Business Financial Wellness</strong> supports women business owners in understanding their business finances and making more informed financial decisions.</p>
+        <p><strong>Financial Alignment™ Coaching</strong> brings together financial guidance, personal growth, professional life and faith to help clients identify meaningful next steps and make decisions that reflect what matters most.</p>
+        <p>The practice also offers business and career coaching, speaking engagements and opportunities for consultation. Its Community Financial Education & Empowerment initiative, currently listed as coming soon, is intended to extend practical financial education and wellness programs to businesses, churches, nonprofits and community organizations.</p>
+        <p>Founder Angela Richardson brings a Bachelor of Business Administration, more than 30 years of experience in accounting and finance, and 10 years of experience as a bookkeeping business owner. Her professional background and personal journey inform an approach grounded in financial knowledge, faith, trust and continued growth.</p>
+        <p>Through 3=1 Life Coaching®, Angela encourages women to approach their next chapter with a plan, financial clarity and confidence, taking intentional steps toward a life that reflects their values and priorities.</p>`,
     gallery : [
         {image : "/members/31-life-coaching/bus-photo.webp", alt : "Angela Richardson - 3=1 Life Coaching Business Owner", width : 2400, height: 3600}
     ],
@@ -50,7 +53,7 @@ export const ThreeOneLifeCoaching : MembersListType = {
     address : "5865 Ridgeway Center Pkwy, Memphis, TN 38120, USA",
     email : "info@angelarichardsonlife.com",
     website : "https://www.angelarichardsonlife.com/",
-    telNumber : "",
+    telNumber : "9013083812",
     facebook : "",
     instagram : "",
     youtube : "",
